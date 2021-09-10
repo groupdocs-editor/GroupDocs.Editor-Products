@@ -280,7 +280,7 @@ solutions:
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png"
           product: "GroupDocs.Editor"
           platform: "Java"
-          link: "/editor/java"
+          link: "/editor/java/"
 
 ############################# Back to top ###############################
 back_to_top:

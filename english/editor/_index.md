@@ -19,11 +19,11 @@ apis:
   api:
     # api loop
     - title: "GroupDocs.Editor On Premise APIs Include"
-      link: "/editor"
+      link: "/editor/"
       label: "View All On Premise APIs"
       api_product:
         # api_product loop
-        - link: "/editor/net"
+        - link: "/editor/net/"
           img_alt: "GroupDocs.Editor for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
           product: "GroupDocs.Editor for"
@@ -31,7 +31,7 @@ apis:
           content: "On Premise .NET API that helps your application to view, edit and then convert documents."
 
         # api_product loop
-        - link: "/editor/java"
+        - link: "/editor/java/"
           img_alt: "GroupDocs.Editor for Java"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png"
           product: "GroupDocs.Editor for"

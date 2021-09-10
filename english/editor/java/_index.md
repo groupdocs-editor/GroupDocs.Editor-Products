@@ -263,7 +263,7 @@ solutions:
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
           product: "GroupDocs.Editor"
           platform: ".NET"
-          link: "/editor/net"
+          link: "/editor/net/"
 
 ############################# Back to top ###############################
 back_to_top:
