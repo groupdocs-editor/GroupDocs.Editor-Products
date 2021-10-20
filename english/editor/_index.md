@@ -5,7 +5,7 @@ date: 2021-04-27T09:31:06+03:00
 draft: false
 
 ############################# Head ############################
-head_title: "Document Editing Solution | On Premise APIs and Free App"
+head_title: "Document Editing Solution | On Premise APIs and Free Apps"
 head_description: "Document Editing for Microsoft Office, OpenDocument, PDF & other File Formats using On Premise APIs or use the Online Document Editor App."
 
 ############################# Header ############################
