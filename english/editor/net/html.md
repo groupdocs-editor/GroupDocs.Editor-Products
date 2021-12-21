@@ -1,11 +1,11 @@
 ---
 ############################# Static ############################
 layout: "auto-gen"
-date: 2021-12-20T10:16:48
+date: 2021-12-20T12:02:46
 draft: false
 
 ############################# Head ############################
-head_title: "HTML Editor – Eidt HTML in C# .NET"
+head_title: "HTML Editor – Edit HTML in C# .NET"
 head_description: "How to edit HTML in C# .NET using a few lines of code? Use GroupDocs documents processing APIs to edit, update and save 30+ file formats."
 
 ############################# Header ############################
@@ -58,7 +58,7 @@ about:
     enable: true
     title: "About GroupDocs.Editor for .NET API"
     content: |
-        GroupDocs.Editor API is a right choise to edit Microsoft Word, Excel, PowerPoint, Open Office documents and presentations. GroupDocs.Editor is a standalone API that is suitable for server side and backend systems where high performance is required. It does not depend on any software like Microsoft or Open Office.
+        [GroupDocs.Editor](https://products.groupdocs.com/editor/net) API is a right choise to edit Microsoft Word, Excel, PowerPoint, Open Office documents and presentations. GroupDocs.Editor is a standalone API that is suitable for server side and backend systems where high performance is required. It does not depend on any software like Microsoft or Open Office.
 
 ############################# Steps ############################
 steps:
@@ -99,7 +99,7 @@ steps:
         EditableDocument afterEdit = EditableDocument.FromMarkup(updatedContent, null);
 
         // Save edited HTML document
-        editor.Save(afterEdit, "edited.html", saveOptions);
+        editor.Save(afterEdit, "edited.html");
         ```
         
 ############################# Demos ############################
