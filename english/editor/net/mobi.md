@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "auto-gen"
-date: 2021-12-20T10:08:47
+date: 2021-12-20T10:16:47
 draft: false
 
 ############################# Head ############################
@@ -99,7 +99,7 @@ steps:
         EditableDocument afterEdit = EditableDocument.FromMarkup(updatedContent, null);
 
         // Save edited MOBI document
-        editor.Save(afterEdit, "edited..mobi", saveOptions);
+        editor.Save(afterEdit, "edited.mobi", saveOptions);
         ```
         
 ############################# Demos ############################
