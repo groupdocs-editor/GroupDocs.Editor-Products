@@ -15,7 +15,7 @@ head_description: "C# .NET document editor API to load Microsoft Word, Excel, XM
 
 ############################# Header ############################
 title: ".NET API to Edit Documents Using HTML"
-description: "‎Develop .NET Applications, to Integrate with HTML Editor, Fetch Supported Document, Edit and Convert to Original Format.‎"
+description: "Develop .NET Applications, to Integrate with HTML Editor, Fetch Supported Document, Edit and Convert to Original Format."
 button:
     enable: true
 
@@ -108,7 +108,7 @@ overview:
       ## TAB THREE ##
       tab_three:
         description: |
-          GroupDocs.Editor for .NET supports following Operating Systems, Frameworks & Package Managers:‎
+          GroupDocs.Editor for .NET supports following Operating Systems, Frameworks & Package Managers:
         
         left:
           enable: true
@@ -252,7 +252,7 @@ features:
           ```
       # more_feature_loop
       - title: "Load & Extract External Resources"
-        content: "GroupDocs.Editor for .NET API is capable of fetching the external resources attached to supported documents, such as images, fonts, CSS and more. The fetched resources can then be loaded, traversed, and saved separately from the resultant HTML document. This gives you a more easily managed output.‎"
+        content: "GroupDocs.Editor for .NET API is capable of fetching the external resources attached to supported documents, such as images, fonts, CSS and more. The fetched resources can then be loaded, traversed, and saved separately from the resultant HTML document. This gives you a more easily managed output."
 
       # more_feature_loop
       - title: "Apply Text Effects within Word Processing File Formats"

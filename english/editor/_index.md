@@ -10,7 +10,7 @@ head_description: "Document Editing for Microsoft Office, OpenDocument, PDF & ot
 
 ############################# Header ############################
 title: "Document Editing Solution"
-description: "Document editor to manipulate Microsoft Office, OpenOffice, PDF, HTML and other document file formats.‎"
+description: "Document editor to manipulate Microsoft Office, OpenOffice, PDF, HTML and other document file formats."
 
 ############################# APIs ###############################
 apis:

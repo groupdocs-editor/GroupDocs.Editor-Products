@@ -15,7 +15,7 @@ head_description: "Document editor API for Java. Load Microsoft Word, XML, web &
 
 ############################# Header ############################
 title: "Edit Documents via HTML Using Java API"
-description: "Integrate Java applications with HTML editor to manipulate documents & convert back to original format.‎"
+description: "Integrate Java applications with HTML editor to manipulate documents & convert back to original format."
 button:
     enable: true
 
@@ -108,7 +108,7 @@ overview:
       ## TAB THREE ##
       tab_three:
         description: |
-          GroupDocs.Editor for Java supports following Operating Systems, Frameworks & Package ‎Managers:‎
+          GroupDocs.Editor for Java supports following Operating Systems, Frameworks & Package Managers:
         
         left:
           enable: true
@@ -246,7 +246,7 @@ features:
           ```
       # more_feature_loop
       - title: "Load & Fetch Associate Elements"
-        content: "GroupDocs.Editor for Java API enables you to fetch the associated elements from documents of supported formats, such as images, CSS, fonts & more. Then you can load these fetched associated elements, traverse them and save them separately from the final HTML file, and have a well-managed output.‎‎"
+        content: "GroupDocs.Editor for Java API enables you to fetch the associated elements from documents of supported formats, such as images, CSS, fonts & more. Then you can load these fetched associated elements, traverse them and save them separately from the final HTML file, and have a well-managed output."
 
 ############################# Support ############################
 support:
