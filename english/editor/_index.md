@@ -18,9 +18,9 @@ apis:
 
   api:
     # api loop
-    - title: "GroupDocs.Editor On Premise APIs Include"
+    - title: "GroupDocs.Editor High Code APIs Include"
       link: "/editor/"
-      label: "View All On Premise APIs"
+      label: "View All High Code APIs"
       api_product:
         # api_product loop
         - link: "/editor/net/"
@@ -39,9 +39,9 @@ apis:
           content: "Document editing API for Microsoft Office, OpenOffice, HTML and other documents to manipulate within your Java based applications."
 
     # api loop
-    - title: "GroupDocs.Editor Cloud APIs Include"
+    - title: "GroupDocs.Editor Low Code APIs Include"
       link: "https://products.groupdocs.cloud/editor"
-      label: "View All Cloud APIs"
+      label: "View All Low Code APIs"
       api_product:
         # api_product loop
         - link: "https://products.groupdocs.cloud/editor/net"
@@ -60,9 +60,9 @@ apis:
           content: "Advanced document editor SDK for Java applications to edit industry standard document file formats on any platform capable to call REST APIs."
 
     # api loop
-    - title: "GroupDocs.Editor Cross Platform Apps Include"
+    - title: "GroupDocs.Editor No Code Apps Include"
       link: "https://products.groupdocs.app/editor"
-      label: "View All Cross Platform Apps"
+      label: "View All No Code Apps"
       api_product:
         # api_product loop
         - link: "https://products.groupdocs.app/editor/total"
