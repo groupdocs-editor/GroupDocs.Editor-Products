@@ -1,4 +1,4 @@
 # GroupDocs.Editor-Products
 products.groupdocs.com/editor landing pages sources
 
-[![Build Status](https://travis-ci.com/groupdocs-editor/GroupDocs.Editor-Products.svg?branch=master)](https://travis-ci.com/groupdocs-editor/GroupDocs.Editor-Products)
+![Copy2ThemeRepo](https://github.com/groupdocs-editor/GroupDocs.Editor-Products/actions/workflows/main.yml/badge.svg)
