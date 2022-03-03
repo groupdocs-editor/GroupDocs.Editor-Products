@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "auto-gen"
-date: 2021-12-20T12:02:46
+date: 2022-03-02T11:17:01
 draft: false
 
 ############################# Head ############################
@@ -129,47 +129,7 @@ more_formats:
     content: |
         You can also edit other file formats. Please see the complete list below.
     format:
-        # format loop
-        - name: "PPT"
-          link: "https://products.groupdocs.com/editor/net/ppt/"
-          description: "PowerPoint Presentation"
-
-        # format loop
-        - name: "PPTX"
-          link: "https://products.groupdocs.com/editor/net/pptx/"
-          description: "PowerPoint Open XML Presentation"
-
-        # format loop
-        - name: "ODP"
-          link: "https://products.groupdocs.com/editor/net/odp/"
-          description: "OpenDocument Presentation File Format"
-
-        # format loop
-        - name: "OTP"
-          link: "https://products.groupdocs.com/editor/net/otp/"
-          description: "Origin Graph Template"
-
-        # format loop
-        - name: "XLS"
-          link: "https://products.groupdocs.com/editor/net/xls/"
-          description: "Microsoft Excel Binary File Format"
-
-        # format loop
-        - name: "XLSX"
-          link: "https://products.groupdocs.com/editor/net/xlsx/"
-          description: "Microsoft Excel Open XML Spreadsheet"        
-
-        # format loop
-        - name: "ODS"
-          link: "https://products.groupdocs.com/editor/net/ods/"
-          description: "Open Document Spreadsheet"                
-
-        # format loop
-        - name: "TSV"
-          link: "https://products.groupdocs.com/editor/net/tsv/"
-          description: "Tab Separated Values File"
-
-        # format loop
+         # format loop
         - name: "CSV"
           link: "https://products.groupdocs.com/editor/net/csv/"
           description: "Comma Separated Values File"
@@ -180,14 +140,64 @@ more_formats:
           description: "Microsoft Word Document"
 
         # format loop
+        - name: "DOCM"
+          link: "https://products.groupdocs.com/editor/net/docm/"
+          description: "Microsoft Word Macro-Enabled Document"
+
+        # format loop
         - name: "DOCX"
           link: "https://products.groupdocs.com/editor/net/docx/"
           description: "Microsoft Word Open XML Document"
 
         # format loop
-        - name: "RTF"
-          link: "https://products.groupdocs.com/editor/net/rtf/"
-          description: "Rich Text File Format"
+        - name: "DOT"
+          link: "https://products.groupdocs.com/editor/net/dot/"
+          description: "Microsoft Word Document Template"
+
+        # format loop
+        - name: "DOTM"
+          link: "https://products.groupdocs.com/editor/net/dotm/"
+          description: "Microsoft Word Macro-Enabled Template"
+
+        # format loop
+        - name: "DOTX"
+          link: "https://products.groupdocs.com/editor/net/dotx/"
+          description: "Word Open XML Document Template"
+
+        # format loop
+        - name: "FODP"
+          link: "https://products.groupdocs.com/editor/net/fodp/"
+          description: "OpenDocument Flat XML Presentation"
+
+        # format loop
+        - name: "FODS"
+          link: "https://products.groupdocs.com/editor/net/fods/"
+          description: "OpenDocument Flat XML Spreadsheet"
+
+        # format loop
+        - name: "HTM"
+          link: "https://products.groupdocs.com/editor/net/htm/"
+          description: "Hypertext Markup Language File"
+
+        # format loop
+        - name: "HTML"
+          link: "https://products.groupdocs.com/editor/net/html/"
+          description: "Hyper Text Markup Language"
+
+        # format loop
+        - name: "MOBI"
+          link: "https://products.groupdocs.com/editor/net/mobi/"
+          description: "Mobipocket eBook"
+
+        # format loop
+        - name: "ODP"
+          link: "https://products.groupdocs.com/editor/net/odp/"
+          description: "OpenDocument Presentation File Format"
+
+        # format loop
+        - name: "ODS"
+          link: "https://products.groupdocs.com/editor/net/ods/"
+          description: "Open Document Spreadsheet"
 
         # format loop
         - name: "ODT"
@@ -195,9 +205,74 @@ more_formats:
           description: "Open Document Text"
 
         # format loop
+        - name: "OTP"
+          link: "https://products.groupdocs.com/editor/net/otp/"
+          description: "Origin Graph Template"
+
+        # format loop
+        - name: "OTS"
+          link: "https://products.groupdocs.com/editor/net/ots/"
+          description: "OpenDocument Spreadsheet Template"
+
+        # format loop
         - name: "OTT"
           link: "https://products.groupdocs.com/editor/net/ott/"
           description: "Open Document Template"
+
+        # format loop
+        - name: "POT"
+          link: "https://products.groupdocs.com/editor/net/pot/"
+          description: "PowerPoint Template"
+
+        # format loop
+        - name: "POTM"
+          link: "https://products.groupdocs.com/editor/net/potm/"
+          description: "Microsoft PowerPoint Template"
+
+        # format loop
+        - name: "POTX"
+          link: "https://products.groupdocs.com/editor/net/potx/"
+          description: "Microsoft PowerPoint Open XML Template"
+
+        # format loop
+        - name: "PPS"
+          link: "https://products.groupdocs.com/editor/net/pps/"
+          description: "Microsoft PowerPoint Slide Show"
+
+        # format loop
+        - name: "PPSM"
+          link: "https://products.groupdocs.com/editor/net/ppsm/"
+          description: "Microsoft PowerPoint Slide Show"
+
+        # format loop
+        - name: "PPSX"
+          link: "https://products.groupdocs.com/editor/net/ppsx/"
+          description: "PowerPoint Open XML Slide Show"
+
+        # format loop
+        - name: "PPT"
+          link: "https://products.groupdocs.com/editor/net/ppt/"
+          description: "PowerPoint Presentation"
+
+        # format loop
+        - name: "PPTM"
+          link: "https://products.groupdocs.com/editor/net/pptm/"
+          description: "Microsoft PowerPoint Presentation"
+
+        # format loop
+        - name: "RTF"
+          link: "https://products.groupdocs.com/editor/net/rtf/"
+          description: "Rich Text File Format"
+
+        # format loop
+        - name: "SXC"
+          link: "https://products.groupdocs.com/editor/net/sxc/"
+          description: "StarOffice Calc Spreadsheet"
+
+        # format loop
+        - name: "TSV"
+          link: "https://products.groupdocs.com/editor/net/tsv/"
+          description: "Tab Separated Values File"
 
         # format loop
         - name: "TXT"
@@ -205,9 +280,51 @@ more_formats:
           description: "Plain Text File Format"
 
         # format loop
-        - name: "HTML"
-          link: "https://products.groupdocs.com/editor/net/html/"
-          description: "Hyper Text Markup Language"
+        - name: "XLAM"
+          link: "https://products.groupdocs.com/editor/net/xlam/"
+          description: "Microsoft Excel Macro-Enabled Add-In"
+
+        # format loop
+        - name: "XLS"
+          link: "https://products.groupdocs.com/editor/net/xls/"
+          description: "Microsoft Excel Binary File Format"
+
+        # format loop
+        - name: "XLSB"
+          link: "https://products.groupdocs.com/editor/net/xlsb/"
+          description: "Microsoft Excel Binary Spreadsheet File"
+
+        # format loop
+        - name: "XLSM"
+          link: "https://products.groupdocs.com/editor/net/xlsm/"
+          description: "Microsoft Excel Macro-Enabled Spreadsheet"
+
+        # format loop
+        - name: "XLSX"
+          link: "https://products.groupdocs.com/editor/net/xlsx/"
+          description: "Microsoft Excel Open XML Spreadsheet"
+
+        # format loop
+        - name: "XLT"
+          link: "https://products.groupdocs.com/editor/net/xlt/"
+          description: "Microsoft Excel Template"
+
+        # format loop
+        - name: "XLTM"
+          link: "https://products.groupdocs.com/editor/net/xltm/"
+          description: "Microsoft Excel Macro-Enabled Template"
+
+        # format loop
+        - name: "XLTX"
+          link: "https://products.groupdocs.com/editor/net/xltx/"
+          description: "Microsoft Excel Open XML Template"
+
+        # format loop
+        - name: "XML"
+          link: "https://products.groupdocs.com/editor/net/xml/"
+          description: "Extended Markup Language"
+
+
 
 ############################# Back to top ###############################
 back_to_top:
