@@ -10,7 +10,7 @@ head_description: "Edit PPT in Java using a few lines of code. Fast and robust d
 
 ############################# Header ############################
 title: "Edit PPT in Java"
-description: "Powerfull and fast PPT editor for your Java application without third-party software like Microsoft Office or Open Office."
+description: "Powerful and fast PPT editor for your Java application without third-party software like Microsoft Office or Open Office."
 bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
 bg_overlay: false
 button:
@@ -58,14 +58,14 @@ about:
     enable: true
     title: "About GroupDocs.Editor for Java API"
     content: |
-        [GroupDocs.Editor for Java](https://products.groupdocs.com/editor/java) is a right choise to edit Microsoft Word, Excel, PowerPoint, Open Office documents and presentations. GroupDocs.Editor is a standalone API that is suitable for server side and backend systems where high performance is required. It does not depend on any software like Microsoft or Open Office.
+        [GroupDocs.Editor for Java](/editor/java/) is a right choice to edit Microsoft Word, Excel, PowerPoint, Open Office documents and presentations. GroupDocs.Editor is a standalone API that is suitable for server side and back-end systems where high performance is required. It does not depend on any software like Microsoft or Open Office.
 
 ############################# Steps ############################
 steps:
     enable: true
     title_left: "Steps to Edit PPT in Java"
     content_left: |
-        [GroupDocs.Editor](https://products.groupdocs.com/editor/java) provides an easy and starightforward way for developers to edit the PPT files using a few lines of code.
+        [GroupDocs.Editor](/editor/java/) provides an easy and straightforward way for developers to edit the PPT files using a few lines of code.
 
         *   Create an instance of Editor class and load the PPT file with full path
         *   Create & set EditOptions for the PPT file type
@@ -118,7 +118,7 @@ about_formats:
         - icon: "far fa-file-powerpoint"
           title: " About PPT File Format"
           content: |
-            A file with PPT extension represents PowerPoint file that consists of a collection of slides for displaying as SlideShow. It specifies the Binary File Format used by Microsoft PowerPoint 97-2003. A PPT file can contain several different types of information such as text, bulleted points, images, multimedia and other embedded OLE objects. Microsoft came up with newer file format for PowerPoint, known as PPTX, from 2007 onwards that is based on Office OpenXML and is different from this binary file format.
+            A file with PPT extension represents PowerPoint file that consists of a collection of slides for displaying as SlideShow. It specifies the Binary File Format used by Microsoft PowerPoint 97-2003. A PPT file can contain several different types of information such as text, bulleted points, images, multimedia and other embedded OLE objects. Microsoft came up with newer file format for PowerPoint, known as PPTX, from 2007 onward that is based on Office OpenXML and is different from this binary file format.
 
           link: "https://docs.fileformat.com/presentation/ppt/"
 

@@ -58,14 +58,14 @@ about:
     enable: true
     title: "About GroupDocs.Editor for .NET API"
     content: |
-        [GroupDocs.Editor](https://products.groupdocs.com/editor/net) API is a right choise to edit Microsoft Word, Excel, PowerPoint, Open Office documents and presentations. GroupDocs.Editor is a standalone API that is suitable for server side and backend systems where high performance is required. It does not depend on any software like Microsoft or Open Office.
+        [GroupDocs.Editor](/editor/net/) API is a right choice to edit Microsoft Word, Excel, PowerPoint, Open Office documents and presentations. GroupDocs.Editor is a standalone API that is suitable for server side and back-end systems where high performance is required. It does not depend on any software like Microsoft or Open Office.
 
 ############################# Steps ############################
 steps:
     enable: true
     title_left: "Steps to Edit OTT in C#"
     content_left: |
-        [GroupDocs.Editor](https://products.groupdocs.com/editor/net) provides an easy and starightforward way for developers to edit the OTT files using a few lines of code.
+        [GroupDocs.Editor](/editor/net/) provides an easy and straightforward way for developers to edit the OTT files using a few lines of code.
 
         *   Create an instance of Editor class and load the OTT file with full path
         *   Create & set EditOptions for the OTT file type
@@ -79,7 +79,7 @@ steps:
         *   Operating Systems: Microsoft Windows, Linux, MacOS
         *   Development Environments: Microsoft Visual Studio, Xamarin, MonoDevelop
         *   Frameworks: .NET Framework, .NET Standard, .NET Core, Mono
-        *   Get the latest version of GroupDocs.Editor for .NET downloaded from [Nuget](https://www.nuget.org/packages/GroupDocs.Editor)
+        *   Get the latest version of GroupDocs.Editor for .NET downloaded from [NuGet](https://www.nuget.org/packages/GroupDocs.Editor)
         
     code: |
         ```cs

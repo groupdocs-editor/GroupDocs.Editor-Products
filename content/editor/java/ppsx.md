@@ -10,7 +10,7 @@ head_description: "Edit PPSX in Java using a few lines of code. Fast and robust 
 
 ############################# Header ############################
 title: "Edit PPSX in Java"
-description: "Powerfull and fast PPSX editor for your Java application without third-party software like Microsoft Office or Open Office."
+description: "Powerful and fast PPSX editor for your Java application without third-party software like Microsoft Office or Open Office."
 bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
 bg_overlay: false
 button:
@@ -58,14 +58,14 @@ about:
     enable: true
     title: "About GroupDocs.Editor for Java API"
     content: |
-        [GroupDocs.Editor for Java](https://products.groupdocs.com/editor/java) is a right choise to edit Microsoft Word, Excel, PowerPoint, Open Office documents and presentations. GroupDocs.Editor is a standalone API that is suitable for server side and backend systems where high performance is required. It does not depend on any software like Microsoft or Open Office.
+        [GroupDocs.Editor for Java](/editor/java/) is a right choice to edit Microsoft Word, Excel, PowerPoint, Open Office documents and presentations. GroupDocs.Editor is a standalone API that is suitable for server side and back-end systems where high performance is required. It does not depend on any software like Microsoft or Open Office.
 
 ############################# Steps ############################
 steps:
     enable: true
     title_left: "Steps to Edit PPSX in Java"
     content_left: |
-        [GroupDocs.Editor](https://products.groupdocs.com/editor/java) provides an easy and starightforward way for developers to edit the PPSX files using a few lines of code.
+        [GroupDocs.Editor](/editor/java/) provides an easy and straightforward way for developers to edit the PPSX files using a few lines of code.
 
         *   Create an instance of Editor class and load the PPSX file with full path
         *   Create & set EditOptions for the PPSX file type
