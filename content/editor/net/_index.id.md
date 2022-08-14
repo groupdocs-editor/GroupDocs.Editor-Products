@@ -11,7 +11,7 @@ platform_tag: "net"
 head_title: "C# .NET Document Editor API | Edit Word Excel Web XML menggunakan HTML"
 head_description: "C# .NET document editor API untuk memuat format file Microsoft Word, Excel, XML, web dan teks ke dalam HTML, memanipulasi &amp; konversi kembali ke format asli."
 
-title: "..NET API untuk Mengedit Dokumen Menggunakan HTML"
+title: ".NET API untuk Mengedit Dokumen Menggunakan HTML"
 description: "Kembangkan Aplikasi .NET, untuk Mengintegrasikan dengan Editor HTML, Ambil Dokumen yang Didukung, Edit dan Konversikan ke Format Asli."
 button:
     enable: true
