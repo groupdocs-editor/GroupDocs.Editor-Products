@@ -1,0 +1,41 @@
+{
+    "head": {
+        "title": "Редактор DOCX — редагуйте DOCX на C# .NET",
+        "description": "Як редагувати DOCX в C# .NET, використовуючи декілька рядків коду? Використовуйте API-інтерфейси обробки документів GroupDocs для редагування, оновлення та збереження файлів у більш ніж 30 форматах."
+    },
+	"header": {
+		"title": "Редагувати DOCX на C#",
+		"description": "Ефективне та надійне редагування DOCX із використанням API GroupDocs.Editor for .NET, що виконується на серверній стороні, без використання стороннього ПЗ типу Microsoft Office чи Open Office.",
+		"label": "Скачати безоплатну пробну версію"
+	},
+	"submenu": {
+		"content_middle": {
+			"button_text_ApiReference": "Довідник по API",
+			"button_text_CodeExamples": "Приклади коду",
+			"button_text_LiveDemos": "Живі демонстрації",
+			"button_text_Pricing": "Ціни"
+		}
+	},
+	"about": {
+		"title": "Про {{ProductFullName}} API",
+		"h1": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) API — це правильний вибір для редагування документів та презентацій Microsoft Word, Excel, PowerPoint, Open Office. GroupDocs.Editor — це автономний API, котрий підходить для серверних та внутрішніх систем, де потрібна висока продуктивність. Він не залежить від якого-небудь програмного забезпечення, такого як Microsoft Office чи Open Office."
+	},
+	"steps": {
+		"title_left" : "Кроки по редагуванню {{EXT}} на {{ProgLang}}",
+		"content_left": {
+			"description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) надає розробникам простий і зрозумілий спосіб редагування файлів {{EXT}} за допомогою кількох рядків коду.",
+			"step_1": "Створіть екземпляр класу [`GroupDocs.Editor.Editor`](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor) і завантажте файл {{EXT}}, вказавши повний шлях",
+			"step_2": "Створіть та налаштуйте екземпляр класу [`WordProcessingEditOptions`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions) для формату файлу {{EXT}}",
+			"step_3": "Викличте метод [`GroupDocs.Editor.Editor.Edit()`](https://apireference.groupdocs.com/editor/net/groupdocs.editor.editor/edit/methods/1) і отримайте документ {{EXT}} у форматі HTML, котрий легко редагується любим WYSIWYG-редактором.",
+			"step_4": "Викличте метод [`GroupDocs.Editor.Editor.Save()`](https://apireference.groupdocs.com/editor/net/groupdocs.editor/editor/methods/save) і збережіть відредагований файл {{EXT}}"
+		},
+		"title_right": "Системні Вимоги",
+		"content_right": {
+			"description": "Базове редагування документу за допомогою {{ProductFullName}} API можна виконати, здійснивши кілька простих кроків. Наші API підтримуються на всіх основних платформах та операційних системах. Перед виконанням наведеного нижче коду переконайтесь, що на вашій системі попередньо встановлені наступні компоненти.",
+			"step_1": "Операційні системи: Microsoft Windows, Linux, MacOS",
+			"step_2": "Середовища розробки: {{DevEnv}}",
+			"step_3": "Фреймворки",
+			"step_4": "Отримайте останню версію {{ProductFullName}}, завантажену із [{{RepoName}}]({{RepoUrl}})"
+		}
+	}
+}

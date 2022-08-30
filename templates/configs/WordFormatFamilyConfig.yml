@@ -1,0 +1,9 @@
+inherits: products.yml
+
+dimensions: 
+- alias: ext
+  values: ["doc", "docm", "docx", "dot", "dotm", "dotx", "rtf", "odt", "ott"]
+
+dictionaries: ["..\\data\\WordFormatFamilyDict_{lang}.json"]
+
+outputPath: "{product}\\WordFormatFamily\\{ext}.{lang}.md"

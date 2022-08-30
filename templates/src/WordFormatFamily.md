@@ -1,3 +1,15 @@
+<% configRef "..\\configs\\WordFormatFamilyConfig.yml" %>
+<% set "EXT" (upper (get "ext")) %>
+<% set "ProductName" (dict "products.{product}.name") %>
+<% set "ProductFullName" (dict "products.{product}.fullName") %>
+<% set "ProductCode" (dict "products.{product}.code") %>
+<% set "ProductUrl" (dict "products.{product}.url") %>
+<% set "ProgLang" (dict "products.{product}.progLang") %>
+<% set "DevEnv" (dict "products.{product}.devEnv") %>
+<% set "Runtime" (dict "products.{product}.runtime") %>
+<% set "RepoName" (dict "products.{product}.repoName") %>
+<% set "RepoUrl" (dict "products.{product}.repoUrl") %>
+<% if (eq (get "lang") "en") %><% set "slash_lang" ("") %><% else %><% set "slash_lang" (concat "/" (get "lang")) %><% end %>
 ---
 ############################# Static ############################
 layout: "auto-gen"
@@ -5,101 +17,85 @@ date: <% date "utcnow" %>
 draft: false
 
 ############################# Head ############################
-head_title: "DOCX Editor – Edit DOCX in C# .NET"
-head_description: "How to edit DOCX in C# .NET using a few lines of code? Use GroupDocs documents processing APIs to edit, update and save 30+ file formats."
+head_title: "<% dict "head.title" %>"
+head_description: "<% dict "head.description" %>"
 
 ############################# Header ############################
-title: "Edit DOCX in C#"
-description: "Effective and robust DOCX editing using server side GroupDocs.Editor for .NET APIs, without the use of any software like Microsoft or Open Office."
+title: "<% "{header.title}" %>"
+description: "<% "{header.description}" %>"
 bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
 bg_overlay: false
 button:
     enable: true
     icon: "fas fa-arrow-down"
-    label: "Download Free Trial"
-    link: "https://downloads.groupdocs.com/editor/net"
+    label: "<% dict "header.label" %>"
+    link: "https://downloads.groupdocs.com/editor/<% get "ProductCode" %>"
 
 ############################# SubMenu ############################
 submenu:
     enable: true
 
     left:
-        img_alt: "GroupDocs.Editor for .NET"
-        image: "https://cms.admin.containerize.com/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-editor-net.png"
+        img_alt: "GroupDocs.Editor for <% get "ProductName" %>"
+        image: "https://cms.admin.containerize.com/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-editor-<% get "ProductCode" %>.png"
         product: "GroupDocs.Editor"
-        platform: ".NET"
+        platform: "<% get "ProductName" %>"
 
     middle:
         button:
 
             # button loop
-            - link: "https://apireference.groupdocs.com/editor/net"
-              text: "API Reference"
+            - link: "https://apireference.groupdocs.com/editor/<% get "ProductCode" %>"
+              text: "<% "{submenu.content_middle.button_text_ApiReference}" %>"
 
             # button loop
             - link: "https://github.com/groupdocs-editor"
-              text: "Code Examples"
+              text: "<% "{submenu.content_middle.button_text_CodeExamples}" %>"
 
             # button loop
             - link: "https://products.groupdocs.app/editor/family"
-              text: "Live Demos"
+              text: "<% "{submenu.content_middle.button_text_LiveDemos}" %>"
 
             # button loop
-            - link: "https://purchase.groupdocs.com/pricing/editor/net"
-              text: "Pricing"
+            - link: "https://purchase.groupdocs.com/pricing/editor/<% get "ProductCode" %>"
+              text: "<% "{submenu.content_middle.button_text_Pricing}" %>"
 
     right:
         link_download: "https://downloads.groupdocs.com/editor"
-        link_learn: "https://docs.groupdocs.com/editor/net"
+        link_learn: "https://docs.groupdocs.com/editor/<% get "ProductCode" %>"
         link_buy: "https://purchase.groupdocs.com"
 
 ############################# About ############################
 about:
     enable: true
-    title: "About GroupDocs.Editor for .NET API"
+    title: "<% "{about.title}" %>"
     content: |
-        [GroupDocs.Editor](/editor/net/) API is a right choice to edit Microsoft Word, Excel, PowerPoint, Open Office documents and presentations. GroupDocs.Editor is a standalone API that is suitable for server side and back-end systems where high performance is required. It does not depend on any software like Microsoft or Open Office.
+        <% "{about.h1}" %>
 
 ############################# Steps ############################
 steps:
     enable: true
-    title_left: "Steps to Edit DOCX in C#"
+    title_left: "<% "{steps.title_left}" %>"
     content_left: |
-        [GroupDocs.Editor](/editor/net/) provides an easy and straightforward way for developers to edit the DOCX files using a few lines of code.
-
-        *   Create an instance of Editor class and load the DOCX file with full path
-        *   Create & set EditOptions for the DOCX file type
-        *   Call Editor.Edit method and obtain DOCX document in HTML format that is easily editable with any WYSIWYG-editor.
-        *   Call Editor.Save method and save edited DOCX file
+        <% "{steps.content_left.description}" %>
+		
+		* <% "{steps.content_left.step_1}" %>
+        * <% "{steps.content_left.step_2}" %>
+        * <% "{steps.content_left.step_3}" %>
+		* <% "{steps.content_left.step_4}" %>
         
-    title_right: "System Requirements"
+    title_right: "<% "{steps.title_right}" %>"
     content_right: |
-        A basic document editing with GroupDocs.Editor for .NET APIs can be done by implementing a few easy steps. Our APIs are supported on all major platforms and operating systems. Before executing the code below, please make sure that you have the following prerequisites installed on your system.
+        <% "{steps.content_right.description}" %>
 
-        *   Operating Systems: Microsoft Windows, Linux, MacOS
-        *   Development Environments: Microsoft Visual Studio, Xamarin, MonoDevelop
-        *   Frameworks: .NET Framework, .NET Standard, .NET Core, Mono
-        *   Get the latest version of GroupDocs.Editor for .NET downloaded from [NuGet](https://www.nuget.org/packages/GroupDocs.Editor)
+        * <% "{steps.content_right.step_1}" %>
+        * <% "{steps.content_right.step_2}" %>
+        * <% "{steps.content_right.step_3}" %>: <% get "Runtime" %>
+        * <% "{steps.content_right.step_4}" %>
         
     code: |
-        ```cs
-        // Load the DOCX file into Editor
-        Editor editor = new Editor("source.docx");
-        
-        // Open input DOCX document for edit — obtain an intermediate document, that can be edited
-        EditableDocument beforeEdit = editor.Edit();
-
-        // Grab DOCX document content and associated resources from editable document
-        string content = beforeEdit.GetContent();
-
-        // Update DOCX document content in some way
-        string updatedContent = content.Replace("Subtitle", "Edited subtitle");
-
-        // Create new EditableDocument instance from edited content and resources
-        EditableDocument afterEdit = EditableDocument.FromMarkup(updatedContent, null);
-
-        // Save edited DOCX document
-        editor.Save(afterEdit, "edited.docx");
+        ```<% dict "products.{product}.syntax" %>
+        <% include "_example_{product}.md" %>
         ```
         
 ############################# Demos ############################

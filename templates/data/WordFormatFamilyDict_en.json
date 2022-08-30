@@ -1,0 +1,41 @@
+{
+    "head": {
+        "title": "DOCX Editor — Edit DOCX in C# .NET",
+        "description": "How to edit DOCX in C# .NET using a few lines of code? Use GroupDocs documents processing APIs to edit, update and save 30+ file formats."
+    },
+	"header": {
+		"title": "Edit DOCX in C#",
+		"description": "Effective and robust DOCX editing using server side GroupDocs.Editor for .NET APIs, without the use of any software like Microsoft or Open Office.",
+		"label": "Download Free Trial"
+	},
+	"submenu": {
+		"content_middle": {
+			"button_text_ApiReference": "API Reference",
+			"button_text_CodeExamples": "Code Examples",
+			"button_text_LiveDemos": "Live Demos",
+			"button_text_Pricing": "Pricing"
+		}
+	},
+	"about": {
+		"title": "About {{ProductFullName}} API",
+		"h1": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) API is a right choice to edit Microsoft Word, Excel, PowerPoint, Open Office documents and presentations. GroupDocs.Editor is a standalone API that is suitable for server side and back-end systems where high performance is required. It does not depend on any software like Microsoft or Open Office."
+	},
+	"steps": {
+		"title_left" : "Steps to Edit {{EXT}} in {{ProgLang}}",
+		"content_left": {
+			"description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) provides an easy and straightforward way for developers to edit the {{EXT}} files using a few lines of code.",
+			"step_1": "Create an instance of [`GroupDocs.Editor.Editor`](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor) class and load the {{EXT}} file with full path",
+			"step_2": "Create & set the [`WordProcessingEditOptions`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions) class instance for the {{EXT}} file format",
+			"step_3": "Call [`GroupDocs.Editor.Editor.Edit()`](https://apireference.groupdocs.com/editor/net/groupdocs.editor.editor/edit/methods/1) method and obtain {{EXT}} document in HTML format that is easily editable with any WYSIWYG-editor.",
+			"step_4": "Call [`GroupDocs.Editor.Editor.Save()`](https://apireference.groupdocs.com/editor/net/groupdocs.editor/editor/methods/save) method and save edited {{EXT}} file"
+		},
+		"title_right": "System Requirements",
+		"content_right": {
+			"description": "A basic document editing with {{ProductFullName}} APIs can be done by implementing a few easy steps. Our APIs are supported on all major platforms and operating systems. Before executing the code below, please make sure that you have the following prerequisites installed on your system.",
+			"step_1": "Operating Systems: Microsoft Windows, Linux, MacOS",
+			"step_2": "Development Environments: {{DevEnv}}",
+			"step_3": "Frameworks",
+			"step_4": "Get the latest version of {{ProductFullName}} downloaded from [{{RepoName}}]({{RepoUrl}})"
+		}
+	}
+}

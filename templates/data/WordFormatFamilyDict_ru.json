@@ -1,0 +1,41 @@
+{
+    "head": {
+        "title": "Редактор DOCX — редактируйте DOCX на C# .NET",
+        "description": "Как редактировать DOCX в C# .NET, используя несколько строк кода? Используйте API-интерфейсы обработки документов GroupDocs для редактирования, обновления и сохранения файлов более чем 30 форматов."
+    },
+	"header": {
+		"title": "Редактировать DOCX в C#",
+		"description": "Эффективное и надёжное редактирование DOCX используя API GroupDocs.Editor for .NET, выполняющиеся на серверной стороне, без использования стороннего ПО типа Microsoft Office или Open Office.",
+		"label": "Скачать бесплатную пробную версию"
+	},
+	"submenu": {
+		"content_middle": {
+			"button_text_ApiReference": "Справочник по API",
+			"button_text_CodeExamples": "Примеры кода",
+			"button_text_LiveDemos": "Живые демонстрации",
+			"button_text_Pricing": "Цены"
+		}
+	},
+	"about": {
+		"title": "О {{ProductFullName}} API",
+		"h1": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) API — правильный выбор для редактирования документов и презентаций Microsoft Word, Excel, PowerPoint, Open Office. GroupDocs.Editor — это автономный API, который подходит для серверных и внутренних систем, где требуется высокая производительность. Он не зависит от какого-либо программного обеспечения, такого как Microsoft или Open Office."
+	},
+	"steps": {
+		"title_left" : "Шаги по редактированию {{EXT}} в {{ProgLang}}",
+		"content_left": {
+			"description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) предоставляет разработчикам простой и понятный способ редактирования файлов {{EXT}} с помощью нескольких строк кода.",
+			"step_1": "Создайте экземпляр класса [`GroupDocs.Editor.Editor`](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor) и загрузите файл {{EXT}} с полным путем",
+			"step_2": "Создайте и установите экземпляр класса [`WordProcessingEditOptions`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions) для формата файла {{EXT}}",
+			"step_3": "Вызовите метод [`GroupDocs.Editor.Editor.Edit()`](https://apireference.groupdocs.com/editor/net/groupdocs.editor.editor/edit/methods/1) и получите документ {{EXT}} в формате HTML, который легко редактируется любым WYSIWYG-редактором.",
+			"step_4": "Вызовите метод [`GroupDocs.Editor.Editor.Save()`](https://apireference.groupdocs.com/editor/net/groupdocs.editor/editor/methods/save) и сохраните отредактированный файл {{EXT}}"
+		},
+		"title_right": "Системные Требования",
+		"content_right": {
+			"description": "Базовое редактирование документа с помощью {{ProductFullName}} API можно выполнить, выполнив несколько простых шагов. Наши API поддерживаются на всех основных платформах и операционных системах. Перед выполнением приведенного ниже кода убедитесь, что в вашей системе предварительно установлены следующие компоненты.",
+			"step_1": "Операционные системы: Microsoft Windows, Linux, MacOS",
+			"step_2": "Среды разработки: {{DevEnv}}",
+			"step_3": "Фреймворки",
+			"step_4": "Получите последнюю версию {{ProductFullName}}, загруженную с [{{RepoName}}]({{RepoUrl}})"
+		}
+	}
+}

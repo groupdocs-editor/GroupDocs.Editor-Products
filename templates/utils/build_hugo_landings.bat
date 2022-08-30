@@ -1,1 +1,0 @@
-HugoMarkupGenerator\net6.0\MarkupGenerator.Shell.exe -src  -out
