@@ -1,11 +1,11 @@
 {
     "head": {
-        "title": "DOCX Editor — Edit DOCX in C# .NET",
-        "description": "How to edit DOCX in C# .NET using a few lines of code? Use GroupDocs documents processing APIs to edit, update and save 30+ file formats."
+        "title": "{{EXT}} Editor — Edit {{EXT}} in C# .NET",
+        "description": "How to edit {{EXT}} in C# .NET using a few lines of code? Use GroupDocs documents processing APIs to edit, update and save 30+ file formats."
     },
 	"header": {
-		"title": "Edit DOCX in C#",
-		"description": "Effective and robust DOCX editing using server side GroupDocs.Editor for .NET APIs, without the use of any software like Microsoft or Open Office.",
+		"title": "Edit {{EXT}} in C#",
+		"description": "Effective and robust {{EXT}} editing using server side GroupDocs.Editor for .NET APIs, without the use of any software like Microsoft or Open Office.",
 		"label": "Download Free Trial"
 	},
 	"submenu": {
@@ -23,11 +23,7 @@
 	"steps": {
 		"title_left" : "Steps to Edit {{EXT}} in {{ProgLang}}",
 		"content_left": {
-			"description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) provides an easy and straightforward way for developers to edit the {{EXT}} files using a few lines of code.",
-			"step_1": "Create an instance of [`GroupDocs.Editor.Editor`](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor) class and load the {{EXT}} file with full path",
-			"step_2": "Create & set the [`WordProcessingEditOptions`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions) class instance for the {{EXT}} file format",
-			"step_3": "Call [`GroupDocs.Editor.Editor.Edit()`](https://apireference.groupdocs.com/editor/net/groupdocs.editor.editor/edit/methods/1) method and obtain {{EXT}} document in HTML format that is easily editable with any WYSIWYG-editor.",
-			"step_4": "Call [`GroupDocs.Editor.Editor.Save()`](https://apireference.groupdocs.com/editor/net/groupdocs.editor/editor/methods/save) method and save edited {{EXT}} file"
+			"description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) provides an easy and straightforward way for developers to edit the {{EXT}} files using a few lines of code."			
 		},
 		"title_right": "System Requirements",
 		"content_right": {
@@ -37,5 +33,29 @@
 			"step_3": "Frameworks",
 			"step_4": "Get the latest version of {{ProductFullName}} downloaded from [{{RepoName}}]({{RepoUrl}})"
 		}
+	},
+	"demos": {
+		"title": "{{EXT}} Editor Live Demos",
+		"content": "Edit {{EXT}} right now by visiting [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) website.  
+        The live demo has the following benefits"
+	},	
+	"more_formats": {
+		"title": "Other Supported Editors",
+		"content": "You can also edit other file formats. Please see the complete list below."
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

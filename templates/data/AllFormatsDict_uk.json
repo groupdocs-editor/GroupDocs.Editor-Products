@@ -23,11 +23,7 @@
 	"steps": {
 		"title_left" : "Кроки по редагуванню {{EXT}} на {{ProgLang}}",
 		"content_left": {
-			"description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) надає розробникам простий і зрозумілий спосіб редагування файлів {{EXT}} за допомогою кількох рядків коду.",
-			"step_1": "Створіть екземпляр класу [`GroupDocs.Editor.Editor`](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor) і завантажте файл {{EXT}}, вказавши повний шлях",
-			"step_2": "Створіть та налаштуйте екземпляр класу [`WordProcessingEditOptions`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions) для формату файлу {{EXT}}",
-			"step_3": "Викличте метод [`GroupDocs.Editor.Editor.Edit()`](https://apireference.groupdocs.com/editor/net/groupdocs.editor.editor/edit/methods/1) і отримайте документ {{EXT}} у форматі HTML, котрий легко редагується любим WYSIWYG-редактором.",
-			"step_4": "Викличте метод [`GroupDocs.Editor.Editor.Save()`](https://apireference.groupdocs.com/editor/net/groupdocs.editor/editor/methods/save) і збережіть відредагований файл {{EXT}}"
+			"description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) надає розробникам простий і зрозумілий спосіб редагування файлів {{EXT}} за допомогою кількох рядків коду."			
 		},
 		"title_right": "Системні Вимоги",
 		"content_right": {
@@ -37,5 +33,17 @@
 			"step_3": "Фреймворки",
 			"step_4": "Отримайте останню версію {{ProductFullName}}, завантажену із [{{RepoName}}]({{RepoUrl}})"
 		}
+	},
+	"demos": {
+		"title": "Демоверсії редактора {{EXT}}",
+		"content": "Відредагуйте {{EXT}} прямо зараз, відвідав [живі демонстрації](https://products.groupdocs.app/editor/family). Жива демонстрація має наступні переваги"
+	},	
+	"more_formats": {
+		"title": "Інші підтримувані редактори",
+		"content": "Ви також можете редагувати файли інших форматів. Будь ласка, ознайомтеся із повним списком нижче."
 	}
 }
+
+
+
+

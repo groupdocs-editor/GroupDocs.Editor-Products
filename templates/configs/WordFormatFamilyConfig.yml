@@ -4,6 +4,6 @@ dimensions:
 - alias: ext
   values: ["doc", "docm", "docx", "dot", "dotm", "dotx", "rtf", "odt", "ott"]
 
-dictionaries: ["..\\data\\WordFormatFamilyDict_{lang}.json"]
+dictionaries: ["..\\data\\AllFormatsDict_{lang}.json", "..\\data\\WordProcessingFamilyDict_{lang}.json"]
 
-outputPath: "{product}\\WordFormatFamily\\{ext}.{lang}.md"
+outputPath: "{product}\\{ext}.{lang}.md"

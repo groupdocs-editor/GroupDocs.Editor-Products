@@ -1,11 +1,11 @@
 {
     "head": {
-        "title": "Редактор DOCX — редактируйте DOCX на C# .NET",
-        "description": "Как редактировать DOCX в C# .NET, используя несколько строк кода? Используйте API-интерфейсы обработки документов GroupDocs для редактирования, обновления и сохранения файлов более чем 30 форматов."
+        "title": "Редактор {{EXT}} — редактируйте {{EXT}} на C# .NET",
+        "description": "Как редактировать {{EXT}} в C# .NET, используя несколько строк кода? Используйте API-интерфейсы обработки документов GroupDocs для редактирования, обновления и сохранения файлов более чем 30 форматов."
     },
 	"header": {
-		"title": "Редактировать DOCX в C#",
-		"description": "Эффективное и надёжное редактирование DOCX используя API GroupDocs.Editor for .NET, выполняющиеся на серверной стороне, без использования стороннего ПО типа Microsoft Office или Open Office.",
+		"title": "Редактировать {{EXT}} в C#",
+		"description": "Эффективное и надёжное редактирование {{EXT}} используя API GroupDocs.Editor for .NET, выполняющиеся на серверной стороне, без использования стороннего ПО типа Microsoft Office или Open Office.",
 		"label": "Скачать бесплатную пробную версию"
 	},
 	"submenu": {
@@ -23,11 +23,7 @@
 	"steps": {
 		"title_left" : "Шаги по редактированию {{EXT}} в {{ProgLang}}",
 		"content_left": {
-			"description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) предоставляет разработчикам простой и понятный способ редактирования файлов {{EXT}} с помощью нескольких строк кода.",
-			"step_1": "Создайте экземпляр класса [`GroupDocs.Editor.Editor`](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor) и загрузите файл {{EXT}} с полным путем",
-			"step_2": "Создайте и установите экземпляр класса [`WordProcessingEditOptions`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions) для формата файла {{EXT}}",
-			"step_3": "Вызовите метод [`GroupDocs.Editor.Editor.Edit()`](https://apireference.groupdocs.com/editor/net/groupdocs.editor.editor/edit/methods/1) и получите документ {{EXT}} в формате HTML, который легко редактируется любым WYSIWYG-редактором.",
-			"step_4": "Вызовите метод [`GroupDocs.Editor.Editor.Save()`](https://apireference.groupdocs.com/editor/net/groupdocs.editor/editor/methods/save) и сохраните отредактированный файл {{EXT}}"
+			"description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) предоставляет разработчикам простой и понятный способ редактирования файлов {{EXT}} с помощью нескольких строк кода."			
 		},
 		"title_right": "Системные Требования",
 		"content_right": {
@@ -37,5 +33,24 @@
 			"step_3": "Фреймворки",
 			"step_4": "Получите последнюю версию {{ProductFullName}}, загруженную с [{{RepoName}}]({{RepoUrl}})"
 		}
+	},
+	"demos": {
+		"title": "Демоверсии редактора {{EXT}}",
+		"content": "Отредактируйте {{EXT}} прямо сейчас, посетив [живые демонстрации](https://products.groupdocs.app/editor/family). Живая демонстрация имеет следующие преимущества"
+	},	
+	"more_formats": {
+		"title": "Другие поддерживаемые редакторы",
+		"content": "Вы также можете редактировать файлы других форматов. Пожалуйста, ознакомьтесь с полным списком ниже."
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
