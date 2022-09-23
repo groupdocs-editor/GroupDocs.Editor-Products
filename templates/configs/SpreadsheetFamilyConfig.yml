@@ -1,0 +1,9 @@
+inherits: Common.yml
+
+dimensions: 
+- alias: ext
+  values: ["xls", "xlsx", "xlsm", "xlt", "xltx", "xltx", "xlsb", "xlam", "ods", "fods", "sxc", "csv"]
+
+dictionaries: ["..\\data\\SpreadsheetFamilyDict_{lang}.json"]
+
+outputPath: "{product}\\{ext}.{lang}.md"

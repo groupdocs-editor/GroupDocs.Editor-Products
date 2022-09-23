@@ -1,9 +1,9 @@
-inherits: products.yml
+inherits: Common.yml
 
 dimensions: 
 - alias: ext
   values: ["doc", "docm", "docx", "dot", "dotm", "dotx", "rtf", "odt", "ott"]
 
-dictionaries: ["..\\data\\AllFormatsDict_{lang}.json", "..\\data\\WordProcessingFamilyDict_{lang}.json"]
+dictionaries: ["..\\data\\WordProcessingFamilyDict_{lang}.json"]
 
 outputPath: "{product}\\{ext}.{lang}.md"

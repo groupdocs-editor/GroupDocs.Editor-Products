@@ -1,11 +1,11 @@
 {
     "head": {
-        "title": "{{EXT}} Editor — Edit {{EXT}} in C# .NET",
-        "description": "How to edit {{EXT}} in C# .NET using a few lines of code? Use GroupDocs documents processing APIs to edit, update and save 30+ file formats."
+        "title": "{{EXT}} Editor — Edit {{EXT}} in {{PlatformName}}",
+        "description": "How to edit {{EXT}} in {{PlatformName}} using a few lines of code? Use GroupDocs documents processing APIs to edit, update and save 30+ file formats."
     },
 	"header": {
-		"title": "Edit {{EXT}} in C#",
-		"description": "Effective and robust {{EXT}} editing using server side GroupDocs.Editor for .NET APIs, without the use of any software like Microsoft or Open Office.",
+		"title": "Edit {{EXT}} in {{PlatformName}}",
+		"description": "Effective and robust {{EXT}} editing using server side GroupDocs.Editor for {{PlatformName}} APIs, without the use of any software like Microsoft or Open Office.",
 		"label": "Download Free Trial"
 	},
 	"submenu": {
