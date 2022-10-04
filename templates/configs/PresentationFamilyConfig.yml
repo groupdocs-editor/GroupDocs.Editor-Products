@@ -1,0 +1,9 @@
+inherits: Common.yml
+
+dimensions: 
+- alias: ext
+  values: ["ppt", "pps", "pot", "pptx", "pptm", "ppsx", "ppsm", "potx", "potm", "odp", "otp", "fodp"]
+
+dictionaries: ["..\\data\\PresentationFamilyDict_{lang}.json"]
+
+outputPath: "{product}\\{ext}.{lang}.md"

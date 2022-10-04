@@ -1,0 +1,13 @@
+inherits: Common.yml
+
+dimensions: 
+- alias: ext
+  values: [pdf, xps]
+
+generationRules:
+  exclude:
+  - product[java] + ext[pdf,xps]
+
+dictionaries: ["..\\data\\FixedLayoutFamilyDict_{lang}.json"]
+
+outputPath: "{product}\\{ext}.{lang}.md"

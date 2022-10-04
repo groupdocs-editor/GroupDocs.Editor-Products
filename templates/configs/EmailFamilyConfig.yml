@@ -1,0 +1,9 @@
+inherits: Common.yml
+
+dimensions: 
+- alias: ext
+  values: ["eml", "emlx", "msg", "mbox", "tnef", "pst", "oft", "ost"]
+
+dictionaries: ["..\\data\\EmailFamilyDict_{lang}.json"]
+
+outputPath: "{product}\\{ext}.{lang}.md"

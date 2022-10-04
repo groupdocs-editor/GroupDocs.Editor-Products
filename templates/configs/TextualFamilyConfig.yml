@@ -1,0 +1,9 @@
+inherits: Common.yml
+
+dimensions: 
+- alias: ext
+  values: ["txt", "xml", "htm", "html"]
+
+dictionaries: ["..\\data\\TextualFamilyDict_{lang}.json"]
+
+outputPath: "{product}\\{ext}.{lang}.md"
