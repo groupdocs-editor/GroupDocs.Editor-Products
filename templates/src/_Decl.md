@@ -11,3 +11,4 @@
 <% set "RepoName" (dict "products.{product}.repoName") %>
 <% set "RepoUrl" (dict "products.{product}.repoUrl") %>
 <% if (eq (get "lang") "en") %><% set "slash_lang" ("") %><% else %><% set "slash_lang" (concat "/" (get "lang")) %><% end %>
+<% set "OtherFormats" (dict "OtherFormats.{ext}") %>

@@ -1,8 +1,9 @@
 ---
 ############################# Static ############################
-layout: "auto-gen"
+layout: "auto-gen-editor"
 date: <% date "utcnow" %>
 draft: false
+otherformats: <% get "OtherFormats" %>
 
 ############################# Head ############################
 head_title: "<% dict "head.title" %>"
