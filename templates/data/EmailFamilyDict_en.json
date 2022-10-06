@@ -1,0 +1,8 @@
+{
+	"family_steps": {
+		"step_1": "Create an instance of `Editor` class with mandatory file path or byte stream and load the {{EXT}} file",
+		"step_2": "Create & set the `EmailEditOptions` class instance for the {{EXT}} file format",
+		"step_3": "Call `Editor.Edit()` method and obtain {{EXT}} document in HTML format that is easily editable with any WYSIWYG-editor.",
+		"step_4": "Call `Editor.Save()` method and save edited {{EXT}} file using `EmailSaveOptions` class"
+	}
+}

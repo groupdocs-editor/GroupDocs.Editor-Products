@@ -1,0 +1,61 @@
+{
+    "head": {
+        "title": "{{EXT}} Editor — Edit {{EXT}} in {{PlatformName}}",
+        "description": "How to edit {{EXT}} in {{PlatformName}} using a few lines of code? Use GroupDocs documents processing APIs to edit, update and save 30+ file formats."
+    },
+	"header": {
+		"title": "Edit {{EXT}} in {{PlatformName}}",
+		"description": "Effective and robust {{EXT}} editing using server side GroupDocs.Editor for {{PlatformName}} APIs, without the use of any software like Microsoft or Open Office.",
+		"label": "Download Free Trial"
+	},
+	"submenu": {
+		"content_middle": {
+			"button_text_ApiReference": "API Reference",
+			"button_text_CodeExamples": "Code Examples",
+			"button_text_LiveDemos": "Live Demos",
+			"button_text_Pricing": "Pricing"
+		}
+	},
+	"about": {
+		"title": "About {{ProductFullName}} API",
+		"h1": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) API is a right choice to edit Microsoft Word, Excel, PowerPoint, Open Office documents and presentations. GroupDocs.Editor is a standalone API that is suitable for server side and back-end systems where high performance is required. It does not depend on any software like Microsoft or Open Office."
+	},
+	"steps": {
+		"title_left" : "Steps to Edit {{EXT}} in {{ProgLang}}",
+		"content_left": {
+			"description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) provides an easy and straightforward way for developers to edit the {{EXT}} files using a few lines of code."			
+		},
+		"title_right": "System Requirements",
+		"content_right": {
+			"description": "A basic document editing with {{ProductFullName}} APIs can be done by implementing a few easy steps. Our APIs are supported on all major platforms and operating systems. Before executing the code below, please make sure that you have the following prerequisites installed on your system.",
+			"step_1": "Operating Systems: Microsoft Windows, Linux, MacOS",
+			"step_2": "Development Environments: {{DevEnv}}",
+			"step_3": "Frameworks",
+			"step_4": "Get the latest version of {{ProductFullName}} downloaded from [{{RepoName}}]({{RepoUrl}})"
+		}
+	},
+	"demos": {
+		"title": "{{EXT}} Editor Live Demos",
+		"content": "Edit {{EXT}} right now by visiting [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) website.  
+        The live demo has the following benefits"
+	},	
+	"more_formats": {
+		"title": "Other Supported Editors",
+		"content": "You can also edit other file formats. Please see the complete list below."
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

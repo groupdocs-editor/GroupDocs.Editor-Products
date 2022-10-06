@@ -1,0 +1,32 @@
+{
+    "products": {        
+        "net": {
+            "name": ".NET",
+            "fullName": "GroupDocs.Editor for .NET",
+            "code": "net",
+            "progLang": "C#",
+			"platformName": "C# .NET",
+            "srcFileExt": ".cs",
+            "syntax": "csharp",
+            "devEnv": "Microsoft Visual Studio, Xamarin, MonoDevelop",
+            "runtime": ".NET Framework, .NET Standard, .NET Core, Mono",
+            "repoName": "NuGet",
+            "repoUrl": "https://www.nuget.org/packages/groupdocs.editor",
+            "url": "https://products.groupdocs.com/editor/net/"
+        },
+        "java": {
+            "name": "Java",
+            "fullName": "GroupDocs.Editor for Java",
+            "code": "java",
+            "progLang": "Java",
+			"platformName": "Java",
+            "srcFileExt": ".java",
+            "syntax": "java",
+            "devEnv": "NetBeans, IntelliJ IDEA, Eclipse",
+            "runtime": "Java 7 (1.7) and above",
+            "repoName": "Maven",
+            "repoUrl": "https://repository.groupdocs.com/editor/",
+            "url": "https://products.groupdocs.com/editor/java/"
+        }
+    }
+}
