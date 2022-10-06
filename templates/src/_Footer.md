@@ -6,10 +6,6 @@ demos:
     content: |
         <% "{demos.content}" %>
         
-############################# About Formats ############################
-about_formats:
-    enable: true    
-
 ############################# More Formats ############################
 more_formats:
     enable: true
