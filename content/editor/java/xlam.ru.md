@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-06T14:11:46
+date: 2022-10-06T14:52:24
 draft: false
 otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml csv pdf xps
 
@@ -89,7 +89,7 @@ steps:
 
         // Create and adjust the edit options
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
-		editOptions.setWorksheetIndex(1);//select a tab (worksheet) to edit
+        editOptions.setWorksheetIndex(1);//select a tab (worksheet) to edit
 
         // Open input XLAM document for edit — obtain an intermediate document, that can be edited
         EditableDocument beforeEdit = editor.edit(editOptions);

@@ -3,7 +3,7 @@
 
         // Create and adjust the edit options
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
-		editOptions.setWorksheetIndex(1);//select a tab (worksheet) to edit
+        editOptions.setWorksheetIndex(1);//select a tab (worksheet) to edit
 
         // Open input <% get "EXT" %> document for edit — obtain an intermediate document, that can be edited
         EditableDocument beforeEdit = editor.edit(editOptions);

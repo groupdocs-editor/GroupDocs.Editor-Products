@@ -3,7 +3,7 @@
 
         // Create and adjust the edit options
         PresentationEditOptions editOptions = new PresentationEditOptions();
-		editOptions.setSlideNumber(1);//select a slide to edit
+        editOptions.setSlideNumber(1);//select a slide to edit
 
         // Open input <% get "EXT" %> document for edit — obtain an intermediate document, that can be edited
         EditableDocument beforeEdit = editor.edit(editOptions);
