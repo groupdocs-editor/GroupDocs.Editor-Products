@@ -1,9 +1,9 @@
-HugoMarkupGenerator\net6.0\MarkupGenerator.Shell.exe -s "..\..\templates\src" -o "..\..\content\editor"
+HugoMarkupGenerator\net6.0\MarkupGenerator.Shell.exe -s "..\..\templates\src" -o "..\..\templates\output"
 
-ren "..\..\content\editor\net\*.en*" "*."
-copy "..\..\content\editor\net\*.en" "..\..\content\editor\net\*.md"
-del  "..\..\content\editor\net\*.en"
+ren "..\..\templates\output\net\*.en*" "*."
+copy "..\..\templates\output\net\*.en" "..\..\templates\output\net\*.md"
+del  "..\..\templates\output\net\*.en"
 
-ren "..\..\content\editor\java\*.en*" "*."
-copy "..\..\content\editor\java\*.en" "..\..\content\editor\java\*.md"
-del  "..\..\content\editor\java\*.en"
+ren "..\..\templates\output\java\*.en*" "*."
+copy "..\..\templates\output\java\*.en" "..\..\templates\output\java\*.md"
+del  "..\..\templates\output\java\*.en"
