@@ -1,9 +1,9 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-06T17:33:59
+date: 2022-10-09T00:06:20
 draft: false
-otherformats: docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml csv pdf xps
+otherformats: docx docm dotx odt xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml csv pdf xps msg
 
 ############################# Head ############################
 head_title: "DOC Editor — Edit DOC in Java"

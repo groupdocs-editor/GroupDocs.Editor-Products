@@ -1,9 +1,9 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-06T17:33:58
+date: 2022-10-09T00:06:20
 draft: false
-otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml csv pdf
+otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml csv pdf msg eml
 
 ############################# Head ############################
 head_title: "XPS Editor — Edit XPS in C# .NET"

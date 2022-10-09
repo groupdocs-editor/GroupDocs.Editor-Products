@@ -1,9 +1,9 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-06T17:33:58
+date: 2022-10-09T00:06:20
 draft: false
-otherformats: doc docx docm dotx xls xlsm ppt pptx pptm mobi epub html mhtml txt xml csv pdf xps
+otherformats: doc docx docm dotx xls xlsm ppt pptx pptm mobi epub html mhtml txt xml csv pdf xps msg eml
 
 ############################# Head ############################
 head_title: "XLSX Editor — Edit XLSX in C# .NET"
