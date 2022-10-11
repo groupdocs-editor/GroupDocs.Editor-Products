@@ -1,13 +1,17 @@
 ---
-layout: "auto-gen"
-date: 2022-03-02T11:17:00
+############################# Static ############################
+layout: "auto-gen-editor"
+date: 2022-10-11T21:36:00
 draft: false
+otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm epub html mhtml txt xml csv pdf xps msg eml
 
-head_title: "MOBIエディター– C＃.NETでMOBIを編集します"
-head_description: "数行のコードを使用してC＃.NETでMOBIを編集するにはどうすればよいですか？ GroupDocsドキュメント処理APIを使用して、30以上のファイル形式を編集、更新、保存します."
+############################# Head ############################
+head_title: "MOBI エディタ — C# .NET の MOBI を編集"
+head_description: "数行のコードを使用して C# .NET の MOBI を編集するには? GroupDocs ドキュメント処理 API を使用して、30 以上のファイル形式を編集、更新、保存します。"
 
-title: "C＃でMOBIを編集する"
-description: "MicrosoftやOpenOfficeなどのソフトウェアを使用せずに、サーバー側のGroupDocs.Editor for .NET APIを使用した効果的で堅牢なMOBI編集."
+############################# Header ############################
+title: "C# .NETのMOBIを編集"
+description: "Microsoft や Open Office などのソフトウェアを使用せずに、サーバー側の GroupDocs.Editor for C# .NET API を使用した効果的で堅牢な MOBI 編集。"
 bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
 bg_overlay: false
 button:
@@ -16,6 +20,7 @@ button:
     label: "無料トライアルをダウンロード"
     link: "https://downloads.groupdocs.com/editor/net"
 
+############################# SubMenu ############################
 submenu:
     enable: true
 
@@ -28,212 +33,104 @@ submenu:
     middle:
         button:
 
+            # button loop
             - link: "https://apireference.groupdocs.com/editor/net"
-              text: "APIリファレンス"
+              text: "API リファレンス"
 
+            # button loop
             - link: "https://github.com/groupdocs-editor"
               text: "コード例"
 
+            # button loop
             - link: "https://products.groupdocs.app/editor/family"
               text: "ライブデモ"
 
+            # button loop
             - link: "https://purchase.groupdocs.com/pricing/editor/net"
-              text: "価格設定"
+              text: "料金"
 
     right:
         link_download: "https://downloads.groupdocs.com/editor"
         link_learn: "https://docs.groupdocs.com/editor/net"
         link_buy: "https://purchase.groupdocs.com"
 
+############################# About ############################
 about:
     enable: true
-    title: "GroupDocs.Editor for .NET APIについて"
+    title: "GroupDocs.Editor for .NET API について"
     content: |
-        [GroupDocs.Editor](/editor/net/)APIは、Microsoft Word、Excel、PowerPoint、OpenOfficeのドキュメントおよびプレゼンテーションを編集するための正しい選択です。 GroupDocs.Editorは、高性能が要求されるサーバー側およびバックエンドシステムに適したスタンドアロンAPIです。 MicrosoftやOpenOfficeのようなソフトウェアには依存しません。
+        [GroupDocs.Editor for .NET](/ja/editor/net/) API は、Microsoft Word、Excel、PowerPoint、Open Office ドキュメントおよびプレゼンテーションを編集するための正しい選択です。 GroupDocs.Editor は、高いパフォーマンスが要求されるサーバー サイドおよびバックエンド システムに適したスタンドアロン API です。 Microsoft や Open Office などのソフトウェアには依存しません。
 
+############################# Steps ############################
 steps:
     enable: true
-    title_left: "C＃でMOBIを編集する手順"
+    title_left: "C# で MOBI を編集する手順"
     content_left: |
-        [GroupDocs.Editor](/editor/net/)は、開発者が数行のコードを使用してMOBIファイルを編集するための簡単で簡単な方法を提供します。
+        [GroupDocs.Editor for .NET](/ja/editor/net/) は、開発者が数行のコードを使用して MOBI ファイルを編集する簡単で直接的な方法を提供します。
+        * 必須のファイル パスまたはバイト ストリームを使用して `Editor` クラスのインスタンスを作成し、MOBI ファイルをロードします
+        * MOBI ファイル形式の `EbookEditOptions` クラス インスタンスを作成して設定します
+        * `Editor.Edit()` メソッドを呼び出して、WYSIWYG エディタで簡単に編集できる HTML 形式の MOBI ドキュメントを取得します。
+        * `Editor.Save()` メソッドを呼び出し、`EpubSaveOptions` または `Azw3SaveOptions` クラスを使用して編集済みの MOBI ファイルを保存し、それぞれ ePub または AZW3 形式に保存します
 
-        * Editorクラスのインスタンスを作成し、フルパスでMOBIファイルをロードします
-        *MOBIファイルタイプのEditOptionsを作成および設定します
-        * Editor.Editメソッドを呼び出し、WYSIWYGエディターで簡単に編集できるHTML形式のMOBIドキュメントを取得します。
-        * Editor.Saveメソッドを呼び出し、編集したMOBIファイルを保存します
         
     title_right: "システム要求"
     content_right: |
-        GroupDocs.Editor for .NET APIを使用した基本的なドキュメント編集は、いくつかの簡単な手順を実装することで実行できます。当社のAPIは、すべての主要なプラットフォームとオペレーティングシステムでサポートされています。以下のコードを実行する前に、システムに次の前提条件がインストールされていることを確認してください。
+        GroupDocs.Editor for .NET API を使用した基本的なドキュメント編集は、いくつかの簡単な手順を実装することで実行できます。当社の API は、すべての主要なプラットフォームとオペレーティング システムでサポートされています。以下のコードを実行する前に、システムに次の前提条件がインストールされていることを確認してください。
 
-        *オペレーティングシステム: Microsoft Windows、Linux、MacOS
-        *開発環境: Microsoft Visual Studio、Xamarin、MonoDevelop
-        *フレームワーク: .NET Framework、.NET Standard、.NET Core、Mono
-        * [NuGet](https://www.nuget.org/packages/groupdocs.Editor)からダウンロードした最新バージョンのGroupDocs.Editorfor.NETを入手します。
+        * オペレーティング システム: Microsoft Windows、Linux、MacOS
+        * 開発環境: Microsoft Visual Studio, Xamarin, MonoDevelop
+        * フレームワーク: .NET Framework, .NET Standard, .NET Core, Mono
+        * [NuGet](https://www.nuget.org/packages/groupdocs.editor) からダウンロードした GroupDocs.Editor for .NET の最新バージョンを取得します
         
-    code: |
-        ```cs
-        //MOBIファイルをエディタにロードします
+    code: |        
+        ```csharp
+        // Load the MOBI file into Editor
         Editor editor = new Editor("source.mobi");
+
+        // Create and adjust the edit options, common for all e-book formats, including MOBI
+        EbookEditOptions editOptions = new EbookEditOptions();
         
-        //入力MOBIドキュメントを編集用に開きます—編集可能な中間ドキュメントを取得します
-        EditableDocument beforeEdit = editor.Edit();
+        // Open input MOBI document for edit — obtain an intermediate document, that can be edited
+        EditableDocument beforeEdit = editor.Edit(editOptions);
 
-        //編集可能なドキュメントからMOBIドキュメントのコンテンツと関連リソースを取得します
-        string content = beforeEdit.GetContent();
+        // Grab MOBI document content and associated resources from editable document
+        string content = beforeEdit.GetEmbeddedHtml();
 
-        //MOBIドキュメントのコンテンツを何らかの方法で更新します
-        string updatedContent = content.Replace("Subtitle", "Edited subtitle");
+        // Send the content to WYSIWYG-editor, edit it there, and send edited content back to the server-side
+        // This step simulates a such operation
+        string updatedContent = content.Replace("Adventure", "Edited Adventure");
 
-        //編集されたコンテンツとリソースから新しいEditableDocumentインスタンスを作成します
+        // Grab edited content and resources from WYSIWYG-editor and create a new EditableDocument instance from it
         EditableDocument afterEdit = EditableDocument.FromMarkup(updatedContent, null);
 
-        //編集したMOBIドキュメントを保存します
-        editor.Save(afterEdit, "edited.mobi");
+        // Create and adjust the save options, separate for every e-book format
+        EpubSaveOptions epubSaveOptions = new EpubSaveOptions();//for ePub
+        Azw3SaveOptions azw3SaveOptions = new Azw3SaveOptions();//for AZW3
+
+        // Save edited MOBI document to the ePub format
+        editor.Save(afterEdit, outputPath, epubSaveOptions);
+
+        // Save edited MOBI document to the AZW3 format
+        editor.Save(afterEdit, outputPath, azw3SaveOptions);
         ```
         
+############################# Demos ############################
 demos:
     enable: true
     title: "MOBIエディターのライブデモ"
     content: |
-        [GroupDocs.Editorライブデモ](https://products.groupdocs.app/editor/family)サイトにアクセスして、今すぐMOBIを編集してください。  
+        [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) Web サイトにアクセスして、今すぐ MOBI を編集してください。
         ライブデモには次の利点があります
         
-about_formats:
-    enable: true
-    format:
-        - icon: "far fa-file-MOBI"
-          title: " MOBIファイル形式について"
-          content: |
-            MOBIファイル形式は、最も広く使用されている電子書籍ファイル形式の1つです。この形式は、古いOEB（Open Ebook Format）形式を拡張したものであり、MobipocketReaderの独自の形式として使用されていました。 EPUBと同様に、ほとんどすべての最新の電子書籍リーダー、特に低帯域幅のモバイルデバイスでサポートされています。この形式は、Kindleアプリなどの公開されているソフトウェアアプリケーションを使用して、PDF、EPUBなどの他のいくつかの形式、および他のいくつかの形式に変換できます。
-
-          link: "https://docs.fileformat.com/ebook/mobi/"
-
+############################# More Formats ############################
 more_formats:
-    enable: false
+    enable: true
     title: "その他のサポートされているエディター"
     content: |
-        他のファイル形式を編集することもできます。以下の完全なリストを参照してください。
-    format:
-          link: "https://products.groupdocs.com/editor/net/csv/"
-          description: "カンマ区切り値ファイル"
-
-          link: "https://products.groupdocs.com/editor/net/doc/"
-          description: "MicrosoftWordドキュメント"
-
-          link: "https://products.groupdocs.com/editor/net/docm/"
-          description: "MicrosoftWordマクロ対応ドキュメント"
-
-          link: "https://products.groupdocs.com/editor/net/docx/"
-          description: "Microsoft WordOpenXMLドキュメント"
-
-          link: "https://products.groupdocs.com/editor/net/dot/"
-          description: "MicrosoftWord文書テンプレート"
-
-          link: "https://products.groupdocs.com/editor/net/dotm/"
-          description: "MicrosoftWordマクロ対応テンプレート"
-
-          link: "https://products.groupdocs.com/editor/net/dotx/"
-          description: "WordOpenXMLドキュメントテンプレート"
-
-          link: "https://products.groupdocs.com/editor/net/fodp/"
-          description: "OpenDocumentフラットXMLプレゼンテーション"
-
-          link: "https://products.groupdocs.com/editor/net/fods/"
-          description: "OpenDocumentフラットXMLスプレッドシート"
-
-          link: "https://products.groupdocs.com/editor/net/htm/"
-          description: "ハイパーテキストマークアップ言語ファイル"
-
-          link: "https://products.groupdocs.com/editor/net/html/"
-          description: "ハイパーテキストマークアップ言語"
-
-          link: "https://products.groupdocs.com/editor/net/odp/"
-          description: "OpenDocumentプレゼンテーションファイル形式"
-
-          link: "https://products.groupdocs.com/editor/net/ods/"
-          description: "ドキュメントスプレッドシートを開く"
-
-          link: "https://products.groupdocs.com/editor/net/odt/"
-          description: "ドキュメントテキストを開く"
-
-          link: "https://products.groupdocs.com/editor/net/otp/"
-          description: "原点グラフテンプレート"
-
-          link: "https://products.groupdocs.com/editor/net/ots/"
-          description: "OpenDocumentスプレッドシートテンプレート"
-
-          link: "https://products.groupdocs.com/editor/net/ott/"
-          description: "ドキュメントテンプレートを開く"
-
-          link: "https://products.groupdocs.com/editor/net/pot/"
-          description: "PowerPointテンプレート"
-
-          link: "https://products.groupdocs.com/editor/net/potm/"
-          description: "MicrosoftPowerPointテンプレート"
-
-          link: "https://products.groupdocs.com/editor/net/potx/"
-          description: "Microsoft PowerPointOpenXMLテンプレート"
-
-          link: "https://products.groupdocs.com/editor/net/pps/"
-          description: "MicrosoftPowerPointスライドショー"
-
-          link: "https://products.groupdocs.com/editor/net/ppsm/"
-          description: "MicrosoftPowerPointスライドショー"
-
-          link: "https://products.groupdocs.com/editor/net/ppsx/"
-          description: "PowerPointOpenXMLスライドショー"
-
-          link: "https://products.groupdocs.com/editor/net/ppt/"
-          description: "PowerPointプレゼンテーション"
-
-          link: "https://products.groupdocs.com/editor/net/pptm/"
-          description: "MicrosoftPowerPointプレゼンテーション"
-
-          link: "https://products.groupdocs.com/editor/net/pptx/"
-          description: "PowerPointOpenXMLプレゼンテーション"
-
-          link: "https://products.groupdocs.com/editor/net/rtf/"
-          description: "リッチテキストファイル形式"
-
-          link: "https://products.groupdocs.com/editor/net/sxc/"
-          description: "StarOfficeCalcスプレッドシート"
-
-          link: "https://products.groupdocs.com/editor/net/tsv/"
-          description: "タブ区切り値ファイル"
-
-          link: "https://products.groupdocs.com/editor/net/txt/"
-          description: "プレーンテキストファイル形式"
-
-          link: "https://products.groupdocs.com/editor/net/xlam/"
-          description: "MicrosoftExcelマクロ対応アドイン"
-
-          link: "https://products.groupdocs.com/editor/net/xls/"
-          description: "MicrosoftExcelバイナリファイル形式"
-
-          link: "https://products.groupdocs.com/editor/net/xlsb/"
-          description: "MicrosoftExcelバイナリスプレッドシートファイル"
-
-          link: "https://products.groupdocs.com/editor/net/xlsm/"
-          description: "MicrosoftExcelマクロ対応スプレッドシート"
-
-          link: "https://products.groupdocs.com/editor/net/xlsx/"
-          description: "Microsoft ExcelOpenXMLスプレッドシート"
-
-          link: "https://products.groupdocs.com/editor/net/xlt/"
-          description: "MicrosoftExcelテンプレート"
-
-          link: "https://products.groupdocs.com/editor/net/xltm/"
-          description: "MicrosoftExcelマクロ対応テンプレート"
-
-          link: "https://products.groupdocs.com/editor/net/xltx/"
-          description: "Microsoft ExcelOpenXMLテンプレート"
-
-          link: "https://products.groupdocs.com/editor/net/xml/"
-          description: "拡張マークアップ言語"
+        他のファイル形式を編集することもできます。以下の完全なリストをご覧ください。
 
 
-
+############################# Back to top ###############################
 back_to_top:
     enable: true
 ---

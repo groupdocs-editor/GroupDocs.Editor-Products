@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "Éditeur {{EXT}} : modifiez {{EXT}} dans {{PlatformName}}",
+    "description": "Comment modifier {{EXT}} dans {{PlatformName}} en utilisant quelques lignes de code ? Utilisez les API de traitement de documents GroupDocs pour modifier, mettre à jour et enregistrer plus de 30 formats de fichiers."
+  },
+  "header": {
+    "title": "Modifier {{EXT}} dans {{PlatformName}}",
+    "description": "Édition {{EXT}} efficace et robuste à l'aide de GroupDocs.Editor côté serveur pour les API {{PlatformName}}, sans l'utilisation de logiciels tels que Microsoft ou Open Office.",
+    "label": "Télécharger la version d'essai gratuite"
+  },
+  "submenu": {
+    "content_middle": {
+      "button_text_ApiReference": "Référence API",
+      "button_text_CodeExamples": "Exemples de codes",
+      "button_text_LiveDemos": "Démos en direct",
+      "button_text_Pricing": "Tarification"
+    }
+  },
+  "about": {
+    "title": "À propos de l'API {{ProductFullName}}",
+    "h1": "L'API [{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) est un bon choix pour éditer des documents et des présentations Microsoft Word, Excel, PowerPoint, Open Office. GroupDocs.Editor est une API autonome qui convient aux systèmes côté serveur et back-end où des performances élevées sont requises. Il ne dépend d'aucun logiciel comme Microsoft ou Open Office."
+  },
+  "steps": {
+    "title_left": "Étapes pour modifier {{EXT}} dans {{ProgLang}}",
+    "content_left": {
+      "description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) offre aux développeurs un moyen simple et direct de modifier les fichiers {{EXT}} à l'aide de quelques lignes de code."
+    },
+    "title_right": "Configuration requise",
+    "content_right": {
+      "description": "Une édition de document de base avec les API {{ProductFullName}} peut être effectuée en mettant en œuvre quelques étapes simples. Nos API sont prises en charge sur toutes les principales plates-formes et systèmes d'exploitation. Avant d'exécuter le code ci-dessous, assurez-vous que les prérequis suivants sont installés sur votre système.",
+      "step_1": "Systèmes d'exploitation : Microsoft Windows, Linux, MacOS",
+      "step_2": "Environnements de développement : {{DevEnv}}",
+      "step_3": "Cadres",
+      "step_4": "Obtenez la dernière version de {{ProductFullName}} téléchargée depuis [{{RepoName}}]({{RepoUrl}})"
+    }
+  },
+  "demos": {
+    "title": "{{EXT}} démos en direct de l'éditeur",
+    "content": "Modifiez {{EXT}} dès maintenant en visitant le site Web [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family).\r\n        La démo en direct présente les avantages suivants"
+  },
+  "more_formats": {
+    "title": "Autres éditeurs pris en charge",
+    "content": "Vous pouvez également modifier d'autres formats de fichiers. Veuillez consulter la liste complète ci-dessous."
+  }
+}

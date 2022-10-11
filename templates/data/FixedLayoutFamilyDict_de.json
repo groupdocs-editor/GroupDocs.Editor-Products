@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Erstellen Sie eine Instanz der Klasse „Editor“ mit obligatorischem Dateipfad oder Stream und optionaler Klasse „PdfLoadOptions“ für PDF (gilt nicht für XPS) und laden Sie die Datei {{EXT}}",
+    "step_2": "Erstellen und setzen Sie die Klasseninstanz `{{Ext}}EditOptions` für das Dateiformat {{EXT}}",
+    "step_3": "Rufen Sie die Methode `Editor.Edit()` auf und erhalten Sie ein {{EXT}}-Dokument im HTML-Format, das mit jedem WYSIWYG-Editor einfach bearbeitet werden kann.",
+    "step_4": "Rufen Sie die Methode `Editor.Save()` auf und speichern Sie die bearbeitete {{EXT}}-Datei mit der Klasse `{{Ext}}SaveOptions`"
+  }
+}

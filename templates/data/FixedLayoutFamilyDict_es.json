@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Cree una instancia de la clase 'Editor' con ruta de archivo obligatoria o secuencia y clase 'PdfLoadOptions' opcional para PDF (no aplicable para XPS) y cargue el archivo {{EXT}}",
+    "step_2": "Cree y configure la instancia de clase `{{Ext}}EditOptions` para el formato de archivo {{EXT}}",
+    "step_3": "Llame al método `Editor.Edit()` y obtenga el documento {{EXT}} en formato HTML que se puede editar fácilmente con cualquier editor WYSIWYG.",
+    "step_4": "Llame al método `Editor.Save()` y guarde el archivo {{EXT}} editado usando la clase `{{Ext}}SaveOptions`"
+  }
+}

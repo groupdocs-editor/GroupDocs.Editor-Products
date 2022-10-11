@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "必須のファイル パスまたはストリームとオプションの `WordProcessingLoadOptions` クラスを使用して `Editor` クラスのインスタンスを作成し、{{EXT}} ファイルをロードします",
+    "step_2": "{{EXT}} ファイル形式の `WordProcessingEditOptions` クラス インスタンスの作成と設定",
+    "step_3": "`Editor.Edit()` メソッドを呼び出して、WYSIWYG エディタで簡単に編集できる HTML 形式の {{EXT}} ドキュメントを取得します。",
+    "step_4": "`Editor.Save()` メソッドを呼び出し、`WordProcessingSaveOptions` クラスを使用して編集済みの {{EXT}} ファイルを保存します"
+  }
+}

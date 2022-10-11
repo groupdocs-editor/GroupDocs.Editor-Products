@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "필수 파일 경로 또는 바이트 스트림으로 `Editor` 클래스의 인스턴스를 만들고 {{EXT}} 파일을 로드합니다.",
+    "step_2": "{{EXT}} 파일 형식에 대한 `EbookEditOptions` 클래스 인스턴스 생성 및 설정",
+    "step_3": "`Editor.Edit()` 메서드를 호출하고 모든 WYSIWYG 편집기로 쉽게 편집할 수 있는 HTML 형식의 {{EXT}} 문서를 가져옵니다.",
+    "step_4": "`Editor.Save()` 메서드를 호출하고 편집된 {{EXT}} 파일을 `EpubSaveOptions` 또는 `Azw3SaveOptions` 클래스를 사용하여 ePub 또는 AZW3 형식으로 각각 저장합니다."
+  }
+}

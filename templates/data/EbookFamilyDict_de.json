@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Erstellen Sie eine Instanz der Klasse „Editor“ mit obligatorischem Dateipfad oder Bytestream und laden Sie die Datei {{EXT}}",
+    "step_2": "Erstellen und legen Sie die Klasseninstanz „EbookEditOptions“ für das Dateiformat {{EXT}} fest",
+    "step_3": "Rufen Sie die Methode `Editor.Edit()` auf und erhalten Sie ein {{EXT}}-Dokument im HTML-Format, das mit jedem WYSIWYG-Editor einfach bearbeitet werden kann.",
+    "step_4": "Rufen Sie die Methode „Editor.Save()“ auf und speichern Sie die bearbeitete {{EXT}}-Datei mit der Klasse „EpubSaveOptions“ oder „Azw3SaveOptions“ zum Speichern im ePub- bzw. AZW3-Format"
+  }
+}

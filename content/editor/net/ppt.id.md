@@ -1,13 +1,17 @@
 ---
-layout: "auto-gen"
-date: 2022-07-07T12:44:18+03:00
+############################# Static ############################
+layout: "auto-gen-editor"
+date: 2022-10-11T21:36:01
 draft: false
+otherformats: doc docx docm dotx xls xlsx xlsm pptx pptm mobi epub html mhtml txt xml csv pdf xps msg eml
 
-head_title: "PPT Editor – Edit PPT di C# .NET"
+############################# Head ############################
+head_title: "PPT Editor — Edit PPT di C# .NET"
 head_description: "Bagaimana cara mengedit PPT di C# .NET menggunakan beberapa baris kode? Gunakan API pemrosesan dokumen GroupDocs untuk mengedit, memperbarui, dan menyimpan 30+ format file."
 
-title: "Sunting PPT di C#"
-description: "Pengeditan PPT yang efektif dan kuat menggunakan sisi server GroupDocs.Editor untuk .NET API, tanpa menggunakan perangkat lunak apa pun seperti Microsoft atau Open Office."
+############################# Header ############################
+title: "Edit PPT di C# .NET"
+description: "Pengeditan PPT yang efektif dan kuat menggunakan GroupDocs.Editor sisi server untuk API C# .NET, tanpa menggunakan perangkat lunak apa pun seperti Microsoft atau Open Office."
 bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
 bg_overlay: false
 button:
@@ -16,6 +20,7 @@ button:
     label: "Unduh Uji Coba Gratis"
     link: "https://downloads.groupdocs.com/editor/net"
 
+############################# SubMenu ############################
 submenu:
     enable: true
 
@@ -28,15 +33,19 @@ submenu:
     middle:
         button:
 
+            # button loop
             - link: "https://apireference.groupdocs.com/editor/net"
               text: "Referensi API"
 
+            # button loop
             - link: "https://github.com/groupdocs-editor"
               text: "Contoh Kode"
 
+            # button loop
             - link: "https://products.groupdocs.app/editor/family"
               text: "Demo Langsung"
 
+            # button loop
             - link: "https://purchase.groupdocs.com/pricing/editor/net"
               text: "Harga"
 
@@ -45,233 +54,80 @@ submenu:
         link_learn: "https://docs.groupdocs.com/editor/net"
         link_buy: "https://purchase.groupdocs.com"
 
+############################# About ############################
 about:
     enable: true
-    title: "Tentang GroupDocs.Editor untuk .NET API"
+    title: "Tentang GroupDocs.Editor for .NET API"
     content: |
-        [GroupDocs.Editor](/id/editor/net/) API adalah pilihan yang tepat untuk mengedit dokumen dan presentasi Microsoft Word, Excel, PowerPoint, Open Office. GroupDocs.Editor adalah API mandiri yang cocok untuk sisi server dan sistem back-end yang membutuhkan kinerja tinggi. Itu tidak tergantung pada perangkat lunak apa pun seperti Microsoft atau Open Office.
+        [GroupDocs.Editor for .NET](/id/editor/net/) API adalah pilihan yang tepat untuk mengedit dokumen dan presentasi Microsoft Word, Excel, PowerPoint, Open Office. GroupDocs.Editor adalah API mandiri yang cocok untuk sisi server dan sistem back-end yang membutuhkan kinerja tinggi. Itu tidak tergantung pada perangkat lunak apa pun seperti Microsoft atau Open Office.
 
+############################# Steps ############################
 steps:
     enable: true
     title_left: "Langkah-langkah untuk Mengedit PPT di C#"
     content_left: |
-        [GroupDocs.Editor](/id/editor/net/) menyediakan cara mudah dan langsung bagi pengembang untuk mengedit file PPT menggunakan beberapa baris kode.
+        [GroupDocs.Editor for .NET](/id/editor/net/) menyediakan cara mudah dan langsung bagi pengembang untuk mengedit file PPT menggunakan beberapa baris kode.
+        * Buat instance kelas `Editor` dengan jalur file wajib atau aliran byte dan kelas `PresentationLoadOptions` opsional dan muat file PPT
+        * Buat & setel instance kelas `PresentationEditOptions` untuk format file PPT
+        * Panggil metode `Editor.Edit()` dan dapatkan dokumen PPT dalam format HTML yang mudah diedit dengan editor WYSIWYG apa pun.
+        * Panggil metode `Editor.Save()` dan simpan file PPT yang telah diedit menggunakan kelas `PresentationSaveOptions`
 
-        * Buat instance kelas Editor dan muat file PPT dengan path lengkap
-        * Buat & atur EditOptions untuk jenis file PPT
-        * Panggil metode Editor.Edit dan dapatkan dokumen PPT dalam format HTML yang mudah diedit dengan editor WYSIWYG apa pun.
-        * Panggil Editor. Simpan metode dan simpan file PPT yang diedit
         
     title_right: "Persyaratan sistem"
     content_right: |
-        Pengeditan dokumen dasar dengan GroupDocs.Editor untuk .NET API dapat dilakukan dengan menerapkan beberapa langkah mudah. API kami didukung di semua platform dan sistem operasi utama. Sebelum menjalankan kode di bawah ini, pastikan Anda telah menginstal prasyarat berikut di sistem Anda.
+        Pengeditan dokumen dasar dengan GroupDocs.Editor for .NET API dapat dilakukan dengan menerapkan beberapa langkah mudah. API kami didukung di semua platform dan sistem operasi utama. Sebelum menjalankan kode di bawah ini, pastikan Anda telah menginstal prasyarat berikut di sistem Anda.
 
         * Sistem Operasi: Microsoft Windows, Linux, MacOS
         * Lingkungan Pengembangan: Microsoft Visual Studio, Xamarin, MonoDevelop
-        * Kerangka: .NET Framework, .NET Standard, .NET Core, Mono
-        * Dapatkan versi terbaru GroupDocs.Editor untuk .NET yang diunduh dari [NuGet](https://www.nuget.org/packages/GroupDocs.Editor)
+        * Kerangka kerja: .NET Framework, .NET Standard, .NET Core, Mono
+        * Dapatkan GroupDocs.Editor for .NET versi terbaru yang diunduh dari [NuGet](https://www.nuget.org/packages/groupdocs.editor)
         
-    code: |
-        ```cs
-        // Muat file PPT ke Editor
-        Editor editor = new Editor("source.ppt");
-        
-        // Buka masukan PPT dokumen untuk diedit — dapatkan dokumen perantara, yang dapat diedit
-        EditableDocument beforeEdit = editor.Edit();
+    code: |        
+        ```csharp
+        // Load the PPT file into Editor with the optional PresentationLoadOptions
+        Editor editor = new Editor("source.ppt", delegate { return new PresentationLoadOptions(); });
 
-        // Ambil konten dokumen PPT dan sumber daya terkait dari dokumen yang dapat diedit
-        string content = beforeEdit.GetContent();
+        // Create and adjust the edit options
+        PresentationEditOptions editOptions = new PresentationEditOptions();
+        editOptions.SlideNumber = 1;//select a slide to edit
 
-        // Perbarui konten dokumen PPT dengan cara tertentu
-        string updatedContent = content.Replace("Subtitle", "Edited subtitle");
+        // Open input PPT document for edit — obtain an intermediate document, that can be edited
+        EditableDocument beforeEdit = editor.Edit(editOptions);
 
-        // Buat instance EditableDocument baru dari konten dan sumber daya yang diedit
+        // Grab PPT document content and associated resources from editable document
+        string content = beforeEdit.GetEmbeddedHtml();
+
+        // Send the content to WYSIWYG-editor, edit it there, and send edited content back to the server-side
+        // This step simulates a such operation
+        string updatedContent = content.Replace("Title", "Edited Title");
+
+        // Grab edited content and resources from WYSIWYG-editor and create a new EditableDocument instance from it
         EditableDocument afterEdit = EditableDocument.FromMarkup(updatedContent, null);
 
-        // Simpan dokumen PPT yang telah diedit
-        editor.Save(afterEdit, "edited.ppt");
+        // Create a save options and select a desired output format
+        PresentationSaveOptions saveOptions = new PresentationSaveOptions(Formats.PresentationFormats.Ppt);
+
+        // Save edited PPT document to the file
+        editor.Save(afterEdit, "edited.ppt", saveOptions);
         ```
         
+############################# Demos ############################
 demos:
     enable: true
-    title: "Demo Langsung Editor PPT"
+    title: "PPT Demo Langsung Editor"
     content: |
-        Edit PPT sekarang dengan mengunjungi situs web [GroupDocs.Editor](https://products.groupdocs.app/editor/family). Demo langsung memiliki manfaat sebagai berikut.
+        Edit PPT sekarang juga dengan mengunjungi situs web [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family).
+        Demo langsung memiliki manfaat sebagai berikut
         
-about_formats:
-    enable: true
-    format:
-        - icon: "far fa-file-powerpoint"
-          title: " Tentang Format Berkas PPT"
-          content: |
-            File dengan ekstensi PPT mewakili file PowerPoint yang terdiri dari kumpulan slide untuk ditampilkan sebagai SlideShow. Ini menentukan Format File Biner yang digunakan oleh Microsoft PowerPoint 97-2003. File PPT dapat berisi beberapa jenis informasi yang berbeda seperti teks, poin berpoin, gambar, multimedia, dan objek OLE tertanam lainnya. Microsoft datang dengan format file yang lebih baru untuk PowerPoint, yang dikenal sebagai PPTX, dari tahun 2007 dan seterusnya yang didasarkan pada Office OpenXML dan berbeda dari format file biner ini.
-
-          link: "https://docs.fileformat.com/presentation/ppt/"
-
+############################# More Formats ############################
 more_formats:
     enable: true
     title: "Editor yang Didukung Lainnya"
     content: |
         Anda juga dapat mengedit format file lainnya. Silakan lihat daftar lengkapnya di bawah ini.
-    format:
-        - name: "CSV"
-          link: "editor/net/csv/"
-          description: "File Nilai Dipisahkan Koma"
-
-        - name: "DOKTER"
-          link: "editor/net/doc/"
-          description: "Dokumen Microsoft Word"
-
-        - name: "DOCM"
-          link: "editor/net/docm/"
-          description: "Dokumen Berkemampuan Makro Microsoft Word"
-
-        - name: "DOCX"
-          link: "editor/net/docx/"
-          description: "Microsoft Word Buka Dokumen XML"
-
-        - name: "DOT"
-          link: "editor/net/dot/"
-          description: "Templat Dokumen Microsoft Word"
-
-        - name: "DOTM"
-          link: "editor/net/dotm/"
-          description: "Templat Microsoft Word Macro-Enabled"
-
-        - name: "DOTX"
-          link: "editor/net/dotx/"
-          description: "Templat Dokumen XML Word Terbuka"
-
-        - name: "FODP"
-          link: "editor/net/fodp/"
-          description: "Presentasi XML Datar OpenDocument"
-
-        - name: "makanan"
-          link: "editor/net/fods/"
-          description: "OpenDocument Flat XML Spreadsheet"
-
-        - name: "HTM"
-          link: "editor/net/htm/"
-          description: "File Bahasa Markup Hypertext"
-
-        - name: "HTML"
-          link: "editor/net/html/"
-          description: "Hyper Text Markup Language"
-
-        - name: "MOBI"
-          link: "editor/net/mobi/"
-          description: "eBook Mobipocket"
-
-        - name: "ODP"
-          link: "editor/net/odp/"
-          description: "Format File Presentasi OpenDocument"
-
-        - name: "ODS"
-          link: "editor/net/ods/"
-          description: "Buka Spreadsheet Dokumen"
-
-        - name: "ODT"
-          link: "editor/net/odt/"
-          description: "Buka Teks Dokumen"
-
-        - name: "OTP"
-          link: "editor/net/otp/"
-          description: "Templat Grafik Asal"
-
-        - name: "OTS"
-          link: "editor/net/ots/"
-          description: "Templat Spreadsheet OpenDocument"
-
-        - name: "OTT"
-          link: "editor/net/ott/"
-          description: "Buka Templat Dokumen"
-
-        - name: "POT"
-          link: "editor/net/pot/"
-          description: "Templat PowerPoint"
-
-        - name: "POTM"
-          link: "editor/net/potm/"
-          description: "Templat Microsoft PowerPoint"
-
-        - name: "POTX"
-          link: "editor/net/potx/"
-          description: "Templat XML Terbuka Microsoft PowerPoint"
-
-        - name: "PPS"
-          link: "editor/net/pps/"
-          description: "Pertunjukan Slide Microsoft PowerPoint"
-
-        - name: "PPSM"
-          link: "editor/net/ppsm/"
-          description: "Pertunjukan Slide Microsoft PowerPoint"
-
-        - name: "PPSX"
-          link: "editor/net/ppsx/"
-          description: "PowerPoint Terbuka XML Slide Show"
-
-        - name: "PPTM"
-          link: "editor/net/pptm/"
-          description: "Presentasi Microsoft PowerPoint"
-
-        - name: "PPTX"
-          link: "editor/net/pptx/"
-          description: "Presentasi PowerPoint Terbuka XML"
-
-        - name: "RTF"
-          link: "editor/net/rtf/"
-          description: "Format File Teks Kaya"
-
-        - name: "SXC"
-          link: "editor/net/sxc/"
-          description: "Spreadsheet Calc StarOffice"
-
-        - name: "TSV"
-          link: "editor/net/tsv/"
-          description: "File Nilai Terpisah Tab"
-
-        - name: "txt"
-          link: "editor/net/txt/"
-          description: "Format File Teks Biasa"
-
-        - name: "XLAM"
-          link: "editor/net/xlam/"
-          description: "Add-In Microsoft Excel Macro-Enabled"
-
-        - name: "XLS"
-          link: "editor/net/xls/"
-          description: "Format File Biner Microsoft Excel"
-
-        - name: "XLSB"
-          link: "editor/net/xlsb/"
-          description: "File Spreadsheet Biner Microsoft Excel"
-
-        - name: "XLSM"
-          link: "editor/net/xlsm/"
-          description: "Spreadsheet Berkemampuan Makro Microsoft Excel"
-
-        - name: "XLSX"
-          link: "editor/net/xlsx/"
-          description: "Microsoft Excel Buka XML Spreadsheet"
-
-        - name: "XLT"
-          link: "editor/net/xlt/"
-          description: "Templat Microsoft Excel"
-
-        - name: "XLTM"
-          link: "editor/net/xltm/"
-          description: "Templat Microsoft Excel Macro-Enabled"
-
-        - name: "XLTX"
-          link: "editor/net/xltx/"
-          description: "Templat XML Terbuka Microsoft Excel"
-
-        - name: "XML"
-          link: "editor/net/xml/"
-          description: "Bahasa Markup yang Diperluas"
 
 
-
+############################# Back to top ###############################
 back_to_top:
     enable: true
 ---

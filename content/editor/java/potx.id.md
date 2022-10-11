@@ -1,13 +1,17 @@
 ---
-layout: "auto-gen"
-date: 2022-07-07T12:44:18+03:00
+############################# Static ############################
+layout: "auto-gen-editor"
+date: 2022-10-11T21:36:01
 draft: false
+otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml csv pdf xps msg
 
-head_title: "POTX Editor untuk Java – Edit POTX"
-head_description: "Edit POTX di Java menggunakan beberapa baris kode. API editor dokumen yang cepat dan tangguh untuk 30+ format file."
+############################# Head ############################
+head_title: "POTX Editor — Edit POTX di Java"
+head_description: "Bagaimana cara mengedit POTX di Java menggunakan beberapa baris kode? Gunakan API pemrosesan dokumen GroupDocs untuk mengedit, memperbarui, dan menyimpan 30+ format file."
 
-title: "Edit POTX di Jawa"
-description: "Editor POTX yang andal dan cepat untuk aplikasi Java Anda tanpa perangkat lunak pihak ketiga seperti Microsoft Office atau Open Office."
+############################# Header ############################
+title: "Edit POTX di Java"
+description: "Pengeditan POTX yang efektif dan kuat menggunakan GroupDocs.Editor sisi server untuk API Java, tanpa menggunakan perangkat lunak apa pun seperti Microsoft atau Open Office."
 bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
 bg_overlay: false
 button:
@@ -16,6 +20,7 @@ button:
     label: "Unduh Uji Coba Gratis"
     link: "https://downloads.groupdocs.com/editor/java"
 
+############################# SubMenu ############################
 submenu:
     enable: true
 
@@ -28,15 +33,19 @@ submenu:
     middle:
         button:
 
+            # button loop
             - link: "https://apireference.groupdocs.com/editor/java"
               text: "Referensi API"
 
+            # button loop
             - link: "https://github.com/groupdocs-editor"
               text: "Contoh Kode"
 
+            # button loop
             - link: "https://products.groupdocs.app/editor/family"
               text: "Demo Langsung"
 
+            # button loop
             - link: "https://purchase.groupdocs.com/pricing/editor/java"
               text: "Harga"
 
@@ -45,234 +54,80 @@ submenu:
         link_learn: "https://docs.groupdocs.com/editor/java"
         link_buy: "https://purchase.groupdocs.com"
 
+############################# About ############################
 about:
     enable: true
-    title: "Tentang GroupDocs.Editor untuk Java API"
+    title: "Tentang GroupDocs.Editor for Java API"
     content: |
-        [GroupDocs.Editor for Java](/id/editor/java/) adalah pilihan tepat untuk mengedit dokumen dan presentasi Microsoft Word, Excel, PowerPoint, Open Office. GroupDocs.Editor adalah API mandiri yang cocok untuk sisi server dan sistem back-end yang membutuhkan kinerja tinggi. Itu tidak tergantung pada perangkat lunak apa pun seperti Microsoft atau Open Office.
+        [GroupDocs.Editor for Java](/id/editor/java/) API adalah pilihan yang tepat untuk mengedit dokumen dan presentasi Microsoft Word, Excel, PowerPoint, Open Office. GroupDocs.Editor adalah API mandiri yang cocok untuk sisi server dan sistem back-end yang membutuhkan kinerja tinggi. Itu tidak tergantung pada perangkat lunak apa pun seperti Microsoft atau Open Office.
 
+############################# Steps ############################
 steps:
     enable: true
-    title_left: "Langkah-langkah Mengedit POTX di Java"
+    title_left: "Langkah-langkah untuk Mengedit POTX di Java"
     content_left: |
-        [GroupDocs.Editor](/id/editor/java/) menyediakan cara mudah dan langsung bagi pengembang untuk mengedit file POTX menggunakan beberapa baris kode.
+        [GroupDocs.Editor for Java](/id/editor/java/) menyediakan cara mudah dan langsung bagi pengembang untuk mengedit file POTX menggunakan beberapa baris kode.
+        * Buat instance kelas `Editor` dengan jalur file wajib atau aliran byte dan kelas `PresentationLoadOptions` opsional dan muat file POTX
+        * Buat & setel instance kelas `PresentationEditOptions` untuk format file POTX
+        * Panggil metode `Editor.Edit()` dan dapatkan dokumen POTX dalam format HTML yang mudah diedit dengan editor WYSIWYG apa pun.
+        * Panggil metode `Editor.Save()` dan simpan file POTX yang telah diedit menggunakan kelas `PresentationSaveOptions`
 
-        * Buat instance kelas Editor dan muat file POTX dengan path lengkap
-        * Buat & atur EditOptions untuk jenis file POTX
-        * Panggil metode Editor.edit dan dapatkan dokumen POTX dalam format HTML yang mudah diedit dengan editor WYSIWYG apa pun.
-        * Panggilan Editor.save metode dan simpan file POTX yang diedit
         
     title_right: "Persyaratan sistem"
     content_right: |
-        Pengeditan dokumen dasar dengan GroupDocs.Editor untuk Java API dapat dilakukan dengan menerapkan beberapa langkah mudah. API kami didukung di semua platform dan sistem operasi utama. Sebelum menjalankan kode di bawah ini, pastikan Anda telah menginstal prasyarat berikut di sistem Anda.
+        Pengeditan dokumen dasar dengan GroupDocs.Editor for Java API dapat dilakukan dengan menerapkan beberapa langkah mudah. API kami didukung di semua platform dan sistem operasi utama. Sebelum menjalankan kode di bawah ini, pastikan Anda telah menginstal prasyarat berikut di sistem Anda.
 
         * Sistem Operasi: Microsoft Windows, Linux, MacOS
-        * Lingkungan Pengembangan: NetBeans, Intellij IDEA, Eclipse dll
-        * Lingkungan Runtime Java: J2SE 6.0 dan yang lebih baru
-        * Dapatkan versi terbaru GroupDocs.Editor untuk Java dari [Maven](https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-editor)
-       
-    code: |
-        ```java
-        // Muat file POTX ke Editor
-        Editor editor = new Editor("source.potx");
+        * Lingkungan Pengembangan: NetBeans, IntelliJ IDEA, Eclipse
+        * Kerangka kerja: Java 7 (1.7) and above
+        * Dapatkan GroupDocs.Editor for Java versi terbaru yang diunduh dari [Maven](https://repository.groupdocs.com/editor/)
         
-        // Buka masukan POTX dokumen untuk diedit — dapatkan dokumen perantara, yang dapat diedit
-        EditableDocument beforeEdit = editor.edit();
+    code: |        
+        ```java
+        // Load the POTX file into Editor with the optional PresentationLoadOptions
+        Editor editor = new Editor("source.potx", new PresentationLoadOptions());
 
-        // Ambil konten dokumen POTX dan sumber daya terkait dari dokumen yang dapat diedit
-        string content = beforeEdit.getContent();
+        // Create and adjust the edit options
+        PresentationEditOptions editOptions = new PresentationEditOptions();
+        editOptions.setSlideNumber(1);//select a slide to edit
 
-        // Perbarui konten dokumen POTX dengan cara tertentu
-        string updatedContent = content.replace("Subtitle", "Edited subtitle");
+        // Open input POTX document for edit — obtain an intermediate document, that can be edited
+        EditableDocument beforeEdit = editor.edit(editOptions);
 
-        // Buat instance EditableDocument baru dari konten dan sumber daya yang diedit
+        // Grab POTX document content and associated resources from editable document
+        string content = beforeEdit.getEmbeddedHtml();
+
+        // Send the content to WYSIWYG-editor, edit it there, and send edited content back to the server-side
+        // This step simulates a such operation
+        string updatedContent = content.replace("Title", "Edited Title");
+
+        // Grab edited content and resources from WYSIWYG-editor and create a new EditableDocument instance from it
         EditableDocument afterEdit = EditableDocument.fromMarkup(updatedContent, null);
 
-        // Simpan dokumen POTX yang telah diedit
-        editor.save(afterEdit, "edited.potx");
+        // Create a save options and select a desired output format
+        PresentationSaveOptions saveOptions = new PresentationSaveOptions(PresentationFormats.Potx);
+
+        // Save edited POTX document to the file
+        editor.save(afterEdit, "edited.potx", saveOptions);
         ```
         
+############################# Demos ############################
 demos:
     enable: true
-    title: "Demo Langsung Editor POTX"
+    title: "POTX Demo Langsung Editor"
     content: |
-        Edit POTX sekarang dengan mengunjungi situs web [GroupDocs.Editor](https://products.groupdocs.app/editor/family).  
+        Edit POTX sekarang juga dengan mengunjungi situs web [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family).
         Demo langsung memiliki manfaat sebagai berikut
         
-about_formats:
-    enable: true
-    format:
-        - icon: "far fa-file-powerpoint"
-          title: " Tentang Format Berkas POTX"
-          content: |
-            File dengan ekstensi .POTX mewakili presentasi template Microsoft PowerPoint yang dibuat dengan Microsoft PowerPoint 2007 dan yang lebih baru. Format ini dibuat untuk menggantikan format file POT yang didasarkan pada format file biner dan didukung dengan PowerPoint 97-2003. File yang dihasilkan dapat digunakan untuk membuat presentasi yang memiliki tata letak yang sama dan pengaturan lain yang diperlukan untuk diterapkan ke file baru. Pengaturan ini dapat mencakup gaya, latar belakang, palet warna, font, dan default. File tersebut dibuat untuk membuat file template siap pakai untuk penggunaan resmi.
-
-          link: "https://docs.fileformat.com/presentation/potx/"
-
+############################# More Formats ############################
 more_formats:
     enable: true
     title: "Editor yang Didukung Lainnya"
     content: |
         Anda juga dapat mengedit format file lainnya. Silakan lihat daftar lengkapnya di bawah ini.
-    format:
-        - name: "CSV"
-          link: "https://products.groupdocs.com/editor/java/csv/"
-          description: "File Nilai Dipisahkan Koma"
-
-        - name: "DOKTER"
-          link: "https://products.groupdocs.com/editor/java/doc/"
-          description: "Dokumen Microsoft Word"
-
-        - name: "DOCM"
-          link: "https://products.groupdocs.com/editor/java/docm/"
-          description: "Dokumen Berkemampuan Makro Microsoft Word"
-
-        - name: "DOCX"
-          link: "https://products.groupdocs.com/editor/java/docx/"
-          description: "Microsoft Word Buka Dokumen XML"
-
-        - name: "DOT"
-          link: "https://products.groupdocs.com/editor/java/dot/"
-          description: "Templat Dokumen Microsoft Word"
-
-        - name: "DOTM"
-          link: "https://products.groupdocs.com/editor/java/dotm/"
-          description: "Templat Microsoft Word Macro-Enabled"
-
-        - name: "DOTX"
-          link: "https://products.groupdocs.com/editor/java/dotx/"
-          description: "Templat Dokumen XML Word Terbuka"
-
-        - name: "FODP"
-          link: "https://products.groupdocs.com/editor/java/fodp/"
-          description: "Presentasi XML Datar OpenDocument"
-
-        - name: "makanan"
-          link: "https://products.groupdocs.com/editor/java/fods/"
-          description: "OpenDocument Flat XML Spreadsheet"
-
-        - name: "HTM"
-          link: "https://products.groupdocs.com/editor/java/htm/"
-          description: "File Bahasa Markup Hypertext"
-
-        - name: "HTML"
-          link: "https://products.groupdocs.com/editor/java/html/"
-          description: "Hyper Text Markup Language"
-
-        - name: "MOBI"
-          link: "https://products.groupdocs.com/editor/java/mobi/"
-          description: "eBook Mobipocket"
-
-        - name: "ODP"
-          link: "https://products.groupdocs.com/editor/java/odp/"
-          description: "Format File Presentasi OpenDocument"
-
-        - name: "ODS"
-          link: "https://products.groupdocs.com/editor/java/ods/"
-          description: "Buka Spreadsheet Dokumen"
-
-        - name: "ODT"
-          link: "https://products.groupdocs.com/editor/java/odt/"
-          description: "Buka Teks Dokumen"
-
-        - name: "OTP"
-          link: "https://products.groupdocs.com/editor/java/otp/"
-          description: "Templat Grafik Asal"
-
-        - name: "OTS"
-          link: "https://products.groupdocs.com/editor/java/ots/"
-          description: "Templat Spreadsheet OpenDocument"
-
-        - name: "OTT"
-          link: "https://products.groupdocs.com/editor/java/ott/"
-          description: "Buka Templat Dokumen"
-
-        - name: "POT"
-          link: "https://products.groupdocs.com/editor/java/pot/"
-          description: "Templat PowerPoint"
-
-        - name: "POTM"
-          link: "https://products.groupdocs.com/editor/java/potm/"
-          description: "Templat Microsoft PowerPoint"
-
-        - name: "PPS"
-          link: "https://products.groupdocs.com/editor/java/pps/"
-          description: "Pertunjukan Slide Microsoft PowerPoint"
-
-        - name: "PPSM"
-          link: "https://products.groupdocs.com/editor/java/ppsm/"
-          description: "Pertunjukan Slide Microsoft PowerPoint"
-
-        - name: "PPSX"
-          link: "https://products.groupdocs.com/editor/java/ppsx/"
-          description: "PowerPoint Terbuka XML Slide Show"
-
-        - name: "PPT"
-          link: "https://products.groupdocs.com/editor/java/ppt/"
-          description: "Presentasi powerpoint"
-
-        - name: "PPTM"
-          link: "https://products.groupdocs.com/editor/java/pptm/"
-          description: "Presentasi Microsoft PowerPoint"
-
-        - name: "PPTX"
-          link: "https://products.groupdocs.com/editor/java/pptx/"
-          description: "Presentasi PowerPoint Terbuka XML"
-
-        - name: "RTF"
-          link: "https://products.groupdocs.com/editor/java/rtf/"
-          description: "Format File Teks Kaya"
-
-        - name: "SXC"
-          link: "https://products.groupdocs.com/editor/java/sxc/"
-          description: "Spreadsheet Calc StarOffice"
-
-        - name: "TSV"
-          link: "https://products.groupdocs.com/editor/java/tsv/"
-          description: "File Nilai Terpisah Tab"
-
-        - name: "txt"
-          link: "https://products.groupdocs.com/editor/java/txt/"
-          description: "Format File Teks Biasa"
-
-        - name: "XLAM"
-          link: "https://products.groupdocs.com/editor/java/xlam/"
-          description: "Add-In Microsoft Excel Macro-Enabled"
-
-        - name: "XLS"
-          link: "https://products.groupdocs.com/editor/java/xls/"
-          description: "Format File Biner Microsoft Excel"
-
-        - name: "XLSB"
-          link: "https://products.groupdocs.com/editor/java/xlsb/"
-          description: "File Spreadsheet Biner Microsoft Excel"
-
-        - name: "XLSM"
-          link: "https://products.groupdocs.com/editor/java/xlsm/"
-          description: "Spreadsheet Berkemampuan Makro Microsoft Excel"
-
-        - name: "XLSX"
-          link: "https://products.groupdocs.com/editor/java/xlsx/"
-          description: "Microsoft Excel Buka XML Spreadsheet"
-
-        - name: "XLT"
-          link: "https://products.groupdocs.com/editor/java/xlt/"
-          description: "Templat Microsoft Excel"
-
-        - name: "XLTM"
-          link: "https://products.groupdocs.com/editor/java/xltm/"
-          description: "Templat Microsoft Excel Macro-Enabled"
-
-        - name: "XLTX"
-          link: "https://products.groupdocs.com/editor/java/xltx/"
-          description: "Templat XML Terbuka Microsoft Excel"
-
-        - name: "XML"
-          link: "https://products.groupdocs.com/editor/java/xml/"
-          description: "Bahasa Markup yang Diperluas"
 
 
-
+############################# Back to top ###############################
 back_to_top:
     enable: true
 ---

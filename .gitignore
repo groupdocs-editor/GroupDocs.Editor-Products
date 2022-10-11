@@ -1,2 +1,3 @@
 deploy_key
 /templates/utils/HugoMarkupGenerator/net6.0
+/templates/utils/TranslationTools/net6.0

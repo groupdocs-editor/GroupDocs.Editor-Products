@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-09T00:06:20
+date: 2022-10-11T21:36:01
 draft: false
 otherformats: 
 

@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Crie uma instância da classe `Editor` com caminho de arquivo obrigatório ou fluxo de bytes e classe opcional `PresentationLoadOptions` e carregue o arquivo {{EXT}}",
+    "step_2": "Crie e defina a instância de classe `PresentationEditOptions` para o formato de arquivo {{EXT}}",
+    "step_3": "Chame o método `Editor.Edit()` e obtenha o documento {{EXT}} em formato HTML que é facilmente editável com qualquer editor WYSIWYG.",
+    "step_4": "Chame o método `Editor.Save()` e salve o arquivo {{EXT}} editado usando a classe `PresentationSaveOptions`"
+  }
+}

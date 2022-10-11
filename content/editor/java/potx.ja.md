@@ -1,13 +1,17 @@
 ---
-layout: "auto-gen"
-date: 2022-03-02T11:17:04
+############################# Static ############################
+layout: "auto-gen-editor"
+date: 2022-10-11T21:36:01
 draft: false
+otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml csv pdf xps msg
 
-head_title: "POTX Editor for Java –POTXを編集する"
-head_description: "数行のコードを使用して、JavaでPOTXを編集します。 30以上のファイル形式用の高速で堅牢なドキュメントエディタAPI."
+############################# Head ############################
+head_title: "POTX エディタ — Java の POTX を編集"
+head_description: "数行のコードを使用して Java の POTX を編集するには? GroupDocs ドキュメント処理 API を使用して、30 以上のファイル形式を編集、更新、保存します。"
 
-title: "JavaでPOTXを編集する"
-description: "MicrosoftOfficeやOpenOfficeなどのサードパーティソフトウェアを使用しない、Javaアプリケーション用の強力で高速なPOTXエディタ."
+############################# Header ############################
+title: "JavaのPOTXを編集"
+description: "Microsoft や Open Office などのソフトウェアを使用せずに、サーバー側の GroupDocs.Editor for Java API を使用した効果的で堅牢な POTX 編集。"
 bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
 bg_overlay: false
 button:
@@ -16,6 +20,7 @@ button:
     label: "無料トライアルをダウンロード"
     link: "https://downloads.groupdocs.com/editor/java"
 
+############################# SubMenu ############################
 submenu:
     enable: true
 
@@ -28,212 +33,101 @@ submenu:
     middle:
         button:
 
+            # button loop
             - link: "https://apireference.groupdocs.com/editor/java"
-              text: "APIリファレンス"
+              text: "API リファレンス"
 
+            # button loop
             - link: "https://github.com/groupdocs-editor"
               text: "コード例"
 
+            # button loop
             - link: "https://products.groupdocs.app/editor/family"
               text: "ライブデモ"
 
+            # button loop
             - link: "https://purchase.groupdocs.com/pricing/editor/java"
-              text: "価格設定"
+              text: "料金"
 
     right:
         link_download: "https://downloads.groupdocs.com/editor"
         link_learn: "https://docs.groupdocs.com/editor/java"
         link_buy: "https://purchase.groupdocs.com"
 
+############################# About ############################
 about:
     enable: true
-    title: "GroupDocs.Editor for Java APIについて"
+    title: "GroupDocs.Editor for Java API について"
     content: |
-        [GroupDocs.Editor for Java](/editor/java/)は、Microsoft Word、Excel、PowerPoint、OpenOfficeのドキュメントおよびプレゼンテーションを編集するための正しい選択です。 GroupDocs.Editorは、高性能が要求されるサーバー側およびバックエンドシステムに適したスタンドアロンAPIです。 MicrosoftやOpenOfficeのようなソフトウェアには依存しません。
+        [GroupDocs.Editor for Java](/ja/editor/java/) API は、Microsoft Word、Excel、PowerPoint、Open Office ドキュメントおよびプレゼンテーションを編集するための正しい選択です。 GroupDocs.Editor は、高いパフォーマンスが要求されるサーバー サイドおよびバックエンド システムに適したスタンドアロン API です。 Microsoft や Open Office などのソフトウェアには依存しません。
 
+############################# Steps ############################
 steps:
     enable: true
-    title_left: "JavaでPOTXを編集する手順"
+    title_left: "Java で POTX を編集する手順"
     content_left: |
-        [GroupDocs.Editor](/editor/java/)は、開発者が数行のコードを使用してPOTXファイルを編集するための簡単で簡単な方法を提供します。
+        [GroupDocs.Editor for Java](/ja/editor/java/) は、開発者が数行のコードを使用して POTX ファイルを編集する簡単で直接的な方法を提供します。
+        * 必須のファイル パスまたはバイト ストリームとオプションの「PresentationLoadOptions」クラスを使用して「Editor」クラスのインスタンスを作成し、POTX ファイルをロードします。
+        * POTX ファイル形式の `PresentationEditOptions` クラス インスタンスを作成して設定します
+        * `Editor.Edit()` メソッドを呼び出して、WYSIWYG エディタで簡単に編集できる HTML 形式の POTX ドキュメントを取得します。
+        * `Editor.Save()` メソッドを呼び出し、`PresentationSaveOptions` クラスを使用して編集済みの POTX ファイルを保存します
 
-        * Editorクラスのインスタンスを作成し、フルパスでPOTXファイルをロードします
-        *POTXファイルタイプのEditOptionsを作成および設定します
-        * Editor.editメソッドを呼び出し、WYSIWYGエディターで簡単に編集できるHTML形式のPOTXドキュメントを取得します。
-        * Editor.saveメソッドを呼び出し、編集したPOTXファイルを保存します
         
     title_right: "システム要求"
     content_right: |
-        GroupDocs.Editor for Java APIを使用した基本的なドキュメント編集は、いくつかの簡単な手順を実装することで実行できます。当社のAPIは、すべての主要なプラットフォームとオペレーティングシステムでサポートされています。以下のコードを実行する前に、システムに次の前提条件がインストールされていることを確認してください。
+        GroupDocs.Editor for Java API を使用した基本的なドキュメント編集は、いくつかの簡単な手順を実装することで実行できます。当社の API は、すべての主要なプラットフォームとオペレーティング システムでサポートされています。以下のコードを実行する前に、システムに次の前提条件がインストールされていることを確認してください。
 
-        *オペレーティングシステム: Microsoft Windows、Linux、MacOS
-        *開発環境: NetBeans、Intellij IDEA、Eclipseなど
-        * Javaランタイム環境: J2SE6.0以降
-        * [Maven](https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-editor)からJava用のGroupDocs.Editorの最新バージョンを入手してください。
-       
-    code: |
-        ```java
-        //POTXファイルをエディタにロードします
-        Editor editor = new Editor("source.potx");
+        * オペレーティング システム: Microsoft Windows、Linux、MacOS
+        * 開発環境: NetBeans, IntelliJ IDEA, Eclipse
+        * フレームワーク: Java 7 (1.7) and above
+        * [Maven](https://repository.groupdocs.com/editor/) からダウンロードした GroupDocs.Editor for Java の最新バージョンを取得します
         
-        //入力POTXドキュメントを編集用に開きます—編集可能な中間ドキュメントを取得します
-        EditableDocument beforeEdit = editor.edit();
+    code: |        
+        ```java
+        // Load the POTX file into Editor with the optional PresentationLoadOptions
+        Editor editor = new Editor("source.potx", new PresentationLoadOptions());
 
-        //編集可能なドキュメントからPOTXドキュメントのコンテンツと関連リソースを取得します
-        string content = beforeEdit.getContent();
+        // Create and adjust the edit options
+        PresentationEditOptions editOptions = new PresentationEditOptions();
+        editOptions.setSlideNumber(1);//select a slide to edit
 
-        //POTXドキュメントのコンテンツを何らかの方法で更新します
-        string updatedContent = content.replace("Subtitle", "Edited subtitle");
+        // Open input POTX document for edit — obtain an intermediate document, that can be edited
+        EditableDocument beforeEdit = editor.edit(editOptions);
 
-        //編集されたコンテンツとリソースから新しいEditableDocumentインスタンスを作成します
+        // Grab POTX document content and associated resources from editable document
+        string content = beforeEdit.getEmbeddedHtml();
+
+        // Send the content to WYSIWYG-editor, edit it there, and send edited content back to the server-side
+        // This step simulates a such operation
+        string updatedContent = content.replace("Title", "Edited Title");
+
+        // Grab edited content and resources from WYSIWYG-editor and create a new EditableDocument instance from it
         EditableDocument afterEdit = EditableDocument.fromMarkup(updatedContent, null);
 
-        //編集したPOTXドキュメントを保存します
-        editor.save(afterEdit, "edited.potx");
+        // Create a save options and select a desired output format
+        PresentationSaveOptions saveOptions = new PresentationSaveOptions(PresentationFormats.Potx);
+
+        // Save edited POTX document to the file
+        editor.save(afterEdit, "edited.potx", saveOptions);
         ```
         
+############################# Demos ############################
 demos:
     enable: true
     title: "POTXエディターのライブデモ"
     content: |
-        [GroupDocs.Editorライブデモ](https://products.groupdocs.app/editor/family)サイトにアクセスして、POTXを今すぐ編集してください。  
+        [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) Web サイトにアクセスして、今すぐ POTX を編集してください。
         ライブデモには次の利点があります
         
-about_formats:
-    enable: true
-    format:
-        - icon: "far fa-file-powerpoint"
-          title: " POTXファイル形式について"
-          content: |
-            拡張子が.POTXのファイルは、MicrosoftPowerPoint2007以降で作成されたMicrosoftPowerPointテンプレートプレゼンテーションを表します。この形式は、バイナリファイル形式に基づいており、PowerPoint97-2003でサポートされているPOTファイル形式を置き換えるために作成されました。生成されたファイルを使用して、新しいファイルに適用する必要のある同じレイアウトやその他の設定を持つプレゼンテーションを作成できます。これらの設定には、スタイル、背景、カラーパレット、フォント、およびデフォルトを含めることができます。このようなファイルは、公式に使用できるすぐに使用できるテンプレートファイルを作成するために生成されます。
-
-          link: "https://docs.fileformat.com/presentation/potx/"
-
+############################# More Formats ############################
 more_formats:
-    enable: false
+    enable: true
     title: "その他のサポートされているエディター"
     content: |
-        他のファイル形式を編集することもできます。以下の完全なリストを参照してください。
-    format:
-          link: "https://products.groupdocs.com/editor/java/csv/"
-          description: "カンマ区切り値ファイル"
-
-          link: "https://products.groupdocs.com/editor/java/doc/"
-          description: "MicrosoftWordドキュメント"
-
-          link: "https://products.groupdocs.com/editor/java/docm/"
-          description: "MicrosoftWordマクロ対応ドキュメント"
-
-          link: "https://products.groupdocs.com/editor/java/docx/"
-          description: "Microsoft WordOpenXMLドキュメント"
-
-          link: "https://products.groupdocs.com/editor/java/dot/"
-          description: "MicrosoftWord文書テンプレート"
-
-          link: "https://products.groupdocs.com/editor/java/dotm/"
-          description: "MicrosoftWordマクロ対応テンプレート"
-
-          link: "https://products.groupdocs.com/editor/java/dotx/"
-          description: "WordOpenXMLドキュメントテンプレート"
-
-          link: "https://products.groupdocs.com/editor/java/fodp/"
-          description: "OpenDocumentフラットXMLプレゼンテーション"
-
-          link: "https://products.groupdocs.com/editor/java/fods/"
-          description: "OpenDocumentフラットXMLスプレッドシート"
-
-          link: "https://products.groupdocs.com/editor/java/htm/"
-          description: "ハイパーテキストマークアップ言語ファイル"
-
-          link: "https://products.groupdocs.com/editor/java/html/"
-          description: "ハイパーテキストマークアップ言語"
-
-          link: "https://products.groupdocs.com/editor/java/mobi/"
-          description: "Mobipocket eBook"
-
-          link: "https://products.groupdocs.com/editor/java/odp/"
-          description: "OpenDocumentプレゼンテーションファイル形式"
-
-          link: "https://products.groupdocs.com/editor/java/ods/"
-          description: "ドキュメントスプレッドシートを開く"
-
-          link: "https://products.groupdocs.com/editor/java/odt/"
-          description: "ドキュメントテキストを開く"
-
-          link: "https://products.groupdocs.com/editor/java/otp/"
-          description: "原点グラフテンプレート"
-
-          link: "https://products.groupdocs.com/editor/java/ots/"
-          description: "OpenDocumentスプレッドシートテンプレート"
-
-          link: "https://products.groupdocs.com/editor/java/ott/"
-          description: "ドキュメントテンプレートを開く"
-
-          link: "https://products.groupdocs.com/editor/java/pot/"
-          description: "PowerPointテンプレート"
-
-          link: "https://products.groupdocs.com/editor/java/potm/"
-          description: "MicrosoftPowerPointテンプレート"
-
-          link: "https://products.groupdocs.com/editor/java/pps/"
-          description: "MicrosoftPowerPointスライドショー"
-
-          link: "https://products.groupdocs.com/editor/java/ppsm/"
-          description: "MicrosoftPowerPointスライドショー"
-
-          link: "https://products.groupdocs.com/editor/java/ppsx/"
-          description: "PowerPointOpenXMLスライドショー"
-
-          link: "https://products.groupdocs.com/editor/java/ppt/"
-          description: "PowerPointプレゼンテーション"
-
-          link: "https://products.groupdocs.com/editor/java/pptm/"
-          description: "MicrosoftPowerPointプレゼンテーション"
-
-          link: "https://products.groupdocs.com/editor/java/pptx/"
-          description: "PowerPointOpenXMLプレゼンテーション"
-
-          link: "https://products.groupdocs.com/editor/java/rtf/"
-          description: "リッチテキストファイル形式"
-
-          link: "https://products.groupdocs.com/editor/java/sxc/"
-          description: "StarOfficeCalcスプレッドシート"
-
-          link: "https://products.groupdocs.com/editor/java/tsv/"
-          description: "タブ区切り値ファイル"
-
-          link: "https://products.groupdocs.com/editor/java/txt/"
-          description: "プレーンテキストファイル形式"
-
-          link: "https://products.groupdocs.com/editor/java/xlam/"
-          description: "MicrosoftExcelマクロ対応アドイン"
-
-          link: "https://products.groupdocs.com/editor/java/xls/"
-          description: "MicrosoftExcelバイナリファイル形式"
-
-          link: "https://products.groupdocs.com/editor/java/xlsb/"
-          description: "MicrosoftExcelバイナリスプレッドシートファイル"
-
-          link: "https://products.groupdocs.com/editor/java/xlsm/"
-          description: "MicrosoftExcelマクロ対応スプレッドシート"
-
-          link: "https://products.groupdocs.com/editor/java/xlsx/"
-          description: "Microsoft ExcelOpenXMLスプレッドシート"
-
-          link: "https://products.groupdocs.com/editor/java/xlt/"
-          description: "MicrosoftExcelテンプレート"
-
-          link: "https://products.groupdocs.com/editor/java/xltm/"
-          description: "MicrosoftExcelマクロ対応テンプレート"
-
-          link: "https://products.groupdocs.com/editor/java/xltx/"
-          description: "Microsoft ExcelOpenXMLテンプレート"
-
-          link: "https://products.groupdocs.com/editor/java/xml/"
-          description: "拡張マークアップ言語"
+        他のファイル形式を編集することもできます。以下の完全なリストをご覧ください。
 
 
-
+############################# Back to top ###############################
 back_to_top:
     enable: true
 ---

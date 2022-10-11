@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "{{EXT}} 编辑器 - 在 {{PlatformName}} 中编辑 {{EXT}}",
+    "description": "如何使用几行代码在 {{PlatformName}} 中编辑 {{EXT}}？使用 GroupDocs 文档处理 API 编辑、更新和保存 30 多种文件格式。"
+  },
+  "header": {
+    "title": "在 {{PlatformName}} 中编辑 {{EXT}}",
+    "description": "使用用于 {{PlatformName}} API 的服务器端 GroupDocs.Editor 进行有效且强大的 {{EXT}} 编辑，无需使用 Microsoft 或 Open Office 等任何软件。",
+    "label": "下载免费试用版"
+  },
+  "submenu": {
+    "content_middle": {
+      "button_text_ApiReference": "API 参考",
+      "button_text_CodeExamples": "代码示例",
+      "button_text_LiveDemos": "现场演示",
+      "button_text_Pricing": "价钱"
+    }
+  },
+  "about": {
+    "title": "关于 {{ProductFullName}} API",
+    "h1": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) API 是编辑 Microsoft Word、Excel、PowerPoint、Open Office 文档和演示文稿的正确选择。 GroupDocs.Editor 是一个独立的 API，适用于需要高性能的服务器端和后端系统。它不依赖于任何软件，如 Microsoft 或 Open Office。"
+  },
+  "steps": {
+    "title_left": "在 {{ProgLang}} 中编辑 {{EXT}} 的步骤",
+    "content_left": {
+      "description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) 为开发人员提供了一种使用几行代码编辑 {{EXT}} 文件的简单直接的方法。"
+    },
+    "title_right": "系统要求",
+    "content_right": {
+      "description": "使用 {{ProductFullName}} API 进行基本文档编辑可以通过几个简单的步骤来完成。所有主要平台和操作系统都支持我们的 API。在执行以下代码之前，请确保您的系统上安装了以下先决条件。",
+      "step_1": "操作系统：Microsoft Windows、Linux、MacOS",
+      "step_2": "开发环境：{{DevEnv}}",
+      "step_3": "构架",
+      "step_4": "获取从 [{{RepoName}}]({{RepoUrl}}) 下载的最新版本 {{ProductFullName}}"
+    }
+  },
+  "demos": {
+    "title": "{{EXT}} 编辑器现场演示",
+    "content": "立即访问 [GroupDocs.Editor 现场演示](https://products.groupdocs.app/editor/family) 网站编辑 {{EXT}}。\r\n        现场演示有以下好处"
+  },
+  "more_formats": {
+    "title": "其他支持的编辑器",
+    "content": "您还可以编辑其他文件格式。请参阅下面的完整列表。"
+  }
+}

@@ -1,13 +1,17 @@
 ---
-layout: "auto-gen"
-date: 2022-07-07T12:44:18+03:00
+############################# Static ############################
+layout: "auto-gen-editor"
+date: 2022-10-11T21:36:03
 draft: false
+otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml csv pdf xps msg
 
-head_title: "OTT Editor untuk Java – Edit OTT"
-head_description: "Edit OTT di Java menggunakan beberapa baris kode. API editor dokumen yang cepat dan tangguh untuk 30+ format file."
+############################# Head ############################
+head_title: "OTT Editor — Edit OTT di Java"
+head_description: "Bagaimana cara mengedit OTT di Java menggunakan beberapa baris kode? Gunakan API pemrosesan dokumen GroupDocs untuk mengedit, memperbarui, dan menyimpan 30+ format file."
 
-title: "Edit OTT di Jawa"
-description: "Editor OTT yang andal dan cepat untuk aplikasi Java Anda tanpa perangkat lunak pihak ketiga seperti Microsoft Office atau Open Office."
+############################# Header ############################
+title: "Edit OTT di Java"
+description: "Pengeditan OTT yang efektif dan kuat menggunakan GroupDocs.Editor sisi server untuk API Java, tanpa menggunakan perangkat lunak apa pun seperti Microsoft atau Open Office."
 bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
 bg_overlay: false
 button:
@@ -16,6 +20,7 @@ button:
     label: "Unduh Uji Coba Gratis"
     link: "https://downloads.groupdocs.com/editor/java"
 
+############################# SubMenu ############################
 submenu:
     enable: true
 
@@ -28,15 +33,19 @@ submenu:
     middle:
         button:
 
+            # button loop
             - link: "https://apireference.groupdocs.com/editor/java"
               text: "Referensi API"
 
+            # button loop
             - link: "https://github.com/groupdocs-editor"
               text: "Contoh Kode"
 
+            # button loop
             - link: "https://products.groupdocs.app/editor/family"
               text: "Demo Langsung"
 
+            # button loop
             - link: "https://purchase.groupdocs.com/pricing/editor/java"
               text: "Harga"
 
@@ -45,234 +54,79 @@ submenu:
         link_learn: "https://docs.groupdocs.com/editor/java"
         link_buy: "https://purchase.groupdocs.com"
 
+############################# About ############################
 about:
     enable: true
-    title: "Tentang GroupDocs.Editor untuk Java API"
+    title: "Tentang GroupDocs.Editor for Java API"
     content: |
-        [GroupDocs.Editor for Java](/id/editor/java/) adalah pilihan tepat untuk mengedit dokumen dan presentasi Microsoft Word, Excel, PowerPoint, Open Office. GroupDocs.Editor adalah API mandiri yang cocok untuk sisi server dan sistem back-end yang membutuhkan kinerja tinggi. Itu tidak tergantung pada perangkat lunak apa pun seperti Microsoft atau Open Office.
+        [GroupDocs.Editor for Java](/id/editor/java/) API adalah pilihan yang tepat untuk mengedit dokumen dan presentasi Microsoft Word, Excel, PowerPoint, Open Office. GroupDocs.Editor adalah API mandiri yang cocok untuk sisi server dan sistem back-end yang membutuhkan kinerja tinggi. Itu tidak tergantung pada perangkat lunak apa pun seperti Microsoft atau Open Office.
 
+############################# Steps ############################
 steps:
     enable: true
-    title_left: "Langkah-langkah Mengedit OTT di Java"
+    title_left: "Langkah-langkah untuk Mengedit OTT di Java"
     content_left: |
-        [GroupDocs.Editor](/id/editor/java/) menyediakan cara mudah dan langsung bagi pengembang untuk mengedit file OTT menggunakan beberapa baris kode.
+        [GroupDocs.Editor for Java](/id/editor/java/) menyediakan cara mudah dan langsung bagi pengembang untuk mengedit file OTT menggunakan beberapa baris kode.
+        * Buat instance kelas `Editor` dengan jalur atau aliran file wajib dan kelas `WordProcessingLoadOptions` opsional dan muat file OTT
+        * Buat & setel instance kelas `WordProcessingEditOptions` untuk format file OTT
+        * Panggil metode `Editor.Edit()` dan dapatkan dokumen OTT dalam format HTML yang mudah diedit dengan editor WYSIWYG apa pun.
+        * Panggil metode `Editor.Save()` dan simpan file OTT yang telah diedit menggunakan kelas `WordProcessingSaveOptions`
 
-        * Buat instance kelas Editor dan muat file OTT dengan path lengkap
-        * Buat & atur EditOptions untuk jenis file OTT
-        * Panggil metode Editor.edit dan dapatkan dokumen OTT dalam format HTML yang mudah diedit dengan editor WYSIWYG apa pun.
-        * Panggilan Editor.save metode dan simpan file OTT yang diedit
         
     title_right: "Persyaratan sistem"
     content_right: |
-        Pengeditan dokumen dasar dengan GroupDocs.Editor untuk Java API dapat dilakukan dengan menerapkan beberapa langkah mudah. API kami didukung di semua platform dan sistem operasi utama. Sebelum menjalankan kode di bawah ini, pastikan Anda telah menginstal prasyarat berikut di sistem Anda.
+        Pengeditan dokumen dasar dengan GroupDocs.Editor for Java API dapat dilakukan dengan menerapkan beberapa langkah mudah. API kami didukung di semua platform dan sistem operasi utama. Sebelum menjalankan kode di bawah ini, pastikan Anda telah menginstal prasyarat berikut di sistem Anda.
 
         * Sistem Operasi: Microsoft Windows, Linux, MacOS
-        * Lingkungan Pengembangan: NetBeans, Intellij IDEA, Eclipse dll
-        * Lingkungan Runtime Java: J2SE 6.0 dan yang lebih baru
-        * Dapatkan versi terbaru GroupDocs.Editor untuk Java dari [Maven](https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-editor)
-       
-    code: |
-        ```java
-        // Muat file OTT ke Editor
-        Editor editor = new Editor("source.ott");
+        * Lingkungan Pengembangan: NetBeans, IntelliJ IDEA, Eclipse
+        * Kerangka kerja: Java 7 (1.7) and above
+        * Dapatkan GroupDocs.Editor for Java versi terbaru yang diunduh dari [Maven](https://repository.groupdocs.com/editor/)
         
-        // Buka masukan OTT dokumen untuk diedit — dapatkan dokumen perantara, yang dapat diedit
-        EditableDocument beforeEdit = editor.edit();
+    code: |        
+        ```java
+        // Load the OTT file into Editor with the optional WordProcessingLoadOptions
+        Editor editor = new Editor("source.ott", new WordProcessingLoadOptions());
 
-        // Ambil konten dokumen OTT dan sumber daya terkait dari dokumen yang dapat diedit
+        // Create and adjust the edit options
+        WordProcessingEditOptions editOptions = new WordProcessingEditOptions();
+
+        // Open input OTT document for edit — obtain an intermediate document, that can be edited
+        EditableDocument beforeEdit = editor.edit(editOptions);
+
+        // Grab OTT document content and associated resources from editable document
         string content = beforeEdit.getContent();
 
-        // Perbarui konten dokumen OTT dengan cara tertentu
+        // Send the content to WYSIWYG-editor, edit it there, and send edited content back to the server-side
+        // This step simulates a such operation
         string updatedContent = content.replace("Subtitle", "Edited subtitle");
 
-        // Buat instance EditableDocument baru dari konten dan sumber daya yang diedit
+        // Grab edited content and resources from WYSIWYG-editor and create a new EditableDocument instance from it
         EditableDocument afterEdit = EditableDocument.fromMarkup(updatedContent, null);
 
-        // Simpan dokumen OTT yang telah diedit
-        editor.save(afterEdit, "edited.ott");
+        // Create a save options and select a desired output format
+        WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Ott);
+
+        // Save edited OTT document to the file
+        editor.save(afterEdit, "edited.ott", saveOptions);
         ```
         
+############################# Demos ############################
 demos:
     enable: true
-    title: "Demo Langsung Editor OTT"
+    title: "OTT Demo Langsung Editor"
     content: |
-        Edit OTT sekarang dengan mengunjungi situs web [GroupDocs.Editor](https://products.groupdocs.app/editor/family).  
+        Edit OTT sekarang juga dengan mengunjungi situs web [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family).
         Demo langsung memiliki manfaat sebagai berikut
         
-about_formats:
-    enable: true
-    format:
-        - icon: "far fa-file-OTT"
-          title: " Tentang Format Berkas OTT"
-          content: |
-            File dengan ekstensi OTT mewakili dokumen template yang dihasilkan oleh aplikasi sesuai dengan format standar OpenDocument OASIS. Ini dibuat dengan aplikasi pengolah kata seperti OpenOffice Writer gratis dan dapat menyimpan pengaturan yang dapat digunakan untuk menghasilkan dokumen baru dari file template ini. Pengaturan ini termasuk margin halaman, batas, header, footer, dan pengaturan halaman lainnya. Template tersebut digunakan dalam dokumen resmi seperti kop surat perusahaan dan formulir standar.
-
-          link: "https://docs.fileformat.com/word-processing/ott/"
-
+############################# More Formats ############################
 more_formats:
     enable: true
     title: "Editor yang Didukung Lainnya"
     content: |
         Anda juga dapat mengedit format file lainnya. Silakan lihat daftar lengkapnya di bawah ini.
-    format:
-        - name: "CSV"
-          link: "https://products.groupdocs.com/editor/java/csv/"
-          description: "File Nilai Dipisahkan Koma"
-
-        - name: "DOKTER"
-          link: "https://products.groupdocs.com/editor/java/doc/"
-          description: "Dokumen Microsoft Word"
-
-        - name: "DOCM"
-          link: "https://products.groupdocs.com/editor/java/docm/"
-          description: "Dokumen Berkemampuan Makro Microsoft Word"
-
-        - name: "DOCX"
-          link: "https://products.groupdocs.com/editor/java/docx/"
-          description: "Microsoft Word Buka Dokumen XML"
-
-        - name: "DOT"
-          link: "https://products.groupdocs.com/editor/java/dot/"
-          description: "Templat Dokumen Microsoft Word"
-
-        - name: "DOTM"
-          link: "https://products.groupdocs.com/editor/java/dotm/"
-          description: "Templat Microsoft Word Macro-Enabled"
-
-        - name: "DOTX"
-          link: "https://products.groupdocs.com/editor/java/dotx/"
-          description: "Templat Dokumen XML Word Terbuka"
-
-        - name: "FODP"
-          link: "https://products.groupdocs.com/editor/java/fodp/"
-          description: "Presentasi XML Datar OpenDocument"
-
-        - name: "makanan"
-          link: "https://products.groupdocs.com/editor/java/fods/"
-          description: "OpenDocument Flat XML Spreadsheet"
-
-        - name: "HTM"
-          link: "https://products.groupdocs.com/editor/java/htm/"
-          description: "File Bahasa Markup Hypertext"
-
-        - name: "HTML"
-          link: "https://products.groupdocs.com/editor/java/html/"
-          description: "Hyper Text Markup Language"
-
-        - name: "MOBI"
-          link: "https://products.groupdocs.com/editor/java/mobi/"
-          description: "eBook Mobipocket"
-
-        - name: "ODP"
-          link: "https://products.groupdocs.com/editor/java/odp/"
-          description: "Format File Presentasi OpenDocument"
-
-        - name: "ODS"
-          link: "https://products.groupdocs.com/editor/java/ods/"
-          description: "Buka Spreadsheet Dokumen"
-
-        - name: "ODT"
-          link: "https://products.groupdocs.com/editor/java/odt/"
-          description: "Buka Teks Dokumen"
-
-        - name: "OTP"
-          link: "https://products.groupdocs.com/editor/java/otp/"
-          description: "Templat Grafik Asal"
-
-        - name: "OTS"
-          link: "https://products.groupdocs.com/editor/java/ots/"
-          description: "Templat Spreadsheet OpenDocument"
-
-        - name: "POT"
-          link: "https://products.groupdocs.com/editor/java/pot/"
-          description: "Templat PowerPoint"
-
-        - name: "POTM"
-          link: "https://products.groupdocs.com/editor/java/potm/"
-          description: "Templat Microsoft PowerPoint"
-
-        - name: "POTX"
-          link: "https://products.groupdocs.com/editor/java/potx/"
-          description: "Templat XML Terbuka Microsoft PowerPoint"
-
-        - name: "PPS"
-          link: "https://products.groupdocs.com/editor/java/pps/"
-          description: "Pertunjukan Slide Microsoft PowerPoint"
-
-        - name: "PPSM"
-          link: "https://products.groupdocs.com/editor/java/ppsm/"
-          description: "Pertunjukan Slide Microsoft PowerPoint"
-
-        - name: "PPSX"
-          link: "https://products.groupdocs.com/editor/java/ppsx/"
-          description: "PowerPoint Terbuka XML Slide Show"
-
-        - name: "PPT"
-          link: "https://products.groupdocs.com/editor/java/ppt/"
-          description: "Presentasi powerpoint"
-
-        - name: "PPTM"
-          link: "https://products.groupdocs.com/editor/java/pptm/"
-          description: "Presentasi Microsoft PowerPoint"
-
-        - name: "PPTX"
-          link: "https://products.groupdocs.com/editor/java/pptx/"
-          description: "Presentasi PowerPoint Terbuka XML"
-
-        - name: "RTF"
-          link: "https://products.groupdocs.com/editor/java/rtf/"
-          description: "Format File Teks Kaya"
-
-        - name: "SXC"
-          link: "https://products.groupdocs.com/editor/java/sxc/"
-          description: "Spreadsheet Calc StarOffice"
-
-        - name: "TSV"
-          link: "https://products.groupdocs.com/editor/java/tsv/"
-          description: "File Nilai Terpisah Tab"
-
-        - name: "txt"
-          link: "https://products.groupdocs.com/editor/java/txt/"
-          description: "Format File Teks Biasa"
-
-        - name: "XLAM"
-          link: "https://products.groupdocs.com/editor/java/xlam/"
-          description: "Add-In Microsoft Excel Macro-Enabled"
-
-        - name: "XLS"
-          link: "https://products.groupdocs.com/editor/java/xls/"
-          description: "Format File Biner Microsoft Excel"
-
-        - name: "XLSB"
-          link: "https://products.groupdocs.com/editor/java/xlsb/"
-          description: "File Spreadsheet Biner Microsoft Excel"
-
-        - name: "XLSM"
-          link: "https://products.groupdocs.com/editor/java/xlsm/"
-          description: "Spreadsheet Berkemampuan Makro Microsoft Excel"
-
-        - name: "XLSX"
-          link: "https://products.groupdocs.com/editor/java/xlsx/"
-          description: "Microsoft Excel Buka XML Spreadsheet"
-
-        - name: "XLT"
-          link: "https://products.groupdocs.com/editor/java/xlt/"
-          description: "Templat Microsoft Excel"
-
-        - name: "XLTM"
-          link: "https://products.groupdocs.com/editor/java/xltm/"
-          description: "Templat Microsoft Excel Macro-Enabled"
-
-        - name: "XLTX"
-          link: "https://products.groupdocs.com/editor/java/xltx/"
-          description: "Templat XML Terbuka Microsoft Excel"
-
-        - name: "XML"
-          link: "https://products.groupdocs.com/editor/java/xml/"
-          description: "Bahasa Markup yang Diperluas"
 
 
-
+############################# Back to top ###############################
 back_to_top:
     enable: true
 ---
