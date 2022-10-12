@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-11T21:36:02
+date: 2022-10-12T13:39:51
 draft: false
 otherformats: doc docx docm dotx xls xlsx ppt pptx pptm mobi epub html mhtml txt xml csv pdf xps msg eml
 
@@ -116,8 +116,7 @@ demos:
     enable: true
     title: "XLSM Editor-Live-Demos"
     content: |
-        Bearbeiten Sie XLSM jetzt, indem Sie die Website [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) besuchen.  
-    Die Live-Demo hat die folgenden Vorteile
+        Bearbeiten Sie XLSM jetzt, indem Sie die Website [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) besuchen. Die Live-Demo hat die folgenden Vorteile
         
 ############################# More Formats ############################
 more_formats:

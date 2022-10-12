@@ -2,7 +2,7 @@ inherits: Common.yml
 
 dimensions: 
 - alias: ext
-  values: ["xls", "xlsx", "xlsm", "xlt", "xltx", "xltm", "xlsb", "xlam", "ods", "fods", "sxc", "csv"]
+  values: ["xls", "xlsx", "xlsm", "xlt", "xltx", "xltm", "xlsb", "xlam", "ods", "ots", "fods", "sxc"]
 
 dictionaries: ["..\\data\\SpreadsheetFamilyDict_{lang}.json"]
 

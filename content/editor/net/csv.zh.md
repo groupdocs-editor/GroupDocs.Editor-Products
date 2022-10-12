@@ -1,9 +1,9 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-11T21:36:02
+date: 2022-10-12T13:39:49
 draft: false
-otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml pdf xps msg eml
+otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml tsv pdf xps msg
 
 ############################# Head ############################
 head_title: "CSV 编辑器 - 在 C# .NET 中编辑 CSV"
@@ -67,10 +67,10 @@ steps:
     title_left: "在 C# 中编辑 CSV 的步骤"
     content_left: |
         [GroupDocs.Editor for .NET](/zh/editor/net/) 为开发人员提供了一种使用几行代码编辑 CSV 文件的简单直接的方法。
-        * 创建具有强制文件路径或流和可选的 `SpreadsheetLoadOptions` 类的 `Editor` 类的实例并加载 CSV 文件
-        * 为 CSV 文件格式创建和设置 `SpreadsheetEditOptions` 类实例
-        * 调用 `Editor.Edit()` 方法并获得 HTML 格式的 CSV 文档，该文档可以使用任何所见即所得的编辑器轻松编辑。
-        * 调用 `Editor.Save()` 方法并使用 `SpreadsheetSaveOptions` 类保存编辑的 CSV 文件
+        * 使用强制文件路径或字节流创建 `Editor` 类的实例并加载 CSV 文件
+        * 为 CSV 文件格式创建 `DelimitedTextEditOptions` 类实例，并在构造函数中指定强制字符串分隔符
+        * 调用 `Editor.Edit()` 方法并获得 HTML 格式的 CSV 文档，该文档可使用任何所见即所得编辑器轻松编辑。
+        * 调用 `Editor.Save()` 方法并使用带有所需分隔符的 `DelimitedTextSaveOptions` 类实例保存编辑的 CSV 文件
 
         
     title_right: "系统要求"
@@ -84,12 +84,11 @@ steps:
         
     code: |        
         ```csharp
-        // Load the CSV file into Editor with the optional SpreadsheetLoadOptions
-        Editor editor = new Editor("source.csv", delegate { return new SpreadsheetLoadOptions(); });
+        // Load the CSV file into Editor with no extra loading options
+        Editor editor = new Editor("source.csv");
 
-        // Create and adjust the edit options
-        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
-        editOptions.WorksheetIndex = 1;//select a tab (worksheet) to edit
+        // Create edit options for delimited text and specify a mandatory separator in the constructor
+        DelimitedTextEditOptions editOptions = new DelimitedTextEditOptions(",");        
 
         // Open input CSV document for edit — obtain an intermediate document, that can be edited
         EditableDocument beforeEdit = editor.Edit(editOptions);
@@ -104,8 +103,8 @@ steps:
         // Grab edited content and resources from WYSIWYG-editor and create a new EditableDocument instance from it
         EditableDocument afterEdit = EditableDocument.FromMarkup(updatedContent, null);
 
-        // Create a save options and select a desired output format
-        SpreadsheetSaveOptions saveOptions = new SpreadsheetSaveOptions(Formats.SpreadsheetFormats.Csv);
+        // Create save options for delimited text and specify a mandatory separator in the constructor
+        DelimitedTextSaveOptions saveOptions = new DelimitedTextSaveOptions(",");
 
         // Save edited CSV document to the file
         editor.Save(afterEdit, "edited.csv", saveOptions);

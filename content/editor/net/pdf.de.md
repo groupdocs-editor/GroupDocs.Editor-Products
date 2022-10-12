@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-11T21:36:00
+date: 2022-10-12T13:39:50
 draft: false
 otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml csv xps msg eml
 
@@ -115,8 +115,7 @@ demos:
     enable: true
     title: "PDF Editor-Live-Demos"
     content: |
-        Bearbeiten Sie PDF jetzt, indem Sie die Website [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) besuchen.  
-    Die Live-Demo hat die folgenden Vorteile
+        Bearbeiten Sie PDF jetzt, indem Sie die Website [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) besuchen. Die Live-Demo hat die folgenden Vorteile
         
 ############################# More Formats ############################
 more_formats:

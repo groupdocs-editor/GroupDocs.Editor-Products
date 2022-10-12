@@ -1,9 +1,9 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-11T21:36:02
+date: 2022-10-12T13:39:49
 draft: false
-otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml pdf xps msg eml
+otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml tsv pdf xps msg
 
 ############################# Head ############################
 head_title: "CSV 편집기 — Java에서 CSV 편집"
@@ -67,10 +67,10 @@ steps:
     title_left: "Java에서 CSV를 수정하는 단계"
     content_left: |
         [GroupDocs.Editor for Java](/ko/editor/java/)는 개발자가 몇 줄의 코드를 사용하여 CSV 파일을 편집할 수 있는 쉽고 간단한 방법을 제공합니다.
-        * 필수 파일 경로 또는 스트림과 선택적 `SpreadsheetLoadOptions` 클래스를 사용하여 `Editor` 클래스의 인스턴스를 만들고 CSV 파일을 로드합니다.
-        * CSV 파일 형식에 대한 `SpreadsheetEditOptions` 클래스 인스턴스 생성 및 설정
+        * 필수 파일 경로 또는 바이트 스트림으로 `Editor` 클래스의 인스턴스를 만들고 CSV 파일을 로드합니다.
+        * CSV 파일 형식에 대한 `DelimitedTextEditOptions` 클래스 인스턴스를 만들고 생성자에서 필수 문자열 구분 기호를 지정합니다.
         * `Editor.Edit()` 메서드를 호출하고 모든 WYSIWYG 편집기로 쉽게 편집할 수 있는 HTML 형식의 CSV 문서를 가져옵니다.
-        * `Editor.Save()` 메서드를 호출하고 `SpreadsheetSaveOptions` 클래스를 사용하여 편집된 CSV 파일을 저장합니다.
+        * `Editor.Save()` 메서드를 호출하고 원하는 구분 기호가 있는 `DelimitedTextSaveOptions` 클래스 인스턴스를 사용하여 편집된 CSV 파일을 저장합니다.
 
         
     title_right: "시스템 요구 사항"
@@ -84,12 +84,11 @@ steps:
         
     code: |        
         ```java
-        // Load the CSV file into Editor with the optional SpreadsheetLoadOptions
-        Editor editor = new Editor("source.csv", new SpreadsheetLoadOptions());
+        // Load the CSV file into Editor with no extra loading options
+        Editor editor = new Editor("source.csv");
 
-        // Create and adjust the edit options
-        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
-        editOptions.setWorksheetIndex(1);//select a tab (worksheet) to edit
+        // Create edit options for delimited text and specify a mandatory separator in the constructor
+        DelimitedTextEditOptions editOptions = new DelimitedTextEditOptions(",");        
 
         // Open input CSV document for edit — obtain an intermediate document, that can be edited
         EditableDocument beforeEdit = editor.edit(editOptions);
@@ -104,8 +103,8 @@ steps:
         // Grab edited content and resources from WYSIWYG-editor and create a new EditableDocument instance from it
         EditableDocument afterEdit = EditableDocument.fromMarkup(updatedContent, null);
 
-        // Create a save options and select a desired output format
-        SpreadsheetSaveOptions saveOptions = new SpreadsheetSaveOptions(SpreadsheetFormats.Csv);
+        // Create save options for delimited text and specify a mandatory separator in the constructor
+        DelimitedTextSaveOptions saveOptions = new DelimitedTextSaveOptions(",");
 
         // Save edited CSV document to the file
         editor.save(afterEdit, "edited.csv", saveOptions);

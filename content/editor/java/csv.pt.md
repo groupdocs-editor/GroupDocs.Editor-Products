@@ -1,9 +1,9 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-11T21:36:02
+date: 2022-10-12T13:39:49
 draft: false
-otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml pdf xps msg eml
+otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml tsv pdf xps msg
 
 ############################# Head ############################
 head_title: "Editor CSV — Edite CSV em Java"
@@ -67,10 +67,10 @@ steps:
     title_left: "Etapas para editar CSV em Java"
     content_left: |
         [GroupDocs.Editor for Java](/pt/editor/java/) fornece uma maneira fácil e direta para os desenvolvedores editarem os arquivos CSV usando algumas linhas de código.
-        * Crie uma instância da classe `Editor` com caminho ou fluxo de arquivo obrigatório e classe opcional `SpreadsheetLoadOptions` e carregue o arquivo CSV
-        * Crie e defina a instância de classe `SpreadsheetEditOptions` para o formato de arquivo CSV
+        * Crie uma instância da classe `Editor` com caminho de arquivo obrigatório ou fluxo de bytes e carregue o arquivo CSV
+        * Crie a instância de classe `DelimitedTextEditOptions` para o formato de arquivo CSV e especifique um separador de string obrigatório no construtor
         * Chame o método `Editor.Edit()` e obtenha o documento CSV em formato HTML que é facilmente editável com qualquer editor WYSIWYG.
-        * Chame o método `Editor.Save()` e salve o arquivo CSV editado usando a classe `SpreadsheetSaveOptions`
+        * Chame o método `Editor.Save()` e salve o arquivo CSV editado usando a instância da classe `DelimitedTextSaveOptions` com o separador desejado
 
         
     title_right: "Requisitos de sistema"
@@ -84,12 +84,11 @@ steps:
         
     code: |        
         ```java
-        // Load the CSV file into Editor with the optional SpreadsheetLoadOptions
-        Editor editor = new Editor("source.csv", new SpreadsheetLoadOptions());
+        // Load the CSV file into Editor with no extra loading options
+        Editor editor = new Editor("source.csv");
 
-        // Create and adjust the edit options
-        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
-        editOptions.setWorksheetIndex(1);//select a tab (worksheet) to edit
+        // Create edit options for delimited text and specify a mandatory separator in the constructor
+        DelimitedTextEditOptions editOptions = new DelimitedTextEditOptions(",");        
 
         // Open input CSV document for edit — obtain an intermediate document, that can be edited
         EditableDocument beforeEdit = editor.edit(editOptions);
@@ -104,8 +103,8 @@ steps:
         // Grab edited content and resources from WYSIWYG-editor and create a new EditableDocument instance from it
         EditableDocument afterEdit = EditableDocument.fromMarkup(updatedContent, null);
 
-        // Create a save options and select a desired output format
-        SpreadsheetSaveOptions saveOptions = new SpreadsheetSaveOptions(SpreadsheetFormats.Csv);
+        // Create save options for delimited text and specify a mandatory separator in the constructor
+        DelimitedTextSaveOptions saveOptions = new DelimitedTextSaveOptions(",");
 
         // Save edited CSV document to the file
         editor.save(afterEdit, "edited.csv", saveOptions);

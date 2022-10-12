@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-11T21:36:03
+date: 2022-10-12T13:39:52
 draft: false
 otherformats: doc docx docm xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml csv pdf xps msg eml
 
@@ -115,8 +115,7 @@ demos:
     enable: true
     title: "DOTM Editor-Live-Demos"
     content: |
-        Bearbeiten Sie DOTM jetzt, indem Sie die Website [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) besuchen.  
-    Die Live-Demo hat die folgenden Vorteile
+        Bearbeiten Sie DOTM jetzt, indem Sie die Website [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) besuchen. Die Live-Demo hat die folgenden Vorteile
         
 ############################# More Formats ############################
 more_formats:

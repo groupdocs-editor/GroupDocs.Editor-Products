@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-11T21:36:01
+date: 2022-10-12T13:39:50
 draft: false
 otherformats: doc docx docm dotx xls xlsx xlsm ppt pptm mobi epub html mhtml txt xml csv pdf xps msg eml
 
@@ -116,8 +116,7 @@ demos:
     enable: true
     title: "PPTX Editor-Live-Demos"
     content: |
-        Bearbeiten Sie PPTX jetzt, indem Sie die Website [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) besuchen.  
-    Die Live-Demo hat die folgenden Vorteile
+        Bearbeiten Sie PPTX jetzt, indem Sie die Website [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) besuchen. Die Live-Demo hat die folgenden Vorteile
         
 ############################# More Formats ############################
 more_formats:

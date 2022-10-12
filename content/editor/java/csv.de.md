@@ -1,9 +1,9 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-11T21:36:02
+date: 2022-10-12T13:39:49
 draft: false
-otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml pdf xps msg eml
+otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml tsv pdf xps msg
 
 ############################# Head ############################
 head_title: "CSV-Editor – Bearbeiten Sie CSV in Java"
@@ -67,10 +67,10 @@ steps:
     title_left: "Schritte zum Bearbeiten von CSV in Java"
     content_left: |
         [GroupDocs.Editor for Java](/de/editor/java/) bietet Entwicklern eine einfache und unkomplizierte Möglichkeit, die CSV-Dateien mit wenigen Codezeilen zu bearbeiten.
-        * Erstellen Sie eine Instanz der Klasse „Editor“ mit obligatorischem Dateipfad oder Stream und optionaler Klasse „SpreadsheetLoadOptions“ und laden Sie die Datei CSV
-        * Erstellen und legen Sie die Klasseninstanz „SpreadsheetEditOptions“ für das Dateiformat CSV fest
+        * Erstellen Sie eine Instanz der Klasse „Editor“ mit obligatorischem Dateipfad oder Bytestream und laden Sie die Datei CSV
+        * Erstellen Sie die Klasseninstanz „DelimitedTextEditOptions“ für das Dateiformat CSV und geben Sie im Konstruktor ein obligatorisches Zeichenfolgentrennzeichen an
         * Rufen Sie die Methode `Editor.Edit()` auf und erhalten Sie ein CSV-Dokument im HTML-Format, das mit jedem WYSIWYG-Editor einfach bearbeitet werden kann.
-        * Rufen Sie die Methode „Editor.Save()“ auf und speichern Sie die bearbeitete CSV-Datei mit der Klasse „SpreadsheetSaveOptions“.
+        * Rufen Sie die Methode „Editor.Save()“ auf und speichern Sie die bearbeitete CSV-Datei mithilfe der Klasseninstanz „DelimitedTextSaveOptions“ mit dem gewünschten Trennzeichen
 
         
     title_right: "System Anforderungen"
@@ -84,12 +84,11 @@ steps:
         
     code: |        
         ```java
-        // Load the CSV file into Editor with the optional SpreadsheetLoadOptions
-        Editor editor = new Editor("source.csv", new SpreadsheetLoadOptions());
+        // Load the CSV file into Editor with no extra loading options
+        Editor editor = new Editor("source.csv");
 
-        // Create and adjust the edit options
-        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
-        editOptions.setWorksheetIndex(1);//select a tab (worksheet) to edit
+        // Create edit options for delimited text and specify a mandatory separator in the constructor
+        DelimitedTextEditOptions editOptions = new DelimitedTextEditOptions(",");        
 
         // Open input CSV document for edit — obtain an intermediate document, that can be edited
         EditableDocument beforeEdit = editor.edit(editOptions);
@@ -104,8 +103,8 @@ steps:
         // Grab edited content and resources from WYSIWYG-editor and create a new EditableDocument instance from it
         EditableDocument afterEdit = EditableDocument.fromMarkup(updatedContent, null);
 
-        // Create a save options and select a desired output format
-        SpreadsheetSaveOptions saveOptions = new SpreadsheetSaveOptions(SpreadsheetFormats.Csv);
+        // Create save options for delimited text and specify a mandatory separator in the constructor
+        DelimitedTextSaveOptions saveOptions = new DelimitedTextSaveOptions(",");
 
         // Save edited CSV document to the file
         editor.save(afterEdit, "edited.csv", saveOptions);
@@ -116,8 +115,7 @@ demos:
     enable: true
     title: "CSV Editor-Live-Demos"
     content: |
-        Bearbeiten Sie CSV jetzt, indem Sie die Website [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) besuchen.  
-    Die Live-Demo hat die folgenden Vorteile
+        Bearbeiten Sie CSV jetzt, indem Sie die Website [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) besuchen. Die Live-Demo hat die folgenden Vorteile
         
 ############################# More Formats ############################
 more_formats:

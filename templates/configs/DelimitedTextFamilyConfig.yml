@@ -1,0 +1,9 @@
+inherits: Common.yml
+
+dimensions: 
+- alias: ext
+  values: ["csv", "tsv"]
+
+dictionaries: ["..\\data\\DelimitedTextFamilyDict_{lang}.json"]
+
+outputPath: "{product}\\{ext}.{lang}.md"
