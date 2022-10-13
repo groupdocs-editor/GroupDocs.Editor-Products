@@ -1,9 +1,9 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-12T13:39:51
+date: 2022-10-13T19:33:08
 draft: false
-otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx mobi epub html mhtml txt xml csv pdf xps msg eml
+otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx mobi epub html mhtml txt xml csv rtf odt msg eml
 
 ############################# Head ############################
 head_title: "PPTM 编辑器 - 在 Java 中编辑 PPTM"

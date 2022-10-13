@@ -1,9 +1,9 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-12T13:39:49
+date: 2022-10-13T19:33:06
 draft: false
-otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml csv pdf xps msg
+otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml csv rtf odt msg
 
 ############################# Head ############################
 head_title: "TSV Editor — Edit TSV di Java"

@@ -1,9 +1,9 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-12T13:39:52
+date: 2022-10-13T19:33:10
 draft: false
-otherformats: docx docm dotx odt xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml csv pdf xps msg
+otherformats: docx docm dotx odt xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml csv rtf odt msg
 
 ############################# Head ############################
 head_title: "DOC 编辑器 - 在 Java 中编辑 DOC"

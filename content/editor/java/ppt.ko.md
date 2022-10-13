@@ -1,9 +1,9 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-12T13:39:50
+date: 2022-10-13T19:33:08
 draft: false
-otherformats: doc docx docm dotx xls xlsx xlsm pptx pptm mobi epub html mhtml txt xml csv pdf xps msg eml
+otherformats: doc docx docm dotx xls xlsx xlsm pptx pptm mobi epub html mhtml txt xml csv rtf odt msg eml
 
 ############################# Head ############################
 head_title: "PPT 편집기 — Java에서 PPT 편집"

@@ -1,9 +1,9 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-12T13:39:50
+date: 2022-10-13T19:33:08
 draft: false
-otherformats: doc docx docm dotx xls xlsx xlsm ppt pptm mobi epub html mhtml txt xml csv pdf xps msg eml
+otherformats: doc docx docm dotx xls xlsx xlsm ppt pptm mobi epub html mhtml txt xml csv rtf odt msg eml
 
 ############################# Head ############################
 head_title: "PPTX エディタ — Java の PPTX を編集"

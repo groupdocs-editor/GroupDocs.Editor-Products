@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "Editor {{EXT}}: modifica {{EXT}} in {{PlatformName}}",
+    "description": "Come modificare {{EXT}} in {{PlatformName}} utilizzando poche righe di codice? Usa le API di elaborazione dei documenti di GroupDocs per modificare, aggiornare e salvare oltre 30 formati di file."
+  },
+  "header": {
+    "title": "Modifica {{EXT}} in {{PlatformName}}",
+    "description": "Modifica {{EXT}} efficace e affidabile utilizzando GroupDocs.Editor lato server per API {{PlatformName}}, senza l'uso di software come Microsoft o Open Office.",
+    "label": "Scarica la prova gratuita"
+  },
+  "submenu": {
+    "content_middle": {
+      "button_text_ApiReference": "Riferimento API",
+      "button_text_CodeExamples": "Esempi di codice",
+      "button_text_LiveDemos": "Dimostrazioni dal vivo",
+      "button_text_Pricing": "Prezzo"
+    }
+  },
+  "about": {
+    "title": "Informazioni sull'API {{ProductFullName}}",
+    "h1": "L'API [{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) è la scelta giusta per modificare documenti e presentazioni Microsoft Word, Excel, PowerPoint, Open Office. GroupDocs.Editor è un'API standalone adatta per sistemi lato server e back-end in cui sono richieste prestazioni elevate. Non dipende da alcun software come Microsoft o Open Office."
+  },
+  "steps": {
+    "title_left": "Passaggi per modificare {{EXT}} in {{ProgLang}}",
+    "content_left": {
+      "description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) fornisce agli sviluppatori un modo semplice e diretto per modificare i file {{EXT}} utilizzando poche righe di codice."
+    },
+    "title_right": "Requisiti di sistema",
+    "content_right": {
+      "description": "È possibile eseguire una modifica di base del documento con le API {{ProductFullName}} implementando alcuni semplici passaggi. Le nostre API sono supportate su tutte le principali piattaforme e sistemi operativi. Prima di eseguire il codice seguente, assicurati di avere i seguenti prerequisiti installati sul tuo sistema.",
+      "step_1": "Sistemi operativi: Microsoft Windows, Linux, MacOS",
+      "step_2": "Ambienti di sviluppo: {{DevEnv}}",
+      "step_3": "Quadri",
+      "step_4": "Ottieni l'ultima versione di {{ProductFullName}} scaricata da [{{RepoName}}]({{RepoUrl}})"
+    }
+  },
+  "demos": {
+    "title": "{{EXT}} Editor Demo live",
+    "content": "Modifica {{EXT}} in questo momento visitando il sito web [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family).\r\n        La demo dal vivo ha i seguenti vantaggi"
+  },
+  "more_formats": {
+    "title": "Altri editor supportati",
+    "content": "Puoi anche modificare altri formati di file. Si prega di consultare l'elenco completo di seguito."
+  }
+}

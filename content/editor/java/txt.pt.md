@@ -1,9 +1,9 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-12T13:39:52
+date: 2022-10-13T19:33:09
 draft: false
-otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml xml csv pdf xps msg eml
+otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml xml csv rtf odt msg eml
 
 ############################# Head ############################
 head_title: "Editor TXT — Edite TXT em Java"
