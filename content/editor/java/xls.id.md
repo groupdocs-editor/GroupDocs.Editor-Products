@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-13T19:33:08
+date: 2022-10-14T17:11:22
 draft: false
 otherformats: doc docx docm dotx xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml csv rtf odt msg eml
 

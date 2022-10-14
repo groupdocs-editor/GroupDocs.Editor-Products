@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-13T19:33:06
+date: 2022-10-14T17:11:19
 draft: false
 otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml tsv pdf xps msg
 
@@ -69,7 +69,7 @@ steps:
         [GroupDocs.Editor for .NET](/de/editor/net/) bietet Entwicklern eine einfache und unkomplizierte Möglichkeit, die CSV-Dateien mit wenigen Codezeilen zu bearbeiten.
         * Erstellen Sie eine Instanz der Klasse „Editor“ mit obligatorischem Dateipfad oder Bytestream und laden Sie die Datei CSV
         * Erstellen Sie die Klasseninstanz „DelimitedTextEditOptions“ für das Dateiformat CSV und geben Sie im Konstruktor ein obligatorisches Zeichenfolgentrennzeichen an
-        * Rufen Sie die Methode `Editor.Edit()` auf und erhalten Sie ein CSV-Dokument im HTML-Format, das mit jedem WYSIWYG-Editor einfach bearbeitet werden kann.
+        * Rufen Sie die Methode `Editor.Edit()` auf und erhalten Sie ein CSV-Dokument im HTML-Format, das mit jedem WYSIWYG-Editor einfach bearbeitet werden kann
         * Rufen Sie die Methode „Editor.Save()“ auf und speichern Sie die bearbeitete CSV-Datei mithilfe der Klasseninstanz „DelimitedTextSaveOptions“ mit dem gewünschten Trennzeichen
 
         

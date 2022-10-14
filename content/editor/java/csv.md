@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-13T19:33:06
+date: 2022-10-14T17:11:19
 draft: false
 otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml tsv rtf odt msg
 
@@ -69,7 +69,7 @@ steps:
         [GroupDocs.Editor for Java](/editor/java/) provides an easy and straightforward way for developers to edit the CSV files using a few lines of code.
         * Create an instance of `Editor` class with mandatory file path or byte stream and load the CSV file
         * Create the `DelimitedTextEditOptions` class instance for the CSV file format and specify a mandatory string separator in the constructor
-        * Call `Editor.Edit()` method and obtain CSV document in HTML format that is easily editable with any WYSIWYG-editor.
+        * Call `Editor.Edit()` method and obtain CSV document in HTML format that is easily editable with any WYSIWYG-editor
         * Call `Editor.Save()` method and save edited CSV file using the `DelimitedTextSaveOptions` class instance with desired separator
 
         

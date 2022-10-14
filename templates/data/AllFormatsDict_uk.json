@@ -1,11 +1,11 @@
 {
     "head": {
-        "title": "Редактор DOCX — редагуйте DOCX на {{PlatformName}}",
-        "description": "Як редагувати DOCX в {{PlatformName}}, використовуючи декілька рядків коду? Використовуйте API-інтерфейси обробки документів GroupDocs для редагування, оновлення та збереження файлів у більш ніж 30 форматах."
+        "title": "Редактор {{EXT}} — редагуйте {{EXT}} на {{PlatformName}}",
+        "description": "Як редагувати {{EXT}} в {{PlatformName}}, використовуючи декілька рядків коду? Використовуйте API-інтерфейси обробки документів GroupDocs для редагування, оновлення та збереження файлів у більш ніж 30 форматах."
     },
 	"header": {
-		"title": "Редагувати DOCX на {{PlatformName}}",
-		"description": "Ефективне та надійне редагування DOCX із використанням API GroupDocs.Editor for {{PlatformName}}, що виконується на серверній стороні, без використання стороннього ПЗ типу Microsoft Office чи Open Office.",
+		"title": "Редагувати {{EXT}} на {{PlatformName}}",
+		"description": "Ефективне та надійне редагування {{EXT}} із використанням API GroupDocs.Editor for {{PlatformName}}, що виконується на серверній стороні, без використання стороннього ПЗ типу Microsoft Office чи Open Office.",
 		"label": "Скачати безоплатну пробну версію"
 	},
 	"submenu": {

@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-13T19:33:06
+date: 2022-10-14T17:11:19
 draft: false
 otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml csv pdf xps msg
 
@@ -69,7 +69,7 @@ steps:
         [GroupDocs.Editor for .NET](/editor/net/) provides an easy and straightforward way for developers to edit the TSV files using a few lines of code.
         * Create an instance of `Editor` class with mandatory file path or byte stream and load the TSV file
         * Create the `DelimitedTextEditOptions` class instance for the TSV file format and specify a mandatory string separator in the constructor
-        * Call `Editor.Edit()` method and obtain TSV document in HTML format that is easily editable with any WYSIWYG-editor.
+        * Call `Editor.Edit()` method and obtain TSV document in HTML format that is easily editable with any WYSIWYG-editor
         * Call `Editor.Save()` method and save edited TSV file using the `DelimitedTextSaveOptions` class instance with desired separator
 
         

@@ -1,17 +1,17 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-13T19:33:09
+date: 2022-10-14T17:11:22
 draft: false
 otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt csv pdf xps msg eml
 
 ############################# Head ############################
-head_title: "Редактор DOCX — редагуйте DOCX на C# .NET"
-head_description: "Як редагувати DOCX в C# .NET, використовуючи декілька рядків коду? Використовуйте API-інтерфейси обробки документів GroupDocs для редагування, оновлення та збереження файлів у більш ніж 30 форматах."
+head_title: "Редактор XML — редагуйте XML на C# .NET"
+head_description: "Як редагувати XML в C# .NET, використовуючи декілька рядків коду? Використовуйте API-інтерфейси обробки документів GroupDocs для редагування, оновлення та збереження файлів у більш ніж 30 форматах."
 
 ############################# Header ############################
-title: "Редагувати DOCX на C# .NET"
-description: "Ефективне та надійне редагування DOCX із використанням API GroupDocs.Editor for C# .NET, що виконується на серверній стороні, без використання стороннього ПЗ типу Microsoft Office чи Open Office."
+title: "Редагувати XML на C# .NET"
+description: "Ефективне та надійне редагування XML із використанням API GroupDocs.Editor for C# .NET, що виконується на серверній стороні, без використання стороннього ПЗ типу Microsoft Office чи Open Office."
 bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
 bg_overlay: false
 button:

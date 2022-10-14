@@ -1,17 +1,17 @@
 ---
 ############################# Static ############################
 layout: "auto-gen-editor"
-date: 2022-10-13T19:33:09
+date: 2022-10-14T17:11:22
 draft: false
 otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub mhtml txt xml csv rtf odt msg eml
 
 ############################# Head ############################
-head_title: "Редактор DOCX — редагуйте DOCX на Java"
-head_description: "Як редагувати DOCX в Java, використовуючи декілька рядків коду? Використовуйте API-інтерфейси обробки документів GroupDocs для редагування, оновлення та збереження файлів у більш ніж 30 форматах."
+head_title: "Редактор HTM — редагуйте HTM на Java"
+head_description: "Як редагувати HTM в Java, використовуючи декілька рядків коду? Використовуйте API-інтерфейси обробки документів GroupDocs для редагування, оновлення та збереження файлів у більш ніж 30 форматах."
 
 ############################# Header ############################
-title: "Редагувати DOCX на Java"
-description: "Ефективне та надійне редагування DOCX із використанням API GroupDocs.Editor for Java, що виконується на серверній стороні, без використання стороннього ПЗ типу Microsoft Office чи Open Office."
+title: "Редагувати HTM на Java"
+description: "Ефективне та надійне редагування HTM із використанням API GroupDocs.Editor for Java, що виконується на серверній стороні, без використання стороннього ПЗ типу Microsoft Office чи Open Office."
 bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
 bg_overlay: false
 button:
