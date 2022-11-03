@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "{{EXT}} Editor - Chỉnh sửa {{EXT}} trong {{PlatformName}}",
+    "description": "Làm cách nào để chỉnh sửa {{EXT}} trong {{PlatformName}} bằng một vài dòng mã? Sử dụng API xử lý tài liệu GroupDocs để chỉnh sửa, cập nhật và lưu hơn 30 định dạng tệp."
+  },
+  "header": {
+    "title": "Chỉnh sửa {{EXT}} trong {{PlatformName}}",
+    "description": "Chỉnh sửa {{EXT}} hiệu quả và mạnh mẽ bằng cách sử dụng GroupDocs.Editor phía máy chủ cho các API {{PlatformName}} mà không cần sử dụng bất kỳ phần mềm nào như Microsoft hoặc Open Office.",
+    "label": "Tải xuống bản dùng thử miễn phí"
+  },
+  "submenu": {
+    "content_middle": {
+      "button_text_ApiReference": "Tham chiếu API",
+      "button_text_CodeExamples": "Ví dụ về mã",
+      "button_text_LiveDemos": "Bản trình diễn trực tiếp",
+      "button_text_Pricing": "Định giá"
+    }
+  },
+  "about": {
+    "title": "Giới thiệu về API {{ProductFullName}}",
+    "h1": "API [{{ProductFullName}}] ({{slash_lang}} / editor / {{ProductCode}} /) là một lựa chọn đúng đắn để chỉnh sửa tài liệu và bản trình bày Microsoft Word, Excel, PowerPoint, Open Office. GroupDocs.Editor là một API độc lập phù hợp với hệ thống phía máy chủ và hệ thống back-end nơi yêu cầu hiệu suất cao. Nó không phụ thuộc vào bất kỳ phần mềm nào như Microsoft hoặc Open Office."
+  },
+  "steps": {
+    "title_left": "Các bước chỉnh sửa {{EXT}} trong {{ProgLang}}",
+    "content_left": {
+      "description": "[{{ProductFullName}}] ({{slash_lang}} / editor / {{ProductCode}} /) cung cấp một cách dễ dàng và đơn giản để nhà phát triển chỉnh sửa tệp {{EXT}} bằng một vài dòng mã."
+    },
+    "title_right": "yêu cầu hệ thống",
+    "content_right": {
+      "description": "Chỉnh sửa tài liệu cơ bản với API {{ProductFullName}} có thể được thực hiện bằng cách triển khai một vài bước đơn giản. API của chúng tôi được hỗ trợ trên tất cả các nền tảng và hệ điều hành chính. Trước khi thực hiện mã bên dưới, hãy đảm bảo rằng bạn đã cài đặt các điều kiện tiên quyết sau trên hệ thống của mình.",
+      "step_1": "Hệ điều hành: Microsoft Windows, Linux, MacOS",
+      "step_2": "Môi trường phát triển: {{DevEnv}}",
+      "step_3": "Các khuôn khổ",
+      "step_4": "Tải xuống phiên bản mới nhất của {{ProductFullName}} từ [{{RepoName}}] ({{RepoUrl}})"
+    }
+  },
+  "demos": {
+    "title": "Bản trình diễn trực tiếp của {{EXT}} Editor",
+    "content": "Chỉnh sửa {{EXT}} ngay bây giờ bằng cách truy cập trang web [GroupDocs.Editor Live Demos] (https://products.groupdocs.app/editor/family) trang web.\r\n        Bản demo trực tiếp có những lợi ích sau"
+  },
+  "more_formats": {
+    "title": "Các trình chỉnh sửa được hỗ trợ khác",
+    "content": "Bạn cũng có thể chỉnh sửa các định dạng tệp khác. Vui lòng xem danh sách đầy đủ bên dưới."
+  }
+}

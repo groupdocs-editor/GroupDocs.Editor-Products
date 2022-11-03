@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Vytvořte instanci třídy `Editor` s povinnou cestou k souboru nebo streamu a volitelnou třídou `SpreadsheetLoadOptions` a načtěte soubor {{EXT}}",
+    "step_2": "Vytvořte a nastavte instanci třídy `SpreadsheetEditOptions` pro formát souboru {{EXT}}",
+    "step_3": "Zavolejte metodu `Editor.Edit()` a získejte {{EXT}} dokument ve formátu HTML, který lze snadno upravovat pomocí libovolného editoru WYSIWYG.",
+    "step_4": "Zavolejte metodu `Editor.Save()` a uložte upravený soubor {{EXT}} pomocí třídy `SpreadsheetSaveOptions`"
+  }
+}

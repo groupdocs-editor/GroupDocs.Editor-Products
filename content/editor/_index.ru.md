@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "product"
-date: 2021-04-27T09:31:06+03:00
+date: 2022-11-03T21:00:22
 draft: false
 
 ############################# Head ############################
@@ -10,7 +10,7 @@ head_description: "Редактирование документов для Micr
 
 ############################# Header ############################
 title: "Решение для редактирования документов"
-description: "Редактор документов для работы с Microsoft Office, OpenOffice, PDF, HTML и другими форматами файлов документов.."
+description: "Редактор документов для работы с Microsoft Office, OpenOffice, PDF, HTML и другими форматами файлов документов."
 
 ############################# APIs ###############################
 apis:
@@ -18,35 +18,35 @@ apis:
 
   api:
     # api loop
-    - title: "API High Code для GroupDocs.Editor включают"
+    - title: "API-интерфейсы High Code для GroupDocs.Editor включают"
       link: "/editor/"
       label: "Просмотреть все API High Code"
       api_product:
         # api_product loop
         - link: "/editor/net/"
           img_alt: "GroupDocs.Editor for .NET"
-          image: "/border/groupdocs-editor-net.svg"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
           product: "GroupDocs.Editor for"
           platform: ".NET"
-          content: "Локальный .NET API, который помогает вашему приложению просматривать, редактировать и затем преобразовывать документы.."
+          content: "Локальный .NET API, который помогает вашему приложению просматривать, редактировать и затем преобразовывать документы."
 
         # api_product loop
         - link: "/editor/java/"
           img_alt: "GroupDocs.Editor for Java"
-          image: "/border/groupdocs-editor-java.svg"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png"
           product: "GroupDocs.Editor for"
           platform: "Java"
-          content: "API редактирования документов для Microsoft Office, OpenOffice, HTML и других документов для управления в ваших приложениях на основе Java.."
+          content: "API редактирования документов для Microsoft Office, OpenOffice, HTML и других документов для управления в ваших приложениях на основе Java."
 
     # api loop
-    - title: "API-интерфейсы GroupDocs.Editor Low Code включают"
+    - title: "API-интерфейсы Low Code для GroupDocs.Editor включают"
       link: "https://products.groupdocs.cloud/editor"
-      label: "Просмотреть все API с низким кодом"
+      label: "Просмотреть все API Low Code"
       api_product:
         # api_product loop
         - link: "https://products.groupdocs.cloud/editor/net"
           img_alt: "GroupDocs.Editor Cloud SDK for .NET"
-          image: "/sdk/groupdocs_editor-for-net.svg"
+          image: "https://www.groupdocs.cloud/templates/groupdocscloud/images/sdk/272x272/groupdocs_editor-for-net.png"
           product: "GroupDocs.Editor"
           platform: "Cloud SDK for .NET"
           content: "Добавьте мощные функции редактирования форматов документов в приложения .NET с помощью Cloud SDK для .NET. Редактировать документы MS Office, Web и XML."
@@ -54,28 +54,28 @@ apis:
         # api_product loop
         - link: "https://products.groupdocs.cloud/editor/java"
           img_alt: "GroupDocs.Editor Cloud SDK for Java"
-          image: "/sdk/groupdocs_editor-for-java.svg"
+          image: "https://www.groupdocs.cloud/templates/groupdocscloud/images/sdk/272x272/groupdocs_editor-for-java.png"
           product: "GroupDocs.Editor"
           platform: "Cloud SDK for Java"
-          content: "Расширенный SDK редактора документов для приложений Java для редактирования стандартных форматов файлов документов на любой платформе, способной вызывать REST API.."
+          content: "Расширенный SDK редактора документов для приложений Java для редактирования стандартных форматов файлов документов на любой платформе, способной вызывать REST API."
 
     # api loop
-    - title: "GroupDocs.Editor Приложения без кода не включают"
+    - title: "No Code-приложения GroupDocs.Editor включают"
       link: "https://products.groupdocs.app/editor"
-      label: "Просмотреть все приложения без кода"
+      label: "Просмотреть все No Code-приложения"
       api_product:
         # api_product loop
         - link: "https://products.groupdocs.app/editor/total"
           img_alt: "GroupDocs.Editor Total"
-          image: "/app/groupdocs_editor-app.svg"
+          image: "https://www.aspose.cloud/templates/asposeapp/images/products/logo/aspose_editor-app.png"
           product: "GroupDocs.Editor"
           platform: "Total"
-          content: "Бесплатное веб-приложение для редактирования популярных форматов файлов из Office &amp; ОпенОфис."
+          content: "Бесплатное веб-приложение для редактирования популярных форматов файлов из MS Office &amp; OpenOffice."
 
         # api_product loop
         - link: "https://products.groupdocs.app/editor/docx"
           img_alt: "GroupDocs.Editor DOCX"
-          image: "/app/groupdocs_words-app.svg"
+          image: "https://www.aspose.cloud/templates/groupdocsapp/images/products/logo/groupdocs_words-app.png"
           product: "GroupDocs.Editor"
           platform: "DOCX"
           content: "Бесплатное приложение-редактор для просмотра и редактирования документов Microsoft Word онлайн."
@@ -83,10 +83,10 @@ apis:
         # api_product loop
         - link: "https://products.groupdocs.app/editor/pdf"
           img_alt: "GroupDocs.Editor PDF"
-          image: "/app/groupdocs_pdf-app.svg"
+          image: "https://www.aspose.cloud/templates/groupdocsapp/images/products/logo/groupdocs_pdf-app.png"
           product: "GroupDocs.Editor"
           platform: "PDF"
-          content: "Используйте любое устройство, любой браузер для просмотра или редактирования электронных таблиц Microsoft Excel.."
+          content: "Используйте любое устройство, любой браузер для просмотра или редактирования документов PDF и XPS"
 
 ############################# Back to top ###############################
 back_to_top:

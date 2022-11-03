@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "product"
-date: 2021-04-27T09:31:06+03:00
+date: 2022-11-03T21:00:22
 draft: false
 
 product: "Editor"
@@ -10,12 +10,12 @@ platform: ".NET"
 platform_tag: "net"
 
 ############################# Head ############################
-head_title: "C# .NET-Dokument-Editor-API | Bearbeiten Sie Word Excel Web XML mit HTML"
-head_description: "C# .NET-Dokumenteditor-API zum Laden von Microsoft Word-, Excel-, XML-, Web- und Textdateiformaten in HTML, Bearbeiten von &amp; wieder ins Originalformat umwandeln."
+head_title: "C# .NET-Dokument-Editor-API | Bearbeiten Sie Word Excel PowerPoint Web XML mit HTML"
+head_description: "C# .NET-Dokumenteneditor-API zum Laden von Microsoft Word-, Excel-, PowerPoint-, PDF-, XML-, Web- und Textdateiformaten in HTML, Bearbeiten und Zurückkonvertieren in das Originalformat."
 
 ############################# Header ############################
 title: ".NET-API zum Bearbeiten von Dokumenten mit HTML"
-description: "Entwickeln Sie .NET-Anwendungen, integrieren Sie sie in den HTML-Editor, rufen Sie unterstützte Dokumente ab, bearbeiten Sie sie und konvertieren Sie sie in das Originalformat."
+description: "Entwickeln Sie .NET-Anwendungen, um sie in den HTML-Editor zu integrieren, unterstützte Dokumente abzurufen, zu bearbeiten und in das Originalformat zu konvertieren."
 button:
     enable: true
 
@@ -25,7 +25,7 @@ submenu:
     
     left:
         img_alt: "GroupDocs.Editor for .NET"
-        image: "/border/groupdocs-editor-net.svg"
+        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
         product: "GroupDocs.Editor"
         platform: ".NET"
 
@@ -41,11 +41,11 @@ submenu:
 
             # button loop
             - link: "#support"
-              text: "Support"
+              text: "Die Unterstützung"
 
             # button loop
             - link: "https://products.groupdocs.app/editor"
-              text: "Live Demo"
+              text: "Live-Demo"
 
             # button loop
             - link: "https://purchase.groupdocs.com/pricing/editor/net"
@@ -56,11 +56,11 @@ submenu:
         link_learn: "https://docs.groupdocs.com/editor/net/"
         link_buy: "https://purchase.groupdocs.com"
 
-############################# Überblick ############################
+############################# Overview ############################
 overview:
     enable: true
     content: |
-      GroupDocs.Editor für die .NET-API hilft Ihnen, einfache und benutzerfreundliche C#-, ASP.NET- und andere .NET-Anwendungen zu erstellen, die sich problemlos in gängige HTML-Editoren (sowohl Open Source als auch kostenpflichtige) integrieren lassen, um Dokumente zu konvertieren, zu bearbeiten und zu manipulieren beliebte Dateiformate. Mit unserer .NET-Editor-API können Sie Dokumente laden, in HTML konvertieren, HTML an einen externen HTML-Editor senden und nach Abschluss der Bearbeitung den HTML-Code in seinem ursprünglichen Dateiformat speichern. Sie können Ressourcen, die jedem Dokument beigefügt sind, auch separat abrufen. Es funktioniert mit allen Arten von Dokumenten, z. B. für Microsoft Word, Excel, OpenDocument, Text, Web und mehr.
+      GroupDocs.Editor für die .NET-API hilft Ihnen, einfache und benutzerfreundliche C#-, ASP.NET- und andere .NET-Anwendungen zu erstellen, die sich problemlos in gängige HTML-Editoren (sowohl Open Source als auch kostenpflichtige) integrieren lassen, um Dokumente zu konvertieren, zu bearbeiten und zu manipulieren beliebte Dateiformate. Mit unserer .NET-Editor-API können Sie Dokumente laden, in HTML konvertieren, HTML an einen externen HTML-Editor senden und nach Abschluss der Bearbeitung den HTML-Code in seinem ursprünglichen Dateiformat speichern. Sie können Ressourcen, die jedem Dokument beigefügt sind, auch separat abrufen. Es funktioniert mit allen Arten von Dokumenten, z. B. für Microsoft Word, Excel, PowerPoint, PDF, XPS, OpenDocument, Text, Web, E-Mail, E-Book und mehr.
     tabs:
       enable: true
       
@@ -82,7 +82,7 @@ overview:
       ## TAB TWO ##
       tab_two:
         description: |
-          GroupDocs.Editor für .NET unterstützt die folgenden [Dateiformate](https://docs.groupdocs.com/editor/java/supported-document-formats/) – (Unterstützung des PDF-Dateiformats wird in zukünftigen Versionen implementiert.)
+          GroupDocs.Editor für .NET unterstützt folgende [Dateiformate](https://docs.groupdocs.com/editor/java/supported-document-formats/)
 
         left:
           enable: true
@@ -98,17 +98,17 @@ overview:
           enable: true
           table:
             # table loop
-            - title: "Bilder, Grafiken & Diagramme"
+            - title: "Andere Formatfamilien"
               content: |
                 * **OpenDocument-Formate**: ODT, OTT, ODS, FODS, ODP, OTP
-                * **Text**: TXT
-                * **Web**: HTML, MHTML
-                * **Andere**: MOBI, XML
+                * **Formate mit festem Layout**: PDF, XPS
+                * **Webformate**: HTML, MHTML, CHM, XML, TXT
+                * **Webformate**: MOBI, AZW3, ePub
 
       ## TAB THREE ##
       tab_three:
         description: |
-          GroupDocs.Editor for .NET unterstützt das Folgen Betriebssysteme & Paket-Managers:
+          GroupDocs.Editor für .NET unterstützt folgende Betriebssysteme, Frameworks und Paketmanager:
         
         left:
           enable: true
@@ -117,17 +117,19 @@ overview:
             - icon: "fab fa-windows"
               title: "Betriebssysteme"
               content: |
-                * Windows Desktop
-                * Windows Server
-                * Windows Azure
+                * Microsoft Windows Desktop
+                * Microsoft Windows Server
+                * Microsoft Windows Azure
                 * Linux
 
             # table loop
             - icon: "fas fa-code"
               title: "Unterstützte Frameworks"
               content: |
-                * .NET Framework 2.0 oder höher
-                * Mono Framework 1.2 oder höher
+                * .NET Framework 4.6.1+
+				* .NET Standard 2.0+
+				* .NET 6+
+                * Mono Framework 1.2+
 
         right:
           enable: true
@@ -148,7 +150,7 @@ overview:
                 * Xamarin.Mac
                 * MonoDevelop
 
-############################# Merkmale ############################
+############################# Features ############################
 features:
     enable: true
     title: "GroupDocs.Editor für .NET-Funktionen"
@@ -156,7 +158,7 @@ features:
     feature:
       # feature loop
       - icon: "fas fa-copy"
-        content: "Einfache Integration with any HTML Editor"
+        content: "Einfache Integration mit jedem HTML-Editor"
 
       # feature loop
       - icon: "fas fa-eye"
@@ -172,11 +174,11 @@ features:
 
       # feature loop
       - icon: "fas fa-code"
-        content: "Abrufen von HTML-Body-Tag-Inhalten aus dem Dokument"
+        content: "Holen Sie sich HTML-Body-Tag-Inhalte aus dem Dokument"
 
       # feature loop
       - icon: "fas fa-cloud"
-        content: "Holen Sie sich den CSS-Inhalt des HTML-Dokuments"
+        content: "Holen Sie sich CSS-Stylesheets des HTML-Dokuments"
 
       # feature loop
       - icon: "fas fa-remove-format"
@@ -200,7 +202,7 @@ features:
 
       # feature loop
       - icon: "fas fa-columns"
-        content: "Wenden Sie die Sicherheit auf das resultierende Dokument an"
+        content: "Wenden Sie Lese- und/oder Schreibschutz auf das resultierende Dokument an"
 
       # feature loop
       - icon: "fas fa-file-word"
@@ -220,7 +222,7 @@ features:
 
       # feature loop
       - icon: "fas fa-lock"
-        content: "Verarbeiten Sie EMF-Vektorbilder intern in unterstützten Eingabedokumentformaten"
+        content: "Verarbeiten Sie Raster- und Vektorbilder intern in unterstützten Eingabedokumentformaten"
 
       # feature loop
       - icon: "fas fa-file-code"
@@ -228,7 +230,7 @@ features:
       
       # feature loop
       - icon: "fas fa-fill-drip"
-        content: "Fügen Sie SmartArt-Elemente in PowerPoint-Dateiformaten hinzu"
+        content: "Bearbeiten Sie Folien und fügen Sie sie in die resultierende Tabelle ein"
 
       # feature loop
       - icon: "fas fa-file-excel"
@@ -236,17 +238,38 @@ features:
 
     more_feature:
       # more_feature_loop
-      - title: "Genaue Konvertierung to and from HTML DOM"
+      - title: "Präzise Konvertierung zu und von HTML DOM"
         content: |
           GroupDocs.Editor für die .NET-API ermöglicht Ihren .NET-Anwendungen das Abrufen eines Dokuments in einem unterstützten Format und das Konvertieren in ein HTML-Dokumentobjektmodell (DOM) zusammen mit der Extraktion angehängter Ressourcen wie CSS. Sie können dann die Änderungen am HTML mit Ihrem bevorzugten HTML-Editor vornehmen. Sobald Sie mit der Bearbeitung fertig sind, können Sie mit GroupDocs.Editor für die .NET-API dieses HTML-DOM genau wieder in die Originaldatei konvertieren.
 
           ```cs
-          Stream sourceStream = File.Open("D:/sample.docx", FileMode.Open, FileAccess.Read);
-          using (InputHtmlDocument htmlDoc = EditorHandler.ToHtml(sourceStream))
-          {
-            string cssContent = htmlDoc.GetEmbeddedHtml();
-            Console.WriteLine(cssContent);
-          }
+          // Create Editor class by loading an input document
+          Editor editor = new Editor("Sample.docx");
+
+          // Open document for edit and obtain EditableDocument
+          EditableDocument original = editor.Edit();
+
+          // Obtain all-embedded HTML from it
+          string allEmbeddedInside = original.GetEmbeddedHtml();
+
+          // If necessary, obtain pure HTML-markup, CSS, images and other resources in separate form
+
+          // Whole HTML-markup, without any resources
+          string completeHtmlMarkup = original.GetContent();
+
+          // Only HTML->BODY content, useful for most of WYSIWYG-editors
+          string onlyInnerBody = original.GetBodyContent();
+
+          // All CSS stylesheets
+          var stylesheets = original.Css;
+
+          // All images, including raster and vector, but without CSS gradients
+          var images = original.Images;
+
+          // All font resources
+          var fonts = original.Fonts;
+
+          // finally, send this content to your WYSIWYG HTML-editor
           ```
       # more_feature_loop
       - title: "Externe Ressourcen laden und extrahieren"
@@ -254,12 +277,12 @@ features:
 
       # more_feature_loop
       - title: "Wenden Sie Texteffekte in Textverarbeitungsdateiformaten an"
-        content: "Die Dokumenteneditor-API von GroupDocs ermöglicht das Hinzufügen komplexer Texteffekte (Schatten, 3D-Effekt, Kontur, Glühen, Gravieren, Prägen) während der Arbeit mit unterstützten Microsoft Word-Dokumentverarbeitungsformaten. Diese Funktion wird automatisch aktiviert, was beobachtet werden kann, wenn das Dokument mit solchen Texteffekten verarbeitet wird."
+        content: "Die Dokumenteneditor-API von GroupDocs ermöglicht das Hinzufügen komplexer Texteffekte (Schatten, 3D-Effekt, Umriss, Glühen, Gravieren, Prägen) während der Arbeit mit unterstützten Microsoft Word-Dokumentverarbeitungsformaten. Diese Funktion wird automatisch aktiviert, was beobachtet werden kann, wenn das Dokument mit solchen Texteffekten verarbeitet wird."
 
       # more_feature_loop
       - title: "Leistungsstarke XML-Manipulationsfunktionen"
         content: |
-          Mit GroupDocs.Editor für die .NET-API können Sie XML-Dokumente öffnen, anzeigen und bearbeiten. Unsere Bearbeitungs-API bietet spezielle Unterstützung und Erkennung von XML-Tags, Attributen zusammen mit ihren Werten, XML-Deklarationen, CDATA-Abschnitten, DOCTYPE-Definitionen und anderen XML-spezifischen Entitäten. Sie können Schriftart- und Farbeinstellungen für jede einzelne Entität in der XML-Struktur anpassen.
+          Mit GroupDocs.Editor für die .NET-API können Sie XML-Dokumente öffnen, anzeigen und bearbeiten. Unsere Bearbeitungs-API bietet spezielle Unterstützung und Erkennung von XML-Tags, Attributen zusammen mit ihren Werten, XML-Deklarationen, CDATA-Abschnitten, DOCTYPE-Definitionen und anderen XML-spezifischen Entitäten. Sie können Schriftart- und Farbeinstellungen für jede einzelne Entität in der XML-Struktur anpassen.  
 
           Die XML Converter-Funktion ist intelligent genug, um Fehler in der XML-Datei anzuzeigen und zu beheben. Der URI- und E-Mail-Erkennungsmechanismus scannt XML-Attribute und stellt die erkannten URIs und E-Mail-Adressen innerhalb des A-Tags als Links dar, sodass sie als Link und nicht als Text in der resultierenden HTML-Datei bearbeitet werden können.
 
@@ -270,12 +293,12 @@ support:
 ############################# Solutions ############################
 solutions:
     enable: true
-    title: "GroupDocs.Editor bietet APIs zum Anzeigen von Dokumenten für andere beliebte Entwicklungsumgebungen"
+    title: "GroupDocs.Editor bietet Dokumentenbearbeitungs-APIs für andere beliebte Entwicklungsumgebungen"
 
     solution:
         # solution loop
         - img_alt: "GroupDocs.Editor for Java"
-          image: "/border/groupdocs-editor-java.svg"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png"
           product: "GroupDocs.Editor"
           platform: "Java"
           link: "/editor/java/"

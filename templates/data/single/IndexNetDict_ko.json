@@ -1,0 +1,94 @@
+{
+  "head": {
+    "title": "C# .NET 문서 편집기 API | HTML을 사용하여 Word Excel PowerPoint 웹 XML 편집",
+    "description": "C# .NET 문서 편집기 API는 Microsoft Word, Excel, PowerPoint, PDF, XML, 웹 및 텍스트 파일 형식을 HTML로 로드하고 조작 및 원래 형식으로 다시 변환합니다."
+  },
+  "header": {
+    "title": "HTML을 사용하여 문서를 편집하는 .NET API",
+    "description": ".NET 응용 프로그램을 개발하여 HTML 편집기와 통합하고 지원 문서를 가져오고 편집하고 원본 형식으로 변환합니다."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "개요"
+      },
+      "button_features": {
+        "text": "특징"
+      },
+      "button_support": {
+        "text": "지원하다"
+      },
+      "button_livedemo": {
+        "text": "라이브 데모"
+      },
+      "button_pricing": {
+        "text": "가격"
+      }
+    }
+  },
+  "Overview": {
+    "content": ".NET API용 GroupDocs.Editor를 사용하면 인기 있는 HTML 편집기(오픈 소스 및 유료)와 쉽게 통합되는 간단하고 사용하기 쉬운 C#, ASP.NET 및 기타 .NET 응용 프로그램을 구축하여 문서를 변환, 편집 및 조작할 수 있습니다. 인기있는 파일 형식. .NET 편집기 API를 사용하면 문서를 로드하고, HTML로 변환하고, HTML을 외부 HTML 편집기로 푸시하고, 조작이 완료되면 HTML을 원래 파일 형식으로 저장할 수 있습니다. 문서에 첨부된 리소스를 별도로 가져올 수도 있습니다. Microsoft Word, Excel, PowerPoint, PDF, XPS, OpenDocument, 텍스트, 웹, 이메일, 전자책 등과 같은 모든 종류의 문서에서 작동합니다.",
+    "tab1": {
+      "description": "다음은 .NET용 GroupDocs.Editor의 개요입니다.",
+      "title": "HTML을 사용하여 조작",
+      "content1": "지원 문서 로드",
+      "content2": "HTML을 사용하여 콘텐츠 편집",
+      "content3": "관련 스타일 편집",
+      "content4": "원본 형식으로 변환"
+    },
+    "tab2": {
+      "description": ".NET용 GroupDocs.Editor는 다음 [파일 형식](https://docs.groupdocs.com/editor/java/supported-document-formats/)을 지원합니다.",
+      "title": "기타 형식 제품군",
+      "content1": "OpenDocument 형식",
+      "content2": "고정 레이아웃 형식",
+      "content3": "웹 형식",
+      "content4": "전자책(e-Book) 형식"
+    },
+    "tab3": {
+      "description": ".NET용 GroupDocs.Editor는 다음 운영 체제, 프레임워크 및 패키지 관리자를 지원합니다.",
+      "title_os": "운영체제",
+      "title_frameworks": "지원되는 프레임워크",
+      "title_packman": "패키지 관리자",
+      "title_devenv": "개발 환경"
+    }
+  },
+  "Features": {
+    "title": ".NET 기능용 GroupDocs.Editor",
+    "feature_loop": {
+      "1": "모든 HTML 편집기와 손쉬운 통합",
+      "2": "문서를 HTML DOM으로 변환",
+      "3": "문서 스트림에서 HTML 콘텐츠 가져오기",
+      "4": "HTML 콘텐츠 및 포함된 리소스 가져오기",
+      "5": "문서에서 HTML 본문 태그 콘텐츠 가져오기",
+      "6": "HTML 문서의 CSS 스타일시트 가져오기",
+      "7": "HTML 콘텐츠 트래버스 및 리소스 저장",
+      "8": "문자열 콘텐츠에서 HTML DOM 가져오기 및 문서로 변환",
+      "9": "리소스 변환과 함께 HTML DOM",
+      "10": "HTML에서 다양한 형식의 문서 편집",
+      "11": "정확한 변환",
+      "12": "결과 문서에 읽기 및/또는 쓰기 보호 적용",
+      "13": "워드 프로세싱 문서의 페이지 매김 및 WYSIWYG 편집기에서 편집",
+      "14": "데이터베이스(DB) 및 사용자 인터페이스(UI) 불가지론",
+      "15": "강력한 XML 처리 기능",
+      "16": "입력 문서에서 OTF(Open Type Fonts) 검색 및 결과 문서로 내보내기",
+      "17": "지원되는 입력 문서 형식 내에서 내부적으로 래스터 및 벡터 이미지 처리",
+      "18": "편집된 워크시트의 내용을 원본 스프레드시트의 원하는 위치에 삽입",
+      "19": "슬라이드를 편집하고 결과 스프레드시트에 삽입",
+      "20": "저장하는 동안 결과 워드 프로세싱 문서에 글꼴 포함"
+    },
+    "more_features_loop": {
+      "title1": "HTML DOM과의 정확한 변환",
+      "content1": ".NET API용 GroupDocs.Editor를 사용하면 .NET 애플리케이션이 지원되는 형식의 문서를 가져와 CSS와 같은 첨부된 리소스 추출과 함께 HTML DOM(문서 개체 모델)으로 변환할 수 있습니다. 그런 다음 즐겨 사용하는 HTML 편집기를 사용하여 HTML을 수정할 수 있습니다. 편집이 끝나면 .NET API용 GroupDocs.Editor를 사용하여 이 HTML DOM을 다시 원본 파일로 정확하게 변환할 수 있습니다.",
+      "title2": "외부 리소스 로드 및 추출",
+      "content2": ".NET API용 GroupDocs.Editor는 이미지, 글꼴, CSS 등과 같은 지원 문서에 첨부된 외부 리소스를 가져올 수 있습니다. 가져온 리소스는 결과 HTML 문서와 별도로 로드, 탐색 및 저장할 수 있습니다. 이렇게 하면 더 쉽게 관리되는 출력을 얻을 수 있습니다.",
+      "title3": "워드 프로세싱 파일 형식 내에서 텍스트 효과 적용",
+      "content3": "GroupDocs 문서 편집기 API를 사용하면 지원되는 Microsoft Word 문서 처리 형식으로 작업하면서 복잡한 텍스트 효과(그림자, 3D 효과, 윤곽선, 발광, 조각, 엠보싱)를 추가할 수 있습니다. 이 기능은 이러한 텍스트 효과가 있는 문서가 처리될 때 관찰할 수 있는 자동 활성화됩니다.",
+      "title4": "강력한 XML 조작 기능",
+      "content4-1": ".NET API용 GroupDocs.Editor를 사용하여 XML 문서를 열고 보고 편집할 수 있습니다. 우리의 편집 API는 XML 태그, 속성과 값, XML 선언, CDATA 섹션, DOCTYPE 정의 및 기타 XML 특정 엔터티에 대한 특별 지원 및 인식 기능을 제공합니다. XML 구조의 모든 개별 엔터티에 대해 글꼴 및 색상 설정을 사용자 정의할 수 있습니다.",
+      "content4-2": "XML 변환기 기능은 XML 파일의 오류와 수정 방법을 표시할 만큼 충분히 스마트합니다. URI 및 이메일 인식기 메커니즘은 XML 속성을 스캔하고 A 태그 내에서 감지된 URI 및 이메일 주소를 링크로 나타내므로 결과 HTML 파일 내에서 텍스트가 아닌 링크로 편집할 수 있습니다."
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor는 다른 인기 있는 개발 환경을 위한 문서 편집 API를 제공합니다."
+  }
+}

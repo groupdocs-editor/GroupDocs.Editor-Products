@@ -1,0 +1,3 @@
+TranslationTools\net6.0\Res.Translator.exe -s en -r ..\data\single\IndexRootDict_en.json -d bg,ca,cs,de,es,fr,id,it,ja,ko,pl,pt,tr,vi,zh-cn --overwrite
+TranslationTools\net6.0\Res.Translator.exe -s en -r ..\data\single\IndexNetDict_en.json -d bg,ca,cs,de,es,fr,id,it,ja,ko,pl,pt,tr,vi,zh-cn --overwrite
+TranslationTools\net6.0\Res.Translator.exe -s en -r ..\data\single\IndexJavaDict_en.json -d bg,ca,cs,de,es,fr,id,it,ja,ko,pl,pt,tr,vi,zh-cn --overwrite

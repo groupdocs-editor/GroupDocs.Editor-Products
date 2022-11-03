@@ -1,0 +1,89 @@
+{
+  "head": {
+    "title": "API del editor de documentos de Java | Edite archivos de texto Word Web XML usando HTML",
+    "description": "API de edición de documentos para Java. Cargue archivos de Microsoft Word, XML, web y texto en HTML y vuelva a convertirlos al formato original después de la manipulación."
+  },
+  "header": {
+    "title": "Edite documentos a través de HTML usando la API de Java",
+    "description": "Integre aplicaciones Java con editor HTML para manipular documentos y volver a convertirlos al formato original."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "Visión general"
+      },
+      "button_features": {
+        "text": "Características"
+      },
+      "button_support": {
+        "text": "Apoyo"
+      },
+      "button_livedemo": {
+        "text": "Demo en vivo"
+      },
+      "button_pricing": {
+        "text": "Precios"
+      }
+    }
+  },
+  "Overview": {
+    "content": "GroupDocs.Editor for Java API permite la edición de documentos en forma de HTML. La API admite múltiples formatos de documentos y se puede integrar con cualquier editor HTML externo, de código abierto o de pago. La API del editor procesará para cargar documentos, convertirlos a HTML, proporcionar HTML a la interfaz de usuario externa y luego guardar HTML en el documento original después de la manipulación. También se puede utilizar para generar diferentes hojas de cálculo de Microsoft Word, Excel, archivos de PowerPoint, formatos OpenDocument, documentos XML y TXT.",
+    "tab1": {
+      "description": "A continuación se muestra una descripción general de GroupDocs.Editor para Java",
+      "title": "Manipular usando HTML",
+      "content1": "Cargar documento admitido",
+      "content2": "Editar contenido usando HTML",
+      "content3": "Editar estilos relacionados",
+      "content4": "Convertir a formato original"
+    },
+    "tab2": {
+      "description": "GroupDocs.Editor para Java admite los siguientes [formatos de archivo] (https://docs.groupdocs.com/editor/java/supported-document-formats/)",
+      "title": "Otras familias de formatos",
+      "content1": "Formatos de documentos abiertos",
+      "content2": "Formatos de correo electrónico",
+      "content3": "formatos web",
+      "content4": "Formatos de libros electrónicos (e-Book)"
+    },
+    "tab3": {
+      "description": "GroupDocs.Editor para Java es compatible con los siguientes sistemas operativos, marcos y administradores de paquetes",
+      "title_os": "Sistemas operativos",
+      "title_frameworks": "Marcos compatibles",
+      "title_packman": "Herramienta de automatización de compilación",
+      "title_devenv": "Entornos de desarrollo"
+    }
+  },
+  "Features": {
+    "title": "Funciones de GroupDocs.Editor para Java",
+    "feature_loop": {
+      "1": "Fácil integración del editor HTML",
+      "2": "Conversión de documentos a HTML DOM",
+      "3": "Extraer contenido HTML del flujo de documentos",
+      "4": "Cargue, edite y guarde formatos de archivo de Word, Excel y PowerPoint",
+      "5": "Obtener HTML junto con elementos incrustados",
+      "6": "Importar, ver y editar documentos XML",
+      "7": "Omita el contenido HTML y guarde los recursos integrados",
+      "8": "Ver, editar y guardar documentos de procesamiento de texto en modo paginal",
+      "9": "Obtener el contenido de la etiqueta del cuerpo HTML del archivo",
+      "10": "Extraer contenido CSS del archivo HTML",
+      "11": "Use contenido de cadena para obtener HTML DOM y convertir a archivo",
+      "12": "Convierta HTML DOM con elementos incrustados",
+      "13": "Convierta archivos de múltiples formatos en HTML para editar",
+      "14": "Obtenga metainformación de documentos de entrada sin editar",
+      "15": "Guardar documentos editados en formato de archivo de texto sin formato",
+      "16": "Precisión de conversión",
+      "17": "Aplicar contraseña al documento de salida",
+      "18": "Base de datos (DB) Agnóstico",
+      "19": "Interfaz de usuario (UI) Agnóstico",
+      "20": "Admite licencias medidas"
+    },
+    "more_features_loop": {
+      "title1": "Convierta con precisión hacia y desde HTML DOM",
+      "content1": "El uso de GroupDocs.Editor para Java le permite crear aplicaciones en Java que cargan un documento de formato de archivo compatible para convertirlo en un modelo de objeto de documento (DOM) HTML junto con sus elementos asociados, por ejemplo, CSS. Además, nuestra API Editor Java le permite editar el HTML en cualquiera de los editores de HTML populares. Después de realizar las modificaciones requeridas, GroupDocs.Editor para Java lo ayuda a convertir este HTML resultante nuevamente a su formato de archivo original.",
+      "title2": "Cargar y obtener elementos asociados",
+      "content2": "GroupDocs.Editor para la API de Java le permite obtener los elementos asociados de documentos de formatos admitidos, como imágenes, CSS, fuentes y más. Luego puede cargar estos elementos asociados obtenidos, recorrerlos y guardarlos por separado del archivo HTML final, y tener una salida bien administrada."
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor ofrece API de edición de documentos para otros entornos de desarrollo populares"
+  }
+}

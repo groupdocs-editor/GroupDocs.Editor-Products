@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "Solusi Pengeditan Dokumen | API Lokal dan Aplikasi Gratis",
+    "description": "Pengeditan Dokumen untuk Microsoft Office, OpenDocument, PDF & Format File lainnya menggunakan API Lokal atau menggunakan Aplikasi Editor Dokumen Online."
+  },
+  "header": {
+    "title": "Solusi Pengeditan Dokumen",
+    "description": "Editor dokumen untuk memanipulasi Microsoft Office, OpenOffice, PDF, HTML, dan format file dokumen lainnya."
+  },
+  "APIs": {
+    "API_loop_high_code": {
+      "title": "API Kode Tinggi GroupDocs.Editor Termasuk",
+      "label": "Lihat Semua API Kode Tinggi",
+      "API_product_net": {
+        "content": "On Premise .NET API yang membantu aplikasi Anda untuk melihat, mengedit, dan kemudian mengonversi dokumen."
+      },
+      "API_product_java": {
+        "content": "API pengeditan dokumen untuk Microsoft Office, OpenOffice, HTML, dan dokumen lain untuk dimanipulasi dalam aplikasi berbasis Java Anda."
+      }
+    },
+    "API_loop_low_code": {
+      "title": "API Kode Rendah GroupDocs.Editor Termasuk",
+      "label": "Lihat Semua API Kode Rendah",
+      "Cloud_SDK_net": {
+        "content": "Tambahkan fitur pengeditan format dokumen yang canggih di aplikasi .NET menggunakan Cloud SDK untuk .NET. Mengedit dokumen MS Office, Web dan XML."
+      },
+      "Cloud_SDK_java": {
+        "content": "SDK editor dokumen tingkat lanjut untuk aplikasi Java untuk mengedit format file dokumen standar industri pada platform apa pun yang mampu memanggil REST API."
+      }
+    },
+    "API_loop_no_code": {
+      "title": "GroupDocs.Editor Tidak Termasuk Aplikasi Kode",
+      "label": "Lihat Semua Aplikasi Tanpa Kode",
+      "Total": {
+        "content": "Aplikasi online gratis berbasis web untuk mengedit format file populer dari Office & OpenOffice."
+      },
+      "DOCX": {
+        "content": "Aplikasi editor gratis untuk melihat & mengedit dokumen Microsoft Word secara online."
+      },
+      "PDF": {
+        "content": "Gunakan perangkat apa pun, browser apa pun untuk melihat atau mengedit dokumen PDF dan XPS."
+      }
+    }
+  }
+}

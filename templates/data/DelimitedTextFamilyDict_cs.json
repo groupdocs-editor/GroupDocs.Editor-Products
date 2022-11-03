@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Vytvořte instanci třídy `Editor` s povinnou cestou k souboru nebo byte stream a načtěte soubor {{EXT}}",
+    "step_2": "Vytvořte instanci třídy `DelimitedTextEditOptions` pro formát souboru {{EXT}} a zadejte povinný oddělovač řetězců v konstruktoru",
+    "step_3": "Zavolejte metodu `Editor.Edit()` a získejte {{EXT}} dokument ve formátu HTML, který lze snadno upravovat pomocí libovolného editoru WYSIWYG",
+    "step_4": "Zavolejte metodu `Editor.Save()` a uložte upravený soubor {{EXT}} pomocí instance třídy `DelimitedTextSaveOptions` s požadovaným oddělovačem"
+  }
+}

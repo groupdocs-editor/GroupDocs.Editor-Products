@@ -1,0 +1,94 @@
+{
+  "head": {
+    "title": "C# .NET ドキュメント エディター API | HTML を使用して Word Excel PowerPoint Web XML を編集する",
+    "description": "Microsoft Word、Excel、PowerPoint、PDF、XML、Web、およびテキスト ファイル形式を HTML に読み込み、操作して元の形式に変換するための C# .NET ドキュメント エディター API。"
+  },
+  "header": {
+    "title": "HTML を使用してドキュメントを編集する .NET API",
+    "description": ".NET アプリケーションを開発し、HTML エディターと統合し、サポートされているドキュメントを取得し、編集して元の形式に変換します。"
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "概要"
+      },
+      "button_features": {
+        "text": "特徴"
+      },
+      "button_support": {
+        "text": "サポート"
+      },
+      "button_livedemo": {
+        "text": "ライブデモ"
+      },
+      "button_pricing": {
+        "text": "価格"
+      }
+    }
+  },
+  "Overview": {
+    "content": "GroupDocs.Editor for .NET API を使用すると、シンプルで使いやすい C#、ASP.NET、およびその他の .NET アプリケーションを構築できます。これらのアプリケーションは、一般的な HTML エディター (オープンソースと有料の両方) と簡単に統合して、ドキュメントの変換、編集、および操作を行うことができます。一般的なファイル形式。当社の .NET Editor API を使用すると、ドキュメントをロードして HTML に変換し、HTML を外部の HTML エディターにプッシュして、操作が完了したら HTML を元のファイル形式に保存できます。ドキュメントに添付されたリソースを個別に取得することもできます。 Microsoft Word、Excel、PowerPoint、PDF、XPS、OpenDocument、テキスト、Web、電子メール、電子書籍など、あらゆる種類のドキュメントで動作します。",
+    "tab1": {
+      "description": "以下は、GroupDocs.Editor for .NET の概要です。",
+      "title": "HTML を使用して操作する",
+      "content1": "サポートされているドキュメントを読み込む",
+      "content2": "HTML を使用してコンテンツを編集する",
+      "content3": "関連するスタイルを編集",
+      "content4": "元の形式に変換"
+    },
+    "tab2": {
+      "description": "GroupDocs.Editor for .NET は、次の [ファイル形式](https://docs.groupdocs.com/editor/java/supported-document-formats/) をサポートしています。",
+      "title": "その他の形式ファミリー",
+      "content1": "OpenDocument 形式",
+      "content2": "固定レイアウト形式",
+      "content3": "ウェブフォーマット",
+      "content4": "電子書籍（e-Book）形式"
+    },
+    "tab3": {
+      "description": "GroupDocs.Editor for .NET は、次のオペレーティング システム、フレームワーク、およびパッケージ マネージャーをサポートします。",
+      "title_os": "オペレーティングシステム",
+      "title_frameworks": "サポートされているフレームワーク",
+      "title_packman": "パッケージマネージャー",
+      "title_devenv": "開発環境"
+    }
+  },
+  "Features": {
+    "title": "GroupDocs.Editor for .NET 機能",
+    "feature_loop": {
+      "1": "任意の HTML エディターとの簡単な統合",
+      "2": "ドキュメントを HTML DOM に変換",
+      "3": "ドキュメント ストリームから HTML コンテンツを取得する",
+      "4": "HTML コンテンツとその埋め込みリソースを取得する",
+      "5": "ドキュメントから HTML 本文タグのコンテンツを取得する",
+      "6": "HTML ドキュメントの CSS スタイルシートを取得する",
+      "7": "HTML コンテンツをトラバースしてそのリソースを保存する",
+      "8": "文字列コンテンツから HTML DOM を取得してドキュメントに変換",
+      "9": "HTML DOM とリソース変換",
+      "10": "HTML でさまざまな形式のドキュメントを編集する",
+      "11": "正確な変換",
+      "12": "結果のドキュメントに読み取りおよび/または書き込み保護を適用する",
+      "13": "ワード プロセッシング ドキュメントのページ付けと任意の WYSIWYG エディターでの編集",
+      "14": "データベース (DB) とユーザー インターフェイス (UI) に依存しない",
+      "15": "強力な XML 処理機能",
+      "16": "入力ドキュメントから OTF (Open Type Fonts) を取得し、結果ドキュメントにエクスポート",
+      "17": "サポートされている入力ドキュメント形式内でラスター イメージとベクター イメージを内部的に処理する",
+      "18": "編集したワークシートの内容を元のスプレッドシートの任意の位置に挿入",
+      "19": "スライドを編集して結果のスプレッドシートに挿入する",
+      "20": "保存時に結果のワープロ ドキュメントにフォントを埋め込む"
+    },
+    "more_features_loop": {
+      "title1": "HTML DOM との間の正確な変換",
+      "content1": "GroupDocs.Editor for .NET API を使用すると、.NET アプリケーションで、サポートされている形式のドキュメントをフェッチし、それを HTML ドキュメント オブジェクト モデル (DOM) に変換し、CSS などの添付リソースを抽出できます。その後、お気に入りの HTML エディターを使用して HTML に変更を加えることができます。編集が完了したら、GroupDocs.Editor for .NET API を使用して、この HTML DOM を元のファイルに正確に変換できます。",
+      "title2": "外部リソースの読み込みと抽出",
+      "content2": "GroupDocs.Editor for .NET API は、画像、フォント、CSS など、サポートされているドキュメントに添付された外部リソースを取得できます。フェッチされたリソースは、結果の HTML ドキュメントとは別にロード、トラバース、および保存できます。これにより、より簡単に管理できる出力が得られます。",
+      "title3": "ワープロ ファイル形式内でのテキスト効果の適用",
+      "content3": "GroupDocs ドキュメント エディター API を使用すると、サポートされている Microsoft Word ドキュメント処理形式で作業しながら、複雑なテキスト効果 (影、3D 効果、アウトライン、光彩、彫刻、エンボス) を追加できます。この機能は自動的に有効になり、そのようなテキスト効果を持つドキュメントが処理されるときに確認できます。",
+      "title4": "強力な XML 操作機能",
+      "content4-1": "GroupDocs.Editor for .NET API を使用すると、XML ドキュメントを開いたり、表示したり、編集したりできます。当社の編集 API は、XML タグ、属性とその値、XML 宣言、CDATA セクション、DOCTYPE 定義、およびその他の XML 固有のエンティティの特別なサポートと認識を提供します。 XML 構造の個々のエンティティごとに、フォントと色の設定をカスタマイズできます。",
+      "content4-2": "XML コンバーター機能は、XML ファイルのエラーとその修正方法を表示するのに十分スマートです。 URI および電子メール認識メカニズムは XML 属性をスキャンし、A タグ内の検出された URI と電子メール アドレスをリンクとして表すので、結果の HTML ファイル内のテキストとしてではなく、リンクとして編集できます。"
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor は、他の一般的な開発環境向けのドキュメント編集 API を提供します"
+  }
+}

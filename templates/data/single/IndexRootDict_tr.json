@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "Belge Düzenleme Çözümü | Şirket İçi API'ler ve Ücretsiz Uygulamalar",
+    "description": "Şirket İçi API'leri kullanarak Microsoft Office, OpenDocument, PDF ve diğer Dosya Biçimleri için Belge Düzenleme veya Çevrimiçi Belge Düzenleyici Uygulamasını kullanın."
+  },
+  "header": {
+    "title": "Belge Düzenleme Çözümü",
+    "description": "Microsoft Office, OpenOffice, PDF, HTML ve diğer belge dosya biçimlerini işlemek için belge düzenleyici."
+  },
+  "APIs": {
+    "API_loop_high_code": {
+      "title": "GroupDocs.Editor Yüksek Kod API'leri şunları içerir:",
+      "label": "Tüm Yüksek Kod API'lerini Görüntüle",
+      "API_product_net": {
+        "content": "Uygulamanızın belgeleri görüntülemesine, düzenlemesine ve ardından dönüştürmesine yardımcı olan On Premise .NET API."
+      },
+      "API_product_java": {
+        "content": "Java tabanlı uygulamalarınızda işlemek üzere Microsoft Office, OpenOffice, HTML ve diğer belgeler için belge düzenleme API'si."
+      }
+    },
+    "API_loop_low_code": {
+      "title": "GroupDocs.Editor Düşük Kod API'leri şunları içerir:",
+      "label": "Tüm Düşük Kodlu API'leri Görüntüle",
+      "Cloud_SDK_net": {
+        "content": ".NET için Cloud SDK'yı kullanarak .NET uygulamalarına güçlü belge biçimleri düzenleme özellikleri ekleyin. MS Office, Web ve XML belgelerini düzenleyin."
+      },
+      "Cloud_SDK_java": {
+        "content": "REST API'lerini çağırabilen herhangi bir platformda endüstri standardı belge dosya biçimlerini düzenlemek için Java uygulamaları için gelişmiş belge düzenleyici SDK."
+      }
+    },
+    "API_loop_no_code": {
+      "title": "GroupDocs.Editor Kod Yok Uygulamaları Dahil Etme",
+      "label": "Tüm Kodsuz Uygulamaları Görüntüle",
+      "Total": {
+        "content": "Office ve OpenOffice'den popüler dosya biçimlerini düzenlemek için web tabanlı ücretsiz çevrimiçi uygulama."
+      },
+      "DOCX": {
+        "content": "Microsoft Word belgelerini çevrimiçi görüntülemek ve düzenlemek için ücretsiz editör uygulaması."
+      },
+      "PDF": {
+        "content": "PDF ve XPS belgelerini görüntülemek veya düzenlemek için herhangi bir cihazı, herhangi bir tarayıcıyı kullanın."
+      }
+    }
+  }
+}

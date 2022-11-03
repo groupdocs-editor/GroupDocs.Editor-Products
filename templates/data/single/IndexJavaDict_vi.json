@@ -1,0 +1,89 @@
+{
+  "head": {
+    "title": "API trình soạn thảo tài liệu Java | Chỉnh sửa Tệp văn bản XML Web Word bằng HTML",
+    "description": "API biên tập tài liệu cho Java. Tải các tệp Microsoft Word, XML, web & văn bản sang HTML và chuyển đổi trở lại định dạng ban đầu sau khi thao tác."
+  },
+  "header": {
+    "title": "Chỉnh sửa tài liệu qua HTML bằng Java API",
+    "description": "Tích hợp các ứng dụng Java với trình soạn thảo HTML để thao tác tài liệu và chuyển đổi trở lại định dạng ban đầu."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "Tổng quan"
+      },
+      "button_features": {
+        "text": "Đặc trưng"
+      },
+      "button_support": {
+        "text": "Ủng hộ"
+      },
+      "button_livedemo": {
+        "text": "Bản thử trực tiếp"
+      },
+      "button_pricing": {
+        "text": "Định giá"
+      }
+    }
+  },
+  "Overview": {
+    "content": "GroupDocs.Editor cho Java API cho phép chỉnh sửa tài liệu dưới dạng HTML. API hỗ trợ nhiều định dạng tài liệu và có thể được tích hợp với bất kỳ trình soạn thảo HTML bên ngoài, mã nguồn mở hoặc trả phí nào. Editor API sẽ xử lý để tải tài liệu, chuyển đổi nó sang HTML, cung cấp HTML cho giao diện người dùng bên ngoài và sau đó lưu HTML vào tài liệu gốc sau khi thao tác. Nó cũng có thể được sử dụng để tạo các bảng tính Microsoft Word, Excel, tệp PowerPoint, định dạng OpenDocument, tài liệu XML và TXT khác nhau.",
+    "tab1": {
+      "description": "Sau đây là tổng quan về GroupDocs.Editor cho Java",
+      "title": "Thao tác bằng HTML",
+      "content1": "Tải tài liệu được hỗ trợ",
+      "content2": "Chỉnh sửa Nội dung bằng HTML",
+      "content3": "Chỉnh sửa kiểu có liên quan",
+      "content4": "Chuyển đổi sang định dạng gốc"
+    },
+    "tab2": {
+      "description": "GroupDocs.Editor cho Java hỗ trợ [các định dạng tệp] sau (https://docs.groupdocs.com/editor/java/supported-document-formats/)",
+      "title": "Họ định dạng khác",
+      "content1": "Định dạng OpenDocument",
+      "content2": "Định dạng email",
+      "content3": "Định dạng web",
+      "content4": "Định dạng sách điện tử (e-Book)"
+    },
+    "tab3": {
+      "description": "GroupDocs.Editor cho Java hỗ trợ các Hệ điều hành, Khung & Trình quản lý Gói sau",
+      "title_os": "Các hệ điều hành",
+      "title_frameworks": "Khung được hỗ trợ",
+      "title_packman": "Xây dựng công cụ tự động hóa",
+      "title_devenv": "Môi trường phát triển"
+    }
+  },
+  "Features": {
+    "title": "GroupDocs.Editor cho các tính năng Java",
+    "feature_loop": {
+      "1": "Tích hợp trình soạn thảo HTML dễ dàng",
+      "2": "Chuyển đổi tài liệu sang HTML DOM",
+      "3": "Trích xuất nội dung HTML từ luồng tài liệu",
+      "4": "Tải, chỉnh sửa và lưu các định dạng tệp Word, Excel & PowerPoint",
+      "5": "Tìm nạp HTML cùng với các phần tử nhúng",
+      "6": "Nhập, Xem và Chỉnh sửa Tài liệu XML",
+      "7": "Chuyển nội dung HTML & Lưu tài nguyên được nhúng",
+      "8": "Xem, chỉnh sửa và lưu tài liệu xử lý văn bản ở chế độ Paginal",
+      "9": "Lấy nội dung của thẻ nội dung HTML từ tệp",
+      "10": "Trích xuất nội dung CSS của tệp HTML",
+      "11": "Sử dụng nội dung chuỗi để lấy HTML DOM và chuyển đổi thành tệp",
+      "12": "Chuyển đổi HTML DOM với các phần tử nhúng",
+      "13": "Chuyển đổi tệp có nhiều định dạng trong HTML để chỉnh sửa",
+      "14": "Nhận thông tin meta của tài liệu đầu vào mà không cần chỉnh sửa",
+      "15": "Lưu tài liệu đã chỉnh sửa sang định dạng tệp văn bản thuần túy",
+      "16": "Độ chính xác của chuyển đổi",
+      "17": "Áp dụng mật khẩu cho tài liệu đầu ra",
+      "18": "Cơ sở dữ liệu (DB) bất khả tri",
+      "19": "Giao diện người dùng (UI) bất khả tri",
+      "20": "Hỗ trợ cấp phép được đo lường"
+    },
+    "more_features_loop": {
+      "title1": "Chuyển đổi chính xác sang và từ HTML DOM",
+      "content1": "Sử dụng GroupDocs.Editor cho Java cho phép bạn xây dựng các ứng dụng trong Java tải tài liệu có định dạng tệp được hỗ trợ để chuyển đổi nó thành Mô hình đối tượng tài liệu HTML (DOM) cùng với các phần tử liên quan của nó, ví dụ: CSS. Hơn nữa, API Java Editor của chúng tôi cho phép bạn chỉnh sửa HTML trong bất kỳ Trình chỉnh sửa HTML phổ biến nào. Sau khi các sửa đổi cần thiết của bạn được thực hiện xong, GroupDocs.Editor cho Java sẽ giúp bạn chuyển đổi HTML kết quả này trở lại định dạng tệp ban đầu.",
+      "title2": "Tải và tìm nạp các phần tử liên kết",
+      "content2": "GroupDocs.Editor cho Java API cho phép bạn tìm nạp các phần tử được liên kết từ các tài liệu có định dạng được hỗ trợ, chẳng hạn như hình ảnh, CSS, phông chữ và hơn thế nữa. Sau đó, bạn có thể tải các phần tử liên quan đã tìm nạp này, duyệt qua và lưu chúng riêng biệt với tệp HTML cuối cùng và có đầu ra được quản lý tốt."
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor cung cấp các API chỉnh sửa tài liệu cho các môi trường phát triển phổ biến khác"
+  }
+}

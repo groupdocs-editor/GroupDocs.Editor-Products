@@ -1,0 +1,89 @@
+{
+  "head": {
+    "title": "Java Document Editor API | Upravujte textové soubory XML Word Web pomocí HTML",
+    "description": "API editoru dokumentů pro Javu. Načtěte soubory Microsoft Word, XML, webové a textové soubory do HTML a po manipulaci je převeďte zpět do původního formátu."
+  },
+  "header": {
+    "title": "Upravujte dokumenty pomocí HTML pomocí Java API",
+    "description": "Integrujte Java aplikace s HTML editorem pro manipulaci s dokumenty a převod zpět do původního formátu."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "Přehled"
+      },
+      "button_features": {
+        "text": "Funkce"
+      },
+      "button_support": {
+        "text": "Podpěra, podpora"
+      },
+      "button_livedemo": {
+        "text": "Živá ukázka"
+      },
+      "button_pricing": {
+        "text": "Ceny"
+      }
+    }
+  },
+  "Overview": {
+    "content": "GroupDocs.Editor for Java API umožňuje editaci dokumentů ve formě HTML. API podporuje více formátů dokumentů a může být integrováno s jakýmkoli externím, opensource nebo placeným HTML editorem. Editor API zpracuje načtení dokumentů, jejich převod do HTML, poskytnutí HTML externímu uživatelskému rozhraní a poté uložení HTML do původního dokumentu po manipulaci. Lze jej také použít ke generování různých tabulek Microsoft Word, Excel, souborů PowerPoint, formátů OpenDocument, dokumentů XML a TXT.",
+    "tab1": {
+      "description": "Následuje přehled GroupDocs.Editoru pro Javu",
+      "title": "Manipulujte pomocí HTML",
+      "content1": "Načíst podporovaný dokument",
+      "content2": "Upravujte obsah pomocí HTML",
+      "content3": "Upravit související styly",
+      "content4": "Převést do původního formátu"
+    },
+    "tab2": {
+      "description": "GroupDocs.Editor pro Java podporuje následující [formáty souborů](https://docs.groupdocs.com/editor/java/supported-document-formats/)",
+      "title": "Rodiny jiných formátů",
+      "content1": "Formáty OpenDocument",
+      "content2": "E-mailové formáty",
+      "content3": "Webové formáty",
+      "content4": "Formáty elektronické knihy (e-Book)."
+    },
+    "tab3": {
+      "description": "GroupDocs.Editor pro Java podporuje následující operační systémy, rámce a správce balíčků",
+      "title_os": "Operační systémy",
+      "title_frameworks": "Podporované rámce",
+      "title_packman": "Nástroj Build Automation Tool",
+      "title_devenv": "Vývojová prostředí"
+    }
+  },
+  "Features": {
+    "title": "GroupDocs.Editor pro funkce Java",
+    "feature_loop": {
+      "1": "Snadná integrace HTML editoru",
+      "2": "Konverze dokumentu do HTML DOM",
+      "3": "Extrahujte obsah HTML ze streamu dokumentů",
+      "4": "Načítání, úpravy a ukládání formátů souborů Word, Excel a PowerPoint",
+      "5": "Načte HTML spolu s vloženými prvky",
+      "6": "Importujte, prohlížejte a upravujte dokumenty XML",
+      "7": "Obejít obsah HTML a uložit vložené zdroje",
+      "8": "Prohlížejte, upravujte a ukládejte dokumenty textového zpracování v stránkovém režimu",
+      "9": "Získejte obsah HTML značky Body ze souboru",
+      "10": "Extrahujte obsah CSS souboru HTML",
+      "11": "Použijte String Content k získání HTML DOM a převodu na soubor",
+      "12": "Převod HTML DOM s vloženými prvky",
+      "13": "Převeďte soubory více formátů do HTML pro úpravy",
+      "14": "Získejte metainformace o vstupních dokumentech bez úprav",
+      "15": "Uložte upravené dokumenty do formátu prostého textu",
+      "16": "Přesnost konverze",
+      "17": "Použít heslo na výstupní dokument",
+      "18": "Databáze (DB) Agnostic",
+      "19": "Agnostik uživatelského rozhraní (UI).",
+      "20": "Podporuje měřené licencování"
+    },
+    "more_features_loop": {
+      "title1": "Přesný převod do az HTML DOM",
+      "content1": "Použití GroupDocs.Editor pro Java vám umožňuje vytvářet aplikace v Javě, které načtou dokument podporovaného formátu souboru a převedou jej na HTML Document Object Model (DOM) spolu s jeho přidruženými prvky, např. CSS. Naše Editor Java API navíc umožňuje upravovat HTML v libovolném z populárních HTML editorů. Po provedení požadovaných úprav vám GroupDocs.Editor pro Java pomůže převést tento výsledný HTML zpět do původního formátu souboru.",
+      "title2": "Načíst a načíst přidružené prvky",
+      "content2": "GroupDocs.Editor for Java API umožňuje načíst související prvky z dokumentů podporovaných formátů, jako jsou obrázky, CSS, fonty a další. Poté můžete načíst tyto načtené přidružené prvky, procházet jimi a ukládat je odděleně od konečného souboru HTML a mít dobře spravovaný výstup."
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor nabízí rozhraní API pro úpravu dokumentů pro další populární vývojová prostředí"
+  }
+}

@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "product"
-date: 2021-04-27T09:31:06+03:00
+date: 2022-11-03T21:00:22
 draft: false
 
 product: "Editor"
@@ -82,7 +82,7 @@ overview:
       ## TAB TWO ##
       tab_two:
         description: |
-          GroupDocs.Editor for Java supports following [file formats](https://docs.groupdocs.com/editor/java/supported-document-formats/) - (PDF file format support will be implemented in future versions.)
+          GroupDocs.Editor for Java supports following [file formats](https://docs.groupdocs.com/editor/java/supported-document-formats/)
 
         left:
           enable: true
@@ -98,12 +98,12 @@ overview:
           enable: true
           table:
             # table loop
-            - title: "Images, Graphics & Diagrams"
+            - title: "Other format families"
               content: |
                 * **OpenDocument Formats**: ODT, OTT, ODS, FODS, ODP, OTP
-                * **Text**: TXT
-                * **Web**: HTML, MHTML
-                * **Other**: MOBI, XML
+                * **OpenDocument Formats**: MSG, MBOX, EML, EMLX
+                * **Web formats**: HTML, MHTML, CHM, XML, TXT
+                * **Web formats**: MOBI, AZW3, ePub
 
       ## TAB THREE ##
       tab_three:
@@ -126,7 +126,7 @@ overview:
             - icon: "fas fa-code"
               title: "Supported Frameworks"
               content: |
-                * Java 7 (1.7) and above
+                * Java 7 (1.7) +
 
         right:
           enable: true
@@ -160,7 +160,7 @@ features:
 
       # feature loop
       - icon: "fas fa-bolt"
-        content: "Extract HTML Content via Stream"
+        content: "Extract HTML Content from Document Stream"
       
       # feature loop
       - icon: "fas fa-file-powerpoint"
@@ -237,12 +237,33 @@ features:
           Using GroupDocs.Editor for Java allows you to build applications in Java that load a document of supported file format to convert it into HTML Document Object Model (DOM) along with its associated elements, e.g., CSS. Furthermore, our Editor Java API allows you to edit the HTML in any of the popular HTML Editors. After your required modifications are done, GroupDocs.Editor for Java helps you to convert this resultant HTML back to its original file format.
           
           ```java
-          // Obtain document stream
-          InputStream inputStream = new FileInputStream(CommonUtilities.getStoragePath("Content.HTML"));
-          InputHtmlDocument htmlDoc = EditorHandler.toHtml(inputStream);
-          // Obtain HTML document content
-          String cssContent = htmlDoc.getEmbeddedHtml();
-          System.out.println(cssContent);
+          // Create Editor class by loading an input document
+          Editor editor = new Editor("Sample.docx");
+
+          // Open document for edit and obtain EditableDocument
+          EditableDocument original = editor.edit();
+
+          // Obtain all-embedded HTML from it
+          String allEmbeddedInside = original.getEmbeddedHtml();
+
+          // If necessary, obtain pure HTML-markup, CSS, images and other resources in separate form
+
+          // Whole HTML-markup, without any resources
+          String completeHtmlMarkup = original.getContent();
+
+          // Only HTML->BODY content, useful for most of WYSIWYG-editors
+          String onlyInnerBody = original.getBodyContent();
+
+          // All CSS stylesheets
+          List<CssText> stylesheets = original.getCss();
+
+          // All images, including raster and vector, but without CSS gradients
+          List<IImageResource> images = original.getImages();
+
+          // All font resources
+          List<FontResourceBase> fonts = original.getFonts();
+
+          // finally, send this content to your WYSIWYG HTML-editor
           ```
       # more_feature_loop
       - title: "Load & Fetch Associate Elements"
@@ -255,7 +276,7 @@ support:
 ############################# Solutions ############################
 solutions:
     enable: true
-    title: "GroupDocs.Editor offers document viewing APIs for other popular development environments"
+    title: "GroupDocs.Editor offers document editing APIs for other popular development environments"
 
     solution:
         # solution loop

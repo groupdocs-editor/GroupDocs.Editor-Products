@@ -1,0 +1,89 @@
+{
+  "head": {
+    "title": "자바 문서 편집기 API | HTML을 사용하여 Word Web XML 텍스트 파일 편집",
+    "description": "Java용 문서 편집기 API. Microsoft Word, XML, 웹 및 텍스트 파일을 HTML로 로드하고 조작 후 원래 형식으로 다시 변환합니다."
+  },
+  "header": {
+    "title": "Java API를 사용하여 HTML을 통해 문서 편집",
+    "description": "Java 애플리케이션을 HTML 편집기와 통합하여 문서를 조작하고 원래 형식으로 다시 변환합니다."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "개요"
+      },
+      "button_features": {
+        "text": "특징"
+      },
+      "button_support": {
+        "text": "지원하다"
+      },
+      "button_livedemo": {
+        "text": "라이브 데모"
+      },
+      "button_pricing": {
+        "text": "가격"
+      }
+    }
+  },
+  "Overview": {
+    "content": "GroupDocs.Editor for Java API를 사용하면 HTML 형식의 문서 편집이 가능합니다. API는 여러 문서 형식을 지원하며 모든 외부, 오픈 소스 또는 유료 HTML 편집기와 통합할 수 있습니다. Editor API는 문서를 불러와서 HTML로 변환하고 HTML을 외부 UI에 제공하고 조작 후 HTML을 원본 문서에 저장하는 처리를 합니다. 또한 다양한 Microsoft Word, Excel 스프레드시트, PowerPoint 파일, OpenDocument 형식, XML 및 TXT 문서를 생성하는 데 사용할 수도 있습니다.",
+    "tab1": {
+      "description": "다음은 Java용 GroupDocs.Editor의 개요입니다.",
+      "title": "HTML을 사용하여 조작",
+      "content1": "지원 문서 로드",
+      "content2": "HTML을 사용하여 콘텐츠 편집",
+      "content3": "관련 스타일 편집",
+      "content4": "원본 형식으로 변환"
+    },
+    "tab2": {
+      "description": "Java용 GroupDocs.Editor는 다음 [파일 형식](https://docs.groupdocs.com/editor/java/supported-document-formats/)을 지원합니다.",
+      "title": "기타 형식 제품군",
+      "content1": "OpenDocument 형식",
+      "content2": "이메일 형식",
+      "content3": "웹 형식",
+      "content4": "전자책(e-Book) 형식"
+    },
+    "tab3": {
+      "description": "Java용 GroupDocs.Editor는 다음 운영 체제, 프레임워크 및 패키지 관리자를 지원합니다.",
+      "title_os": "운영체제",
+      "title_frameworks": "지원되는 프레임워크",
+      "title_packman": "빌드 자동화 도구",
+      "title_devenv": "개발 환경"
+    }
+  },
+  "Features": {
+    "title": "Java 기능을 위한 GroupDocs.Editor",
+    "feature_loop": {
+      "1": "손쉬운 HTML 편집기 통합",
+      "2": "HTML DOM으로 문서 변환",
+      "3": "문서 스트림에서 HTML 콘텐츠 추출",
+      "4": "Word, Excel 및 PowerPoint 파일 형식 로드, 편집 및 저장",
+      "5": "포함된 요소와 함께 HTML 가져오기",
+      "6": "XML 문서 가져오기, 보기 및 편집",
+      "7": "HTML 콘텐츠 우회 및 포함된 리소스 저장",
+      "8": "페이지 모드에서 워드 프로세싱 문서 보기, 편집 및 저장",
+      "9": "파일에서 HTML 본문 태그의 내용 가져오기",
+      "10": "HTML 파일의 CSS 콘텐츠 추출",
+      "11": "문자열 콘텐츠를 사용하여 HTML DOM 가져오기 및 파일로 변환",
+      "12": "포함된 요소가 있는 HTML DOM 변환",
+      "13": "편집을 위해 HTML에서 여러 형식의 파일 변환",
+      "14": "편집 없이 입력 문서의 메타 정보 가져오기",
+      "15": "편집한 문서를 일반 텍스트 파일 형식으로 저장",
+      "16": "변환 정확도",
+      "17": "출력 문서에 암호 적용",
+      "18": "데이터베이스(DB) 불가지론",
+      "19": "사용자 인터페이스(UI) 불가지론",
+      "20": "계량 라이선스 지원"
+    },
+    "more_features_loop": {
+      "title1": "HTML DOM으로 및 HTML DOM에서 정확하게 변환",
+      "content1": "Java용 GroupDocs.Editor를 사용하면 지원되는 파일 형식의 문서를 로드하여 관련 요소(예: CSS)와 함께 HTML DOM(문서 개체 모델)으로 변환하는 Java 응용 프로그램을 빌드할 수 있습니다. 또한 Editor Java API를 사용하면 인기 있는 HTML 편집기에서 HTML을 편집할 수 있습니다. 필요한 수정이 완료되면 Java용 GroupDocs.Editor를 사용하여 이 결과 HTML을 원래 파일 형식으로 다시 변환할 수 있습니다.",
+      "title2": "요소 로드 및 가져오기",
+      "content2": "Java API용 GroupDocs.Editor를 사용하면 이미지, CSS, 글꼴 등과 같이 지원되는 형식의 문서에서 관련 요소를 가져올 수 있습니다. 그런 다음 가져온 연결된 요소를 로드하고 탐색하고 최종 HTML 파일과 별도로 저장하고 잘 관리된 출력을 가질 수 있습니다."
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor는 다른 인기 있는 개발 환경을 위한 문서 편집 API를 제공합니다."
+  }
+}

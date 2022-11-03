@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "product"
-date: 2021-04-27T09:31:06+03:00
+date: 2022-11-03T21:00:22
 draft: false
 
 ############################# Head ############################
@@ -86,7 +86,7 @@ apis:
           image: "https://www.aspose.cloud/templates/groupdocsapp/images/products/logo/groupdocs_pdf-app.png"
           product: "GroupDocs.Editor"
           platform: "PDF"
-          content: "Use any device, any browser to view or edit Microsoft Excel spreadsheets."
+          content: "Use any device, any browser to view or edit PDF and XPS documents."
 
 ############################# Back to top ###############################
 back_to_top:

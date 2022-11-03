@@ -6,4 +6,4 @@ dimensions:
 
 dictionaries: ["..\\data\\DelimitedTextFamilyDict_{lang}.json"]
 
-outputPath: "{product}\\{ext}.{lang}.md"
+outputPath: "editor\\{product}\\{ext}.{lang}.md"

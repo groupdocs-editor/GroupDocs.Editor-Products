@@ -1,0 +1,94 @@
+{
+  "head": {
+    "title": "C# .NET Document Editor API | Editeu Word Excel PowerPoint Web XML mitjançant HTML",
+    "description": "API de l'editor de documents C# .NET per carregar Microsoft Word, Excel, PowerPoint, PDF, XML, formats de fitxers web i de text a HTML, manipular i convertir de nou al format original."
+  },
+  "header": {
+    "title": ".NET API per editar documents amb HTML",
+    "description": "Desenvolupa aplicacions .NET, per integrar-se amb l'editor HTML, obtenir documents compatibles, editar i convertir-los al format original."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "Visió general"
+      },
+      "button_features": {
+        "text": "Característiques"
+      },
+      "button_support": {
+        "text": "Suport"
+      },
+      "button_livedemo": {
+        "text": "Demostració en directe"
+      },
+      "button_pricing": {
+        "text": "Preus"
+      }
+    }
+  },
+  "Overview": {
+    "content": "L'API GroupDocs.Editor per a .NET us ajuda a crear aplicacions C#, ASP.NET i altres aplicacions .NET senzilles i fàcils d'utilitzar que s'integren fàcilment amb editors HTML populars (tant de codi obert com de pagament) per convertir, editar i manipular documents de formats de fitxer populars. La nostra API Editor .NET us permet carregar el document, convertir-lo a HTML, enviar HTML a un editor HTML extern i, un cop feta la manipulació, desa l'HTML al format de fitxer original. També podeu obtenir per separat els recursos adjunts amb qualsevol document. Funciona amb tot tipus de documents, com ara Microsoft Word, Excel, PowerPoint, PDF, XPS, OpenDocument, text, web, correu electrònic, llibre electrònic i molt més.",
+    "tab1": {
+      "description": "A continuació es mostra una visió general de GroupDocs.Editor per a .NET",
+      "title": "Manipula amb HTML",
+      "content1": "Carregueu el document compatible",
+      "content2": "Editeu contingut amb HTML",
+      "content3": "Edita estils relacionats",
+      "content4": "Converteix a format original"
+    },
+    "tab2": {
+      "description": "GroupDocs.Editor per a .NET admet els següents [formats de fitxer](https://docs.groupdocs.com/editor/java/supported-document-formats/)",
+      "title": "Altres famílies de format",
+      "content1": "Formats OpenDocument",
+      "content2": "Formats de disseny fix",
+      "content3": "Formats web",
+      "content4": "Formats de llibre electrònic (e-Book)."
+    },
+    "tab3": {
+      "description": "GroupDocs.Editor per a .NET és compatible amb els següents sistemes operatius, marcs i gestors de paquets",
+      "title_os": "Sistemes operatius",
+      "title_frameworks": "Marcs suportats",
+      "title_packman": "Gestors de paquets",
+      "title_devenv": "Entorns de desenvolupament"
+    }
+  },
+  "Features": {
+    "title": "GroupDocs.Editor per a les funcions .NET",
+    "feature_loop": {
+      "1": "Fàcil integració amb qualsevol editor HTML",
+      "2": "Converteix el document a HTML DOM",
+      "3": "Obteniu contingut HTML del flux de documents",
+      "4": "Obteniu contingut HTML i els seus recursos incrustats",
+      "5": "Obteniu contingut HTML de l'etiqueta del cos del document",
+      "6": "Obteniu fulls d'estil CSS del document HTML",
+      "7": "Travessa el contingut HTML i desa els seus recursos",
+      "8": "Obteniu HTML DOM del contingut de cadena i convertiu-lo en document",
+      "9": "DOM HTML juntament amb la conversió de recursos",
+      "10": "Edita documents de diversos formats en HTML",
+      "11": "Conversió precisa",
+      "12": "Apliqueu la protecció de lectura i/o escriptura al document resultant",
+      "13": "Paginar documents de processament de textos i editar-los en qualsevol editor WYSIWYG",
+      "14": "Base de dades (DB) i interfície d'usuari (UI) agnòstic",
+      "15": "Potents funcions de processament XML",
+      "16": "Recupereu OTF (tipus de lletra de tipus obert) dels documents d'entrada i exporteu-los al document resultant",
+      "17": "Processa les imatges ràster i vectorials internament dins dels formats de document d'entrada admesos",
+      "18": "Inseriu el contingut del full de treball editat al full de càlcul original a la posició desitjada",
+      "19": "Editeu les diapositives i inseriu-les al full de càlcul resultant",
+      "20": "Incrusta els tipus de lletra al document de processament de textos resultant mentre es desa"
+    },
+    "more_features_loop": {
+      "title1": "Conversió precisa a i des d'HTML DOM",
+      "content1": "L'API GroupDocs.Editor per a .NET permet a les vostres aplicacions .NET obtenir un document de format compatible i convertir-lo en un model d'objectes de document (DOM) HTML juntament amb l'extracció de recursos adjunts, com ara CSS. A continuació, podeu fer les modificacions a l'HTML mitjançant el vostre editor HTML preferit. Un cop hàgiu acabat amb l'edició, l'API GroupDocs.Editor per a .NET us permet convertir amb precisió aquest DOM HTML al fitxer original.",
+      "title2": "Carregar i extreure recursos externs",
+      "content2": "L'API GroupDocs.Editor per a .NET és capaç d'aconseguir els recursos externs adjunts als documents compatibles, com ara imatges, tipus de lletra, CSS i molt més. Els recursos obtinguts es poden carregar, recórrer i desar per separat del document HTML resultant. Això us proporciona una sortida de gestió més fàcil.",
+      "title3": "Apliqueu efectes de text als formats de fitxer de processament de textos",
+      "content3": "L'API de l'editor de documents de GroupDocs permet afegir efectes de text complexos (ombra, efecte 3D, contorn, resplendor, gravat, relleu) mentre es treballa amb formats de processament de documents de Microsoft Word compatibles. Aquesta funció està activada automàticament i es pot observar quan es processa el document amb aquests efectes de text.",
+      "title4": "Potents funcions de manipulació XML",
+      "content4-1": "Mitjançant l'API GroupDocs.Editor per a .NET, podeu obrir, veure i editar documents XML. La nostra API d'edició ofereix suport i reconeixement especials d'etiquetes XML, atributs juntament amb els seus valors, declaracions XML, seccions CDATA, definicions DOCTYPE i altres entitats XML específiques. Podeu personalitzar la configuració de tipus de lletra i color per a cada entitat diferent de l'estructura XML.",
+      "content4-2": "La funció XML Converter és prou intel·ligent per mostrar errors al fitxer XML i com solucionar-los. El mecanisme de reconeixement d'URI i correu electrònic escaneja els atributs XML i representa els URI i adreces de correu electrònic detectats dins de l'etiqueta A com a enllaços perquè es puguin editar com a enllaç, no com a text dins del fitxer HTML resultant."
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor ofereix API d'edició de documents per a altres entorns de desenvolupament populars"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "head": {
+    "title": "API Java Document Editor | Editeu fitxers de text XML de Word Web mitjançant HTML",
+    "description": "API de l'editor de documents per a Java. Carregueu fitxers de Microsoft Word, XML, web i de text a HTML i torneu a convertir-los al format original després de la manipulació."
+  },
+  "header": {
+    "title": "Editeu documents mitjançant HTML mitjançant l'API de Java",
+    "description": "Integra les aplicacions Java amb l'editor HTML per manipular documents i tornar a convertir-los al format original."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "Visió general"
+      },
+      "button_features": {
+        "text": "Característiques"
+      },
+      "button_support": {
+        "text": "Suport"
+      },
+      "button_livedemo": {
+        "text": "Demostració en directe"
+      },
+      "button_pricing": {
+        "text": "Preus"
+      }
+    }
+  },
+  "Overview": {
+    "content": "L'API GroupDocs.Editor per a Java permet l'edició de documents en forma d'HTML. L'API admet diversos formats de document i es pot integrar amb qualsevol editor HTML extern, de codi obert o de pagament. L'API Editor processarà per carregar documents, convertir-los a HTML, proporcionar HTML a la interfície d'usuari externa i després desar HTML al document original després de la manipulació. També es pot utilitzar per generar diferents Microsoft Word, fulls de càlcul Excel, fitxers PowerPoint, formats OpenDocument, documents XML i TXT.",
+    "tab1": {
+      "description": "A continuació es mostra una visió general de GroupDocs.Editor per a Java",
+      "title": "Manipula amb HTML",
+      "content1": "Carregueu el document compatible",
+      "content2": "Editeu contingut amb HTML",
+      "content3": "Edita estils relacionats",
+      "content4": "Converteix a format original"
+    },
+    "tab2": {
+      "description": "GroupDocs.Editor per a Java admet els següents [formats de fitxer](https://docs.groupdocs.com/editor/java/supported-document-formats/)",
+      "title": "Altres famílies de format",
+      "content1": "Formats OpenDocument",
+      "content2": "Formats de correu electrònic",
+      "content3": "Formats web",
+      "content4": "Formats de llibre electrònic (e-Book)."
+    },
+    "tab3": {
+      "description": "GroupDocs.Editor per a Java admet els següents sistemes operatius, marcs i gestors de paquets",
+      "title_os": "Sistemes operatius",
+      "title_frameworks": "Marcs suportats",
+      "title_packman": "Eina d'automatització de creació",
+      "title_devenv": "Entorns de desenvolupament"
+    }
+  },
+  "Features": {
+    "title": "GroupDocs.Editor per a funcions de Java",
+    "feature_loop": {
+      "1": "Fàcil integració de l'editor HTML",
+      "2": "Conversió de documents a HTML DOM",
+      "3": "Extreu contingut HTML del flux de documents",
+      "4": "Carregueu, editeu i deseu formats de fitxer Word, Excel i PowerPoint",
+      "5": "Obteniu HTML juntament amb Elements incrustats",
+      "6": "Importa, visualitza i edita documents XML",
+      "7": "Evita el contingut HTML i desa els recursos incrustats",
+      "8": "Veure, editar i desar documents de processament de textos en mode paginal",
+      "9": "Obteniu contingut de l'etiqueta del cos HTML del fitxer",
+      "10": "Extraieu el contingut CSS del fitxer HTML",
+      "11": "Utilitzeu contingut de cadena per obtenir HTML DOM i convertir-lo en fitxer",
+      "12": "Converteix HTML DOM amb elements incrustats",
+      "13": "Converteix fitxers de diversos formats en HTML per editar-los",
+      "14": "Obteniu metainformació dels documents d'entrada sense editar",
+      "15": "Deseu els documents editats en format de fitxer de text sense format",
+      "16": "Precisió de conversió",
+      "17": "Apliqueu la contrasenya al document de sortida",
+      "18": "Base de dades (DB) agnòstica",
+      "19": "Interfície d'usuari (UI) agnòstic",
+      "20": "Admet llicències mesurades"
+    },
+    "more_features_loop": {
+      "title1": "Converteix amb precisió a i des d'HTML DOM",
+      "content1": "L'ús de GroupDocs.Editor per a Java us permet crear aplicacions en Java que carreguen un document amb un format de fitxer compatible per convertir-lo en HTML Document Object Model (DOM) juntament amb els seus elements associats, per exemple, CSS. A més, la nostra API de Java Editor us permet editar l'HTML en qualsevol dels editors HTML populars. Un cop fetes les modificacions necessàries, GroupDocs.Editor per a Java us ajuda a convertir aquest HTML resultant de nou al format de fitxer original.",
+      "title2": "Carregueu i obteniu elements associats",
+      "content2": "L'API de GroupDocs.Editor per a Java us permet obtenir els elements associats de documents de formats admesos, com ara imatges, CSS, tipus de lletra i molt més. A continuació, podeu carregar aquests elements associats obtinguts, recórrer-los i desar-los per separat del fitxer HTML final i tenir una sortida ben gestionada."
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor ofereix API de visualització de documents per a altres entorns de desenvolupament populars"
+  }
+}

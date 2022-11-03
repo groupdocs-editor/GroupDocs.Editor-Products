@@ -1,0 +1,89 @@
+{
+  "head": {
+    "title": "Java ドキュメント エディター API | HTML を使用して Word Web XML テキスト ファイルを編集する",
+    "description": "Java 用のドキュメント エディター API。 Microsoft Word、XML、Web およびテキスト ファイルを HTML に読み込み、操作後に元の形式に変換します。"
+  },
+  "header": {
+    "title": "Java API を使用して HTML 経由でドキュメントを編集する",
+    "description": "Java アプリケーションを HTML エディターと統合して、ドキュメントを操作し、元の形式に変換します。"
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "概要"
+      },
+      "button_features": {
+        "text": "特徴"
+      },
+      "button_support": {
+        "text": "サポート"
+      },
+      "button_livedemo": {
+        "text": "ライブデモ"
+      },
+      "button_pricing": {
+        "text": "価格"
+      }
+    }
+  },
+  "Overview": {
+    "content": "GroupDocs.Editor for Java API を使用すると、HTML 形式でドキュメントを編集できます。 API は複数のドキュメント形式をサポートし、外部のオープンソースまたは有料の HTML エディターと統合できます。エディター API は、ドキュメントを読み込み、HTML に変換し、HTML を外部 UI に提供し、操作後に HTML を元のドキュメントに保存する処理を行います。また、さまざまな Microsoft Word、Excel スプレッドシート、PowerPoint ファイル、OpenDocument 形式、XML および TXT ドキュメントの生成にも使用できます。",
+    "tab1": {
+      "description": "以下は、GroupDocs.Editor for Java の概要です。",
+      "title": "HTML を使用して操作する",
+      "content1": "サポートされているドキュメントを読み込む",
+      "content2": "HTML を使用してコンテンツを編集する",
+      "content3": "関連するスタイルを編集",
+      "content4": "元の形式に変換"
+    },
+    "tab2": {
+      "description": "GroupDocs.Editor for Java は、次の [ファイル形式](https://docs.groupdocs.com/editor/java/supported-document-formats/) をサポートしています。",
+      "title": "その他の形式ファミリー",
+      "content1": "OpenDocument 形式",
+      "content2": "メール形式",
+      "content3": "ウェブフォーマット",
+      "content4": "電子書籍（e-Book）形式"
+    },
+    "tab3": {
+      "description": "GroupDocs.Editor for Java は、次のオペレーティング システム、フレームワーク、およびパッケージ マネージャーをサポートします。",
+      "title_os": "オペレーティングシステム",
+      "title_frameworks": "サポートされているフレームワーク",
+      "title_packman": "ビルド自動化ツール",
+      "title_devenv": "開発環境"
+    }
+  },
+  "Features": {
+    "title": "GroupDocs.Editor for Java 機能",
+    "feature_loop": {
+      "1": "簡単な HTML エディタの統合",
+      "2": "ドキュメントの HTML DOM への変換",
+      "3": "ドキュメント ストリームから HTML コンテンツを抽出する",
+      "4": "Word、Excel、PowerPoint ファイル形式の読み込み、編集、保存",
+      "5": "埋め込み要素とともに HTML を取得する",
+      "6": "XML ドキュメントのインポート、表示、および編集",
+      "7": "HTML コンテンツをバイパスして埋め込みリソースを保存",
+      "8": "ワード プロセッシング ドキュメントをページ モードで表示、編集、保存する",
+      "9": "ファイルから HTML 本文タグのコンテンツを取得する",
+      "10": "HTML ファイルの CSS コンテンツを抽出する",
+      "11": "文字列コンテンツを使用して HTML DOM を取得し、ファイルに変換する",
+      "12": "要素が埋め込まれた HTML DOM を変換する",
+      "13": "複数の形式のファイルを HTML に変換して編集する",
+      "14": "編集せずに入力ドキュメントのメタ情報を取得する",
+      "15": "編集したドキュメントをプレーン テキスト ファイル形式で保存する",
+      "16": "変換精度",
+      "17": "出力ドキュメントにパスワードを適用する",
+      "18": "データベース (DB) に依存しない",
+      "19": "ユーザー インターフェイス (UI) に依存しない",
+      "20": "従量制ライセンスをサポート"
+    },
+    "more_features_loop": {
+      "title1": "HTML DOM との間で正確に変換",
+      "content1": "GroupDocs.Editor for Java を使用すると、サポートされているファイル形式のドキュメントを読み込んで、CSS などの関連要素とともに HTML ドキュメント オブジェクト モデル (DOM) に変換するアプリケーションを Java で構築できます。さらに、エディタ Java API を使用すると、一般的な HTML エディタで HTML を編集できます。必要な変更を行った後、GroupDocs.Editor for Java は、この結果の HTML を元のファイル形式に変換するのに役立ちます。",
+      "title2": "関連要素の読み込みと取得",
+      "content2": "GroupDocs.Editor for Java API を使用すると、画像、CSS、フォントなど、サポートされている形式のドキュメントから関連する要素を取得できます。次に、これらのフェッチされた関連要素をロードし、トラバースして、最終的な HTML ファイルとは別に保存し、適切に管理された出力を得ることができます。"
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor は、他の一般的な開発環境向けのドキュメント編集 API を提供します"
+  }
+}

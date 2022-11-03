@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Zorunlu dosya yolu veya bayt akışı ve isteğe bağlı \"PresentationLoadOptions\" sınıfı ile bir \"Editor\" sınıfı örneği oluşturun ve {{EXT}} dosyasını yükleyin",
+    "step_2": "{{EXT}} dosya biçimi için \"PresentationEditOptions\" sınıf örneğini oluşturun ve ayarlayın",
+    "step_3": "`Editor.Edit()` yöntemini çağırın ve herhangi bir WYSIWYG editörüyle kolayca düzenlenebilen HTML formatında {{EXT}} belgesini alın.",
+    "step_4": "`Editor.Save()` yöntemini çağırın ve düzenlenen {{EXT}} dosyasını `PresentationSaveOptions` sınıfını kullanarak kaydedin"
+  }
+}

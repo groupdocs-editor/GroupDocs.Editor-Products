@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "Řešení pro úpravu dokumentů | On Premise API a bezplatné aplikace",
+    "description": "Úpravy dokumentů pro Microsoft Office, OpenDocument, PDF a další formáty souborů pomocí rozhraní API On Premise nebo pomocí aplikace Online Document Editor."
+  },
+  "header": {
+    "title": "Řešení pro úpravu dokumentů",
+    "description": "Editor dokumentů pro práci se soubory Microsoft Office, OpenOffice, PDF, HTML a dalšími formáty souborů dokumentů."
+  },
+  "APIs": {
+    "API_loop_high_code": {
+      "title": "GroupDocs.Editor High Code API zahrnuje",
+      "label": "Zobrazit všechna rozhraní High Code API",
+      "API_product_net": {
+        "content": "On Premise .NET API, které pomáhá vaší aplikaci prohlížet, upravovat a následně převádět dokumenty."
+      },
+      "API_product_java": {
+        "content": "Rozhraní API pro úpravy dokumentů pro Microsoft Office, OpenOffice, HTML a další dokumenty pro manipulaci v rámci vašich aplikací založených na Javě."
+      }
+    },
+    "API_loop_low_code": {
+      "title": "GroupDocs.Editor Low Code API zahrnuje",
+      "label": "Zobrazit všechna rozhraní API s nízkým kódem",
+      "Cloud_SDK_net": {
+        "content": "Přidejte výkonné funkce pro úpravy formátů dokumentů do aplikací .NET pomocí Cloud SDK pro .NET. Upravujte dokumenty MS Office, Web a XML."
+      },
+      "Cloud_SDK_java": {
+        "content": "Pokročilá sada SDK pro editor dokumentů pro aplikace Java pro úpravu standardních formátů souborů dokumentů na jakékoli platformě schopné volat rozhraní REST API."
+      }
+    },
+    "API_loop_no_code": {
+      "title": "GroupDocs.Editor Aplikace neobsahuje žádný kód",
+      "label": "Zobrazit všechny aplikace bez kódu",
+      "Total": {
+        "content": "Webová bezplatná online aplikace pro úpravu oblíbených formátů souborů z Office a OpenOffice."
+      },
+      "DOCX": {
+        "content": "Bezplatná aplikace editoru pro prohlížení a úpravu dokumentů Microsoft Word online."
+      },
+      "PDF": {
+        "content": "K prohlížení nebo úpravě dokumentů PDF a XPS použijte jakékoli zařízení, jakýkoli prohlížeč."
+      }
+    }
+  }
+}

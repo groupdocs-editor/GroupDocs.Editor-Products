@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Zorunlu dosya yolu veya akışı ve isteğe bağlı 'SpreadsheetLoadOptions' sınıfı ile bir \"Editor\" sınıfı örneği oluşturun ve {{EXT}} dosyasını yükleyin",
+    "step_2": "{{EXT}} dosya biçimi için \"SpreadsheetEditOptions\" sınıf örneğini oluşturun ve ayarlayın",
+    "step_3": "`Editor.Edit()` yöntemini çağırın ve herhangi bir WYSIWYG editörüyle kolayca düzenlenebilen HTML formatında {{EXT}} belgesini alın.",
+    "step_4": "`Editor.Save()` yöntemini çağırın ve `SpreadsheetSaveOptions` sınıfını kullanarak düzenlenmiş {{EXT}} dosyasını kaydedin"
+  }
+}

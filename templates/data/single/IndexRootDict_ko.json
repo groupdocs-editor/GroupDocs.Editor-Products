@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "문서 편집 솔루션 | 온프레미스 API 및 무료 앱",
+    "description": "온프레미스 API를 사용하거나 온라인 문서 편집기 앱을 사용하여 Microsoft Office, OpenDocument, PDF 및 기타 파일 형식에 대한 문서 편집."
+  },
+  "header": {
+    "title": "문서 편집 솔루션",
+    "description": "Microsoft Office, OpenOffice, PDF, HTML 및 기타 문서 파일 형식을 조작하는 문서 편집기."
+  },
+  "APIs": {
+    "API_loop_high_code": {
+      "title": "GroupDocs.Editor 높은 코드 API 포함",
+      "label": "모든 하이 코드 API 보기",
+      "API_product_net": {
+        "content": "애플리케이션이 문서를 보고 편집한 다음 변환하는 데 도움이 되는 On Premise .NET API입니다."
+      },
+      "API_product_java": {
+        "content": "Microsoft Office, OpenOffice, HTML 및 기타 문서가 Java 기반 응용 프로그램 내에서 조작할 수 있는 문서 편집 API입니다."
+      }
+    },
+    "API_loop_low_code": {
+      "title": "GroupDocs.Editor 로우 코드 API 포함",
+      "label": "모든 로우 코드 API 보기",
+      "Cloud_SDK_net": {
+        "content": ".NET용 Cloud SDK를 사용하여 .NET 애플리케이션에 강력한 문서 형식 편집 기능을 추가합니다. MS Office, 웹 및 XML 문서를 편집합니다."
+      },
+      "Cloud_SDK_java": {
+        "content": "REST API를 호출할 수 있는 모든 플랫폼에서 업계 표준 문서 파일 형식을 편집하기 위한 Java 애플리케이션용 고급 문서 편집기 SDK."
+      }
+    },
+    "API_loop_no_code": {
+      "title": "GroupDocs.Editor 코드 앱 포함 없음",
+      "label": "코드 없음 앱 모두 보기",
+      "Total": {
+        "content": "Office 및 OpenOffice에서 널리 사용되는 파일 형식을 편집할 수 있는 웹 기반 무료 온라인 앱."
+      },
+      "DOCX": {
+        "content": "Microsoft Word 문서를 온라인으로 보고 편집할 수 있는 무료 편집기 앱."
+      },
+      "PDF": {
+        "content": "모든 장치, 모든 브라우저를 사용하여 PDF 및 XPS 문서를 보거나 편집할 수 있습니다."
+      }
+    }
+  }
+}

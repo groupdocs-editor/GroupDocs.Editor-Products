@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "product"
-date: 2021-04-27T09:31:06+03:00
+date: 2022-11-03T21:00:22
 draft: false
 
 product: "Editor"
@@ -11,11 +11,11 @@ platform_tag: "java"
 
 ############################# Head ############################
 head_title: "API de l'éditeur de documents Java | Modifier les fichiers texte Word Web XML à l'aide de HTML"
-head_description: "API de l'éditeur de documents pour Java. Charger Microsoft Word, XML, Web &amp; fichiers texte en HTML et reconvertis au format d'origine après manipulation."
+head_description: "API de l'éditeur de documents pour Java. Chargez des fichiers Microsoft Word, XML, Web et texte au format HTML et reconvertissez-les au format d'origine après manipulation."
 
 ############################# Header ############################
 title: "Modifier des documents via HTML à l'aide de l'API Java"
-description: "Intégrez des applications Java à l'éditeur HTML pour manipuler des documents et les reconvertir au format d'origine."
+description: "Intégrez des applications Java à l'éditeur HTML pour manipuler les documents et les reconvertir au format d'origine."
 button:
     enable: true
 
@@ -25,7 +25,7 @@ submenu:
     
     left:
         img_alt: "GroupDocs.Editor for Java"
-        image: "/border/groupdocs-editor-java.svg"
+        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png"
         product: "GroupDocs.Editor"
         platform: "Java"
 
@@ -37,26 +37,26 @@ submenu:
 
             # button loop
             - link: "#features"
-              text: "Caractéristiques"
+              text: "Fonctionnalités"
 
             # button loop
             - link: "#support"
-              text: "Support"
+              text: "Soutien"
 
             # button loop
             - link: "https://products.groupdocs.app/editor"
-              text: "Live Demo"
+              text: "Démo en direct"
 
             # button loop
             - link: "https://purchase.groupdocs.com/pricing/editor/java"
-              text: "Pricing"
+              text: "Tarification"
 
     right:
         link_download: "https://downloads.groupdocs.com/editor"
         link_learn: "https://docs.groupdocs.com/editor/java/"
         link_buy: "https://purchase.groupdocs.com"
 
-############################# Aperçu ############################
+############################# Overview ############################
 overview:
     enable: true
     content: |
@@ -67,7 +67,7 @@ overview:
       ## TAB ONE ##
       tab_one:
         description: |
-          Voici un aperçu de GroupDocs.Editor pour Java :
+          Voici un aperçu de GroupDocs.Editor pour Java:
 
         left:
           enable: true
@@ -82,7 +82,7 @@ overview:
       ## TAB TWO ##
       tab_two:
         description: |
-          GroupDocs.Editor pour Java prend en charge les [formats de fichier](https://docs.groupdocs.com/editor/java/supported-document-formats/) - (la prise en charge du format de fichier PDF sera implémentée dans les futures versions.)
+          GroupDocs.Editor pour Java prend en charge les [formats de fichier] suivants (https://docs.groupdocs.com/editor/java/supported-document-formats/)
 
         left:
           enable: true
@@ -98,17 +98,17 @@ overview:
           enable: true
           table:
             # table loop
-            - title: "Images, graphiques et diagrammes"
+            - title: "Autres familles de formats"
               content: |
-                * **Formats OpenDocument** : ODT, OTT, ODS, FODS, ODP, OTP
-                * **Texte** : TXT
-                * **Web** : HTML, MHTML
-                * **Autre** : MOBI, XML
+                * **Formats OpenDocument**: ODT, OTT, ODS, FODS, ODP, OTP
+                * **Formats OpenDocument**: MSG, MBOX, EML, EMLX
+                * **Formats Web**: HTML, MHTML, CHM, XML, TXT
+                * **Formats Web**: MOBI, AZW3, ePub
 
       ## TAB THREE ##
       tab_three:
         description: |
-          GroupDocs.Editor for Java prend en charge la suite Systèmes d'exploitation, Frameworks & Directeur chargé d'emballages:
+          GroupDocs.Editor pour Java prend en charge les systèmes d'exploitation, cadres et gestionnaires de packages suivants:
         
         left:
           enable: true
@@ -117,16 +117,16 @@ overview:
             - icon: "fab fa-windows"
               title: "Systèmes d'exploitation"
               content: |
-                * Bureau Microsoft Windows
-                * Serveur Microsoft Windows
+                * Microsoft Windows Desktop
+                * Microsoft Windows Server
                 * Linux
-                * Mac OS
+                * MacOS
 
             # table loop
             - icon: "fas fa-code"
               title: "Cadres pris en charge"
               content: |
-                * Java 7 (1.7) et supérieur
+                * Java 7 (1.7) +
 
         right:
           enable: true
@@ -136,15 +136,15 @@ overview:
               title: "Environnements de développement"
               content: |
                 * NetBeans
-                * IDÉE IntelliJ
-                * Éclipse
+                * IntelliJ IDEA
+                * Eclipse
             # table loop
             - icon: "fas fa-tools"
               title: "Outil d'automatisation de construction"
               content: |
                 * Maven
 
-############################# Caractéristiques ############################
+############################# Features ############################
 features:
     enable: true
     title: "GroupDocs.Editor pour les fonctionnalités Java"
@@ -160,7 +160,7 @@ features:
 
       # feature loop
       - icon: "fas fa-bolt"
-        content: "Extraire le contenu HTML via Stream"
+        content: "Extraire le contenu HTML du flux de documents"
       
       # feature loop
       - icon: "fas fa-file-powerpoint"
@@ -230,22 +230,44 @@ features:
       - icon: "fas fa-file-excel"
         content: "Prend en charge les licences mesurées"
 
-    more_feature :
+    more_feature:
       # more_feature_loop
       - title: "Convertir avec précision vers et depuis HTML DOM"
         content: |
           L'utilisation de GroupDocs.Editor pour Java vous permet de créer des applications en Java qui chargent un document d'un format de fichier pris en charge pour le convertir en HTML Document Object Model (DOM) avec ses éléments associés, par exemple, CSS. De plus, notre API Java Editor vous permet de modifier le code HTML dans l'un des éditeurs HTML populaires. Une fois les modifications requises effectuées, GroupDocs.Editor pour Java vous aide à reconvertir le code HTML résultant dans son format de fichier d'origine.
           
           ```java
-          InputStream inputStream = new FileInputStream(CommonUtilities.getStoragePath("Content.HTML"));
-          InputHtmlDocument htmlDoc = EditorHandler.toHtml(inputStream);
+          // Create Editor class by loading an input document
+          Editor editor = new Editor("Sample.docx");
 
-          String cssContent = htmlDoc.getEmbeddedHtml();
-          System.out.println(cssContent);
+          // Open document for edit and obtain EditableDocument
+          EditableDocument original = editor.edit();
+
+          // Obtain all-embedded HTML from it
+          String allEmbeddedInside = original.getEmbeddedHtml();
+
+          // If necessary, obtain pure HTML-markup, CSS, images and other resources in separate form
+
+          // Whole HTML-markup, without any resources
+          String completeHtmlMarkup = original.getContent();
+
+          // Only HTML->BODY content, useful for most of WYSIWYG-editors
+          String onlyInnerBody = original.getBodyContent();
+
+          // All CSS stylesheets
+          List<CssText> stylesheets = original.getCss();
+
+          // All images, including raster and vector, but without CSS gradients
+          List<IImageResource> images = original.getImages();
+
+          // All font resources
+          List<FontResourceBase> fonts = original.getFonts();
+
+          // finally, send this content to your WYSIWYG HTML-editor
           ```
       # more_feature_loop
       - title: "Charger et récupérer des éléments associés"
-        content: "L'API GroupDocs.Editor pour Java vous permet de récupérer les éléments associés à partir de documents de formats pris en charge, tels que les images, CSS, les polices, etc.. Ensuite, vous pouvez charger ces éléments associés récupérés, les parcourir et les enregistrer séparément du fichier HTML final, et avoir une sortie bien gérée."
+        content: "L'API GroupDocs.Editor pour Java vous permet de récupérer les éléments associés à partir de documents de formats pris en charge, tels que les images, CSS, les polices, etc. Ensuite, vous pouvez charger ces éléments associés récupérés, les parcourir et les enregistrer séparément du fichier HTML final, et avoir une sortie bien gérée."
 
 ############################# Support ############################
 support:
@@ -254,12 +276,12 @@ support:
 ############################# Solutions ############################
 solutions:
     enable: true
-    title: "GroupDocs.Editor propose des API de visualisation de documents pour d'autres environnements de développement populaires"
+    title: "GroupDocs.Editor propose des API d'édition de documents pour d'autres environnements de développement populaires"
 
     solution:
         # solution loop
         - img_alt: "GroupDocs.Editor for .NET"
-          image: "/border/groupdocs-editor-net.svg"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
           product: "GroupDocs.Editor"
           platform: ".NET"
           link: "/editor/net/"

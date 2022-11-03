@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Zorunlu dosya yolu veya bayt akışıyla bir \"Editör\" sınıfı örneği oluşturun ve {{EXT}} dosyasını yükleyin",
+    "step_2": "{{EXT}} dosya biçimi için \"EbookEditOptions\" sınıf örneğini oluşturun ve ayarlayın",
+    "step_3": "`Editor.Edit()` yöntemini çağırın ve herhangi bir WYSIWYG editörüyle kolayca düzenlenebilen HTML formatında {{EXT}} belgesini alın.",
+    "step_4": "`Editor.Save()` yöntemini çağırın ve düzenlenmiş {{EXT}} dosyasını sırasıyla ePub veya AZW3 formatlarına kaydetmek için `EpubSaveOptions` veya `Azw3SaveOptions` sınıfını kullanarak kaydedin"
+  }
+}

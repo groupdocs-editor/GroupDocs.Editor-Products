@@ -1,0 +1,89 @@
+{
+  "head": {
+    "title": "Java Belge Düzenleyici API'si | HTML kullanarak Word Web XML Metin Dosyalarını Düzenleme",
+    "description": "Java için belge düzenleyici API'si. Microsoft Word, XML, web ve metin dosyalarını HTML'ye yükleyin ve manipülasyondan sonra orijinal biçime geri dönüştürün."
+  },
+  "header": {
+    "title": "Java API Kullanarak Belgeleri HTML ile Düzenleme",
+    "description": "Belgeleri işlemek ve orijinal biçime geri dönüştürmek için Java uygulamalarını HTML düzenleyiciyle entegre edin."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "genel bakış"
+      },
+      "button_features": {
+        "text": "Özellikler"
+      },
+      "button_support": {
+        "text": "Destek"
+      },
+      "button_livedemo": {
+        "text": "Canlı Demo"
+      },
+      "button_pricing": {
+        "text": "fiyatlandırma"
+      }
+    }
+  },
+  "Overview": {
+    "content": "Java API için GroupDocs.Editor, HTML biçiminde belge düzenlemeyi sağlar. API, birden çok belge biçimini destekler ve herhangi bir harici, açık kaynaklı veya ücretli HTML düzenleyiciyle entegre edilebilir. Düzenleyici API, belgeleri yüklemek, HTML'ye dönüştürmek, HTML'yi harici kullanıcı arayüzüne sağlamak ve ardından manipülasyondan sonra HTML'yi orijinal belgeye kaydetmek için işleyecektir. Farklı Microsoft Word, Excel elektronik tabloları, PowerPoint dosyaları, OpenDocument biçimleri, XML ve TXT belgeleri oluşturmak için de kullanılabilir.",
+    "tab1": {
+      "description": "Java için GroupDocs.Editor'a genel bir bakış aşağıdadır.",
+      "title": "HTML Kullanarak İşlem Yapın",
+      "content1": "Desteklenen Belgeyi Yükle",
+      "content2": "HTML kullanarak İçeriği Düzenle",
+      "content3": "İlgili Stilleri Düzenle",
+      "content4": "Orijinal Biçime Dönüştür"
+    },
+    "tab2": {
+      "description": "Java için GroupDocs.Editor aşağıdaki [dosya biçimlerini] destekler(https://docs.groupdocs.com/editor/java/supported-document-formats/)",
+      "title": "Diğer biçim aileleri",
+      "content1": "Açık Belge Formatları",
+      "content2": "E-posta biçimleri",
+      "content3": "Web biçimleri",
+      "content4": "Elektronik kitap (e-Kitap) formatları"
+    },
+    "tab3": {
+      "description": "Java için GroupDocs.Editor aşağıdaki İşletim Sistemlerini, Çerçeveleri ve Paket Yöneticilerini destekler",
+      "title_os": "İşletim sistemleri",
+      "title_frameworks": "Desteklenen Çerçeveler",
+      "title_packman": "Otomasyon Aracı Oluştur",
+      "title_devenv": "Geliştirme Ortamları"
+    }
+  },
+  "Features": {
+    "title": "Java Özellikleri için GroupDocs.Editor",
+    "feature_loop": {
+      "1": "Kolay HTML Düzenleyici Entegrasyonu",
+      "2": "Belgeyi HTML DOM'ye Dönüştürme",
+      "3": "HTML İçeriğini Belge Akışından Çıkarın",
+      "4": "Word, Excel ve PowerPoint Dosya Biçimlerini Yükleyin, Düzenleyin ve Kaydedin",
+      "5": "Gömülü Öğelerle birlikte HTML'yi getir",
+      "6": "XML Belgelerini İçe Aktarın, Görüntüleyin ve Düzenleyin",
+      "7": "HTML İçeriğini Atla ve Gömülü Kaynakları Kaydet",
+      "8": "Kelime İşlem Belgelerini Sayfa Modunda Görüntüleme, Düzenleme ve Kaydetme",
+      "9": "Dosyadan HTML Gövde Etiketinin İçeriğini Alın",
+      "10": "HTML Dosyasının CSS İçeriğini Çıkarın",
+      "11": "HTML DOM Almak ve Dosyaya Dönüştürmek için Dize İçeriğini Kullanın",
+      "12": "Gömülü Öğelerle HTML DOM'yi Dönüştür",
+      "13": "Düzenleme için Birden Çok Biçimdeki Dosyaları HTML'ye Dönüştür",
+      "14": "Girdi Belgelerinin Meta Bilgilerini Düzenlemeden Alın",
+      "15": "Düzenlenen Belgeleri Düz Metin Dosya Biçimine Kaydet",
+      "16": "Dönüşüm Doğruluğu",
+      "17": "Çıktı Belgesine Parola Uygula",
+      "18": "Veritabanı (DB) Agnostik",
+      "19": "Kullanıcı Arayüzü (UI) Agnostik",
+      "20": "Ölçülü Lisanslamayı Destekler"
+    },
+    "more_features_loop": {
+      "title1": "HTML DOM'ye ve DOM'dan Doğru Şekilde Dönüştürme",
+      "content1": "Java için GroupDocs.Editor'u kullanmak, Java'da desteklenen dosya biçimindeki bir belgeyi yükleyerek onu ilişkili öğeleriyle birlikte HTML Belge Nesne Modeli'ne (DOM) dönüştüren uygulamalar oluşturmanıza olanak tanır, örneğin CSS. Ayrıca, Editör Java API'miz, HTML'yi popüler HTML Düzenleyicilerinden herhangi birinde düzenlemenize olanak tanır. Gerekli değişiklikleri yaptıktan sonra Java için GroupDocs.Editor, bu sonuçtaki HTML'yi orijinal dosya biçimine dönüştürmenize yardımcı olur.",
+      "title2": "İlişkili Öğeleri Yükle ve Al",
+      "content2": "Java API için GroupDocs.Editor, resimler, CSS, yazı tipleri ve daha fazlası gibi desteklenen biçimlerdeki belgelerden ilişkili öğeleri getirmenize olanak tanır. Ardından, bu getirilen ilişkili öğeleri yükleyebilir, bunları çaprazlayabilir ve son HTML dosyasından ayrı olarak kaydedebilir ve iyi yönetilen bir çıktıya sahip olabilirsiniz."
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor, diğer popüler geliştirme ortamları için belge düzenleme API'leri sunar"
+  }
+}

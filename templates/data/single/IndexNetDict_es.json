@@ -1,0 +1,94 @@
+{
+  "head": {
+    "title": "API del editor de documentos C# .NET | Editar Word Excel PowerPoint Web XML usando HTML",
+    "description": "API del editor de documentos C# .NET para cargar formatos de archivo de Microsoft Word, Excel, PowerPoint, PDF, XML, web y texto en HTML, manipular y volver a convertir al formato original."
+  },
+  "header": {
+    "title": ".NET API para editar documentos usando HTML",
+    "description": "Desarrolle aplicaciones .NET, para integrar con el editor HTML, obtener documentos compatibles, editar y convertir al formato original."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "Visión general"
+      },
+      "button_features": {
+        "text": "Características"
+      },
+      "button_support": {
+        "text": "Apoyo"
+      },
+      "button_livedemo": {
+        "text": "Demo en vivo"
+      },
+      "button_pricing": {
+        "text": "Precios"
+      }
+    }
+  },
+  "Overview": {
+    "content": "GroupDocs.Editor para .NET API lo ayuda a crear aplicaciones C#, ASP.NET y otras aplicaciones .NET simples y fáciles de usar que se integran fácilmente con editores HTML populares (tanto de código abierto como de pago) para convertir, editar y manipular documentos de formatos de archivo populares. Nuestra API de .NET Editor le permite cargar documentos, convertirlos a HTML, enviar HTML a un editor de HTML externo y, una vez realizada la manipulación, guardar el HTML en su formato de archivo original. También puede obtener por separado los recursos adjuntos con cualquier documento. Funciona con todo tipo de documentos, como los de Microsoft Word, Excel, PowerPoint, PDF, XPS, OpenDocument, Text, Web, Email, e-Book y más.",
+    "tab1": {
+      "description": "A continuación se muestra una descripción general de GroupDocs.Editor para .NET",
+      "title": "Manipular usando HTML",
+      "content1": "Cargar documento admitido",
+      "content2": "Editar contenido usando HTML",
+      "content3": "Editar estilos relacionados",
+      "content4": "Convertir a formato original"
+    },
+    "tab2": {
+      "description": "GroupDocs.Editor para .NET admite los siguientes [formatos de archivo] (https://docs.groupdocs.com/editor/java/supported-document-formats/)",
+      "title": "Otras familias de formatos",
+      "content1": "Formatos de documentos abiertos",
+      "content2": "Formatos de diseño fijo",
+      "content3": "formatos web",
+      "content4": "Formatos de libros electrónicos (e-Book)"
+    },
+    "tab3": {
+      "description": "GroupDocs.Editor para .NET es compatible con los siguientes sistemas operativos, marcos y administradores de paquetes",
+      "title_os": "Sistemas operativos",
+      "title_frameworks": "Marcos compatibles",
+      "title_packman": "Administradores de paquetes",
+      "title_devenv": "Entornos de desarrollo"
+    }
+  },
+  "Features": {
+    "title": "Funciones de GroupDocs.Editor para .NET",
+    "feature_loop": {
+      "1": "Fácil integración con cualquier editor de HTML",
+      "2": "Convertir documento a HTML DOM",
+      "3": "Obtener contenido HTML del flujo de documentos",
+      "4": "Obtenga contenido HTML y sus recursos integrados",
+      "5": "Obtener contenido de etiqueta de cuerpo HTML del documento",
+      "6": "Obtener hojas de estilo CSS de documento HTML",
+      "7": "Atraviese contenido HTML y guarde sus recursos",
+      "8": "Obtenga HTML DOM del contenido de la cadena y conviértalo en documento",
+      "9": "HTML DOM junto con conversión de recursos",
+      "10": "Editar documentos de varios formatos en HTML",
+      "11": "Conversión precisa",
+      "12": "Aplicar protección de lectura y/o escritura al documento resultante",
+      "13": "Paginar documentos de procesamiento de textos y editarlos en cualquier editor WYSIWYG",
+      "14": "Base de datos (DB) e interfaz de usuario (UI) Agnóstico",
+      "15": "Potentes funciones de procesamiento XML",
+      "16": "Recuperar OTF (fuentes de tipo abierto) de los documentos de entrada y exportar al documento resultante",
+      "17": "Procesar imágenes ráster y vectoriales internamente dentro de los formatos de documentos de entrada admitidos",
+      "18": "Inserte el contenido de la hoja de trabajo editada en la hoja de cálculo original en la posición deseada",
+      "19": "Edite diapositivas e insértelas en la hoja de cálculo resultante",
+      "20": "Incrustar fuentes en el documento de procesamiento de texto resultante al guardar"
+    },
+    "more_features_loop": {
+      "title1": "Conversión precisa hacia y desde HTML DOM",
+      "content1": "GroupDocs.Editor para la API de .NET permite que sus aplicaciones de .NET obtengan un documento de formato compatible y lo conviertan en un modelo de objeto de documento (DOM) HTML junto con la extracción de recursos adjuntos, como CSS. A continuación, puede realizar las modificaciones en el HTML utilizando su editor de HTML favorito. Una vez que haya terminado con la edición, GroupDocs.Editor para .NET API le permite convertir con precisión este DOM HTML al archivo original.",
+      "title2": "Cargar y extraer recursos externos",
+      "content2": "GroupDocs.Editor para .NET API es capaz de recuperar los recursos externos adjuntos a los documentos admitidos, como imágenes, fuentes, CSS y más. Los recursos obtenidos se pueden cargar, recorrer y guardar por separado del documento HTML resultante. Esto le brinda una salida más fácil de administrar.",
+      "title3": "Aplicar efectos de texto en formatos de archivo de procesamiento de texto",
+      "content3": "La API del editor de documentos de GroupDocs permite agregar efectos de texto complejos (sombra, efecto 3D, contorno, brillo, grabado, realce) mientras trabaja con formatos de procesamiento de documentos de Microsoft Word compatibles. Esta característica está habilitada automáticamente y se puede observar cuando se procesa el documento con tales efectos de texto.",
+      "title4": "Potentes funciones de manipulación de XML",
+      "content4-1": "Usando GroupDocs.Editor para .NET API puede abrir, ver y editar documentos XML. Nuestra API de edición ofrece soporte especial y reconocimiento de etiquetas XML, atributos junto con sus valores, declaraciones XML, secciones CDATA, definiciones DOCTYPE y otras entidades específicas de XML. Puede personalizar la configuración de fuente y color para cada entidad distinta en la estructura XML.",
+      "content4-2": "La función XML Converter es lo suficientemente inteligente como para mostrar errores en el archivo XML y cómo solucionarlos. El mecanismo de reconocimiento de URI y correo electrónico escanea los atributos XML y representa los URI y las direcciones de correo electrónico detectados dentro de la etiqueta A como enlaces para que puedan editarse como enlace, no como texto dentro del archivo HTML resultante."
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor ofrece API de edición de documentos para otros entornos de desarrollo populares"
+  }
+}

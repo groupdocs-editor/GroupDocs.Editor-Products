@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "product"
-date: 2021-04-27T09:31:06+03:00
+date: 2022-11-03T21:00:22
 draft: false
 
 product: "Editor"
@@ -11,11 +11,11 @@ platform_tag: "java"
 
 ############################# Head ############################
 head_title: "Java 文档编辑器 API |使用 HTML 编辑 Word Web XML 文本文件"
-head_description: "Java 的文档编辑器 API。加载 Microsoft Word、XML、web & amp;文本文件转换成 HTML 并在处理后转换回原始格式。"
+head_description: "用于 Java 的文档编辑器 API。将 Microsoft Word、XML、Web 和文本文件加载到 HTML 中，并在处理后转换回原始格式。"
 
 ############################# Header ############################
 title: "使用 Java API 通过 HTML 编辑文档"
-description: "将 Java 应用程序与 HTML 编辑器集成以操作文档并转换回原始格式."
+description: "将 Java 应用程序与 HTML 编辑器集成以操作文档并转换回原始格式。"
 button:
     enable: true
 
@@ -25,7 +25,7 @@ submenu:
     
     left:
         img_alt: "GroupDocs.Editor for Java"
-        image: "/border/groupdocs-editor-java.svg"
+        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png"
         product: "GroupDocs.Editor"
         platform: "Java"
 
@@ -41,11 +41,11 @@ submenu:
 
             # button loop
             - link: "#support"
-              text: "Support"
+              text: "支持"
 
             # button loop
             - link: "https://products.groupdocs.app/editor"
-              text: "Live Demo"
+              text: "现场演示"
 
             # button loop
             - link: "https://purchase.groupdocs.com/pricing/editor/java"
@@ -56,7 +56,7 @@ submenu:
         link_learn: "https://docs.groupdocs.com/editor/java/"
         link_buy: "https://purchase.groupdocs.com"
 
-############################# 概述 ############################
+############################# Overview ############################
 overview:
     enable: true
     content: |
@@ -67,7 +67,7 @@ overview:
       ## TAB ONE ##
       tab_one:
         description: |
-          以下是 Java 版 GroupDocs.Editor 的概述：
+          以下是 GroupDocs.Editor for Java 的概述:
 
         left:
           enable: true
@@ -82,13 +82,13 @@ overview:
       ## TAB TWO ##
       tab_two:
         description: |
-          GroupDocs.Editor for Java 支持以下 [文件格式](https://docs.groupdocs.com/editor/java/supported-document-formats/) - (PDF 文件格式支持将在未来版本中实现。)
+          GroupDocs.Editor for Java 支持以下 [文件格式](https://docs.groupdocs.com/editor/java/supported-document-formats/)
 
         left:
           enable: true
           table:
             # table loop
-            - title: "微软办公软件"
+            - title: "Microsoft Office"
               content: |
                 * **Microsoft Word**: DOC, DOCX, DOCM, DOT, DOTM, DOTX, FlatOPC, WordML, RTF
                 * **Microsoft Excel**: XLS, XLSX, XLSM, XLT, XLTX, XLTM, XLSB, XLAM, CSV, TSV, SXC, SpreadsheetML, DIF, DSV
@@ -98,17 +98,17 @@ overview:
           enable: true
           table:
             # table loop
-            - title: "图像、图形和图表"
+            - title: "其他格式系列"
               content: |
-                * **OpenDocument 格式**：ODT、OTT、ODS、FODS、ODP、OTP
-                * **文字**：TXT
-                * **网络**：HTML、MHTML
-                * **其他**：MOBI、XML
+                * **开放文档格式**: ODT, OTT, ODS, FODS, ODP, OTP
+                * **开放文档格式**: MSG, MBOX, EML, EMLX
+                * **网页格式**: HTML, MHTML, CHM, XML, TXT
+                * **网页格式**: MOBI, AZW3, ePub
 
       ## TAB THREE ##
       tab_three:
         description: |
-          GroupDocs.Editor for Java 支持以下框架、框架和管理器:
+          GroupDocs.Editor for Java 支持以下操作系统、框架和包管理器:
         
         left:
           enable: true
@@ -126,7 +126,7 @@ overview:
             - icon: "fas fa-code"
               title: "支持的框架"
               content: |
-                * Java 7 (1.7) 及更高版本
+                * Java 7 (1.7) +
 
         right:
           enable: true
@@ -144,7 +144,7 @@ overview:
               content: |
                 * Maven
 
-############################# 特征 ############################
+############################# Features ############################
 features:
     enable: true
     title: "用于 Java 功能的 GroupDocs.Editor"
@@ -152,7 +152,7 @@ features:
     feature:
       # feature loop
       - icon: "fas fa-copy"
-        content: "简单的 HTML 编辑器集成"
+        content: "轻松的 HTML 编辑器集成"
 
       # feature loop
       - icon: "fas fa-eye"
@@ -160,7 +160,7 @@ features:
 
       # feature loop
       - icon: "fas fa-bolt"
-        content: "通过 Stream 提取 HTML 内容"
+        content: "从文档流中提取 HTML 内容"
       
       # feature loop
       - icon: "fas fa-file-powerpoint"
@@ -220,7 +220,7 @@ features:
 
       # feature loop
       - icon: "fas fa-file-code"
-        content: "数据库 (DB) Agnostic"
+        content: "数据库 (DB) 不可知"
       
       # feature loop
       - icon: "fas fa-fill-drip"
@@ -237,16 +237,37 @@ features:
           使用 Java 的 GroupDocs.Editor 允许您在 Java 中构建应用程序，以加载支持的文件格式的文档，以将其转换为 HTML 文档对象模型 (DOM) 及其相关元素，例如 CSS。此外，我们的 Editor Java API 允许您在任何流行的 HTML 编辑器中编辑 HTML。完成所需的修改后，GroupDocs.Editor for Java 可帮助您将此生成的 HTML 转换回其原始文件格式。
           
           ```java
-          // 获取文档流
-          InputStream inputStream = new FileInputStream(CommonUtilities.getStoragePath("Content.HTML"));
-          InputHtmlDocument htmlDoc = EditorHandler.toHtml(inputStream);
-          // 获取 HTML 文档内容
-          String cssContent = htmlDoc.getEmbeddedHtml();
-          System.out.println(cssContent);
+          // Create Editor class by loading an input document
+          Editor editor = new Editor("Sample.docx");
+
+          // Open document for edit and obtain EditableDocument
+          EditableDocument original = editor.edit();
+
+          // Obtain all-embedded HTML from it
+          String allEmbeddedInside = original.getEmbeddedHtml();
+
+          // If necessary, obtain pure HTML-markup, CSS, images and other resources in separate form
+
+          // Whole HTML-markup, without any resources
+          String completeHtmlMarkup = original.getContent();
+
+          // Only HTML->BODY content, useful for most of WYSIWYG-editors
+          String onlyInnerBody = original.getBodyContent();
+
+          // All CSS stylesheets
+          List<CssText> stylesheets = original.getCss();
+
+          // All images, including raster and vector, but without CSS gradients
+          List<IImageResource> images = original.getImages();
+
+          // All font resources
+          List<FontResourceBase> fonts = original.getFonts();
+
+          // finally, send this content to your WYSIWYG HTML-editor
           ```
       # more_feature_loop
       - title: "加载和获取关联元素"
-        content: "GroupDocs.Editor for Java API 使您能够从支持格式的文档中获取相关元素，例如图像、CSS、字体等。然后您可以加载这些获取的关联元素，遍历它们并将它们与最终的 HTML 文件分开保存，并获得管理良好的输出."
+        content: "GroupDocs.Editor for Java API 使您能够从支持格式的文档中获取相关元素，例如图像、CSS、字体等。然后，您可以加载这些获取的关联元素，遍历它们并将它们与最终的 HTML 文件分开保存，并获得管理良好的输出。"
 
 ############################# Support ############################
 support:
@@ -255,12 +276,12 @@ support:
 ############################# Solutions ############################
 solutions:
     enable: true
-    title: "GroupDocs.Editor 为其他流行的开发环境提供文档查看 API"
+    title: "GroupDocs.Editor 为其他流行的开发环境提供文档编辑 API"
 
     solution:
         # solution loop
         - img_alt: "GroupDocs.Editor for .NET"
-          image: "/border/groupdocs-editor-net.svg"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
           product: "GroupDocs.Editor"
           platform: ".NET"
           link: "/editor/net/"

@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "product"
-date: 2021-04-27T09:31:06+03:00
+date: 2022-11-03T21:00:22
 draft: false
 
 ############################# Head ############################
@@ -25,7 +25,7 @@ apis:
         # api_product loop
         - link: "/editor/net/"
           img_alt: "GroupDocs.Editor for .NET"
-          image: "/border/groupdocs-editor-net.svg"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
           product: "GroupDocs.Editor for"
           platform: ".NET"
           content: "Lokale .NET-API, die Ihrer Anwendung hilft, Dokumente anzuzeigen, zu bearbeiten und dann zu konvertieren."
@@ -33,7 +33,7 @@ apis:
         # api_product loop
         - link: "/editor/java/"
           img_alt: "GroupDocs.Editor for Java"
-          image: "/border/groupdocs-editor-java.svg"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png"
           product: "GroupDocs.Editor for"
           platform: "Java"
           content: "Dokumentbearbeitungs-API für Microsoft Office, OpenOffice, HTML und andere Dokumente zur Bearbeitung in Ihren Java-basierten Anwendungen."
@@ -46,7 +46,7 @@ apis:
         # api_product loop
         - link: "https://products.groupdocs.cloud/editor/net"
           img_alt: "GroupDocs.Editor Cloud SDK for .NET"
-          image: "/sdk/groupdocs_editor-for-net.svg"
+          image: "https://www.groupdocs.cloud/templates/groupdocscloud/images/sdk/272x272/groupdocs_editor-for-net.png"
           product: "GroupDocs.Editor"
           platform: "Cloud SDK for .NET"
           content: "Fügen Sie mithilfe von Cloud SDK for .NET leistungsstarke Bearbeitungsfunktionen für Dokumentformate in .NET-Anwendungen hinzu. Bearbeiten Sie MS Office-, Web- und XML-Dokumente."
@@ -54,7 +54,7 @@ apis:
         # api_product loop
         - link: "https://products.groupdocs.cloud/editor/java"
           img_alt: "GroupDocs.Editor Cloud SDK for Java"
-          image: "/sdk/groupdocs_editor-for-java.svg"
+          image: "https://www.groupdocs.cloud/templates/groupdocscloud/images/sdk/272x272/groupdocs_editor-for-java.png"
           product: "GroupDocs.Editor"
           platform: "Cloud SDK for Java"
           content: "Advanced Document Editor SDK für Java-Anwendungen zum Bearbeiten von branchenüblichen Dokumentdateiformaten auf jeder Plattform, die REST-APIs aufrufen kann."
@@ -67,15 +67,15 @@ apis:
         # api_product loop
         - link: "https://products.groupdocs.app/editor/total"
           img_alt: "GroupDocs.Editor Total"
-          image: "/app/groupdocs_editor-app.svg"
+          image: "https://www.aspose.cloud/templates/asposeapp/images/products/logo/aspose_editor-app.png"
           product: "GroupDocs.Editor"
           platform: "Total"
-          content: "Webbasierte kostenlose Online-App zum Bearbeiten gängiger Dateiformate aus Office &amp; Open Office."
+          content: "Webbasierte kostenlose Online-App zum Bearbeiten gängiger Dateiformate aus Office & OpenOffice."
 
         # api_product loop
         - link: "https://products.groupdocs.app/editor/docx"
           img_alt: "GroupDocs.Editor DOCX"
-          image: "/app/groupdocs_words-app.svg"
+          image: "https://www.aspose.cloud/templates/groupdocsapp/images/products/logo/groupdocs_words-app.png"
           product: "GroupDocs.Editor"
           platform: "DOCX"
           content: "Kostenlose Editor-App zum Anzeigen und Bearbeiten von Microsoft Word-Dokumenten online."
@@ -83,10 +83,10 @@ apis:
         # api_product loop
         - link: "https://products.groupdocs.app/editor/pdf"
           img_alt: "GroupDocs.Editor PDF"
-          image: "/app/groupdocs_pdf-app.svg"
+          image: "https://www.aspose.cloud/templates/groupdocsapp/images/products/logo/groupdocs_pdf-app.png"
           product: "GroupDocs.Editor"
           platform: "PDF"
-          content: "Verwenden Sie jedes Gerät und jeden Browser, um Microsoft Excel-Tabellen anzuzeigen oder zu bearbeiten."
+          content: "Verwenden Sie jedes Gerät und jeden Browser, um PDF- und XPS-Dokumente anzuzeigen oder zu bearbeiten."
 
 ############################# Back to top ###############################
 back_to_top:

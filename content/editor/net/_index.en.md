@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "product"
-date: 2021-04-27T09:31:06+03:00
+date: 2022-11-03T21:00:22
 draft: false
 
 product: "Editor"
@@ -10,8 +10,8 @@ platform: ".NET"
 platform_tag: "net"
 
 ############################# Head ############################
-head_title: "C# .NET Document Editor API | Edit Word Excel Web XML using HTML"
-head_description: "C# .NET document editor API to load Microsoft Word, Excel, XML, web and text file formats into HTML, manipulate &amp; convert back to original format."
+head_title: "C# .NET Document Editor API | Edit Word Excel PowerPoint Web XML using HTML"
+head_description: "C# .NET document editor API to load Microsoft Word, Excel, PowerPoint, PDF, XML, web and text file formats into HTML, manipulate &amp; convert back to original format."
 
 ############################# Header ############################
 title: ".NET API to Edit Documents Using HTML"
@@ -60,7 +60,7 @@ submenu:
 overview:
     enable: true
     content: |
-      GroupDocs.Editor for .NET API helps you to build simple and easy to use C#, ASP.NET, and other .NET applications that readily integrate with popular HTML editors (both open-source & paid) to convert, edit and manipulate documents of popular file formats. Our .NET Editor API lets you load document, convert it to HTML, push HTML to external HTML Editor, and once the manipulation is done, saves the HTML to its original file format. You can also separately fetch resources attached with any document. It works with all sorts of documents, such as that for Microsoft Word, Excel, OpenDocument, Text, Web, and more.
+      GroupDocs.Editor for .NET API helps you to build simple and easy to use C#, ASP.NET, and other .NET applications that readily integrate with popular HTML editors (both open-source & paid) to convert, edit and manipulate documents of popular file formats. Our .NET Editor API lets you load document, convert it to HTML, push HTML to external HTML Editor, and once the manipulation is done, saves the HTML to its original file format. You can also separately fetch resources attached with any document. It works with all sorts of documents, such as that for Microsoft Word, Excel, PowerPoint, PDF, XPS, OpenDocument, Text, Web, Email, e-Book and more.
     tabs:
       enable: true
       
@@ -82,7 +82,7 @@ overview:
       ## TAB TWO ##
       tab_two:
         description: |
-          GroupDocs.Editor for .NET supports following [file formats](https://docs.groupdocs.com/editor/java/supported-document-formats/) - (PDF file format support will be implemented in future versions.)
+          GroupDocs.Editor for .NET supports following [file formats](https://docs.groupdocs.com/editor/java/supported-document-formats/)
 
         left:
           enable: true
@@ -98,12 +98,12 @@ overview:
           enable: true
           table:
             # table loop
-            - title: "Images, Graphics & Diagrams"
+            - title: "Other format families"
               content: |
                 * **OpenDocument Formats**: ODT, OTT, ODS, FODS, ODP, OTP
-                * **Text**: TXT
-                * **Web**: HTML, MHTML
-                * **Other**: MOBI, XML
+                * **Fixed-layout formats**: PDF, XPS
+                * **Web formats**: HTML, MHTML, CHM, XML, TXT
+                * **Web formats**: MOBI, AZW3, ePub
 
       ## TAB THREE ##
       tab_three:
@@ -117,24 +117,26 @@ overview:
             - icon: "fab fa-windows"
               title: "Operating Systems"
               content: |
-                * Windows Desktop
-                * Windows Server
-                * Windows Azure
+                * Microsoft Windows Desktop
+                * Microsoft Windows Server
+                * Microsoft Windows Azure
                 * Linux
 
             # table loop
             - icon: "fas fa-code"
               title: "Supported Frameworks"
               content: |
-                * .NET Framework 2.0 or higher
-                * Mono Framework 1.2 or higher
+                * .NET Framework 4.6.1+
+				* .NET Standard 2.0+
+				* .NET 6+
+                * Mono Framework 1.2+
 
         right:
           enable: true
           table:
             # table loop
             - icon: "fas fa-box"
-              title: "Package Manager"
+              title: "Package Managers"
               content: |
                 * NuGet
 
@@ -156,7 +158,7 @@ features:
     feature:
       # feature loop
       - icon: "fas fa-copy"
-        content: "Easy Integration with any HTML Editor"
+        content: "Easy Integration with any HTML-editor"
 
       # feature loop
       - icon: "fas fa-eye"
@@ -176,7 +178,7 @@ features:
 
       # feature loop
       - icon: "fas fa-cloud"
-        content: "Get CSS Content of HTML Document"
+        content: "Get CSS stylesheets of HTML Document"
 
       # feature loop
       - icon: "fas fa-remove-format"
@@ -200,7 +202,7 @@ features:
 
       # feature loop
       - icon: "fas fa-columns"
-        content: "Apply Security to Resultant Document"
+        content: "Apply Read and/or Write Protection to Resultant Document"
 
       # feature loop
       - icon: "fas fa-file-word"
@@ -220,7 +222,7 @@ features:
 
       # feature loop
       - icon: "fas fa-lock"
-        content: "Process EMF Vector Images Internally within Supported Input Document Formats"
+        content: "Process Raster and Vector Images Internally within Supported Input Document Formats"
 
       # feature loop
       - icon: "fas fa-file-code"
@@ -228,7 +230,7 @@ features:
       
       # feature loop
       - icon: "fas fa-fill-drip"
-        content: "Add SmartArt Elements in PowerPoint File Formats"
+        content: "Edit Slides and insert them into resultant Spreadsheet"
 
       # feature loop
       - icon: "fas fa-file-excel"
@@ -241,14 +243,33 @@ features:
           GroupDocs.Editor for .NET API enables your .NET applications to fetch a document of supported format and convert it to an HTML Document Object Model (DOM) along with extraction of attached resources, such as CSS. You can then make the modifications to the HTML using your favorite HTML Editor. Once you are done with the editing, GroupDocs.Editor for .NET API allows you to accurately convert this HTML DOM back to the original file.
 
           ```cs
-          // Obtain document stream
-          Stream sourceStream = File.Open("D:/sample.docx", FileMode.Open, FileAccess.Read);
-          using (InputHtmlDocument htmlDoc = EditorHandler.ToHtml(sourceStream))
-          {
-          //  Obtain HTML document with embedded resources
-          string cssContent = htmlDoc.GetEmbeddedHtml();
-          Console.WriteLine(cssContent);
-          }
+          // Create Editor class by loading an input document
+          Editor editor = new Editor("Sample.docx");
+
+          // Open document for edit and obtain EditableDocument
+          EditableDocument original = editor.Edit();
+
+          // Obtain all-embedded HTML from it
+          string allEmbeddedInside = original.GetEmbeddedHtml();
+
+          // If necessary, obtain pure HTML-markup, CSS, images and other resources in separate form
+
+          // Whole HTML-markup, without any resources
+          string completeHtmlMarkup = original.GetContent();
+
+          // Only HTML->BODY content, useful for most of WYSIWYG-editors
+          string onlyInnerBody = original.GetBodyContent();
+
+          // All CSS stylesheets
+          var stylesheets = original.Css;
+
+          // All images, including raster and vector, but without CSS gradients
+          var images = original.Images;
+
+          // All font resources
+          var fonts = original.Fonts;
+
+          // finally, send this content to your WYSIWYG HTML-editor
           ```
       # more_feature_loop
       - title: "Load & Extract External Resources"
@@ -272,7 +293,7 @@ support:
 ############################# Solutions ############################
 solutions:
     enable: true
-    title: "GroupDocs.Editor offers document viewing APIs for other popular development environments"
+    title: "GroupDocs.Editor offers document editing APIs for other popular development environments"
 
     solution:
         # solution loop

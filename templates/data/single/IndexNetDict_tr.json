@@ -1,0 +1,94 @@
+{
+  "head": {
+    "title": "C# .NET Belge Düzenleyici API'si | HTML kullanarak Word Excel PowerPoint Web XML'i düzenleyin",
+    "description": "Microsoft Word, Excel, PowerPoint, PDF, XML, web ve metin dosyası biçimlerini HTML'ye yüklemek, işlemek ve orijinal biçime geri dönüştürmek için C# .NET belge düzenleyici API'si."
+  },
+  "header": {
+    "title": "HTML Kullanarak Belgeleri Düzenlemek için .NET API",
+    "description": "HTML Düzenleyici ile Entegrasyon için .NET Uygulamaları Geliştirin, Desteklenen Belgeyi Alın, Düzenleyin ve Orijinal Formata Dönüştürün."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "genel bakış"
+      },
+      "button_features": {
+        "text": "Özellikler"
+      },
+      "button_support": {
+        "text": "Destek"
+      },
+      "button_livedemo": {
+        "text": "Canlı Demo"
+      },
+      "button_pricing": {
+        "text": "fiyatlandırma"
+      }
+    }
+  },
+  "Overview": {
+    "content": ".NET API için GroupDocs.Editor, popüler HTML düzenleyicileriyle (hem açık kaynaklı hem de ücretli) kolayca entegre olan basit ve kullanımı kolay C#, ASP.NET ve diğer .NET uygulamaları oluşturmanıza yardımcı olur. popüler dosya biçimleri. .NET Editor API'miz, belgeyi yüklemenize, HTML'ye dönüştürmenize, HTML'yi harici HTML Düzenleyici'ye aktarmanıza ve işleme tamamlandıktan sonra HTML'yi orijinal dosya biçimine kaydetmenize olanak tanır. Ayrıca, herhangi bir belgeye eklenmiş kaynakları ayrı ayrı da getirebilirsiniz. Microsoft Word, Excel, PowerPoint, PDF, XPS, OpenDocument, Metin, Web, E-posta, e-Kitap ve daha fazlası gibi her türlü belgeyle çalışır.",
+    "tab1": {
+      "description": "Aşağıda, .NET için GroupDocs.Editor'a genel bir bakış yer almaktadır.",
+      "title": "HTML Kullanarak İşlem Yapın",
+      "content1": "Desteklenen Belgeyi Yükle",
+      "content2": "HTML kullanarak İçeriği Düzenle",
+      "content3": "İlgili Stilleri Düzenle",
+      "content4": "Orijinal Formata Dönüştür"
+    },
+    "tab2": {
+      "description": ".NET için GroupDocs.Editor aşağıdaki [dosya biçimlerini] destekler(https://docs.groupdocs.com/editor/java/supported-document-formats/)",
+      "title": "Diğer biçim aileleri",
+      "content1": "Açık Belge Formatları",
+      "content2": "Sabit düzen biçimleri",
+      "content3": "Web biçimleri",
+      "content4": "Elektronik kitap (e-Kitap) formatları"
+    },
+    "tab3": {
+      "description": ".NET için GroupDocs.Editor aşağıdaki İşletim Sistemlerini, Çerçeveleri ve Paket Yöneticilerini destekler",
+      "title_os": "İşletim sistemleri",
+      "title_frameworks": "Desteklenen Çerçeveler",
+      "title_packman": "Paket Yöneticileri",
+      "title_devenv": "Geliştirme Ortamları"
+    }
+  },
+  "Features": {
+    "title": ".NET Özellikleri için GroupDocs.Editor",
+    "feature_loop": {
+      "1": "Herhangi bir HTML editörüyle Kolay Entegrasyon",
+      "2": "Belgeyi HTML DOM'ye Dönüştür",
+      "3": "Belge Akışından HTML İçeriği Al",
+      "4": "HTML İçeriğini ve Gömülü Kaynaklarını Alın",
+      "5": "Belgeden HTML Gövde Etiketi İçeriği Alın",
+      "6": "HTML Belgesinin CSS stil sayfalarını alın",
+      "7": "HTML İçeriğini Geçin ve Kaynaklarını Kaydedin",
+      "8": "Dize İçeriğinden HTML DOM Al ve Belgeye Dönüştür",
+      "9": "Kaynak Dönüştürme ile birlikte HTML DOM",
+      "10": "Çeşitli Biçimlerdeki Belgeleri HTML'de Düzenleyin",
+      "11": "Doğru Dönüşüm",
+      "12": "Sonuç Belgesine Okuma ve/veya Yazma Koruması Uygulayın",
+      "13": "Kelime İşlem Belgelerini Sayfalandırın ve Herhangi Bir WYSIWYG Düzenleyicisinde Düzenleyin",
+      "14": "Veritabanı (DB) ve Kullanıcı Arayüzü (UI) Agnostik",
+      "15": "Güçlü XML İşleme Özellikleri",
+      "16": "Girdi Belgelerinden OTF'yi (Açık Tip Yazı Tipleri) Alın ve Sonuç Belgesine Dışa Aktarın",
+      "17": "Raster ve Vektör Görüntülerini Dahili Olarak Desteklenen Girdi Belge Formatlarında İşleyin",
+      "18": "Düzenlenen Çalışma Sayfasının İçeriğini Orijinal Elektronik Tabloya İstenen Bir Konumda Ekleme",
+      "19": "Slaytları Düzenleyin ve bunları ortaya çıkan Elektronik Tabloya ekleyin",
+      "20": "Yazı Tiplerini Kaydederken Ortaya Çıkan Kelime İşlem Belgesine Göm"
+    },
+    "more_features_loop": {
+      "title1": "HTML DOM'ye ve DOM'dan Doğru Dönüşüm",
+      "content1": ".NET API için GroupDocs.Editor, .NET uygulamalarınızın desteklenen formatta bir belge getirmesini ve onu CSS gibi ekli kaynakların çıkarılmasıyla birlikte bir HTML Belge Nesne Modeli'ne (DOM) dönüştürmesini sağlar. Ardından, favori HTML Düzenleyicinizi kullanarak HTML'de değişiklikler yapabilirsiniz. Düzenlemeyi bitirdiğinizde, GroupDocs.Editor for .NET API, bu HTML DOM'yi orijinal dosyaya doğru bir şekilde dönüştürmenize olanak tanır.",
+      "title2": "Dış Kaynakları Yükleyin ve Çıkarın",
+      "content2": ".NET API için GroupDocs.Editor, resimler, yazı tipleri, CSS ve daha fazlası gibi desteklenen belgelere eklenen harici kaynakları alma yeteneğine sahiptir. Alınan kaynaklar daha sonra yüklenebilir, üzerinden geçilebilir ve sonuçta ortaya çıkan HTML belgesinden ayrı olarak kaydedilebilir. Bu size daha kolay yönetilen bir çıktı sağlar.",
+      "title3": "Kelime İşleme Dosya Formatlarında Metin Efektleri Uygulayın",
+      "content3": "GroupDocs belge düzenleyici API'si, desteklenen Microsoft Word belge işleme biçimleriyle çalışırken karmaşık metin efektleri (Gölge, 3D efekti, Anahat, Işıma, Oyma, Kabartma) eklemeyi sağlar. Bu özellik, bu tür metin efektlerine sahip belge işlendiğinde gözlemlenebilen otomatik olarak etkinleştirilir.",
+      "title4": "Güçlü XML Manipülasyon Özellikleri",
+      "content4-1": "GroupDocs.Editor for .NET API kullanarak XML belgelerini açabilir, görüntüleyebilir ve düzenleyebilirsiniz. Düzenleme API'miz, XML etiketlerinin, özniteliklerinin yanı sıra değerlerinin, XML bildirimlerinin, CDATA bölümlerinin, DOCTYPE tanımlarının ve diğer XML'e özgü varlıkların özel desteğini ve tanınmasını sağlar. XML yapısındaki her farklı varlık için yazı tipi ve renk ayarlarını özelleştirebilirsiniz.",
+      "content4-2": "XML Dönüştürücü özelliği, XML dosyasındaki hataları ve bunların nasıl düzeltileceğini gösterecek kadar akıllıdır. URI ve e-posta tanıyıcı mekanizması, XML özniteliklerini tarar ve A etiketinin içindeki algılanan URI'leri ve e-posta adreslerini bağlantı olarak temsil eder, böylece sonuçta elde edilen HTML dosyasında metin olarak değil bağlantı olarak düzenlenebilirler."
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor, diğer popüler geliştirme ortamları için belge düzenleme API'leri sunar"
+  }
+}

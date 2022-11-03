@@ -1,0 +1,94 @@
+{
+  "head": {
+    "title": "C# .NET 文档编辑器 API |使用 HTML 编辑 Word Excel PowerPoint Web XML",
+    "description": "C# .NET 文档编辑器 API 可将 Microsoft Word、Excel、PowerPoint、PDF、XML、Web 和文本文件格式加载到 HTML 中，操作并转换回原始格式。"
+  },
+  "header": {
+    "title": ".NET API 使用 HTML 编辑文档",
+    "description": "开发 .NET 应用程序，与 HTML 编辑器集成，获取支持的文档，编辑并转换为原始格式。"
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "概述"
+      },
+      "button_features": {
+        "text": "特征"
+      },
+      "button_support": {
+        "text": "支持"
+      },
+      "button_livedemo": {
+        "text": "现场演示"
+      },
+      "button_pricing": {
+        "text": "价钱"
+      }
+    }
+  },
+  "Overview": {
+    "content": "GroupDocs.Editor for .NET API 可帮助您构建简单易用的 C#、ASP.NET 和其他 .NET 应用程序，这些应用程序可轻松与流行的 HTML 编辑器（开源和付费）集成以转换、编辑和操作流行的文件格式。我们的 .NET 编辑器 API 允许您加载文档、将其转换为 HTML、将 HTML 推送到外部 HTML 编辑器，并且一旦操作完成，将 HTML 保存为其原始文件格式。您还可以单独获取随任何文档附加的资源。它适用于各种文档，例如 Microsoft Word、Excel、PowerPoint、PDF、XPS、OpenDocument、文本、Web、电子邮件、电子书等。",
+    "tab1": {
+      "description": "以下是 .NET 的 GroupDocs.Editor 的概述",
+      "title": "使用 HTML 进行操作",
+      "content1": "加载支持的文档",
+      "content2": "使用 HTML 编辑内容",
+      "content3": "编辑相关样式",
+      "content4": "转换为原始格式"
+    },
+    "tab2": {
+      "description": "GroupDocs.Editor for .NET 支持以下 [文件格式](https://docs.groupdocs.com/editor/java/supported-document-formats/)",
+      "title": "其他格式系列",
+      "content1": "开放文档格式",
+      "content2": "固定布局格式",
+      "content3": "网页格式",
+      "content4": "电子书（e-Book）格式"
+    },
+    "tab3": {
+      "description": "GroupDocs.Editor for .NET 支持以下操作系统、框架和包管理器",
+      "title_os": "操作系统",
+      "title_frameworks": "支持的框架",
+      "title_packman": "包管理器",
+      "title_devenv": "开发环境"
+    }
+  },
+  "Features": {
+    "title": "GroupDocs.Editor 用于 .NET 功能",
+    "feature_loop": {
+      "1": "与任何 HTML 编辑器轻松集成",
+      "2": "将文档转换为 HTML DOM",
+      "3": "从文档流中获取 HTML 内容",
+      "4": "获取 HTML 内容及其嵌入式资源",
+      "5": "从 Document 中获取 HTML Body Tag 内容",
+      "6": "获取 HTML 文档的 CSS 样式表",
+      "7": "遍历 HTML 内容并保存其资源",
+      "8": "从字符串内容中获取 HTML DOM 并转换为文档",
+      "9": "HTML DOM 以及资源转换",
+      "10": "在 HTML 中编辑各种格式的文档",
+      "11": "准确转换",
+      "12": "对结果文档应用读和/或写保护",
+      "13": "在任何所见即所得编辑器中对文字处理文档进行分页和编辑",
+      "14": "数据库 (DB) 和用户界面 (UI) 不可知",
+      "15": "强大的 XML 处理功能",
+      "16": "从输入文档中检索 OTF（开放式字体）并导出到结果文档",
+      "17": "在支持的输入文档格式内处理光栅和矢量图像",
+      "18": "将已编辑工作表的内容插入到所需位置的原始电子表格中",
+      "19": "编辑幻灯片并将它们插入生成的电子表格",
+      "20": "保存时在生成的文字处理文档中嵌入字体"
+    },
+    "more_features_loop": {
+      "title1": "与 HTML DOM 的准确转换",
+      "content1": "GroupDocs.Editor for .NET API 使您的 .NET 应用程序能够获取支持格式的文档并将其转换为 HTML 文档对象模型 (DOM) 以及提取附加资源，例如 CSS。然后，您可以使用您喜欢的 HTML 编辑器对 HTML 进行修改。完成编辑后，用于 .NET API 的 GroupDocs.Editor 允许您将此 HTML DOM 准确地转换回原始文件。",
+      "title2": "加载和提取外部资源",
+      "content2": "GroupDocs.Editor for .NET API 能够获取附加到受支持文档的外部资源，例如图像、字体、CSS 等。然后可以从生成的 HTML 文档中单独加载、遍历和保存获取的资源。这为您提供了更易于管理的输出。",
+      "title3": "在文字处理文件格式中应用文本效果",
+      "content3": "GroupDocs 文档编辑器 API 可以在使用支持的 Microsoft Word 文档处理格式时添加复杂的文本效果（阴影、3D 效果、轮廓、发光、雕刻、浮雕）。此功能是自动启用的，可以在处理具有此类文本效果的文档时观察到。",
+      "title4": "强大的 XML 操作功能",
+      "content4-1": "使用 GroupDocs.Editor for .NET API，您可以打开、查看和编辑 XML 文档。我们的编辑 API 提供对 XML 标记、属性及其值、XML 声明、CDATA 部分、DOCTYPE 定义和其他 XML 特定实体的特殊支持和识别。您可以为 XML 结构中的每个不同实体自定义字体和颜色设置。",
+      "content4-2": "XML 转换器功能非常智能，可以显示 XML 文件中的错误以及如何修复它们。 URI 和电子邮件识别器机制扫描 XML 属性并将 A 标记内检测到的 URI 和电子邮件地址表示为链接，以便可以将它们作为链接进行编辑，而不是作为生成的 HTML 文件中的文本。"
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor 为其他流行的开发环境提供文档编辑 API"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "ドキュメント編集ソリューション |オンプレミス API と無料アプリ",
+    "description": "オンプレミス API を使用するか、オンライン ドキュメント エディター アプリを使用して、Microsoft Office、OpenDocument、PDF およびその他のファイル形式のドキュメントを編集します。"
+  },
+  "header": {
+    "title": "ドキュメント編集ソリューション",
+    "description": "Microsoft Office、OpenOffice、PDF、HTML、およびその他のドキュメント ファイル形式を操作するためのドキュメント エディター。"
+  },
+  "APIs": {
+    "API_loop_high_code": {
+      "title": "GroupDocs.Editor ハイコード API には以下が含まれます",
+      "label": "すべてのハイコード API を表示",
+      "API_product_net": {
+        "content": "アプリケーションがドキュメントを表示、編集、変換するのに役立つオンプレミス .NET API。"
+      },
+      "API_product_java": {
+        "content": "Java ベースのアプリケーション内で操作するための、Microsoft Office、OpenOffice、HTML、およびその他のドキュメント用のドキュメント編集 API。"
+      }
+    },
+    "API_loop_low_code": {
+      "title": "GroupDocs.Editor ローコード API には以下が含まれます",
+      "label": "すべてのローコード API を表示",
+      "Cloud_SDK_net": {
+        "content": "Cloud SDK for .NET を使用して、強力なドキュメント形式の編集機能を .NET アプリケーションに追加します。 MS Office、Web、および XML ドキュメントを編集します。"
+      },
+      "Cloud_SDK_java": {
+        "content": "REST API を呼び出すことができる任意のプラットフォームで業界標準のドキュメント ファイル形式を編集するための Java アプリケーション用の高度なドキュメント エディター SDK。"
+      }
+    },
+    "API_loop_no_code": {
+      "title": "GroupDocs.Editor ノーコード アプリ インクルード",
+      "label": "コードなしのアプリをすべて表示",
+      "Total": {
+        "content": "Office および OpenOffice の一般的なファイル形式を編集するための Web ベースの無料オンライン アプリ。"
+      },
+      "DOCX": {
+        "content": "Microsoft Word ドキュメントをオンラインで表示および編集するための無料のエディター アプリ。"
+      },
+      "PDF": {
+        "content": "任意のデバイス、任意のブラウザーを使用して、PDF および XPS ドキュメントを表示または編集します。"
+      }
+    }
+  }
+}
