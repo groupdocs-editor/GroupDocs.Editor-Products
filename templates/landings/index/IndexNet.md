@@ -128,8 +128,8 @@ overview:
               title: "<% "{Overview.tab3.title_frameworks}" %>"
               content: |
                 * .NET Framework 4.6.1+
-				* .NET Standard 2.0+
-				* .NET 6+
+                * .NET Standard 2.0+
+                * .NET 6+
                 * Mono Framework 1.2+
 
         right:

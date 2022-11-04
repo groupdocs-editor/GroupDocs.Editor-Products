@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "product"
-date: 2022-11-03T21:00:22
+date: 2022-11-04T13:41:55
 draft: false
 
 product: "Editor"
@@ -127,8 +127,8 @@ overview:
               title: "Estruturas Suportadas"
               content: |
                 * .NET Framework 4.6.1+
-				* .NET Standard 2.0+
-				* .NET 6+
+                * .NET Standard 2.0+
+                * .NET 6+
                 * Mono Framework 1.2+
 
         right:
