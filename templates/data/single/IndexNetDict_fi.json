@@ -1,0 +1,94 @@
+{
+  "head": {
+    "title": "C# .NET Document Editor API | Muokkaa Word Excel PowerPoint Web XML:ää HTML:n avulla",
+    "description": "C# .NET-dokumentin muokkaussovellusliittymä Microsoft Word-, Excel-, PowerPoint-, PDF-, XML-, web- ja tekstitiedostomuotojen lataamiseen HTML-muotoon, muokkaamiseen ja palauttamiseen alkuperäiseen muotoon."
+  },
+  "header": {
+    "title": ".NET API asiakirjojen muokkaamiseen HTML:llä",
+    "description": "Kehitä .NET-sovelluksia integroidaksesi HTML-editorin kanssa, noutaa tuetut asiakirjat, muokataksesi ja muuntaaksesi alkuperäiseen muotoon."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "Yleiskatsaus"
+      },
+      "button_features": {
+        "text": "ominaisuudet"
+      },
+      "button_support": {
+        "text": "Tuki"
+      },
+      "button_livedemo": {
+        "text": "Live-demo"
+      },
+      "button_pricing": {
+        "text": "Hinnoittelu"
+      }
+    }
+  },
+  "Overview": {
+    "content": "GroupDocs.Editor for .NET API auttaa sinua luomaan yksinkertaisia ​​ja helppokäyttöisiä C#-, ASP.NET- ja muita .NET-sovelluksia, jotka integroituvat helposti suosittujen HTML-editorien (sekä avoimen lähdekoodin että maksullisten) kanssa muuntamaan, muokkaamaan ja käsittelemään asiakirjoja suosittuja tiedostomuotoja. .NET Editor API:n avulla voit ladata asiakirjan, muuntaa sen HTML-muotoon, työntää HTML:n ulkoiseen HTML-editoriin ja kun käsittely on valmis, tallentaa HTML:n alkuperäiseen tiedostomuotoonsa. Voit myös erikseen hakea mihin tahansa asiakirjaan liitettyjä resursseja. Se toimii kaikenlaisten asiakirjojen kanssa, kuten Microsoft Wordin, Excelin, PowerPointin, PDF:n, XPS:n, OpenDocumentin, tekstin, Webin, sähköpostin, e-kirjan ja muiden asiakirjojen kanssa.",
+    "tab1": {
+      "description": "Seuraavassa on yleiskatsaus .NET:n GroupDocs.Editorista",
+      "title": "Manipuloi HTML:llä",
+      "content1": "Lataa tuettu asiakirja",
+      "content2": "Muokkaa sisältöä HTML:llä",
+      "content3": "Muokkaa liittyviä tyylejä",
+      "content4": "Muunna alkuperäiseen muotoon"
+    },
+    "tab2": {
+      "description": "GroupDocs.Editor for .NET tukee seuraavia [tiedostomuotoja](https://docs.groupdocs.com/editor/java/supported-document-formats/)",
+      "title": "Muut muotoperheet",
+      "content1": "OpenDocument-muodot",
+      "content2": "Kiinteät asettelumuodot",
+      "content3": "Web-muodot",
+      "content4": "Elektroniset kirjat (e-kirjat)."
+    },
+    "tab3": {
+      "description": "GroupDocs.Editor for .NET tukee seuraavia käyttöjärjestelmiä, kehyksiä ja paketinhallintaohjelmia",
+      "title_os": "Käyttöjärjestelmät",
+      "title_frameworks": "Tuetut puitteet",
+      "title_packman": "Paketinhoitajat",
+      "title_devenv": "Kehitysympäristöt"
+    }
+  },
+  "Features": {
+    "title": "GroupDocs.Editor .NET-ominaisuuksille",
+    "feature_loop": {
+      "1": "Helppo integrointi minkä tahansa HTML-editorin kanssa",
+      "2": "Muunna asiakirja HTML DOM -muotoon",
+      "3": "Hae HTML-sisältöä Document Streamista",
+      "4": "Hanki HTML-sisältöä ja sen upotettuja resursseja",
+      "5": "Hanki HTML-tekstitunnisteen sisältö asiakirjasta",
+      "6": "Hanki HTML-dokumentin CSS-tyylisivut",
+      "7": "Selaa HTML-sisältöä ja tallenna sen resurssit",
+      "8": "Hae HTML DOM merkkijonosisällöstä ja muunna asiakirjaksi",
+      "9": "HTML DOM sekä resurssien muuntaminen",
+      "10": "Muokkaa eri muotoisia asiakirjoja HTML:ssä",
+      "11": "Tarkka muunnos",
+      "12": "Käytä luku- ja/tai kirjoitussuojausta tuloksena olevaan asiakirjaan",
+      "13": "Sivuta tekstinkäsittelyasiakirjoja ja muokkaa niitä kaikissa WYSIWYG-editoreissa",
+      "14": "Tietokanta (DB) ja käyttöliittymä (UI) Agnostikko",
+      "15": "Tehokkaat XML-käsittelyominaisuudet",
+      "16": "Hae OTF (Open Type Fonts) syöttöasiakirjoista ja vie tulosasiakirjaan",
+      "17": "Käsittele rasteri- ja vektorikuvia sisäisesti tuetuissa syöttöasiakirjamuodoissa",
+      "18": "Lisää muokatun laskentataulukon sisältö alkuperäiseen laskentataulukkoon haluttuun kohtaan",
+      "19": "Muokkaa dioja ja lisää ne tuloksena olevaan laskentataulukkoon",
+      "20": "Upota fontit tuloksena olevaan tekstinkäsittelydokumenttiin tallennuksen aikana"
+    },
+    "more_features_loop": {
+      "title1": "Tarkka muunnos HTML DOM:iin ja siitä",
+      "content1": "GroupDocs.Editor for .NET API mahdollistaa .NET-sovellustesi noutaa tuetun muodon asiakirjan ja muuntaa sen HTML Document Object Model (DOM) -muotoon sekä poimia liitetiedostoja, kuten CSS:n. Tämän jälkeen voit tehdä muutoksia HTML:ään käyttämällä suosikki HTML-editoria. Kun olet valmis muokkaamaan, GroupDocs.Editor for .NET API antaa sinun muuntaa tämän HTML DOM:n tarkasti takaisin alkuperäiseksi tiedostoksi.",
+      "title2": "Lataa ja poimi ulkoiset resurssit",
+      "content2": "GroupDocs.Editor for .NET API pystyy hakemaan tuettuihin asiakirjoihin liitetyt ulkoiset resurssit, kuten kuvat, kirjasimet, CSS ja paljon muuta. Noudetut resurssit voidaan sitten ladata, käydä läpi ja tallentaa erikseen tuloksena olevasta HTML-asiakirjasta. Tämä antaa sinulle helpommin hallitun tulosteen.",
+      "title3": "Käytä tekstitehosteita tekstinkäsittelytiedostomuodoissa",
+      "content3": "GroupDocs-dokumentin muokkaussovellusliittymän avulla voit lisätä monimutkaisia ​​tekstitehosteita (varjo, 3D-tehoste, ääriviiva, hehku, kaiverrus, kohokuviointi) samalla kun työskentelet tuettujen Microsoft Word -asiakirjankäsittelymuotojen kanssa. Tämä ominaisuus on automaattisesti käytössä, ja se voidaan havaita, kun tällaisia ​​tekstitehosteita sisältävää asiakirjaa käsitellään.",
+      "title4": "Tehokkaat XML-manipulointiominaisuudet",
+      "content4-1": "GroupDocs.Editor for .NET API:n avulla voit avata, tarkastella ja muokata XML-dokumentteja. Muokkaussovellusliittymämme tarjoaa erityistä tukea ja tunnistamista XML-tunnisteille, attribuuteille ja niiden arvoille, XML-määrittelyille, CDATA-osioille, DOCTYPE-määrittelyille ja muille XML-kohtaisille kokonaisuuksille. Voit mukauttaa fontti- ja väriasetuksia jokaiselle erilliselle XML-rakenteen kokonaisuudelle.",
+      "content4-2": "XML Converter -ominaisuus on tarpeeksi älykäs näyttämään virheet XML-tiedostossa ja kuinka ne korjataan. URI- ja sähköpostintunnistusmekanismi skannaa XML-attribuutteja ja esittää havaitut URI:t ja sähköpostiosoitteet A-tunnisteen sisällä linkkeinä, jotta niitä voidaan muokata linkkeinä, ei tekstinä tuloksena olevassa HTML-tiedostossa."
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor tarjoaa asiakirjojen muokkaussovellusliittymiä muihin suosittuihin kehitysympäristöihin"
+  }
+}

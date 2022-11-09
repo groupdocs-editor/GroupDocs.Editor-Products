@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "{{EXT}} محرر - تحرير {{EXT}} في {{PlatformName}}",
+    "description": "كيفية تعديل {{EXT}} في {{PlatformName}} باستخدام بضعة أسطر من التعليمات البرمجية؟ استخدم مستندات GroupDocs لمعالجة واجهات برمجة التطبيقات لتحرير وتحديث وحفظ أكثر من 30 تنسيقًا للملفات."
+  },
+  "header": {
+    "title": "تحرير {{EXT}} في {{PlatformName}}",
+    "description": "تحرير {{EXT}} فعال وقوي باستخدام GroupDocs.Editor من جانب الخادم لواجهات برمجة تطبيقات {{PlatformName}} ، دون استخدام أي برامج مثل Microsoft أو Open Office.",
+    "label": "تحميل النسخة التجريبية المجانية"
+  },
+  "submenu": {
+    "content_middle": {
+      "button_text_ApiReference": "مرجع API",
+      "button_text_CodeExamples": "أمثلة التعليمات البرمجية",
+      "button_text_LiveDemos": "العروض التوضيحية الحية",
+      "button_text_Pricing": "التسعير"
+    }
+  },
+  "about": {
+    "title": "حول واجهة برمجة تطبيقات {{ProductFullName}}",
+    "h1": "تعد واجهة برمجة التطبيقات [{{ProductFullName}}] ({{slash_lang}} / editor / {{ProductCode}} /) الاختيار الصحيح لتعديل مستندات Microsoft Word و Excel و PowerPoint و Open Office والعروض التقديمية. GroupDocs.Editor هي واجهة برمجة تطبيقات قائمة بذاتها مناسبة لأنظمة الخادم والجهة الخلفية التي تتطلب أداءً عاليًا. لا تعتمد على أي برنامج مثل Microsoft أو Open Office."
+  },
+  "steps": {
+    "title_left": "خطوات تعديل {{EXT}} في {{ProgLang}}",
+    "content_left": {
+      "description": "يوفر [{{ProductFullName}}] ({{slash_lang}}/editor/{{ProductCode}}/) طريقة سهلة ومباشرة للمطورين لتعديل ملفات {{EXT}} باستخدام بضعة أسطر من التعليمات البرمجية."
+    },
+    "title_right": "متطلبات النظام",
+    "content_right": {
+      "description": "يمكن إجراء تعديل أساسي للمستند باستخدام واجهات برمجة تطبيقات {{ProductFullName}} من خلال تنفيذ بضع خطوات سهلة. يتم دعم واجهات برمجة التطبيقات الخاصة بنا على جميع الأنظمة الأساسية وأنظمة التشغيل الرئيسية. قبل تنفيذ الكود أدناه ، يرجى التأكد من تثبيت المتطلبات الأساسية التالية على نظامك.",
+      "step_1": "أنظمة التشغيل: مايكروسوفت ويندوز ، لينوكس ، ماك",
+      "step_2": "بيئات التطوير: {{DevEnv}}",
+      "step_3": "إطار أعمال",
+      "step_4": "احصل على أحدث إصدار من {{ProductFullName}} الذي تم تنزيله من [{{RepoName}}] ({{RepoUrl}})"
+    }
+  },
+  "demos": {
+    "title": "{{EXT}} عروض توضيحية مباشرة للمحرر",
+    "content": "قم بتحرير {{EXT}} الآن من خلال زيارة موقع ويب [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family).\r\n        يحتوي العرض التوضيحي المباشر على الفوائد التالية"
+  },
+  "more_formats": {
+    "title": "المحررين المدعومين الآخرين",
+    "content": "يمكنك أيضًا تعديل تنسيقات ملفات أخرى. يرجى الاطلاع على القائمة الكاملة أدناه."
+  }
+}

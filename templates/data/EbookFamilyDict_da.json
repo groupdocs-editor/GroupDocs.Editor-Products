@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Opret en forekomst af `Editor`-klassen med obligatorisk filsti eller bytestrøm og indlæs {{EXT}}-filen",
+    "step_2": "Opret og indstil klasseforekomsten `EbookEditOptions` for filformatet {{EXT}}",
+    "step_3": "Kald `Editor.Edit()`-metoden og få et {{EXT}}-dokument i HTML-format, der nemt kan redigeres med enhver WYSIWYG-editor.",
+    "step_4": "Kald `Editor.Save()`-metoden og gem den redigerede {{EXT}}-fil ved hjælp af `EpubSaveOptions`- eller `Azw3SaveOptions`-klassen til lagring i henholdsvis ePub- eller AZW3-formater"
+  }
+}

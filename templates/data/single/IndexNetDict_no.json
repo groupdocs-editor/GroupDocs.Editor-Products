@@ -1,0 +1,94 @@
+{
+  "head": {
+    "title": "C# .NET Document Editor API | Rediger Word Excel PowerPoint Web XML ved hjelp av HTML",
+    "description": "C# .NET dokumentredigerings-API for å laste Microsoft Word, Excel, PowerPoint, PDF, XML, web- og tekstfilformater til HTML, manipulere og konvertere tilbake til originalformat."
+  },
+  "header": {
+    "title": ".NET API for å redigere dokumenter ved hjelp av HTML",
+    "description": "Utvikle .NET-applikasjoner for å integrere med HTML-redigering, hente støttede dokumenter, redigere og konvertere til originalformat."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "Oversikt"
+      },
+      "button_features": {
+        "text": "Funksjoner"
+      },
+      "button_support": {
+        "text": "Brukerstøtte"
+      },
+      "button_livedemo": {
+        "text": "Live Demo"
+      },
+      "button_pricing": {
+        "text": "Prissetting"
+      }
+    }
+  },
+  "Overview": {
+    "content": "GroupDocs.Editor for .NET API hjelper deg med å bygge enkle og brukervennlige C#-, ASP.NET- og andre .NET-applikasjoner som enkelt integreres med populære HTML-redigerere (både åpen kildekode og betalt) for å konvertere, redigere og manipulere dokumenter av populære filformater. Vår .NET Editor API lar deg laste inn dokumentet, konvertere det til HTML, push HTML til eksternt HTML Editor, og når manipulasjonen er ferdig, lagrer HTML til dets opprinnelige filformat. Du kan også hente ressurser separat vedlagt et hvilket som helst dokument. Den fungerer med alle slags dokumenter, som for Microsoft Word, Excel, PowerPoint, PDF, XPS, OpenDocument, tekst, web, e-post, e-bok og mer.",
+    "tab1": {
+      "description": "Følgende er en oversikt over GroupDocs.Editor for .NET",
+      "title": "Manipulere ved hjelp av HTML",
+      "content1": "Last inn støttet dokument",
+      "content2": "Rediger innhold ved hjelp av HTML",
+      "content3": "Rediger relaterte stiler",
+      "content4": "Konverter til originalformat"
+    },
+    "tab2": {
+      "description": "GroupDocs.Editor for .NET støtter følgende [filformater](https://docs.groupdocs.com/editor/java/supported-document-formats/)",
+      "title": "Andre formatfamilier",
+      "content1": "OpenDocument-formater",
+      "content2": "Formater med fast oppsett",
+      "content3": "Webformater",
+      "content4": "Elektronisk bok (e-bok) formater"
+    },
+    "tab3": {
+      "description": "GroupDocs.Editor for .NET støtter følgende operativsystemer, rammeverk og pakkeadministratorer",
+      "title_os": "Operativsystemer",
+      "title_frameworks": "Støttede rammer",
+      "title_packman": "Pakkeansvarlige",
+      "title_devenv": "Utviklingsmiljøer"
+    }
+  },
+  "Features": {
+    "title": "GroupDocs.Editor for .NET-funksjoner",
+    "feature_loop": {
+      "1": "Enkel integrasjon med hvilken som helst HTML-editor",
+      "2": "Konverter dokument til HTML DOM",
+      "3": "Hent HTML-innhold fra Document Stream",
+      "4": "Få HTML-innhold og dets innebygde ressurser",
+      "5": "Skaff HTML Body Tag-innhold fra dokumentet",
+      "6": "Få CSS-stilark av HTML-dokument",
+      "7": "Gå gjennom HTML-innhold og lagre ressursene",
+      "8": "Hent HTML DOM fra strenginnhold og konverter til dokument",
+      "9": "HTML DOM sammen med ressurskonvertering",
+      "10": "Rediger dokumenter i forskjellige formater i HTML",
+      "11": "Nøyaktig konvertering",
+      "12": "Bruk lese- og/eller skrivebeskyttelse på det resulterende dokumentet",
+      "13": "Paginer tekstbehandlingsdokumenter og rediger i alle WYSIWYG-redigerere",
+      "14": "Database (DB) og brukergrensesnitt (UI) Agnostisk",
+      "15": "Kraftige XML-behandlingsfunksjoner",
+      "16": "Hent OTF (Open Type Fonts) fra Input Documents og Export to Resultant Document",
+      "17": "Behandle raster- og vektorbilder internt i støttede dokumentformater",
+      "18": "Sett inn innholdet i det redigerte regnearket i det originale regnearket på en ønsket plassering",
+      "19": "Rediger lysbilder og sett dem inn i det resulterende regnearket",
+      "20": "Bygg inn skrifter i resulterende tekstbehandlingsdokument mens du lagrer"
+    },
+    "more_features_loop": {
+      "title1": "Nøyaktig konvertering til og fra HTML DOM",
+      "content1": "GroupDocs.Editor for .NET API gjør at .NET-applikasjonene dine kan hente et dokument med støttet format og konvertere det til en HTML Document Object Model (DOM) sammen med utvinning av vedlagte ressurser, for eksempel CSS. Du kan deretter gjøre endringene i HTML-en ved å bruke din favoritt HTML-editor. Når du er ferdig med redigeringen, lar GroupDocs.Editor for .NET API deg nøyaktig konvertere denne HTML DOM tilbake til den opprinnelige filen.",
+      "title2": "Last inn og trekk ut eksterne ressurser",
+      "content2": "GroupDocs.Editor for .NET API er i stand til å hente de eksterne ressursene knyttet til støttede dokumenter, for eksempel bilder, fonter, CSS og mer. De hentede ressursene kan deretter lastes, krysses og lagres separat fra det resulterende HTML-dokumentet. Dette gir deg en lettere administrert utgang.",
+      "title3": "Bruk teksteffekter i tekstbehandlingsfilformater",
+      "content3": "GroupDocs dokumentredigerings-API gjør det mulig å legge til komplekse teksteffekter (Shadow, 3D-effekt, Outline, Glow, Engrave, Emboss) mens du arbeider med støttede Microsoft Word-dokumentbehandlingsformater. Denne funksjonen er automatisk aktivert som kan observeres når dokumentet med slike teksteffekter behandles.",
+      "title4": "Kraftige XML-manipulasjonsfunksjoner",
+      "content4-1": "Ved å bruke GroupDocs.Editor for .NET API kan du åpne, vise og redigere XML-dokumenter. Vår redigerings-API tilbyr spesiell støtte og gjenkjennelse av XML-koder, attributter sammen med deres verdier, XML-erklæringer, CDATA-seksjoner, DOCTYPE-definisjoner og andre XML-spesifikke enheter. Du kan tilpasse font- og fargeinnstillinger for hver enkelt enhet i XML-struktur.",
+      "content4-2": "XML Converter-funksjonen er smart nok til å vise feil i XML-filen og hvordan de kan fikses. URI- og e-postgjenkjenningsmekanismen skanner XML-attributter og representerer de oppdagede URIene og e-postadressene inne i A-taggen som lenker slik at de kan redigeres som lenker, ikke som tekst i den resulterende HTML-filen."
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor tilbyr API-er for dokumentredigering for andre populære utviklingsmiljøer"
+  }
+}

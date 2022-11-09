@@ -1,0 +1,94 @@
+{
+  "head": {
+    "title": "C# .NET Document Editor API | Word Excel PowerPoint Web XML szerkesztése HTML használatával",
+    "description": "C# .NET dokumentumszerkesztő API a Microsoft Word, Excel, PowerPoint, PDF, XML, webes és szöveges fájlformátumok HTML-be való betöltéséhez, manipulálásához és eredeti formátumba való visszaállításához."
+  },
+  "header": {
+    "title": ".NET API dokumentumok HTML használatával szerkesztéséhez",
+    "description": "NET-alkalmazások fejlesztése a HTML-szerkesztővel való integrációhoz, a támogatott dokumentumok lekéréséhez, a szerkesztéshez és az eredeti formátumba konvertáláshoz."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "Áttekintés"
+      },
+      "button_features": {
+        "text": "Jellemzők"
+      },
+      "button_support": {
+        "text": "Támogatás"
+      },
+      "button_livedemo": {
+        "text": "Élő Demo"
+      },
+      "button_pricing": {
+        "text": "Árazás"
+      }
+    }
+  },
+  "Overview": {
+    "content": "A GroupDocs.Editor for .NET API segít egyszerű és könnyen használható C#, ASP.NET és más .NET-alkalmazások létrehozásában, amelyek könnyen integrálhatók a népszerű HTML-szerkesztőkkel (nyílt forráskódú és fizetős is) a dokumentumok konvertálására, szerkesztésére és manipulálására. népszerű fájlformátumok. A .NET Editor API lehetővé teszi a dokumentum betöltését, HTML formátumba való konvertálását, a HTML külső HTML-szerkesztőbe való átküldését, és a manipuláció végeztével a HTML-t az eredeti fájlformátumba menti. Bármely dokumentumhoz csatolt forrásokat külön is lekérheti. Mindenféle dokumentummal működik, mint például a Microsoft Word, Excel, PowerPoint, PDF, XPS, OpenDocument, szöveg, web, e-mail, e-könyv stb.",
+    "tab1": {
+      "description": "Az alábbiakban a GroupDocs.Editor for .NET áttekintése látható",
+      "title": "Manipulálás HTML használatával",
+      "content1": "Töltsön be támogatott dokumentumot",
+      "content2": "Tartalom szerkesztése HTML használatával",
+      "content3": "Kapcsolódó stílusok szerkesztése",
+      "content4": "Konvertálja eredeti formátumra"
+    },
+    "tab2": {
+      "description": "A GroupDocs.Editor for .NET a következő [fájlformátumokat] támogatja (https://docs.groupdocs.com/editor/java/supported-document-formats/)",
+      "title": "Egyéb formátumcsaládok",
+      "content1": "OpenDocument formátumok",
+      "content2": "Fix elrendezésű formátumok",
+      "content3": "Webes formátumok",
+      "content4": "Elektronikus könyv (e-Book) formátumok"
+    },
+    "tab3": {
+      "description": "A GroupDocs.Editor for .NET a következő operációs rendszereket, keretrendszereket és csomagkezelőket támogatja",
+      "title_os": "Operációs rendszer",
+      "title_frameworks": "Támogatott keretrendszerek",
+      "title_packman": "Csomagkezelők",
+      "title_devenv": "Fejlesztési környezetek"
+    }
+  },
+  "Features": {
+    "title": "GroupDocs.Editor a .NET-szolgáltatásokhoz",
+    "feature_loop": {
+      "1": "Egyszerű integráció bármely HTML-szerkesztővel",
+      "2": "Konvertálja a dokumentumot HTML DOM-má",
+      "3": "HTML-tartalom lekérése a Document Streamből",
+      "4": "Szerezzen be HTML tartalmat és beágyazott forrásait",
+      "5": "Szerezze be a HTML törzscímke tartalmát a dokumentumból",
+      "6": "Szerezze be a HTML-dokumentum CSS-stíluslapjait",
+      "7": "Járja be a HTML tartalmat, és mentse el az erőforrásokat",
+      "8": "Töltse le a HTML DOM-ot a String Contentből és konvertálja dokumentummá",
+      "9": "HTML DOM az erőforrások konvertálásával együtt",
+      "10": "Különféle formátumú dokumentumok szerkesztése HTML-ben",
+      "11": "Pontos átalakítás",
+      "12": "Alkalmazzon olvasás- és/vagy írásvédelmet a keletkező dokumentumra",
+      "13": "Lapozzon szövegszerkesztő dokumentumokat és szerkessze bármely WYSIWYG szerkesztőben",
+      "14": "Adatbázis (DB) és felhasználói felület (UI) Agnostic",
+      "15": "Hatékony XML-feldolgozási funkciók",
+      "16": "OTF (Open Type Fonts) lekérése a bemeneti dokumentumokból és exportálás a kapott dokumentumba",
+      "17": "A raszteres és vektoros képeket a támogatott bemeneti dokumentumformátumokon belül dolgozza fel",
+      "18": "Szúrja be a szerkesztett munkalap tartalmát az eredeti táblázatba a kívánt helyre",
+      "19": "Szerkessze a diákat, és helyezze be őket az eredményül kapott táblázatba",
+      "20": "Betűtípusok beágyazása az eredményül kapott szövegszerkesztő dokumentumba mentés közben"
+    },
+    "more_features_loop": {
+      "title1": "Pontos konvertálás HTML DOM-ra és onnan",
+      "content1": "A GroupDocs.Editor for .NET API lehetővé teszi a .NET-alkalmazások számára, hogy támogatott formátumú dokumentumokat töltsenek le, és átalakítsák azt HTML-dokumentumobjektum-modellré (DOM), a csatolt erőforrások, például a CSS kinyerésével együtt. Ezután kedvenc HTML-szerkesztőjével módosíthatja a HTML-t. Ha végzett a szerkesztéssel, a GroupDocs.Editor for .NET API lehetővé teszi a HTML DOM pontos visszakonvertálását az eredeti fájlba.",
+      "title2": "Külső erőforrások betöltése és kibontása",
+      "content2": "A GroupDocs.Editor for .NET API képes lekérni a támogatott dokumentumokhoz csatolt külső erőforrásokat, például képeket, betűtípusokat, CSS-t és egyebeket. A lekért erőforrások ezután betölthetők, bejárhatók, és az eredményül kapott HTML-dokumentumtól elkülönítve menthetők. Ez könnyebben kezelhető kimenetet biztosít.",
+      "title3": "Szövegeffektusok alkalmazása a szövegszerkesztő fájlformátumokon belül",
+      "content3": "A GroupDocs dokumentumszerkesztő API lehetővé teszi összetett szövegeffektusok hozzáadását (árnyék, 3D effektus, körvonal, ragyogás, gravírozás, domborítás), miközben támogatott Microsoft Word dokumentumfeldolgozási formátumokkal dolgozik. Ez a funkció automatikusan engedélyezve van, amely az ilyen szövegeffektusokkal rendelkező dokumentum feldolgozása során figyelhető meg.",
+      "title4": "Hatékony XML-kezelési funkciók",
+      "content4-1": "A GroupDocs.Editor for .NET API használatával XML dokumentumokat nyithat meg, tekinthet meg és szerkeszthet. Szerkesztő API-nk speciális támogatást és felismerést kínál az XML címkék, attribútumok értékeikkel együtt, XML deklarációk, CDATA szakaszok, DOCTYPE definíciók és egyéb XML specifikus entitások. Testreszabhatja a betűtípus- és színbeállításokat az XML-struktúra minden különálló entitása számára.",
+      "content4-2": "Az XML Converter funkció elég intelligens ahhoz, hogy megjelenítse az XML-fájlban lévő hibákat és azok kijavítását. Az URI- és e-mail-felismerő mechanizmus megvizsgálja az XML-attribútumokat, és az észlelt URI-kat és e-mail-címeket az A címkén belül hivatkozásként jeleníti meg, így azokat hivatkozásként lehet szerkeszteni, nem pedig szövegként az eredményül kapott HTML-fájlban."
+    }
+  },
+  "Solutions": {
+    "title": "A GroupDocs.Editor dokumentumszerkesztő API-kat kínál más népszerű fejlesztői környezetekhez"
+  }
+}

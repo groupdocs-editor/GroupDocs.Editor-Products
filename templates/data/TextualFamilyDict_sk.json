@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Vytvorte inštanciu triedy `Editor` s povinnou cestou k súboru alebo bajtovým tokom a načítajte súbor {{EXT}}",
+    "step_2": "Vytvorte a nastavte inštanciu triedy `TextEditOptions` pre formát súboru {{EXT}}",
+    "step_3": "Zavolajte metódu `Editor.Edit()` a získajte dokument {{EXT}} vo formáte HTML, ktorý je možné ľahko upravovať pomocou ľubovoľného editora WYSIWYG.",
+    "step_4": "Zavolajte metódu `Editor.Save()` a uložte upravený súbor {{EXT}} pomocou triedy `TextSaveOptions`"
+  }
+}

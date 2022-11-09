@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Buat contoh kelas `Editor` dengan laluan fail atau strim mandatori dan kelas `WordProcessingLoadOptions` pilihan dan muatkan fail {{EXT}}",
+    "step_2": "Cipta & tetapkan contoh kelas `WordProcessingEditOptions` untuk format fail {{EXT}}",
+    "step_3": "Panggil kaedah `Editor.Edit()` dan dapatkan {{EXT}} dokumen dalam format HTML yang boleh diedit dengan mudah dengan mana-mana editor WYSIWYG.",
+    "step_4": "Panggil kaedah `Editor.Save()` dan simpan fail {{EXT}} yang diedit menggunakan kelas `WordProcessingSaveOptions`"
+  }
+}

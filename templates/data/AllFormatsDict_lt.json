@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "{{EXT}} redaktorius – redaguoti {{EXT}} {{PlatformName}}",
+    "description": "Kaip redaguoti {{EXT}} {{PlatformName}} naudojant kelias kodo eilutes? Naudokite GroupDocs dokumentų apdorojimo API, kad galėtumėte redaguoti, atnaujinti ir išsaugoti daugiau nei 30 failų formatų."
+  },
+  "header": {
+    "title": "Redaguoti {{EXT}} {{PlatformName}}",
+    "description": "Efektyvus ir patikimas {{EXT}} redagavimas naudojant serverio pusės GroupDocs.Editor, skirtą {{PlatformName}} API, nenaudojant jokios programinės įrangos, pvz., Microsoft ar Open Office.",
+    "label": "Atsisiųskite nemokamą bandomąją versiją"
+  },
+  "submenu": {
+    "content_middle": {
+      "button_text_ApiReference": "API nuoroda",
+      "button_text_CodeExamples": "Kodo pavyzdžiai",
+      "button_text_LiveDemos": "Tiesioginės demonstracinės versijos",
+      "button_text_Pricing": "Kainodara"
+    }
+  },
+  "about": {
+    "title": "Apie {{ProductFullName}} API",
+    "h1": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) API yra tinkamas pasirinkimas norint redaguoti Microsoft Word, Excel, PowerPoint, Open Office dokumentus ir pristatymus. GroupDocs.Editor yra atskira API, tinkanti serverio ir galinės sistemos sistemoms, kur reikalingas didelis našumas. Tai nepriklauso nuo jokios programinės įrangos, tokios kaip „Microsoft“ ar „Open Office“."
+  },
+  "steps": {
+    "title_left": "Veiksmai, kaip redaguoti {{EXT}} {{ProgLang}}",
+    "content_left": {
+      "description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) suteikia kūrėjams paprastą ir nesudėtingą būdą redaguoti {{EXT}} failus naudojant kelias kodo eilutes."
+    },
+    "title_right": "Sistemos reikalavimai",
+    "content_right": {
+      "description": "Pagrindinį dokumentų redagavimą naudojant {{ProductFullName}} API galima atlikti atlikus kelis paprastus veiksmus. Mūsų API palaiko visos pagrindinės platformos ir operacinės sistemos. Prieš vykdydami toliau pateiktą kodą, įsitikinkite, kad jūsų sistemoje yra įdiegtos šios būtinos sąlygos.",
+      "step_1": "Operacinės sistemos: Microsoft Windows, Linux, MacOS",
+      "step_2": "Kūrimo aplinkos: {{DevEnv}}",
+      "step_3": "Karkasai",
+      "step_4": "Gaukite naujausią {{ProductFullName}} versiją, atsisiųstą iš [{{RepoName}}]({{RepoUrl}})"
+    }
+  },
+  "demos": {
+    "title": "{{EXT}} Tiesioginės demonstracinės versijos redaktorius",
+    "content": "Redaguokite {{EXT}} dabar apsilankę [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) svetainėje.\r\n        Tiesioginė demonstracinė versija turi šiuos privalumus"
+  },
+  "more_formats": {
+    "title": "Kiti palaikomi redaktoriai",
+    "content": "Taip pat galite redaguoti kitus failų formatus. Žr. visą sąrašą žemiau."
+  }
+}

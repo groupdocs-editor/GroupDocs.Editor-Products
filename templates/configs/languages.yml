@@ -1,3 +1,3 @@
 dimensions: 
 - alias: lang
-  values: [en, ru, uk, bg, cs, de, es, fr, id, it, ja, ko, pt, tr, vi, zh ]
+  values: [af, am, ar, bg, ca, cs, da, de, el, en, es, et, fa, fi, fr, ga, hi, hr, hu, hy, id, is, it, ja, ka, kk, ko, ku, lt, lv, ms, nl, no, pl, pt, ro, ru, sk, sl, sv, th, tr, uk, ur, vi, zh]

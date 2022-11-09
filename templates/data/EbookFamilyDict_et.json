@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Looge klassi \"Editor\" eksemplar koos kohustusliku failitee või baidivooga ja laadige fail {{EXT}}",
+    "step_2": "Looge ja määrake klassi eksemplar \"EbookEditOptions\" failivormingule {{EXT}}",
+    "step_3": "Kutsuge meetod \"Editor.Edit()\" ja hankige HTML-vormingus dokument {{EXT}}, mida saab hõlpsasti redigeerida mis tahes WYSIWYG-redaktoriga.",
+    "step_4": "Kutsuge välja meetod \"Editor.Save()\" ja salvestage redigeeritud fail {{EXT}}, kasutades klassi \"EpubSaveOptions\" või \"Azw3SaveOptions\", et salvestada vastavalt ePub- või AZW3-vormingusse"
+  }
+}

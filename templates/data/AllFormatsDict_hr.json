@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "{{EXT}} Editor — Uredite {{EXT}} u {{PlatformName}}",
+    "description": "Kako urediti {{EXT}} u {{PlatformName}} pomoću nekoliko redaka koda? Koristite API-je za obradu dokumenata GroupDocs za uređivanje, ažuriranje i spremanje više od 30 formata datoteka."
+  },
+  "header": {
+    "title": "Uredi {{EXT}} u {{PlatformName}}",
+    "description": "Učinkovito i robusno {{EXT}} uređivanje koristeći GroupDocs.Editor na strani poslužitelja za API-je {{PlatformName}}, bez upotrebe bilo kakvog softvera poput Microsofta ili Open Officea.",
+    "label": "Preuzmite besplatnu probnu verziju"
+  },
+  "submenu": {
+    "content_middle": {
+      "button_text_ApiReference": "API Referenca",
+      "button_text_CodeExamples": "Primjeri koda",
+      "button_text_LiveDemos": "Demo snimke uživo",
+      "button_text_Pricing": "Cijene"
+    }
+  },
+  "about": {
+    "title": "O {{ProductFullName}} API-ju",
+    "h1": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) API pravi je izbor za uređivanje Microsoft Word, Excel, PowerPoint, Open Office dokumenata i prezentacija. GroupDocs.Editor je samostalni API koji je prikladan za poslužiteljske i pozadinske sustave gdje su potrebne visoke performanse. Ne ovisi o softveru poput Microsofta ili Open Officea."
+  },
+  "steps": {
+    "title_left": "Koraci za uređivanje {{EXT}} u {{ProgLang}}",
+    "content_left": {
+      "description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) programerima pruža jednostavan i jednostavan način za uređivanje datoteka {{EXT}} pomoću nekoliko redaka koda."
+    },
+    "title_right": "Zahtjevi sustava",
+    "content_right": {
+      "description": "Osnovno uređivanje dokumenta pomoću {{ProductFullName}} API-ja može se izvršiti implementacijom nekoliko jednostavnih koraka. Naši API-ji podržani su na svim glavnim platformama i operativnim sustavima. Prije izvršavanja koda u nastavku, provjerite imate li sljedeće preduvjete instalirane na vašem sustavu.",
+      "step_1": "Operativni sustavi: Microsoft Windows, Linux, MacOS",
+      "step_2": "Razvojna okruženja: {{DevEnv}}",
+      "step_3": "Okviri",
+      "step_4": "Preuzmite najnoviju verziju {{ProductFullName}} preuzetu s [{{RepoName}}]({{RepoUrl}})"
+    }
+  },
+  "demos": {
+    "title": "{{EXT}} Demonstracije uređivača uživo",
+    "content": "Uredite {{EXT}} odmah tako da posjetite [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) web mjesto.\r\n        Demo uživo ima sljedeće prednosti"
+  },
+  "more_formats": {
+    "title": "Ostali podržani uređivači",
+    "content": "Također možete uređivati ​​druge formate datoteka. Pogledajte potpuni popis u nastavku."
+  }
+}

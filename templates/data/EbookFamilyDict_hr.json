@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Napravite instancu klase `Uređivač` s obaveznom stazom datoteke ili tokom bajtova i učitajte datoteku {{EXT}}",
+    "step_2": "Stvorite i postavite instancu klase `EbookEditOptions` za format datoteke {{EXT}}",
+    "step_3": "Pozovite metodu `Editor.Edit()` i dobijte {{EXT}} dokument u HTML formatu koji je lako uređivati ​​bilo kojim WYSIWYG uređivačem.",
+    "step_4": "Pozovite metodu `Editor.Save()` i spremite uređenu {{EXT}} datoteku koristeći klasu `EpubSaveOptions` ili `Azw3SaveOptions` za spremanje u formate ePub odnosno AZW3"
+  }
+}

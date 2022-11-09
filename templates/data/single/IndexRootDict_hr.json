@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "Rješenje za uređivanje dokumenata | On Premise API-ji i besplatne aplikacije",
+    "description": "Uređivanje dokumenata za Microsoft Office, OpenDocument, PDF i druge formate datoteka pomoću On Premise API-ja ili pomoću aplikacije Online Document Editor."
+  },
+  "header": {
+    "title": "Rješenje za uređivanje dokumenata",
+    "description": "Uređivač dokumenata za rad s Microsoft Office, OpenOffice, PDF, HTML i drugim formatima datoteka dokumenata."
+  },
+  "APIs": {
+    "API_loop_high_code": {
+      "title": "GroupDocs.Editor High Code API-ji uključuju",
+      "label": "Pregledajte sve API-je visokog koda",
+      "API_product_net": {
+        "content": "On Premise .NET API koji pomaže vašoj aplikaciji pregledavati, uređivati ​​i zatim pretvarati dokumente."
+      },
+      "API_product_java": {
+        "content": "API za uređivanje dokumenata za Microsoft Office, OpenOffice, HTML i druge dokumente kojima možete manipulirati unutar svojih aplikacija temeljenih na Javi."
+      }
+    },
+    "API_loop_low_code": {
+      "title": "GroupDocs.Editor Low Code API-ji uključuju",
+      "label": "Pogledajte sve API-je s niskim kodom",
+      "Cloud_SDK_net": {
+        "content": "Dodajte snažne značajke za uređivanje formata dokumenata u .NET aplikacijama koristeći Cloud SDK za .NET. Uredite MS Office, Web i XML dokumente."
+      },
+      "Cloud_SDK_java": {
+        "content": "SDK za napredni uređivač dokumenata za Java aplikacije za uređivanje standardnih industrijskih formata datoteka dokumenata na bilo kojoj platformi koja može pozvati REST API-je."
+      }
+    },
+    "API_loop_no_code": {
+      "title": "GroupDocs.Editor Ne uključuje aplikacije koda",
+      "label": "Pogledajte sve aplikacije bez koda",
+      "Total": {
+        "content": "Besplatna mrežna aplikacija temeljena na webu za uređivanje popularnih formata datoteka iz sustava Office i OpenOffice."
+      },
+      "DOCX": {
+        "content": "Besplatna aplikacija za uređivanje za pregled i uređivanje Microsoft Word dokumenata na mreži."
+      },
+      "PDF": {
+        "content": "Koristite bilo koji uređaj, bilo koji preglednik za pregled ili uređivanje PDF i XPS dokumenata."
+      }
+    }
+  }
+}

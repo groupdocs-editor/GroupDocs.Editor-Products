@@ -1,0 +1,89 @@
+{
+  "head": {
+    "title": "Java Document Editor API | Rediger Word Web XML-tekstfiler ved hjelp av HTML",
+    "description": "Document editor API for Java. Last inn Microsoft Word-, XML-, web- og tekstfiler til HTML og konverter tilbake til originalformat etter manipulering."
+  },
+  "header": {
+    "title": "Rediger dokumenter via HTML ved hjelp av Java API",
+    "description": "Integrer Java-applikasjoner med HTML-redigering for å manipulere dokumenter og konvertere tilbake til originalformat."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "Oversikt"
+      },
+      "button_features": {
+        "text": "Funksjoner"
+      },
+      "button_support": {
+        "text": "Brukerstøtte"
+      },
+      "button_livedemo": {
+        "text": "Live Demo"
+      },
+      "button_pricing": {
+        "text": "Prissetting"
+      }
+    }
+  },
+  "Overview": {
+    "content": "GroupDocs.Editor for Java API muliggjør dokumentredigering i form av HTML. API støtter flere dokumentformater og kan integreres med hvilken som helst ekstern, åpen kildekode eller betalt HTML-editor. Editor API vil behandle for å laste dokumenter, konvertere det til HTML, gi HTML til eksternt brukergrensesnitt og deretter lagre HTML til originaldokumentet etter manipulering. Den kan også brukes til å generere forskjellige Microsoft Word-, Excel-regneark, PowerPoint-filer, OpenDocument-formater, XML- og TXT-dokumenter.",
+    "tab1": {
+      "description": "Følgende er en oversikt over GroupDocs.Editor for Java",
+      "title": "Manipulere ved hjelp av HTML",
+      "content1": "Last inn støttet dokument",
+      "content2": "Rediger innhold ved hjelp av HTML",
+      "content3": "Rediger relaterte stiler",
+      "content4": "Konverter til originalformat"
+    },
+    "tab2": {
+      "description": "GroupDocs.Editor for Java støtter følgende [filformater](https://docs.groupdocs.com/editor/java/supported-document-formats/)",
+      "title": "Andre formatfamilier",
+      "content1": "OpenDocument-formater",
+      "content2": "E-postformater",
+      "content3": "Webformater",
+      "content4": "Elektronisk bok (e-bok) formater"
+    },
+    "tab3": {
+      "description": "GroupDocs.Editor for Java støtter følgende operativsystemer, rammer og pakkeadministratorer",
+      "title_os": "Operativsystemer",
+      "title_frameworks": "Støttede rammer",
+      "title_packman": "Bygg automatiseringsverktøy",
+      "title_devenv": "Utviklingsmiljøer"
+    }
+  },
+  "Features": {
+    "title": "GroupDocs.Editor for Java-funksjoner",
+    "feature_loop": {
+      "1": "Enkel HTML Editor-integrasjon",
+      "2": "Dokumentkonvertering til HTML DOM",
+      "3": "Trekk ut HTML-innhold fra Document Stream",
+      "4": "Last inn, rediger og lagre Word-, Excel- og PowerPoint-filformater",
+      "5": "Hent HTML sammen med Embedded Elements",
+      "6": "Importer, vis og rediger XML-dokumenter",
+      "7": "Omgå HTML-innhold og lagre innebygde ressurser",
+      "8": "Vis, rediger og lagre tekstbehandlingsdokumenter i pagineringsmodus",
+      "9": "Få innholdet i HTML Body Tag fra fil",
+      "10": "Pakk ut CSS-innhold av HTML-fil",
+      "11": "Bruk strenginnhold for å få HTML DOM og konvertere til fil",
+      "12": "Konverter HTML DOM med innebygde elementer",
+      "13": "Konverter filer med flere formater i HTML for redigering",
+      "14": "Få metainformasjon om inndatadokumenter uten redigering",
+      "15": "Lagre redigerte dokumenter til vanlig tekstfilformat",
+      "16": "Konverteringsnøyaktighet",
+      "17": "Bruk passord på utdatadokument",
+      "18": "Database (DB) Agnostisk",
+      "19": "Brukergrensesnitt (UI) Agnostisk",
+      "20": "Støtter Metered Licensing"
+    },
+    "more_features_loop": {
+      "title1": "Konverter nøyaktig til og fra HTML DOM",
+      "content1": "Ved å bruke GroupDocs.Editor for Java kan du bygge applikasjoner i Java som laster et dokument med støttet filformat for å konvertere det til HTML Document Object Model (DOM) sammen med tilhørende elementer, f.eks. CSS. Videre lar vår Editor Java API deg redigere HTML-en i alle de populære HTML-editorene. Etter at de nødvendige endringene er gjort, hjelper GroupDocs.Editor for Java deg med å konvertere denne resulterende HTML-koden tilbake til det opprinnelige filformatet.",
+      "title2": "Last inn og hent tilknyttede elementer",
+      "content2": "GroupDocs.Editor for Java API lar deg hente de tilknyttede elementene fra dokumenter med støttede formater, for eksempel bilder, CSS, fonter og mer. Deretter kan du laste inn disse hentede tilknyttede elementene, krysse dem og lagre dem separat fra den endelige HTML-filen, og ha en godt administrert utgang."
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor tilbyr API-er for dokumentredigering for andre populære utviklingsmiljøer"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "head": {
+    "title": "C# .NET Document Editor API | Wysig Word Excel PowerPoint Web XML met HTML",
+    "description": "C# .NET dokument redigeerder API om Microsoft Word, Excel, PowerPoint, PDF, XML, web en teks lêer formate in HTML te laai, te manipuleer en terug te skakel na oorspronklike formaat."
+  },
+  "header": {
+    "title": ".NET API om dokumente met HTML te wysig",
+    "description": "Ontwikkel .NET-toepassings, om met HTML-redigeerder te integreer, haal ondersteunde dokument, wysig en omskep na oorspronklike formaat."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "Oorsig"
+      },
+      "button_features": {
+        "text": "Kenmerke"
+      },
+      "button_support": {
+        "text": "Ondersteuning"
+      },
+      "button_livedemo": {
+        "text": "Regstreekse Demo"
+      },
+      "button_pricing": {
+        "text": "Pryse"
+      }
+    }
+  },
+  "Overview": {
+    "content": "GroupDocs.Editor for .NET API help jou om eenvoudige en maklik om te gebruik C#-, ASP.NET- en ander .NET-toepassings te bou wat geredelik integreer met gewilde HTML-redigeerders (beide oopbron en betaal) om dokumente van om te skakel, te redigeer en te manipuleer gewilde lêerformate. Ons .NET Editor API laat jou dokument laai, dit omskakel na HTML, HTML na eksterne HTML Editor stoot, en sodra die manipulasie gedoen is, stoor die HTML in sy oorspronklike lêerformaat. Jy kan ook afsonderlik hulpbronne gaan haal wat by enige dokument aangeheg is. Dit werk met allerhande dokumente, soos dié vir Microsoft Word, Excel, PowerPoint, PDF, XPS, OpenDocument, teks, web, e-pos, e-boek en meer.",
+    "tab1": {
+      "description": "Hierna volg 'n oorsig van GroupDocs.Editor vir .NET",
+      "title": "Manipuleer met behulp van HTML",
+      "content1": "Laai ondersteunde dokument",
+      "content2": "Redigeer inhoud met HTML",
+      "content3": "Wysig verwante style",
+      "content4": "Skakel oor na oorspronklike formaat"
+    },
+    "tab2": {
+      "description": "GroupDocs.Editor vir .NET ondersteun die volgende [lêerformate](https://docs.groupdocs.com/editor/java/supported-document-formats/)",
+      "title": "Ander formaat families",
+      "content1": "OpenDocument Formate",
+      "content2": "Vaste-uitleg formate",
+      "content3": "Web formate",
+      "content4": "Elektroniese boek (e-boek) formate"
+    },
+    "tab3": {
+      "description": "GroupDocs.Editor vir .NET ondersteun die volgende bedryfstelsels, raamwerke en pakketbestuurders",
+      "title_os": "Bedryfstelsels",
+      "title_frameworks": "Ondersteunde raamwerke",
+      "title_packman": "Pakketbestuurders",
+      "title_devenv": "Ontwikkelingsomgewings"
+    }
+  },
+  "Features": {
+    "title": "GroupDocs.Editor vir .NET-kenmerke",
+    "feature_loop": {
+      "1": "Maklike integrasie met enige HTML-redigeerder",
+      "2": "Skakel dokument om na HTML DOM",
+      "3": "Haal HTML-inhoud uit Dokumentstroom",
+      "4": "Kry HTML-inhoud en sy ingebedde hulpbronne",
+      "5": "Verkry HTML-liggaammerkerinhoud van dokument",
+      "6": "Kry CSS-stylblaaie van HTML-dokument",
+      "7": "Gaan deur HTML-inhoud en stoor sy hulpbronne",
+      "8": "Haal HTML DOM van String Content & Skakel na Dokument",
+      "9": "HTML DOM saam met Hulpbronne Omskakeling",
+      "10": "Wysig dokumente van verskillende formate in HTML",
+      "11": "Akkurate omskakeling",
+      "12": "Pas lees- en/of skryfbeskerming toe op die resulterende dokument",
+      "13": "Pagineer woordverwerkingsdokumente en wysig in enige WYSIWYG-redigeerders",
+      "14": "Databasis (DB) & Gebruikerskoppelvlak (UI) Agnosties",
+      "15": "Kragtige XML-verwerkingsfunksies",
+      "16": "Haal OTF (Open Type Fonts) op vanaf invoerdokumente en voer uit na resulterende dokument",
+      "17": "Verwerk raster- en vektorbeelde intern binne ondersteunde invoerdokumentformate",
+      "18": "Voeg inhoud van geredigeerde werkblad in die oorspronklike sigblad op 'n gewenste posisie in",
+      "19": "Wysig skyfies en voeg dit in die resulterende sigblad",
+      "20": "Sluit lettertipes in die gevolglike woordverwerkingsdokument in terwyl dit gestoor word"
+    },
+    "more_features_loop": {
+      "title1": "Akkurate omskakeling na en van HTML DOM",
+      "content1": "GroupDocs.Editor vir .NET API stel jou .NET-toepassings in staat om 'n dokument van ondersteunde formaat te gaan haal en dit om te skakel na 'n HTML Document Object Model (DOM) saam met onttrekking van aangehegte bronne, soos CSS. Jy kan dan die wysigings aan die HTML maak deur jou gunsteling HTML-redigeerder te gebruik. Sodra jy klaar is met die redigering, stel GroupDocs.Editor vir .NET API jou in staat om hierdie HTML DOM akkuraat terug te omskep na die oorspronklike lêer.",
+      "title2": "Laai en onttrek eksterne hulpbronne",
+      "content2": "GroupDocs.Editor vir .NET API is in staat om die eksterne hulpbronne wat aan ondersteunde dokumente gekoppel is, soos beelde, lettertipes, CSS en meer te gaan haal. Die gehaalde hulpbronne kan dan afsonderlik van die resulterende HTML-dokument gelaai, deurkruis en gestoor word. Dit gee jou 'n makliker bestuurde uitset.",
+      "title3": "Pas tekseffekte binne woordverwerkingslêerformate toe",
+      "content3": "GroupDocs-dokumentredigeerder-API maak dit moontlik om komplekse tekseffekte (skaduwee, 3D-effek, buitelyn, gloei, graveer, reliëf) by te voeg terwyl u met ondersteunde Microsoft Word-dokumentverwerkingsformate werk. Hierdie kenmerk is outomaties geaktiveer wat waargeneem kan word wanneer die dokument met sulke tekseffekte verwerk word.",
+      "title4": "Kragtige XML-manipulasiekenmerke",
+      "content4-1": "Deur GroupDocs.Editor vir .NET API te gebruik, kan jy XML-dokumente oopmaak, bekyk en redigeer. Ons redigering-API bied spesiale ondersteuning en herkenning van XML-etikette, eienskappe saam met hul waardes, XML-verklarings, CDATA-afdelings, DOCTYPE-definisies en ander XML-spesifieke entiteite. U kan lettertipe- en kleurinstellings vir elke afsonderlike entiteit in XML-struktuur aanpas.",
+      "content4-2": "Die XML Converter-funksie is slim genoeg om foute in die XML-lêer te wys en hoe om dit reg te stel. Die URI- en e-posherkenningsmeganisme skandeer XML-kenmerke en verteenwoordig die bespeurde URI's en e-posadresse binne die A-merker as skakels sodat hulle as skakel geredigeer kan word, nie as teks binne die resulterende HTML-lêer nie."
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor bied dokument redigering API's vir ander gewilde ontwikkeling omgewings"
+  }
+}

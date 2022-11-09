@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Cruthaigh sampla de rang `Eagarthóir` le conair nó sruth comhaid éigeantach agus rang roghnach `PdfLoadOptions` le haghaidh PDF (neamhbhainteach le haghaidh XPS) agus luchtaigh an comhad {{EXT}}",
+    "step_2": "Cruthaigh & socraigh an sampla ranga `{{Ext}}EditOptions` don fhormáid comhaid {{EXT}}",
+    "step_3": "Glaoigh ar an modh `Editor.Edit()` agus faigh doiciméad {{EXT}} i bhformáid HTML is furasta a chur in eagar le haon eagarthóir WYSIWYG.",
+    "step_4": "Cuir glaoch ar an modh `Editor.Save()` agus sábháil an comhad {{EXT}} atá curtha in eagar ag úsáid rang `{{Ext}}SaveOptions`"
+  }
+}

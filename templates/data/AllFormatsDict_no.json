@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "{{EXT}} Editor – Rediger {{EXT}} i {{PlatformName}}",
+    "description": "Hvordan redigere {{EXT}} i {{PlatformName}} ved å bruke noen få linjer med kode? Bruk GroupDocs-dokumenter som behandler APIer for å redigere, oppdatere og lagre 30+ filformater."
+  },
+  "header": {
+    "title": "Rediger {{EXT}} i {{PlatformName}}",
+    "description": "Effektiv og robust {{EXT}}-redigering ved bruk av GroupDocs.Editor på serversiden for {{PlatformName}} APIer, uten bruk av programvare som Microsoft eller Open Office.",
+    "label": "Last ned gratis prøveversjon"
+  },
+  "submenu": {
+    "content_middle": {
+      "button_text_ApiReference": "API-referanse",
+      "button_text_CodeExamples": "Kodeeksempler",
+      "button_text_LiveDemos": "Live-demoer",
+      "button_text_Pricing": "Prissetting"
+    }
+  },
+  "about": {
+    "title": "Om {{ProductFullName}} API",
+    "h1": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) API er et riktig valg for å redigere Microsoft Word, Excel, PowerPoint, Open Office-dokumenter og presentasjoner. GroupDocs.Editor er et frittstående API som er egnet for serverside- og back-end-systemer der høy ytelse kreves. Det er ikke avhengig av programvare som Microsoft eller Open Office."
+  },
+  "steps": {
+    "title_left": "Trinn for å redigere {{EXT}} i {{ProgLang}}",
+    "content_left": {
+      "description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) gir utviklere en enkel og grei måte å redigere {{EXT}}-filene ved å bruke noen få linjer med kode."
+    },
+    "title_right": "Systemkrav",
+    "content_right": {
+      "description": "En grunnleggende dokumentredigering med {{ProductFullName}} APIer kan gjøres ved å implementere noen få enkle trinn. APIene våre støttes på alle større plattformer og operativsystemer. Før du utfører koden nedenfor, sørg for at du har følgende forutsetninger installert på systemet ditt.",
+      "step_1": "Operativsystemer: Microsoft Windows, Linux, MacOS",
+      "step_2": "Utviklingsmiljøer: {{DevEnv}}",
+      "step_3": "Rammer",
+      "step_4": "Få den nyeste versjonen av {{ProductFullName}} lastet ned fra [{{RepoName}}]({{RepoUrl}})"
+    }
+  },
+  "demos": {
+    "title": "{{EXT}} Editor Live Demoer",
+    "content": "Rediger {{EXT}} akkurat nå ved å gå til nettstedet [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family).\r\n        Live-demoen har følgende fordeler"
+  },
+  "more_formats": {
+    "title": "Andre støttede redaktører",
+    "content": "Du kan også redigere andre filformater. Vennligst se hele listen nedenfor."
+  }
+}

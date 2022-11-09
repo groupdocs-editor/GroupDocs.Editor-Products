@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "{{EXT}}-redigeerder — Wysig {{EXT}} in {{PlatformName}}",
+    "description": "Hoe om {{EXT}} in {{PlatformName}} te wysig deur 'n paar reëls kode te gebruik? Gebruik GroupDocs-dokumente wat API's verwerk om 30+ lêerformate te redigeer, op te dateer en te stoor."
+  },
+  "header": {
+    "title": "Wysig {{EXT}} in {{PlatformName}}",
+    "description": "Effektiewe en robuuste {{EXT}} redigering deur bedienerkant GroupDocs.Editor vir {{PlatformName}} API's te gebruik, sonder die gebruik van enige sagteware soos Microsoft of Open Office.",
+    "label": "Laai gratis proeflopie af"
+  },
+  "submenu": {
+    "content_middle": {
+      "button_text_ApiReference": "API-verwysing",
+      "button_text_CodeExamples": "Kode voorbeelde",
+      "button_text_LiveDemos": "Regstreekse demonstrasies",
+      "button_text_Pricing": "Pryse"
+    }
+  },
+  "about": {
+    "title": "Oor {{ProductFullName}} API",
+    "h1": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) API is 'n regte keuse om Microsoft Word, Excel, PowerPoint, Open Office dokumente en aanbiedings te wysig. GroupDocs.Editor is 'n selfstandige API wat geskik is vir bedienerkant- en agterkantstelsels waar hoë werkverrigting vereis word. Dit hang nie af van enige sagteware soos Microsoft of Open Office nie."
+  },
+  "steps": {
+    "title_left": "Stappe om {{EXT}} in {{ProgLang}} te wysig",
+    "content_left": {
+      "description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) bied 'n maklike en reguit manier vir ontwikkelaars om die {{EXT}} lêers te wysig deur 'n paar reëls kode te gebruik."
+    },
+    "title_right": "Stelselvereistes",
+    "content_right": {
+      "description": "'n Basiese dokumentredigering met {{ProductFullName}} API's kan gedoen word deur 'n paar maklike stappe te implementeer. Ons API's word op alle groot platforms en bedryfstelsels ondersteun. Voordat u die kode hieronder uitvoer, maak asseblief seker dat u die volgende voorvereistes op u stelsel geïnstalleer het.",
+      "step_1": "Bedryfstelsels: Microsoft Windows, Linux, MacOS",
+      "step_2": "Ontwikkelingsomgewings: {{DevEnv}}",
+      "step_3": "Raamwerke",
+      "step_4": "Kry die nuutste weergawe van {{ProductFullName}} afgelaai vanaf [{{RepoName}}]({{RepoUrl}})"
+    }
+  },
+  "demos": {
+    "title": "{{EXT}} Redigeerder Regstreekse Demo's",
+    "content": "Wysig {{EXT}} op die oomblik deur [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) webwerf te besoek.\r\n        Die lewendige demo het die volgende voordele"
+  },
+  "more_formats": {
+    "title": "Ander ondersteunde redakteurs",
+    "content": "Jy kan ook ander lêerformate wysig. Sien asseblief die volledige lys hieronder."
+  }
+}

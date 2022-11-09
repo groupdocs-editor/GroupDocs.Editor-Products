@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "Editor {{EXT}} – Upravte {{EXT}} v {{PlatformName}}",
+    "description": "Ako upraviť {{EXT}} v {{PlatformName}} pomocou niekoľkých riadkov kódu? Použite rozhrania API na spracovanie dokumentov GroupDocs na úpravu, aktualizáciu a uloženie viac ako 30 formátov súborov."
+  },
+  "header": {
+    "title": "Upraviť {{EXT}} v {{PlatformName}}",
+    "description": "Efektívne a robustné úpravy {{EXT}} pomocou GroupDocs.Editor na strane servera pre {{PlatformName}} API bez použitia akéhokoľvek softvéru ako Microsoft alebo Open Office.",
+    "label": "Stiahnite si bezplatnú skúšobnú verziu"
+  },
+  "submenu": {
+    "content_middle": {
+      "button_text_ApiReference": "Referencia API",
+      "button_text_CodeExamples": "Príklady kódov",
+      "button_text_LiveDemos": "Živé ukážky",
+      "button_text_Pricing": "Stanovenie cien"
+    }
+  },
+  "about": {
+    "title": "O {{ProductFullName}} API",
+    "h1": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) API je správnou voľbou na úpravu dokumentov a prezentácií Microsoft Word, Excel, PowerPoint, Open Office. GroupDocs.Editor je samostatné API, ktoré je vhodné pre serverové a back-endové systémy, kde sa vyžaduje vysoký výkon. Nezávisí od žiadneho softvéru ako Microsoft alebo Open Office."
+  },
+  "steps": {
+    "title_left": "Kroky na úpravu {{EXT}} v {{ProgLang}}",
+    "content_left": {
+      "description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) poskytuje vývojárom jednoduchý a priamy spôsob úpravy súborov {{EXT}} pomocou niekoľkých riadkov kódu."
+    },
+    "title_right": "Požiadavky na systém",
+    "content_right": {
+      "description": "Základné úpravy dokumentov pomocou rozhraní API {{ProductFullName}} je možné vykonať implementáciou niekoľkých jednoduchých krokov. Naše API sú podporované na všetkých hlavných platformách a operačných systémoch. Pred spustením nižšie uvedeného kódu sa uistite, že máte vo svojom systéme nainštalované nasledujúce predpoklady.",
+      "step_1": "Operačné systémy: Microsoft Windows, Linux, MacOS",
+      "step_2": "Vývojové prostredia: {{DevEnv}}",
+      "step_3": "Rámce",
+      "step_4": "Stiahnite si najnovšiu verziu produktu {{ProductFullName}} z [{{RepoName}}]({{RepoUrl}})"
+    }
+  },
+  "demos": {
+    "title": "Živé ukážky editora {{EXT}}",
+    "content": "Upravte {{EXT}} hneď teraz na webovej stránke [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family).\r\n        Živá ukážka má nasledujúce výhody"
+  },
+  "more_formats": {
+    "title": "Ďalšie podporované editory",
+    "content": "Môžete tiež upravovať iné formáty súborov. Úplný zoznam nájdete nižšie."
+  }
+}

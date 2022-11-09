@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "{{EXT}} ผู้แก้ไข — แก้ไข {{EXT}} ใน {{PlatformName}}",
+    "description": "วิธีแก้ไข {{EXT}} ใน {{PlatformName}} โดยใช้โค้ดสองสามบรรทัด ใช้ API การประมวลผลเอกสาร GroupDocs เพื่อแก้ไข อัปเดต และบันทึกรูปแบบไฟล์มากกว่า 30 รูปแบบ"
+  },
+  "header": {
+    "title": "แก้ไข {{EXT}} ใน {{PlatformName}}",
+    "description": "การแก้ไข {{EXT}} ที่มีประสิทธิภาพและมีประสิทธิภาพโดยใช้ GroupDocs.Editor ฝั่งเซิร์ฟเวอร์สำหรับ API ของ {{PlatformName}} โดยไม่ต้องใช้ซอฟต์แวร์ใดๆ เช่น Microsoft หรือ Open Office",
+    "label": "ดาวน์โหลด ทดลองใช้ฟรี"
+  },
+  "submenu": {
+    "content_middle": {
+      "button_text_ApiReference": "การอ้างอิง API",
+      "button_text_CodeExamples": "ตัวอย่างโค้ด",
+      "button_text_LiveDemos": "การสาธิตสด",
+      "button_text_Pricing": "ราคา"
+    }
+  },
+  "about": {
+    "title": "เกี่ยวกับ {{ProductFullName}} API",
+    "h1": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) API เป็นตัวเลือกที่เหมาะสมในการแก้ไขเอกสาร Microsoft Word, Excel, PowerPoint, Open Office และงานนำเสนอ GroupDocs.Editor เป็น API แบบสแตนด์อโลนที่เหมาะสำหรับระบบฝั่งเซิร์ฟเวอร์และระบบแบ็คเอนด์ที่ต้องการประสิทธิภาพสูง ไม่ได้ขึ้นอยู่กับซอฟต์แวร์ใดๆ เช่น Microsoft หรือ Open Office"
+  },
+  "steps": {
+    "title_left": "ขั้นตอนในการแก้ไข {{EXT}} ใน {{ProgLang}}",
+    "content_left": {
+      "description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) เป็นวิธีที่ง่ายและตรงไปตรงมาสำหรับนักพัฒนาในการแก้ไขไฟล์ {{EXT}} โดยใช้โค้ดสองสามบรรทัด"
+    },
+    "title_right": "ความต้องการของระบบ",
+    "content_right": {
+      "description": "การแก้ไขเอกสารขั้นพื้นฐานด้วย {{ProductFullName}} API สามารถทำได้โดยใช้ขั้นตอนง่ายๆ ไม่กี่ขั้นตอน API ของเราได้รับการสนับสนุนบนแพลตฟอร์มและระบบปฏิบัติการหลักทั้งหมด ก่อนดำเนินการโค้ดด้านล่าง โปรดตรวจสอบให้แน่ใจว่าคุณได้ติดตั้งข้อกำหนดเบื้องต้นต่อไปนี้ไว้ในระบบของคุณแล้ว",
+      "step_1": "ระบบปฏิบัติการ: Microsoft Windows, Linux, MacOS",
+      "step_2": "สภาพแวดล้อมการพัฒนา: {{DevEnv}}",
+      "step_3": "กรอบงาน",
+      "step_4": "ดาวน์โหลด {{ProductFullName}} เวอร์ชันล่าสุดจาก [{{RepoName}}]({{RepoUrl}})"
+    }
+  },
+  "demos": {
+    "title": "{{EXT}} การสาธิตสดของบรรณาธิการ",
+    "content": "แก้ไข {{EXT}} ทันทีโดยไปที่เว็บไซต์ [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family)\r\n        การสาธิตสดมีประโยชน์ดังต่อไปนี้"
+  },
+  "more_formats": {
+    "title": "บรรณาธิการที่สนับสนุนอื่น ๆ",
+    "content": "คุณยังสามารถแก้ไขรูปแบบไฟล์อื่นๆ ได้อีกด้วย โปรดดูรายการทั้งหมดด้านล่าง"
+  }
+}

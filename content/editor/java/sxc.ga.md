@@ -1,0 +1,133 @@
+---
+############################# Static ############################
+layout: "auto-gen-editor"
+date: 2022-11-09T21:38:28
+draft: false
+otherformats: doc docx docm dotx xls xlsx xlsm ppt pptx pptm mobi epub html mhtml txt xml csv rtf odt msg
+
+############################# Head ############################
+head_title: "SXC Eagarthóir — Cuir SXC in eagar in {{ PlatformName}}"
+head_description: "Conas SXC in Java a chur in eagar ag úsáid cúpla líne de chód? Bain úsáid as APIanna próiseála doiciméad GroupDocs chun 30+ formáid comhaid a chur in eagar, a nuashonrú agus a shábháil."
+
+############################# Header ############################
+title: "Cuir SXC in eagar in {{ PlatformName}}"
+description: "Eagarthóireacht éifeachtach agus láidir SXC ag baint úsáide as taobh an fhreastalaí GroupDocs.Editor le haghaidh APIanna {{ PlatformName}}, gan úsáid a bhaint as aon bhogearraí ar nós Microsoft nó Open Office."
+bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
+bg_overlay: false
+button:
+    enable: true
+    icon: "fas fa-arrow-down"
+    label: "Íoslódáil Triail Saor in Aisce"
+    link: "https://downloads.groupdocs.com/editor/java"
+
+############################# SubMenu ############################
+submenu:
+    enable: true
+
+    left:
+        img_alt: "GroupDocs.Editor for Java"
+        image: "https://cms.admin.containerize.com/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-editor-java.png"
+        product: "GroupDocs.Editor"
+        platform: "Java"
+
+    middle:
+        button:
+
+            # button loop
+            - link: "https://apireference.groupdocs.com/editor/java"
+              text: "Tagairt API"
+
+            # button loop
+            - link: "https://github.com/groupdocs-editor"
+              text: "Samplaí de Chóid"
+
+            # button loop
+            - link: "https://products.groupdocs.app/editor/family"
+              text: "Taispeántas beo"
+
+            # button loop
+            - link: "https://purchase.groupdocs.com/pricing/editor/java"
+              text: "Praghsáil"
+
+    right:
+        link_download: "https://downloads.groupdocs.com/editor"
+        link_learn: "https://docs.groupdocs.com/editor/java"
+        link_buy: "https://purchase.groupdocs.com"
+
+############################# About ############################
+about:
+    enable: true
+    title: "Maidir le GroupDocs.Editor for Java API"
+    content: |
+        [GroupDocs.Editor for Java](/ga/editor/java/) Is rogha cheart é API chun Microsoft Word, Excel, PowerPoint, doiciméid Open Office agus láithreoireachtaí a chur in eagar. Is API neamhspleách é GroupDocs.Editor atá oiriúnach do chórais taobh an fhreastalaí agus cúil ina bhfuil ardfheidhmíocht ag teastáil. Ní bhraitheann sé ar aon bhogearraí cosúil le Microsoft nó Open Office.
+
+############################# Steps ############################
+steps:
+    enable: true
+    title_left: "Céimeanna chun SXC a chur in eagar in Java"
+    content_left: |
+        Soláthraíonn [GroupDocs.Editor for Java](/ga/editor/java/) bealach éasca agus simplí d’fhorbróirí chun na comhaid SXC a chur in eagar ag úsáid cúpla líne cód.
+        * Cruthaigh sampla de rang `Eagarthóir` le conair nó sruth comhaid éigeantach agus rang roghnach `SpreadsheetLoadOptions` agus lódáil an comhad SXC
+        * Cruthaigh & socraigh an sampla ranga `SpreadsheetEditOptions` don fhormáid comhaid SXC
+        * Glaoigh ar an modh `Editor.Edit()` agus faigh doiciméad SXC i bhformáid HTML is furasta a chur in eagar le haon eagarthóir WYSIWYG.
+        * Glaoigh ar an modh `Editor.Save()` agus sábháil an comhad SXC atá curtha in eagar ag úsáid rang `SpreadsheetSaveOptions`
+
+        
+    title_right: "Riachtanais Chórais"
+    content_right: |
+        Is féidir bun-eagarthóireacht doiciméad le APIs GroupDocs.Editor for Java a dhéanamh trí roinnt céimeanna éasca a chur i bhfeidhm. Tacaítear lenár n-API ar gach mór-ardán agus córas oibriúcháin. Sula ndéanann tú an cód thíos, déan cinnte go bhfuil na réamhriachtanais seo a leanas suiteáilte ar do chóras.
+
+        * Córais Oibriúcháin: Microsoft Windows, Linux, MacOS
+        * Timpeallachtaí Forbartha: NetBeans, IntelliJ IDEA, Eclipse
+        * Creataí: Java 7 (1.7) and above
+        * Faigh an leagan is déanaí de GroupDocs.Editor for Java íoslódála ó [Maven](https://repository.groupdocs.com/editor/)
+        
+    code: |        
+        ```java
+        // Load the SXC file into Editor with the optional SpreadsheetLoadOptions
+        Editor editor = new Editor("source.sxc", new SpreadsheetLoadOptions());
+
+        // Create and adjust the edit options
+        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
+        editOptions.setWorksheetIndex(1);//select a tab (worksheet) to edit
+
+        // Open input SXC document for edit — obtain an intermediate document, that can be edited
+        EditableDocument beforeEdit = editor.edit(editOptions);
+
+        // Grab SXC document content and associated resources from editable document
+        string content = beforeEdit.getContent();
+
+        // Send the content to WYSIWYG-editor, edit it there, and send edited content back to the server-side
+        // This step simulates a such operation
+        string updatedContent = content.replace("Cell Text", "Edited Cell Text");
+
+        // Grab edited content and resources from WYSIWYG-editor and create a new EditableDocument instance from it
+        EditableDocument afterEdit = EditableDocument.fromMarkup(updatedContent, null);
+
+        // Create a save options and select a desired output format
+        SpreadsheetSaveOptions saveOptions = new SpreadsheetSaveOptions(SpreadsheetFormats.Sxc);
+
+        // Save edited SXC document to the file
+        editor.save(afterEdit, "edited.sxc", saveOptions);
+        ```
+        
+############################# Demos ############################
+demos:
+    enable: true
+    title: "SXC Eagarthóir Beo Taispeántais"
+    content: |
+        Cuir SXC in eagar faoi láthair trí chuairt a thabhairt ar [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family).
+        Tá na buntáistí seo a leanas ag an taispeántas beo
+        
+############################# More Formats ############################
+more_formats:
+    enable: true
+    title: "Eagarthóirí Eile Tacaithe"
+    content: |
+        Is féidir leat formáidí comhaid eile a chur in eagar freisin. Féach ar an liosta iomlán thíos.
+
+
+############################# Back to top ###############################
+back_to_top:
+    enable: true
+---

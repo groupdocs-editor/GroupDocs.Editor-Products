@@ -1,0 +1,94 @@
+{
+  "head": {
+    "title": "C# .NET dokumentu redaktora API | Rediģējiet Word Excel PowerPoint Web XML, izmantojot HTML",
+    "description": "C# .NET dokumentu redaktora API, lai ielādētu Microsoft Word, Excel, PowerPoint, PDF, XML, tīmekļa un teksta failu formātus HTML, apstrādātu un pārveidotu atpakaļ sākotnējā formātā."
+  },
+  "header": {
+    "title": ".NET API, lai rediģētu dokumentus, izmantojot HTML",
+    "description": "Izstrādājiet .NET lietojumprogrammas, lai tās integrētu ar HTML redaktoru, izgūtu atbalstīto dokumentu, rediģētu un pārveidotu to sākotnējā formātā."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "Pārskats"
+      },
+      "button_features": {
+        "text": "Iespējas"
+      },
+      "button_support": {
+        "text": "Atbalsts"
+      },
+      "button_livedemo": {
+        "text": "Demo tiešraide"
+      },
+      "button_pricing": {
+        "text": "Cenu noteikšana"
+      }
+    }
+  },
+  "Overview": {
+    "content": "GroupDocs.Editor for .NET API palīdz jums izveidot vienkāršas un viegli lietojamas C#, ASP.NET un citas .NET lietojumprogrammas, kas viegli integrējas ar populāriem HTML redaktoriem (gan atvērtā koda, gan maksas), lai konvertētu, rediģētu un apstrādātu dokumentus populāri failu formāti. Mūsu .NET Editor API ļauj ielādēt dokumentu, pārvērst to HTML formātā, pārsūtīt HTML uz ārējo HTML redaktoru un, tiklīdz manipulācijas ir pabeigtas, saglabā HTML tā sākotnējā faila formātā. Varat arī atsevišķi ienest jebkuram dokumentam pievienotos resursus. Tas darbojas ar visu veidu dokumentiem, piemēram, ar Microsoft Word, Excel, PowerPoint, PDF, XPS, OpenDocument, tekstu, Web, e-pastu, e-grāmatām un citiem dokumentiem.",
+    "tab1": {
+      "description": "Tālāk ir sniegts pārskats par GroupDocs.Editor for .NET",
+      "title": "Manipulēt, izmantojot HTML",
+      "content1": "Ielādējiet atbalstīto dokumentu",
+      "content2": "Rediģējiet saturu, izmantojot HTML",
+      "content3": "Rediģēt saistītos stilus",
+      "content4": "Konvertēt oriģinālajā formātā"
+    },
+    "tab2": {
+      "description": "GroupDocs.Editor for .NET atbalsta šādus [failu formātus](https://docs.groupdocs.com/editor/java/supported-document-formats/)",
+      "title": "Citu formātu saimes",
+      "content1": "OpenDocument formāti",
+      "content2": "Fiksēta izkārtojuma formāti",
+      "content3": "Web formāti",
+      "content4": "Elektronisko grāmatu (e-grāmatu) formāti"
+    },
+    "tab3": {
+      "description": "GroupDocs.Editor for .NET atbalsta šādas operētājsistēmas, ietvarus un pakotņu pārvaldniekus",
+      "title_os": "Operētājsistēmas",
+      "title_frameworks": "Atbalstītie ietvari",
+      "title_packman": "Pakešu pārvaldnieki",
+      "title_devenv": "Attīstības vide"
+    }
+  },
+  "Features": {
+    "title": "GroupDocs.Editor .NET līdzekļiem",
+    "feature_loop": {
+      "1": "Vienkārša integrācija ar jebkuru HTML redaktoru",
+      "2": "Konvertējiet dokumentu uz HTML DOM",
+      "3": "Ienesiet HTML saturu no dokumentu straumes",
+      "4": "Iegūstiet HTML saturu un tā iegultos resursus",
+      "5": "Iegūstiet HTML pamatteksta tagu saturu no dokumenta",
+      "6": "Iegūstiet HTML dokumenta CSS stila lapas",
+      "7": "Šķērsojiet HTML saturu un saglabājiet tā resursus",
+      "8": "Ienesiet HTML DOM no virknes satura un konvertējiet uz dokumentu",
+      "9": "HTML DOM kopā ar resursu konvertēšanu",
+      "10": "Rediģējiet dažādu formātu dokumentus HTML",
+      "11": "Precīza konversija",
+      "12": "Iegūtajam dokumentam piemērojiet lasīšanas un/vai rakstīšanas aizsardzību",
+      "13": "Paginajiet tekstapstrādes dokumentus un rediģējiet jebkurā WYSIWYG redaktorā",
+      "14": "Datu bāze (DB) un lietotāja interfeiss (UI) Agnostiķis",
+      "15": "Jaudīgi XML apstrādes līdzekļi",
+      "16": "Izgūt OTF (atvērtā tipa fontus) no ievades dokumentiem un eksportēt uz iegūto dokumentu",
+      "17": "Apstrādājiet rastra un vektora attēlus iekšēji atbalstītajos ievades dokumentu formātos",
+      "18": "Ievietojiet rediģētās darblapas saturu oriģinālajā izklājlapā vēlamajā pozīcijā",
+      "19": "Rediģējiet slaidus un ievietojiet tos iegūtajā izklājlapā",
+      "20": "Saglabāšanas laikā ieguliet fontus iegūtajā tekstapstrādes dokumentā"
+    },
+    "more_features_loop": {
+      "title1": "Precīza konvertēšana uz un no HTML DOM",
+      "content1": "GroupDocs.Editor for .NET API ļauj jūsu .NET lietojumprogrammām izgūt atbalstīta formāta dokumentu un pārvērst to par HTML dokumenta objektu modeli (DOM), kā arī iegūt pievienotos resursus, piemēram, CSS. Pēc tam varat veikt izmaiņas HTML, izmantojot savu iecienītāko HTML redaktoru. Kad esat pabeidzis rediģēšanu, GroupDocs.Editor for .NET API ļauj precīzi konvertēt šo HTML DOM atpakaļ sākotnējā failā.",
+      "title2": "Ielādējiet un izņemiet ārējos resursus",
+      "content2": "GroupDocs.Editor for .NET API spēj izgūt ārējos resursus, kas pievienoti atbalstītajiem dokumentiem, piemēram, attēlus, fontus, CSS un citus. Ienestos resursus pēc tam var ielādēt, šķērsot un saglabāt atsevišķi no iegūtā HTML dokumenta. Tas nodrošina vieglāk pārvaldāmu izvadi.",
+      "title3": "Lietojiet teksta efektus tekstapstrādes failu formātos",
+      "content3": "GroupDocs dokumentu redaktora API ļauj pievienot sarežģītus teksta efektus (ēna, 3D efekts, kontūra, spīdums, gravēšana, reljefs), strādājot ar atbalstītajiem Microsoft Word dokumentu apstrādes formātiem. Šī funkcija ir automātiski iespējota, ko var novērot, apstrādājot dokumentu ar šādiem teksta efektiem.",
+      "title4": "Jaudīgas XML manipulācijas funkcijas",
+      "content4-1": "Izmantojot GroupDocs.Editor for .NET API, varat atvērt, skatīt un rediģēt XML dokumentus. Mūsu rediģēšanas API piedāvā īpašu atbalstu un atpazīšanu XML tagiem, atribūtiem kopā ar to vērtībām, XML deklarācijām, CDATA sadaļām, DOCTYPE definīcijām un citām XML specifiskām entītijām. Jūs varat pielāgot fontu un krāsu iestatījumus katrai atsevišķai vienībai XML struktūrā.",
+      "content4-2": "Funkcija XML Converter ir pietiekami gudra, lai parādītu kļūdas XML failā un to labošanu. URI un e-pasta atpazīšanas mehānisms skenē XML atribūtus un attēlo A tagā konstatētos URI un e-pasta adreses kā saites, lai tās varētu rediģēt kā saiti, nevis kā tekstu iegūtajā HTML failā."
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor piedāvā dokumentu rediģēšanas API citām populārām izstrādes vidēm"
+  }
+}

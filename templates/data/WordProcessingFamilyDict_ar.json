@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "قم بإنشاء مثيل لفئة \"Editor\" مع مسار ملف إلزامي أو دفق وفئة \"WordProcessingLoadOptions\" اختيارية وتحميل الملف {{EXT}}",
+    "step_2": "إنشاء وتعيين مثيل فئة `WordProcessingEditOptions` لتنسيق الملف {{EXT}}",
+    "step_3": "قم باستدعاء طريقة `Editor.Edit ()` واحصل على مستند {{EXT}} بتنسيق HTML الذي يمكن تحريره بسهولة باستخدام أي محرر WYSIWYG.",
+    "step_4": "قم باستدعاء طريقة `Editor.Save ()` واحفظ الملف {{EXT}} المحرر باستخدام فئة `WordProcessingSaveOptions`"
+  }
+}

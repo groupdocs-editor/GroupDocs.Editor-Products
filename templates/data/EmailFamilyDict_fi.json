@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Luo \"Editor\"-luokan esiintymä pakollisella tiedostopolulla tai tavuvirralla ja lataa {{EXT}}-tiedosto",
+    "step_2": "Luo ja aseta EmailEditOptions-luokan esiintymä tiedostomuodolle {{EXT}}",
+    "step_3": "Kutsu `Editor.Edit()`-menetelmä ja hanki {{EXT}}-dokumentti HTML-muodossa, jota on helppo muokata millä tahansa WYSIWYG-editorilla.",
+    "step_4": "Kutsu \"Editor.Save()\"-menetelmä ja tallenna muokattu {{EXT}}-tiedosto käyttämällä \"EmailSaveOptions\"-luokkaa"
+  }
+}

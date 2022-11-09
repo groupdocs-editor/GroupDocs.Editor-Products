@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "حل تحرير المستندات | في Premise APIs والتطبيقات المجانية",
+    "description": "تحرير المستندات لـ Microsoft Office و OpenDocument و PDF وتنسيقات الملفات الأخرى باستخدام واجهات برمجة التطبيقات في Premise أو استخدام تطبيق محرر المستندات عبر الإنترنت."
+  },
+  "header": {
+    "title": "حل تحرير المستندات",
+    "description": "محرر المستندات لمعالجة ملفات Microsoft Office و OpenOffice و PDF و HTML وتنسيقات ملفات المستندات الأخرى."
+  },
+  "APIs": {
+    "API_loop_high_code": {
+      "title": "GroupDocs.Editor عالية كود API تشمل",
+      "label": "عرض جميع واجهات برمجة التطبيقات عالية الكود",
+      "API_product_net": {
+        "content": "في Premise .NET API يساعد تطبيقك في عرض المستندات وتحريرها ثم تحويلها."
+      },
+      "API_product_java": {
+        "content": "واجهة برمجة تطبيقات تحرير المستندات لـ Microsoft Office و OpenOffice و HTML والمستندات الأخرى للتلاعب بها داخل تطبيقات Java الخاصة بك."
+      }
+    },
+    "API_loop_low_code": {
+      "title": "GroupDocs.Editor منخفضة كود API تشمل",
+      "label": "عرض جميع واجهات برمجة التطبيقات ذات التعليمات البرمجية المنخفضة",
+      "Cloud_SDK_net": {
+        "content": "أضف ميزات فعالة لتحرير تنسيقات المستندات في تطبيقات .NET باستخدام Cloud SDK لـ .NET. تحرير مستندات MS Office والويب و XML."
+      },
+      "Cloud_SDK_java": {
+        "content": "محرر المستندات المتقدم SDK لتطبيقات Java لتحرير تنسيقات ملفات المستندات القياسية الصناعية على أي نظام أساسي قادر على استدعاء واجهات برمجة تطبيقات REST."
+      }
+    },
+    "API_loop_no_code": {
+      "title": "GroupDocs.Editor لا تشمل تطبيقات التعليمات البرمجية",
+      "label": "عرض جميع تطبيقات لا كود",
+      "Total": {
+        "content": "تطبيق مجاني على الإنترنت لتعديل تنسيقات الملفات الشائعة من Office & OpenOffice."
+      },
+      "DOCX": {
+        "content": "تطبيق محرر مجاني لعرض مستندات Microsoft Word وتعديلها عبر الإنترنت."
+      },
+      "PDF": {
+        "content": "استخدم أي جهاز وأي متصفح لعرض أو تحرير مستندات PDF و XPS."
+      }
+    }
+  }
+}

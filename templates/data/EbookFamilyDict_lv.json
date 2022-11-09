@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Izveidojiet klases \"Redaktors\" gadījumu ar obligātu faila ceļu vai baitu straumi un ielādējiet failu {{EXT}}",
+    "step_2": "Izveidojiet un iestatiet EbookEditOptions klases gadījumu faila formātam {{EXT}}",
+    "step_3": "Izsauciet metodi \"Editor.Edit()\" un iegūstiet {{EXT}} dokumentu HTML formātā, kas ir viegli rediģējams ar jebkuru WYSIWYG redaktoru.",
+    "step_4": "Izsauciet metodi \"Editor.Save()\" un saglabājiet rediģēto {{EXT}} failu, izmantojot klasi \"EpubSaveOptions\" vai \"Azw3SaveOptions\", lai to saglabātu attiecīgi ePub vai AZW3 formātā."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "{{EXT}} Editor – Muokkaa {{EXT}} kohteessa {{PlatformName}}",
+    "description": "Kuinka muokata {{EXT}} sovelluksessa {{PlatformName}} muutamalla koodirivillä? Käytä GroupDocs-asiakirjojen käsittelysovellusliittymiä yli 30 tiedostomuodon muokkaamiseen, päivittämiseen ja tallentamiseen."
+  },
+  "header": {
+    "title": "Muokkaa {{EXT}}: {{PlatformName}}",
+    "description": "Tehokas ja vankka {{EXT}}-muokkaus palvelinpuolen GroupDocs.Editorilla {{PlatformName}}-sovellusliittymille ilman Microsoftin tai Open Officen kaltaisia ​​ohjelmistoja.",
+    "label": "Lataa ilmainen kokeiluversio"
+  },
+  "submenu": {
+    "content_middle": {
+      "button_text_ApiReference": "API-viite",
+      "button_text_CodeExamples": "Esimerkkejä koodista",
+      "button_text_LiveDemos": "Live-demoja",
+      "button_text_Pricing": "Hinnoittelu"
+    }
+  },
+  "about": {
+    "title": "Tietoja {{ProductFullName}} API:sta",
+    "h1": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) API on oikea valinta Microsoft Word-, Excel-, PowerPointi-, Open Office -asiakirjojen ja -esitysten muokkaamiseen. GroupDocs.Editor on erillinen API, joka sopii palvelinpuolen ja taustajärjestelmän järjestelmiin, joissa vaaditaan korkeaa suorituskykyä. Se ei riipu Microsoftin tai Open Officen kaltaisista ohjelmistoista."
+  },
+  "steps": {
+    "title_left": "Vaiheet {{EXT}} muokkaamiseen {{ProgLang}}",
+    "content_left": {
+      "description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) tarjoaa kehittäjille helpon ja suoraviivaisen tavan muokata {{EXT}}-tiedostoja muutamalla koodirivillä."
+    },
+    "title_right": "Laitteistovaatimukset",
+    "content_right": {
+      "description": "Asiakirjan perusmuokkaus {{ProductFullName}} API:illa voidaan tehdä ottamalla käyttöön muutama helppo vaihe. API-liittymiämme tuetaan kaikilla tärkeimmillä alustoilla ja käyttöjärjestelmillä. Ennen kuin suoritat alla olevan koodin, varmista, että sinulla on seuraavat edellytykset asennettuna järjestelmääsi.",
+      "step_1": "Käyttöjärjestelmät: Microsoft Windows, Linux, MacOS",
+      "step_2": "Kehitysympäristöt: {{DevEnv}}",
+      "step_3": "Kehykset",
+      "step_4": "Lataa tuotteen {{ProductFullName}} uusin versio osoitteesta [{{RepoName}}]({{RepoUrl}})"
+    }
+  },
+  "demos": {
+    "title": "{{EXT}} Editor Live Demos",
+    "content": "Muokkaa {{EXT}} heti käymällä [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) -sivustolla.\r\n        Live-demolla on seuraavat edut"
+  },
+  "more_formats": {
+    "title": "Muut tuetut editorit",
+    "content": "Voit myös muokata muita tiedostomuotoja. Katso täydellinen luettelo alla."
+  }
+}

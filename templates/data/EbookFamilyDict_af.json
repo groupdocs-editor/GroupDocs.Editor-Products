@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Skep 'n instansie van `Editor`-klas met verpligte lêerpad of greepstroom en laai die {{EXT}}-lêer",
+    "step_2": "Skep en stel die `EbookEditOptions`-klasinstansie vir die {{EXT}}-lêerformaat",
+    "step_3": "Roep `Editor.Edit()`-metode en verkry {{EXT}}-dokument in HTML-formaat wat maklik met enige WYSIWYG-redigeerder geredigeer kan word.",
+    "step_4": "Roep `Editor.Save()`-metode en stoor geredigeerde {{EXT}}-lêer deur gebruik te maak van `EpubSaveOptions`- of `Azw3SaveOptions`-klas vir die stoor in onderskeidelik ePub- of AZW3-formate"
+  }
+}

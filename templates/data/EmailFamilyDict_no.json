@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Opprett en forekomst av 'Editor'-klassen med obligatorisk filbane eller bytestrøm og last inn {{EXT}}-filen",
+    "step_2": "Opprett og still inn klasseforekomsten `EmailEditOptions` for filformatet {{EXT}}",
+    "step_3": "Kall `Editor.Edit()`-metoden og skaff {{EXT}}-dokumentet i HTML-format som enkelt kan redigeres med hvilken som helst WYSIWYG-editor.",
+    "step_4": "Kall `Editor.Save()`-metoden og lagre den redigerte {{EXT}}-filen med `EmailSaveOptions`-klassen"
+  }
+}

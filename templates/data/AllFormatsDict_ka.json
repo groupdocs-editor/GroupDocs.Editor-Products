@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "{{EXT}} რედაქტორი — რედაქტირება {{EXT}} {{PlatformName}}-ში",
+    "description": "როგორ დაარედაქტიროთ {{EXT}} {{PlatformName}} კოდის რამდენიმე ხაზის გამოყენებით? გამოიყენეთ GroupDocs დოკუმენტების დამუშავების API-ები 30+ ფაილის ფორმატის რედაქტირებისთვის, განახლებისთვის და შესანახად."
+  },
+  "header": {
+    "title": "{{EXT}}-ის რედაქტირება {{PlatformName}}-ში",
+    "description": "ეფექტური და ძლიერი {{EXT}} რედაქტირება სერვერის GroupDocs.Editor-ის გამოყენებით {{PlatformName}} API-ებისთვის, ნებისმიერი პროგრამული უზრუნველყოფის გამოყენების გარეშე, როგორიცაა Microsoft ან Open Office.",
+    "label": "ჩამოტვირთეთ უფასო საცდელი"
+  },
+  "submenu": {
+    "content_middle": {
+      "button_text_ApiReference": "API მითითება",
+      "button_text_CodeExamples": "კოდის მაგალითები",
+      "button_text_LiveDemos": "ცოცხალი დემო",
+      "button_text_Pricing": "ფასი"
+    }
+  },
+  "about": {
+    "title": "{{ProductFullName}} API-ს შესახებ",
+    "h1": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) API არის სწორი არჩევანი Microsoft Word-ის, Excel-ის, PowerPoint-ის, Open Office დოკუმენტებისა და პრეზენტაციების რედაქტირებისთვის. GroupDocs.Editor არის დამოუკიდებელი API, რომელიც შესაფერისია სერვერის მხარისა და უკანა სისტემებისთვის, სადაც საჭიროა მაღალი შესრულება. ეს არ არის დამოკიდებული რაიმე პროგრამულ უზრუნველყოფაზე, როგორიცაა Microsoft ან Open Office."
+  },
+  "steps": {
+    "title_left": "ნაბიჯები {{EXT}}-ის რედაქტირებისთვის {{ProgLang}}-ში",
+    "content_left": {
+      "description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) უზრუნველყოფს დეველოპერებს მარტივ და მარტივ გზას, დაარედაქტირონ {{EXT}} ფაილები კოდის რამდენიმე ხაზის გამოყენებით."
+    },
+    "title_right": "სისტემის მოთხოვნები",
+    "content_right": {
+      "description": "დოკუმენტის ძირითადი რედაქტირება {{ProductFullName}} API-ებით შეიძლება განხორციელდეს რამდენიმე მარტივი ნაბიჯის განხორციელებით. ჩვენი API მხარდაჭერილია ყველა ძირითად პლატფორმაზე და ოპერაციულ სისტემაზე. ქვემოთ მოცემული კოდის შესრულებამდე, დარწმუნდით, რომ თქვენს სისტემაში დაინსტალირებული გაქვთ შემდეგი წინაპირობები.",
+      "step_1": "ოპერაციული სისტემები: Microsoft Windows, Linux, MacOS",
+      "step_2": "განვითარების გარემო: {{DevEnv}}",
+      "step_3": "ჩარჩოები",
+      "step_4": "მიიღეთ {{ProductFullName}}-ის უახლესი ვერსია ჩამოტვირთული [{{RepoName}}]-დან ({{RepoUrl}})"
+    }
+  },
+  "demos": {
+    "title": "{{EXT}} რედაქტორი ცოცხალი დემო",
+    "content": "შეცვალეთ {{EXT}} ახლავე, ეწვიეთ [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) ვებსაიტს.\r\n        ცოცხალი დემოს აქვს შემდეგი უპირატესობები"
+  },
+  "more_formats": {
+    "title": "სხვა მხარდაჭერილი რედაქტორები",
+    "content": "თქვენ ასევე შეგიძლიათ შეცვალოთ ფაილის სხვა ფორმატები. გთხოვთ იხილოთ სრული სია ქვემოთ."
+  }
+}

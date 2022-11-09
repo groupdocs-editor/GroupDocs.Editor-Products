@@ -1,0 +1,89 @@
+{
+  "head": {
+    "title": "Java dokumentų rengyklės API | Redaguokite Word Web XML tekstinius failus naudodami HTML",
+    "description": "Dokumentų rengyklės API, skirta „Java“. Įkelkite Microsoft Word, XML, žiniatinklio ir tekstinius failus į HTML ir konvertuokite atgal į pradinį formatą po manipuliavimo."
+  },
+  "header": {
+    "title": "Redaguokite dokumentus naudodami HTML naudodami Java API",
+    "description": "Integruokite Java programas su HTML redaktoriumi, kad galėtumėte valdyti dokumentus ir konvertuoti atgal į pradinį formatą."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "Apžvalga"
+      },
+      "button_features": {
+        "text": "funkcijos"
+      },
+      "button_support": {
+        "text": "Palaikymas"
+      },
+      "button_livedemo": {
+        "text": "Tiesioginė demonstracija"
+      },
+      "button_pricing": {
+        "text": "Kainodara"
+      }
+    }
+  },
+  "Overview": {
+    "content": "„Java“ API „GroupDocs.Editor“ leidžia redaguoti dokumentus HTML formatu. API palaiko kelis dokumentų formatus ir gali būti integruota su bet kokiu išoriniu, atvirojo kodo arba mokamu HTML redaktoriumi. Redagavimo priemonės API veiks, kad įkeltų dokumentus, konvertuotų juos į HTML, pateiks HTML į išorinę vartotojo sąsają ir po manipuliavimo išsaugos HTML originaliame dokumente. Jis taip pat gali būti naudojamas kuriant įvairius Microsoft Word, Excel skaičiuokles, PowerPoint failus, OpenDocument formatus, XML ir TXT dokumentus.",
+    "tab1": {
+      "description": "Toliau pateikiama „Java“ skirtos „GroupDocs.Editor“ apžvalga",
+      "title": "Manipuliuoti naudojant HTML",
+      "content1": "Įkelti palaikomą dokumentą",
+      "content2": "Redaguokite turinį naudodami HTML",
+      "content3": "Redaguoti susijusius stilius",
+      "content4": "Konvertuoti į pradinį formatą"
+    },
+    "tab2": {
+      "description": "„Java“ skirta „GroupDocs.Editor“ palaiko šiuos [failų formatus](https://docs.groupdocs.com/editor/java/supported-document-formats/)",
+      "title": "Kitų formatų šeimos",
+      "content1": "OpenDocument formatai",
+      "content2": "El. pašto formatai",
+      "content3": "Web formatai",
+      "content4": "Elektroninių knygų (e-Book) formatai"
+    },
+    "tab3": {
+      "description": "„Java“ skirta „GroupDocs.Editor“ palaiko šias operacines sistemas, rėmus ir paketų tvarkykles",
+      "title_os": "Operacinės sistemos",
+      "title_frameworks": "Palaikomi karkasai",
+      "title_packman": "Sukurkite automatizavimo įrankį",
+      "title_devenv": "Plėtros aplinkos"
+    }
+  },
+  "Features": {
+    "title": "„GroupDocs.Editor“, skirta „Java“ funkcijoms",
+    "feature_loop": {
+      "1": "Lengvas HTML redaktoriaus integravimas",
+      "2": "Dokumento konvertavimas į HTML DOM",
+      "3": "Ištraukite HTML turinį iš dokumentų srauto",
+      "4": "Įkelkite, redaguokite ir išsaugokite Word, Excel ir PowerPoint failų formatus",
+      "5": "Gaukite HTML kartu su įterptaisiais elementais",
+      "6": "Importuoti, peržiūrėti ir redaguoti XML dokumentus",
+      "7": "Apeikite HTML turinį ir išsaugokite įterptuosius išteklius",
+      "8": "Peržiūrėkite, redaguokite ir išsaugokite teksto apdorojimo dokumentus puslapio režimu",
+      "9": "Gaukite HTML kūno žymos turinį iš failo",
+      "10": "Išskleiskite HTML failo CSS turinį",
+      "11": "Naudokite eilutės turinį, kad gautumėte HTML DOM ir konvertuotumėte į failą",
+      "12": "Konvertuokite HTML DOM naudodami įterptuosius elementus",
+      "13": "Konvertuokite kelių formatų failus į HTML, kad galėtumėte juos redaguoti",
+      "14": "Gaukite įvesties dokumentų meta informaciją neredaguodami",
+      "15": "Išsaugokite redaguotus dokumentus paprasto teksto failo formatu",
+      "16": "Konversijos tikslumas",
+      "17": "Pritaikykite slaptažodį išvesties dokumentui",
+      "18": "Duomenų bazė (DB) Agnostic",
+      "19": "Vartotojo sąsaja (UI) Agnostic",
+      "20": "Palaiko matuojamą licencijavimą"
+    },
+    "more_features_loop": {
+      "title1": "Tiksliai konvertuoti į ir iš HTML DOM",
+      "content1": "Naudodami „Java“ skirtą „GroupDocs.Editor“ galite kurti programas „Java“, kurios įkelia palaikomo failo formato dokumentą ir konvertuoja jį į HTML dokumento objektų modelį (DOM) kartu su susijusiais elementais, pvz., CSS. Be to, mūsų redaktoriaus Java API leidžia redaguoti HTML bet kuriame populiariame HTML redaktoriuje. Atlikus reikiamus pakeitimus, GroupDocs.Editor for Java padės konvertuoti gautą HTML atgal į pradinį failo formatą.",
+      "title2": "Įkelti ir gauti susijusius elementus",
+      "content2": "„GroupDocs.Editor“, skirta „Java“ API, leidžia gauti susijusius elementus iš palaikomų formatų dokumentų, tokių kaip vaizdai, CSS, šriftai ir kt. Tada galite įkelti šiuos gautus susijusius elementus, juos perbraukti ir išsaugoti atskirai nuo galutinio HTML failo ir turėti gerai valdomą išvestį."
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor siūlo dokumentų redagavimo API kitoms populiarioms kūrimo aplinkoms"
+  }
+}

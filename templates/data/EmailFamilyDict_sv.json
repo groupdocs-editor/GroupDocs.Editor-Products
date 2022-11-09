@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Skapa en instans av klassen \"Editor\" med obligatorisk sökväg eller byteström och ladda {{EXT}}-filen",
+    "step_2": "Skapa och ställ in klassinstansen `EmailEditOptions` för filformatet {{EXT}}",
+    "step_3": "Anropa `Editor.Edit()`-metoden och skaffa {{EXT}}-dokument i HTML-format som lätt kan redigeras med vilken WYSIWYG-redigerare som helst.",
+    "step_4": "Anropa `Editor.Save()`-metoden och spara den redigerade {{EXT}}-filen med klassen `EmailSaveOptions`"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Creați o instanță a clasei `Editor` cu calea fișierului obligatorie sau fluxul de octeți și încărcați fișierul {{EXT}}",
+    "step_2": "Creați și setați instanța clasei `EbookEditOptions` pentru formatul de fișier {{EXT}}",
+    "step_3": "Apelați metoda `Editor.Edit()` și obțineți documentul {{EXT}} în format HTML care este ușor de editat cu orice editor WYSIWYG.",
+    "step_4": "Apelați metoda `Editor.Save()` și salvați fișierul editat {{EXT}} folosind clasa `EpubSaveOptions` sau `Azw3SaveOptions` pentru salvarea în formatele ePub sau, respectiv, AZW3"
+  }
+}

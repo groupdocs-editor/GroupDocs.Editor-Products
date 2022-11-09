@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "Editor {{EXT}} — Editeu {{EXT}} a {{PlatformName}}",
+    "description": "Com editar {{EXT}} a {{PlatformName}} amb unes quantes línies de codi? Utilitzeu les API de processament de documents de GroupDocs per editar, actualitzar i desar més de 30 formats de fitxer."
+  },
+  "header": {
+    "title": "Editeu {{EXT}} a {{PlatformName}}",
+    "description": "Edició {{EXT}} eficaç i robusta mitjançant GroupDocs.Editor del servidor per a les API {{PlatformName}}, sense utilitzar cap programari com Microsoft o Open Office.",
+    "label": "Baixeu la prova gratuïta"
+  },
+  "submenu": {
+    "content_middle": {
+      "button_text_ApiReference": "Referència de l'API",
+      "button_text_CodeExamples": "Exemples de codi",
+      "button_text_LiveDemos": "Demos en directe",
+      "button_text_Pricing": "Preus"
+    }
+  },
+  "about": {
+    "title": "Sobre l'API {{ProductFullName}}",
+    "h1": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) API és una opció correcta per editar documents i presentacions de Microsoft Word, Excel, PowerPoint, Open Office. GroupDocs.Editor és una API autònoma adequada per a sistemes del costat del servidor i de fons on es requereix un alt rendiment. No depèn de cap programari com Microsoft o Open Office."
+  },
+  "steps": {
+    "title_left": "Passos per editar {{EXT}} a {{ProgLang}}",
+    "content_left": {
+      "description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) ofereix als desenvolupadors una manera senzilla i senzilla d'editar els fitxers {{EXT}} utilitzant unes poques línies de codi."
+    },
+    "title_right": "Requisits del sistema",
+    "content_right": {
+      "description": "Es pot fer una edició bàsica de documents amb les API {{ProductFullName}} implementant uns quants passos senzills. Les nostres API són compatibles amb totes les plataformes i sistemes operatius principals. Abans d'executar el codi següent, assegureu-vos que teniu els següents requisits previs instal·lats al vostre sistema.",
+      "step_1": "Sistemes operatius: Microsoft Windows, Linux, MacOS",
+      "step_2": "Entorns de desenvolupament: {{DevEnv}}",
+      "step_3": "Marcs",
+      "step_4": "Baixeu la darrera versió de {{ProductFullName}} des de [{{RepoName}}]({{RepoUrl}})"
+    }
+  },
+  "demos": {
+    "title": "{{EXT}} Editor de demostracions en directe",
+    "content": "Editeu {{EXT}} ara mateix visitant el lloc web [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family).\r\n        La demostració en directe té els següents avantatges"
+  },
+  "more_formats": {
+    "title": "Altres editors compatibles",
+    "content": "També podeu editar altres formats de fitxer. Si us plau, consulteu la llista completa a continuació."
+  }
+}

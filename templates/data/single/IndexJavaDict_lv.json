@@ -1,0 +1,89 @@
+{
+  "head": {
+    "title": "Java dokumentu redaktora API | Rediģējiet Word Web XML teksta failus, izmantojot HTML",
+    "description": "Java dokumentu redaktora API. Ielādējiet Microsoft Word, XML, tīmekļa un teksta failus HTML un konvertējiet atpakaļ sākotnējā formātā pēc manipulācijām."
+  },
+  "header": {
+    "title": "Rediģējiet dokumentus, izmantojot HTML, izmantojot Java API",
+    "description": "Integrējiet Java lietojumprogrammas ar HTML redaktoru, lai manipulētu ar dokumentiem un konvertētu atpakaļ uz sākotnējo formātu."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "Pārskats"
+      },
+      "button_features": {
+        "text": "Iespējas"
+      },
+      "button_support": {
+        "text": "Atbalsts"
+      },
+      "button_livedemo": {
+        "text": "Demo tiešraide"
+      },
+      "button_pricing": {
+        "text": "Cenu noteikšana"
+      }
+    }
+  },
+  "Overview": {
+    "content": "GroupDocs.Editor for Java API nodrošina dokumentu rediģēšanu HTML formātā. API atbalsta vairākus dokumentu formātus, un to var integrēt ar jebkuru ārējo, atvērtā koda vai maksas HTML redaktoru. Redaktora API apstrādās, lai ielādētu dokumentus, pārveidotu tos par HTML, nodrošinātu HTML ārējam lietotāja interfeisam un pēc manipulācijas saglabātu HTML oriģinālajā dokumentā. To var izmantot arī dažādu Microsoft Word, Excel izklājlapu, PowerPoint failu, OpenDocument formātu, XML un TXT dokumentu ģenerēšanai.",
+    "tab1": {
+      "description": "Tālāk ir sniegts pārskats par GroupDocs.Editor for Java",
+      "title": "Manipulēt, izmantojot HTML",
+      "content1": "Ielādējiet atbalstīto dokumentu",
+      "content2": "Rediģējiet saturu, izmantojot HTML",
+      "content3": "Rediģēt saistītos stilus",
+      "content4": "Konvertēt oriģinālajā formātā"
+    },
+    "tab2": {
+      "description": "GroupDocs.Editor for Java atbalsta šādus [failu formātus](https://docs.groupdocs.com/editor/java/supported-document-formats/)",
+      "title": "Citu formātu saimes",
+      "content1": "OpenDocument formāti",
+      "content2": "E-pasta formāti",
+      "content3": "Web formāti",
+      "content4": "Elektronisko grāmatu (e-grāmatu) formāti"
+    },
+    "tab3": {
+      "description": "GroupDocs.Editor for Java atbalsta šādas operētājsistēmas, ietvarus un pakotņu pārvaldniekus",
+      "title_os": "Operētājsistēmas",
+      "title_frameworks": "Atbalstītie ietvari",
+      "title_packman": "Veidot automatizācijas rīku",
+      "title_devenv": "Attīstības vide"
+    }
+  },
+  "Features": {
+    "title": "GroupDocs.Editor Java funkcijām",
+    "feature_loop": {
+      "1": "Vienkārša HTML redaktora integrācija",
+      "2": "Dokumentu konvertēšana uz HTML DOM",
+      "3": "Izņemiet HTML saturu no dokumentu straumes",
+      "4": "Ielādējiet, rediģējiet un saglabājiet Word, Excel un PowerPoint failu formātus",
+      "5": "Ienesiet HTML kopā ar iegultajiem elementiem",
+      "6": "Importēt, apskatīt un rediģēt XML dokumentus",
+      "7": "Apejiet HTML saturu un saglabājiet iegultos resursus",
+      "8": "Skatiet, rediģējiet un saglabājiet tekstapstrādes dokumentus lappuses režīmā",
+      "9": "Iegūstiet HTML Body Tag saturu no faila",
+      "10": "HTML faila CSS satura izvilkšana",
+      "11": "Izmantojiet virknes saturu, lai iegūtu HTML DOM un pārveidotu par failu",
+      "12": "Konvertējiet HTML DOM ar iegultiem elementiem",
+      "13": "Konvertējiet vairāku formātu failus HTML rediģēšanai",
+      "14": "Iegūstiet ievades dokumentu metainformāciju bez rediģēšanas",
+      "15": "Saglabājiet rediģētos dokumentus vienkārša teksta faila formātā",
+      "16": "Konversijas precizitāte",
+      "17": "Lietojiet paroli izvaddokumentam",
+      "18": "Datu bāze (DB) Agnostiķis",
+      "19": "Lietotāja interfeiss (UI) Agnostiķis",
+      "20": "Atbalsta mērīto licencēšanu"
+    },
+    "more_features_loop": {
+      "title1": "Precīzi konvertējiet uz un no HTML DOM",
+      "content1": "Izmantojot GroupDocs.Editor for Java, varat izveidot Java lietojumprogrammas, kas ielādē atbalstīta faila formāta dokumentu, lai to pārveidotu par HTML dokumenta objektu modeli (DOM) kopā ar saistītajiem elementiem, piemēram, CSS. Turklāt mūsu redaktora Java API ļauj rediģēt HTML jebkurā no populārajiem HTML redaktoriem. Kad nepieciešamās izmaiņas ir veiktas, GroupDocs.Editor for Java palīdz pārvērst šo iegūto HTML atpakaļ sākotnējā faila formātā.",
+      "title2": "Ielādēt un ienest saistītos elementus",
+      "content2": "GroupDocs.Editor for Java API ļauj ienest saistītos elementus no atbalstīto formātu dokumentiem, piemēram, attēlus, CSS, fontus un citus. Pēc tam varat ielādēt šos ienestos saistītos elementus, šķērsot tos un saglabāt tos atsevišķi no galīgā HTML faila, kā arī iegūt labi pārvaldītu izvadi."
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor piedāvā dokumentu rediģēšanas API citām populārām izstrādes vidēm"
+  }
+}

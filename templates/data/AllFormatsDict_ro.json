@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "Editor {{EXT}} — Editați {{EXT}} în {{PlatformName}}",
+    "description": "Cum se editează {{EXT}} în {{PlatformName}} folosind câteva rânduri de cod? Utilizați API-urile de procesare a documentelor GroupDocs pentru a edita, actualiza și salva peste 30 de formate de fișiere."
+  },
+  "header": {
+    "title": "Editați {{EXT}} în {{PlatformName}}",
+    "description": "Editare {{EXT}} eficientă și robustă folosind GroupDocs.Editor pe partea de server pentru API-urile {{PlatformName}}, fără utilizarea vreunui software precum Microsoft sau Open Office.",
+    "label": "Descarcare varianta scurta de prezentare gratuita"
+  },
+  "submenu": {
+    "content_middle": {
+      "button_text_ApiReference": "Referință API",
+      "button_text_CodeExamples": "Exemple de coduri",
+      "button_text_LiveDemos": "Demo live",
+      "button_text_Pricing": "Prețuri"
+    }
+  },
+  "about": {
+    "title": "Despre {{ProductFullName}} API",
+    "h1": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) API este o alegere potrivită pentru a edita documente și prezentări Microsoft Word, Excel, PowerPoint, Open Office. GroupDocs.Editor este un API de sine stătător care este potrivit pentru sistemele server și back-end unde este necesară o performanță ridicată. Nu depinde de niciun software precum Microsoft sau Open Office."
+  },
+  "steps": {
+    "title_left": "Pași pentru a edita {{EXT}} în {{ProgLang}}",
+    "content_left": {
+      "description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) oferă dezvoltatorilor o modalitate simplă și simplă de a edita fișierele {{EXT}} folosind câteva rânduri de cod."
+    },
+    "title_right": "Cerințe de sistem",
+    "content_right": {
+      "description": "O editare de bază a documentelor cu API-urile {{ProductFullName}} poate fi realizată prin implementarea câțiva pași simpli. API-urile noastre sunt acceptate pe toate platformele și sistemele de operare majore. Înainte de a executa codul de mai jos, vă rugăm să vă asigurați că aveți următoarele cerințe preliminare instalate pe sistemul dumneavoastră.",
+      "step_1": "Sisteme de operare: Microsoft Windows, Linux, MacOS",
+      "step_2": "Medii de dezvoltare: {{DevEnv}}",
+      "step_3": "Cadre",
+      "step_4": "Obțineți cea mai recentă versiune de {{ProductFullName}} descărcată de pe [{{RepoName}}]({{RepoUrl}})"
+    }
+  },
+  "demos": {
+    "title": "{{EXT}} Editor Demo live",
+    "content": "Editați {{EXT}} chiar acum, vizitând site-ul [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family).\r\n        Demo-ul live are următoarele beneficii"
+  },
+  "more_formats": {
+    "title": "Alți editori acceptați",
+    "content": "De asemenea, puteți edita și alte formate de fișiere. Vă rugăm să vedeți mai jos lista completă."
+  }
+}

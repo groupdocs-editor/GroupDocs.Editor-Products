@@ -1,0 +1,45 @@
+{
+  "head": {
+    "title": "{{EXT}} редактор — {{PlatformName}} ішінде {{EXT}} өңдеу",
+    "description": "Кодтың бірнеше жолын пайдаланып, {{PlatformName}} ішінде {{EXT}} қалай өңдеуге болады? 30+ файл пішімін өңдеу, жаңарту және сақтау үшін GroupDocs құжаттарын өңдейтін API пайдаланыңыз."
+  },
+  "header": {
+    "title": "{{PlatformName}} ішінде {{EXT}} өңдеу",
+    "description": "Microsoft немесе Open Office сияқты кез келген бағдарламалық жасақтаманы пайдаланбай, {{PlatformName}} API үшін серверлік GroupDocs.Editor көмегімен тиімді және сенімді {{EXT}} өңдеу.",
+    "label": "Тегін сынақ нұсқасын жүктеп алыңыз"
+  },
+  "submenu": {
+    "content_middle": {
+      "button_text_ApiReference": "API анықтамасы",
+      "button_text_CodeExamples": "Код мысалдары",
+      "button_text_LiveDemos": "Тікелей демонстрациялар",
+      "button_text_Pricing": "Баға белгілеу"
+    }
+  },
+  "about": {
+    "title": "{{ProductFullName}} API туралы",
+    "h1": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) API — Microsoft Word, Excel, PowerPoint, Open Office құжаттары мен көрсетілімдерін өңдеуге арналған дұрыс таңдау. GroupDocs.Editor — жоғары өнімділік талап етілетін серверлік және серверлік жүйелер үшін қолайлы автономды API. Ол Microsoft немесе Open Office сияқты кез келген бағдарламалық құралға тәуелді емес."
+  },
+  "steps": {
+    "title_left": "{{ProgLang}} ішіндегі {{EXT}} өңдеу қадамдары",
+    "content_left": {
+      "description": "[{{ProductFullName}}]({{slash_lang}}/editor/{{ProductCode}}/) әзірлеушілерге бірнеше код жолын пайдаланып {{EXT}} файлдарын өңдеудің оңай және қарапайым әдісін ұсынады."
+    },
+    "title_right": "Жүйе талаптары",
+    "content_right": {
+      "description": "{{ProductFullName}} API интерфейстерімен негізгі құжатты өңдеуді бірнеше оңай қадамдарды орындау арқылы жасауға болады. Біздің API интерфейстеріне барлық негізгі платформалар мен операциялық жүйелерде қолдау көрсетіледі. Төмендегі кодты орындамас бұрын, жүйеде келесі алғышарттар орнатылғанына көз жеткізіңіз.",
+      "step_1": "Операциялық жүйелер: Microsoft Windows, Linux, MacOS",
+      "step_2": "Әзірлеу орталары: {{DevEnv}}",
+      "step_3": "Фреймворктер",
+      "step_4": "[{{RepoName}}]({{RepoUrl}}) ішінен жүктеп алынған {{ProductFullName}} соңғы нұсқасын алыңыз."
+    }
+  },
+  "demos": {
+    "title": "{{EXT}} Редактордың тікелей көрсетілімдері",
+    "content": "Дәл қазір [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) веб-сайтына кіру арқылы {{EXT}} өңдеңіз.\r\n        Тікелей демонстрацияның келесі артықшылықтары бар"
+  },
+  "more_formats": {
+    "title": "Басқа қолдау көрсетілетін редакторлар",
+    "content": "Басқа файл пішімдерін де өңдеуге болады. Төмендегі толық тізімді қараңыз."
+  }
+}

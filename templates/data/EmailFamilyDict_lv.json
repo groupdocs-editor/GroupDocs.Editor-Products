@@ -1,0 +1,8 @@
+{
+  "family_steps": {
+    "step_1": "Izveidojiet klases \"Redaktors\" gadījumu ar obligātu faila ceļu vai baitu straumi un ielādējiet failu {{EXT}}",
+    "step_2": "Izveidojiet un iestatiet klases gadījumu `EmailEditOptions' faila formātam {{EXT}}",
+    "step_3": "Izsauciet metodi \"Editor.Edit()\" un iegūstiet {{EXT}} dokumentu HTML formātā, kas ir viegli rediģējams ar jebkuru WYSIWYG redaktoru.",
+    "step_4": "Izsauciet metodi \"Editor.Save()\" un saglabājiet rediģēto {{EXT}} failu, izmantojot klasi \"EmailSaveOptions\"."
+  }
+}

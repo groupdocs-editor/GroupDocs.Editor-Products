@@ -1,0 +1,89 @@
+{
+  "head": {
+    "title": "API urejevalnika dokumentov Java | Uredite besedilne datoteke Word Web XML z uporabo HTML",
+    "description": "API urejevalnika dokumentov za Javo. Naložite Microsoft Word, XML, spletne in besedilne datoteke v HTML in jih po manipulaciji pretvorite nazaj v izvirno obliko."
+  },
+  "header": {
+    "title": "Urejanje dokumentov prek HTML z uporabo Java API",
+    "description": "Integrirajte aplikacije Java z urejevalnikom HTML za upravljanje dokumentov in pretvorbo nazaj v izvirno obliko."
+  },
+  "Submenu": {
+    "middle": {
+      "button_overview": {
+        "text": "Pregled"
+      },
+      "button_features": {
+        "text": "Lastnosti"
+      },
+      "button_support": {
+        "text": "Podpora"
+      },
+      "button_livedemo": {
+        "text": "Demo v živo"
+      },
+      "button_pricing": {
+        "text": "Cenitev"
+      }
+    }
+  },
+  "Overview": {
+    "content": "GroupDocs.Editor for Java API omogoča urejanje dokumentov v obliki HTML. API podpira več formatov dokumentov in ga je mogoče integrirati s katerim koli zunanjim, odprtokodnim ali plačljivim urejevalnikom HTML. API urejevalnika bo obdelal nalaganje dokumentov, jih pretvoril v HTML, posredoval HTML zunanjemu uporabniškemu vmesniku in nato po manipulaciji shranil HTML v izvirni dokument. Uporablja se lahko tudi za ustvarjanje različnih preglednic Microsoft Word, Excel, datotek PowerPoint, formatov OpenDocument, dokumentov XML in TXT.",
+    "tab1": {
+      "description": "Sledi pregled GroupDocs.Editor za Javo",
+      "title": "Manipulirajte z uporabo HTML",
+      "content1": "Naloži podprt dokument",
+      "content2": "Uredite vsebino z uporabo HTML",
+      "content3": "Uredi povezane sloge",
+      "content4": "Pretvori v izvirno obliko"
+    },
+    "tab2": {
+      "description": "GroupDocs.Editor za Javo podpira naslednje [formate datotek](https://docs.groupdocs.com/editor/java/supported-document-formats/)",
+      "title": "Družine drugih formatov",
+      "content1": "Formati OpenDocument",
+      "content2": "E-poštni formati",
+      "content3": "Spletni formati",
+      "content4": "Formati elektronskih knjig (e-Book)."
+    },
+    "tab3": {
+      "description": "GroupDocs.Editor za Javo podpira naslednje operacijske sisteme, ogrodja in upravitelje paketov",
+      "title_os": "Operacijski sistemi",
+      "title_frameworks": "Podprta ogrodja",
+      "title_packman": "Orodje za avtomatizacijo gradnje",
+      "title_devenv": "Razvojna okolja"
+    }
+  },
+  "Features": {
+    "title": "GroupDocs.Editor za funkcije Java",
+    "feature_loop": {
+      "1": "Enostavna integracija urejevalnika HTML",
+      "2": "Pretvorba dokumenta v HTML DOM",
+      "3": "Ekstrahirajte vsebino HTML iz toka dokumentov",
+      "4": "Nalaganje, urejanje in shranjevanje datotek Word, Excel in PowerPoint",
+      "5": "Pridobite HTML skupaj z vdelanimi elementi",
+      "6": "Uvoz, ogled in urejanje dokumentov XML",
+      "7": "Zaobidite vsebino HTML in shranite vdelane vire",
+      "8": "Ogled, urejanje in shranjevanje dokumentov za obdelavo besedila v stranskem načinu",
+      "9": "Pridobite vsebino oznake telesa HTML iz datoteke",
+      "10": "Ekstrahirajte vsebino CSS datoteke HTML",
+      "11": "Uporabite vsebino niza za pridobivanje HTML DOM in pretvorbo v datoteko",
+      "12": "Pretvorite HTML DOM z vdelanimi elementi",
+      "13": "Pretvorite datoteke več formatov v HTML za urejanje",
+      "14": "Pridobite meta informacije o vhodnih dokumentih brez urejanja",
+      "15": "Shrani urejene dokumente v obliki datoteke z navadnim besedilom",
+      "16": "Natančnost pretvorbe",
+      "17": "Uporabi geslo za izhodni dokument",
+      "18": "Agnostična baza podatkov (DB).",
+      "19": "Uporabniški vmesnik (UI) Agnostic",
+      "20": "Podpira merjeno licenciranje"
+    },
+    "more_features_loop": {
+      "title1": "Natančna pretvorba v in iz HTML DOM",
+      "content1": "Uporaba GroupDocs.Editor za Javo vam omogoča izdelavo aplikacij v Javi, ki naložijo dokument podprte oblike zapisa datoteke, da ga pretvorijo v HTML Document Object Model (DOM) skupaj z njegovimi povezanimi elementi, npr. CSS. Poleg tega vam naš API za urejevalnik Java omogoča urejanje HTML-ja v katerem koli od priljubljenih urejevalnikov HTML. Po opravljenih zahtevanih spremembah vam GroupDocs.Editor za Javo pomaga pretvoriti ta nastali HTML nazaj v prvotno obliko datoteke.",
+      "title2": "Nalaganje in pridobivanje pridruženih elementov",
+      "content2": "GroupDocs.Editor for Java API vam omogoča pridobivanje povezanih elementov iz dokumentov podprtih formatov, kot so slike, CSS, pisave in drugo. Nato lahko naložite te pridobljene povezane elemente, jih preletite in shranite ločeno od končne datoteke HTML ter imate dobro upravljan izhod."
+    }
+  },
+  "Solutions": {
+    "title": "GroupDocs.Editor ponuja API-je za urejanje dokumentov za druga priljubljena razvojna okolja"
+  }
+}
