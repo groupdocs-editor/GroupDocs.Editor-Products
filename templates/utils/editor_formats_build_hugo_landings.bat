@@ -7,3 +7,7 @@ del  "..\..\templates\output\editor\net\*.en"
 ren "..\..\templates\output\editor\java\*.en*" "*."
 copy "..\..\templates\output\editor\java\*.en" "..\..\templates\output\editor\java\*.md"
 del  "..\..\templates\output\editor\java\*.en"
+
+ren "..\..\templates\output\editor\nodejs-java\*.en*" "*."
+copy "..\..\templates\output\editor\nodejs-java\*.en" "..\..\templates\output\editor\nodejs-java\*.md"
+del  "..\..\templates\output\editor\nodejs-java\*.en"

@@ -1,4 +1,4 @@
-<% configRef "..\\..\\configs\\IndexJavaConfig.yml" %>
+<% configRef "..\\..\\configs\\IndexNodejsConfig.yml" %>
 ---
 ############################# Static ############################
 layout: "product"
@@ -7,8 +7,8 @@ draft: false
 
 product: "Editor"
 product_tag: "editor"
-platform: "Java"
-platform_tag: "java"
+platform: "Node.js via Java"
+platform_tag: "nodejs-java"
 
 ############################# Head ############################
 head_title: "<% "{head.title}" %>"
@@ -25,10 +25,10 @@ submenu:
     enable: true
     
     left:
-        img_alt: "GroupDocs.Editor for Java"
-        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png"
+        img_alt: "GroupDocs.Editor for Node.js via Java"
+        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
         product: "GroupDocs.Editor"
-        platform: "Java"
+        platform: "Node.js via Java"
 
     middle:
         button:
@@ -49,12 +49,12 @@ submenu:
               text: "<% "{Submenu.middle.button_livedemo.text}" %>"
 
             # button loop
-            - link: "https://purchase.groupdocs.com/pricing/editor/java"
+            - link: "https://purchase.groupdocs.com/pricing/editor/nodejs-java"
               text: "<% "{Submenu.middle.button_pricing.text}" %>"
 
     right:
         link_download: "https://downloads.groupdocs.com/editor"
-        link_learn: "https://docs.groupdocs.com/editor/java/"
+        link_learn: "https://docs.groupdocs.com/editor/nodejs-java/"
         link_buy: "https://purchase.groupdocs.com"
 
 ############################# Overview ############################
@@ -63,13 +63,13 @@ overview:
     content: |
       <% "{Overview.content}" %>
     tabs:
-      enable: true     
+      enable: true
       
       ## TAB ONE ##
       tab_one:
         description: |
           <% "{Overview.tab1.description}" %>:
-
+      
         left:
           enable: true
           icon: "fab fa-html5"
@@ -102,7 +102,7 @@ overview:
             - title: "<% "{Overview.tab2.title}" %>"
               content: |
                 * **<% "{Overview.tab2.content1}" %>**: ODT, OTT, ODS, FODS, ODP, OTP
-                * **<% "{Overview.tab2.content1}" %>**: MSG, MBOX, EML, EMLX
+                * **<% "{Overview.tab2.content2}" %>**: PDF, XPS
                 * **<% "{Overview.tab2.content3}" %>**: HTML, MHTML, CHM, XML, TXT
                 * **<% "{Overview.tab2.content3}" %>**: MOBI, AZW3, ePub
 
@@ -120,30 +120,33 @@ overview:
               content: |
                 * Microsoft Windows Desktop
                 * Microsoft Windows Server
+                * Microsoft Windows Azure
                 * Linux
-                * MacOS
 
             # table loop
             - icon: "fas fa-code"
               title: "<% "{Overview.tab3.title_frameworks}" %>"
               content: |
-                * Java 7 (1.7) +
+                * Node.js
 
         right:
           enable: true
           table:
             # table loop
-            - icon: "fas fa-cogs"
-              title: "<% "{Overview.tab3.title_devenv}" %>"
-              content: |
-                * NetBeans
-                * IntelliJ IDEA
-                * Eclipse
-            # table loop
-            - icon: "fas fa-tools"
+            - icon: "fas fa-box"
               title: "<% "{Overview.tab3.title_packman}" %>"
               content: |
-                * Maven
+                * NuGet
+
+            # table loop
+            - icon: "fas fa-tools"
+              title: "<% "{Overview.tab3.title_devenv}" %>"
+              content: |
+                * Microsoft Visual Studio
+                * Xamarin.Android
+                * Xamarin.IOS
+                * Xamarin.Mac
+                * MonoDevelop
 
 ############################# Features ############################
 features:
@@ -236,13 +239,24 @@ features:
       - title: "<% "{Features.more_features_loop.title1}" %>"
         content: |
           <% "{Features.more_features_loop.content1}" %>
-          
-          ```java
-          <% include "..\\..\\data\\code_samples\\IndexJava_example.md" %>
+
+          ```cs
+          <% include "..\\..\\data\\code_samples\\IndexNodejs_example.md" %>
           ```
       # more_feature_loop
       - title: "<% "{Features.more_features_loop.title2}" %>"
         content: "<% "{Features.more_features_loop.content2}" %>"
+
+      # more_feature_loop
+      - title: "<% "{Features.more_features_loop.title3}" %>"
+        content: "<% "{Features.more_features_loop.content3}" %>"
+
+      # more_feature_loop
+      - title: "<% "{Features.more_features_loop.title4}" %>"
+        content: |
+          <% "{Features.more_features_loop.content4-1}" %>  
+
+          <% "{Features.more_features_loop.content4-2}" %>
 
 ############################# Support ############################
 support:
@@ -254,19 +268,19 @@ solutions:
     title: "<% "{Solutions.title}" %>"
 
     solution:
+        # solution-loop
+        - img_alt: "GroupDocs.Editor for Java"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png"
+          product: "GroupDocs.Editor"
+          platform: "Java"
+          link: "/editor/java/"
+          
         # solution loop
         - img_alt: "GroupDocs.Editor for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
           product: "GroupDocs.Editor"
           platform: ".NET"
           link: "/editor/net/"
-
-        # solution-loop
-        - img_alt: "GroupDocs.Editor for Node.js via Java"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png"
-          product: "GroupDocs.Editor"
-          platform: "Node.js via Java"
-          link: "/editor/nodejs-java/"
 
 ############################# Back to top ###############################
 back_to_top:

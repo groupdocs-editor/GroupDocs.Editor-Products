@@ -36,8 +36,7 @@
 	},
 	"demos": {
 		"title": "{{EXT}} Editor Live Demos",
-		"content": "Edit {{EXT}} right now by visiting [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) website.  
-        The live demo has the following benefits"
+		"content": "Edit {{EXT}} right now by visiting [GroupDocs.Editor Live Demos](https://products.groupdocs.app/editor/family) website. The live demo has the following benefits"
 	},	
 	"more_formats": {
 		"title": "Other Supported Editors",

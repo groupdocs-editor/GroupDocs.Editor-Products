@@ -10,3 +10,4 @@ TranslationTools\net6.0\Res.Translator.exe -s en -r ..\data\WordProcessingFamily
 TranslationTools\net6.0\Res.Translator.exe -s en -r ..\data\single\IndexRootDict_en.json -d no,ro,sv,ur --overwrite
 TranslationTools\net6.0\Res.Translator.exe -s en -r ..\data\single\IndexNetDict_en.json -d no,ro,sv,ur --overwrite
 TranslationTools\net6.0\Res.Translator.exe -s en -r ..\data\single\IndexJavaDict_en.json -d no,ro,sv,ur --overwrite
+TranslationTools\net6.0\Res.Translator.exe -s en -r ..\data\single\IndexNodejs_en.json -d no,ro,sv,ur --overwrite

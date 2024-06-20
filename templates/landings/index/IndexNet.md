@@ -277,6 +277,13 @@ solutions:
           product: "GroupDocs.Editor"
           platform: "Java"
           link: "/editor/java/"
+        
+        # solution-loop
+        - img_alt: "GroupDocs.Editor for Node.js via Java"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png"
+          product: "GroupDocs.Editor"
+          platform: "Node.js via Java"
+          link: "/editor/nodejs-java/"
 
 ############################# Back to top ###############################
 back_to_top:

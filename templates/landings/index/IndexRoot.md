@@ -39,6 +39,14 @@ apis:
           platform: "Java"
           content: "<% "{APIs.API_loop_high_code.API_product_java.content}" %>"
 
+        # api_product loop
+        - link: "/editor/nodejs-java/"
+          img_alt: "GroupDocs.Editor for Node.js via Java"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png"
+          product: "GroupDocs.Editor for"
+          platform: "Node.js via Java"
+          content: "<% "{APIs.API_loop_high_code.API_product_nodejs-java.content}" %>"
+
     # api loop
     - title: "<% "{APIs.API_loop_low_code.title}" %>"
       link: "https://products.groupdocs.cloud/editor"
