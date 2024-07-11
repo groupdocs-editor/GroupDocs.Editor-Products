@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Hozzon létre egy példányt az \"Editor\" osztályból a kötelező fájl elérési úttal vagy bájtfolyammal és az opcionális \"PresentationLoadOptions\" osztállyal, és töltse be az {{EXT}} fájlt",
-    "step_2": "A `PresentationEditOptions` osztálypéldány létrehozása és beállítása a {{EXT}} fájlformátumhoz",
-    "step_3": "Hívja az \"Editor.Edit()\" metódust, és szerezzen be {{EXT}} dokumentumot HTML formátumban, amely könnyen szerkeszthető bármely WYSIWYG-szerkesztővel.",
-    "step_4": "Hívja meg az \"Editor.Save()\" metódust, és mentse a szerkesztett {{EXT}} fájlt a \"PresentationSaveOptions\" osztály segítségével"
-  }
-}

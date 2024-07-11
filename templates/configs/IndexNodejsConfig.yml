@@ -1,5 +1,0 @@
-inherits: languages.yml
-
-dictionaries: ["..\\data\\single\\IndexNetDict_{lang}.json"]
-
-outputPath: "editor\\nodejs-java\\_index.{lang}.md"

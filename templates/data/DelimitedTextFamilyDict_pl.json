@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Utwórz instancję klasy `Editor` z obowiązkową ścieżką pliku lub strumieniem bajtów i załaduj plik {{EXT}}",
-    "step_2": "Utwórz instancję klasy `DelimitedTextEditOptions` dla formatu pliku {{EXT}} i określ obowiązkowy separator ciągu w konstruktorze",
-    "step_3": "Wywołaj metodę `Editor.Edit()` i uzyskaj dokument {{EXT}} w formacie HTML, który można łatwo edytować za pomocą dowolnego edytora WYSIWYG",
-    "step_4": "Wywołaj metodę `Editor.Save()` i zapisz edytowany plik {{EXT}} przy użyciu instancji klasy `DelimitedTextSaveOptions` z żądanym separatorem"
-  }
-}

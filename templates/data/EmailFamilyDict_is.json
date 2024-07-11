@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Búðu til tilvik af `Editor` flokki með lögboðinni skráarslóð eða bætistraumi og hlaðið {{EXT}} skránni",
-    "step_2": "Búðu til og stilltu `EmailEditOptions` flokkstilvikið fyrir {{EXT}} skráarsniðið",
-    "step_3": "Hringdu í `Editor.Edit()` aðferðina og fáðu {{EXT}} skjal á HTML sniði sem auðvelt er að breyta með hvaða WYSIWYG ritstjóra sem er.",
-    "step_4": "Hringdu í `Editor.Save()` aðferðina og vistaðu breytta {{EXT}} skrá með `EmailSaveOptions` flokki"
-  }
-}

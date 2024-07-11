@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Opprett en forekomst av 'Editor'-klassen med obligatorisk filbane eller bytestrøm og last inn {{EXT}}-filen",
-    "step_2": "Opprett klasseforekomsten `DelimitedTextEditOptions` for filformatet {{EXT}} og spesifiser en obligatorisk strengseparator i konstruktøren",
-    "step_3": "Kall `Editor.Edit()`-metoden og skaff {{EXT}}-dokument i HTML-format som enkelt kan redigeres med hvilken som helst WYSIWYG-editor",
-    "step_4": "Kall `Editor.Save()`-metoden og lagre den redigerte {{EXT}}-filen ved å bruke klasseforekomsten `DelimitedTextSaveOptions` med ønsket skilletegn"
-  }
-}

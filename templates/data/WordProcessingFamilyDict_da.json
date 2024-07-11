@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Opret en forekomst af klassen `Editor` med obligatorisk filsti eller stream og valgfri `WordProcessingLoadOptions` klasse og indlæs {{EXT}} filen",
-    "step_2": "Opret og indstil klasseforekomsten `WordProcessingEditOptions` for filformatet {{EXT}}",
-    "step_3": "Kald `Editor.Edit()`-metoden og få et {{EXT}}-dokument i HTML-format, der nemt kan redigeres med enhver WYSIWYG-editor.",
-    "step_4": "Kald `Editor.Save()`-metoden og gem den redigerede {{EXT}}-fil ved hjælp af `WordProcessingSaveOptions`-klassen"
-  }
-}

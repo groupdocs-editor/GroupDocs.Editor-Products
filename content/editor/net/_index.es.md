@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
-layout: "product"
-date: 2022-11-09T21:39:28
+layout: "landing"
+date: 2024-07-11T16:47:14
 draft: false
 
 product: "Editor"
@@ -9,301 +9,228 @@ product_tag: "editor"
 platform: ".NET"
 platform_tag: "net"
 
+############################# Drop-down ############################
+supported_platforms:
+  items:
+    # supported_platforms loop
+    - title: ".NET"
+      tag: "net"
+    # supported_platforms loop
+    - title: "Java"
+      tag: "java"
+    # supported_platforms loop
+    - title: "Node.js"
+      tag: "nodejs-java"
+
 ############################# Head ############################
-head_title: "API del editor de documentos C# .NET | Editar Word Excel PowerPoint Web XML usando HTML"
-head_description: "API del editor de documentos C# .NET para cargar formatos de archivo de Microsoft Word, Excel, PowerPoint, PDF, XML, web y texto en HTML, manipular y volver a convertir al formato original."
+head_title: "{head.title}"
+head_description: "{head.description}"
 
 ############################# Header ############################
-title: ".NET API para editar documentos usando HTML"
-description: "Desarrolle aplicaciones .NET, para integrar con el editor HTML, obtener documentos compatibles, editar y convertir al formato original."
-button:
-    enable: true
+title: "{header.title_1}<br>{header.title_2}"
+description: "{header.description}"
+words:
+  for: "{header.words.for}"
 
-############################# SubMenu ############################
-submenu:
-    enable: true
+actions:
+  main: "{actions.main}"
+  main_link: "https://www.nuget.org/packages/GroupDocs.editor"
+  alt: "{actions.alt}"
+  alt_link: "https://purchase.groupdocs.com/pricing/editor/net"
+  title: "{actions.title}"
+  description: "{actions.description}"
+
+release:
+  title: "{release.title}"
+  notes: "{release.notes}"
+  downloads: "{release.downloads}"
+
+code:
+  title: "{code.title}"
+  more: "{code.more}"
+  more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
+  install: "dotnet add package GroupDocs.Editor"
+  content: |
+    ```csharp {style=abap}   
+    // {code.comment_1}
+    this.editor = new Editor(this.inputFilePath);
+    Editor editor = new Editor("sample.docx");
     
-    left:
-        img_alt: "GroupDocs.Editor for .NET"
-        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
-        product: "GroupDocs.Editor"
-        platform: ".NET"
+    // Edit document
+    EditableDocument editableDocument = editor.Edit();
 
-    middle:
-        button:
-            # button loop
-            - link: "#overview"
-              text: "Visión general"
-
-            # button loop
-            - link: "#features"
-              text: "Características"
-
-            # button loop
-            - link: "#support"
-              text: "Apoyo"
-
-            # button loop
-            - link: "https://products.groupdocs.app/editor"
-              text: "Demo en vivo"
-
-            # button loop
-            - link: "https://purchase.groupdocs.com/pricing/editor/net"
-              text: "Precios"
-
-    right:
-        link_download: "https://downloads.groupdocs.com/editor"
-        link_learn: "https://docs.groupdocs.com/editor/net/"
-        link_buy: "https://purchase.groupdocs.com"
-
+    // Save edited document
+    editor.Save(editableDocument, "edited_sample.docx");
+    ```
 ############################# Overview ############################
 overview:
-    enable: true
-    content: |
-      GroupDocs.Editor para .NET API lo ayuda a crear aplicaciones C#, ASP.NET y otras aplicaciones .NET simples y fáciles de usar que se integran fácilmente con editores HTML populares (tanto de código abierto como de pago) para convertir, editar y manipular documentos de formatos de archivo populares. Nuestra API de .NET Editor le permite cargar documentos, convertirlos a HTML, enviar HTML a un editor de HTML externo y, una vez realizada la manipulación, guardar el HTML en su formato de archivo original. También puede obtener por separado los recursos adjuntos con cualquier documento. Funciona con todo tipo de documentos, como los de Microsoft Word, Excel, PowerPoint, PDF, XPS, OpenDocument, Text, Web, Email, e-Book y más.
-    tabs:
-      enable: true
-      
-      ## TAB ONE ##
-      tab_one:
-        description: |
-          A continuación se muestra una descripción general de GroupDocs.Editor para .NET:
-      
-        left:
-          enable: true
-          icon: "fab fa-html5"
-          title: "Manipular usando HTML"
-          content: |
-            * Cargar documento admitido
-            * Editar contenido usando HTML
-            * Editar estilos relacionados
-            * Convertir a formato original
-      
-      ## TAB TWO ##
-      tab_two:
-        description: |
-          GroupDocs.Editor para .NET admite los siguientes [formatos de archivo] (https://docs.groupdocs.com/editor/java/supported-document-formats/)
+  enable: true
+  title: "{overview.title}"
+  description: "{overview.description}"
+  features:
+    # feature loop
+    - title: "{overview.feature_1.title}"
+      content: "{overview.feature_1.description}"
 
-        left:
-          enable: true
-          table:
-            # table loop
-            - title: "Microsoft Office"
-              content: |
-                * **Microsoft Word**: DOC, DOCX, DOCM, DOT, DOTM, DOTX, FlatOPC, WordML, RTF
-                * **Microsoft Excel**: XLS, XLSX, XLSM, XLT, XLTX, XLTM, XLSB, XLAM, CSV, TSV, SXC, SpreadsheetML, DIF, DSV
-                * **Microsoft PowerPoint**: PPT, PPTX, PPTM, PPS, PPSX, PPSM, POT, POTX, POTM
+    # feature loop
+    - title: "{overview.feature_2.title}"
+      content: "{overview.feature_2.description}"
 
-        right:
-          enable: true
-          table:
-            # table loop
-            - title: "Otras familias de formatos"
-              content: |
-                * **Formatos de documentos abiertos**: ODT, OTT, ODS, FODS, ODP, OTP
-                * **Formatos de diseño fijo**: PDF, XPS
-                * **formatos web**: HTML, MHTML, CHM, XML, TXT
-                * **formatos web**: MOBI, AZW3, ePub
+    # feature loop
+    - title: "{overview.feature_3.title}"
+      content: "{overview.feature_3.description}"
 
-      ## TAB THREE ##
-      tab_three:
-        description: |
-          GroupDocs.Editor para .NET es compatible con los siguientes sistemas operativos, marcos y administradores de paquetes:
-        
-        left:
-          enable: true
-          table:
-            # table loop
-            - icon: "fab fa-windows"
-              title: "Sistemas operativos"
-              content: |
-                * Microsoft Windows Desktop
-                * Microsoft Windows Server
-                * Microsoft Windows Azure
-                * Linux
+############################# Platforms ############################
+platforms:
+  enable: true
+  title: "{platforms.title}"
+  description: "{platforms.description}"
+  items:
+    # platform loop
+    - title: "Amazon"
+      image: "amazon"
+    # platform loop
+    - title: "Docker"
+      image: "docker"
+    # platform loop
+    - title: "Azure"
+      image: "azure"
+    # platform loop
+    - title: "VS Code"
+      image: "vs_code"
+    # platform loop
+    - title: "ReSharper"
+      image: "resharper"
+    # platform loop
+    - title: "macOS"
+      image: "finder"
+    # platform loop
+    - title: "Linux"
+      image: "linux"
+    # platform loop
+    - title: "NuGet"
+      image: "nuget"
 
-            # table loop
-            - icon: "fas fa-code"
-              title: "Marcos compatibles"
-              content: |
-                * .NET Framework 4.6.1+
-                * .NET Standard 2.0+
-                * .NET 6+
-                * Mono Framework 1.2+
-
-        right:
-          enable: true
-          table:
-            # table loop
-            - icon: "fas fa-box"
-              title: "Administradores de paquetes"
-              content: |
-                * NuGet
-
-            # table loop
-            - icon: "fas fa-tools"
-              title: "Entornos de desarrollo"
-              content: |
-                * Microsoft Visual Studio
-                * Xamarin.Android
-                * Xamarin.IOS
-                * Xamarin.Mac
-                * MonoDevelop
+############################# File formats ############################
+formats:
+  enable: true
+  title: "{formats.title}"
+  description: |
+    {formats.description}
+  groups:
+    # group loop
+    - color: "green"
+      content: |
+        ### {formats.groups.title_1}
+        * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
+        * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
+        * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
+        * **Visio:** VSDX, VSDM, VSSX, VSTX, VSTM, VSSM, VSX, VTX, VDX
+    # group loop
+    - color: "blue"
+      content: |
+        ### {formats.groups.title_2}
+        * **{formats.groups.format_documents}:** PDF, XPS, TEX
+        * **{formats.groups.format_images}:** BMP, JPEG, PNG, GIF, TIFF, SVG, PS
+        * **OpenDocument:** ODT, OTT, ODS
+        * **eBook:** EPUB
+      # group loop
+    - color: "red"
+      content: |
+        ### {formats.groups.title_3}
+        * **{formats.groups.format_web}:**  HTML, MHTML, MHT
+        * **{formats.groups.format_archives}:** ZIP, TAR, RAR, 7Z, BZ2, GZ
+        * **OneNote:**  ONE
 
 ############################# Features ############################
 features:
-    enable: true
-    title: "Funciones de GroupDocs.Editor para .NET"
-
-    feature:
-      # feature loop
-      - icon: "fas fa-copy"
-        content: "Fácil integración con cualquier editor de HTML"
-
-      # feature loop
-      - icon: "fas fa-eye"
-        content: "Convertir documento a HTML DOM"
-
-      # feature loop
-      - icon: "fas fa-bolt"
-        content: "Obtener contenido HTML del flujo de documentos"
-      
-      # feature loop
-      - icon: "fas fa-file-powerpoint"
-        content: "Obtenga contenido HTML y sus recursos integrados"
-
-      # feature loop
-      - icon: "fas fa-code"
-        content: "Obtener contenido de etiqueta de cuerpo HTML del documento"
-
-      # feature loop
-      - icon: "fas fa-cloud"
-        content: "Obtener hojas de estilo CSS de documento HTML"
-
-      # feature loop
-      - icon: "fas fa-remove-format"
-        content: "Atraviese contenido HTML y guarde sus recursos"
-
-      # feature loop
-      - icon: "fas fa-comment-slash"
-        content: "Obtenga HTML DOM del contenido de la cadena y conviértalo en documento"
-
-      # feature loop
-      - icon: "fas fa-location-arrow"
-        content: "HTML DOM junto con conversión de recursos"
-
-      # feature loop
-      - icon: "fas fa-border-all"
-        content: "Editar documentos de varios formatos en HTML"
-
-      # feature loop
-      - icon: "fas fa-wrench"
-        content: "Conversión precisa"
-
-      # feature loop
-      - icon: "fas fa-columns"
-        content: "Aplicar protección de lectura y/o escritura al documento resultante"
-
-      # feature loop
-      - icon: "fas fa-file-word"
-        content: "Paginar documentos de procesamiento de textos y editarlos en cualquier editor WYSIWYG"
-
-      # feature loop
-      - icon: "fas fa-envelope"
-        content: "Base de datos (DB) e interfaz de usuario (UI) Agnóstico"
-
-      # feature loop
-      - icon: "fas fa-print"
-        content: "Potentes funciones de procesamiento XML"
-
-      # feature loop
-      - icon: "fas fa-file-archive"
-        content: "Recuperar OTF (fuentes de tipo abierto) de los documentos de entrada y exportar al documento resultante"
-
-      # feature loop
-      - icon: "fas fa-lock"
-        content: "Procesar imágenes ráster y vectoriales internamente dentro de los formatos de documentos de entrada admitidos"
-
-      # feature loop
-      - icon: "fas fa-file-code"
-        content: "Inserte el contenido de la hoja de trabajo editada en la hoja de cálculo original en la posición deseada"
-      
-      # feature loop
-      - icon: "fas fa-fill-drip"
-        content: "Edite diapositivas e insértelas en la hoja de cálculo resultante"
-
-      # feature loop
-      - icon: "fas fa-file-excel"
-        content: "Incrustar fuentes en el documento de procesamiento de texto resultante al guardar"
-
-    more_feature:
-      # more_feature_loop
-      - title: "Conversión precisa hacia y desde HTML DOM"
-        content: |
-          GroupDocs.Editor para la API de .NET permite que sus aplicaciones de .NET obtengan un documento de formato compatible y lo conviertan en un modelo de objeto de documento (DOM) HTML junto con la extracción de recursos adjuntos, como CSS. A continuación, puede realizar las modificaciones en el HTML utilizando su editor de HTML favorito. Una vez que haya terminado con la edición, GroupDocs.Editor para .NET API le permite convertir con precisión este DOM HTML al archivo original.
-
-          ```cs
-          // Create Editor class by loading an input document
-          Editor editor = new Editor("Sample.docx");
-
-          // Open document for edit and obtain EditableDocument
-          EditableDocument original = editor.Edit();
-
-          // Obtain all-embedded HTML from it
-          string allEmbeddedInside = original.GetEmbeddedHtml();
-
-          // If necessary, obtain pure HTML-markup, CSS, images and other resources in separate form
-
-          // Whole HTML-markup, without any resources
-          string completeHtmlMarkup = original.GetContent();
-
-          // Only HTML->BODY content, useful for most of WYSIWYG-editors
-          string onlyInnerBody = original.GetBodyContent();
-
-          // All CSS stylesheets
-          var stylesheets = original.Css;
-
-          // All images, including raster and vector, but without CSS gradients
-          var images = original.Images;
-
-          // All font resources
-          var fonts = original.Fonts;
-
-          // finally, send this content to your WYSIWYG HTML-editor
-          ```
-      # more_feature_loop
-      - title: "Cargar y extraer recursos externos"
-        content: "GroupDocs.Editor para .NET API es capaz de recuperar los recursos externos adjuntos a los documentos admitidos, como imágenes, fuentes, CSS y más. Los recursos obtenidos se pueden cargar, recorrer y guardar por separado del documento HTML resultante. Esto le brinda una salida más fácil de administrar."
-
-      # more_feature_loop
-      - title: "Aplicar efectos de texto en formatos de archivo de procesamiento de texto"
-        content: "La API del editor de documentos de GroupDocs permite agregar efectos de texto complejos (sombra, efecto 3D, contorno, brillo, grabado, realce) mientras trabaja con formatos de procesamiento de documentos de Microsoft Word compatibles. Esta característica está habilitada automáticamente y se puede observar cuando se procesa el documento con tales efectos de texto."
-
-      # more_feature_loop
-      - title: "Potentes funciones de manipulación de XML"
-        content: |
-          Usando GroupDocs.Editor para .NET API puede abrir, ver y editar documentos XML. Nuestra API de edición ofrece soporte especial y reconocimiento de etiquetas XML, atributos junto con sus valores, declaraciones XML, secciones CDATA, definiciones DOCTYPE y otras entidades específicas de XML. Puede personalizar la configuración de fuente y color para cada entidad distinta en la estructura XML.  
-
-          La función XML Converter es lo suficientemente inteligente como para mostrar errores en el archivo XML y cómo solucionarlos. El mecanismo de reconocimiento de URI y correo electrónico escanea los atributos XML y representa los URI y las direcciones de correo electrónico detectados dentro de la etiqueta A como enlaces para que puedan editarse como enlace, no como texto dentro del archivo HTML resultante.
-
-############################# Support ############################
-support:
-    enable: true
-
-############################# Solutions ############################
-solutions:
-    enable: true
-    title: "GroupDocs.Editor ofrece API de edición de documentos para otros entornos de desarrollo populares"
-
-    solution:
-        # solution loop
-        - img_alt: "GroupDocs.Editor for Java"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png"
-          product: "GroupDocs.Editor"
-          platform: "Java"
-          link: "/editor/java/"
-
-############################# Back to top ###############################
-back_to_top:
   enable: true
+  title: "{features.title}"
+  description: "{features.description}"
+
+  items:
+    # feature loop
+    - icon: "merge"
+      title: "{features.feature_1.title}"
+      content: "{features.feature_1.content}"
+
+    # feature loop
+    - icon: "split"
+      title: "{features.feature_2.title}"
+      content: "{features.feature_2.content}"
+
+    # feature loop
+    - icon: "move"
+      title: "{features.feature_3.title}"
+      content: "{features.feature_3.content}"
+
+    # feature loop
+    - icon: "remove"
+      title: "{features.feature_4.title}"
+      content: "{features.feature_4.content}"
+
+    # feature loop
+    - icon: "rotate"
+      title: "{features.feature_5.title}"
+      content: "{features.feature_5.content}"
+
+    # feature loop
+    - icon: "swap"
+      title: "{features.feature_6.title}"
+      content: "{features.feature_6.content}"
+
+    # feature loop
+    - icon: "extract"
+      title: "{features.feature_7.title}"
+      content: "{features.feature_7.content}"
+
+    # feature loop
+    - icon: "orientation"
+      title: "{features.feature_8.title}"
+      content: "{features.feature_8.content}"
+
+    # feature loop
+    - icon: "preview"
+      title: "{features.feature_9.title}"
+      content: "{features.feature_9.content}"
+
+############################# Code samples ############################
+code_samples:
+  enable: true
+  title: "{code_samples.title}"
+  description: "{code_samples.description}"
+  items:
+    # code sample loop
+    - title: "{code_samples.sample_1.title}"
+      content: |
+        {code_samples.sample_1.content_1} {code_samples.sample_1.content_2}
+        {{< landing/code title="{code_samples.sample_1.code_title}">}}
+        ```csharp {style=abap}   
+        // Load document
+        Editor editor = new Editor("sample.docx");
+        
+        // Edit document
+        EditableDocument editableDocument = editor.Edit();
+        
+        // Save edited document
+        editor.Save(editableDocument, "edited_sample.docx");
+        ```
+        {{< /landing/code >}}
+    # code sample loop
+    - title: "{code_samples.sample_2.title}"
+      content: |
+        {code_samples.sample_2.content_1} {code_samples.sample_2.content_2}
+        {{< landing/code title="{code_samples.sample_2.code_title}">}}
+        ```csharp {style=abap}   
+        Editor editor = new Editor("sample.docx");
+        // Read the FormFieldCollection in the document
+        FormFieldCollection collection = fieldManager.FormFieldCollection;
+        // Update a specific text form field
+        TextFormField textField = collection.GetFormField<TextFormField>("Text1");
+        textField.LocaleId = 1029;
+        textField.Value = "new Value";
+        fieldManager.UpdateFormFiled(collection);
+
+        ```
+        {{< /landing/code >}}
 ---

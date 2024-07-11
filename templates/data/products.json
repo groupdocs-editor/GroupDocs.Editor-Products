@@ -1,0 +1,52 @@
+{
+    "products": {        
+        "net": {
+            "name": ".NET",
+            "fullName": "GroupDocs.Editor for .NET",
+            "code": "net",
+            "progLang": "C#",
+            "srcFileExt": ".cs",
+            "syntax": "csharp",
+            "devEnv": "Visual Studio, Xamarin, MonoDevelop",
+            "runtime": ".NET Framework, .NET Standard, .NET Core, Mono",
+            "repoName": "NuGet",
+            "repoUrl": "https://www.nuget.org/packages/groupdocs.editor",
+            "url": "https://products.groupdocs.com/editor/net/",
+            "logo_url": "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png",
+            "main_link": "https://www.nuget.org/packages/GroupDocs.editor",
+            "alt_link": "https://purchase.groupdocs.com/pricing/editor/net"
+        },
+        "java": {
+            "name": "Java",
+            "fullName": "GroupDocs.Editor for Java",
+            "code": "java",
+            "progLang": "Java",
+            "srcFileExt": ".java",
+            "syntax": "java",
+            "devEnv": "NetBeans, IntelliJ IDEA, Eclipse",
+            "runtime": "J2SE 7.0 (1.7), J2SE 8.0 (1.8), Java 10",
+            "repoName": "Maven",
+            "repoUrl": "https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-editor",
+            "url": "https://products.groupdocs.com/editor/java/",
+            "logo_url": "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png",
+            "main_link": "https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-editor/",
+            "alt_link": "https://purchase.groupdocs.com/pricing/editor/java"
+        },
+      "nodejs-java": {
+        "name": "Node.js via Java",
+        "fullName": "GroupDocs.Editor for Node.js",
+        "code": "nodejs-java",
+        "progLang": "JavaScript",
+        "srcFileExt": ".js",
+        "syntax": "javascript",
+        "devEnv": "Intellij IDEA, Eclipse Che, Visual Studio Code, WebStorm, etc.",
+        "runtime": "Node.js",
+        "repoName": "NPM",
+        "repoUrl": "https://www.npmjs.com/package/@groupdocs/groupdocs.editor",
+        "url": "https://products.groupdocs.com/editor/nodejs-java/",
+        "logo_url": "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png",
+        "main_link": "https://releases.groupdocs.com/editor/nodejs-java/",
+        "alt_link": "https://purchase.groupdocs.com/pricing/editor/nodejs-java"
+      }
+    }
+}

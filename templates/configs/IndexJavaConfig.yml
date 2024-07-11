@@ -1,5 +1,0 @@
-inherits: languages.yml
-
-dictionaries: ["..\\data\\single\\IndexJavaDict_{lang}.json"]
-
-outputPath: "editor\\java\\_index.{lang}.md"

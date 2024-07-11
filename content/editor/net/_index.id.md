@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
-layout: "product"
-date: 2022-11-09T21:39:28
+layout: "landing"
+date: 2024-07-11T16:47:14
 draft: false
 
 product: "Editor"
@@ -9,301 +9,228 @@ product_tag: "editor"
 platform: ".NET"
 platform_tag: "net"
 
+############################# Drop-down ############################
+supported_platforms:
+  items:
+    # supported_platforms loop
+    - title: ".NET"
+      tag: "net"
+    # supported_platforms loop
+    - title: "Java"
+      tag: "java"
+    # supported_platforms loop
+    - title: "Node.js"
+      tag: "nodejs-java"
+
 ############################# Head ############################
-head_title: "C# .NET Document Editor API | Edit Word Excel PowerPoint Web XML menggunakan HTML"
-head_description: "C# .NET document editor API untuk memuat format file Microsoft Word, Excel, PowerPoint, PDF, XML, web dan teks ke dalam HTML, memanipulasi & mengonversi kembali ke format aslinya."
+head_title: "{head.title}"
+head_description: "{head.description}"
 
 ############################# Header ############################
-title: ".NET API untuk Mengedit Dokumen Menggunakan HTML"
-description: "Kembangkan Aplikasi .NET, untuk Mengintegrasikan dengan Editor HTML, Ambil Dokumen yang Didukung, Edit dan Konversikan ke Format Asli."
-button:
-    enable: true
+title: "{header.title_1}<br>{header.title_2}"
+description: "{header.description}"
+words:
+  for: "{header.words.for}"
 
-############################# SubMenu ############################
-submenu:
-    enable: true
+actions:
+  main: "{actions.main}"
+  main_link: "https://www.nuget.org/packages/GroupDocs.editor"
+  alt: "{actions.alt}"
+  alt_link: "https://purchase.groupdocs.com/pricing/editor/net"
+  title: "{actions.title}"
+  description: "{actions.description}"
+
+release:
+  title: "{release.title}"
+  notes: "{release.notes}"
+  downloads: "{release.downloads}"
+
+code:
+  title: "{code.title}"
+  more: "{code.more}"
+  more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
+  install: "dotnet add package GroupDocs.Editor"
+  content: |
+    ```csharp {style=abap}   
+    // {code.comment_1}
+    this.editor = new Editor(this.inputFilePath);
+    Editor editor = new Editor("sample.docx");
     
-    left:
-        img_alt: "GroupDocs.Editor for .NET"
-        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
-        product: "GroupDocs.Editor"
-        platform: ".NET"
+    // Edit document
+    EditableDocument editableDocument = editor.Edit();
 
-    middle:
-        button:
-            # button loop
-            - link: "#overview"
-              text: "Ringkasan"
-
-            # button loop
-            - link: "#features"
-              text: "Fitur"
-
-            # button loop
-            - link: "#support"
-              text: "Mendukung"
-
-            # button loop
-            - link: "https://products.groupdocs.app/editor"
-              text: "Demo Langsung"
-
-            # button loop
-            - link: "https://purchase.groupdocs.com/pricing/editor/net"
-              text: "Harga"
-
-    right:
-        link_download: "https://downloads.groupdocs.com/editor"
-        link_learn: "https://docs.groupdocs.com/editor/net/"
-        link_buy: "https://purchase.groupdocs.com"
-
+    // Save edited document
+    editor.Save(editableDocument, "edited_sample.docx");
+    ```
 ############################# Overview ############################
 overview:
-    enable: true
-    content: |
-      GroupDocs.Editor untuk .NET API membantu Anda membuat C#, ASP.NET, dan aplikasi .NET lainnya yang sederhana dan mudah digunakan, yang siap berintegrasi dengan editor HTML populer (baik sumber terbuka & berbayar) untuk mengonversi, mengedit, dan memanipulasi dokumen format file populer. .NET Editor API kami memungkinkan Anda memuat dokumen, mengubahnya menjadi HTML, mendorong HTML ke Editor HTML eksternal, dan setelah manipulasi selesai, menyimpan HTML ke format file aslinya. Anda juga dapat mengambil sumber daya yang dilampirkan dengan dokumen apa pun secara terpisah. Ia bekerja dengan semua jenis dokumen, seperti untuk Microsoft Word, Excel, PowerPoint, PDF, XPS, OpenDocument, Teks, Web, Email, e-Book, dan lainnya.
-    tabs:
-      enable: true
-      
-      ## TAB ONE ##
-      tab_one:
-        description: |
-          Berikut ini adalah ikhtisar GroupDocs.Editor untuk .NET:
-      
-        left:
-          enable: true
-          icon: "fab fa-html5"
-          title: "Memanipulasi Menggunakan HTML"
-          content: |
-            * Muat Dokumen yang Didukung
-            * Edit Konten menggunakan HTML
-            * Edit Gaya Terkait
-            * Konversikan ke Format Asli
-      
-      ## TAB TWO ##
-      tab_two:
-        description: |
-          GroupDocs.Editor untuk .NET mendukung [format file] berikut (https://docs.groupdocs.com/editor/java/supported-document-formats/)
+  enable: true
+  title: "{overview.title}"
+  description: "{overview.description}"
+  features:
+    # feature loop
+    - title: "{overview.feature_1.title}"
+      content: "{overview.feature_1.description}"
 
-        left:
-          enable: true
-          table:
-            # table loop
-            - title: "Microsoft Office"
-              content: |
-                * **Microsoft Word**: DOC, DOCX, DOCM, DOT, DOTM, DOTX, FlatOPC, WordML, RTF
-                * **Microsoft Excel**: XLS, XLSX, XLSM, XLT, XLTX, XLTM, XLSB, XLAM, CSV, TSV, SXC, SpreadsheetML, DIF, DSV
-                * **Microsoft PowerPoint**: PPT, PPTX, PPTM, PPS, PPSX, PPSM, POT, POTX, POTM
+    # feature loop
+    - title: "{overview.feature_2.title}"
+      content: "{overview.feature_2.description}"
 
-        right:
-          enable: true
-          table:
-            # table loop
-            - title: "Keluarga format lain"
-              content: |
-                * **Format Dokumen Terbuka**: ODT, OTT, ODS, FODS, ODP, OTP
-                * **Format tata letak tetap**: PDF, XPS
-                * **Format web**: HTML, MHTML, CHM, XML, TXT
-                * **Format web**: MOBI, AZW3, ePub
+    # feature loop
+    - title: "{overview.feature_3.title}"
+      content: "{overview.feature_3.description}"
 
-      ## TAB THREE ##
-      tab_three:
-        description: |
-          GroupDocs.Editor untuk .NET mendukung Sistem Operasi, Kerangka & Manajer Paket berikut:
-        
-        left:
-          enable: true
-          table:
-            # table loop
-            - icon: "fab fa-windows"
-              title: "Sistem operasi"
-              content: |
-                * Microsoft Windows Desktop
-                * Microsoft Windows Server
-                * Microsoft Windows Azure
-                * Linux
+############################# Platforms ############################
+platforms:
+  enable: true
+  title: "{platforms.title}"
+  description: "{platforms.description}"
+  items:
+    # platform loop
+    - title: "Amazon"
+      image: "amazon"
+    # platform loop
+    - title: "Docker"
+      image: "docker"
+    # platform loop
+    - title: "Azure"
+      image: "azure"
+    # platform loop
+    - title: "VS Code"
+      image: "vs_code"
+    # platform loop
+    - title: "ReSharper"
+      image: "resharper"
+    # platform loop
+    - title: "macOS"
+      image: "finder"
+    # platform loop
+    - title: "Linux"
+      image: "linux"
+    # platform loop
+    - title: "NuGet"
+      image: "nuget"
 
-            # table loop
-            - icon: "fas fa-code"
-              title: "Kerangka yang Didukung"
-              content: |
-                * .NET Framework 4.6.1+
-                * .NET Standard 2.0+
-                * .NET 6+
-                * Mono Framework 1.2+
-
-        right:
-          enable: true
-          table:
-            # table loop
-            - icon: "fas fa-box"
-              title: "Manajer Paket"
-              content: |
-                * NuGet
-
-            # table loop
-            - icon: "fas fa-tools"
-              title: "Lingkungan Pengembangan"
-              content: |
-                * Microsoft Visual Studio
-                * Xamarin.Android
-                * Xamarin.IOS
-                * Xamarin.Mac
-                * MonoDevelop
+############################# File formats ############################
+formats:
+  enable: true
+  title: "{formats.title}"
+  description: |
+    {formats.description}
+  groups:
+    # group loop
+    - color: "green"
+      content: |
+        ### {formats.groups.title_1}
+        * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
+        * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
+        * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
+        * **Visio:** VSDX, VSDM, VSSX, VSTX, VSTM, VSSM, VSX, VTX, VDX
+    # group loop
+    - color: "blue"
+      content: |
+        ### {formats.groups.title_2}
+        * **{formats.groups.format_documents}:** PDF, XPS, TEX
+        * **{formats.groups.format_images}:** BMP, JPEG, PNG, GIF, TIFF, SVG, PS
+        * **OpenDocument:** ODT, OTT, ODS
+        * **eBook:** EPUB
+      # group loop
+    - color: "red"
+      content: |
+        ### {formats.groups.title_3}
+        * **{formats.groups.format_web}:**  HTML, MHTML, MHT
+        * **{formats.groups.format_archives}:** ZIP, TAR, RAR, 7Z, BZ2, GZ
+        * **OneNote:**  ONE
 
 ############################# Features ############################
 features:
-    enable: true
-    title: "GroupDocs.Editor untuk .NET Fitur"
-
-    feature:
-      # feature loop
-      - icon: "fas fa-copy"
-        content: "Integrasi Mudah dengan editor HTML apa pun"
-
-      # feature loop
-      - icon: "fas fa-eye"
-        content: "Konversi Dokumen ke HTML DOM"
-
-      # feature loop
-      - icon: "fas fa-bolt"
-        content: "Ambil Konten HTML dari Aliran Dokumen"
-      
-      # feature loop
-      - icon: "fas fa-file-powerpoint"
-        content: "Dapatkan Konten HTML & Sumber Daya Tertanamnya"
-
-      # feature loop
-      - icon: "fas fa-code"
-        content: "Dapatkan Konten Tag Tubuh HTML dari Dokumen"
-
-      # feature loop
-      - icon: "fas fa-cloud"
-        content: "Dapatkan stylesheet CSS dari Dokumen HTML"
-
-      # feature loop
-      - icon: "fas fa-remove-format"
-        content: "Lintasi Konten HTML dan Simpan Sumber Dayanya"
-
-      # feature loop
-      - icon: "fas fa-comment-slash"
-        content: "Ambil DOM HTML dari Konten String & Konversikan ke Dokumen"
-
-      # feature loop
-      - icon: "fas fa-location-arrow"
-        content: "HTML DOM bersama dengan Konversi Sumber Daya"
-
-      # feature loop
-      - icon: "fas fa-border-all"
-        content: "Edit Dokumen Berbagai Format dalam HTML"
-
-      # feature loop
-      - icon: "fas fa-wrench"
-        content: "Konversi Akurat"
-
-      # feature loop
-      - icon: "fas fa-columns"
-        content: "Terapkan Proteksi Baca dan/atau Tulis ke Dokumen yang Dihasilkan"
-
-      # feature loop
-      - icon: "fas fa-file-word"
-        content: "Membuat Paginasi Dokumen Pemrosesan Kata dan Edit di Semua Editor WYSIWYG"
-
-      # feature loop
-      - icon: "fas fa-envelope"
-        content: "Database (DB) & Antarmuka Pengguna (UI) Agnostik"
-
-      # feature loop
-      - icon: "fas fa-print"
-        content: "Fitur Pemrosesan XML yang Kuat"
-
-      # feature loop
-      - icon: "fas fa-file-archive"
-        content: "Ambil OTF (Font Jenis Terbuka) dari Dokumen Masukan dan Ekspor ke Dokumen Hasil"
-
-      # feature loop
-      - icon: "fas fa-lock"
-        content: "Memproses Gambar Raster dan Vektor Secara Internal dalam Format Dokumen Masukan yang Didukung"
-
-      # feature loop
-      - icon: "fas fa-file-code"
-        content: "Masukkan Isi Lembar Kerja yang Diedit ke dalam Spreadsheet Asli pada Posisi yang Diinginkan"
-      
-      # feature loop
-      - icon: "fas fa-fill-drip"
-        content: "Edit Slide dan masukkan ke dalam Spreadsheet yang dihasilkan"
-
-      # feature loop
-      - icon: "fas fa-file-excel"
-        content: "Sematkan Font di Dokumen Pemrosesan Kata yang Dihasilkan saat Menyimpan"
-
-    more_feature:
-      # more_feature_loop
-      - title: "Konversi Akurat ke dan dari HTML DOM"
-        content: |
-          GroupDocs.Editor untuk .NET API memungkinkan aplikasi .NET Anda mengambil dokumen dengan format yang didukung dan mengonversinya menjadi Model Objek Dokumen HTML (DOM) bersama dengan ekstraksi sumber daya terlampir, seperti CSS. Anda kemudian dapat membuat modifikasi pada HTML menggunakan Editor HTML favorit Anda. Setelah Anda selesai mengedit, GroupDocs.Editor untuk .NET API memungkinkan Anda untuk secara akurat mengonversi DOM HTML ini kembali ke file asli.
-
-          ```cs
-          // Create Editor class by loading an input document
-          Editor editor = new Editor("Sample.docx");
-
-          // Open document for edit and obtain EditableDocument
-          EditableDocument original = editor.Edit();
-
-          // Obtain all-embedded HTML from it
-          string allEmbeddedInside = original.GetEmbeddedHtml();
-
-          // If necessary, obtain pure HTML-markup, CSS, images and other resources in separate form
-
-          // Whole HTML-markup, without any resources
-          string completeHtmlMarkup = original.GetContent();
-
-          // Only HTML->BODY content, useful for most of WYSIWYG-editors
-          string onlyInnerBody = original.GetBodyContent();
-
-          // All CSS stylesheets
-          var stylesheets = original.Css;
-
-          // All images, including raster and vector, but without CSS gradients
-          var images = original.Images;
-
-          // All font resources
-          var fonts = original.Fonts;
-
-          // finally, send this content to your WYSIWYG HTML-editor
-          ```
-      # more_feature_loop
-      - title: "Muat & Ekstrak Sumber Daya Eksternal"
-        content: "GroupDocs.Editor untuk .NET API mampu mengambil sumber daya eksternal yang dilampirkan ke dokumen yang didukung, seperti gambar, font, CSS, dan lainnya. Sumber daya yang diambil kemudian dapat dimuat, dilalui, dan disimpan secara terpisah dari dokumen HTML yang dihasilkan. Ini memberi Anda hasil yang lebih mudah dikelola."
-
-      # more_feature_loop
-      - title: "Terapkan Efek Teks dalam Format File Pemrosesan Kata"
-        content: "API editor dokumen GroupDocs memungkinkan penambahan efek teks kompleks (Bayangan, efek 3D, Garis Besar, Cahaya, Ukiran, Emboss) saat bekerja dengan format pemrosesan dokumen Microsoft Word yang didukung. Fitur ini diaktifkan secara otomatis yang dapat diamati saat dokumen dengan efek teks tersebut diproses."
-
-      # more_feature_loop
-      - title: "Fitur Manipulasi XML yang Kuat"
-        content: |
-          Menggunakan GroupDocs.Editor untuk .NET API Anda dapat membuka, melihat, dan mengedit dokumen XML. API pengeditan kami menawarkan dukungan khusus dan pengenalan tag XML, atribut beserta nilainya, deklarasi XML, bagian CDATA, definisi DOCTYPE, dan entitas khusus XML lainnya. Anda dapat menyesuaikan pengaturan font dan warna untuk setiap entitas berbeda dalam struktur XML.  
-
-          Fitur XML Converter cukup pintar untuk menampilkan kesalahan dalam file XML dan cara memperbaikinya. Mekanisme URI dan pengenal email memindai atribut XML dan mewakili URI dan alamat email yang terdeteksi di dalam tag A sebagai tautan sehingga dapat diedit sebagai tautan, bukan sebagai teks dalam file HTML yang dihasilkan.
-
-############################# Support ############################
-support:
-    enable: true
-
-############################# Solutions ############################
-solutions:
-    enable: true
-    title: "GroupDocs.Editor menawarkan API pengeditan dokumen untuk lingkungan pengembangan populer lainnya"
-
-    solution:
-        # solution loop
-        - img_alt: "GroupDocs.Editor for Java"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png"
-          product: "GroupDocs.Editor"
-          platform: "Java"
-          link: "/editor/java/"
-
-############################# Back to top ###############################
-back_to_top:
   enable: true
+  title: "{features.title}"
+  description: "{features.description}"
+
+  items:
+    # feature loop
+    - icon: "merge"
+      title: "{features.feature_1.title}"
+      content: "{features.feature_1.content}"
+
+    # feature loop
+    - icon: "split"
+      title: "{features.feature_2.title}"
+      content: "{features.feature_2.content}"
+
+    # feature loop
+    - icon: "move"
+      title: "{features.feature_3.title}"
+      content: "{features.feature_3.content}"
+
+    # feature loop
+    - icon: "remove"
+      title: "{features.feature_4.title}"
+      content: "{features.feature_4.content}"
+
+    # feature loop
+    - icon: "rotate"
+      title: "{features.feature_5.title}"
+      content: "{features.feature_5.content}"
+
+    # feature loop
+    - icon: "swap"
+      title: "{features.feature_6.title}"
+      content: "{features.feature_6.content}"
+
+    # feature loop
+    - icon: "extract"
+      title: "{features.feature_7.title}"
+      content: "{features.feature_7.content}"
+
+    # feature loop
+    - icon: "orientation"
+      title: "{features.feature_8.title}"
+      content: "{features.feature_8.content}"
+
+    # feature loop
+    - icon: "preview"
+      title: "{features.feature_9.title}"
+      content: "{features.feature_9.content}"
+
+############################# Code samples ############################
+code_samples:
+  enable: true
+  title: "{code_samples.title}"
+  description: "{code_samples.description}"
+  items:
+    # code sample loop
+    - title: "{code_samples.sample_1.title}"
+      content: |
+        {code_samples.sample_1.content_1} {code_samples.sample_1.content_2}
+        {{< landing/code title="{code_samples.sample_1.code_title}">}}
+        ```csharp {style=abap}   
+        // Load document
+        Editor editor = new Editor("sample.docx");
+        
+        // Edit document
+        EditableDocument editableDocument = editor.Edit();
+        
+        // Save edited document
+        editor.Save(editableDocument, "edited_sample.docx");
+        ```
+        {{< /landing/code >}}
+    # code sample loop
+    - title: "{code_samples.sample_2.title}"
+      content: |
+        {code_samples.sample_2.content_1} {code_samples.sample_2.content_2}
+        {{< landing/code title="{code_samples.sample_2.code_title}">}}
+        ```csharp {style=abap}   
+        Editor editor = new Editor("sample.docx");
+        // Read the FormFieldCollection in the document
+        FormFieldCollection collection = fieldManager.FormFieldCollection;
+        // Update a specific text form field
+        TextFormField textField = collection.GetFormField<TextFormField>("Text1");
+        textField.LocaleId = 1029;
+        textField.Value = "new Value";
+        fieldManager.UpdateFormFiled(collection);
+
+        ```
+        {{< /landing/code >}}
 ---

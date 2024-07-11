@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Ustvarite primerek razreda `Urejevalnik` z obvezno potjo datoteke ali tokom bajtov in naložite datoteko {{EXT}}",
-    "step_2": "Ustvarite in nastavite primerek razreda `TextEditOptions` za obliko datoteke {{EXT}}",
-    "step_3": "Pokličite metodo `Editor.Edit()` in pridobite dokument {{EXT}} v formatu HTML, ki ga je mogoče enostavno urejati s katerim koli urejevalnikom WYSIWYG.",
-    "step_4": "Pokličite metodo `Editor.Save()` in shranite urejeno datoteko {{EXT}} z uporabo razreda `TextSaveOptions`"
-  }
-}

@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
-layout: "product"
-date: 2022-11-09T21:39:28
+layout: "landing"
+date: 2024-07-11T16:47:14
 draft: false
 
 product: "Editor"
@@ -9,301 +9,228 @@ product_tag: "editor"
 platform: ".NET"
 platform_tag: "net"
 
+############################# Drop-down ############################
+supported_platforms:
+  items:
+    # supported_platforms loop
+    - title: ".NET"
+      tag: "net"
+    # supported_platforms loop
+    - title: "Java"
+      tag: "java"
+    # supported_platforms loop
+    - title: "Node.js"
+      tag: "nodejs-java"
+
 ############################# Head ############################
-head_title: "C# .NET ドキュメント エディター API | HTML を使用して Word Excel PowerPoint Web XML を編集する"
-head_description: "Microsoft Word、Excel、PowerPoint、PDF、XML、Web、およびテキスト ファイル形式を HTML に読み込み、操作して元の形式に変換するための C# .NET ドキュメント エディター API。"
+head_title: "{head.title}"
+head_description: "{head.description}"
 
 ############################# Header ############################
-title: "HTML を使用してドキュメントを編集する .NET API"
-description: ".NET アプリケーションを開発し、HTML エディターと統合し、サポートされているドキュメントを取得し、編集して元の形式に変換します。"
-button:
-    enable: true
+title: "{header.title_1}<br>{header.title_2}"
+description: "{header.description}"
+words:
+  for: "{header.words.for}"
 
-############################# SubMenu ############################
-submenu:
-    enable: true
+actions:
+  main: "{actions.main}"
+  main_link: "https://www.nuget.org/packages/GroupDocs.editor"
+  alt: "{actions.alt}"
+  alt_link: "https://purchase.groupdocs.com/pricing/editor/net"
+  title: "{actions.title}"
+  description: "{actions.description}"
+
+release:
+  title: "{release.title}"
+  notes: "{release.notes}"
+  downloads: "{release.downloads}"
+
+code:
+  title: "{code.title}"
+  more: "{code.more}"
+  more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
+  install: "dotnet add package GroupDocs.Editor"
+  content: |
+    ```csharp {style=abap}   
+    // {code.comment_1}
+    this.editor = new Editor(this.inputFilePath);
+    Editor editor = new Editor("sample.docx");
     
-    left:
-        img_alt: "GroupDocs.Editor for .NET"
-        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
-        product: "GroupDocs.Editor"
-        platform: ".NET"
+    // Edit document
+    EditableDocument editableDocument = editor.Edit();
 
-    middle:
-        button:
-            # button loop
-            - link: "#overview"
-              text: "概要"
-
-            # button loop
-            - link: "#features"
-              text: "特徴"
-
-            # button loop
-            - link: "#support"
-              text: "サポート"
-
-            # button loop
-            - link: "https://products.groupdocs.app/editor"
-              text: "ライブデモ"
-
-            # button loop
-            - link: "https://purchase.groupdocs.com/pricing/editor/net"
-              text: "価格"
-
-    right:
-        link_download: "https://downloads.groupdocs.com/editor"
-        link_learn: "https://docs.groupdocs.com/editor/net/"
-        link_buy: "https://purchase.groupdocs.com"
-
+    // Save edited document
+    editor.Save(editableDocument, "edited_sample.docx");
+    ```
 ############################# Overview ############################
 overview:
-    enable: true
-    content: |
-      GroupDocs.Editor for .NET API を使用すると、シンプルで使いやすい C#、ASP.NET、およびその他の .NET アプリケーションを構築できます。これらのアプリケーションは、一般的な HTML エディター (オープンソースと有料の両方) と簡単に統合して、ドキュメントの変換、編集、および操作を行うことができます。一般的なファイル形式。当社の .NET Editor API を使用すると、ドキュメントをロードして HTML に変換し、HTML を外部の HTML エディターにプッシュして、操作が完了したら HTML を元のファイル形式に保存できます。ドキュメントに添付されたリソースを個別に取得することもできます。 Microsoft Word、Excel、PowerPoint、PDF、XPS、OpenDocument、テキスト、Web、電子メール、電子書籍など、あらゆる種類のドキュメントで動作します。
-    tabs:
-      enable: true
-      
-      ## TAB ONE ##
-      tab_one:
-        description: |
-          以下は、GroupDocs.Editor for .NET の概要です。:
-      
-        left:
-          enable: true
-          icon: "fab fa-html5"
-          title: "HTML を使用して操作する"
-          content: |
-            * サポートされているドキュメントを読み込む
-            * HTML を使用してコンテンツを編集する
-            * 関連するスタイルを編集
-            * 元の形式に変換
-      
-      ## TAB TWO ##
-      tab_two:
-        description: |
-          GroupDocs.Editor for .NET は、次の [ファイル形式](https://docs.groupdocs.com/editor/java/supported-document-formats/) をサポートしています。
+  enable: true
+  title: "{overview.title}"
+  description: "{overview.description}"
+  features:
+    # feature loop
+    - title: "{overview.feature_1.title}"
+      content: "{overview.feature_1.description}"
 
-        left:
-          enable: true
-          table:
-            # table loop
-            - title: "Microsoft Office"
-              content: |
-                * **Microsoft Word**: DOC, DOCX, DOCM, DOT, DOTM, DOTX, FlatOPC, WordML, RTF
-                * **Microsoft Excel**: XLS, XLSX, XLSM, XLT, XLTX, XLTM, XLSB, XLAM, CSV, TSV, SXC, SpreadsheetML, DIF, DSV
-                * **Microsoft PowerPoint**: PPT, PPTX, PPTM, PPS, PPSX, PPSM, POT, POTX, POTM
+    # feature loop
+    - title: "{overview.feature_2.title}"
+      content: "{overview.feature_2.description}"
 
-        right:
-          enable: true
-          table:
-            # table loop
-            - title: "その他の形式ファミリー"
-              content: |
-                * **OpenDocument 形式**: ODT, OTT, ODS, FODS, ODP, OTP
-                * **固定レイアウト形式**: PDF, XPS
-                * **ウェブフォーマット**: HTML, MHTML, CHM, XML, TXT
-                * **ウェブフォーマット**: MOBI, AZW3, ePub
+    # feature loop
+    - title: "{overview.feature_3.title}"
+      content: "{overview.feature_3.description}"
 
-      ## TAB THREE ##
-      tab_three:
-        description: |
-          GroupDocs.Editor for .NET は、次のオペレーティング システム、フレームワーク、およびパッケージ マネージャーをサポートします。:
-        
-        left:
-          enable: true
-          table:
-            # table loop
-            - icon: "fab fa-windows"
-              title: "オペレーティングシステム"
-              content: |
-                * Microsoft Windows Desktop
-                * Microsoft Windows Server
-                * Microsoft Windows Azure
-                * Linux
+############################# Platforms ############################
+platforms:
+  enable: true
+  title: "{platforms.title}"
+  description: "{platforms.description}"
+  items:
+    # platform loop
+    - title: "Amazon"
+      image: "amazon"
+    # platform loop
+    - title: "Docker"
+      image: "docker"
+    # platform loop
+    - title: "Azure"
+      image: "azure"
+    # platform loop
+    - title: "VS Code"
+      image: "vs_code"
+    # platform loop
+    - title: "ReSharper"
+      image: "resharper"
+    # platform loop
+    - title: "macOS"
+      image: "finder"
+    # platform loop
+    - title: "Linux"
+      image: "linux"
+    # platform loop
+    - title: "NuGet"
+      image: "nuget"
 
-            # table loop
-            - icon: "fas fa-code"
-              title: "サポートされているフレームワーク"
-              content: |
-                * .NET Framework 4.6.1+
-                * .NET Standard 2.0+
-                * .NET 6+
-                * Mono Framework 1.2+
-
-        right:
-          enable: true
-          table:
-            # table loop
-            - icon: "fas fa-box"
-              title: "パッケージマネージャー"
-              content: |
-                * NuGet
-
-            # table loop
-            - icon: "fas fa-tools"
-              title: "開発環境"
-              content: |
-                * Microsoft Visual Studio
-                * Xamarin.Android
-                * Xamarin.IOS
-                * Xamarin.Mac
-                * MonoDevelop
+############################# File formats ############################
+formats:
+  enable: true
+  title: "{formats.title}"
+  description: |
+    {formats.description}
+  groups:
+    # group loop
+    - color: "green"
+      content: |
+        ### {formats.groups.title_1}
+        * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
+        * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
+        * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
+        * **Visio:** VSDX, VSDM, VSSX, VSTX, VSTM, VSSM, VSX, VTX, VDX
+    # group loop
+    - color: "blue"
+      content: |
+        ### {formats.groups.title_2}
+        * **{formats.groups.format_documents}:** PDF, XPS, TEX
+        * **{formats.groups.format_images}:** BMP, JPEG, PNG, GIF, TIFF, SVG, PS
+        * **OpenDocument:** ODT, OTT, ODS
+        * **eBook:** EPUB
+      # group loop
+    - color: "red"
+      content: |
+        ### {formats.groups.title_3}
+        * **{formats.groups.format_web}:**  HTML, MHTML, MHT
+        * **{formats.groups.format_archives}:** ZIP, TAR, RAR, 7Z, BZ2, GZ
+        * **OneNote:**  ONE
 
 ############################# Features ############################
 features:
-    enable: true
-    title: "GroupDocs.Editor for .NET 機能"
-
-    feature:
-      # feature loop
-      - icon: "fas fa-copy"
-        content: "任意の HTML エディターとの簡単な統合"
-
-      # feature loop
-      - icon: "fas fa-eye"
-        content: "ドキュメントを HTML DOM に変換"
-
-      # feature loop
-      - icon: "fas fa-bolt"
-        content: "ドキュメント ストリームから HTML コンテンツを取得する"
-      
-      # feature loop
-      - icon: "fas fa-file-powerpoint"
-        content: "HTML コンテンツとその埋め込みリソースを取得する"
-
-      # feature loop
-      - icon: "fas fa-code"
-        content: "ドキュメントから HTML 本文タグのコンテンツを取得する"
-
-      # feature loop
-      - icon: "fas fa-cloud"
-        content: "HTML ドキュメントの CSS スタイルシートを取得する"
-
-      # feature loop
-      - icon: "fas fa-remove-format"
-        content: "HTML コンテンツをトラバースしてそのリソースを保存する"
-
-      # feature loop
-      - icon: "fas fa-comment-slash"
-        content: "文字列コンテンツから HTML DOM を取得してドキュメントに変換"
-
-      # feature loop
-      - icon: "fas fa-location-arrow"
-        content: "HTML DOM とリソース変換"
-
-      # feature loop
-      - icon: "fas fa-border-all"
-        content: "HTML でさまざまな形式のドキュメントを編集する"
-
-      # feature loop
-      - icon: "fas fa-wrench"
-        content: "正確な変換"
-
-      # feature loop
-      - icon: "fas fa-columns"
-        content: "結果のドキュメントに読み取りおよび/または書き込み保護を適用する"
-
-      # feature loop
-      - icon: "fas fa-file-word"
-        content: "ワード プロセッシング ドキュメントのページ付けと任意の WYSIWYG エディターでの編集"
-
-      # feature loop
-      - icon: "fas fa-envelope"
-        content: "データベース (DB) とユーザー インターフェイス (UI) に依存しない"
-
-      # feature loop
-      - icon: "fas fa-print"
-        content: "強力な XML 処理機能"
-
-      # feature loop
-      - icon: "fas fa-file-archive"
-        content: "入力ドキュメントから OTF (Open Type Fonts) を取得し、結果ドキュメントにエクスポート"
-
-      # feature loop
-      - icon: "fas fa-lock"
-        content: "サポートされている入力ドキュメント形式内でラスター イメージとベクター イメージを内部的に処理する"
-
-      # feature loop
-      - icon: "fas fa-file-code"
-        content: "編集したワークシートの内容を元のスプレッドシートの任意の位置に挿入"
-      
-      # feature loop
-      - icon: "fas fa-fill-drip"
-        content: "スライドを編集して結果のスプレッドシートに挿入する"
-
-      # feature loop
-      - icon: "fas fa-file-excel"
-        content: "保存時に結果のワープロ ドキュメントにフォントを埋め込む"
-
-    more_feature:
-      # more_feature_loop
-      - title: "HTML DOM との間の正確な変換"
-        content: |
-          GroupDocs.Editor for .NET API を使用すると、.NET アプリケーションで、サポートされている形式のドキュメントをフェッチし、それを HTML ドキュメント オブジェクト モデル (DOM) に変換し、CSS などの添付リソースを抽出できます。その後、お気に入りの HTML エディターを使用して HTML に変更を加えることができます。編集が完了したら、GroupDocs.Editor for .NET API を使用して、この HTML DOM を元のファイルに正確に変換できます。
-
-          ```cs
-          // Create Editor class by loading an input document
-          Editor editor = new Editor("Sample.docx");
-
-          // Open document for edit and obtain EditableDocument
-          EditableDocument original = editor.Edit();
-
-          // Obtain all-embedded HTML from it
-          string allEmbeddedInside = original.GetEmbeddedHtml();
-
-          // If necessary, obtain pure HTML-markup, CSS, images and other resources in separate form
-
-          // Whole HTML-markup, without any resources
-          string completeHtmlMarkup = original.GetContent();
-
-          // Only HTML->BODY content, useful for most of WYSIWYG-editors
-          string onlyInnerBody = original.GetBodyContent();
-
-          // All CSS stylesheets
-          var stylesheets = original.Css;
-
-          // All images, including raster and vector, but without CSS gradients
-          var images = original.Images;
-
-          // All font resources
-          var fonts = original.Fonts;
-
-          // finally, send this content to your WYSIWYG HTML-editor
-          ```
-      # more_feature_loop
-      - title: "外部リソースの読み込みと抽出"
-        content: "GroupDocs.Editor for .NET API は、画像、フォント、CSS など、サポートされているドキュメントに添付された外部リソースを取得できます。フェッチされたリソースは、結果の HTML ドキュメントとは別にロード、トラバース、および保存できます。これにより、より簡単に管理できる出力が得られます。"
-
-      # more_feature_loop
-      - title: "ワープロ ファイル形式内でのテキスト効果の適用"
-        content: "GroupDocs ドキュメント エディター API を使用すると、サポートされている Microsoft Word ドキュメント処理形式で作業しながら、複雑なテキスト効果 (影、3D 効果、アウトライン、光彩、彫刻、エンボス) を追加できます。この機能は自動的に有効になり、そのようなテキスト効果を持つドキュメントが処理されるときに確認できます。"
-
-      # more_feature_loop
-      - title: "強力な XML 操作機能"
-        content: |
-          GroupDocs.Editor for .NET API を使用すると、XML ドキュメントを開いたり、表示したり、編集したりできます。当社の編集 API は、XML タグ、属性とその値、XML 宣言、CDATA セクション、DOCTYPE 定義、およびその他の XML 固有のエンティティの特別なサポートと認識を提供します。 XML 構造の個々のエンティティごとに、フォントと色の設定をカスタマイズできます。  
-
-          XML コンバーター機能は、XML ファイルのエラーとその修正方法を表示するのに十分スマートです。 URI および電子メール認識メカニズムは XML 属性をスキャンし、A タグ内の検出された URI と電子メール アドレスをリンクとして表すので、結果の HTML ファイル内のテキストとしてではなく、リンクとして編集できます。
-
-############################# Support ############################
-support:
-    enable: true
-
-############################# Solutions ############################
-solutions:
-    enable: true
-    title: "GroupDocs.Editor は、他の一般的な開発環境向けのドキュメント編集 API を提供します"
-
-    solution:
-        # solution loop
-        - img_alt: "GroupDocs.Editor for Java"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png"
-          product: "GroupDocs.Editor"
-          platform: "Java"
-          link: "/editor/java/"
-
-############################# Back to top ###############################
-back_to_top:
   enable: true
+  title: "{features.title}"
+  description: "{features.description}"
+
+  items:
+    # feature loop
+    - icon: "merge"
+      title: "{features.feature_1.title}"
+      content: "{features.feature_1.content}"
+
+    # feature loop
+    - icon: "split"
+      title: "{features.feature_2.title}"
+      content: "{features.feature_2.content}"
+
+    # feature loop
+    - icon: "move"
+      title: "{features.feature_3.title}"
+      content: "{features.feature_3.content}"
+
+    # feature loop
+    - icon: "remove"
+      title: "{features.feature_4.title}"
+      content: "{features.feature_4.content}"
+
+    # feature loop
+    - icon: "rotate"
+      title: "{features.feature_5.title}"
+      content: "{features.feature_5.content}"
+
+    # feature loop
+    - icon: "swap"
+      title: "{features.feature_6.title}"
+      content: "{features.feature_6.content}"
+
+    # feature loop
+    - icon: "extract"
+      title: "{features.feature_7.title}"
+      content: "{features.feature_7.content}"
+
+    # feature loop
+    - icon: "orientation"
+      title: "{features.feature_8.title}"
+      content: "{features.feature_8.content}"
+
+    # feature loop
+    - icon: "preview"
+      title: "{features.feature_9.title}"
+      content: "{features.feature_9.content}"
+
+############################# Code samples ############################
+code_samples:
+  enable: true
+  title: "{code_samples.title}"
+  description: "{code_samples.description}"
+  items:
+    # code sample loop
+    - title: "{code_samples.sample_1.title}"
+      content: |
+        {code_samples.sample_1.content_1} {code_samples.sample_1.content_2}
+        {{< landing/code title="{code_samples.sample_1.code_title}">}}
+        ```csharp {style=abap}   
+        // Load document
+        Editor editor = new Editor("sample.docx");
+        
+        // Edit document
+        EditableDocument editableDocument = editor.Edit();
+        
+        // Save edited document
+        editor.Save(editableDocument, "edited_sample.docx");
+        ```
+        {{< /landing/code >}}
+    # code sample loop
+    - title: "{code_samples.sample_2.title}"
+      content: |
+        {code_samples.sample_2.content_1} {code_samples.sample_2.content_2}
+        {{< landing/code title="{code_samples.sample_2.code_title}">}}
+        ```csharp {style=abap}   
+        Editor editor = new Editor("sample.docx");
+        // Read the FormFieldCollection in the document
+        FormFieldCollection collection = fieldManager.FormFieldCollection;
+        // Update a specific text form field
+        TextFormField textField = collection.GetFormField<TextFormField>("Text1");
+        textField.LocaleId = 1029;
+        textField.Value = "new Value";
+        fieldManager.UpdateFormFiled(collection);
+
+        ```
+        {{< /landing/code >}}
 ---

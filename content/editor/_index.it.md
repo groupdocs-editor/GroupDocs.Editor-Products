@@ -1,94 +1,340 @@
 ---
 ############################# Static ############################
-layout: "product"
-date: 2022-11-09T21:39:28
+layout: "family"
+date: 2024-07-11T16:47:59
 draft: false
 
+product: "Editor"
+product_tag: "editor"
+
 ############################# Head ############################
-head_title: "Soluzione di modifica dei documenti | API in loco e app gratuite"
-head_description: "Modifica dei documenti per Microsoft Office, OpenDocument, PDF e altri formati di file utilizzando le API locali o utilizza l'app Editor di documenti online."
+head_title: "{head.title}"
+head_description: "{head.description}"
 
 ############################# Header ############################
-title: "Soluzione di modifica dei documenti"
-description: "Editor di documenti per manipolare Microsoft Office, OpenOffice, PDF, HTML e altri formati di file di documenti."
+title: "{header.title}"
+description: |
+  {header.description_1}
 
-############################# APIs ###############################
-apis:
+  {header.description_2}
+
+  {header.description_3}
+  
+############################# Platforms ############################
+supported_platforms:
+  enable: true  
+  head_title: "{supported_platforms.head_title}"
+  title: "{supported_platforms.title}"
+  description: "{supported_platforms.description}"
+  details_link_title: "{supported_platforms.details_link_title}"
+  items:
+    # supported_platforms loop
+    - title: ".NET"
+      description: "{supported_platforms.net.description}"
+      color: "blue"
+      tag: "net"
+      link: "/editor/net/"
+      features_link: "https://docs.groupdocs.com/editor/net/system-requirements/"
+      features:
+        # features loop
+        - content: "{supported_platforms.net.feature_1.line_1}  <br>  {supported_platforms.net.feature_1.line_2}  <br>  {supported_platforms.net.feature_1.line_3} <br>  {supported_platforms.net.feature_1.line_4}"
+          rows: "4"
+        # features loop
+        - content: "{supported_platforms.net.feature_2.line_1}"
+          rows: "1"
+        # features loop
+        - content: "Microsoft Visual Studio  <br>  Xamarin (Android, iOS, Mac)  <br>  MonoDevelop"
+          rows: "3"
+         # features loop
+        - content: "{supported_platforms.net.feature_4.line_1}"
+          rows: "1"
+    
+    # supported_platforms loop
+    - title: "Java"
+      description: "{supported_platforms.java.description}"
+      color: "red"
+      tag: "java"
+      link: "/editor/java/"
+      features_link: "https://docs.groupdocs.com/editor/java/system-requirements/"
+      features:
+        # features loop
+        - content: "{supported_platforms.java.feature_1.line_1}"
+          rows: "4"
+        # features loop
+        - content:  "{supported_platforms.java.feature_2.line_1}"
+          rows: "1"
+        # features loop
+        - content:  "IntelliJ IDEA  <br>  Eclipse  <br>  NetBeans"
+          rows: "3"
+         # features loop
+        - content:  "{supported_platforms.java.feature_4.line_1}"
+          rows: "1"
+    
+    # supported_platforms loop
+    - title: "Node.js"
+      description: "{supported_platforms.nodejs-java.description}"
+      color: "green"
+      tag: "nodejs-java"
+      link: "/editor/nodejs-java/"
+      features_link: "https://docs.groupdocs.com/editor/nodejs-java/system-requirements/"
+      features:
+        # features loop
+        - content: "{supported_platforms.nodejs-java.feature_1.line_1}"
+          rows: "4"
+        # features loop
+        - content: Windows, Linux, Mac OS
+          rows: "1"
+        # features loop
+        - content:  "Atom <br> Visual Studio Code <br> {supported_platforms.nodejs-java.feature_3.line_1}"
+          rows: "3"
+         # features loop
+        - content:  "{supported_platforms.nodejs-java.feature_4.line_1}"
+          rows: "1"
+ 
+############################# Features ############################
+
+features:
   enable: true
+  title: "{features.title}"
+  description: "{features.description}"
 
-  api:
-    # api loop
-    - title: "Le API di GroupDocs.Editor High Code includono"
-      link: "/editor/"
-      label: "Visualizza tutte le API High Code"
-      api_product:
-        # api_product loop
-        - link: "/editor/net/"
-          img_alt: "GroupDocs.Editor for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
-          product: "GroupDocs.Editor for"
-          platform: ".NET"
-          content: "API On Premise .NET che aiuta la tua applicazione a visualizzare, modificare e quindi convertire documenti."
+  items:
+    # feature loop
+    - icon: "merge"
+      title: "{features.feature_1.title}"
+      content: "{features.feature_1.content}"
 
-        # api_product loop
-        - link: "/editor/java/"
-          img_alt: "GroupDocs.Editor for Java"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png"
-          product: "GroupDocs.Editor for"
-          platform: "Java"
-          content: "API di modifica dei documenti per Microsoft Office, OpenOffice, HTML e altri documenti da manipolare all'interno delle tue applicazioni basate su Java."
+    # feature loop
+    - icon: "split"
+      title: "{features.feature_2.title}"
+      content: "{features.feature_2.content}"
 
-    # api loop
-    - title: "Le API a basso codice di GroupDocs.Editor includono"
-      link: "https://products.groupdocs.cloud/editor"
-      label: "Visualizza tutte le API a basso codice"
-      api_product:
-        # api_product loop
-        - link: "https://products.groupdocs.cloud/editor/net"
-          img_alt: "GroupDocs.Editor Cloud SDK for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocscloud/images/sdk/272x272/groupdocs_editor-for-net.png"
-          product: "GroupDocs.Editor"
-          platform: "Cloud SDK for .NET"
-          content: "Aggiungi potenti funzionalità di modifica dei formati di documento nelle applicazioni .NET utilizzando Cloud SDK per .NET. Modifica documenti MS Office, Web e XML."
+    # feature loop
+    - icon: "structure"
+      title: "{features.feature_3.title}"
+      content: "{features.feature_3.content}"
+    
+    # feature loop
+    - icon: "preview"
+      title: "{features.feature_4.title}"
+      content: "{features.feature_4.content}"
 
-        # api_product loop
-        - link: "https://products.groupdocs.cloud/editor/java"
-          img_alt: "GroupDocs.Editor Cloud SDK for Java"
-          image: "https://www.groupdocs.cloud/templates/groupdocscloud/images/sdk/272x272/groupdocs_editor-for-java.png"
-          product: "GroupDocs.Editor"
-          platform: "Cloud SDK for Java"
-          content: "Editor di documenti avanzato SDK per applicazioni Java per modificare formati di file di documenti standard del settore su qualsiasi piattaforma in grado di chiamare API REST."
-
-    # api loop
-    - title: "GroupDocs.Editor Nessuna app di codice include"
-      link: "https://products.groupdocs.app/editor"
-      label: "Visualizza tutte le app senza codice"
-      api_product:
-        # api_product loop
-        - link: "https://products.groupdocs.app/editor/total"
-          img_alt: "GroupDocs.Editor Total"
-          image: "https://www.aspose.cloud/templates/asposeapp/images/products/logo/aspose_editor-app.png"
-          product: "GroupDocs.Editor"
-          platform: "Total"
-          content: "App online gratuita basata sul Web per modificare i formati di file più diffusi da Office e OpenOffice."
-
-        # api_product loop
-        - link: "https://products.groupdocs.app/editor/docx"
-          img_alt: "GroupDocs.Editor DOCX"
-          image: "https://www.aspose.cloud/templates/groupdocsapp/images/products/logo/groupdocs_words-app.png"
-          product: "GroupDocs.Editor"
-          platform: "DOCX"
-          content: "App editor gratuita per visualizzare e modificare documenti Microsoft Word online."
-
-        # api_product loop
-        - link: "https://products.groupdocs.app/editor/pdf"
-          img_alt: "GroupDocs.Editor PDF"
-          image: "https://www.aspose.cloud/templates/groupdocsapp/images/products/logo/groupdocs_pdf-app.png"
-          product: "GroupDocs.Editor"
-          platform: "PDF"
-          content: "Utilizza qualsiasi dispositivo, qualsiasi browser per visualizzare o modificare documenti PDF e XPS."
-
-############################# Back to top ###############################
-back_to_top:
+############################# Code samples ############################
+code_samples:
   enable: true
+  title: "{code_samples.title}"
+  description: "{code_samples.description}"
+  items:
+    # code sample loop
+    - title: "{code_samples.sample_1.title}"
+      content: |
+        {code_samples.sample_1.content} 
+      samples:
+        - language: "C#"
+          color: "blue"
+          content: |
+            ```csharp {style=abap}   
+             // Load document
+            Editor editor = new Editor("sample.docx");
+            
+            // Edit document
+            EditableDocument editableDocument = editor.Edit();
+            
+            // Save edited document
+            editor.Save(editableDocument, "edited_sample.docx");
+            ```
+        - language: "Java"
+          color: "red"
+          content: |
+            ```java {style=abap}   
+            // Load document
+            Editor editor = new Editor("sample.docx");
+            
+            // Edit document
+            EditableDocument editableDocument = editor.edit();
+            
+            // Save edited document
+            editor.save(editableDocument, "edited_sample.docx");
+            ```
+        - language: "TypeScript"
+          color: "green"
+          content: |
+            ```javascript {style=abap}   
+            // Load document
+            const editor = new Editor("sample.docx");
+            
+            // Edit document
+            const editableDocument = editor.edit();
+            
+            // Save edited document
+            editor.save(editableDocument, "edited_sample.docx");
+            ```
+
+############################# Formats ############################
+formats:
+  enable: true
+  title:  "{formats.title}"
+  description: "{formats.description}" 
+
+############################# Metrics ############################
+
+metrics:
+  enable: true
+  title: "{metrics.title}"
+  description: "{metrics.description}"
+
+  items:
+    # metrics loop
+    - number: "60+"
+      title: "{metrics.metric_1.title}"
+      content: "{metrics.metric_1.content}"
+
+    # metrics loop
+    - number: "274k"
+      title: "{metrics.metric_2.title}"
+      content: "{metrics.metric_2.content}"
+
+    # metrics loop
+    - number: "5.5k"
+      title: "{metrics.metric_3.title}"
+      content: "{metrics.metric_3.content}"
+    
+    # metrics loop
+    - number: "140+"
+      title: "{metrics.metric_4.title}"
+      content: "{metrics.metric_4.content}"
+
+
+############################# Customers ############################
+# logo size X1 => 170:70  X2 => 340 : 140
+
+customers:
+  enable: true
+  title: "{customers.title}"
+  description: "{customers.description}"
+
+  items:
+    # customers loop
+    - title: "BenQ Corporation"
+      logo: "benq"
+    # customers loop
+    - title: "Nasdaq Stock Market"
+      logo: "nasdaq"
+    # customers loop
+    - title: "AT&T Inc."
+      logo: "att"
+    # customers loop
+    - title: "AstraZeneca"
+      logo: "astrazeneca"
+    # customers loop
+    - title: "Central Bank of Argentina"
+      logo: "argentinacentralbank"
+    # customers loop
+    - title: "Roche Holding AG"
+      logo: "roche"
+    # customers loop
+    - title: "Capita"
+      logo: "capita"
+    # customers loop
+    - title: "Axa S.A."
+      logo: "axa"
+    # customers loop
+    - title: "Instructure Inc."
+      logo: "instructure"
+     # customers loop
+    - title: "Wipro"
+      logo: "wipro"
+
+############################# Actions ############################
+
+actions:
+  enable: true
+  title: "{actions.title}"
+  description: "{actions.description}"
+  items:
+    #  loop
+    - title: ".NET"
+      link: "/editor/net/"
+      color: "blue"
+        #  loop
+    - title: "Java"
+      link: "/editor/java/"
+      color: "red"
+        #  loop
+    - title: "Node.js"
+      link: "/editor/nodejs-java/"
+      color: "green"
+
+############################# Faq ############################
+
+faq:
+  enable: true
+  title:  "{faq.title}"
+  description:  "{faq.description}"
+  items:
+    #  loop
+    - question: "{faq.faq_1.question}"
+      answer: |
+        {faq.faq_1.answer}
+     #  loop
+    - question:  "{faq.faq_2.question}"
+      answer: |
+        {faq.faq_2.answer}
+    #  loop 
+    - question:  "{faq.faq_3.question}"
+      answer: |
+        {faq.faq_3.answer}                      
+     
+############################# Cloud ############################
+
+cloud_links:
+  enable: true
+  title: "{cloud_links.title}"
+  description: "{cloud_links.description}"
+
+  items:
+    #  loop
+    - icon: "groupdocs_editor-for-curl"
+      title: "{cloud_links.link_1.title}"
+      link: "https://products.groupdocs.cloud/editor/curl"
+      content: "{cloud_links.link_1.content}"
+
+    #  loop
+    - icon: "groupdocs_editor-for-net"
+      title: "{cloud_links.link_2.title}"
+      link: "https://products.groupdocs.cloud/editor/net"
+      content: "{cloud_links.link_2.content}"
+
+    #  loop
+    - icon: "groupdocs_editor-for-java"
+      title: "{cloud_links.link_3.title}"
+      link: "https://products.groupdocs.cloud/editor/java"
+      content: "{cloud_links.link_3.content}"
+    
+############################# Apps ############################
+
+app_links:
+  enable: true
+  title: "{app_links.title}"
+  description: "{app_links.description}"
+
+  items:
+    #  loop
+    - icon: "groupdocs_editor-app"
+      title: "GroupDocs.editor Total"
+      link: "https://products.groupdocs.app/editor/total"
+      content: "{app_links.link_1.content}"
+
+    #  loop
+    - icon: "groupdocs_words-app"
+      title:  "GroupDocs.editor DOCX"
+      link: "https://products.groupdocs.app/editor/docx"
+      content: "{app_links.link_2.content}"
+
+    #  loop
+    - icon: "groupdocs_pdf-app"
+      title:  "GroupDocs.editor PDF"
+      link: "https://products.groupdocs.app/editor/pdf"
+      content: "{app_links.link_3.content}"
+    
 ---

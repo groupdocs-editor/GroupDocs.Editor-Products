@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Tạo một phiên bản của lớp `Editor` với đường dẫn tệp bắt buộc hoặc luồng byte và tải tệp {{EXT}}",
-    "step_2": "Tạo cá thể lớp `DelimitedTextEditOptions` cho định dạng tệp {{EXT}} và chỉ định dấu phân tách chuỗi bắt buộc trong hàm tạo",
-    "step_3": "Gọi phương thức `Editor.Edit ()` và lấy tài liệu {{EXT}} ở định dạng HTML có thể dễ dàng chỉnh sửa bằng bất kỳ trình biên tập WYSIWYG nào",
-    "step_4": "Gọi phương thức `Editor.Save ()` và lưu tệp {{EXT}} đã chỉnh sửa bằng cách sử dụng cá thể lớp `DelimitedTextSaveOptions` với dấu phân tách mong muốn"
-  }
-}

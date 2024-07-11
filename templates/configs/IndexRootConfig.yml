@@ -1,5 +1,0 @@
-inherits: languages.yml
-
-dictionaries: ["..\\data\\single\\IndexRootDict_{lang}.json"]
-
-outputPath: "editor\\_index.{lang}.md"

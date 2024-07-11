@@ -1,94 +1,340 @@
 ---
 ############################# Static ############################
-layout: "product"
-date: 2022-11-09T21:39:28
+layout: "family"
+date: 2024-07-11T16:47:59
 draft: false
 
+product: "Editor"
+product_tag: "editor"
+
 ############################# Head ############################
-head_title: "문서 편집 솔루션 | 온프레미스 API 및 무료 앱"
-head_description: "온프레미스 API를 사용하거나 온라인 문서 편집기 앱을 사용하여 Microsoft Office, OpenDocument, PDF 및 기타 파일 형식에 대한 문서 편집."
+head_title: "{head.title}"
+head_description: "{head.description}"
 
 ############################# Header ############################
-title: "문서 편집 솔루션"
-description: "Microsoft Office, OpenOffice, PDF, HTML 및 기타 문서 파일 형식을 조작하는 문서 편집기."
+title: "{header.title}"
+description: |
+  {header.description_1}
 
-############################# APIs ###############################
-apis:
+  {header.description_2}
+
+  {header.description_3}
+  
+############################# Platforms ############################
+supported_platforms:
+  enable: true  
+  head_title: "{supported_platforms.head_title}"
+  title: "{supported_platforms.title}"
+  description: "{supported_platforms.description}"
+  details_link_title: "{supported_platforms.details_link_title}"
+  items:
+    # supported_platforms loop
+    - title: ".NET"
+      description: "{supported_platforms.net.description}"
+      color: "blue"
+      tag: "net"
+      link: "/editor/net/"
+      features_link: "https://docs.groupdocs.com/editor/net/system-requirements/"
+      features:
+        # features loop
+        - content: "{supported_platforms.net.feature_1.line_1}  <br>  {supported_platforms.net.feature_1.line_2}  <br>  {supported_platforms.net.feature_1.line_3} <br>  {supported_platforms.net.feature_1.line_4}"
+          rows: "4"
+        # features loop
+        - content: "{supported_platforms.net.feature_2.line_1}"
+          rows: "1"
+        # features loop
+        - content: "Microsoft Visual Studio  <br>  Xamarin (Android, iOS, Mac)  <br>  MonoDevelop"
+          rows: "3"
+         # features loop
+        - content: "{supported_platforms.net.feature_4.line_1}"
+          rows: "1"
+    
+    # supported_platforms loop
+    - title: "Java"
+      description: "{supported_platforms.java.description}"
+      color: "red"
+      tag: "java"
+      link: "/editor/java/"
+      features_link: "https://docs.groupdocs.com/editor/java/system-requirements/"
+      features:
+        # features loop
+        - content: "{supported_platforms.java.feature_1.line_1}"
+          rows: "4"
+        # features loop
+        - content:  "{supported_platforms.java.feature_2.line_1}"
+          rows: "1"
+        # features loop
+        - content:  "IntelliJ IDEA  <br>  Eclipse  <br>  NetBeans"
+          rows: "3"
+         # features loop
+        - content:  "{supported_platforms.java.feature_4.line_1}"
+          rows: "1"
+    
+    # supported_platforms loop
+    - title: "Node.js"
+      description: "{supported_platforms.nodejs-java.description}"
+      color: "green"
+      tag: "nodejs-java"
+      link: "/editor/nodejs-java/"
+      features_link: "https://docs.groupdocs.com/editor/nodejs-java/system-requirements/"
+      features:
+        # features loop
+        - content: "{supported_platforms.nodejs-java.feature_1.line_1}"
+          rows: "4"
+        # features loop
+        - content: Windows, Linux, Mac OS
+          rows: "1"
+        # features loop
+        - content:  "Atom <br> Visual Studio Code <br> {supported_platforms.nodejs-java.feature_3.line_1}"
+          rows: "3"
+         # features loop
+        - content:  "{supported_platforms.nodejs-java.feature_4.line_1}"
+          rows: "1"
+ 
+############################# Features ############################
+
+features:
   enable: true
+  title: "{features.title}"
+  description: "{features.description}"
 
-  api:
-    # api loop
-    - title: "GroupDocs.Editor 높은 코드 API 포함"
-      link: "/editor/"
-      label: "모든 하이 코드 API 보기"
-      api_product:
-        # api_product loop
-        - link: "/editor/net/"
-          img_alt: "GroupDocs.Editor for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
-          product: "GroupDocs.Editor for"
-          platform: ".NET"
-          content: "애플리케이션이 문서를 보고 편집한 다음 변환하는 데 도움이 되는 On Premise .NET API입니다."
+  items:
+    # feature loop
+    - icon: "merge"
+      title: "{features.feature_1.title}"
+      content: "{features.feature_1.content}"
 
-        # api_product loop
-        - link: "/editor/java/"
-          img_alt: "GroupDocs.Editor for Java"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png"
-          product: "GroupDocs.Editor for"
-          platform: "Java"
-          content: "Microsoft Office, OpenOffice, HTML 및 기타 문서가 Java 기반 응용 프로그램 내에서 조작할 수 있는 문서 편집 API입니다."
+    # feature loop
+    - icon: "split"
+      title: "{features.feature_2.title}"
+      content: "{features.feature_2.content}"
 
-    # api loop
-    - title: "GroupDocs.Editor 로우 코드 API 포함"
-      link: "https://products.groupdocs.cloud/editor"
-      label: "모든 로우 코드 API 보기"
-      api_product:
-        # api_product loop
-        - link: "https://products.groupdocs.cloud/editor/net"
-          img_alt: "GroupDocs.Editor Cloud SDK for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocscloud/images/sdk/272x272/groupdocs_editor-for-net.png"
-          product: "GroupDocs.Editor"
-          platform: "Cloud SDK for .NET"
-          content: ".NET용 Cloud SDK를 사용하여 .NET 애플리케이션에 강력한 문서 형식 편집 기능을 추가합니다. MS Office, 웹 및 XML 문서를 편집합니다."
+    # feature loop
+    - icon: "structure"
+      title: "{features.feature_3.title}"
+      content: "{features.feature_3.content}"
+    
+    # feature loop
+    - icon: "preview"
+      title: "{features.feature_4.title}"
+      content: "{features.feature_4.content}"
 
-        # api_product loop
-        - link: "https://products.groupdocs.cloud/editor/java"
-          img_alt: "GroupDocs.Editor Cloud SDK for Java"
-          image: "https://www.groupdocs.cloud/templates/groupdocscloud/images/sdk/272x272/groupdocs_editor-for-java.png"
-          product: "GroupDocs.Editor"
-          platform: "Cloud SDK for Java"
-          content: "REST API를 호출할 수 있는 모든 플랫폼에서 업계 표준 문서 파일 형식을 편집하기 위한 Java 애플리케이션용 고급 문서 편집기 SDK."
-
-    # api loop
-    - title: "GroupDocs.Editor 코드 앱 포함 없음"
-      link: "https://products.groupdocs.app/editor"
-      label: "코드 없음 앱 모두 보기"
-      api_product:
-        # api_product loop
-        - link: "https://products.groupdocs.app/editor/total"
-          img_alt: "GroupDocs.Editor Total"
-          image: "https://www.aspose.cloud/templates/asposeapp/images/products/logo/aspose_editor-app.png"
-          product: "GroupDocs.Editor"
-          platform: "Total"
-          content: "Office 및 OpenOffice에서 널리 사용되는 파일 형식을 편집할 수 있는 웹 기반 무료 온라인 앱."
-
-        # api_product loop
-        - link: "https://products.groupdocs.app/editor/docx"
-          img_alt: "GroupDocs.Editor DOCX"
-          image: "https://www.aspose.cloud/templates/groupdocsapp/images/products/logo/groupdocs_words-app.png"
-          product: "GroupDocs.Editor"
-          platform: "DOCX"
-          content: "Microsoft Word 문서를 온라인으로 보고 편집할 수 있는 무료 편집기 앱."
-
-        # api_product loop
-        - link: "https://products.groupdocs.app/editor/pdf"
-          img_alt: "GroupDocs.Editor PDF"
-          image: "https://www.aspose.cloud/templates/groupdocsapp/images/products/logo/groupdocs_pdf-app.png"
-          product: "GroupDocs.Editor"
-          platform: "PDF"
-          content: "모든 장치, 모든 브라우저를 사용하여 PDF 및 XPS 문서를 보거나 편집할 수 있습니다."
-
-############################# Back to top ###############################
-back_to_top:
+############################# Code samples ############################
+code_samples:
   enable: true
+  title: "{code_samples.title}"
+  description: "{code_samples.description}"
+  items:
+    # code sample loop
+    - title: "{code_samples.sample_1.title}"
+      content: |
+        {code_samples.sample_1.content} 
+      samples:
+        - language: "C#"
+          color: "blue"
+          content: |
+            ```csharp {style=abap}   
+             // Load document
+            Editor editor = new Editor("sample.docx");
+            
+            // Edit document
+            EditableDocument editableDocument = editor.Edit();
+            
+            // Save edited document
+            editor.Save(editableDocument, "edited_sample.docx");
+            ```
+        - language: "Java"
+          color: "red"
+          content: |
+            ```java {style=abap}   
+            // Load document
+            Editor editor = new Editor("sample.docx");
+            
+            // Edit document
+            EditableDocument editableDocument = editor.edit();
+            
+            // Save edited document
+            editor.save(editableDocument, "edited_sample.docx");
+            ```
+        - language: "TypeScript"
+          color: "green"
+          content: |
+            ```javascript {style=abap}   
+            // Load document
+            const editor = new Editor("sample.docx");
+            
+            // Edit document
+            const editableDocument = editor.edit();
+            
+            // Save edited document
+            editor.save(editableDocument, "edited_sample.docx");
+            ```
+
+############################# Formats ############################
+formats:
+  enable: true
+  title:  "{formats.title}"
+  description: "{formats.description}" 
+
+############################# Metrics ############################
+
+metrics:
+  enable: true
+  title: "{metrics.title}"
+  description: "{metrics.description}"
+
+  items:
+    # metrics loop
+    - number: "60+"
+      title: "{metrics.metric_1.title}"
+      content: "{metrics.metric_1.content}"
+
+    # metrics loop
+    - number: "274k"
+      title: "{metrics.metric_2.title}"
+      content: "{metrics.metric_2.content}"
+
+    # metrics loop
+    - number: "5.5k"
+      title: "{metrics.metric_3.title}"
+      content: "{metrics.metric_3.content}"
+    
+    # metrics loop
+    - number: "140+"
+      title: "{metrics.metric_4.title}"
+      content: "{metrics.metric_4.content}"
+
+
+############################# Customers ############################
+# logo size X1 => 170:70  X2 => 340 : 140
+
+customers:
+  enable: true
+  title: "{customers.title}"
+  description: "{customers.description}"
+
+  items:
+    # customers loop
+    - title: "BenQ Corporation"
+      logo: "benq"
+    # customers loop
+    - title: "Nasdaq Stock Market"
+      logo: "nasdaq"
+    # customers loop
+    - title: "AT&T Inc."
+      logo: "att"
+    # customers loop
+    - title: "AstraZeneca"
+      logo: "astrazeneca"
+    # customers loop
+    - title: "Central Bank of Argentina"
+      logo: "argentinacentralbank"
+    # customers loop
+    - title: "Roche Holding AG"
+      logo: "roche"
+    # customers loop
+    - title: "Capita"
+      logo: "capita"
+    # customers loop
+    - title: "Axa S.A."
+      logo: "axa"
+    # customers loop
+    - title: "Instructure Inc."
+      logo: "instructure"
+     # customers loop
+    - title: "Wipro"
+      logo: "wipro"
+
+############################# Actions ############################
+
+actions:
+  enable: true
+  title: "{actions.title}"
+  description: "{actions.description}"
+  items:
+    #  loop
+    - title: ".NET"
+      link: "/editor/net/"
+      color: "blue"
+        #  loop
+    - title: "Java"
+      link: "/editor/java/"
+      color: "red"
+        #  loop
+    - title: "Node.js"
+      link: "/editor/nodejs-java/"
+      color: "green"
+
+############################# Faq ############################
+
+faq:
+  enable: true
+  title:  "{faq.title}"
+  description:  "{faq.description}"
+  items:
+    #  loop
+    - question: "{faq.faq_1.question}"
+      answer: |
+        {faq.faq_1.answer}
+     #  loop
+    - question:  "{faq.faq_2.question}"
+      answer: |
+        {faq.faq_2.answer}
+    #  loop 
+    - question:  "{faq.faq_3.question}"
+      answer: |
+        {faq.faq_3.answer}                      
+     
+############################# Cloud ############################
+
+cloud_links:
+  enable: true
+  title: "{cloud_links.title}"
+  description: "{cloud_links.description}"
+
+  items:
+    #  loop
+    - icon: "groupdocs_editor-for-curl"
+      title: "{cloud_links.link_1.title}"
+      link: "https://products.groupdocs.cloud/editor/curl"
+      content: "{cloud_links.link_1.content}"
+
+    #  loop
+    - icon: "groupdocs_editor-for-net"
+      title: "{cloud_links.link_2.title}"
+      link: "https://products.groupdocs.cloud/editor/net"
+      content: "{cloud_links.link_2.content}"
+
+    #  loop
+    - icon: "groupdocs_editor-for-java"
+      title: "{cloud_links.link_3.title}"
+      link: "https://products.groupdocs.cloud/editor/java"
+      content: "{cloud_links.link_3.content}"
+    
+############################# Apps ############################
+
+app_links:
+  enable: true
+  title: "{app_links.title}"
+  description: "{app_links.description}"
+
+  items:
+    #  loop
+    - icon: "groupdocs_editor-app"
+      title: "GroupDocs.editor Total"
+      link: "https://products.groupdocs.app/editor/total"
+      content: "{app_links.link_1.content}"
+
+    #  loop
+    - icon: "groupdocs_words-app"
+      title:  "GroupDocs.editor DOCX"
+      link: "https://products.groupdocs.app/editor/docx"
+      content: "{app_links.link_2.content}"
+
+    #  loop
+    - icon: "groupdocs_pdf-app"
+      title:  "GroupDocs.editor PDF"
+      link: "https://products.groupdocs.app/editor/pdf"
+      content: "{app_links.link_3.content}"
+    
 ---

@@ -1,9 +1,0 @@
-inherits: Common.yml
-
-dimensions: 
-- alias: ext
-  values: ["mobi", "azw3", "epub"]
-
-dictionaries: ["..\\data\\EbookFamilyDict_{lang}.json"]
-
-outputPath: "editor\\{product}\\{ext}.{lang}.md"

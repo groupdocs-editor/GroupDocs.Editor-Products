@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Crea un'istanza della classe `Editor` con percorso file obbligatorio o flusso di byte e carica il file {{EXT}}",
-    "step_2": "Crea e imposta l'istanza della classe `TextEditOptions` per il formato file {{EXT}}",
-    "step_3": "Chiama il metodo `Editor.Edit()` e ottieni il documento {{EXT}} in formato HTML facilmente modificabile con qualsiasi editor WYSIWYG.",
-    "step_4": "Chiama il metodo `Editor.Save()` e salva il file {{EXT}} modificato usando la classe `TextSaveOptions`"
-  }
-}

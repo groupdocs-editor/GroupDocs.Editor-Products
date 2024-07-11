@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Buat contoh kelas `Editor` dengan laluan fail wajib atau strim bait dan muatkan fail {{EXT}}",
-    "step_2": "Cipta contoh kelas `DelimitedTextEditOptions` untuk format fail {{EXT}} dan tentukan pemisah rentetan mandatori dalam pembina",
-    "step_3": "Panggil kaedah `Editor.Edit()` dan dapatkan {{EXT}} dokumen dalam format HTML yang mudah diedit dengan mana-mana WYSIWYG-editor",
-    "step_4": "Panggil kaedah `Editor.Save()` dan simpan fail {{EXT}} yang diedit menggunakan contoh kelas `DelimitedTextSaveOptions` dengan pemisah yang dikehendaki"
-  }
-}

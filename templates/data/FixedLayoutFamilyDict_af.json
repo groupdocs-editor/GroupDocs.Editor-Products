@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Skep 'n instansie van `Editor`-klas met verpligte lêerpad of stroom en opsionele `PdfLoadOptions`-klas vir PDF (nie van toepassing vir XPS nie) en laai die {{EXT}}-lêer",
-    "step_2": "Skep en stel die `{{Ext}}EditOptions`-klasinstansie vir die {{EXT}}-lêerformaat",
-    "step_3": "Roep `Editor.Edit()`-metode en verkry {{EXT}}-dokument in HTML-formaat wat maklik met enige WYSIWYG-redigeerder geredigeer kan word.",
-    "step_4": "Roep `Editor.Save()`-metode en stoor geredigeerde {{EXT}}-lêer deur gebruik te maak van `{{Ext}}SaveOptions`-klas"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "إنشاء مثيل لفئة \"Editor\" مع مسار ملف إلزامي أو دفق بايت وفئة اختيارية \"PresentationLoadOptions\" وتحميل الملف {{EXT}}",
-    "step_2": "قم بإنشاء وتعيين مثيل فئة `PresentationEditOptions` لتنسيق الملف {{EXT}}",
-    "step_3": "قم باستدعاء طريقة `Editor.Edit ()` واحصل على مستند {{EXT}} بتنسيق HTML الذي يمكن تحريره بسهولة باستخدام أي محرر WYSIWYG.",
-    "step_4": "قم باستدعاء طريقة `Editor.Save ()` واحفظ الملف {{EXT}} المحرر باستخدام فئة `PresentationSaveOptions`"
-  }
-}

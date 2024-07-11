@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Creeu una instància de la classe `Editor` amb la ruta o flux del fitxer obligatori i la classe `SpreadsheetLoadOptions` opcional i carregueu el fitxer {{EXT}}",
-    "step_2": "Creeu i configureu la instància de classe `SpreadsheetEditOptions` per al format de fitxer {{EXT}}",
-    "step_3": "Truqueu al mètode `Editor.Edit()` i obteniu el document {{EXT}} en format HTML que es pugui editar fàcilment amb qualsevol editor WYSIWYG.",
-    "step_4": "Truqueu al mètode `Editor.Save()` i deseu el fitxer editat {{EXT}} mitjançant la classe `SpreadsheetSaveOptions`"
-  }
-}
