@@ -1,134 +1,134 @@
 ---
 ############################# Static ############################
 layout: "family"
-date: 2024-07-11T14:22:40
+date: 2024-07-11T16:47:59
 draft: false
 
 product: "Editor"
 product_tag: "editor"
 
 ############################# Head ############################
-head_title: "{head.title}"
-head_description: "{head.description}"
+head_title: "Solución de edición de documentos | API locales y aplicación gratuita"
+head_description: "Edite MS Office, OpenDocument, imágenes PDF y otros formatos de archivo utilizando la solución local o utilice la aplicación Online Document Editor."
 
 ############################# Header ############################
-title: "{header.title}"
+title: "Edite y administre documentos con facilidad"
 description: |
-  {header.description_1}
+  Editor de documentos para manipular Microsoft Office, OpenOffice, PDF, HTML y otros formatos de archivos de documentos.
 
-  {header.description_2}
+  Crea nuevos documentos desde cero.
 
-  {header.description_3}
+  Administre fácilmente los campos de formulario dentro de los documentos.
   
 ############################# Platforms ############################
 supported_platforms:
   enable: true  
-  head_title: "{supported_platforms.head_title}"
-  title: "{supported_platforms.title}"
-  description: "{supported_platforms.description}"
-  details_link_title: "{supported_platforms.details_link_title}"
+  head_title: "Elige tu plataforma"
+  title: "Independencia de plataforma"
+  description: "La biblioteca GroupDocs.Editor admite los siguientes sistemas operativos y marcos:"
+  details_link_title: "Aprende más"
   items:
     # supported_platforms loop
     - title: ".NET"
-      description: "{supported_platforms.net.description}"
+      description: "GroupDocs.Editor para .NET"
       color: "blue"
       tag: "net"
       link: "/editor/net/"
       features_link: "https://docs.groupdocs.com/editor/net/system-requirements/"
       features:
         # features loop
-        - content: "{supported_platforms.net.feature_1.line_1}  <br>  {supported_platforms.net.feature_1.line_2}  <br>  {supported_platforms.net.feature_1.line_3} <br>  {supported_platforms.net.feature_1.line_4}"
+        - content: ".NET Framework 4.6.2 o superior  <br>  .NET Core 2.0 o superior  <br>  .NET 6.0 o superior <br>  Mono Framework 2.6.7 o superior"
           rows: "4"
         # features loop
-        - content: "{supported_platforms.net.feature_2.line_1}"
+        - content: "Windows, Linux, MacOS"
           rows: "1"
         # features loop
         - content: "Microsoft Visual Studio  <br>  Xamarin (Android, iOS, Mac)  <br>  MonoDevelop"
           rows: "3"
          # features loop
-        - content: "{supported_platforms.net.feature_4.line_1}"
+        - content: "Más de 60 formatos de archivo"
           rows: "1"
     
     # supported_platforms loop
     - title: "Java"
-      description: "{supported_platforms.java.description}"
+      description: "GroupDocs.Editor para Java"
       color: "red"
       tag: "java"
       link: "/editor/java/"
       features_link: "https://docs.groupdocs.com/editor/java/system-requirements/"
       features:
         # features loop
-        - content: "{supported_platforms.java.feature_1.line_1}"
+        - content: "J2SE 8.0 o superior"
           rows: "4"
         # features loop
-        - content:  "{supported_platforms.java.feature_2.line_1}"
+        - content:  "Windows, Linux, MacOS"
           rows: "1"
         # features loop
         - content:  "IntelliJ IDEA  <br>  Eclipse  <br>  NetBeans"
           rows: "3"
          # features loop
-        - content:  "{supported_platforms.java.feature_4.line_1}"
+        - content:  "Más de 50 formatos de archivo"
           rows: "1"
     
     # supported_platforms loop
     - title: "Node.js"
-      description: "{supported_platforms.nodejs-java.description}"
+      description: "GroupDocs.Editor para Node.js"
       color: "green"
       tag: "nodejs-java"
       link: "/editor/nodejs-java/"
       features_link: "https://docs.groupdocs.com/editor/nodejs-java/system-requirements/"
       features:
         # features loop
-        - content: "{supported_platforms.nodejs-java.feature_1.line_1}"
+        - content: "Node.js 16+ y J2SE 8.0 (1.8)+"
           rows: "4"
         # features loop
         - content: Windows, Linux, Mac OS
           rows: "1"
         # features loop
-        - content:  "Atom <br> Visual Studio Code <br> {supported_platforms.nodejs-java.feature_3.line_1}"
+        - content:  "Atom <br> Visual Studio Code <br> Cualquier otro editor de texto"
           rows: "3"
          # features loop
-        - content:  "{supported_platforms.nodejs-java.feature_4.line_1}"
+        - content:  "Más de 50 formatos de archivo"
           rows: "1"
  
 ############################# Features ############################
 
 features:
   enable: true
-  title: "{features.title}"
-  description: "{features.description}"
+  title: "GroupDocs.Editor de un vistazo"
+  description: "API para editar, traducir y guardar varios formatos de documentos sin problemas."
 
   items:
     # feature loop
     - icon: "merge"
-      title: "{features.feature_1.title}"
-      content: "{features.feature_1.content}"
+      title: "Editar múltiples formatos de archivos"
+      content: "Edite sin problemas varios formatos PDF, Office y muchos otros formatos compatibles."
 
     # feature loop
     - icon: "split"
-      title: "{features.feature_2.title}"
-      content: "{features.feature_2.content}"
+      title: "Traducir a HTML/CSS"
+      content: "Traduzca documentos a formato HTML/CSS compatible con editores WYSIWYG."
 
     # feature loop
     - icon: "structure"
-      title: "{features.feature_3.title}"
-      content: "{features.feature_3.content}"
+      title: "Guardar documentos editados"
+      content: "Guarde el HTML/CSS editado en el formato del documento de origen o expórtelo a PDF."
     
     # feature loop
     - icon: "preview"
-      title: "{features.feature_4.title}"
-      content: "{features.feature_4.content}"
+      title: "Extracción de información del documento."
+      content: "Extraiga información como el número de páginas, el tamaño y el estado de cifrado."
 
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "{code_samples.title}"
-  description: "{code_samples.description}"
+  title: "Muestra de código práctico"
+  description: "Algunos casos de uso de operaciones típicas de GroupDocs.Editor."
   items:
     # code sample loop
-    - title: "{code_samples.sample_1.title}"
+    - title: "Editar un documento"
       content: |
-        {code_samples.sample_1.content} 
+        GroupDocs.Editor le permite editar varios formatos de documentos y guardar los cambios. Puede editar documentos completos o partes específicas de sus documentos. 
       samples:
         - language: "C#"
           color: "blue"
@@ -173,36 +173,36 @@ code_samples:
 ############################# Formats ############################
 formats:
   enable: true
-  title:  "{formats.title}"
-  description: "{formats.description}" 
+  title:  "Más de 60 formatos de archivo compatibles"
+  description: "GroupDocs.Editor admite operaciones con una amplia gama de [formatos de documentos] (https://docs.groupdocs.com/editor/net/supported-document-formats/)." 
 
 ############################# Metrics ############################
 
 metrics:
   enable: true
-  title: "{metrics.title}"
-  description: "{metrics.description}"
+  title: "Métricas detalladas y conocimientos estadísticos"
+  description: "Sumérjase en un desglose detallado de nuestras cifras clave, proporcionando métricas completas e información estadística sobre nuestros logros, impacto y crecimiento."
 
   items:
     # metrics loop
     - number: "60+"
-      title: "{metrics.metric_1.title}"
-      content: "{metrics.metric_1.content}"
+      title: "Formatos soportados"
+      content: "Cada biblioteca admite la edición de más de 60 de los formatos de archivos y documentos más populares."
 
     # metrics loop
     - number: "274k"
-      title: "{metrics.metric_2.title}"
-      content: "{metrics.metric_2.content}"
+      title: "Descargas NuGet"
+      content: "GroupDocs.Editor para .NET tiene más de 274.000 descargas desde el administrador de paquetes NuGet."
 
     # metrics loop
     - number: "5.5k"
-      title: "{metrics.metric_3.title}"
-      content: "{metrics.metric_3.content}"
+      title: "Descargas de Maven"
+      content: "GroupDocs.Editor para Java tiene más de 5,5 mil descargas desde nuestro repositorio Maven."
     
     # metrics loop
     - number: "140+"
-      title: "{metrics.metric_4.title}"
-      content: "{metrics.metric_4.content}"
+      title: "Clientes felices"
+      content: "Nuestras bibliotecas son utilizadas tanto por pequeños desarrolladores individuales como por empresas líderes de todo el mundo."
 
 
 ############################# Customers ############################
@@ -210,8 +210,8 @@ metrics:
 
 customers:
   enable: true
-  title: "{customers.title}"
-  description: "{customers.description}"
+  title: "Nuestros clientes felices"
+  description: "Las bibliotecas de GroupDocs son utilizadas por marcas distinguidas y reconocidas a nivel mundial en todo el mundo."
 
   items:
     # customers loop
@@ -249,8 +249,8 @@ customers:
 
 actions:
   enable: true
-  title: "{actions.title}"
-  description: "{actions.description}"
+  title: "¿Listo para comenzar?"
+  description: "Pruebe las funciones de GroupDocs.Editor de forma gratuita en su plataforma."
   items:
     #  loop
     - title: ".NET"
@@ -269,72 +269,72 @@ actions:
 
 faq:
   enable: true
-  title:  "{faq.title}"
-  description:  "{faq.description}"
+  title:  "Preguntas frecuentes"
+  description:  "Respuestas a las preguntas más frecuentes."
   items:
     #  loop
-    - question: "{faq.faq_1.question}"
+    - question: "¿La biblioteca GroupDocs.Editor necesita algún otro software de terceros para manipular documentos?"
       answer: |
-        {faq.faq_1.answer}
+        GroupDocs.Editor no requiere la instalación de ningún software externo como Adobe Acrobat, Microsoft Office o cualquier otro.
      #  loop
-    - question:  "{faq.faq_2.question}"
+    - question:  "¿Puedo probar la biblioteca GroupDocs.Editor antes de comprarla?"
       answer: |
-        {faq.faq_2.answer}
+        Sí, puedes probar GroupDocs.Editor sin comprar una licencia. Una vez instalada sin licencia, la biblioteca funciona en modo de prueba. En este modo, se agregan insignias de prueba al documento resultante y se recorta a las primeras 3 páginas. Si desea probar GroupDocs.Editor sin las limitaciones de la versión de prueba, también puede solicitar una licencia temporal de 30 días. Para obtener más detalles, consulte [Obtener una licencia temporal](https://purchase.groupdocs.com/temporary-license/).
     #  loop 
-    - question:  "{faq.faq_3.question}"
+    - question:  "¿Qué licencias tienes?"
       answer: |
-        {faq.faq_3.answer}                      
+        Ofrecemos varios tipos de licencias para satisfacer las necesidades de desarrolladores o empresas particulares. Los tipos de licencia dependen de la cantidad de desarrolladores, la cantidad de ubicaciones de sitios de desarrolladores y si necesita entregar nuestro SDK/API a sus clientes finales. Alternativamente, puede elegir licencias medidas según el uso mensual del producto. Obtenga más información en [Tipos de licencia](https://purchase.groupdocs.com/policies/license-types/).                      
      
 ############################# Cloud ############################
 
 cloud_links:
   enable: true
-  title: "{cloud_links.title}"
-  description: "{cloud_links.description}"
+  title: "API de código bajo de GroupDocs.Editor"
+  description: "Acelere la edición de documentos en cualquier tipo de aplicación con nuestra API REST basada en la nube."
 
   items:
     #  loop
     - icon: "groupdocs_editor-for-curl"
-      title: "{cloud_links.link_1.title}"
+      title: "GroupDocs.Editor nube para cURL"
       link: "https://products.groupdocs.cloud/editor/curl"
-      content: "{cloud_links.link_1.content}"
+      content: "Comandos cURL simples para la API de la nube del editor de documentos RESTful para editar y traducir documentos."
 
     #  loop
     - icon: "groupdocs_editor-for-net"
-      title: "{cloud_links.link_2.title}"
+      title: "GroupDocs.Editor Nube para .NET"
       link: "https://products.groupdocs.cloud/editor/net"
-      content: "{cloud_links.link_2.content}"
+      content: "Cloud SDK para Microsoft .NET para implementar funciones de edición rápida de documentos en aplicaciones basadas en .NET."
 
     #  loop
     - icon: "groupdocs_editor-for-java"
-      title: "{cloud_links.link_3.title}"
+      title: "GroupDocs.Editor Nube para Java"
       link: "https://products.groupdocs.cloud/editor/java"
-      content: "{cloud_links.link_3.content}"
+      content: "Edite y traduzca documentos en sus aplicaciones Java utilizando nuestra API en la nube."
     
 ############################# Apps ############################
 
 app_links:
   enable: true
-  title: "{app_links.title}"
-  description: "{app_links.description}"
+  title: "Aplicaciones GroupDocs.Editor NoCode"
+  description: "Aplicación en línea que le permite editar más de 170 formatos de archivos populares en el navegador."
 
   items:
     #  loop
     - icon: "groupdocs_editor-app"
       title: "GroupDocs.editor Total"
       link: "https://products.groupdocs.app/editor/total"
-      content: "{app_links.link_1.content}"
+      content: "Pruebe nuestra aplicación en línea gratuita para editar más de 30 tipos de archivos sin salir de su navegador web favorito."
 
     #  loop
     - icon: "groupdocs_words-app"
       title:  "GroupDocs.editor DOCX"
       link: "https://products.groupdocs.app/editor/docx"
-      content: "{app_links.link_2.content}"
+      content: "Edite archivos DOCX en línea sin problemas."
 
     #  loop
     - icon: "groupdocs_pdf-app"
       title:  "GroupDocs.editor PDF"
       link: "https://products.groupdocs.app/editor/pdf"
-      content: "{app_links.link_3.content}"
+      content: "Edite archivos PDF directamente desde el navegador web."
     
 ---

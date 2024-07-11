@@ -1,0 +1,175 @@
+{
+  "head": {
+    "title": "Solución de edición de documentos | API locales y aplicación gratuita",
+    "description": "Edite MS Office, OpenDocument, imágenes PDF y otros formatos de archivo utilizando la solución local o utilice la aplicación Online Document Editor."
+  },
+  "header": {
+    "title": "Edite y administre documentos con facilidad",
+    "description_1": "Editor de documentos para manipular Microsoft Office, OpenOffice, PDF, HTML y otros formatos de archivos de documentos.",
+    "description_2": "Crea nuevos documentos desde cero.",
+    "description_3": "Administre fácilmente los campos de formulario dentro de los documentos."
+  },
+  "actions": {
+    "title": "¿Listo para comenzar?",
+    "description": "Pruebe las funciones de GroupDocs.Editor de forma gratuita en su plataforma."
+  },
+  "formats": {
+    "title": "Más de 60 formatos de archivo compatibles",
+    "description": "GroupDocs.Editor admite operaciones con una amplia gama de [formatos de documentos] (https://docs.groupdocs.com/editor/net/supported-document-formats/)."
+  },
+  "code_samples": {
+    "title": "Muestra de código práctico",
+    "description": "Algunos casos de uso de operaciones típicas de GroupDocs.Editor.",
+    "sample_1": {
+      "title": "Editar un documento",
+      "content": "GroupDocs.Editor le permite editar varios formatos de documentos y guardar los cambios. Puede editar documentos completos o partes específicas de sus documentos."
+    }
+  },
+  "customers": {
+    "title": "Nuestros clientes felices",
+    "description": "Las bibliotecas de GroupDocs son utilizadas por marcas distinguidas y reconocidas a nivel mundial en todo el mundo."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "description": "Respuestas a las preguntas más frecuentes.",
+    "faq_1": {
+      "question": "¿La biblioteca GroupDocs.Editor necesita algún otro software de terceros para manipular documentos?",
+      "answer": "GroupDocs.Editor no requiere la instalación de ningún software externo como Adobe Acrobat, Microsoft Office o cualquier otro."
+    },
+    "faq_2": {
+      "question": "¿Puedo probar la biblioteca GroupDocs.Editor antes de comprarla?",
+      "answer": "Sí, puedes probar GroupDocs.Editor sin comprar una licencia. Una vez instalada sin licencia, la biblioteca funciona en modo de prueba. En este modo, se agregan insignias de prueba al documento resultante y se recorta a las primeras 3 páginas. Si desea probar GroupDocs.Editor sin las limitaciones de la versión de prueba, también puede solicitar una licencia temporal de 30 días. Para obtener más detalles, consulte [Obtener una licencia temporal](https://purchase.groupdocs.com/temporary-license/)."
+    },
+    "faq_3": {
+      "question": "¿Qué licencias tienes?",
+      "answer": "Ofrecemos varios tipos de licencias para satisfacer las necesidades de desarrolladores o empresas particulares. Los tipos de licencia dependen de la cantidad de desarrolladores, la cantidad de ubicaciones de sitios de desarrolladores y si necesita entregar nuestro SDK/API a sus clientes finales. Alternativamente, puede elegir licencias medidas según el uso mensual del producto. Obtenga más información en [Tipos de licencia](https://purchase.groupdocs.com/policies/license-types/)."
+    }
+  },
+  "features": {
+    "title": "GroupDocs.Editor de un vistazo",
+    "description": "API para editar, traducir y guardar varios formatos de documentos sin problemas.",
+    "feature_1": {
+      "title": "Editar múltiples formatos de archivos",
+      "content": "Edite sin problemas varios formatos PDF, Office y muchos otros formatos compatibles."
+    },
+    "feature_2": {
+      "title": "Traducir a HTML/CSS",
+      "content": "Traduzca documentos a formato HTML/CSS compatible con editores WYSIWYG."
+    },
+    "feature_3": {
+      "title": "Guardar documentos editados",
+      "content": "Guarde el HTML/CSS editado en el formato del documento de origen o expórtelo a PDF."
+    },
+    "feature_4": {
+      "title": "Extracción de información del documento.",
+      "content": "Extraiga información como el número de páginas, el tamaño y el estado de cifrado."
+    }
+  },
+  "cloud_links": {
+    "title": "API de código bajo de GroupDocs.Editor",
+    "description": "Acelere la edición de documentos en cualquier tipo de aplicación con nuestra API REST basada en la nube.",
+    "link_1": {
+      "title": "GroupDocs.Editor nube para cURL",
+      "content": "Comandos cURL simples para la API de la nube del editor de documentos RESTful para editar y traducir documentos."
+    },
+    "link_2": {
+      "title": "GroupDocs.Editor Nube para .NET",
+      "content": "Cloud SDK para Microsoft .NET para implementar funciones de edición rápida de documentos en aplicaciones basadas en .NET."
+    },
+    "link_3": {
+      "title": "GroupDocs.Editor Nube para Java",
+      "content": "Edite y traduzca documentos en sus aplicaciones Java utilizando nuestra API en la nube."
+    }
+  },
+  "app_links": {
+    "title": "Aplicaciones GroupDocs.Editor NoCode",
+    "description": "Aplicación en línea que le permite editar más de 170 formatos de archivos populares en el navegador.",
+    "link_1": {
+      "title": "GrupoDocs.Editor Total",
+      "content": "Pruebe nuestra aplicación en línea gratuita para editar más de 30 tipos de archivos sin salir de su navegador web favorito."
+    },
+    "link_2": {
+      "title": "GroupDocs.Editor de Word",
+      "content": "Edite archivos DOCX en línea sin problemas."
+    },
+    "link_3": {
+      "title": "GroupDocs.Editor PDF",
+      "content": "Edite archivos PDF directamente desde el navegador web."
+    }
+  },
+  "metrics": {
+    "title": "Métricas detalladas y conocimientos estadísticos",
+    "description": "Sumérjase en un desglose detallado de nuestras cifras clave, proporcionando métricas completas e información estadística sobre nuestros logros, impacto y crecimiento.",
+    "metric_1": {
+      "title": "Formatos soportados",
+      "content": "Cada biblioteca admite la edición de más de 60 de los formatos de archivos y documentos más populares."
+    },
+    "metric_2": {
+      "title": "Descargas NuGet",
+      "content": "GroupDocs.Editor para .NET tiene más de 274.000 descargas desde el administrador de paquetes NuGet."
+    },
+    "metric_3": {
+      "title": "Descargas de Maven",
+      "content": "GroupDocs.Editor para Java tiene más de 5,5 mil descargas desde nuestro repositorio Maven."
+    },
+    "metric_4": {
+      "title": "Clientes felices",
+      "content": "Nuestras bibliotecas son utilizadas tanto por pequeños desarrolladores individuales como por empresas líderes de todo el mundo."
+    }
+  },
+  "supported_platforms": {
+    "title": "Independencia de plataforma",
+    "description": "La biblioteca GroupDocs.Editor admite los siguientes sistemas operativos y marcos:",
+    "head_title": "Elige tu plataforma",
+    "details_link_title": "Aprende más",
+    "net": {
+      "description": "GroupDocs.Editor para .NET",
+      "feature_1": {
+        "line_1": ".NET Framework 4.6.2 o superior",
+        "line_2": ".NET Core 2.0 o superior",
+        "line_3": ".NET 6.0 o superior",
+        "line_4": "Mono Framework 2.6.7 o superior"
+      },
+      "feature_2": {
+        "line_1": "Windows, Linux, MacOS"
+      },
+      "feature_3": {
+        "line_1": "Microsoft Visual Studio",
+        "line_2": "Xamarin (Android, iOS, Mac)",
+        "line_3": "Monodesarrollo"
+      },
+      "feature_4": {
+        "line_1": "Más de 60 formatos de archivo"
+      }
+    },
+    "java": {
+      "description": "GroupDocs.Editor para Java",
+      "feature_1": {
+        "line_1": "J2SE 8.0 o superior"
+      },
+      "feature_2": {
+        "line_1": "Windows, Linux, MacOS"
+      },
+      "feature_3": {
+        "line_1": "entiendo la idea",
+        "line_2": "Eclipse",
+        "line_3": "NetBean"
+      },
+      "feature_4": {
+        "line_1": "Más de 50 formatos de archivo"
+      }
+    },
+    "nodejs-java": {
+      "description": "GroupDocs.Editor para Node.js",
+      "feature_1": {
+        "line_1": "Node.js 16+ y J2SE 8.0 (1.8)+"
+      },
+      "feature_3": {
+        "line_1": "Cualquier otro editor de texto"
+      },
+      "feature_4": {
+        "line_1": "Más de 50 formatos de archivo"
+      }
+    }
+  }
+}
