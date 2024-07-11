@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Buat contoh kelas `Editor` dengan laluan fail wajib atau strim bait dan muatkan fail {{EXT}}",
-    "step_2": "Buat & tetapkan contoh kelas `EbookEditOptions` untuk format fail {{EXT}}.",
-    "step_3": "Panggil kaedah `Editor.Edit()` dan dapatkan {{EXT}} dokumen dalam format HTML yang boleh diedit dengan mudah dengan mana-mana editor WYSIWYG.",
-    "step_4": "Panggil kaedah `Editor.Save()` dan simpan fail {{EXT}} yang diedit menggunakan kelas `EpubSaveOptions` atau `Azw3SaveOptions` untuk menyimpan ke dalam format ePub atau AZW3 masing-masing"
-  }
-}

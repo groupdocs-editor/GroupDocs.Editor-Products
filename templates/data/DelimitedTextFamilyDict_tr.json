@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Zorunlu dosya yolu veya bayt akışıyla bir \"Editör\" sınıfı örneği oluşturun ve {{EXT}} dosyasını yükleyin",
-    "step_2": "{{EXT}} dosya biçimi için \"DelimitedTextEditOptions\" sınıf örneğini oluşturun ve yapıcıda zorunlu bir dize ayırıcı belirtin",
-    "step_3": "`Editor.Edit()` yöntemini çağırın ve herhangi bir WYSIWYG editörüyle kolayca düzenlenebilen HTML formatında {{EXT}} belgesini alın",
-    "step_4": "`Editor.Save()` yöntemini çağırın ve `DelimitedTextSaveOptions` sınıf örneğini kullanarak düzenlenmiş {{EXT}} dosyasını istenen ayırıcıyla kaydedin"
-  }
-}

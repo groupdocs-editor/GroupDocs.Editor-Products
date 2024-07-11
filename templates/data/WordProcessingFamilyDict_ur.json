@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "لازمی فائل پاتھ یا اسٹریم اور اختیاری 'WordProcessingLoadOptions' کلاس کے ساتھ `Editor` کلاس کی مثال بنائیں اور {{EXT}} فائل لوڈ کریں۔",
-    "step_2": "{{EXT}} فائل فارمیٹ کے لیے `WordProcessingEditOptions` کلاس مثال بنائیں اور سیٹ کریں",
-    "step_3": "'Editor.Edit()' طریقہ کو کال کریں اور HTML فارمیٹ میں {{EXT}} دستاویز حاصل کریں جو کسی بھی WYSIWYG ایڈیٹر کے ساتھ آسانی سے قابل تدوین ہو۔",
-    "step_4": "'Editor.Save()' طریقہ کو کال کریں اور 'WordProcessingSaveOptions' کلاس کا استعمال کرتے ہوئے ترمیم شدہ {{EXT}} فائل کو محفوظ کریں"
-  }
-}

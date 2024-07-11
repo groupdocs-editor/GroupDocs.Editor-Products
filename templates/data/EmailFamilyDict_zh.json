@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "使用强制文件路径或字节流创建 `Editor` 类的实例并加载 {{EXT}} 文件",
-    "step_2": "为 {{EXT}} 文件格式创建和设置 `EmailEditOptions` 类实例",
-    "step_3": "调用 `Editor.Edit()` 方法并获得 HTML 格式的 {{EXT}} 文档，该文档可以使用任何所见即所得的编辑器轻松编辑。",
-    "step_4": "调用 `Editor.Save()` 方法并使用 `EmailSaveOptions` 类保存编辑的 {{EXT}} 文件"
-  }
-}

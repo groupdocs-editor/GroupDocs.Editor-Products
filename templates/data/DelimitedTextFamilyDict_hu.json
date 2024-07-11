@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Hozzon létre egy példányt az \"Editor\" osztályból kötelező fájl elérési úttal vagy bájtfolyammal, és töltse be az {{EXT}} fájlt",
-    "step_2": "Hozza létre a `DelimitedTextEditOptions` osztálypéldányt a {{EXT}} fájlformátumhoz, és adjon meg egy kötelező karakterlánc-elválasztót a konstruktorban",
-    "step_3": "Hívja az \"Editor.Edit()\" metódust, és szerezzen be {{EXT}} dokumentumot HTML formátumban, amely könnyen szerkeszthető bármely WYSIWYG-szerkesztővel",
-    "step_4": "Hívja meg az \"Editor.Save()\" metódust, és mentse a szerkesztett {{EXT}} fájlt a \"DelimitedTextSaveOptions\" osztálypéldány segítségével a kívánt elválasztóval"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Sukurkite „Editor“ klasės egzempliorių su privalomu failo keliu arba baitų srautu ir pasirenkama „PresentationLoadOptions“ klase ir įkelkite failą {{EXT}}",
-    "step_2": "Sukurkite ir nustatykite „PresentationEditOptions“ klasės egzempliorių failo formatui {{EXT}}",
-    "step_3": "Iškvieskite metodą „Editor.Edit()“ ir gaukite {{EXT}} dokumentą HTML formatu, kurį būtų lengva redaguoti naudojant bet kurį WYSIWYG redaktorių.",
-    "step_4": "Iškvieskite metodą „Editor.Save()“ ir išsaugokite redaguotą {{EXT}} failą naudodami klasę „PresentationSaveOptions“"
-  }
-}

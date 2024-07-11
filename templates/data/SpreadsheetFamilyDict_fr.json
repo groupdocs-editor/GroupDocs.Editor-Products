@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Créez une instance de la classe `Editor` avec un chemin de fichier ou un flux obligatoire et une classe facultative `SpreadsheetLoadOptions` et chargez le fichier {{EXT}}",
-    "step_2": "Créez et définissez l'instance de classe `SpreadsheetEditOptions` pour le format de fichier {{EXT}}",
-    "step_3": "Appelez la méthode `Editor.Edit()` et obtenez le document {{EXT}} au format HTML facilement modifiable avec n'importe quel éditeur WYSIWYG.",
-    "step_4": "Appelez la méthode `Editor.Save()` et enregistrez le fichier {{EXT}} modifié à l'aide de la classe `SpreadsheetSaveOptions`"
-  }
-}

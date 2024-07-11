@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Skep 'n instansie van `Editor`-klas met verpligte lêerpad of greepstroom en laai die {{EXT}}-lêer",
-    "step_2": "Skep die `DelimitedTextEditOptions` klas instansie vir die {{EXT}} lêer formaat en spesifiseer 'n verpligte string skeier in die konstruktor",
-    "step_3": "Roep `Editor.Edit()`-metode en verkry {{EXT}}-dokument in HTML-formaat wat maklik met enige WYSIWYG-redigeerder geredigeer kan word",
-    "step_4": "Roep `Editor.Save()`-metode en stoor geredigeerde {{EXT}}-lêer deur gebruik te maak van die `DelimitedTextSaveOptions`-klasinstansie met die verlangde skeiding"
-  }
-}

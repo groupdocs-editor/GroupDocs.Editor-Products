@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Buat instance kelas `Editor` dengan jalur file wajib atau aliran byte dan muat file {{EXT}}",
-    "step_2": "Buat & setel instance kelas `TextEditOptions` untuk format file {{EXT}}",
-    "step_3": "Panggil metode `Editor.Edit()` dan dapatkan dokumen {{EXT}} dalam format HTML yang mudah diedit dengan editor WYSIWYG apa pun.",
-    "step_4": "Panggil metode `Editor.Save()` dan simpan file {{EXT}} yang telah diedit menggunakan kelas `TextSaveOptions`"
-  }
-}

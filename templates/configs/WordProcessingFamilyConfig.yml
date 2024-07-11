@@ -1,9 +1,0 @@
-inherits: Common.yml
-
-dimensions: 
-- alias: ext
-  values: ["doc", "docx", "docm", "dot", "dotx", "dotm", "rtf", "odt", "ott"]
-
-dictionaries: ["..\\data\\WordProcessingFamilyDict_{lang}.json"]
-
-outputPath: "editor\\{product}\\{ext}.{lang}.md"

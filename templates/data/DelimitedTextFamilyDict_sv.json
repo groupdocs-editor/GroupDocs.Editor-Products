@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Skapa en instans av klassen \"Editor\" med obligatorisk sökväg eller byteström och ladda {{EXT}}-filen",
-    "step_2": "Skapa klassinstansen `DelimitedTextEditOptions` för filformatet {{EXT}} och ange en obligatorisk strängseparator i konstruktorn",
-    "step_3": "Anropa `Editor.Edit()`-metoden och skaffa {{EXT}}-dokument i HTML-format som enkelt kan redigeras med vilken WYSIWYG-redigerare som helst",
-    "step_4": "Anropa `Editor.Save()`-metoden och spara den redigerade {{EXT}}-filen med klassinstansen `DelimitedTextSaveOptions` med önskad separator"
-  }
-}

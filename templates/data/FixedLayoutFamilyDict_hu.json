@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Hozzon létre egy példányt a \"Szerkesztő\" osztályból kötelező fájl elérési úttal vagy adatfolyammal és opcionális \"PdfLoadOptions\" osztállyal PDF-hez (nem alkalmazható XPS esetén), és töltse be az {{EXT}} fájlt",
-    "step_2": "Hozza létre és állítsa be az `{{Ext}}EditOptions` osztálypéldányt az {{EXT}} fájlformátumhoz",
-    "step_3": "Hívja az \"Editor.Edit()\" metódust, és szerezzen be {{EXT}} dokumentumot HTML formátumban, amely könnyen szerkeszthető bármely WYSIWYG-szerkesztővel.",
-    "step_4": "Hívja meg az \"Editor.Save()\" metódust, és mentse a szerkesztett {{EXT}} fájlt a `{{Ext}}SaveOptions' osztály segítségével"
-  }
-}

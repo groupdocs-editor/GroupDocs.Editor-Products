@@ -1,1 +1,0 @@
-TranslationTools\net6.0\Res.Translator.exe -s en -r ..\data\DelimitedTextFamilyDict_en.json -d it,de,es,fr,id,ja,ko,pt,zh-cn --overwrite

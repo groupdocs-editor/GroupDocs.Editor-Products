@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Nimûneyek ji çîna `Edîtor` bi rêça pelê ya mecbûrî an bi rêk û çîna `SpreadsheetLoadOptions` ya bijarte biafirîne û pelê {{EXT}} bar bike.",
-    "step_2": "Ji bo forma pelê {{EXT}} mînaka pola `SpreadsheetEditOptions` biafirîne û saz bike",
-    "step_3": "Gazî rêbaza `Editor.Edit()` bikin û belgeya {{EXT}} ya bi formata HTML-ê ku bi her edîtorek WYSIWYG-ê bi hêsanî tê guherandin bistînin bistînin.",
-    "step_4": "Gazî rêbaza `Editor.Save()` bikin û pelê hatî guherandin {{EXT}} bi karanîna pola `SpreadsheetSaveOptions` hilînin."
-  }
-}

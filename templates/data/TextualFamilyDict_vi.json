@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Tạo một phiên bản của lớp `Editor` với đường dẫn tệp bắt buộc hoặc luồng byte và tải tệp {{EXT}}",
-    "step_2": "Tạo và đặt phiên bản lớp `TextEditOptions` cho định dạng tệp {{EXT}}",
-    "step_3": "Gọi phương thức `Editor.Edit ()` và lấy tài liệu {{EXT}} ở định dạng HTML có thể chỉnh sửa dễ dàng bằng bất kỳ trình soạn thảo WYSIWYG nào.",
-    "step_4": "Gọi phương thức `Editor.Save ()` và lưu tệp {{EXT}} đã chỉnh sửa bằng cách sử dụng lớp `TextSaveOptions`"
-  }
-}

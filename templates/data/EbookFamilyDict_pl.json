@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Utwórz instancję klasy `Editor` z obowiązkową ścieżką pliku lub strumieniem bajtów i załaduj plik {{EXT}}",
-    "step_2": "Utwórz i ustaw instancję klasy `EbookEditOptions` dla formatu pliku {{EXT}}",
-    "step_3": "Wywołaj metodę `Editor.Edit()` i uzyskaj dokument {{EXT}} w formacie HTML, który można łatwo edytować dowolnym edytorem WYSIWYG.",
-    "step_4": "Wywołaj metodę `Editor.Save()` i zapisz edytowany plik {{EXT}} przy użyciu klasy `EpubSaveOptions` lub `Azw3SaveOptions` w celu zapisania odpowiednio w formatach ePub lub AZW3"
-  }
-}

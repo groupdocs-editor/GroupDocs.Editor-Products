@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Zorunlu dosya yolu veya bayt akışıyla bir \"Editör\" sınıfı örneği oluşturun ve {{EXT}} dosyasını yükleyin",
-    "step_2": "{{EXT}} dosya biçimi için \"EmailEditOptions\" sınıf örneğini oluşturun ve ayarlayın",
-    "step_3": "`Editor.Edit()` yöntemini çağırın ve herhangi bir WYSIWYG editörüyle kolayca düzenlenebilen HTML formatında {{EXT}} belgesini alın.",
-    "step_4": "`Editor.Save()` yöntemini çağırın ve `EmailSaveOptions` sınıfını kullanarak düzenlenmiş {{EXT}} dosyasını kaydedin"
-  }
-}

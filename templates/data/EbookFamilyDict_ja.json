@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "必須のファイル パスまたはバイト ストリームを使用して `Editor` クラスのインスタンスを作成し、{{EXT}} ファイルをロードします",
-    "step_2": "{{EXT}} ファイル形式の `EbookEditOptions` クラス インスタンスを作成して設定します",
-    "step_3": "`Editor.Edit()` メソッドを呼び出して、WYSIWYG エディタで簡単に編集できる HTML 形式の {{EXT}} ドキュメントを取得します。",
-    "step_4": "`Editor.Save()` メソッドを呼び出し、`EpubSaveOptions` または `Azw3SaveOptions` クラスを使用して編集済みの {{EXT}} ファイルを保存し、それぞれ ePub または AZW3 形式に保存します"
-  }
-}

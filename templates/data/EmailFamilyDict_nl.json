@@ -1,8 +1,0 @@
-{
-  "family_steps": {
-    "step_1": "Maak een instantie van de klasse 'Editor' met een verplicht bestandspad of bytestream en laad het bestand {{EXT}}",
-    "step_2": "Maak en stel de klasse-instantie 'EmailEditOptions' in voor de bestandsindeling {{EXT}}",
-    "step_3": "Roep de `Editor.Edit()` methode aan en verkrijg een {{EXT}} document in HTML-formaat dat gemakkelijk kan worden bewerkt met elke WYSIWYG-editor.",
-    "step_4": "Roep de methode 'Editor.Save()' aan en sla het bewerkte {{EXT}}-bestand op met de klasse 'EmailSaveOptions'"
-  }
-}
