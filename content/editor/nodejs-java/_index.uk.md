@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "landing"
-date: 2024-07-11T16:47:14
+date: 2024-07-12T09:30:30
 draft: false
 
 product: "Editor"
@@ -23,32 +23,32 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "{head.title}"
-head_description: "{head.description}"
+head_title: "API редагування документів Node.js | Редагувати PDF, Word, Excel, EPUB"
+head_description: "API редагування документів Node.js для редагування, перекладу та збереження сторінок документів із форматів PDF, Microsoft Word, Excel, презентацій, Visio та зображень."
 
 ############################# Header ############################
-title: "{header.title_1}<br>{header.title_2}"
-description: "{header.description}"
+title: "Редагувати документи<br>через API Node.js"
+description: "Потужний API редактора для роботи з файлами PDF, Microsoft Office, HTML і зображеннями."
 words:
-  for: "{header.words.for}"
+  for: "для"
 
 actions:
-  main: "{actions.main}"
+  main: "Безкоштовне завантаження npm"
   main_link: "https://releases.groupdocs.com/editor/nodejs-java/"
-  alt: "{actions.alt}"
+  alt: "Ліцензування"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/nodejs-java"
-  title: "{actions.title}"
-  description: "{actions.description}"
+  title: "Готові почати?"
+  description: "Спробуйте функції GroupDocs.Editor безкоштовно або подайте запит на ліцензію."
 
 release:
-  title: "{release.title}"
-  notes: "{release.notes}"
-  downloads: "{release.downloads}"
+  title: "Випущено версію {0}"
+  notes: "Подивіться, що нового"
+  downloads: "Завантаження"
 
 code:
-  title: "{code.title}"
-  more: "{code.more}"
-  more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
+  title: "Редагувати файли документів у Node.js через Java"
+  more: "Більше прикладів"
+  more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Node.js-via-Java"
   install: "dotnet add package GroupDocs.Editor"
   content: |
     ```javascript {style=abap}   
@@ -64,26 +64,26 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "{overview.title}"
-  description: "{overview.description}"
+  title: "Короткий огляд GroupDocs.Editor"
+  description: "API для редагування, перекладу та збереження документів, слайдів і діаграм у програмах Node.js."
   features:
     # feature loop
-    - title: "{overview.feature_1.title}"
-      content: "{overview.feature_1.description}"
+    - title: "Без зусиль редагуйте кілька документів у Node.js"
+      content: "Легко редагуйте кілька файлів PDF і Office із підтримкою широкого спектру форматів. GroupDocs.Editor для Node.js робить редагування документів швидким і безпроблемним."
 
     # feature loop
-    - title: "{overview.feature_2.title}"
-      content: "{overview.feature_2.description}"
+    - title: "Перекладайте документи в HTML/CSS"
+      content: "Перекладайте документи в розмітку HTML/CSS, сумісну з редакторами WYSIWYG, що дозволяє легко й ефективно редагувати документ у веб-середовищі."
 
     # feature loop
-    - title: "{overview.feature_3.title}"
-      content: "{overview.feature_3.description}"
+    - title: "Зберігайте відредаговані документи в різних форматах"
+      content: "Збережіть відредаговані документи в оригінальному форматі або експортуйте їх в інші формати, наприклад PDF, забезпечуючи гнучкість і сумісність."
 
 ############################# Platforms ############################
 platforms:
   enable: true
-  title: "{platforms.title}"
-  description: "{platforms.description}"
+  title: "Незалежність від платформи"
+  description: "GroupDocs.Editor для Node.js підтримує такі операційні системи, фреймворки та менеджери пакетів."
   items:
     # platform loop
     - title: "Amazon"
@@ -114,97 +114,93 @@ platforms:
 ############################# File formats ############################
 formats:
   enable: true
-  title: "{formats.title}"
+  title: "Підтримувані формати файлів"
   description: |
-    {formats.description}
+    GroupDocs.Editor для Node.js підтримує операції з такими [форматами файлів](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
       content: |
-        ### {formats.groups.title_1}
+        ### Формати Microsoft Office
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
-        * **Visio:** VSDX, VSDM, VSSX, VSTX, VSTM, VSSM, VSX, VTX, VDX
     # group loop
     - color: "blue"
       content: |
-        ### {formats.groups.title_2}
-        * **{formats.groups.format_documents}:** PDF, XPS, TEX
-        * **{formats.groups.format_images}:** BMP, JPEG, PNG, GIF, TIFF, SVG, PS
+        ### Документи
+        * **Документи:** PDF, 
         * **OpenDocument:** ODT, OTT, ODS
         * **eBook:** EPUB
       # group loop
     - color: "red"
       content: |
-        ### {formats.groups.title_3}
-        * **{formats.groups.format_web}:**  HTML, MHTML, MHT
-        * **{formats.groups.format_archives}:** ZIP, TAR, RAR, 7Z, BZ2, GZ
-        * **OneNote:**  ONE
+        ### Інші формати
+        * **Інтернет:**  HTML, MHTML, MHT, MARKDOWN
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.title}"
-  description: "{features.description}"
+  title: "Функції GroupDocs.Editor"
+  description: "Легко редагуйте, перекладайте та зберігайте документи PDF і Office."
 
   items:
     # feature loop
     - icon: "merge"
-      title: "{features.feature_1.title}"
-      content: "{features.feature_1.content}"
+      title: "Редагувати файли"
+      content: "Редагуйте вміст різних форматів документів, включаючи PDF, DOCX, XLSX, PPTX тощо."
 
     # feature loop
     - icon: "split"
-      title: "{features.feature_2.title}"
-      content: "{features.feature_2.content}"
+      title: "Перекласти на HTML/CSS"
+      content: "Перетворюйте документи на HTML/CSS для легкого редагування за допомогою редакторів WYSIWYG, таких як CKEditor або TinyMCE."
 
     # feature loop
     - icon: "move"
-      title: "{features.feature_3.title}"
-      content: "{features.feature_3.content}"
+      title: "Збережіть відредаговані документи"
+      content: "Збережіть відредагований HTML/CSS у вихідному форматі документа або експортуйте в PDF."
 
     # feature loop
     - icon: "remove"
-      title: "{features.feature_4.title}"
-      content: "{features.feature_4.content}"
+      title: "Витяг інформації з документа"
+      content: "Отримайте з документів таку інформацію, як кількість сторінок, розмір і стан шифрування."
 
     # feature loop
     - icon: "rotate"
-      title: "{features.feature_5.title}"
-      content: "{features.feature_5.content}"
+      title: "Підтримка різних форматів"
+      content: "Редагуйте широкий діапазон форматів документів, включаючи файли Microsoft Office, PDF-файли тощо."
 
     # feature loop
     - icon: "swap"
-      title: "{features.feature_6.title}"
-      content: "{features.feature_6.content}"
+      title: "Захист паролем"
+      content: "З легкістю редагуйте документи, захищені паролем."
 
     # feature loop
     - icon: "extract"
-      title: "{features.feature_7.title}"
-      content: "{features.feature_7.content}"
+      title: "Спеціальне кодування документа"
+      content: "Укажіть кодування документа під час редагування та збереження."
 
     # feature loop
     - icon: "orientation"
-      title: "{features.feature_8.title}"
-      content: "{features.feature_8.content}"
+      title: "Вилучення шрифту"
+      content: "Витягайте шрифти з документів для використання в процесі редагування."
 
     # feature loop
     - icon: "preview"
-      title: "{features.feature_9.title}"
-      content: "{features.feature_9.content}"
+      title: "Попередній перегляд сторінок"
+      content: "Створюйте зображення сторінок документа, щоб краще зрозуміти вміст і структуру."
 
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "{code_samples.title}"
-  description: "{code_samples.description}"
+  title: "Зразки коду"
+  description: "Деякі випадки використання типових операцій GroupDocs.Editor для Node.js."
   items:
     # code sample loop
-    - title: "{code_samples.sample_1.title}"
+    - title: "Редагувати певний вміст файлу DOCX"
       content: |
-        {code_samples.sample_1.content_1} {code_samples.sample_1.content_2}
-        {{< landing/code title="{code_samples.sample_1.code_title}">}}
+        Функція [Редагування документів](https://docs.groupdocs.com/editor/nodejs/edit-document/) дозволяє завантажувати, редагувати та зберігати файли DOCX. Ось приклад того, як досягти редагування документа за допомогою Node.js:
+        {{< landing/code title="Як редагувати файли DOCX у Node.js">}}
         ```javascript {style=abap}   
         // Load document
         this.editor = new Editor(this.inputFilePath);
@@ -217,10 +213,10 @@ code_samples:
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "{code_samples.sample_2.title}"
+    - title: "Редагування полів форми в документі Word"
       content: |
-        {code_samples.sample_2.content_1} {code_samples.sample_2.content_2}
-        {{< landing/code title="{code_samples.sample_2.code_title}">}}
+        Легко редагуйте поля форми в документі Word за допомогою GroupDocs.Editor для Node.js. Ось як редагувати поля форми в документі Word за допомогою Node.js:
+        {{< landing/code title="Як редагувати поля форми в документі Word за допомогою GroupDocs.Editor для Node.js">}}
         ```javascript {style=abap}   
         const editOptions = new MarkdownEditOptions();
         editOptions.setImageLoadCallback(new MdImageLoader(imagesFolder));

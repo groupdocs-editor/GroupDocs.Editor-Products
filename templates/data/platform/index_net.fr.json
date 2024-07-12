@@ -1,0 +1,119 @@
+{
+  "head": {
+    "title": "API d'édition de documents C# .NET | Modifier PDF, Word, Excel, EPUB",
+    "description": "API d'édition de documents C# .NET pour modifier, traduire et enregistrer des pages de documents aux formats PDF, Microsoft Word, Excel, présentations, Visio et image."
+  },
+  "header": {
+    "title_1": "Modifier des documents",
+    "title_2": "via l'API .NET",
+    "description": "API d'édition puissante pour manipuler les fichiers PDF, Microsoft Office, HTML et image.",
+    "words": {
+      "for": "pour"
+    }
+  },
+  "actions": {
+    "main": "Téléchargement gratuit de NuGet",
+    "alt": "Licence",
+    "title": "Prêt à commencer?",
+    "description": "Essayez gratuitement les fonctionnalités de GroupDocs.Editor ou demandez une licence."
+  },
+  "release": {
+    "title": "Version {0} publiée",
+    "notes": "Regardez ce qu'il y a de nouveau",
+    "downloads": "Téléchargements"
+  },
+  "overview": {
+    "title": "GroupDocs.Editor en un coup d'œil",
+    "description": "API pour éditer, traduire et enregistrer des documents, des diapositives et des diagrammes dans des applications .NET.",
+    "feature_1": {
+      "title": "Modifiez sans effort plusieurs documents en C#",
+      "description": "Modifiez en toute transparence plusieurs fichiers PDF et Office avec la prise en charge d'un large éventail de formats. GroupDocs.Editor pour .NET rend l'édition de documents rapide et sans tracas."
+    },
+    "feature_2": {
+      "title": "Traduire des documents en HTML/CSS",
+      "description": "Traduisez des documents en balisage HTML/CSS compatible avec les éditeurs WYSIWYG, permettant une édition de documents simple et efficace dans un environnement Web."
+    },
+    "feature_3": {
+      "title": "Enregistrez les documents modifiés dans différents formats",
+      "description": "Enregistrez vos documents modifiés dans leur format d'origine ou exportez-les vers d'autres formats tels que PDF, garantissant ainsi flexibilité et compatibilité."
+    }
+  },
+  "formats": {
+    "title": "Formats de fichiers pris en charge",
+    "description": "GroupDocs.Editor for .NET prend en charge les opérations avec les [formats de fichiers](https://docs.groupdocs.com/editor/net/supported-document-formats/) suivants.",
+    "groups": {
+      "title_1": "Formats Microsoft Office",
+      "title_2": "Documents",
+      "title_3": "Autres formats",
+      "format_documents": "Documents",
+      "format_images": "Images",
+      "format_web": "la toile",
+      "format_archives": "Les archives"
+    }
+  },
+  "features": {
+    "title": "Fonctionnalités de GroupDocs.Editor",
+    "description": "Modifiez, traduisez et enregistrez en toute transparence des documents PDF et Office.",
+    "feature_1": {
+      "title": "Modifier des fichiers",
+      "content": "Modifiez le contenu de divers formats de documents, notamment PDF, DOCX, XLSX, PPTX, etc."
+    },
+    "feature_2": {
+      "title": "Traduire en HTML/CSS",
+      "content": "Convertissez des documents en HTML/CSS pour une édition facile avec des éditeurs WYSIWYG comme CKEditor ou TinyMCE."
+    },
+    "feature_3": {
+      "title": "Enregistrer les documents modifiés",
+      "content": "Enregistrez le HTML/CSS modifié au format de document d'origine ou exportez-le au format PDF."
+    },
+    "feature_4": {
+      "title": "Extraire les informations du document",
+      "content": "Extrayez des informations telles que le nombre de pages, la taille et l'état de cryptage des documents."
+    },
+    "feature_5": {
+      "title": "Prise en charge de différents formats",
+      "content": "Modifiez un large éventail de formats de documents, notamment des fichiers Microsoft Office, des PDF, etc."
+    },
+    "feature_6": {
+      "title": "Mot de passe de protection",
+      "content": "Modifiez facilement des documents protégés par mot de passe."
+    },
+    "feature_7": {
+      "title": "Encodage de documents personnalisé",
+      "content": "Spécifiez l’encodage du document lors des processus d’édition et d’enregistrement."
+    },
+    "feature_8": {
+      "title": "Extraction de polices",
+      "content": "Extrayez les polices des documents pour les utiliser dans le processus d'édition."
+    },
+    "feature_9": {
+      "title": "Pages d'aperçu",
+      "content": "Générez des représentations d’images des pages du document pour mieux comprendre le contenu et la structure."
+    }
+  },
+  "code_samples": {
+    "title": "Exemples de codes",
+    "description": "Quelques cas d'utilisation de GroupDocs.Editor typique pour les opérations .NET.",
+    "sample_1": {
+      "title": "Modifier le contenu d'un fichier DOCX spécifique",
+      "content_1": "La fonctionnalité [Édition de documents](https://docs.groupdocs.com/editor/net/edit-document/) vous permet de charger, de modifier et d'enregistrer des fichiers DOCX.",
+      "content_2": "Voici un exemple de la manière de réaliser l'édition de documents à l'aide de C# :",
+      "code_title": "Comment modifier des fichiers DOCX en C#"
+    },
+    "sample_2": {
+      "title": "Modifier les champs de formulaire dans un document Word",
+      "content_1": "Modifiez facilement les champs de formulaire dans un document Word à l'aide de GroupDocs.Editor pour .NET.",
+      "content_2": "Voici comment modifier les champs de formulaire dans un document Word en utilisant C# :",
+      "code_title": "Comment modifier les champs de formulaire dans un document Word à l'aide de GroupDocs.Editor for .NET"
+    }
+  },
+  "platforms": {
+    "title": "Indépendance de la plateforme",
+    "description": "GroupDocs.Editor pour .NET prend en charge les systèmes d'exploitation, frameworks et gestionnaires de packages suivants."
+  },
+  "code": {
+    "title": "Modifier des fichiers de documents dans .Net",
+    "more": "Plus d'exemples",
+    "notes": "Regardez ce qu'il y a de nouveau"
+  }
+}

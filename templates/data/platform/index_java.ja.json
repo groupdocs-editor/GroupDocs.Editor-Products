@@ -1,0 +1,119 @@
+{
+  "head": {
+    "title": "Java ドキュメント編集 API | PDF、Word、Excel、EPUB を編集",
+    "description": "PDF、Microsoft Word、Excel、プレゼンテーション、Visio、および画像形式のドキュメント ページを編集、翻訳、保存するための Java ドキュメント編集 API。"
+  },
+  "header": {
+    "title_1": "ドキュメントの編集",
+    "title_2": "Java API経由",
+    "description": "PDF、Microsoft Office、HTML、画像ファイルを操作するための強力なエディター API。",
+    "words": {
+      "for": "のために"
+    }
+  },
+  "actions": {
+    "main": "Maven の無料ダウンロード",
+    "alt": "ライセンス",
+    "title": "始める準備はできていますか?",
+    "description": "GroupDocs.Editor の機能を無料で試すか、ライセンスをリクエストしてください。"
+  },
+  "release": {
+    "title": "バージョン {0} がリリースされました",
+    "notes": "新機能を見る",
+    "downloads": "ダウンロード"
+  },
+  "overview": {
+    "title": "GroupDocs.Editor の概要",
+    "description": "Java アプリケーションでドキュメント、スライド、図を編集、翻訳、保存するための API。",
+    "feature_1": {
+      "title": "Java で複数のドキュメントを簡単に編集",
+      "description": "幅広い形式をサポートし、複数の PDF および Office ファイルをシームレスに編集します。 GroupDocs.Editor for Java を使用すると、ドキュメントを迅速かつ手間なく編集できます。"
+    },
+    "feature_2": {
+      "title": "ドキュメントをHTML/CSSに翻訳",
+      "description": "ドキュメントを WYSIWYG エディタと互換性のある HTML/CSS マークアップに変換し、Web 環境で簡単かつ効率的にドキュメントを編集できるようにします。"
+    },
+    "feature_3": {
+      "title": "編集したドキュメントをさまざまな形式で保存",
+      "description": "編集したドキュメントを元の形式に保存したり、PDF などの他の形式にエクスポートしたりして、柔軟性と互換性を確保します。"
+    }
+  },
+  "formats": {
+    "title": "サポートされているファイル形式",
+    "description": "GroupDocs.Editor for Java は、次の [ファイル形式](https://docs.groupdocs.com/editor/java/supported-document-formats/) での操作をサポートします。",
+    "groups": {
+      "title_1": "Microsoft Office形式",
+      "title_2": "書類",
+      "title_3": "その他の形式",
+      "format_documents": "書類",
+      "format_images": "画像",
+      "format_web": "ウェブ",
+      "format_archives": "アーカイブ"
+    }
+  },
+  "features": {
+    "title": "GroupDocs.Editor の機能",
+    "description": "PDF および Office ドキュメントをシームレスに編集、翻訳、保存します。",
+    "feature_1": {
+      "title": "ファイルを編集する",
+      "content": "PDF、DOCX、XLSX、PPTX など、さまざまなドキュメント形式のコンテンツを編集します。"
+    },
+    "feature_2": {
+      "title": "HTML/CSSへの翻訳",
+      "content": "CKEditor や TinyMCE などの WYSIWYG エディタで簡単に編集できるように、ドキュメントを HTML/CSS に変換します。"
+    },
+    "feature_3": {
+      "title": "編集したドキュメントを保存する",
+      "content": "編集した HTML/CSS を元のドキュメント形式に戻して保存するか、PDF にエクスポートします。"
+    },
+    "feature_4": {
+      "title": "文書情報の抽出",
+      "content": "ドキュメントからページ数、サイズ、暗号化ステータスなどの情報を抽出します。"
+    },
+    "feature_5": {
+      "title": "さまざまな形式のサポート",
+      "content": "Microsoft Office ファイル、PDF などを含む幅広いドキュメント形式を編集します。"
+    },
+    "feature_6": {
+      "title": "パスワード保護",
+      "content": "パスワードで保護されたドキュメントを簡単に編集できます。"
+    },
+    "feature_7": {
+      "title": "カスタムドキュメントエンコーディング",
+      "content": "編集および保存プロセス中にドキュメントのエンコーディングを指定します。"
+    },
+    "feature_8": {
+      "title": "フォント抽出",
+      "content": "編集プロセスで使用するためにドキュメントからフォントを抽出します。"
+    },
+    "feature_9": {
+      "title": "ページのプレビュー",
+      "content": "コンテンツと構造をより深く理解するためにドキュメント ページの画像表現を生成します。"
+    }
+  },
+  "code_samples": {
+    "title": "コードサンプル",
+    "description": "Java 操作用の典型的な GroupDocs.Editor の使用例。",
+    "sample_1": {
+      "title": "特定の DOCX ファイルの内容を編集する",
+      "content_1": "[ドキュメント編集](https://docs.groupdocs.com/editor/java/edit-document/) 機能を使用すると、DOCX ファイルをロード、編集、保存できます。",
+      "content_2": "Java を使用してドキュメント編集を実現する方法の例を次に示します。",
+      "code_title": "Java で DOCX ファイルを編集する方法"
+    },
+    "sample_2": {
+      "title": "Word 文書のフォームフィールドを編集する",
+      "content_1": "GroupDocs.Editor for Java を使用すると、Word 文書内のフォーム フィールドを簡単に編集できます。",
+      "content_2": "Java を使用して Word 文書のフォーム フィールドを編集する方法は次のとおりです。",
+      "code_title": "GroupDocs.Editor for Java を使用して Word 文書のフォーム フィールドを編集する方法"
+    }
+  },
+  "platforms": {
+    "title": "プラットフォームの独立性",
+    "description": "GroupDocs.Editor for Java は、次のオペレーティング システム、フレームワーク、およびパッケージ マネージャーをサポートします。"
+  },
+  "code": {
+    "title": "Javaでドキュメントファイルを編集する",
+    "more": "他の例",
+    "notes": "新機能を見る"
+  }
+}

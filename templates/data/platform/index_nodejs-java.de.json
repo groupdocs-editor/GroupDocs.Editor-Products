@@ -1,0 +1,119 @@
+{
+  "head": {
+    "title": "Node.js Dokumentbearbeitungs-API | Bearbeiten Sie PDF, Word, Excel, EPUB",
+    "description": "Node.js Dokumentbearbeitungs-API zum Bearbeiten, Übersetzen und Speichern von Dokumentseiten aus PDF-, Microsoft Word-, Excel-, Präsentations-, Visio- und Bildformaten."
+  },
+  "header": {
+    "title_1": "Dokumente bearbeiten",
+    "title_2": "über die Node.js-API",
+    "description": "Leistungsstarke Editor-API zum Bearbeiten von PDF-, Microsoft Office-, HTML- und Bilddateien.",
+    "words": {
+      "for": "für"
+    }
+  },
+  "actions": {
+    "main": "Kostenloser npm-Download",
+    "alt": "Lizenzierung",
+    "title": "Bereit anzufangen?",
+    "description": "Testen Sie die Funktionen von GroupDocs.Editor kostenlos oder fordern Sie eine Lizenz an."
+  },
+  "release": {
+    "title": "Version {0} veröffentlicht",
+    "notes": "Schau was neu ist",
+    "downloads": "Downloads"
+  },
+  "overview": {
+    "title": "GroupDocs.Editor auf einen Blick",
+    "description": "API zum Bearbeiten, Übersetzen und Speichern von Dokumenten, Folien und Diagrammen in Node.js-Anwendungen.",
+    "feature_1": {
+      "title": "Bearbeiten Sie mühelos mehrere Dokumente in Node.js",
+      "description": "Bearbeiten Sie nahtlos mehrere PDF- und Office-Dateien mit Unterstützung für eine Vielzahl von Formaten. GroupDocs.Editor für Node.js ermöglicht eine schnelle und problemlose Bearbeitung von Dokumenten."
+    },
+    "feature_2": {
+      "title": "Übersetzen Sie Dokumente in HTML/CSS",
+      "description": "Übersetzen Sie Dokumente in HTML/CSS-Markup, das mit WYSIWYG-Editoren kompatibel ist, und ermöglichen Sie so eine einfache und effiziente Dokumentbearbeitung in einer Webumgebung."
+    },
+    "feature_3": {
+      "title": "Speichern Sie bearbeitete Dokumente in verschiedenen Formaten",
+      "description": "Speichern Sie Ihre bearbeiteten Dokumente wieder in ihrem Originalformat oder exportieren Sie sie in andere Formate wie PDF, um Flexibilität und Kompatibilität zu gewährleisten."
+    }
+  },
+  "formats": {
+    "title": "Unterstützte Dateiformate",
+    "description": "GroupDocs.Editor für Node.js unterstützt Vorgänge mit den folgenden [Dateiformaten](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/).",
+    "groups": {
+      "title_1": "Microsoft Office-Formate",
+      "title_2": "Unterlagen",
+      "title_3": "Andere Formate",
+      "format_documents": "Unterlagen",
+      "format_images": "Bilder",
+      "format_web": "Netz",
+      "format_archives": "Archiv"
+    }
+  },
+  "features": {
+    "title": "GroupDocs.Editor-Funktionen",
+    "description": "Bearbeiten, übersetzen und speichern Sie PDF- und Office-Dokumente nahtlos.",
+    "feature_1": {
+      "title": "Dateien bearbeiten",
+      "content": "Bearbeiten Sie den Inhalt verschiedener Dokumentformate, einschließlich PDF, DOCX, XLSX, PPTX und mehr."
+    },
+    "feature_2": {
+      "title": "In HTML/CSS übersetzen",
+      "content": "Konvertieren Sie Dokumente in HTML/CSS zur einfachen Bearbeitung mit WYSIWYG-Editoren wie CKEditor oder TinyMCE."
+    },
+    "feature_3": {
+      "title": "Bearbeitete Dokumente speichern",
+      "content": "Speichern Sie das bearbeitete HTML/CSS wieder im ursprünglichen Dokumentformat oder exportieren Sie es als PDF."
+    },
+    "feature_4": {
+      "title": "Dokumentinformationen extrahieren",
+      "content": "Extrahieren Sie Informationen wie Seitenzahl, Größe und Verschlüsselungsstatus aus Dokumenten."
+    },
+    "feature_5": {
+      "title": "Unterstützung für verschiedene Formate",
+      "content": "Bearbeiten Sie eine Vielzahl von Dokumentformaten, darunter Microsoft Office-Dateien, PDFs und mehr."
+    },
+    "feature_6": {
+      "title": "Passwortschutz",
+      "content": "Bearbeiten Sie passwortgeschützte Dokumente ganz einfach."
+    },
+    "feature_7": {
+      "title": "Benutzerdefinierte Dokumentkodierung",
+      "content": "Geben Sie die Dokumentkodierung während der Bearbeitungs- und Speicherprozesse an."
+    },
+    "feature_8": {
+      "title": "Schriftartenextraktion",
+      "content": "Extrahieren Sie Schriftarten aus Dokumenten zur Verwendung im Bearbeitungsprozess."
+    },
+    "feature_9": {
+      "title": "Vorschauseiten",
+      "content": "Generieren Sie Bilddarstellungen von Dokumentseiten, um Inhalt und Struktur besser zu verstehen."
+    }
+  },
+  "code_samples": {
+    "title": "Codebeispiele",
+    "description": "Einige Anwendungsfälle typischer GroupDocs.Editor für Node.js-Vorgänge.",
+    "sample_1": {
+      "title": "Bearbeiten Sie bestimmte DOCX-Dateiinhalte",
+      "content_1": "Mit der Funktion [Dokumentbearbeitung](https://docs.groupdocs.com/editor/nodejs/edit-document/) können Sie DOCX-Dateien laden, bearbeiten und speichern.",
+      "content_2": "Hier ist ein Beispiel für die Dokumentbearbeitung mit Node.js:",
+      "code_title": "So bearbeiten Sie DOCX-Dateien in Node.js"
+    },
+    "sample_2": {
+      "title": "Bearbeiten Sie Formularfelder in einem Word-Dokument",
+      "content_1": "Bearbeiten Sie Formularfelder in einem Word-Dokument ganz einfach mit GroupDocs.Editor für Node.js.",
+      "content_2": "So bearbeiten Sie Formularfelder in einem Word-Dokument mit Node.js:",
+      "code_title": "So bearbeiten Sie Formularfelder in einem Word-Dokument mit GroupDocs.Editor für Node.js"
+    }
+  },
+  "platforms": {
+    "title": "Plattformunabhängigkeit",
+    "description": "GroupDocs.Editor für Node.js unterstützt die folgenden Betriebssysteme, Frameworks und Paketmanager."
+  },
+  "code": {
+    "title": "Bearbeiten Sie Dokumentdateien in Node.js über Java",
+    "more": "Mehr Beispiele",
+    "notes": "Schau was neu ist"
+  }
+}

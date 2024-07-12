@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "landing"
-date: 2024-07-11T16:47:14
+date: 2024-07-12T09:30:30
 draft: false
 
 product: "Editor"
@@ -48,17 +48,17 @@ release:
 code:
   title: "{code.title}"
   more: "{code.more}"
-  more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
+  more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java"
   install: "dotnet add package GroupDocs.Editor"
   content: |
     ```java {style=abap}   
     // {code.comment_1}
     // Instantiate Editor object by loading the input file
     Editor editor = new Editor(inputFilePath);
-    // Open input document for edit — obtain an intermediate document, that can be edited
+    // Open input document for edit
     EditableDocument beforeEdit = editor.edit();
 
-    // Grab document content and associated resources from editable document
+    // Grab document content
     String content = beforeEdit.getContent();
     ```
 ############################# Overview ############################
@@ -125,22 +125,18 @@ formats:
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
-        * **Visio:** VSDX, VSDM, VSSX, VSTX, VSTM, VSSM, VSX, VTX, VDX
     # group loop
     - color: "blue"
       content: |
         ### {formats.groups.title_2}
-        * **{formats.groups.format_documents}:** PDF, XPS, TEX
-        * **{formats.groups.format_images}:** BMP, JPEG, PNG, GIF, TIFF, SVG, PS
+        * **{formats.groups.format_documents}:** PDF, 
         * **OpenDocument:** ODT, OTT, ODS
         * **eBook:** EPUB
       # group loop
     - color: "red"
       content: |
         ### {formats.groups.title_3}
-        * **{formats.groups.format_web}:**  HTML, MHTML, MHT
-        * **{formats.groups.format_archives}:** ZIP, TAR, RAR, 7Z, BZ2, GZ
-        * **OneNote:**  ONE
+        * **{formats.groups.format_web}:**  HTML, MHTML, MHT, MARKDOWN
 
 ############################# Features ############################
 features:

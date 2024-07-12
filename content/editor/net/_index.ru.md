@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "landing"
-date: 2024-07-11T16:47:14
+date: 2024-07-12T09:30:30
 draft: false
 
 product: "Editor"
@@ -23,31 +23,31 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "{head.title}"
-head_description: "{head.description}"
+head_title: "API редактирования документов C# .NET | Редактировать PDF, Word, Excel, EPUB"
+head_description: "API редактирования документов C# .NET для редактирования, перевода и сохранения страниц документов из форматов PDF, Microsoft Word, Excel, презентаций, Visio и изображений."
 
 ############################# Header ############################
-title: "{header.title_1}<br>{header.title_2}"
-description: "{header.description}"
+title: "Редактировать документы<br>через .NET API"
+description: "Мощный API-редактор для работы с файлами PDF, Microsoft Office, HTML и изображениями."
 words:
-  for: "{header.words.for}"
+  for: "для"
 
 actions:
-  main: "{actions.main}"
+  main: "Бесплатная загрузка NuGet"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
-  alt: "{actions.alt}"
+  alt: "Лицензирование"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/net"
-  title: "{actions.title}"
-  description: "{actions.description}"
+  title: "Готовы начать?"
+  description: "Попробуйте функции GroupDocs.Editor бесплатно или запросите лицензию."
 
 release:
-  title: "{release.title}"
-  notes: "{release.notes}"
-  downloads: "{release.downloads}"
+  title: "Версия {0} выпущена"
+  notes: "Посмотрите, что нового"
+  downloads: "Загрузки"
 
 code:
-  title: "{code.title}"
-  more: "{code.more}"
+  title: "Редактировать файлы документов в .Net"
+  more: "Больше примеров"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
   install: "dotnet add package GroupDocs.Editor"
   content: |
@@ -65,26 +65,26 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "{overview.title}"
-  description: "{overview.description}"
+  title: "GroupDocs.Editor: краткий обзор"
+  description: "API для редактирования, перевода и сохранения документов, слайдов и диаграмм в приложениях .NET."
   features:
     # feature loop
-    - title: "{overview.feature_1.title}"
-      content: "{overview.feature_1.description}"
+    - title: "Легко редактируйте несколько документов на C#"
+      content: "Легко редактируйте несколько файлов PDF и Office с поддержкой широкого спектра форматов. GroupDocs.Editor для .NET позволяет быстро и без проблем редактировать документы."
 
     # feature loop
-    - title: "{overview.feature_2.title}"
-      content: "{overview.feature_2.description}"
+    - title: "Перевести документы в HTML/CSS"
+      content: "Переводите документы в разметку HTML/CSS, совместимую с редакторами WYSIWYG, что позволяет легко и эффективно редактировать документы в веб-среде."
 
     # feature loop
-    - title: "{overview.feature_3.title}"
-      content: "{overview.feature_3.description}"
+    - title: "Сохраняйте отредактированные документы в различных форматах."
+      content: "Сохраняйте отредактированные документы обратно в исходный формат или экспортируйте их в другие форматы, например PDF, обеспечивая гибкость и совместимость."
 
 ############################# Platforms ############################
 platforms:
   enable: true
-  title: "{platforms.title}"
-  description: "{platforms.description}"
+  title: "Независимость от платформы"
+  description: "GroupDocs.Editor для .NET поддерживает следующие операционные системы, платформы и менеджеры пакетов."
   items:
     # platform loop
     - title: "Amazon"
@@ -114,97 +114,93 @@ platforms:
 ############################# File formats ############################
 formats:
   enable: true
-  title: "{formats.title}"
+  title: "Поддерживаемые форматы файлов"
   description: |
-    {formats.description}
+    GroupDocs.Editor для .NET поддерживает операции со следующими [форматами файлов](https://docs.groupdocs.com/editor/net/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
       content: |
-        ### {formats.groups.title_1}
+        ### Форматы Microsoft Office
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
-        * **Visio:** VSDX, VSDM, VSSX, VSTX, VSTM, VSSM, VSX, VTX, VDX
     # group loop
     - color: "blue"
       content: |
-        ### {formats.groups.title_2}
-        * **{formats.groups.format_documents}:** PDF, XPS, TEX
-        * **{formats.groups.format_images}:** BMP, JPEG, PNG, GIF, TIFF, SVG, PS
+        ### Документы
+        * **Документы:** PDF, 
         * **OpenDocument:** ODT, OTT, ODS
         * **eBook:** EPUB
       # group loop
     - color: "red"
       content: |
-        ### {formats.groups.title_3}
-        * **{formats.groups.format_web}:**  HTML, MHTML, MHT
-        * **{formats.groups.format_archives}:** ZIP, TAR, RAR, 7Z, BZ2, GZ
-        * **OneNote:**  ONE
+        ### Другие форматы
+        * **Интернет:**  HTML, MHTML, MHT, MARKDOWN
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.title}"
-  description: "{features.description}"
+  title: "Возможности GroupDocs.Editor"
+  description: "Легко редактируйте, переводите и сохраняйте документы PDF и Office."
 
   items:
     # feature loop
     - icon: "merge"
-      title: "{features.feature_1.title}"
-      content: "{features.feature_1.content}"
+      title: "Редактировать файлы"
+      content: "Редактируйте содержимое документов различных форматов, включая PDF, DOCX, XLSX, PPTX и другие."
 
     # feature loop
     - icon: "split"
-      title: "{features.feature_2.title}"
-      content: "{features.feature_2.content}"
+      title: "Перевести в HTML/CSS"
+      content: "Преобразуйте документы в HTML/CSS для удобного редактирования с помощью редакторов WYSIWYG, таких как CKEditor или TinyMCE."
 
     # feature loop
     - icon: "move"
-      title: "{features.feature_3.title}"
-      content: "{features.feature_3.content}"
+      title: "Сохраняйте отредактированные документы"
+      content: "Сохраните отредактированный HTML/CSS обратно в исходный формат документа или экспортируйте в PDF."
 
     # feature loop
     - icon: "remove"
-      title: "{features.feature_4.title}"
-      content: "{features.feature_4.content}"
+      title: "Извлечь информацию о документе"
+      content: "Извлекайте из документов такую ​​информацию, как количество страниц, размер и состояние шифрования."
 
     # feature loop
     - icon: "rotate"
-      title: "{features.feature_5.title}"
-      content: "{features.feature_5.content}"
+      title: "Поддержка различных форматов"
+      content: "Редактируйте документы широкого спектра форматов, включая файлы Microsoft Office, PDF-файлы и многое другое."
 
     # feature loop
     - icon: "swap"
-      title: "{features.feature_6.title}"
-      content: "{features.feature_6.content}"
+      title: "Защита паролем"
+      content: "Легко редактируйте документы, защищенные паролем."
 
     # feature loop
     - icon: "extract"
-      title: "{features.feature_7.title}"
-      content: "{features.feature_7.content}"
+      title: "Пользовательское кодирование документов"
+      content: "Укажите кодировку документа во время процессов редактирования и сохранения."
 
     # feature loop
     - icon: "orientation"
-      title: "{features.feature_8.title}"
-      content: "{features.feature_8.content}"
+      title: "Извлечение шрифта"
+      content: "Извлекайте шрифты из документов для использования в процессе редактирования."
 
     # feature loop
     - icon: "preview"
-      title: "{features.feature_9.title}"
-      content: "{features.feature_9.content}"
+      title: "Предварительный просмотр страниц"
+      content: "Создавайте изображения страниц документа, чтобы лучше понять содержание и структуру."
 
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "{code_samples.title}"
-  description: "{code_samples.description}"
+  title: "Примеры кода"
+  description: "Некоторые варианты использования типичного GroupDocs.Editor для операций .NET."
   items:
     # code sample loop
-    - title: "{code_samples.sample_1.title}"
+    - title: "Редактировать определенное содержимое файла DOCX"
       content: |
-        {code_samples.sample_1.content_1} {code_samples.sample_1.content_2}
-        {{< landing/code title="{code_samples.sample_1.code_title}">}}
+        Функция [Редактирование документов](https://docs.groupdocs.com/editor/net/edit-document/) позволяет загружать, редактировать и сохранять файлы DOCX. Вот пример того, как можно редактировать документ с помощью C#:
+        {{< landing/code title="Как редактировать файлы DOCX на C#">}}
         ```csharp {style=abap}   
         // Load document
         Editor editor = new Editor("sample.docx");
@@ -217,10 +213,10 @@ code_samples:
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "{code_samples.sample_2.title}"
+    - title: "Редактирование полей формы в документе Word"
       content: |
-        {code_samples.sample_2.content_1} {code_samples.sample_2.content_2}
-        {{< landing/code title="{code_samples.sample_2.code_title}">}}
+        Легко редактируйте поля формы в документе Word с помощью GroupDocs.Editor для .NET. Вот как можно редактировать поля формы в документе Word с помощью C#:
+        {{< landing/code title="Как редактировать поля формы в документе Word с помощью GroupDocs.Editor для .NET">}}
         ```csharp {style=abap}   
         Editor editor = new Editor("sample.docx");
         // Read the FormFieldCollection in the document

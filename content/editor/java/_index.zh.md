@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "landing"
-date: 2024-07-11T16:47:14
+date: 2024-07-12T09:30:30
 draft: false
 
 product: "Editor"
@@ -23,67 +23,67 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "{head.title}"
-head_description: "{head.description}"
+head_title: "Java 文档编辑 API |编辑 PDF、Word、Excel、EPUB"
+head_description: "Java 文档编辑 API，用于编辑、翻译和保存 PDF、Microsoft Word、Excel、演示文稿、Visio 和图像格式的文档页面。"
 
 ############################# Header ############################
-title: "{header.title_1}<br>{header.title_2}"
-description: "{header.description}"
+title: "编辑文档<br>通过Java API"
+description: "强大的编辑器 API，可操作 PDF、Microsoft Office、HTML 和图像文件。"
 words:
-  for: "{header.words.for}"
+  for: "为了"
 
 actions:
-  main: "{actions.main}"
+  main: "免费 Maven 下载"
   main_link: "https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-editor/"
-  alt: "{actions.alt}"
+  alt: "许可"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/java"
-  title: "{actions.title}"
-  description: "{actions.description}"
+  title: "准备好开始了吗？"
+  description: "免费试用 GroupDocs.Editor 功能或申请许可证。"
 
 release:
-  title: "{release.title}"
-  notes: "{release.notes}"
-  downloads: "{release.downloads}"
+  title: "版本 {0} 已发布"
+  notes: "看看有什么新鲜事"
+  downloads: "下载"
 
 code:
-  title: "{code.title}"
-  more: "{code.more}"
-  more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
+  title: "在 Java 中编辑文档文件"
+  more: "更多示例"
+  more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java"
   install: "dotnet add package GroupDocs.Editor"
   content: |
     ```java {style=abap}   
     // {code.comment_1}
     // Instantiate Editor object by loading the input file
     Editor editor = new Editor(inputFilePath);
-    // Open input document for edit — obtain an intermediate document, that can be edited
+    // Open input document for edit
     EditableDocument beforeEdit = editor.edit();
 
-    // Grab document content and associated resources from editable document
+    // Grab document content
     String content = beforeEdit.getContent();
     ```
 ############################# Overview ############################
 overview:
   enable: true
-  title: "{overview.title}"
-  description: "{overview.description}"
+  title: "GroupDocs.Editor 概览"
+  description: "用于在 Java 应用程序中编辑、翻译和保存文档、幻灯片和图表的 API。"
   features:
     # feature loop
-    - title: "{overview.feature_1.title}"
-      content: "{overview.feature_1.description}"
+    - title: "用 Java 轻松编辑多个文档"
+      content: "无缝编辑多个 PDF 和 Office 文件，支持多种格式。 GroupDocs.Editor for Java 使文档编辑变得快速、轻松。"
 
     # feature loop
-    - title: "{overview.feature_2.title}"
-      content: "{overview.feature_2.description}"
+    - title: "将文档翻译为 HTML/CSS"
+      content: "将文档转换为与所见即所得编辑器兼容的 HTML/CSS 标记，从而可以在 Web 环境中轻松高效地编辑文档。"
 
     # feature loop
-    - title: "{overview.feature_3.title}"
-      content: "{overview.feature_3.description}"
+    - title: "以各种格式保存编辑过的文档"
+      content: "将编辑后的文档保存回原始格式或导出为其他格式（例如 PDF），确保灵活性和兼容性。"
 
 ############################# Platforms ############################
 platforms:
   enable: true
-  title: "{platforms.title}"
-  description: "{platforms.description}"
+  title: "平台独立性"
+  description: "GroupDocs.Editor for Java 支持以下操作系统、框架和包管理器。"
   items:
     # platform loop
     - title: "Amazon"
@@ -114,97 +114,93 @@ platforms:
 ############################# File formats ############################
 formats:
   enable: true
-  title: "{formats.title}"
+  title: "支持的文件格式"
   description: |
-    {formats.description}
+    GroupDocs.Editor for Java 支持以下[文件格式](https://docs.groupdocs.com/editor/java/supported-document-formats/) 的操作。
   groups:
     # group loop
     - color: "green"
       content: |
-        ### {formats.groups.title_1}
+        ### 微软Office格式
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
-        * **Visio:** VSDX, VSDM, VSSX, VSTX, VSTM, VSSM, VSX, VTX, VDX
     # group loop
     - color: "blue"
       content: |
-        ### {formats.groups.title_2}
-        * **{formats.groups.format_documents}:** PDF, XPS, TEX
-        * **{formats.groups.format_images}:** BMP, JPEG, PNG, GIF, TIFF, SVG, PS
+        ### 文件
+        * **文件:** PDF, 
         * **OpenDocument:** ODT, OTT, ODS
         * **eBook:** EPUB
       # group loop
     - color: "red"
       content: |
-        ### {formats.groups.title_3}
-        * **{formats.groups.format_web}:**  HTML, MHTML, MHT
-        * **{formats.groups.format_archives}:** ZIP, TAR, RAR, 7Z, BZ2, GZ
-        * **OneNote:**  ONE
+        ### 其他格式
+        * **网络:**  HTML, MHTML, MHT, MARKDOWN
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.title}"
-  description: "{features.description}"
+  title: "GroupDocs.Editor 功能"
+  description: "无缝编辑、翻译和保存 PDF 和 Office 文档。"
 
   items:
     # feature loop
     - icon: "merge"
-      title: "{features.feature_1.title}"
-      content: "{features.feature_1.content}"
+      title: "编辑文件"
+      content: "编辑各种文档格式的内容，包括 PDF、DOCX、XLSX、PPTX 等。"
 
     # feature loop
     - icon: "split"
-      title: "{features.feature_2.title}"
-      content: "{features.feature_2.content}"
+      title: "转换为 HTML/CSS"
+      content: "将文档转换为 HTML/CSS，以便使用 CKEditor 或 TinyMCE 等所见即所得编辑器轻松编辑。"
 
     # feature loop
     - icon: "move"
-      title: "{features.feature_3.title}"
-      content: "{features.feature_3.content}"
+      title: "保存编辑过的文档"
+      content: "将编辑后的 ​​HTML/CSS 保存回原始文档格式或导出为 PDF。"
 
     # feature loop
     - icon: "remove"
-      title: "{features.feature_4.title}"
-      content: "{features.feature_4.content}"
+      title: "提取文档信息"
+      content: "从文档中提取页数、大小和加密状态等信息。"
 
     # feature loop
     - icon: "rotate"
-      title: "{features.feature_5.title}"
-      content: "{features.feature_5.content}"
+      title: "支持多种格式"
+      content: "编辑多种文档格式，包括 Microsoft Office 文件、PDF 等。"
 
     # feature loop
     - icon: "swap"
-      title: "{features.feature_6.title}"
-      content: "{features.feature_6.content}"
+      title: "密码保护"
+      content: "轻松编辑受密码保护的文档。"
 
     # feature loop
     - icon: "extract"
-      title: "{features.feature_7.title}"
-      content: "{features.feature_7.content}"
+      title: "自定义文档编码"
+      content: "在编辑和保存过程中指定文档编码。"
 
     # feature loop
     - icon: "orientation"
-      title: "{features.feature_8.title}"
-      content: "{features.feature_8.content}"
+      title: "字体提取"
+      content: "从文档中提取字体以在编辑过程中使用。"
 
     # feature loop
     - icon: "preview"
-      title: "{features.feature_9.title}"
-      content: "{features.feature_9.content}"
+      title: "预览页面"
+      content: "生成文档页面的图像表示以更好地理解内容和结构。"
 
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "{code_samples.title}"
-  description: "{code_samples.description}"
+  title: "代码示例"
+  description: "Java 操作的典型 GroupDocs.Editor 的一些用例。"
   items:
     # code sample loop
-    - title: "{code_samples.sample_1.title}"
+    - title: "编辑特定的 DOCX 文件内容"
       content: |
-        {code_samples.sample_1.content_1} {code_samples.sample_1.content_2}
-        {{< landing/code title="{code_samples.sample_1.code_title}">}}
+        [文档编辑](https://docs.groupdocs.com/editor/java/edit-document/) 功能允许您加载、编辑和保存 DOCX 文件。 下面是如何使用 Java 实现文档编辑的示例：
+        {{< landing/code title="如何用 Java 编辑 DOCX 文件">}}
         ```java {style=abap}   
         // Instantiate Editor object by loading the input file
         Editor editor = new Editor(inputFilePath);
@@ -216,10 +212,10 @@ code_samples:
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "{code_samples.sample_2.title}"
+    - title: "编辑 Word 文档中的表单字段"
       content: |
-        {code_samples.sample_2.content_1} {code_samples.sample_2.content_2}
-        {{< landing/code title="{code_samples.sample_2.code_title}">}}
+        使用 GroupDocs.Editor for Java 轻松编辑 Word 文档中的表单字段。 以下是使用 Java 编辑 Word 文档中的表单字段的方法：
+        {{< landing/code title="如何使用 GroupDocs.Editor for Java 编辑 Word 文档中的表单字段">}}
         ```java {style=abap}   
         Editor editorDocx = new Editor(docxInputFilePath);
 

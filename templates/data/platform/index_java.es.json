@@ -1,0 +1,119 @@
+{
+  "head": {
+    "title": "API de edición de documentos Java | Editar PDF, Word, Excel, EPUB",
+    "description": "API de edición de documentos Java para editar, traducir y guardar páginas de documentos desde formatos PDF, Microsoft Word, Excel, presentaciones, Visio y de imágenes."
+  },
+  "header": {
+    "title_1": "Editar documentos",
+    "title_2": "a través de la API de Java",
+    "description": "Potente API de edición para manipular archivos PDF, Microsoft Office, HTML y de imágenes.",
+    "words": {
+      "for": "para"
+    }
+  },
+  "actions": {
+    "main": "Descarga gratuita de Maven",
+    "alt": "Licencia",
+    "title": "¿Listo para comenzar?",
+    "description": "Pruebe las funciones de GroupDocs.Editor de forma gratuita o solicite una licencia."
+  },
+  "release": {
+    "title": "Versión {0} lanzada",
+    "notes": "Ver qué hay de nuevo",
+    "downloads": "Descargas"
+  },
+  "overview": {
+    "title": "GroupDocs.Editor de un vistazo",
+    "description": "API para editar, traducir y guardar documentos, diapositivas y diagramas en aplicaciones Java.",
+    "feature_1": {
+      "title": "Edite sin esfuerzo múltiples documentos en Java",
+      "description": "Edite sin problemas varios archivos PDF y Office compatibles con una amplia gama de formatos. GroupDocs.Editor para Java hace que la edición de documentos sea rápida y sin complicaciones."
+    },
+    "feature_2": {
+      "title": "Traducir documentos a HTML/CSS",
+      "description": "Traduzca documentos a formato HTML/CSS compatible con editores WYSIWYG, lo que permite una edición de documentos fácil y eficiente en un entorno web."
+    },
+    "feature_3": {
+      "title": "Guarde documentos editados en varios formatos.",
+      "description": "Guarde sus documentos editados en su formato original o expórtelos a otros formatos como PDF, lo que garantiza flexibilidad y compatibilidad."
+    }
+  },
+  "formats": {
+    "title": "Formatos de archivo admitidos",
+    "description": "GroupDocs.Editor para Java admite operaciones con los siguientes [formatos de archivo] (https://docs.groupdocs.com/editor/java/supported-document-formats/).",
+    "groups": {
+      "title_1": "Formatos de Microsoft Office",
+      "title_2": "Documentos",
+      "title_3": "Otros formatos",
+      "format_documents": "Documentos",
+      "format_images": "Imágenes",
+      "format_web": "Web",
+      "format_archives": "Archivo"
+    }
+  },
+  "features": {
+    "title": "Funciones de GroupDocs.Editor",
+    "description": "Edite, traduzca y guarde sin problemas documentos PDF y de Office.",
+    "feature_1": {
+      "title": "Editar archivos",
+      "content": "Edite el contenido de varios formatos de documentos, incluidos PDF, DOCX, XLSX, PPTX y más."
+    },
+    "feature_2": {
+      "title": "Traducir a HTML/CSS",
+      "content": "Convierta documentos a HTML/CSS para editarlos fácilmente con editores WYSIWYG como CKEditor o TinyMCE."
+    },
+    "feature_3": {
+      "title": "Guardar documentos editados",
+      "content": "Guarde el HTML/CSS editado en el formato del documento original o expórtelo a PDF."
+    },
+    "feature_4": {
+      "title": "Extraer información del documento",
+      "content": "Extraiga información como el recuento de páginas, el tamaño y el estado de cifrado de los documentos."
+    },
+    "feature_5": {
+      "title": "Soporte para varios formatos.",
+      "content": "Edite una amplia gama de formatos de documentos, incluidos archivos de Microsoft Office, PDF y más."
+    },
+    "feature_6": {
+      "title": "Protección de contraseña",
+      "content": "Edite documentos protegidos con contraseña con facilidad."
+    },
+    "feature_7": {
+      "title": "Codificación de documentos personalizada",
+      "content": "Especifique la codificación del documento durante los procesos de edición y guardado."
+    },
+    "feature_8": {
+      "title": "Extracción de fuentes",
+      "content": "Extraiga fuentes de documentos para usarlas en el proceso de edición."
+    },
+    "feature_9": {
+      "title": "Vista previa de páginas",
+      "content": "Genere representaciones de imágenes de páginas de documentos para comprender mejor el contenido y la estructura."
+    }
+  },
+  "code_samples": {
+    "title": "Ejemplos de código",
+    "description": "Algunos casos de uso de operaciones típicas de GroupDocs.Editor para Java.",
+    "sample_1": {
+      "title": "Editar contenido de archivo DOCX específico",
+      "content_1": "La función [Edición de documentos](https://docs.groupdocs.com/editor/java/edit-document/) le permite cargar, editar y guardar archivos DOCX.",
+      "content_2": "Aquí hay un ejemplo de cómo lograr la edición de documentos usando Java:",
+      "code_title": "Cómo editar archivos DOCX en Java"
+    },
+    "sample_2": {
+      "title": "Editar campos de formulario en un documento de Word",
+      "content_1": "Edite fácilmente campos de formulario dentro de un documento de Word usando GroupDocs.Editor para Java.",
+      "content_2": "A continuación se explica cómo editar campos de formulario en un documento de Word usando Java:",
+      "code_title": "Cómo editar campos de formulario en un documento de Word usando GroupDocs.Editor para Java"
+    }
+  },
+  "platforms": {
+    "title": "Independencia de plataforma",
+    "description": "GroupDocs.Editor para Java admite los siguientes sistemas operativos, marcos y administradores de paquetes."
+  },
+  "code": {
+    "title": "Editar archivos de documentos en Java",
+    "more": "Más ejemplos",
+    "notes": "Ver qué hay de nuevo"
+  }
+}

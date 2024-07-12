@@ -1,134 +1,134 @@
 ---
 ############################# Static ############################
 layout: "family"
-date: 2024-07-11T16:47:59
+date: 2024-07-12T09:30:06
 draft: false
 
 product: "Editor"
 product_tag: "editor"
 
 ############################# Head ############################
-head_title: "{head.title}"
-head_description: "{head.description}"
+head_title: "ドキュメント編集ソリューション |オンプレミス API と無料アプリ"
+head_description: "オンプレミス ソリューションを使用するか、オンライン ドキュメント エディター アプリを使用して、MS Office、OpenDocument、PDF 画像、その他のファイル形式を編集します。"
 
 ############################# Header ############################
-title: "{header.title}"
+title: "ドキュメントの編集と管理が簡単に"
 description: |
-  {header.description_1}
+  Microsoft Office、OpenOffice、PDF、HTML、およびその他のドキュメント ファイル形式を操作するドキュメント エディター。
 
-  {header.description_2}
+  新しいドキュメントを最初から作成します。
 
-  {header.description_3}
+  ドキュメント内のフォームフィールドを簡単に管理します。
   
 ############################# Platforms ############################
 supported_platforms:
   enable: true  
-  head_title: "{supported_platforms.head_title}"
-  title: "{supported_platforms.title}"
-  description: "{supported_platforms.description}"
-  details_link_title: "{supported_platforms.details_link_title}"
+  head_title: "プラットフォームを選択してください"
+  title: "プラットフォームの独立性"
+  description: "GroupDocs.Editor ライブラリは、次のオペレーティング システムとフレームワークをサポートしています。"
+  details_link_title: "もっと詳しく知る"
   items:
     # supported_platforms loop
     - title: ".NET"
-      description: "{supported_platforms.net.description}"
+      description: ".NET 用の GroupDocs.Editor"
       color: "blue"
       tag: "net"
       link: "/editor/net/"
       features_link: "https://docs.groupdocs.com/editor/net/system-requirements/"
       features:
         # features loop
-        - content: "{supported_platforms.net.feature_1.line_1}  <br>  {supported_platforms.net.feature_1.line_2}  <br>  {supported_platforms.net.feature_1.line_3} <br>  {supported_platforms.net.feature_1.line_4}"
+        - content: ".NET Framework 4.6.2以降  <br>  .NET Core 2.0以降  <br>  .NET 6.0以降 <br>  Mono フレームワーク 2.6.7 以降"
           rows: "4"
         # features loop
-        - content: "{supported_platforms.net.feature_2.line_1}"
+        - content: "Windows、Linux、Mac OS"
           rows: "1"
         # features loop
         - content: "Microsoft Visual Studio  <br>  Xamarin (Android, iOS, Mac)  <br>  MonoDevelop"
           rows: "3"
          # features loop
-        - content: "{supported_platforms.net.feature_4.line_1}"
+        - content: "60以上のファイル形式"
           rows: "1"
     
     # supported_platforms loop
     - title: "Java"
-      description: "{supported_platforms.java.description}"
+      description: "Java 用 GroupDocs.Editor"
       color: "red"
       tag: "java"
       link: "/editor/java/"
       features_link: "https://docs.groupdocs.com/editor/java/system-requirements/"
       features:
         # features loop
-        - content: "{supported_platforms.java.feature_1.line_1}"
+        - content: "J2SE 8.0以降"
           rows: "4"
         # features loop
-        - content:  "{supported_platforms.java.feature_2.line_1}"
+        - content:  "Windows、Linux、Mac OS"
           rows: "1"
         # features loop
         - content:  "IntelliJ IDEA  <br>  Eclipse  <br>  NetBeans"
           rows: "3"
          # features loop
-        - content:  "{supported_platforms.java.feature_4.line_1}"
+        - content:  "50以上のファイル形式"
           rows: "1"
     
     # supported_platforms loop
     - title: "Node.js"
-      description: "{supported_platforms.nodejs-java.description}"
+      description: "Node.js 用の GroupDocs.Editor"
       color: "green"
       tag: "nodejs-java"
       link: "/editor/nodejs-java/"
       features_link: "https://docs.groupdocs.com/editor/nodejs-java/system-requirements/"
       features:
         # features loop
-        - content: "{supported_platforms.nodejs-java.feature_1.line_1}"
+        - content: "Node.js 16 以降および J2SE 8.0 (1.8) 以降"
           rows: "4"
         # features loop
         - content: Windows, Linux, Mac OS
           rows: "1"
         # features loop
-        - content:  "Atom <br> Visual Studio Code <br> {supported_platforms.nodejs-java.feature_3.line_1}"
+        - content:  "Atom <br> Visual Studio Code <br> 他のテキストエディター"
           rows: "3"
          # features loop
-        - content:  "{supported_platforms.nodejs-java.feature_4.line_1}"
+        - content:  "50以上のファイル形式"
           rows: "1"
  
 ############################# Features ############################
 
 features:
   enable: true
-  title: "{features.title}"
-  description: "{features.description}"
+  title: "GroupDocs.Editor の概要"
+  description: "さまざまなドキュメント形式をシームレスに編集、翻訳、保存するための API。"
 
   items:
     # feature loop
     - icon: "merge"
-      title: "{features.feature_1.title}"
-      content: "{features.feature_1.content}"
+      title: "複数のファイル形式を編集する"
+      content: "複数の PDF、Office、およびその他のサポートされている形式をシームレスに編集します。"
 
     # feature loop
     - icon: "split"
-      title: "{features.feature_2.title}"
-      content: "{features.feature_2.content}"
+      title: "HTML/CSSへの翻訳"
+      content: "ドキュメントを WYSIWYG エディタと互換性のある HTML/CSS マークアップに変換します。"
 
     # feature loop
     - icon: "structure"
-      title: "{features.feature_3.title}"
-      content: "{features.feature_3.content}"
+      title: "編集したドキュメントを保存する"
+      content: "編集した HTML/CSS をソース ドキュメント形式で保存するか、PDF にエクスポートします。"
     
     # feature loop
     - icon: "preview"
-      title: "{features.feature_4.title}"
-      content: "{features.feature_4.content}"
+      title: "文書情報の抽出"
+      content: "ページ数、サイズ、暗号化ステータスなどの情報を抽出します。"
 
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "{code_samples.title}"
-  description: "{code_samples.description}"
+  title: "実践的なコードのショーケース"
+  description: "典型的な GroupDocs.Editor 操作のいくつかの使用例。"
   items:
     # code sample loop
-    - title: "{code_samples.sample_1.title}"
+    - title: "文書の編集"
       content: |
-        {code_samples.sample_1.content} 
+        GroupDocs.Editor を使用すると、さまざまなドキュメント形式を編集し、変更を保存できます。ドキュメント全体またはドキュメントの特定の部分を編集できます。 
       samples:
         - language: "C#"
           color: "blue"
@@ -173,36 +173,36 @@ code_samples:
 ############################# Formats ############################
 formats:
   enable: true
-  title:  "{formats.title}"
-  description: "{formats.description}" 
+  title:  "60 以上のファイル形式をサポート"
+  description: "GroupDocs.Editor は、幅広い [ドキュメント形式](https://docs.groupdocs.com/editor/net/supported-document-formats/) での操作をサポートします。" 
 
 ############################# Metrics ############################
 
 metrics:
   enable: true
-  title: "{metrics.title}"
-  description: "{metrics.description}"
+  title: "詳細な指標と統計的洞察"
+  description: "当社の主要な数値を詳細に分析し、当社の業績、影響、成長に関する包括的な指標と統計的洞察を提供します。"
 
   items:
     # metrics loop
     - number: "60+"
-      title: "{metrics.metric_1.title}"
-      content: "{metrics.metric_1.content}"
+      title: "サポートされている形式"
+      content: "各ライブラリは、60 を超える最も一般的なファイルおよびドキュメント形式の編集をサポートしています。"
 
     # metrics loop
     - number: "274k"
-      title: "{metrics.metric_2.title}"
-      content: "{metrics.metric_2.content}"
+      title: "NuGetのダウンロード"
+      content: "GroupDocs.Editor for .NET は、NuGet パッケージ マネージャーから 274,000 件以上ダウンロードされています。"
 
     # metrics loop
     - number: "5.5k"
-      title: "{metrics.metric_3.title}"
-      content: "{metrics.metric_3.content}"
+      title: "Mavenのダウンロード"
+      content: "GroupDocs.Editor for Java は、Maven リポジトリから 5.5,000 件以上ダウンロードされています。"
     
     # metrics loop
     - number: "140+"
-      title: "{metrics.metric_4.title}"
-      content: "{metrics.metric_4.content}"
+      title: "幸せな顧客"
+      content: "私たちのライブラリは、小規模な個人開発者だけでなく、世界中の大手企業によっても使用されています。"
 
 
 ############################# Customers ############################
@@ -210,8 +210,8 @@ metrics:
 
 customers:
   enable: true
-  title: "{customers.title}"
-  description: "{customers.description}"
+  title: "幸せなお客様"
+  description: "GroupDocs ライブラリは、世界中の世界的に有名な有名ブランドで採用されています。"
 
   items:
     # customers loop
@@ -249,8 +249,8 @@ customers:
 
 actions:
   enable: true
-  title: "{actions.title}"
-  description: "{actions.description}"
+  title: "始める準備はできていますか?"
+  description: "お使いのプラットフォームで GroupDocs.Editor の機能を無料でお試しください。"
   items:
     #  loop
     - title: ".NET"
@@ -269,72 +269,72 @@ actions:
 
 faq:
   enable: true
-  title:  "{faq.title}"
-  description:  "{faq.description}"
+  title:  "よくある質問"
+  description:  "よくある質問への回答。"
   items:
     #  loop
-    - question: "{faq.faq_1.question}"
+    - question: "GroupDocs.Editor ライブラリでは、ドキュメントを操作するために他のサードパーティ ソフトウェアが必要ですか?"
       answer: |
-        {faq.faq_1.answer}
+        GroupDocs.Editor では、Adobe Acrobat、Microsoft Office などの外部ソフトウェアをインストールする必要はありません。
      #  loop
-    - question:  "{faq.faq_2.question}"
+    - question:  "GroupDocs.Editor ライブラリを購入する前に試すことはできますか?"
       answer: |
-        {faq.faq_2.answer}
+        はい、ライセンスを購入せずに GroupDocs.Editor を試すことができます。ライセンスなしでインストールすると、ライブラリは試用モードで動作します。このモードでは、結果のドキュメントにトライアルバッジが追加され、最初の 3 ページがトリミングされます。試用版の制限なしで GroupDocs.Editor をテストしたい場合は、30 日間の一時ライセンスをリクエストすることもできます。詳細については、「一時ライセンスを取得する」(https://purchase.groupdocs.com/temporary-license/) を参照してください。
     #  loop 
-    - question:  "{faq.faq_3.question}"
+    - question:  "どのようなライセンスを持っていますか?"
       answer: |
-        {faq.faq_3.answer}                      
+        特定の開発者や企業のニーズに合わせて、いくつかのライセンス タイプを提供しています。ライセンスの種類は、開発者の数、開発者サイトの場所の数、および SDK/API をエンド顧客に提供する必要があるかどうかによって異なります。あるいは、製品の毎月の使用量に基づいて従量制ライセンスを選択することもできます。詳細については、[ライセンスの種類](https://purchase.groupdocs.com/policies/license-types/) をご覧ください。                      
      
 ############################# Cloud ############################
 
 cloud_links:
   enable: true
-  title: "{cloud_links.title}"
-  description: "{cloud_links.description}"
+  title: "GroupDocs.Editor ローコード API"
+  description: "クラウドベースの REST API を使用して、あらゆる種類のアプリケーションでのドキュメント編集を高速化します。"
 
   items:
     #  loop
     - icon: "groupdocs_editor-for-curl"
-      title: "{cloud_links.link_1.title}"
+      title: "cURL 用の GroupDocs.Editor クラウド"
       link: "https://products.groupdocs.cloud/editor/curl"
-      content: "{cloud_links.link_1.content}"
+      content: "ドキュメントを編集および翻訳するための RESTful ドキュメント エディタ クラウド API 用の単純な cURL コマンド。"
 
     #  loop
     - icon: "groupdocs_editor-for-net"
-      title: "{cloud_links.link_2.title}"
+      title: ".NET 用 GroupDocs.Editor クラウド"
       link: "https://products.groupdocs.cloud/editor/net"
-      content: "{cloud_links.link_2.content}"
+      content: "Cloud SDK for Microsoft .NET は、.NET ベースのアプリケーションに迅速なドキュメント編集機能を実装します。"
 
     #  loop
     - icon: "groupdocs_editor-for-java"
-      title: "{cloud_links.link_3.title}"
+      title: "Java 用 GroupDocs.Editor クラウド"
       link: "https://products.groupdocs.cloud/editor/java"
-      content: "{cloud_links.link_3.content}"
+      content: "Cloud API を使用して、Java アプリケーションでドキュメントを編集および翻訳します。"
     
 ############################# Apps ############################
 
 app_links:
   enable: true
-  title: "{app_links.title}"
-  description: "{app_links.description}"
+  title: "GroupDocs.Editor NoCode アプリ"
+  description: "170 以上の一般的なファイル形式をブラウザで編集できるオンライン アプリケーション。"
 
   items:
     #  loop
     - icon: "groupdocs_editor-app"
       title: "GroupDocs.editor Total"
       link: "https://products.groupdocs.app/editor/total"
-      content: "{app_links.link_1.content}"
+      content: "お気に入りの Web ブラウザを離れることなく、30 種類以上のファイルを編集できる無料のオンライン アプリをお試しください。"
 
     #  loop
     - icon: "groupdocs_words-app"
       title:  "GroupDocs.editor DOCX"
       link: "https://products.groupdocs.app/editor/docx"
-      content: "{app_links.link_2.content}"
+      content: "DOCX ファイルをオンラインでシームレスに編集します。"
 
     #  loop
     - icon: "groupdocs_pdf-app"
       title:  "GroupDocs.editor PDF"
       link: "https://products.groupdocs.app/editor/pdf"
-      content: "{app_links.link_3.content}"
+      content: "PDF ファイルを Web ブラウザから直接編集します。"
     
 ---

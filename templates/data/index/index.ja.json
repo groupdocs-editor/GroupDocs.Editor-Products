@@ -1,0 +1,175 @@
+{
+  "head": {
+    "title": "ドキュメント編集ソリューション |オンプレミス API と無料アプリ",
+    "description": "オンプレミス ソリューションを使用するか、オンライン ドキュメント エディター アプリを使用して、MS Office、OpenDocument、PDF 画像、その他のファイル形式を編集します。"
+  },
+  "header": {
+    "title": "ドキュメントの編集と管理が簡単に",
+    "description_1": "Microsoft Office、OpenOffice、PDF、HTML、およびその他のドキュメント ファイル形式を操作するドキュメント エディター。",
+    "description_2": "新しいドキュメントを最初から作成します。",
+    "description_3": "ドキュメント内のフォームフィールドを簡単に管理します。"
+  },
+  "actions": {
+    "title": "始める準備はできていますか?",
+    "description": "お使いのプラットフォームで GroupDocs.Editor の機能を無料でお試しください。"
+  },
+  "formats": {
+    "title": "60 以上のファイル形式をサポート",
+    "description": "GroupDocs.Editor は、幅広い [ドキュメント形式](https://docs.groupdocs.com/editor/net/supported-document-formats/) での操作をサポートします。"
+  },
+  "code_samples": {
+    "title": "実践的なコードのショーケース",
+    "description": "典型的な GroupDocs.Editor 操作のいくつかの使用例。",
+    "sample_1": {
+      "title": "文書の編集",
+      "content": "GroupDocs.Editor を使用すると、さまざまなドキュメント形式を編集し、変更を保存できます。ドキュメント全体またはドキュメントの特定の部分を編集できます。"
+    }
+  },
+  "customers": {
+    "title": "幸せなお客様",
+    "description": "GroupDocs ライブラリは、世界中の世界的に有名な有名ブランドで採用されています。"
+  },
+  "faq": {
+    "title": "よくある質問",
+    "description": "よくある質問への回答。",
+    "faq_1": {
+      "question": "GroupDocs.Editor ライブラリでは、ドキュメントを操作するために他のサードパーティ ソフトウェアが必要ですか?",
+      "answer": "GroupDocs.Editor では、Adobe Acrobat、Microsoft Office などの外部ソフトウェアをインストールする必要はありません。"
+    },
+    "faq_2": {
+      "question": "GroupDocs.Editor ライブラリを購入する前に試すことはできますか?",
+      "answer": "はい、ライセンスを購入せずに GroupDocs.Editor を試すことができます。ライセンスなしでインストールすると、ライブラリは試用モードで動作します。このモードでは、結果のドキュメントにトライアルバッジが追加され、最初の 3 ページがトリミングされます。試用版の制限なしで GroupDocs.Editor をテストしたい場合は、30 日間の一時ライセンスをリクエストすることもできます。詳細については、「一時ライセンスを取得する」(https://purchase.groupdocs.com/temporary-license/) を参照してください。"
+    },
+    "faq_3": {
+      "question": "どのようなライセンスを持っていますか?",
+      "answer": "特定の開発者や企業のニーズに合わせて、いくつかのライセンス タイプを提供しています。ライセンスの種類は、開発者の数、開発者サイトの場所の数、および SDK/API をエンド顧客に提供する必要があるかどうかによって異なります。あるいは、製品の毎月の使用量に基づいて従量制ライセンスを選択することもできます。詳細については、[ライセンスの種類](https://purchase.groupdocs.com/policies/license-types/) をご覧ください。"
+    }
+  },
+  "features": {
+    "title": "GroupDocs.Editor の概要",
+    "description": "さまざまなドキュメント形式をシームレスに編集、翻訳、保存するための API。",
+    "feature_1": {
+      "title": "複数のファイル形式を編集する",
+      "content": "複数の PDF、Office、およびその他のサポートされている形式をシームレスに編集します。"
+    },
+    "feature_2": {
+      "title": "HTML/CSSへの翻訳",
+      "content": "ドキュメントを WYSIWYG エディタと互換性のある HTML/CSS マークアップに変換します。"
+    },
+    "feature_3": {
+      "title": "編集したドキュメントを保存する",
+      "content": "編集した HTML/CSS をソース ドキュメント形式で保存するか、PDF にエクスポートします。"
+    },
+    "feature_4": {
+      "title": "文書情報の抽出",
+      "content": "ページ数、サイズ、暗号化ステータスなどの情報を抽出します。"
+    }
+  },
+  "cloud_links": {
+    "title": "GroupDocs.Editor ローコード API",
+    "description": "クラウドベースの REST API を使用して、あらゆる種類のアプリケーションでのドキュメント編集を高速化します。",
+    "link_1": {
+      "title": "cURL 用の GroupDocs.Editor クラウド",
+      "content": "ドキュメントを編集および翻訳するための RESTful ドキュメント エディタ クラウド API 用の単純な cURL コマンド。"
+    },
+    "link_2": {
+      "title": ".NET 用 GroupDocs.Editor クラウド",
+      "content": "Cloud SDK for Microsoft .NET は、.NET ベースのアプリケーションに迅速なドキュメント編集機能を実装します。"
+    },
+    "link_3": {
+      "title": "Java 用 GroupDocs.Editor クラウド",
+      "content": "Cloud API を使用して、Java アプリケーションでドキュメントを編集および翻訳します。"
+    }
+  },
+  "app_links": {
+    "title": "GroupDocs.Editor NoCode アプリ",
+    "description": "170 以上の一般的なファイル形式をブラウザで編集できるオンライン アプリケーション。",
+    "link_1": {
+      "title": "GroupDocs.Editor 合計",
+      "content": "お気に入りの Web ブラウザを離れることなく、30 種類以上のファイルを編集できる無料のオンライン アプリをお試しください。"
+    },
+    "link_2": {
+      "title": "GroupDocs.Editor Word",
+      "content": "DOCX ファイルをオンラインでシームレスに編集します。"
+    },
+    "link_3": {
+      "title": "GroupDocs.Editor PDF",
+      "content": "PDF ファイルを Web ブラウザから直接編集します。"
+    }
+  },
+  "metrics": {
+    "title": "詳細な指標と統計的洞察",
+    "description": "当社の主要な数値を詳細に分析し、当社の業績、影響、成長に関する包括的な指標と統計的洞察を提供します。",
+    "metric_1": {
+      "title": "サポートされている形式",
+      "content": "各ライブラリは、60 を超える最も一般的なファイルおよびドキュメント形式の編集をサポートしています。"
+    },
+    "metric_2": {
+      "title": "NuGetのダウンロード",
+      "content": "GroupDocs.Editor for .NET は、NuGet パッケージ マネージャーから 274,000 件以上ダウンロードされています。"
+    },
+    "metric_3": {
+      "title": "Mavenのダウンロード",
+      "content": "GroupDocs.Editor for Java は、Maven リポジトリから 5.5,000 件以上ダウンロードされています。"
+    },
+    "metric_4": {
+      "title": "幸せな顧客",
+      "content": "私たちのライブラリは、小規模な個人開発者だけでなく、世界中の大手企業によっても使用されています。"
+    }
+  },
+  "supported_platforms": {
+    "title": "プラットフォームの独立性",
+    "description": "GroupDocs.Editor ライブラリは、次のオペレーティング システムとフレームワークをサポートしています。",
+    "head_title": "プラットフォームを選択してください",
+    "details_link_title": "もっと詳しく知る",
+    "net": {
+      "description": ".NET 用の GroupDocs.Editor",
+      "feature_1": {
+        "line_1": ".NET Framework 4.6.2以降",
+        "line_2": ".NET Core 2.0以降",
+        "line_3": ".NET 6.0以降",
+        "line_4": "Mono フレームワーク 2.6.7 以降"
+      },
+      "feature_2": {
+        "line_1": "Windows、Linux、Mac OS"
+      },
+      "feature_3": {
+        "line_1": "Microsoft Visual Studio",
+        "line_2": "Xamarin (Android、iOS、Mac)",
+        "line_3": "モノデベロップ"
+      },
+      "feature_4": {
+        "line_1": "60以上のファイル形式"
+      }
+    },
+    "java": {
+      "description": "Java 用 GroupDocs.Editor",
+      "feature_1": {
+        "line_1": "J2SE 8.0以降"
+      },
+      "feature_2": {
+        "line_1": "Windows、Linux、Mac OS"
+      },
+      "feature_3": {
+        "line_1": "その考えは理解できます",
+        "line_2": "日食",
+        "line_3": "NetBeans"
+      },
+      "feature_4": {
+        "line_1": "50以上のファイル形式"
+      }
+    },
+    "nodejs-java": {
+      "description": "Node.js 用の GroupDocs.Editor",
+      "feature_1": {
+        "line_1": "Node.js 16 以降および J2SE 8.0 (1.8) 以降"
+      },
+      "feature_3": {
+        "line_1": "他のテキストエディター"
+      },
+      "feature_4": {
+        "line_1": "50以上のファイル形式"
+      }
+    }
+  }
+}

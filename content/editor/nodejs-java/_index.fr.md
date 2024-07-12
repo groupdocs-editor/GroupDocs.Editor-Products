@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "landing"
-date: 2024-07-11T16:47:14
+date: 2024-07-12T09:30:30
 draft: false
 
 product: "Editor"
@@ -23,32 +23,32 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "{head.title}"
-head_description: "{head.description}"
+head_title: "API d'édition de documents Node.js | Modifier PDF, Word, Excel, EPUB"
+head_description: "API d'édition de documents Node.js pour éditer, traduire et enregistrer des pages de documents aux formats PDF, Microsoft Word, Excel, présentations, Visio et image."
 
 ############################# Header ############################
-title: "{header.title_1}<br>{header.title_2}"
-description: "{header.description}"
+title: "Modifier des documents<br>via l'API Node.js"
+description: "API d'édition puissante pour manipuler les fichiers PDF, Microsoft Office, HTML et image."
 words:
-  for: "{header.words.for}"
+  for: "pour"
 
 actions:
-  main: "{actions.main}"
+  main: "Téléchargement gratuit de NPM"
   main_link: "https://releases.groupdocs.com/editor/nodejs-java/"
-  alt: "{actions.alt}"
+  alt: "Licence"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/nodejs-java"
-  title: "{actions.title}"
-  description: "{actions.description}"
+  title: "Prêt à commencer?"
+  description: "Essayez gratuitement les fonctionnalités de GroupDocs.Editor ou demandez une licence."
 
 release:
-  title: "{release.title}"
-  notes: "{release.notes}"
-  downloads: "{release.downloads}"
+  title: "Version {0} publiée"
+  notes: "Regardez ce qu'il y a de nouveau"
+  downloads: "Téléchargements"
 
 code:
-  title: "{code.title}"
-  more: "{code.more}"
-  more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
+  title: "Modifier des fichiers de documents dans Node.js via Java"
+  more: "Plus d'exemples"
+  more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Node.js-via-Java"
   install: "dotnet add package GroupDocs.Editor"
   content: |
     ```javascript {style=abap}   
@@ -64,26 +64,26 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "{overview.title}"
-  description: "{overview.description}"
+  title: "GroupDocs.Editor en un coup d'œil"
+  description: "API pour éditer, traduire et enregistrer des documents, des diapositives et des diagrammes dans les applications Node.js."
   features:
     # feature loop
-    - title: "{overview.feature_1.title}"
-      content: "{overview.feature_1.description}"
+    - title: "Modifiez sans effort plusieurs documents dans Node.js"
+      content: "Modifiez en toute transparence plusieurs fichiers PDF et Office avec la prise en charge d'un large éventail de formats. GroupDocs.Editor pour Node.js rend l'édition de documents rapide et sans tracas."
 
     # feature loop
-    - title: "{overview.feature_2.title}"
-      content: "{overview.feature_2.description}"
+    - title: "Traduire des documents en HTML/CSS"
+      content: "Traduisez des documents en balisage HTML/CSS compatible avec les éditeurs WYSIWYG, permettant une édition de documents simple et efficace dans un environnement Web."
 
     # feature loop
-    - title: "{overview.feature_3.title}"
-      content: "{overview.feature_3.description}"
+    - title: "Enregistrez les documents modifiés dans différents formats"
+      content: "Enregistrez vos documents modifiés dans leur format d'origine ou exportez-les vers d'autres formats tels que PDF, garantissant ainsi flexibilité et compatibilité."
 
 ############################# Platforms ############################
 platforms:
   enable: true
-  title: "{platforms.title}"
-  description: "{platforms.description}"
+  title: "Indépendance de la plateforme"
+  description: "GroupDocs.Editor pour Node.js prend en charge les systèmes d'exploitation, frameworks et gestionnaires de packages suivants."
   items:
     # platform loop
     - title: "Amazon"
@@ -114,97 +114,93 @@ platforms:
 ############################# File formats ############################
 formats:
   enable: true
-  title: "{formats.title}"
+  title: "Formats de fichiers pris en charge"
   description: |
-    {formats.description}
+    GroupDocs.Editor pour Node.js prend en charge les opérations avec les [formats de fichiers](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/) suivants.
   groups:
     # group loop
     - color: "green"
       content: |
-        ### {formats.groups.title_1}
+        ### Formats Microsoft Office
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
-        * **Visio:** VSDX, VSDM, VSSX, VSTX, VSTM, VSSM, VSX, VTX, VDX
     # group loop
     - color: "blue"
       content: |
-        ### {formats.groups.title_2}
-        * **{formats.groups.format_documents}:** PDF, XPS, TEX
-        * **{formats.groups.format_images}:** BMP, JPEG, PNG, GIF, TIFF, SVG, PS
+        ### Documents
+        * **Documents:** PDF, 
         * **OpenDocument:** ODT, OTT, ODS
         * **eBook:** EPUB
       # group loop
     - color: "red"
       content: |
-        ### {formats.groups.title_3}
-        * **{formats.groups.format_web}:**  HTML, MHTML, MHT
-        * **{formats.groups.format_archives}:** ZIP, TAR, RAR, 7Z, BZ2, GZ
-        * **OneNote:**  ONE
+        ### Autres formats
+        * **la toile:**  HTML, MHTML, MHT, MARKDOWN
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.title}"
-  description: "{features.description}"
+  title: "Fonctionnalités de GroupDocs.Editor"
+  description: "Modifiez, traduisez et enregistrez en toute transparence des documents PDF et Office."
 
   items:
     # feature loop
     - icon: "merge"
-      title: "{features.feature_1.title}"
-      content: "{features.feature_1.content}"
+      title: "Modifier des fichiers"
+      content: "Modifiez le contenu de divers formats de documents, notamment PDF, DOCX, XLSX, PPTX, etc."
 
     # feature loop
     - icon: "split"
-      title: "{features.feature_2.title}"
-      content: "{features.feature_2.content}"
+      title: "Traduire en HTML/CSS"
+      content: "Convertissez des documents en HTML/CSS pour une édition facile avec des éditeurs WYSIWYG comme CKEditor ou TinyMCE."
 
     # feature loop
     - icon: "move"
-      title: "{features.feature_3.title}"
-      content: "{features.feature_3.content}"
+      title: "Enregistrer les documents modifiés"
+      content: "Enregistrez le HTML/CSS modifié au format de document d'origine ou exportez-le au format PDF."
 
     # feature loop
     - icon: "remove"
-      title: "{features.feature_4.title}"
-      content: "{features.feature_4.content}"
+      title: "Extraire les informations du document"
+      content: "Extrayez des informations telles que le nombre de pages, la taille et l'état de cryptage des documents."
 
     # feature loop
     - icon: "rotate"
-      title: "{features.feature_5.title}"
-      content: "{features.feature_5.content}"
+      title: "Prise en charge de différents formats"
+      content: "Modifiez un large éventail de formats de documents, notamment des fichiers Microsoft Office, des PDF, etc."
 
     # feature loop
     - icon: "swap"
-      title: "{features.feature_6.title}"
-      content: "{features.feature_6.content}"
+      title: "Mot de passe de protection"
+      content: "Modifiez facilement des documents protégés par mot de passe."
 
     # feature loop
     - icon: "extract"
-      title: "{features.feature_7.title}"
-      content: "{features.feature_7.content}"
+      title: "Encodage de documents personnalisé"
+      content: "Spécifiez l’encodage du document lors des processus d’édition et d’enregistrement."
 
     # feature loop
     - icon: "orientation"
-      title: "{features.feature_8.title}"
-      content: "{features.feature_8.content}"
+      title: "Extraction de polices"
+      content: "Extrayez les polices des documents pour les utiliser dans le processus d'édition."
 
     # feature loop
     - icon: "preview"
-      title: "{features.feature_9.title}"
-      content: "{features.feature_9.content}"
+      title: "Pages d'aperçu"
+      content: "Générez des représentations d’images des pages du document pour mieux comprendre le contenu et la structure."
 
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "{code_samples.title}"
-  description: "{code_samples.description}"
+  title: "Exemples de codes"
+  description: "Quelques cas d'utilisation d'opérations GroupDocs.Editor typiques pour Node.js."
   items:
     # code sample loop
-    - title: "{code_samples.sample_1.title}"
+    - title: "Modifier le contenu d'un fichier DOCX spécifique"
       content: |
-        {code_samples.sample_1.content_1} {code_samples.sample_1.content_2}
-        {{< landing/code title="{code_samples.sample_1.code_title}">}}
+        La fonctionnalité [Édition de documents](https://docs.groupdocs.com/editor/nodejs/edit-document/) vous permet de charger, de modifier et d'enregistrer des fichiers DOCX. Voici un exemple de la façon de réaliser l'édition de documents à l'aide de Node.js :
+        {{< landing/code title="Comment modifier des fichiers DOCX dans Node.js">}}
         ```javascript {style=abap}   
         // Load document
         this.editor = new Editor(this.inputFilePath);
@@ -217,10 +213,10 @@ code_samples:
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "{code_samples.sample_2.title}"
+    - title: "Modifier les champs de formulaire dans un document Word"
       content: |
-        {code_samples.sample_2.content_1} {code_samples.sample_2.content_2}
-        {{< landing/code title="{code_samples.sample_2.code_title}">}}
+        Modifiez facilement les champs de formulaire dans un document Word à l'aide de GroupDocs.Editor pour Node.js. Voici comment modifier les champs de formulaire dans un document Word à l'aide de Node.js :
+        {{< landing/code title="Comment modifier les champs de formulaire dans un document Word à l'aide de GroupDocs.Editor pour Node.js">}}
         ```javascript {style=abap}   
         const editOptions = new MarkdownEditOptions();
         editOptions.setImageLoadCallback(new MdImageLoader(imagesFolder));

@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "landing"
-date: 2024-07-11T16:47:14
+date: 2024-07-12T09:30:30
 draft: false
 
 product: "Editor"
@@ -23,31 +23,31 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "{head.title}"
-head_description: "{head.description}"
+head_title: "C# .NET Document Editing API | ویرایش PDF، Word، Excel، EPUB"
+head_description: "API ویرایش اسناد C#.NET برای ویرایش، ترجمه و ذخیره صفحات سند از PDF، Microsoft Word، Excel، ارائه ها، Visio و فرمت های تصویر."
 
 ############################# Header ############################
-title: "{header.title_1}<br>{header.title_2}"
-description: "{header.description}"
+title: "اسناد را ویرایش کنید<br>از طریق NET API"
+description: "API ویرایشگر قدرتمند برای دستکاری PDF، Microsoft Office، HTML و فایل های تصویری."
 words:
-  for: "{header.words.for}"
+  for: "برای"
 
 actions:
-  main: "{actions.main}"
+  main: "دانلود رایگان NuGet"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
-  alt: "{actions.alt}"
+  alt: "صدور مجوز"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/net"
-  title: "{actions.title}"
-  description: "{actions.description}"
+  title: "برای شروع آماده اید؟"
+  description: "ویژگی های GroupDocs.Editor را به صورت رایگان امتحان کنید یا درخواست مجوز کنید."
 
 release:
-  title: "{release.title}"
-  notes: "{release.notes}"
-  downloads: "{release.downloads}"
+  title: "نسخه {0} منتشر شد"
+  notes: "ببینید چه چیزی جدید است"
+  downloads: "دانلودها"
 
 code:
-  title: "{code.title}"
-  more: "{code.more}"
+  title: "ویرایش فایل های سند در Net"
+  more: "نمونه های بیشتر"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
   install: "dotnet add package GroupDocs.Editor"
   content: |
@@ -65,26 +65,26 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "{overview.title}"
-  description: "{overview.description}"
+  title: "GroupDocs.Editor در یک نگاه"
+  description: "API برای ویرایش، ترجمه و ذخیره اسناد، اسلایدها و نمودارها در برنامه های NET."
   features:
     # feature loop
-    - title: "{overview.feature_1.title}"
-      content: "{overview.feature_1.description}"
+    - title: "بدون زحمت چندین سند را در سی شارپ ویرایش کنید"
+      content: "چندین فایل PDF و Office را با پشتیبانی از طیف گسترده ای از فرمت ها به صورت یکپارچه ویرایش کنید. GroupDocs.Editor برای دات نت ویرایش اسناد را سریع و بدون دردسر می کند."
 
     # feature loop
-    - title: "{overview.feature_2.title}"
-      content: "{overview.feature_2.description}"
+    - title: "اسناد را به HTML/CSS ترجمه کنید"
+      content: "ترجمه اسناد به نشانه گذاری HTML/CSS سازگار با ویرایشگرهای WYSIWYG، امکان ویرایش آسان و کارآمد اسناد را در یک محیط وب."
 
     # feature loop
-    - title: "{overview.feature_3.title}"
-      content: "{overview.feature_3.description}"
+    - title: "اسناد ویرایش شده را در قالب های مختلف ذخیره کنید"
+      content: "اسناد ویرایش شده خود را به فرمت اصلی خود ذخیره کنید یا آنها را به فرمت های دیگر مانند PDF صادر کنید و از انعطاف پذیری و سازگاری اطمینان حاصل کنید."
 
 ############################# Platforms ############################
 platforms:
   enable: true
-  title: "{platforms.title}"
-  description: "{platforms.description}"
+  title: "استقلال سکو"
+  description: "GroupDocs.Editor برای دات نت از سیستم عامل ها، فریمورک ها و مدیران بسته های زیر پشتیبانی می کند."
   items:
     # platform loop
     - title: "Amazon"
@@ -114,97 +114,93 @@ platforms:
 ############################# File formats ############################
 formats:
   enable: true
-  title: "{formats.title}"
+  title: "فرمت های فایل پشتیبانی شده"
   description: |
-    {formats.description}
+    GroupDocs.Editor برای .NET از عملیات با [قالب‌های فایل] زیر پشتیبانی می‌کند (https://docs.groupdocs.com/editor/net/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
       content: |
-        ### {formats.groups.title_1}
+        ### فرمت های مایکروسافت آفیس
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
-        * **Visio:** VSDX, VSDM, VSSX, VSTX, VSTM, VSSM, VSX, VTX, VDX
     # group loop
     - color: "blue"
       content: |
-        ### {formats.groups.title_2}
-        * **{formats.groups.format_documents}:** PDF, XPS, TEX
-        * **{formats.groups.format_images}:** BMP, JPEG, PNG, GIF, TIFF, SVG, PS
+        ### اسناد
+        * **اسناد:** PDF, 
         * **OpenDocument:** ODT, OTT, ODS
         * **eBook:** EPUB
       # group loop
     - color: "red"
       content: |
-        ### {formats.groups.title_3}
-        * **{formats.groups.format_web}:**  HTML, MHTML, MHT
-        * **{formats.groups.format_archives}:** ZIP, TAR, RAR, 7Z, BZ2, GZ
-        * **OneNote:**  ONE
+        ### فرمت های دیگر
+        * **وب:**  HTML, MHTML, MHT, MARKDOWN
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.title}"
-  description: "{features.description}"
+  title: "ویژگی های GroupDocs.Editor"
+  description: "اسناد PDF و Office را یکپارچه ویرایش، ترجمه و ذخیره کنید."
 
   items:
     # feature loop
     - icon: "merge"
-      title: "{features.feature_1.title}"
-      content: "{features.feature_1.content}"
+      title: "ویرایش فایل ها"
+      content: "محتوای فرمت های اسناد مختلف از جمله PDF، DOCX، XLSX، PPTX و غیره را ویرایش کنید."
 
     # feature loop
     - icon: "split"
-      title: "{features.feature_2.title}"
-      content: "{features.feature_2.content}"
+      title: "به HTML/CSS ترجمه کنید"
+      content: "برای ویرایش آسان با ویرایشگرهای WYSIWYG مانند CKEditor یا TinyMCE، اسناد را به HTML/CSS تبدیل کنید."
 
     # feature loop
     - icon: "move"
-      title: "{features.feature_3.title}"
-      content: "{features.feature_3.content}"
+      title: "اسناد ویرایش شده را ذخیره کنید"
+      content: "HTML/CSS ویرایش شده را به فرمت سند اصلی ذخیره کنید یا به PDF صادر کنید."
 
     # feature loop
     - icon: "remove"
-      title: "{features.feature_4.title}"
-      content: "{features.feature_4.content}"
+      title: "استخراج اطلاعات سند"
+      content: "اطلاعاتی مانند تعداد صفحات، اندازه و وضعیت رمزگذاری را از اسناد استخراج کنید."
 
     # feature loop
     - icon: "rotate"
-      title: "{features.feature_5.title}"
-      content: "{features.feature_5.content}"
+      title: "پشتیبانی از فرمت های مختلف"
+      content: "طیف گسترده ای از فرمت های اسناد از جمله فایل های Microsoft Office، PDF و موارد دیگر را ویرایش کنید."
 
     # feature loop
     - icon: "swap"
-      title: "{features.feature_6.title}"
-      content: "{features.feature_6.content}"
+      title: "حفاظت از رمز عبور"
+      content: "اسناد محافظت شده با رمز عبور را به راحتی ویرایش کنید."
 
     # feature loop
     - icon: "extract"
-      title: "{features.feature_7.title}"
-      content: "{features.feature_7.content}"
+      title: "رمزگذاری اسناد سفارشی"
+      content: "رمزگذاری سند را در طول فرآیندهای ویرایش و ذخیره مشخص کنید."
 
     # feature loop
     - icon: "orientation"
-      title: "{features.feature_8.title}"
-      content: "{features.feature_8.content}"
+      title: "استخراج فونت"
+      content: "فونت ها را از اسناد برای استفاده در فرآیند ویرایش استخراج کنید."
 
     # feature loop
     - icon: "preview"
-      title: "{features.feature_9.title}"
-      content: "{features.feature_9.content}"
+      title: "پیش نمایش صفحات"
+      content: "برای درک بهتر محتوا و ساختار، تصاویری از صفحات سند ایجاد کنید."
 
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "{code_samples.title}"
-  description: "{code_samples.description}"
+  title: "نمونه کد"
+  description: "برخی از موارد معمولی GroupDocs.Editor برای عملیات NET استفاده می کنند."
   items:
     # code sample loop
-    - title: "{code_samples.sample_1.title}"
+    - title: "محتوای فایل DOCX خاص را ویرایش کنید"
       content: |
-        {code_samples.sample_1.content_1} {code_samples.sample_1.content_2}
-        {{< landing/code title="{code_samples.sample_1.code_title}">}}
+        ویژگی [ویرایش سند](https://docs.groupdocs.com/editor/net/edit-document/) به شما امکان می دهد فایل های DOCX را بارگیری، ویرایش و ذخیره کنید. در اینجا مثالی از نحوه دستیابی به ویرایش اسناد با استفاده از سی شارپ آورده شده است:
+        {{< landing/code title="نحوه ویرایش فایل های DOCX در سی شارپ">}}
         ```csharp {style=abap}   
         // Load document
         Editor editor = new Editor("sample.docx");
@@ -217,10 +213,10 @@ code_samples:
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "{code_samples.sample_2.title}"
+    - title: "فیلدهای فرم را در یک سند Word ویرایش کنید"
       content: |
-        {code_samples.sample_2.content_1} {code_samples.sample_2.content_2}
-        {{< landing/code title="{code_samples.sample_2.code_title}">}}
+        به راحتی فیلدهای فرم را در یک سند Word با استفاده از GroupDocs.Editor برای دات نت ویرایش کنید. در اینجا نحوه ویرایش فیلدهای فرم در یک سند Word با استفاده از C# آمده است:
+        {{< landing/code title="نحوه ویرایش فیلدهای فرم در یک سند Word با استفاده از GroupDocs.Editor برای دات نت">}}
         ```csharp {style=abap}   
         Editor editor = new Editor("sample.docx");
         // Read the FormFieldCollection in the document

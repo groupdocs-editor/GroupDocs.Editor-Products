@@ -1,7 +1,7 @@
 ---
 ############################# Static ############################
 layout: "landing"
-date: 2024-07-11T16:47:14
+date: 2024-07-12T09:30:30
 draft: false
 
 product: "Editor"
@@ -46,8 +46,8 @@ release:
   downloads: "Downloads"
 
 code:
-  title: "{code.title}"
-  more: "{code.more}"
+  title: "Edit document files in .Net"
+  more: "More examples"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
   install: "dotnet add package GroupDocs.Editor"
   content: |
@@ -125,22 +125,18 @@ formats:
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
-        * **Visio:** VSDX, VSDM, VSSX, VSTX, VSTM, VSSM, VSX, VTX, VDX
     # group loop
     - color: "blue"
       content: |
-        ### Documents & images
-        * **Documents:** PDF, XPS, TEX
-        * **Images:** BMP, JPEG, PNG, GIF, TIFF, SVG, PS
+        ### Documents
+        * **Documents:** PDF, 
         * **OpenDocument:** ODT, OTT, ODS
         * **eBook:** EPUB
       # group loop
     - color: "red"
       content: |
         ### Other formats
-        * **Web:**  HTML, MHTML, MHT
-        * **Archives:** ZIP, TAR, RAR, 7Z, BZ2, GZ
-        * **OneNote:**  ONE
+        * **Web:**  HTML, MHTML, MHT, MARKDOWN
 
 ############################# Features ############################
 features:
