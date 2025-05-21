@@ -1,7 +1,8 @@
 ---
+
 ############################# Static ############################
 layout: "landing"
-date: 2024-07-12T09:30:30
+date: 2025-05-21T13:40:13
 draft: false
 
 product: "Editor"
@@ -23,31 +24,31 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "Java ドキュメント編集 API | PDF、Word、Excel、EPUB を編集"
-head_description: "PDF、Microsoft Word、Excel、プレゼンテーション、Visio、および画像形式のドキュメント ページを編集、翻訳、保存するための Java ドキュメント編集 API。"
+head_title: "{head.title}"
+head_description: "{head.description}"
 
 ############################# Header ############################
-title: "ドキュメントの編集<br>Java API経由"
-description: "PDF、Microsoft Office、HTML、画像ファイルを操作するための強力なエディター API。"
+title: "{header.title_1}<br>{header.title_2}"
+description: "{header.description}"
 words:
-  for: "のために"
+  for: "{header.words.for}"
 
 actions:
-  main: "Maven の無料ダウンロード"
+  main: "{actions.main}"
   main_link: "https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-editor/"
-  alt: "ライセンス"
+  alt: "{actions.alt}"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/java"
-  title: "始める準備はできていますか?"
-  description: "GroupDocs.Editor の機能を無料で試すか、ライセンスをリクエストしてください。"
+  title: "{actions.title}"
+  description: "{actions.description}"
 
 release:
-  title: "バージョン {0} がリリースされました"
-  notes: "新機能を見る"
-  downloads: "ダウンロード"
+  title: "{release.title}"
+  notes: "{release.notes}"
+  downloads: "{release.downloads}"
 
 code:
-  title: "Javaでドキュメントファイルを編集する"
-  more: "他の例"
+  title: "{code.title}"
+  more: "{code.more}"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java"
   install: "dotnet add package GroupDocs.Editor"
   content: |
@@ -61,29 +62,30 @@ code:
     // Grab document content
     String content = beforeEdit.getContent();
     ```
+
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor の概要"
-  description: "Java アプリケーションでドキュメント、スライド、図を編集、翻訳、保存するための API。"
+  title: "{overview.title}"
+  description: "{overview.description}"
   features:
     # feature loop
-    - title: "Java で複数のドキュメントを簡単に編集"
-      content: "幅広い形式をサポートし、複数の PDF および Office ファイルをシームレスに編集します。 GroupDocs.Editor for Java を使用すると、ドキュメントを迅速かつ手間なく編集できます。"
+    - title: "{overview.feature_1.title}"
+      content: "{overview.feature_1.description}"
 
     # feature loop
-    - title: "ドキュメントをHTML/CSSに翻訳"
-      content: "ドキュメントを WYSIWYG エディタと互換性のある HTML/CSS マークアップに変換し、Web 環境で簡単かつ効率的にドキュメントを編集できるようにします。"
+    - title: "{overview.feature_2.title}"
+      content: "{overview.feature_2.description}"
 
     # feature loop
-    - title: "編集したドキュメントをさまざまな形式で保存"
-      content: "編集したドキュメントを元の形式に保存したり、PDF などの他の形式にエクスポートしたりして、柔軟性と互換性を確保します。"
+    - title: "{overview.feature_3.title}"
+      content: "{overview.feature_3.description}"
 
 ############################# Platforms ############################
 platforms:
   enable: true
-  title: "プラットフォームの独立性"
-  description: "GroupDocs.Editor for Java は、次のオペレーティング システム、フレームワーク、およびパッケージ マネージャーをサポートします。"
+  title: "{platforms.title}"
+  description: "{platforms.description}"
   items:
     # platform loop
     - title: "Amazon"
@@ -111,96 +113,97 @@ platforms:
       image: "maven"
 
 
+
 ############################# File formats ############################
 formats:
   enable: true
-  title: "サポートされているファイル形式"
+  title: "{formats.title}"
   description: |
-    GroupDocs.Editor for Java は、次の [ファイル形式](https://docs.groupdocs.com/editor/java/supported-document-formats/) での操作をサポートします。
+    {formats.description}
   groups:
     # group loop
     - color: "green"
       content: |
-        ### Microsoft Office形式
+        ### {formats.groups.title_1}
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
     # group loop
     - color: "blue"
       content: |
-        ### 書類
-        * **書類:** PDF, 
+        ### {formats.groups.title_2}
+        * **{formats.groups.format_documents}:** PDF, 
         * **OpenDocument:** ODT, OTT, ODS
         * **eBook:** EPUB
       # group loop
     - color: "red"
       content: |
-        ### その他の形式
-        * **ウェブ:**  HTML, MHTML, MHT, MARKDOWN
+        ### {formats.groups.title_3}
+        * **{formats.groups.format_web}:**  HTML, MHTML, MHT, MARKDOWN
 
 ############################# Features ############################
 features:
   enable: true
-  title: "GroupDocs.Editor の機能"
-  description: "PDF および Office ドキュメントをシームレスに編集、翻訳、保存します。"
+  title: "{features.title}"
+  description: "{features.description}"
 
   items:
     # feature loop
     - icon: "merge"
-      title: "ファイルを編集する"
-      content: "PDF、DOCX、XLSX、PPTX など、さまざまなドキュメント形式のコンテンツを編集します。"
+      title: "{features.feature_1.title}"
+      content: "{features.feature_1.content}"
 
     # feature loop
     - icon: "split"
-      title: "HTML/CSSへの翻訳"
-      content: "CKEditor や TinyMCE などの WYSIWYG エディタで簡単に編集できるように、ドキュメントを HTML/CSS に変換します。"
+      title: "{features.feature_2.title}"
+      content: "{features.feature_2.content}"
 
     # feature loop
     - icon: "move"
-      title: "編集したドキュメントを保存する"
-      content: "編集した HTML/CSS を元のドキュメント形式に戻して保存するか、PDF にエクスポートします。"
+      title: "{features.feature_3.title}"
+      content: "{features.feature_3.content}"
 
     # feature loop
     - icon: "remove"
-      title: "文書情報の抽出"
-      content: "ドキュメントからページ数、サイズ、暗号化ステータスなどの情報を抽出します。"
+      title: "{features.feature_4.title}"
+      content: "{features.feature_4.content}"
 
     # feature loop
     - icon: "rotate"
-      title: "さまざまな形式のサポート"
-      content: "Microsoft Office ファイル、PDF などを含む幅広いドキュメント形式を編集します。"
+      title: "{features.feature_5.title}"
+      content: "{features.feature_5.content}"
 
     # feature loop
     - icon: "swap"
-      title: "パスワード保護"
-      content: "パスワードで保護されたドキュメントを簡単に編集できます。"
+      title: "{features.feature_6.title}"
+      content: "{features.feature_6.content}"
 
     # feature loop
     - icon: "extract"
-      title: "カスタムドキュメントエンコーディング"
-      content: "編集および保存プロセス中にドキュメントのエンコーディングを指定します。"
+      title: "{features.feature_7.title}"
+      content: "{features.feature_7.content}"
 
     # feature loop
     - icon: "orientation"
-      title: "フォント抽出"
-      content: "編集プロセスで使用するためにドキュメントからフォントを抽出します。"
+      title: "{features.feature_8.title}"
+      content: "{features.feature_8.content}"
 
     # feature loop
     - icon: "preview"
-      title: "ページのプレビュー"
-      content: "コンテンツと構造をより深く理解するためにドキュメント ページの画像表現を生成します。"
+      title: "{features.feature_9.title}"
+      content: "{features.feature_9.content}"
 
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "コードサンプル"
-  description: "Java 操作用の典型的な GroupDocs.Editor の使用例。"
+  title: "{code_samples.title}"
+  description: "{code_samples.description}"
   items:
     # code sample loop
-    - title: "特定の DOCX ファイルの内容を編集する"
+    - title: "{code_samples.sample_1.title}"
       content: |
-        [ドキュメント編集](https://docs.groupdocs.com/editor/java/edit-document/) 機能を使用すると、DOCX ファイルをロード、編集、保存できます。 Java を使用してドキュメント編集を実現する方法の例を次に示します。
-        {{< landing/code title="Java で DOCX ファイルを編集する方法">}}
+        {code_samples.sample_1.content_1} {code_samples.sample_1.content_2}
+        {{< landing/code title="{code_samples.sample_1.code_title}">}}
         ```java {style=abap}   
         // Instantiate Editor object by loading the input file
         Editor editor = new Editor(inputFilePath);
@@ -212,10 +215,10 @@ code_samples:
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "Word 文書のフォームフィールドを編集する"
+    - title: "{code_samples.sample_2.title}"
       content: |
-        GroupDocs.Editor for Java を使用すると、Word 文書内のフォーム フィールドを簡単に編集できます。 Java を使用して Word 文書のフォーム フィールドを編集する方法は次のとおりです。
-        {{< landing/code title="GroupDocs.Editor for Java を使用して Word 文書のフォーム フィールドを編集する方法">}}
+        {code_samples.sample_2.content_1} {code_samples.sample_2.content_2}
+        {{< landing/code title="{code_samples.sample_2.code_title}">}}
         ```java {style=abap}   
         Editor editorDocx = new Editor(docxInputFilePath);
 
@@ -226,4 +229,5 @@ code_samples:
         }
         ```
         {{< /landing/code >}}
+
 ---

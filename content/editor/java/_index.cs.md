@@ -1,7 +1,8 @@
 ---
+
 ############################# Static ############################
 layout: "landing"
-date: 2024-07-12T09:30:30
+date: 2025-05-21T13:40:14
 draft: false
 
 product: "Editor"
@@ -61,6 +62,7 @@ code:
     // Grab document content
     String content = beforeEdit.getContent();
     ```
+
 ############################# Overview ############################
 overview:
   enable: true
@@ -109,6 +111,7 @@ platforms:
     # platform loop
     - title: "Maven"
       image: "maven"
+
 
 
 ############################# File formats ############################
@@ -226,4 +229,5 @@ code_samples:
         }
         ```
         {{< /landing/code >}}
+
 ---
