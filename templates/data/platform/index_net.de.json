@@ -1,48 +1,48 @@
 {
   "head": {
-    "title": "C# .NET -Dokumentbearbeitungs -API | Bearbeiten Sie PDF, Wort, Excel, EPUB",
-    "description": "C# .NET -Dokument -Bearbeitungs -API zum Bearbeiten, Übersetzen und Speichern von Dokumentseiten von PDF-, Microsoft Word-, Excel-, Präsentations-, Visio- und Bildformaten."
+    "title": "C# .NET-Dokumentbearbeitungs-API | Bearbeiten Sie PDF, Word, Excel, EPUB",
+    "description": "C# .NET-Dokumentbearbeitungs-API zum Bearbeiten, Übersetzen und Speichern von Dokumentseiten aus PDF-, Microsoft Word-, Excel-, Präsentations-, Visio- und Bildformaten."
   },
   "header": {
     "title_1": "Dokumente bearbeiten",
-    "title_2": "via .net api",
-    "description": "Leistungsstarke Editor -API zur Manipulation von PDF, Microsoft Office, HTML und Bilddateien.",
+    "title_2": "über die .NET-API",
+    "description": "Leistungsstarke Editor-API zum Bearbeiten von PDF-, Microsoft Office-, HTML- und Bilddateien.",
     "words": {
       "for": "für"
     }
   },
   "actions": {
-    "main": "Kostenloser Nuget -Download",
+    "main": "Kostenloser NuGet-Download",
     "alt": "Lizenzierung",
-    "title": "Bereit, loszulegen?",
-    "description": "Versuchen Sie es mit GroupDocs.Editor kostenlos oder fordern Sie eine Lizenz an."
+    "title": "Bereit anzufangen?",
+    "description": "Testen Sie die Funktionen von GroupDocs.Editor kostenlos oder fordern Sie eine Lizenz an."
   },
   "release": {
     "title": "Version {0} veröffentlicht",
-    "notes": "Sehen Sie, was neu ist",
+    "notes": "Schau was neu ist",
     "downloads": "Downloads"
   },
   "overview": {
     "title": "GroupDocs.Editor auf einen Blick",
-    "description": "API zum Bearbeiten, Übersetzen und Speichern von Dokumenten, Folien und Diagrammen in .NET -Anwendungen.",
+    "description": "API zum Bearbeiten, Übersetzen und Speichern von Dokumenten, Folien und Diagrammen in .NET-Anwendungen.",
     "feature_1": {
       "title": "Bearbeiten Sie mühelos mehrere Dokumente in C#",
-      "description": "Bearbeiten Sie nahtlos mehrere PDF- und Office -Dateien mit Unterstützung für eine Vielzahl von Formaten. GroupDocs.Editor für .NET macht die Dokumentbearbeitung schnell und problemlos."
+      "description": "Bearbeiten Sie nahtlos mehrere PDF- und Office-Dateien mit Unterstützung für eine Vielzahl von Formaten. GroupDocs.Editor für .NET ermöglicht eine schnelle und problemlose Bearbeitung von Dokumenten."
     },
     "feature_2": {
       "title": "Übersetzen Sie Dokumente in HTML/CSS",
-      "description": "Übersetzen Sie Dokumente in HTML/CSS -Markup, die mit WYSIWYG -Editoren kompatibel sind und eine einfache und effiziente Dokumentbearbeitung in einer Webumgebung ermöglichen."
+      "description": "Übersetzen Sie Dokumente in HTML/CSS-Markup, das mit WYSIWYG-Editoren kompatibel ist, und ermöglichen Sie so eine einfache und effiziente Dokumentbearbeitung in einer Webumgebung."
     },
     "feature_3": {
       "title": "Speichern Sie bearbeitete Dokumente in verschiedenen Formaten",
-      "description": "Speichern Sie Ihre bearbeiteten Dokumente in ihrem ursprünglichen Format oder exportieren Sie sie in andere Formate wie PDF, um Flexibilität und Kompatibilität zu gewährleisten."
+      "description": "Speichern Sie Ihre bearbeiteten Dokumente wieder in ihrem Originalformat oder exportieren Sie sie in andere Formate wie PDF, um Flexibilität und Kompatibilität zu gewährleisten."
     }
   },
   "formats": {
     "title": "Unterstützte Dateiformate",
-    "description": "GroupDocs.Editor für .NET unterstützt Vorgänge mit den folgenden [Dateiformaten] (https://docs.groupdocs.com/editor/net/supported-document-formats/).",
+    "description": "GroupDocs.Editor für .NET unterstützt Vorgänge mit den folgenden [Dateiformaten](https://docs.groupdocs.com/editor/net/supported-document-formats/).",
     "groups": {
-      "title_1": "Microsoft -Büroformate",
+      "title_1": "Microsoft Office-Formate",
       "title_2": "Unterlagen",
       "title_3": "Andere Formate",
       "format_documents": "Unterlagen",
@@ -52,19 +52,19 @@
     }
   },
   "features": {
-    "title": "Features von GroupDocs.Editor",
-    "description": "An nahtlos bearbeiten, übersetzen und speichern Sie PDF- und Bürodokumente.",
+    "title": "GroupDocs.Editor-Funktionen",
+    "description": "Bearbeiten, übersetzen und speichern Sie PDF- und Office-Dokumente nahtlos.",
     "feature_1": {
       "title": "Dateien bearbeiten",
       "content": "Bearbeiten Sie den Inhalt verschiedener Dokumentformate, einschließlich PDF, DOCX, XLSX, PPTX und mehr."
     },
     "feature_2": {
-      "title": "Übersetzen Sie zu HTML/CSS",
-      "content": "Konvertieren Sie Dokumente in HTML/CSS, um mit WYSIWYG -Redakteuren wie Ckeditor oder Tinymce einfach zu bearbeiten."
+      "title": "In HTML/CSS übersetzen",
+      "content": "Konvertieren Sie Dokumente in HTML/CSS zur einfachen Bearbeitung mit WYSIWYG-Editoren wie CKEditor oder TinyMCE."
     },
     "feature_3": {
-      "title": "Speichern bearbeiteten Dokumente",
-      "content": "Speichern Sie das bearbeitete HTML/CSS zurück im Originaldokumentformat oder im PDF."
+      "title": "Bearbeitete Dokumente speichern",
+      "content": "Speichern Sie das bearbeitete HTML/CSS wieder im ursprünglichen Dokumentformat oder exportieren Sie es als PDF."
     },
     "feature_4": {
       "title": "Dokumentinformationen extrahieren",
@@ -72,18 +72,18 @@
     },
     "feature_5": {
       "title": "Unterstützung für verschiedene Formate",
-      "content": "Bearbeiten Sie eine breite Palette von Dokumentformaten, einschließlich Microsoft Office -Dateien, PDFs und mehr."
+      "content": "Bearbeiten Sie eine Vielzahl von Dokumentformaten, darunter Microsoft Office-Dateien, PDFs und mehr."
     },
     "feature_6": {
       "title": "Passwortschutz",
-      "content": "Bearbeiten Sie kennwortgeschützte Dokumente mühelos."
+      "content": "Bearbeiten Sie passwortgeschützte Dokumente ganz einfach."
     },
     "feature_7": {
       "title": "Benutzerdefinierte Dokumentkodierung",
-      "content": "Geben Sie die Dokumentcodierung während der Bearbeitung und Speichern von Prozessen an."
+      "content": "Geben Sie die Dokumentkodierung während der Bearbeitungs- und Speicherprozesse an."
     },
     "feature_8": {
-      "title": "Schriftart Extraktion",
+      "title": "Schriftartenextraktion",
       "content": "Extrahieren Sie Schriftarten aus Dokumenten zur Verwendung im Bearbeitungsprozess."
     },
     "feature_9": {
@@ -92,19 +92,19 @@
     }
   },
   "code_samples": {
-    "title": "Code -Beispiele",
-    "description": "Einige Anwendungsfälle von typischen Gruppendocs.Editor für .NET -Operationen.",
+    "title": "Codebeispiele",
+    "description": "Einige Anwendungsfälle typischer GroupDocs.Editor für .NET-Vorgänge.",
     "sample_1": {
-      "title": "Bearbeiten Sie den Inhalt des spezifischen DOCX -Datei",
-      "content_1": "Mit der Funktion [Dokumentbearbeitung] (https://docs.groupdocs.com/editor/net/edit-document/) können Sie docx-Dateien laden, bearbeiten und speichern.",
-      "content_2": "Hier ist ein Beispiel dafür, wie die Bearbeitung von Dokumenten mit C#erreicht wird:",
-      "code_title": "So bearbeiten Sie DOCX -Dateien in C#"
+      "title": "Bearbeiten Sie bestimmte DOCX-Dateiinhalte",
+      "content_1": "Mit der Funktion [Dokumentbearbeitung](https://docs.groupdocs.com/editor/net/edit-document/) können Sie DOCX-Dateien laden, bearbeiten und speichern.",
+      "content_2": "Hier ist ein Beispiel für die Dokumentbearbeitung mit C#:",
+      "code_title": "So bearbeiten Sie DOCX-Dateien in C#"
     },
     "sample_2": {
-      "title": "Bearbeiten von Formularfeldern in einem Word -Dokument",
-      "content_1": "Bearbeiten Sie die Formularfelder in einem Word -Dokument einfach mit GroupDocs.Editor für .NET.",
-      "content_2": "Hier erfahren Sie, wie Sie Formularfelder in einem Word -Dokument mit C#bearbeiten:",
-      "code_title": "So bearbeiten Sie Formularfelder in einem Word -Dokument mit GroupDocs.Editor für .NET"
+      "title": "Bearbeiten Sie Formularfelder in einem Word-Dokument",
+      "content_1": "Bearbeiten Sie Formularfelder in einem Word-Dokument ganz einfach mit GroupDocs.Editor für .NET.",
+      "content_2": "So bearbeiten Sie Formularfelder in einem Word-Dokument mit C#:",
+      "code_title": "So bearbeiten Sie Formularfelder in einem Word-Dokument mit GroupDocs.Editor für .NET"
     }
   },
   "platforms": {
@@ -112,8 +112,8 @@
     "description": "GroupDocs.Editor für .NET unterstützt die folgenden Betriebssysteme, Frameworks und Paketmanager."
   },
   "code": {
-    "title": "Dokumentdateien in .NET bearbeiten",
-    "more": "Weitere Beispiele",
-    "notes": "Sehen Sie, was neu ist"
+    "title": "Bearbeiten Sie Dokumentdateien in .Net",
+    "more": "Mehr Beispiele",
+    "notes": "Schau was neu ist"
   }
 }

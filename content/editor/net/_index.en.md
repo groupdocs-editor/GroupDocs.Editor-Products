@@ -1,8 +1,7 @@
 ---
-
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-21T13:40:13
+date: 2024-07-12T09:30:30
 draft: false
 
 product: "Editor"
@@ -47,31 +46,22 @@ release:
   downloads: "Downloads"
 
 code:
-  title: "Edit document files in .NET"
+  title: "Edit document files in .Net"
   more: "More examples"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
   install: "dotnet add package GroupDocs.Editor"
   content: |
     ```csharp {style=abap}   
-    // Create Editor class by loading an input document by its path or a stream
-    Editor editor = new Editor("full/path/to/sample/file.docx");
+    // {code.comment_1}
+    this.editor = new Editor(this.inputFilePath1);
+    Editor editor = new Editor("sample.docx");
+    
+    // Edit document
+    EditableDocument editableDocument = editor.Edit();
 
-    // Open document for edit and obtain EditableDocument
-    EditableDocument original = editor.Edit();
-
-    // Obtain document content as base64-embedded string with HTML and CSS markup inside
-    string originalContent = original.GetEmbeddedHtml();
-
-    // Send this markup to HTML WYSIWYG-editor, edit there and obtain edited content
-    string editedContent = /* document content after editing */;
-
-    // Create EditableDocument from edited document content
-    EditableDocument edited = EditableDocument.FromMarkup(editedContent, null);
-
-    // Specify saving options and format, and save edited document to the file or stream
-    editor.Save(edited, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
+    // Save edited document
+    editor.Save(editableDocument, "edited_sample.docx");
     ```
-
 ############################# Overview ############################
 overview:
   enable: true
@@ -121,7 +111,6 @@ platforms:
     - title: "NuGet"
       image: "nuget"
 
-
 ############################# File formats ############################
 formats:
   enable: true
@@ -153,7 +142,7 @@ formats:
 features:
   enable: true
   title: "GroupDocs.Editor features"
-  description: "Seamlessly edit and save in different formats Office documents, Emails, eBooks, and PDF."
+  description: "Seamlessly edit, translate, and save PDF and Office documents."
 
   items:
     # feature loop
@@ -184,12 +173,12 @@ features:
     # feature loop
     - icon: "swap"
       title: "Password protection"
-      content: "Load and edit password-protected documents with ease, and protecting the output documents with password protection."
+      content: "Edit password-protected documents with ease."
 
     # feature loop
     - icon: "extract"
-      title: "Edit email"
-      content: "Edit and save the email messages and letters in MSG, EML, EMLX, MBOX and many other formats, including editing metadata like Subject, To, CC, BCC, From, Title, Date and so on."
+      title: "Custom document encoding"
+      content: "Specify document encoding during editing and saving processes."
 
     # feature loop
     - icon: "orientation"
@@ -208,100 +197,36 @@ code_samples:
   description: "Some use cases of typical GroupDocs.Editor for .NET operations."
   items:
     # code sample loop
-    - title: "Edit particular worksheet of XLSX and save it separately and as part of original document"
+    - title: "Edit specific DOCX file content"
       content: |
-        The Spreadsheet document (like XLS, XLSX, XLSM, ODS and so on) may have one or more worksheets (tabs). GroupDocs.Editor allows to edit content of one worksheet at a time. After being edited, this worksheet may be saved to the separate Spreadsheet document (where only this specific worksheet will be saved), or GroupDocs.Editor can insert edited worksheet back to the original document, where it can either replace the original worksheet or be saved together, along with original one. Here's an example of how to save edited worksheet in all three ways. More on that [here](https://docs.groupdocs.com/editor/net/inserting-edited-worksheet-into-existing-spreadsheet/).
-        {{< landing/code title="Edit particular worksheet of XLSX">}}
+        The [Document Editing](https://docs.groupdocs.com/editor/net/edit-document/) feature allows you to load, edit, and save DOCX files. Here's an example of how to achieve document editing using C#: 
+        {{< landing/code title="How to edit DOCX files in C#">}}
         ```csharp {style=abap}   
-
-        // Create Editor class by loading an input document as path or stream
-        FileStream inputXlsxStream = File.OpenRead("full/path/to/sample/file.xlsx");
-        Editor editor = new Editor(inputXlsxStream);
+        // Load document
+        Editor editor = new Editor("sample.docx");
         
-        // Create and adjust the edit options
-        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
-        editOptions.WorksheetIndex = 1;//select a tab (worksheet) to edit by 0-based index. For example, edit 2nd tab
+        // Edit document
+        EditableDocument editableDocument = editor.Edit();
         
-        // Open document for edit and obtain EditableDocument
-        EditableDocument original = editor.Edit(editOptions);
-        
-        // Grab content of the selected worksheet and associated resources from editable document
-        string content = original.GetContent();
-        
-        // Grab the resources (images, fonts, stylesheet) of selected worksheet
-        List<IHtmlResource> resources = original.AllResources;
-
-        // Send the content to WYSIWYG-editor, edit it there, and send edited content back to the server-side
-        // This step simulates a such operation
-        string updatedContent = content.Replace("Cell Text", "Edited Cell Text");
-        
-        // Grab edited content and resources from WYSIWYG-editor and create a new EditableDocument instance from it
-        EditableDocument edited = EditableDocument.FromMarkup(updatedContent, resources);
-        
-        // First - save as separate Spreadsheet with single worksheet
-        // Create a save options and select a desired output format - XLSM for example
-        SpreadsheetSaveOptions saveOptionsSeparate = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsm);
-        
-        // Save edited worksheet to the separate XLSM file
-        editor.Save(edited, "Edited_worksheet_only.xlsm", saveOptionsSeparate);
-        
-        // Second - insert edited worksheet into original Spreadsheet file by replacing the old worksheet onto edited
-        // Create another save options with XLSx format at this time
-        SpreadsheetSaveOptions saveOptionsReplace = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
-        saveOptionsReplace.WorksheetNumber = 2;//1-based number of worksheet to replace
-        
-        editor.Save(edited, "Edited_worksheet_replaced.xlsx", saveOptionsReplace);
-        
-        // Third - insert edited worksheet into original Spreadsheet file to be placed together with old
-        SpreadsheetSaveOptions saveOptionsTogether = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
-        saveOptionsTogether.WorksheetNumber = -1; // new worsksheet will be last one
-        saveOptionsTogether.InsertAsNewWorksheet = true;//Store original and edited worksheet together, but not replace original with edited
-        
-        editor.Save(edited, "Edited_worksheet_together.xlsx", saveOptionsTogether);
+        // Save edited document
+        editor.Save(editableDocument, "edited_sample.docx");
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "Edit password-protected DOCX and save it as password-protected DOCX and PDF"
+    - title: "Edit form fields in a Word document"
       content: |
-        GroupDocs.Editor allows to work with encrypted documents, protected with password — it can open such files and also apply password protection to the output documents. This example shows how to specify password for editing input DOCX document, edit its content and then save it to the output DOCX and PDF, and to protect both these DOCX and PDF files with different passwords. More on that [here](https://docs.groupdocs.com/editor/net/output-format-and-password/).
-        {{< landing/code title="Edit password-protected DOCX and save it as password-protected DOCX and PDF">}}
-        ```csharp {style=abap}
-        
-        // Prepare loading options and specify password
-        WordProcessingLoadOptions loadOptions = new WordProcessingLoadOptions();
-        loadOptions.Password = "password";
-
-        // Create Editor class by loading an input document and specifying load options
-        Editor editor = new Editor("full/path/to/sample/file.docx", loadOptions);
-
-        // Open document for edit and obtain EditableDocument
-        EditableDocument original = editor.Edit();
-
-        // Obtain document content as base64-embedded string with HTML and CSS markup inside
-        string originalDocumentContentAsBase64 = original.GetEmbeddedHtml();
-
-        // Send this markup to HTML WYSIWYG-editor and edit there
-        // For example, some simple edit
-        string editedDocumentContentAsBase64 = originalDocumentContentAsBase64.Replace("Document title", "Edited Document title");
-
-        // Create EditableDocument from edited document content
-        EditableDocument edited = EditableDocument.FromMarkup(editedDocumentContentAsBase64, null);
-
-        //Create saving options into WordProcessing-DOCX and specify password
-        WordProcessingSaveOptions docxSaveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
-        docxSaveOptions.Password = "docx-password";
-
-        //Create saving options into PDF and specify password
-        PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
-        pdfSaveOptions.Password = "pdf-password";
-
-        // Save edited content to the DOCX file
-        editor.Save(edited, "output.docx", docxSaveOptions);
-
-        // Save edited content to the PDF file
-        editor.Save(edited, "output.pdf", pdfSaveOptions);
+        Easily edit form fields within a Word document using GroupDocs.Editor for .NET. Here's how to edit form fields in a Word document using C#: 
+        {{< landing/code title="How to edit form fields in a Word document using GroupDocs.Editor for .NET">}}
+        ```csharp {style=abap}   
+        Editor editor = new Editor("sample.docx");
+        // Read the FormFieldCollection in the document
+        FormFieldCollection collection = fieldManager.FormFieldCollection;
+        // Update a specific text form field
+        TextFormField textField = collection.GetFormField<TextFormField>("Text1");
+        textField.LocaleId = 1029;
+        textField.Value = "new Value";
+        fieldManager.UpdateFormFiled(collection);
 
         ```
         {{< /landing/code >}}
-
 ---

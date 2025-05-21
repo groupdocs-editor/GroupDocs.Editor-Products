@@ -1,8 +1,7 @@
 ---
-
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-21T13:40:13
+date: 2024-07-12T09:30:30
 draft: false
 
 product: "Editor"
@@ -24,76 +23,67 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "C# .NET API di modifica del documento | Modifica PDF, Word, Excel, Epub"
-head_description: "C# .NET DOCUMENTO MODIFICA API per modificare, tradurre e salvare le pagine di documenti da formati PDF, Microsoft Word, Excel, Presentations, Visio e Immagine."
+head_title: "API di modifica dei documenti C# .NET | Modifica PDF, Word, Excel, EPUB"
+head_description: "API di modifica dei documenti C# .NET per modificare, tradurre e salvare pagine di documenti da PDF, Microsoft Word, Excel, presentazioni, Visio e formati immagine."
 
 ############################# Header ############################
-title: "Modifica documenti<br>Via API .NET"
-description: "Potente editor API per manipolare i file PDF, Microsoft Office, HTML e Image."
+title: "Modifica documenti<br>tramite l'API .NET"
+description: "Potente API editor per manipolare file PDF, Microsoft Office, HTML e immagini."
 words:
   for: "per"
 
 actions:
-  main: "Download gratuito di Nuget"
+  main: "Download gratuito di NuGet"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
-  alt: "Licenze"
+  alt: "Licenza"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/net"
-  title: "Pronto per iniziare?"
-  description: "Prova le funzionalità GroupDocs.Editor gratuite o richiedi una licenza."
+  title: "Pronti per iniziare?"
+  description: "Prova gratuitamente le funzionalità di GroupDocs.Editor o richiedi una licenza."
 
 release:
   title: "Versione {0} rilasciata"
-  notes: "Guarda cosa c'è di nuovo"
+  notes: "Scopri le novità"
   downloads: "Download"
 
 code:
-  title: "Modifica file di documenti in .NET"
+  title: "Modifica file di documenti in .Net"
   more: "Altri esempi"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
   install: "dotnet add package GroupDocs.Editor"
   content: |
     ```csharp {style=abap}   
     // {code.comment_1}
-    Editor editor = new Editor("full/path/to/sample/file.docx");
+    this.editor = new Editor(this.inputFilePath);
+    Editor editor = new Editor("sample.docx");
+    
+    // Edit document
+    EditableDocument editableDocument = editor.Edit();
 
-    // {code.comment_2}
-    EditableDocument original = editor.Edit();
-
-    // {code.comment_3}
-    string originalContent = original.GetEmbeddedHtml();
-
-    // {code.comment_4}
-    string editedContent = /* document content after editing */;
-
-    // {code.comment_5}
-    EditableDocument edited = EditableDocument.FromMarkup(editedContent, null);
-
-    // {code.comment_6}
-    editor.Save(edited, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
+    // Save edited document
+    editor.Save(editableDocument, "edited_sample.docx");
     ```
-
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor a colpo d'occhio"
-  description: "API per modificare, tradurre e salvare documenti, diapositive e diagrammi in applicazioni .NET."
+  title: "GroupDocs.Editor in breve"
+  description: "API per modificare, tradurre e salvare documenti, diapositive e diagrammi nelle applicazioni .NET."
   features:
     # feature loop
-    - title: "Modifica senza sforzo più documenti in C#"
-      content: "Modifica perfettamente più file PDF e Office con supporto per una vasta gamma di formati. GroupDocs.Editor per .NET rende la modifica dei documenti in fretta e senza problemi."
+    - title: "Modifica facilmente più documenti in C#"
+      content: "Modifica senza problemi più file PDF e Office con il supporto di un'ampia gamma di formati. GroupDocs.Editor per .NET rende la modifica dei documenti veloce e senza problemi."
 
     # feature loop
-    - title: "Traduci i documenti in HTML/CSS"
-      content: "Traduci i documenti in markup HTML/CSS compatibile con gli editori WYSIWYG, consentendo una modifica di documenti facile ed efficiente in un ambiente Web."
+    - title: "Traduci documenti in HTML/CSS"
+      content: "Traduci documenti in markup HTML/CSS compatibile con gli editor WYSIWYG, consentendo la modifica semplice ed efficiente dei documenti in un ambiente web."
 
     # feature loop
-    - title: "Salva documenti modificati in vari formati"
-      content: "Salva i tuoi documenti modificati al loro formato originale o esportali in altri formati come il PDF, garantendo flessibilità e compatibilità."
+    - title: "Salva i documenti modificati in vari formati"
+      content: "Salva i tuoi documenti modificati nel loro formato originale o esportali in altri formati come PDF, garantendo flessibilità e compatibilità."
 
 ############################# Platforms ############################
 platforms:
   enable: true
-  title: "Indipendenza della piattaforma"
+  title: "Indipendenza dalla piattaforma"
   description: "GroupDocs.Editor per .NET supporta i seguenti sistemi operativi, framework e gestori di pacchetti."
   items:
     # platform loop
@@ -121,18 +111,17 @@ platforms:
     - title: "NuGet"
       image: "nuget"
 
-
 ############################# File formats ############################
 formats:
   enable: true
   title: "Formati di file supportati"
   description: |
-    GroupDocs.Editor per .NET supporta le operazioni con i seguenti [formati di file] (https://docs.groupdocs.com/editor/net/supported-document-formats/).
+    GroupDocs.Editor per .NET supporta operazioni con i seguenti [formati di file](https://docs.groupdocs.com/editor/net/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
       content: |
-        ### Formati di Microsoft Office
+        ### Formati Microsoft Office
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
@@ -147,161 +136,97 @@ formats:
     - color: "red"
       content: |
         ### Altri formati
-        * **Web:**  HTML, MHTML, MHT, MARKDOWN
+        * **ragnatela:**  HTML, MHTML, MHT, MARKDOWN
 
 ############################# Features ############################
 features:
   enable: true
   title: "Funzionalità di GroupDocs.Editor"
-  description: "Modifica perfettamente, traduci e salva i documenti PDF e Office."
+  description: "Modifica, traduci e salva facilmente documenti PDF e Office."
 
   items:
     # feature loop
     - icon: "merge"
       title: "Modifica file"
-      content: "Modifica il contenuto di vari formati di documenti tra cui PDF, DOCX, XLSX, PPTX e altro."
+      content: "Modifica il contenuto di vari formati di documenti tra cui PDF, DOCX, XLSX, PPTX e altri."
 
     # feature loop
     - icon: "split"
-      title: "Tradurre in html/css"
-      content: "Converti i documenti in HTML/CSS per una facile modifica con redattori WYSIWYG come CKEditor o Tinymce."
+      title: "Traduci in HTML/CSS"
+      content: "Converti documenti in HTML/CSS per modificarli facilmente con editor WYSIWYG come CKEditor o TinyMCE."
 
     # feature loop
     - icon: "move"
-      title: "Salva documenti modificati"
-      content: "Salva l'HTML/CSS modificato di nuovo nel formato del documento originale o esporta in PDF."
+      title: "Salva i documenti modificati"
+      content: "Salva nuovamente l'HTML/CSS modificato nel formato del documento originale o esportalo in PDF."
 
     # feature loop
     - icon: "remove"
-      title: "Estrarre informazioni sul documento"
-      content: "Estrarre informazioni come conteggio delle pagine, dimensioni e stato di crittografia dai documenti."
+      title: "Estrarre le informazioni del documento"
+      content: "Estrai informazioni come il numero di pagine, le dimensioni e lo stato di crittografia dai documenti."
 
     # feature loop
     - icon: "rotate"
       title: "Supporto per vari formati"
-      content: "Modifica una vasta gamma di formati di documenti tra cui file Microsoft Office, PDF e altro ancora."
+      content: "Modifica un'ampia gamma di formati di documenti, inclusi file di Microsoft Office, PDF e altro ancora."
 
     # feature loop
     - icon: "swap"
-      title: "Protezione password"
-      content: "Modifica i documenti protetti da password con facilità."
+      title: "Protezione della password"
+      content: "Modifica facilmente i documenti protetti da password."
 
     # feature loop
     - icon: "extract"
-      title: "Codifica dei documenti personalizzati"
-      content: "Specificare la codifica dei documenti durante i processi di modifica e salvataggio."
+      title: "Codifica personalizzata dei documenti"
+      content: "Specificare la codifica del documento durante i processi di modifica e salvataggio."
 
     # feature loop
     - icon: "orientation"
-      title: "Estrazione di carattere"
+      title: "Estrazione dei caratteri"
       content: "Estrai caratteri dai documenti da utilizzare nel processo di modifica."
 
     # feature loop
     - icon: "preview"
       title: "Pagine di anteprima"
-      content: "Generare rappresentazioni di immagini delle pagine dei documenti per comprendere meglio il contenuto e la struttura."
+      content: "Genera rappresentazioni di immagini delle pagine del documento per comprendere meglio il contenuto e la struttura."
 
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "Campioni di codice"
-  description: "Alcuni casi di utilizzo di GroupDocs.Editor tipici per le operazioni .NET."
+  title: "Esempi di codici"
+  description: "Alcuni casi d'uso tipici di GroupDocs.Editor per operazioni .NET."
   items:
     # code sample loop
     - title: "Modifica il contenuto specifico del file DOCX"
       content: |
-        La funzione [Document Editing] (https://docs.groupdocs.com/editor/net/edit-document/) consente di caricare, modificare e salvare i file DOCX.
+        La funzione [Modifica documenti](https://docs.groupdocs.com/editor/net/edit-document/) consente di caricare, modificare e salvare file DOCX. Ecco un esempio di come ottenere la modifica del documento utilizzando C#:
         {{< landing/code title="Come modificare i file DOCX in C#">}}
         ```csharp {style=abap}   
-
-        // Create Editor class by loading an input document as path or stream
-        FileStream inputXlsxStream = File.OpenRead("full/path/to/sample/file.xlsx");
-        Editor editor = new Editor(inputXlsxStream);
+        // Load document
+        Editor editor = new Editor("sample.docx");
         
-        // Create and adjust the edit options
-        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
-        editOptions.WorksheetIndex = 1;//select a tab (worksheet) to edit by 0-based index. For example, edit 2nd tab
+        // Edit document
+        EditableDocument editableDocument = editor.Edit();
         
-        // Open document for edit and obtain EditableDocument
-        EditableDocument original = editor.Edit(editOptions);
-        
-        // Grab content of the selected worksheet and associated resources from editable document
-        string content = original.GetContent();
-        
-        // Grab the resources (images, fonts, stylesheet) of selected worksheet
-        List<IHtmlResource> resources = original.AllResources;
-
-        // Send the content to WYSIWYG-editor, edit it there, and send edited content back to the server-side
-        // This step simulates a such operation
-        string updatedContent = content.Replace("Cell Text", "Edited Cell Text");
-        
-        // Grab edited content and resources from WYSIWYG-editor and create a new EditableDocument instance from it
-        EditableDocument edited = EditableDocument.FromMarkup(updatedContent, resources);
-        
-        // First - save as separate Spreadsheet with single worksheet
-        // Create a save options and select a desired output format - XLSM for example
-        SpreadsheetSaveOptions saveOptionsSeparate = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsm);
-        
-        // Save edited worksheet to the separate XLSM file
-        editor.Save(edited, "Edited_worksheet_only.xlsm", saveOptionsSeparate);
-        
-        // Second - insert edited worksheet into original Spreadsheet file by replacing the old worksheet onto edited
-        // Create another save options with XLSx format at this time
-        SpreadsheetSaveOptions saveOptionsReplace = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
-        saveOptionsReplace.WorksheetNumber = 2;//1-based number of worksheet to replace
-        
-        editor.Save(edited, "Edited_worksheet_replaced.xlsx", saveOptionsReplace);
-        
-        // Third - insert edited worksheet into original Spreadsheet file to be placed together with old
-        SpreadsheetSaveOptions saveOptionsTogether = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
-        saveOptionsTogether.WorksheetNumber = -1; // new worsksheet will be last one
-        saveOptionsTogether.InsertAsNewWorksheet = true;//Store original and edited worksheet together, but not replace original with edited
-        
-        editor.Save(edited, "Edited_worksheet_together.xlsx", saveOptionsTogether);
+        // Save edited document
+        editor.Save(editableDocument, "edited_sample.docx");
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "Modifica i campi del modulo in un documento Word"
+    - title: "Modifica i campi del modulo in un documento di Word"
       content: |
-        Modifica facilmente i campi del modulo all'interno di un documento Word usando GroupDocs.Editor per .NET.
-        {{< landing/code title="Come modificare i campi del modulo in un documento Word usando GroupDocs.Editor per .NET">}}
-        ```csharp {style=abap}
-        
-        // Prepare loading options and specify password
-        WordProcessingLoadOptions loadOptions = new WordProcessingLoadOptions();
-        loadOptions.Password = "password";
-
-        // Create Editor class by loading an input document and specifying load options
-        Editor editor = new Editor("full/path/to/sample/file.docx", loadOptions);
-
-        // Open document for edit and obtain EditableDocument
-        EditableDocument original = editor.Edit();
-
-        // Obtain document content as base64-embedded string with HTML and CSS markup inside
-        string originalDocumentContentAsBase64 = original.GetEmbeddedHtml();
-
-        // Send this markup to HTML WYSIWYG-editor and edit there
-        // For example, some simple edit
-        string editedDocumentContentAsBase64 = originalDocumentContentAsBase64.Replace("Document title", "Edited Document title");
-
-        // Create EditableDocument from edited document content
-        EditableDocument edited = EditableDocument.FromMarkup(editedDocumentContentAsBase64, null);
-
-        //Create saving options into WordProcessing-DOCX and specify password
-        WordProcessingSaveOptions docxSaveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
-        docxSaveOptions.Password = "docx-password";
-
-        //Create saving options into PDF and specify password
-        PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
-        pdfSaveOptions.Password = "pdf-password";
-
-        // Save edited content to the DOCX file
-        editor.Save(edited, "output.docx", docxSaveOptions);
-
-        // Save edited content to the PDF file
-        editor.Save(edited, "output.pdf", pdfSaveOptions);
+        Modifica facilmente i campi modulo all'interno di un documento Word utilizzando GroupDocs.Editor per .NET. Ecco come modificare i campi modulo in un documento Word utilizzando C#:
+        {{< landing/code title="Come modificare i campi modulo in un documento Word utilizzando GroupDocs.Editor per .NET">}}
+        ```csharp {style=abap}   
+        Editor editor = new Editor("sample.docx");
+        // Read the FormFieldCollection in the document
+        FormFieldCollection collection = fieldManager.FormFieldCollection;
+        // Update a specific text form field
+        TextFormField textField = collection.GetFormField<TextFormField>("Text1");
+        textField.LocaleId = 1029;
+        textField.Value = "new Value";
+        fieldManager.UpdateFormFiled(collection);
 
         ```
         {{< /landing/code >}}
-
 ---

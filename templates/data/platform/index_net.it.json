@@ -1,119 +1,119 @@
 {
   "head": {
-    "title": "C# .NET API di modifica del documento | Modifica PDF, Word, Excel, Epub",
-    "description": "C# .NET DOCUMENTO MODIFICA API per modificare, tradurre e salvare le pagine di documenti da formati PDF, Microsoft Word, Excel, Presentations, Visio e Immagine."
+    "title": "API di modifica dei documenti C# .NET | Modifica PDF, Word, Excel, EPUB",
+    "description": "API di modifica dei documenti C# .NET per modificare, tradurre e salvare pagine di documenti da PDF, Microsoft Word, Excel, presentazioni, Visio e formati immagine."
   },
   "header": {
     "title_1": "Modifica documenti",
-    "title_2": "Via API .NET",
-    "description": "Potente editor API per manipolare i file PDF, Microsoft Office, HTML e Image.",
+    "title_2": "tramite l'API .NET",
+    "description": "Potente API editor per manipolare file PDF, Microsoft Office, HTML e immagini.",
     "words": {
       "for": "per"
     }
   },
   "actions": {
-    "main": "Download gratuito di Nuget",
-    "alt": "Licenze",
-    "title": "Pronto per iniziare?",
-    "description": "Prova le funzionalità GroupDocs.Editor gratuite o richiedi una licenza."
+    "main": "Download gratuito di NuGet",
+    "alt": "Licenza",
+    "title": "Pronti per iniziare?",
+    "description": "Prova gratuitamente le funzionalità di GroupDocs.Editor o richiedi una licenza."
   },
   "release": {
     "title": "Versione {0} rilasciata",
-    "notes": "Guarda cosa c'è di nuovo",
+    "notes": "Scopri le novità",
     "downloads": "Download"
   },
   "overview": {
-    "title": "GroupDocs.Editor a colpo d'occhio",
-    "description": "API per modificare, tradurre e salvare documenti, diapositive e diagrammi in applicazioni .NET.",
+    "title": "GroupDocs.Editor in breve",
+    "description": "API per modificare, tradurre e salvare documenti, diapositive e diagrammi nelle applicazioni .NET.",
     "feature_1": {
-      "title": "Modifica senza sforzo più documenti in C#",
-      "description": "Modifica perfettamente più file PDF e Office con supporto per una vasta gamma di formati. GroupDocs.Editor per .NET rende la modifica dei documenti in fretta e senza problemi."
+      "title": "Modifica facilmente più documenti in C#",
+      "description": "Modifica senza problemi più file PDF e Office con il supporto di un'ampia gamma di formati. GroupDocs.Editor per .NET rende la modifica dei documenti veloce e senza problemi."
     },
     "feature_2": {
-      "title": "Traduci i documenti in HTML/CSS",
-      "description": "Traduci i documenti in markup HTML/CSS compatibile con gli editori WYSIWYG, consentendo una modifica di documenti facile ed efficiente in un ambiente Web."
+      "title": "Traduci documenti in HTML/CSS",
+      "description": "Traduci documenti in markup HTML/CSS compatibile con gli editor WYSIWYG, consentendo la modifica semplice ed efficiente dei documenti in un ambiente web."
     },
     "feature_3": {
-      "title": "Salva documenti modificati in vari formati",
-      "description": "Salva i tuoi documenti modificati al loro formato originale o esportali in altri formati come il PDF, garantendo flessibilità e compatibilità."
+      "title": "Salva i documenti modificati in vari formati",
+      "description": "Salva i tuoi documenti modificati nel loro formato originale o esportali in altri formati come PDF, garantendo flessibilità e compatibilità."
     }
   },
   "formats": {
     "title": "Formati di file supportati",
-    "description": "GroupDocs.Editor per .NET supporta le operazioni con i seguenti [formati di file] (https://docs.groupdocs.com/editor/net/supported-document-formats/).",
+    "description": "GroupDocs.Editor per .NET supporta operazioni con i seguenti [formati di file](https://docs.groupdocs.com/editor/net/supported-document-formats/).",
     "groups": {
-      "title_1": "Formati di Microsoft Office",
+      "title_1": "Formati Microsoft Office",
       "title_2": "Documenti",
       "title_3": "Altri formati",
       "format_documents": "Documenti",
-      "format_images": "Immagini",
-      "format_web": "Web",
+      "format_images": "immagini",
+      "format_web": "ragnatela",
       "format_archives": "Archivi"
     }
   },
   "features": {
     "title": "Funzionalità di GroupDocs.Editor",
-    "description": "Modifica perfettamente, traduci e salva i documenti PDF e Office.",
+    "description": "Modifica, traduci e salva facilmente documenti PDF e Office.",
     "feature_1": {
       "title": "Modifica file",
-      "content": "Modifica il contenuto di vari formati di documenti tra cui PDF, DOCX, XLSX, PPTX e altro."
+      "content": "Modifica il contenuto di vari formati di documenti tra cui PDF, DOCX, XLSX, PPTX e altri."
     },
     "feature_2": {
-      "title": "Tradurre in html/css",
-      "content": "Converti i documenti in HTML/CSS per una facile modifica con redattori WYSIWYG come CKEditor o Tinymce."
+      "title": "Traduci in HTML/CSS",
+      "content": "Converti documenti in HTML/CSS per modificarli facilmente con editor WYSIWYG come CKEditor o TinyMCE."
     },
     "feature_3": {
-      "title": "Salva documenti modificati",
-      "content": "Salva l'HTML/CSS modificato di nuovo nel formato del documento originale o esporta in PDF."
+      "title": "Salva i documenti modificati",
+      "content": "Salva nuovamente l'HTML/CSS modificato nel formato del documento originale o esportalo in PDF."
     },
     "feature_4": {
-      "title": "Estrarre informazioni sul documento",
-      "content": "Estrarre informazioni come conteggio delle pagine, dimensioni e stato di crittografia dai documenti."
+      "title": "Estrarre le informazioni del documento",
+      "content": "Estrai informazioni come il numero di pagine, le dimensioni e lo stato di crittografia dai documenti."
     },
     "feature_5": {
       "title": "Supporto per vari formati",
-      "content": "Modifica una vasta gamma di formati di documenti tra cui file Microsoft Office, PDF e altro ancora."
+      "content": "Modifica un'ampia gamma di formati di documenti, inclusi file di Microsoft Office, PDF e altro ancora."
     },
     "feature_6": {
-      "title": "Protezione password",
-      "content": "Modifica i documenti protetti da password con facilità."
+      "title": "Protezione della password",
+      "content": "Modifica facilmente i documenti protetti da password."
     },
     "feature_7": {
-      "title": "Codifica dei documenti personalizzati",
-      "content": "Specificare la codifica dei documenti durante i processi di modifica e salvataggio."
+      "title": "Codifica personalizzata dei documenti",
+      "content": "Specificare la codifica del documento durante i processi di modifica e salvataggio."
     },
     "feature_8": {
-      "title": "Estrazione di carattere",
+      "title": "Estrazione dei caratteri",
       "content": "Estrai caratteri dai documenti da utilizzare nel processo di modifica."
     },
     "feature_9": {
       "title": "Pagine di anteprima",
-      "content": "Generare rappresentazioni di immagini delle pagine dei documenti per comprendere meglio il contenuto e la struttura."
+      "content": "Genera rappresentazioni di immagini delle pagine del documento per comprendere meglio il contenuto e la struttura."
     }
   },
   "code_samples": {
-    "title": "Campioni di codice",
-    "description": "Alcuni casi di utilizzo di GroupDocs.Editor tipici per le operazioni .NET.",
+    "title": "Esempi di codici",
+    "description": "Alcuni casi d'uso tipici di GroupDocs.Editor per operazioni .NET.",
     "sample_1": {
       "title": "Modifica il contenuto specifico del file DOCX",
-      "content_1": "La funzione [Document Editing] (https://docs.groupdocs.com/editor/net/edit-document/) consente di caricare, modificare e salvare i file DOCX.",
-      "content_2": "Ecco un esempio di come ottenere la modifica del documento usando C#:",
+      "content_1": "La funzione [Modifica documenti](https://docs.groupdocs.com/editor/net/edit-document/) consente di caricare, modificare e salvare file DOCX.",
+      "content_2": "Ecco un esempio di come ottenere la modifica del documento utilizzando C#:",
       "code_title": "Come modificare i file DOCX in C#"
     },
     "sample_2": {
-      "title": "Modifica i campi del modulo in un documento Word",
-      "content_1": "Modifica facilmente i campi del modulo all'interno di un documento Word usando GroupDocs.Editor per .NET.",
-      "content_2": "Ecco come modificare i campi del modulo in un documento Word usando C#:",
-      "code_title": "Come modificare i campi del modulo in un documento Word usando GroupDocs.Editor per .NET"
+      "title": "Modifica i campi del modulo in un documento di Word",
+      "content_1": "Modifica facilmente i campi modulo all'interno di un documento Word utilizzando GroupDocs.Editor per .NET.",
+      "content_2": "Ecco come modificare i campi modulo in un documento Word utilizzando C#:",
+      "code_title": "Come modificare i campi modulo in un documento Word utilizzando GroupDocs.Editor per .NET"
     }
   },
   "platforms": {
-    "title": "Indipendenza della piattaforma",
+    "title": "Indipendenza dalla piattaforma",
     "description": "GroupDocs.Editor per .NET supporta i seguenti sistemi operativi, framework e gestori di pacchetti."
   },
   "code": {
-    "title": "Modifica file di documenti in .NET",
+    "title": "Modifica file di documenti in .Net",
     "more": "Altri esempi",
-    "notes": "Guarda cosa c'è di nuovo"
+    "notes": "Scopri le novità"
   }
 }

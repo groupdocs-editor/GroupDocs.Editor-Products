@@ -1,8 +1,7 @@
 ---
-
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-21T13:40:13
+date: 2024-07-12T09:30:30
 draft: false
 
 product: "Editor"
@@ -54,24 +53,15 @@ code:
   content: |
     ```csharp {style=abap}   
     // {code.comment_1}
-    Editor editor = new Editor("full/path/to/sample/file.docx");
+    this.editor = new Editor(this.inputFilePath);
+    Editor editor = new Editor("sample.docx");
+    
+    // Edit document
+    EditableDocument editableDocument = editor.Edit();
 
-    // {code.comment_2}
-    EditableDocument original = editor.Edit();
-
-    // {code.comment_3}
-    string originalContent = original.GetEmbeddedHtml();
-
-    // {code.comment_4}
-    string editedContent = /* document content after editing */;
-
-    // {code.comment_5}
-    EditableDocument edited = EditableDocument.FromMarkup(editedContent, null);
-
-    // {code.comment_6}
-    editor.Save(edited, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
+    // Save edited document
+    editor.Save(editableDocument, "edited_sample.docx");
     ```
-
 ############################# Overview ############################
 overview:
   enable: true
@@ -120,7 +110,6 @@ platforms:
     # platform loop
     - title: "NuGet"
       image: "nuget"
-
 
 ############################# File formats ############################
 formats:
@@ -210,98 +199,34 @@ code_samples:
     # code sample loop
     - title: "Редагувати певний вміст файлу DOCX"
       content: |
-        Функція [Редагування документів](https://docs.groupdocs.com/editor/net/edit-document/) дозволяє завантажувати, редагувати та зберігати файли DOCX.
+        Функція [Редагування документів](https://docs.groupdocs.com/editor/net/edit-document/) дозволяє завантажувати, редагувати та зберігати файли DOCX. Ось приклад того, як досягти редагування документа за допомогою C#:
         {{< landing/code title="Як редагувати файли DOCX на C#">}}
         ```csharp {style=abap}   
-
-        // Create Editor class by loading an input document as path or stream
-        FileStream inputXlsxStream = File.OpenRead("full/path/to/sample/file.xlsx");
-        Editor editor = new Editor(inputXlsxStream);
+        // Load document
+        Editor editor = new Editor("sample.docx");
         
-        // Create and adjust the edit options
-        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
-        editOptions.WorksheetIndex = 1;//select a tab (worksheet) to edit by 0-based index. For example, edit 2nd tab
+        // Edit document
+        EditableDocument editableDocument = editor.Edit();
         
-        // Open document for edit and obtain EditableDocument
-        EditableDocument original = editor.Edit(editOptions);
-        
-        // Grab content of the selected worksheet and associated resources from editable document
-        string content = original.GetContent();
-        
-        // Grab the resources (images, fonts, stylesheet) of selected worksheet
-        List<IHtmlResource> resources = original.AllResources;
-
-        // Send the content to WYSIWYG-editor, edit it there, and send edited content back to the server-side
-        // This step simulates a such operation
-        string updatedContent = content.Replace("Cell Text", "Edited Cell Text");
-        
-        // Grab edited content and resources from WYSIWYG-editor and create a new EditableDocument instance from it
-        EditableDocument edited = EditableDocument.FromMarkup(updatedContent, resources);
-        
-        // First - save as separate Spreadsheet with single worksheet
-        // Create a save options and select a desired output format - XLSM for example
-        SpreadsheetSaveOptions saveOptionsSeparate = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsm);
-        
-        // Save edited worksheet to the separate XLSM file
-        editor.Save(edited, "Edited_worksheet_only.xlsm", saveOptionsSeparate);
-        
-        // Second - insert edited worksheet into original Spreadsheet file by replacing the old worksheet onto edited
-        // Create another save options with XLSx format at this time
-        SpreadsheetSaveOptions saveOptionsReplace = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
-        saveOptionsReplace.WorksheetNumber = 2;//1-based number of worksheet to replace
-        
-        editor.Save(edited, "Edited_worksheet_replaced.xlsx", saveOptionsReplace);
-        
-        // Third - insert edited worksheet into original Spreadsheet file to be placed together with old
-        SpreadsheetSaveOptions saveOptionsTogether = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
-        saveOptionsTogether.WorksheetNumber = -1; // new worsksheet will be last one
-        saveOptionsTogether.InsertAsNewWorksheet = true;//Store original and edited worksheet together, but not replace original with edited
-        
-        editor.Save(edited, "Edited_worksheet_together.xlsx", saveOptionsTogether);
+        // Save edited document
+        editor.Save(editableDocument, "edited_sample.docx");
         ```
         {{< /landing/code >}}
     # code sample loop
     - title: "Редагування полів форми в документі Word"
       content: |
-        Легко редагуйте поля форми в документі Word за допомогою GroupDocs.Editor для .NET.
+        Легко редагуйте поля форми в документі Word за допомогою GroupDocs.Editor для .NET. Ось як редагувати поля форми в документі Word за допомогою C#:
         {{< landing/code title="Як редагувати поля форми в документі Word за допомогою GroupDocs.Editor для .NET">}}
-        ```csharp {style=abap}
-        
-        // Prepare loading options and specify password
-        WordProcessingLoadOptions loadOptions = new WordProcessingLoadOptions();
-        loadOptions.Password = "password";
-
-        // Create Editor class by loading an input document and specifying load options
-        Editor editor = new Editor("full/path/to/sample/file.docx", loadOptions);
-
-        // Open document for edit and obtain EditableDocument
-        EditableDocument original = editor.Edit();
-
-        // Obtain document content as base64-embedded string with HTML and CSS markup inside
-        string originalDocumentContentAsBase64 = original.GetEmbeddedHtml();
-
-        // Send this markup to HTML WYSIWYG-editor and edit there
-        // For example, some simple edit
-        string editedDocumentContentAsBase64 = originalDocumentContentAsBase64.Replace("Document title", "Edited Document title");
-
-        // Create EditableDocument from edited document content
-        EditableDocument edited = EditableDocument.FromMarkup(editedDocumentContentAsBase64, null);
-
-        //Create saving options into WordProcessing-DOCX and specify password
-        WordProcessingSaveOptions docxSaveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
-        docxSaveOptions.Password = "docx-password";
-
-        //Create saving options into PDF and specify password
-        PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
-        pdfSaveOptions.Password = "pdf-password";
-
-        // Save edited content to the DOCX file
-        editor.Save(edited, "output.docx", docxSaveOptions);
-
-        // Save edited content to the PDF file
-        editor.Save(edited, "output.pdf", pdfSaveOptions);
+        ```csharp {style=abap}   
+        Editor editor = new Editor("sample.docx");
+        // Read the FormFieldCollection in the document
+        FormFieldCollection collection = fieldManager.FormFieldCollection;
+        // Update a specific text form field
+        TextFormField textField = collection.GetFormField<TextFormField>("Text1");
+        textField.LocaleId = 1029;
+        textField.Value = "new Value";
+        fieldManager.UpdateFormFiled(collection);
 
         ```
         {{< /landing/code >}}
-
 ---

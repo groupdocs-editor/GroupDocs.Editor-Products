@@ -1,8 +1,7 @@
 ---
-
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-21T13:40:13
+date: 2024-07-12T09:30:30
 draft: false
 
 product: "Editor"
@@ -24,31 +23,31 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "Java -Dokument -Bearbeitung API | Bearbeiten Sie PDF, Wort, Excel, EPUB"
-head_description: "Java -Dokument -Bearbeitungs -API zum Bearbeiten, Übersetzen und Speichern von Dokumentseiten von PDF-, Microsoft Word-, Excel-, Präsentations-, Visio- und Bildformaten."
+head_title: "Java-Dokumentbearbeitungs-API | Bearbeiten Sie PDF, Word, Excel, EPUB"
+head_description: "Java-Dokumentbearbeitungs-API zum Bearbeiten, Übersetzen und Speichern von Dokumentseiten aus PDF-, Microsoft Word-, Excel-, Präsentations-, Visio- und Bildformaten."
 
 ############################# Header ############################
-title: "Dokumente bearbeiten<br>über Java API"
-description: "Leistungsstarke Editor -API zur Manipulation von PDF, Microsoft Office, HTML und Bilddateien."
+title: "Dokumente bearbeiten<br>via Java API"
+description: "Leistungsstarke Editor-API zum Bearbeiten von PDF-, Microsoft Office-, HTML- und Bilddateien."
 words:
   for: "für"
 
 actions:
-  main: "Kostenloser Maven -Download"
+  main: "Kostenloser Maven-Download"
   main_link: "https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-editor/"
   alt: "Lizenzierung"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/java"
-  title: "Bereit, loszulegen?"
-  description: "Versuchen Sie es mit GroupDocs.Editor kostenlos oder fordern Sie eine Lizenz an."
+  title: "Bereit anzufangen?"
+  description: "Testen Sie die Funktionen von GroupDocs.Editor kostenlos oder fordern Sie eine Lizenz an."
 
 release:
   title: "Version {0} veröffentlicht"
-  notes: "Sehen Sie, was neu ist"
+  notes: "Schau was neu ist"
   downloads: "Downloads"
 
 code:
   title: "Bearbeiten Sie Dokumentdateien in Java"
-  more: "Weitere Beispiele"
+  more: "Mehr Beispiele"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java"
   install: "dotnet add package GroupDocs.Editor"
   content: |
@@ -62,24 +61,23 @@ code:
     // Grab document content
     String content = beforeEdit.getContent();
     ```
-
 ############################# Overview ############################
 overview:
   enable: true
   title: "GroupDocs.Editor auf einen Blick"
-  description: "API zum Bearbeiten, Übersetzen und Speichern von Dokumenten, Folien und Diagrammen in Java -Anwendungen."
+  description: "API zum Bearbeiten, Übersetzen und Speichern von Dokumenten, Folien und Diagrammen in Java-Anwendungen."
   features:
     # feature loop
     - title: "Bearbeiten Sie mühelos mehrere Dokumente in Java"
-      content: "Bearbeiten Sie nahtlos mehrere PDF- und Office -Dateien mit Unterstützung für eine Vielzahl von Formaten. GroupDocs.Editor für Java macht die Dokumentbearbeitung schnell und problemlos."
+      content: "Bearbeiten Sie nahtlos mehrere PDF- und Office-Dateien mit Unterstützung für eine Vielzahl von Formaten. GroupDocs.Editor für Java ermöglicht eine schnelle und problemlose Bearbeitung von Dokumenten."
 
     # feature loop
     - title: "Übersetzen Sie Dokumente in HTML/CSS"
-      content: "Übersetzen Sie Dokumente in HTML/CSS -Markup, die mit WYSIWYG -Editoren kompatibel sind und eine einfache und effiziente Dokumentbearbeitung in einer Webumgebung ermöglichen."
+      content: "Übersetzen Sie Dokumente in HTML/CSS-Markup, das mit WYSIWYG-Editoren kompatibel ist, und ermöglichen Sie so eine einfache und effiziente Dokumentbearbeitung in einer Webumgebung."
 
     # feature loop
     - title: "Speichern Sie bearbeitete Dokumente in verschiedenen Formaten"
-      content: "Speichern Sie Ihre bearbeiteten Dokumente in ihrem ursprünglichen Format oder exportieren Sie sie in andere Formate wie PDF, um Flexibilität und Kompatibilität zu gewährleisten."
+      content: "Speichern Sie Ihre bearbeiteten Dokumente wieder in ihrem Originalformat oder exportieren Sie sie in andere Formate wie PDF, um Flexibilität und Kompatibilität zu gewährleisten."
 
 ############################# Platforms ############################
 platforms:
@@ -113,18 +111,17 @@ platforms:
       image: "maven"
 
 
-
 ############################# File formats ############################
 formats:
   enable: true
   title: "Unterstützte Dateiformate"
   description: |
-    GroupDocs.Editor für Java unterstützt die Operationen mit den folgenden [Dateiformaten] (https://docs.groupdocs.com/editor/java/supported-document-formats/).
+    GroupDocs.Editor für Java unterstützt Vorgänge mit den folgenden [Dateiformaten](https://docs.groupdocs.com/editor/java/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
       content: |
-        ### Microsoft -Büroformate
+        ### Microsoft Office-Formate
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
@@ -144,8 +141,8 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "Features von GroupDocs.Editor"
-  description: "An nahtlos bearbeiten, übersetzen und speichern Sie PDF- und Bürodokumente."
+  title: "GroupDocs.Editor-Funktionen"
+  description: "Bearbeiten, übersetzen und speichern Sie PDF- und Office-Dokumente nahtlos."
 
   items:
     # feature loop
@@ -155,13 +152,13 @@ features:
 
     # feature loop
     - icon: "split"
-      title: "Übersetzen Sie zu HTML/CSS"
-      content: "Konvertieren Sie Dokumente in HTML/CSS, um mit WYSIWYG -Redakteuren wie Ckeditor oder Tinymce einfach zu bearbeiten."
+      title: "In HTML/CSS übersetzen"
+      content: "Konvertieren Sie Dokumente in HTML/CSS zur einfachen Bearbeitung mit WYSIWYG-Editoren wie CKEditor oder TinyMCE."
 
     # feature loop
     - icon: "move"
-      title: "Speichern bearbeiteten Dokumente"
-      content: "Speichern Sie das bearbeitete HTML/CSS zurück im Originaldokumentformat oder im PDF."
+      title: "Bearbeitete Dokumente speichern"
+      content: "Speichern Sie das bearbeitete HTML/CSS wieder im ursprünglichen Dokumentformat oder exportieren Sie es als PDF."
 
     # feature loop
     - icon: "remove"
@@ -171,21 +168,21 @@ features:
     # feature loop
     - icon: "rotate"
       title: "Unterstützung für verschiedene Formate"
-      content: "Bearbeiten Sie eine breite Palette von Dokumentformaten, einschließlich Microsoft Office -Dateien, PDFs und mehr."
+      content: "Bearbeiten Sie eine Vielzahl von Dokumentformaten, darunter Microsoft Office-Dateien, PDFs und mehr."
 
     # feature loop
     - icon: "swap"
       title: "Passwortschutz"
-      content: "Bearbeiten Sie kennwortgeschützte Dokumente mühelos."
+      content: "Bearbeiten Sie passwortgeschützte Dokumente ganz einfach."
 
     # feature loop
     - icon: "extract"
       title: "Benutzerdefinierte Dokumentkodierung"
-      content: "Geben Sie die Dokumentcodierung während der Bearbeitung und Speichern von Prozessen an."
+      content: "Geben Sie die Dokumentkodierung während der Bearbeitungs- und Speicherprozesse an."
 
     # feature loop
     - icon: "orientation"
-      title: "Schriftart Extraktion"
+      title: "Schriftartenextraktion"
       content: "Extrahieren Sie Schriftarten aus Dokumenten zur Verwendung im Bearbeitungsprozess."
 
     # feature loop
@@ -196,14 +193,14 @@ features:
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "Code -Beispiele"
-  description: "Einige Anwendungsfälle von typischen Gruppendocs.Editor für Java -Operationen."
+  title: "Codebeispiele"
+  description: "Einige Anwendungsfälle typischer GroupDocs.Editor für Java-Operationen."
   items:
     # code sample loop
-    - title: "Bearbeiten Sie den Inhalt des spezifischen DOCX -Datei"
+    - title: "Bearbeiten Sie bestimmte DOCX-Dateiinhalte"
       content: |
-        Mit der Funktion [Dokumentbearbeitung] (https://docs.groupdocs.com/editor/java/edit-document/) können Sie docx-Dateien laden, bearbeiten und speichern. Hier ist ein Beispiel dafür, wie die Bearbeitung von Dokumenten mit Java erreicht wird:
-        {{< landing/code title="So bearbeiten Sie DOCX -Dateien in Java">}}
+        Mit der Funktion [Dokumentbearbeitung](https://docs.groupdocs.com/editor/java/edit-document/) können Sie DOCX-Dateien laden, bearbeiten und speichern. Hier ist ein Beispiel für die Dokumentbearbeitung mit Java:
+        {{< landing/code title="So bearbeiten Sie DOCX-Dateien in Java">}}
         ```java {style=abap}   
         // Instantiate Editor object by loading the input file
         Editor editor = new Editor(inputFilePath);
@@ -215,10 +212,10 @@ code_samples:
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "Bearbeiten von Formularfeldern in einem Word -Dokument"
+    - title: "Bearbeiten Sie Formularfelder in einem Word-Dokument"
       content: |
-        Bearbeiten Sie die Formularfelder in einem Word -Dokument mit GroupDocs.Editor für Java einfach. Hier erfahren Sie, wie Sie Formularfelder in einem Word -Dokument mit Java bearbeiten:
-        {{< landing/code title="So bearbeiten Sie Formularfelder in einem Word -Dokument mit GroupDocs.Editor für Java">}}
+        Bearbeiten Sie Formularfelder in einem Word-Dokument ganz einfach mit GroupDocs.Editor für Java. So bearbeiten Sie Formularfelder in einem Word-Dokument mit Java:
+        {{< landing/code title="So bearbeiten Sie Formularfelder in einem Word-Dokument mit GroupDocs.Editor für Java">}}
         ```java {style=abap}   
         Editor editorDocx = new Editor(docxInputFilePath);
 
@@ -229,5 +226,4 @@ code_samples:
         }
         ```
         {{< /landing/code >}}
-
 ---
