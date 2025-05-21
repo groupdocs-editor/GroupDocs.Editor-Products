@@ -6,12 +6,20 @@ code:
   content: |
     ```csharp {style=abap}   
     // <% "{code.comment_1}" %>
-    this.editor = new Editor(this.inputFilePath);
-    Editor editor = new Editor("sample.docx");
-    
-    // Edit document
-    EditableDocument editableDocument = editor.Edit();
+    Editor editor = new Editor("full/path/to/sample/file.docx");
 
-    // Save edited document
-    editor.Save(editableDocument, "edited_sample.docx");
+    // <% "{code.comment_2}" %>
+    EditableDocument original = editor.Edit();
+
+    // <% "{code.comment_3}" %>
+    string originalContent = original.GetEmbeddedHtml();
+
+    // <% "{code.comment_4}" %>
+    string editedContent = /* document content after editing */;
+
+    // <% "{code.comment_5}" %>
+    EditableDocument edited = EditableDocument.FromMarkup(editedContent, null);
+
+    // <% "{code.comment_6}" %>
+    editor.Save(edited, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
     ```

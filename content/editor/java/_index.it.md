@@ -1,7 +1,8 @@
 ---
+
 ############################# Static ############################
 layout: "landing"
-date: 2024-07-12T09:30:30
+date: 2025-05-21T13:40:13
 draft: false
 
 product: "Editor"
@@ -23,30 +24,30 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "API di modifica dei documenti Java | Modifica PDF, Word, Excel, EPUB"
-head_description: "API di modifica dei documenti Java per modificare, tradurre e salvare pagine di documenti da PDF, Microsoft Word, Excel, presentazioni, Visio e formati immagine."
+head_title: "API di modifica del documento Java | Modifica PDF, Word, Excel, Epub"
+head_description: "API di modifica dei documenti Java per modificare, tradurre e salvare le pagine di documenti da formati PDF, Microsoft Word, Excel, Presentations, Visio e Immagine."
 
 ############################# Header ############################
-title: "Modifica documenti<br>tramite API Java"
-description: "Potente API editor per manipolare file PDF, Microsoft Office, HTML e immagini."
+title: "Modifica documenti<br>Via API Java"
+description: "Potente editor API per manipolare i file PDF, Microsoft Office, HTML e Image."
 words:
   for: "per"
 
 actions:
-  main: "Scarica gratis Maven"
+  main: "Download gratuito di Maven"
   main_link: "https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-editor/"
-  alt: "Licenza"
+  alt: "Licenze"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/java"
-  title: "Pronti per iniziare?"
-  description: "Prova gratuitamente le funzionalità di GroupDocs.Editor o richiedi una licenza."
+  title: "Pronto per iniziare?"
+  description: "Prova le funzionalità GroupDocs.Editor gratuite o richiedi una licenza."
 
 release:
-  title: "Rilasciata la versione {0}"
-  notes: "Scopri le novità"
+  title: "Versione {0} rilasciata"
+  notes: "Guarda cosa c'è di nuovo"
   downloads: "Download"
 
 code:
-  title: "Modifica file di documenti in Java"
+  title: "Modifica i file di documenti in Java"
   more: "Altri esempi"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java"
   install: "dotnet add package GroupDocs.Editor"
@@ -61,29 +62,30 @@ code:
     // Grab document content
     String content = beforeEdit.getContent();
     ```
+
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor in breve"
+  title: "GroupDocs.Editor a colpo d'occhio"
   description: "API per modificare, tradurre e salvare documenti, diapositive e diagrammi nelle applicazioni Java."
   features:
     # feature loop
-    - title: "Modifica facilmente più documenti in Java"
-      content: "Modifica senza problemi più file PDF e Office con il supporto di un'ampia gamma di formati. GroupDocs.Editor per Java rende la modifica dei documenti veloce e senza problemi."
+    - title: "Modifica senza sforzo più documenti in Java"
+      content: "Modifica perfettamente più file PDF e Office con supporto per una vasta gamma di formati. GroupDocs.Editor per Java rende il editing di documenti in fretta e senza problemi."
 
     # feature loop
-    - title: "Traduci documenti in HTML/CSS"
-      content: "Traduci documenti in markup HTML/CSS compatibile con gli editor WYSIWYG, consentendo la modifica semplice ed efficiente dei documenti in un ambiente web."
+    - title: "Traduci i documenti in HTML/CSS"
+      content: "Traduci i documenti in markup HTML/CSS compatibile con gli editori WYSIWYG, consentendo una modifica di documenti facile ed efficiente in un ambiente Web."
 
     # feature loop
-    - title: "Salva i documenti modificati in vari formati"
-      content: "Salva i tuoi documenti modificati nel loro formato originale o esportali in altri formati come PDF, garantendo flessibilità e compatibilità."
+    - title: "Salva documenti modificati in vari formati"
+      content: "Salva i tuoi documenti modificati al loro formato originale o esportali in altri formati come il PDF, garantendo flessibilità e compatibilità."
 
 ############################# Platforms ############################
 platforms:
   enable: true
-  title: "Indipendenza dalla piattaforma"
-  description: "GroupDocs.Editor per Java supporta i seguenti sistemi operativi, framework e gestori di pacchetti."
+  title: "Indipendenza della piattaforma"
+  description: "GroupDocs.Editor per Java supporta i seguenti sistemi operativi, framework e pacchetti."
   items:
     # platform loop
     - title: "Amazon"
@@ -111,17 +113,18 @@ platforms:
       image: "maven"
 
 
+
 ############################# File formats ############################
 formats:
   enable: true
   title: "Formati di file supportati"
   description: |
-    GroupDocs.Editor per Java supporta operazioni con i seguenti [formati di file](https://docs.groupdocs.com/editor/java/supported-document-formats/).
+    GroupDocs.Editor per Java supporta le operazioni con i seguenti [formati di file] (https://docs.groupdocs.com/editor/java/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
       content: |
-        ### Formati Microsoft Office
+        ### Formati di Microsoft Office
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
@@ -136,71 +139,71 @@ formats:
     - color: "red"
       content: |
         ### Altri formati
-        * **ragnatela:**  HTML, MHTML, MHT, MARKDOWN
+        * **Web:**  HTML, MHTML, MHT, MARKDOWN
 
 ############################# Features ############################
 features:
   enable: true
   title: "Funzionalità di GroupDocs.Editor"
-  description: "Modifica, traduci e salva facilmente documenti PDF e Office."
+  description: "Modifica perfettamente, traduci e salva i documenti PDF e Office."
 
   items:
     # feature loop
     - icon: "merge"
       title: "Modifica file"
-      content: "Modifica il contenuto di vari formati di documenti tra cui PDF, DOCX, XLSX, PPTX e altri."
+      content: "Modifica il contenuto di vari formati di documenti tra cui PDF, DOCX, XLSX, PPTX e altro ancora."
 
     # feature loop
     - icon: "split"
-      title: "Traduci in HTML/CSS"
-      content: "Converti documenti in HTML/CSS per modificarli facilmente con editor WYSIWYG come CKEditor o TinyMCE."
+      title: "Tradurre in html/css"
+      content: "Converti i documenti in HTML/CSS per una facile modifica con redattori WYSIWYG come CKEditor o Tinymce."
 
     # feature loop
     - icon: "move"
-      title: "Salva i documenti modificati"
-      content: "Salva nuovamente l'HTML/CSS modificato nel formato del documento originale o esportalo in PDF."
+      title: "Salva documenti modificati"
+      content: "Salva l'HTML/CSS modificato di nuovo nel formato del documento originale o esporta in PDF."
 
     # feature loop
     - icon: "remove"
-      title: "Estrarre le informazioni del documento"
-      content: "Estrai informazioni come il numero di pagine, le dimensioni e lo stato di crittografia dai documenti."
+      title: "Estrarre informazioni sul documento"
+      content: "Estrarre informazioni come conteggio delle pagine, dimensioni e stato di crittografia dai documenti."
 
     # feature loop
     - icon: "rotate"
       title: "Supporto per vari formati"
-      content: "Modifica un'ampia gamma di formati di documenti, inclusi file di Microsoft Office, PDF e altro ancora."
+      content: "Modifica una vasta gamma di formati di documenti tra cui file Microsoft Office, PDF e altro ancora."
 
     # feature loop
     - icon: "swap"
-      title: "Protezione della password"
-      content: "Modifica facilmente i documenti protetti da password."
+      title: "Protezione password"
+      content: "Modifica facilmente documenti protetti da password."
 
     # feature loop
     - icon: "extract"
-      title: "Codifica personalizzata dei documenti"
-      content: "Specificare la codifica del documento durante i processi di modifica e salvataggio."
+      title: "Codifica dei documenti personalizzati"
+      content: "Specificare la codifica dei documenti durante i processi di modifica e salvataggio."
 
     # feature loop
     - icon: "orientation"
-      title: "Estrazione dei caratteri"
+      title: "Estrazione di carattere"
       content: "Estrai caratteri dai documenti da utilizzare nel processo di modifica."
 
     # feature loop
     - icon: "preview"
       title: "Pagine di anteprima"
-      content: "Genera rappresentazioni di immagini delle pagine del documento per comprendere meglio il contenuto e la struttura."
+      content: "Generare rappresentazioni di immagini delle pagine dei documenti per comprendere meglio il contenuto e la struttura."
 
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "Esempi di codici"
-  description: "Alcuni casi d'uso tipici di GroupDocs.Editor per operazioni Java."
+  title: "Campioni di codice"
+  description: "Alcuni casi di utilizzo di GroupDocs.Editor tipici per le operazioni Java."
   items:
     # code sample loop
-    - title: "Modifica il contenuto specifico del file DOCX"
+    - title: "Modifica il contenuto del file DOCX specifico"
       content: |
-        La funzione [Modifica documenti](https://docs.groupdocs.com/editor/java/edit-document/) consente di caricare, modificare e salvare file DOCX. Ecco un esempio di come ottenere la modifica dei documenti utilizzando Java:
-        {{< landing/code title="Come modificare i file DOCX in Java">}}
+        La funzione [Document Editing] (https://docs.groupdocs.com/editor/java/edit-document/) consente di caricare, modificare e salvare i file DOCX. Ecco un esempio di come ottenere l'editing dei documenti usando Java:
+        {{< landing/code title="Come modificare i file docx in java">}}
         ```java {style=abap}   
         // Instantiate Editor object by loading the input file
         Editor editor = new Editor(inputFilePath);
@@ -212,10 +215,10 @@ code_samples:
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "Modifica i campi del modulo in un documento di Word"
+    - title: "Modifica i campi del modulo in un documento Word"
       content: |
-        Modifica facilmente i campi del modulo all'interno di un documento Word utilizzando GroupDocs.Editor per Java. Ecco come modificare i campi modulo in un documento Word utilizzando Java:
-        {{< landing/code title="Come modificare i campi del modulo in un documento Word utilizzando GroupDocs.Editor per Java">}}
+        Modifica facilmente i campi del modulo all'interno di un documento Word usando GroupDocs.Editor per Java. Ecco come modificare i campi del modulo in un documento Word usando Java:
+        {{< landing/code title="Come modificare i campi del modulo in un documento Word usando GroupDocs.Editor per Java">}}
         ```java {style=abap}   
         Editor editorDocx = new Editor(docxInputFilePath);
 
@@ -226,4 +229,5 @@ code_samples:
         }
         ```
         {{< /landing/code >}}
+
 ---
