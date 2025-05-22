@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T14:12:07
+date: 2025-05-22T15:55:12
 draft: false
 
 product: "Editor"
@@ -142,15 +142,15 @@ formats:
         ### Other document formats
         * **Fixed-layout formats:** PDF, XPS (export only)
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-		* **Delimited text tables:** CSV, TSV, DSV (arbitrary separator)
-		* **Other table formats:** SXC, DIF
+        * **Delimited text tables:** CSV, TSV, DSV (arbitrary separator)
+        * **Other table formats:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
         ### Web-related formats
         * **Markup:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
-		* **Email formats:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
+        * **Email formats:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
@@ -218,8 +218,7 @@ code_samples:
         ```csharp {style=abap}   
 
         // Create Editor class by loading an input document as path or stream
-        FileStream inputXlsxStream = File.OpenRead("full/path/to/sample/file.xlsx");
-        Editor editor = new Editor(inputXlsxStream);
+        Editor editor = new Editor(File.OpenRead("full/path/to/sample/file.xlsx"));
         
         // Create and adjust the edit options
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();

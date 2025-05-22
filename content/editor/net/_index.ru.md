@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T14:12:07
+date: 2025-05-22T15:55:12
 draft: false
 
 product: "Editor"
@@ -140,17 +140,17 @@ formats:
     - color: "blue"
       content: |
         ### Другие форматы документов
-        * **Форматы с фиксированным лайатом:** PDF, XPS (export only)
+        * **Форматы с фиксированным лайатом:** PDF, XPS (только экспорт)
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-		* **Разграниченные текстовые таблицы:** CSV, TSV, DSV (произвольный сепаратор)
-		* **Другие форматы таблицы:** SXC, DIF
+        * **Разграниченные текстовые таблицы:** CSV, TSV, DSV (произвольный сепаратор)
+        * **Другие форматы таблицы:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
         ### Связанные с Интернетом форматы
         * **Разметка:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
-		* **Форматы электронной почты:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
+        * **Форматы электронной почты:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
@@ -217,15 +217,14 @@ code_samples:
         {{< landing/code title="Изменить конкретный рабочий лист XLSX">}}
         ```csharp {style=abap}   
 
-        // Create Editor class by loading an input document as path or stream
-        FileStream inputXlsxStream = File.OpenRead("full/path/to/sample/file.xlsx");
-        Editor editor = new Editor(inputXlsxStream);
+        // Создать класс редактора путем загрузки входного документа в качестве пути или потока
+        Editor editor = new Editor(File.OpenRead("full/path/to/sample/file.xlsx"));
         
-        // Create and adjust the edit options
+        // Создать и настроить параметры редактирования
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
-        editOptions.WorksheetIndex = 1;//select a tab (worksheet) to edit by 0-based index. For example, edit 2nd tab
+        editOptions.WorksheetIndex = 1;//Выберите вкладку (рабочий лист), чтобы отредактировать по индексу на основе 0. Например, отредактируйте 2 -й вкладку
         
-        // Open document for edit and obtain EditableDocument
+        // Открыть документ для редактирования и получить EditableDocument
         EditableDocument original = editor.Edit(editOptions);
         
         // Grab content of the selected worksheet and associated resources from editable document

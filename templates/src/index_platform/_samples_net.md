@@ -10,15 +10,14 @@ code_samples:
         {{< landing/code title="<% "{code_samples.sample_1.code_title}" %>">}}
         ```csharp {style=abap}   
 
-        // Create Editor class by loading an input document as path or stream
-        FileStream inputXlsxStream = File.OpenRead("full/path/to/sample/file.xlsx");
-        Editor editor = new Editor(inputXlsxStream);
+        // <% "{code_samples.sample_1.comment_1}" %>
+        Editor editor = new Editor(File.OpenRead("full/path/to/sample/file.xlsx"));
         
-        // Create and adjust the edit options
+        // <% "{code_samples.sample_1.comment_2}" %>
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
-        editOptions.WorksheetIndex = 1;//select a tab (worksheet) to edit by 0-based index. For example, edit 2nd tab
+        editOptions.WorksheetIndex = 1;//<% "{code_samples.sample_1.comment_3}" %>
         
-        // Open document for edit and obtain EditableDocument
+        // <% "{code_samples.sample_1.comment_4}" %>
         EditableDocument original = editor.Edit(editOptions);
         
         // Grab content of the selected worksheet and associated resources from editable document

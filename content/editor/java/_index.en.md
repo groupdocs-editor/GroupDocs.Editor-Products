@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T14:12:07
+date: 2025-05-22T15:55:12
 draft: false
 
 product: "Editor"
@@ -132,17 +132,17 @@ formats:
     - color: "blue"
       content: |
         ### Documents
-        * **{formats.groups.fixed_layout}:** PDF, XPS (export only)
+        * **{formats.groups.fixed_layout}:** PDF, XPS ({formats.groups.export_only})
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-		* **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
-		* **{formats.groups.other_tables}:** SXC, DIF
+        * **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
+        * **{formats.groups.other_tables}:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
         ### Other formats
         * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
-		* **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
+        * **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:

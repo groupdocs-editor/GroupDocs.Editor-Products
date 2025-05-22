@@ -46,6 +46,7 @@
       "title_2": "Other document formats",
       "title_3": "Web-related formats",
       "fixed_layout": "Fixed-layout formats",
+	  "export_only": "export only",
 	  "delimited_text_table": "Delimited text tables",
 	  "arbitrary_separator": "arbitrary separator",
 	  "other_tables": "Other table formats",
@@ -100,7 +101,11 @@
     "sample_1": {
       "title": "Edit particular worksheet of XLSX and save it separately and as part of original document",
       "content_1": "The Spreadsheet document (like XLS, XLSX, XLSM, ODS and so on) may have one or more worksheets (tabs). GroupDocs.Editor allows to edit content of one worksheet at a time. After being edited, this worksheet may be saved to the separate Spreadsheet document (where only this specific worksheet will be saved), or GroupDocs.Editor can insert edited worksheet back to the original document, where it can either replace the original worksheet or be saved together, along with original one. Here's an example of how to save edited worksheet in all three ways. More on that [here](https://docs.groupdocs.com/editor/net/inserting-edited-worksheet-into-existing-spreadsheet/).",      
-      "code_title": "Edit particular worksheet of XLSX"
+      "code_title": "Edit particular worksheet of XLSX",
+	  "comment_1": "Create Editor class by loading an input document as path or stream",
+	  "comment_2": "Create and adjust the edit options",
+	  "comment_3": "select a tab (worksheet) to edit by 0-based index. For example, edit 2nd tab",
+	  "comment_4": "Open document for edit and obtain EditableDocument",
     },
     "sample_2": {
       "title": "Edit password-protected DOCX and save it as password-protected DOCX and PDF",

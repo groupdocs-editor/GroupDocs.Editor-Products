@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T14:12:07
+date: 2025-05-22T15:55:12
 draft: false
 
 product: "Editor"
@@ -140,17 +140,17 @@ formats:
     - color: "blue"
       content: |
         ### Documentos
-        * **{formats.groups.fixed_layout}:** PDF, XPS (export only)
+        * **{formats.groups.fixed_layout}:** PDF, XPS ({formats.groups.export_only})
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-		* **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
-		* **{formats.groups.other_tables}:** SXC, DIF
+        * **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
+        * **{formats.groups.other_tables}:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
         ### Otros formatos
         * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
-		* **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
+        * **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
@@ -217,15 +217,14 @@ code_samples:
         {{< landing/code title="Cómo editar archivos Docx en C#">}}
         ```csharp {style=abap}   
 
-        // Create Editor class by loading an input document as path or stream
-        FileStream inputXlsxStream = File.OpenRead("full/path/to/sample/file.xlsx");
-        Editor editor = new Editor(inputXlsxStream);
+        // {code_samples.sample_1.comment_1}
+        Editor editor = new Editor(File.OpenRead("full/path/to/sample/file.xlsx"));
         
-        // Create and adjust the edit options
+        // {code_samples.sample_1.comment_2}
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
-        editOptions.WorksheetIndex = 1;//select a tab (worksheet) to edit by 0-based index. For example, edit 2nd tab
+        editOptions.WorksheetIndex = 1;//{code_samples.sample_1.comment_3}
         
-        // Open document for edit and obtain EditableDocument
+        // {code_samples.sample_1.comment_4}
         EditableDocument original = editor.Edit(editOptions);
         
         // Grab content of the selected worksheet and associated resources from editable document
