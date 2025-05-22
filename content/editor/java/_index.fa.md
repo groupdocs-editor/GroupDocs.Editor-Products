@@ -1,7 +1,8 @@
 ---
+
 ############################# Static ############################
 layout: "landing"
-date: 2024-07-12T09:30:30
+date: 2025-05-22T09:23:57
 draft: false
 
 product: "Editor"
@@ -23,30 +24,30 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "Java Document Editing API | ویرایش PDF، Word، Excel، EPUB"
-head_description: "API ویرایش اسناد جاوا برای ویرایش، ترجمه و ذخیره صفحات سند از PDF، Microsoft Word، Excel، ارائه ها، Visio و فرمت های تصویر."
+head_title: "ویرایش اسناد جاوا API | ویرایش PDF ، Word ، Excel ، Epub"
+head_description: "ویرایش اسناد جاوا API برای ویرایش ، ترجمه و ذخیره صفحات سند از PDF ، Microsoft Word ، Excel ، ارائه ، Visio و Image."
 
 ############################# Header ############################
-title: "اسناد را ویرایش کنید<br>از طریق Java API"
-description: "API ویرایشگر قدرتمند برای دستکاری PDF، Microsoft Office، HTML و فایل های تصویری."
+title: "اسناد را ویرایش کنید<br>از طریق جاوا API"
+description: "ویرایشگر قدرتمند API برای دستکاری PDF ، Microsoft Office ، HTML و پرونده های تصویری."
 words:
   for: "برای"
 
 actions:
-  main: "دانلود رایگان Maven"
+  main: "بارگیری رایگان Maven"
   main_link: "https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-editor/"
-  alt: "صدور مجوز"
+  alt: "مجوز"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/java"
-  title: "برای شروع آماده اید؟"
-  description: "ویژگی های GroupDocs.Editor را به صورت رایگان امتحان کنید یا درخواست مجوز کنید."
+  title: "آماده شروع کار هستید؟"
+  description: "ویژگی های GroupDocs.Editor را به صورت رایگان امتحان کنید یا مجوز درخواست کنید."
 
 release:
   title: "نسخه {0} منتشر شد"
-  notes: "ببینید چه چیزی جدید است"
-  downloads: "دانلودها"
+  notes: "ببینید چه چیز جدیدی است"
+  downloads: "بارگیری"
 
 code:
-  title: "ویرایش فایل های سند در جاوا"
+  title: "پرونده های اسناد را در جاوا ویرایش کنید"
   more: "نمونه های بیشتر"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java"
   install: "dotnet add package GroupDocs.Editor"
@@ -61,29 +62,30 @@ code:
     // Grab document content
     String content = beforeEdit.getContent();
     ```
+
 ############################# Overview ############################
 overview:
   enable: true
   title: "GroupDocs.Editor در یک نگاه"
-  description: "API برای ویرایش، ترجمه و ذخیره اسناد، اسلایدها و نمودارها در برنامه های جاوا."
+  description: "API برای ویرایش ، ترجمه و ذخیره اسناد ، اسلایدها و نمودارها در برنامه های جاوا."
   features:
     # feature loop
-    - title: "بدون زحمت چندین سند را در جاوا ویرایش کنید"
-      content: "چندین فایل PDF و Office را با پشتیبانی از طیف گسترده ای از فرمت ها به صورت یکپارچه ویرایش کنید. GroupDocs.Editor برای جاوا ویرایش اسناد را سریع و بدون دردسر می کند."
+    - title: "با زحمت چندین اسناد را در جاوا ویرایش کنید"
+      content: "یکپارچه چندین پرونده PDF و Office را با پشتیبانی از طیف گسترده ای از قالب ها ویرایش کنید. GroupDocs.Editor برای جاوا باعث ویرایش اسناد سریع و بدون دردسر می شود."
 
     # feature loop
     - title: "اسناد را به HTML/CSS ترجمه کنید"
-      content: "ترجمه اسناد به نشانه گذاری HTML/CSS سازگار با ویرایشگرهای WYSIWYG، امکان ویرایش آسان و کارآمد اسناد را در یک محیط وب."
+      content: "ترجمه اسناد به نشانه گذاری HTML/CSS سازگار با ویرایشگرهای WysiWyg ، امکان ویرایش اسناد آسان و کارآمد در یک محیط وب را فراهم می کند."
 
     # feature loop
-    - title: "اسناد ویرایش شده را در قالب های مختلف ذخیره کنید"
-      content: "اسناد ویرایش شده خود را به فرمت اصلی خود ذخیره کنید یا آنها را به فرمت های دیگر مانند PDF صادر کنید و از انعطاف پذیری و سازگاری اطمینان حاصل کنید."
+    - title: "ذخیره اسناد ویرایش شده در قالب های مختلف"
+      content: "اسناد ویرایش شده خود را به قالب اصلی خود ذخیره کنید یا آنها را به قالب های دیگری مانند PDF صادر کنید و از انعطاف پذیری و سازگاری اطمینان حاصل کنید."
 
 ############################# Platforms ############################
 platforms:
   enable: true
-  title: "استقلال سکو"
-  description: "GroupDocs.Editor برای جاوا از سیستم عامل ها، چارچوب ها و مدیریت بسته های زیر پشتیبانی می کند."
+  title: "استقلال"
+  description: "GroupDocs.Editor برای جاوا از سیستم عامل های زیر ، چارچوب ها و مدیران بسته پشتیبانی می کند."
   items:
     # platform loop
     - title: "Amazon"
@@ -111,17 +113,18 @@ platforms:
       image: "maven"
 
 
+
 ############################# File formats ############################
 formats:
   enable: true
-  title: "فرمت های فایل پشتیبانی شده"
+  title: "قالب های فایل پشتیبانی شده"
   description: |
-    GroupDocs.Editor برای جاوا از عملیات با [قالب‌های فایل] زیر پشتیبانی می‌کند (https://docs.groupdocs.com/editor/java/supported-document-formats/).
+    GroupDocs.Editor برای جاوا از عملیات با [فرمت های پرونده زیر] پشتیبانی می کند (https://docs.groupdocs.com/editor/java/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
       content: |
-        ### فرمت های مایکروسافت آفیس
+        ### قالب های مایکروسافت آفیس
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
@@ -135,72 +138,72 @@ formats:
       # group loop
     - color: "red"
       content: |
-        ### فرمت های دیگر
+        ### قالبهای دیگر
         * **وب:**  HTML, MHTML, MHT, MARKDOWN
 
 ############################# Features ############################
 features:
   enable: true
   title: "ویژگی های GroupDocs.Editor"
-  description: "اسناد PDF و Office را یکپارچه ویرایش، ترجمه و ذخیره کنید."
+  description: "یکپارچه اسناد PDF و Office را ویرایش ، ترجمه و ذخیره کنید."
 
   items:
     # feature loop
     - icon: "merge"
-      title: "ویرایش فایل ها"
-      content: "محتوای فرمت های مختلف سند از جمله PDF، DOCX، XLSX، PPTX و غیره را ویرایش کنید."
+      title: "پرونده ها را ویرایش کنید"
+      content: "محتوای قالب های مختلف اسناد از جمله PDF ، DOCX ، XLSX ، PPTX و موارد دیگر را ویرایش کنید."
 
     # feature loop
     - icon: "split"
-      title: "به HTML/CSS ترجمه کنید"
-      content: "برای ویرایش آسان با ویرایشگرهای WYSIWYG مانند CKEditor یا TinyMCE، اسناد را به HTML/CSS تبدیل کنید."
+      title: "ترجمه به HTML/CSS"
+      content: "تبدیل اسناد به HTML/CSS برای ویرایش آسان با ویرایشگرهای WysiWyg مانند CKEditor یا Tinymce."
 
     # feature loop
     - icon: "move"
-      title: "اسناد ویرایش شده را ذخیره کنید"
-      content: "HTML/CSS ویرایش شده را به فرمت سند اصلی ذخیره کنید یا به PDF صادر کنید."
+      title: "ذخیره اسناد ویرایش شده"
+      content: "HTML/CSS ویرایش شده را به قالب سند اصلی یا صادرات به PDF ذخیره کنید."
 
     # feature loop
     - icon: "remove"
-      title: "استخراج اطلاعات سند"
-      content: "اطلاعاتی مانند تعداد صفحات، اندازه و وضعیت رمزگذاری را از اسناد استخراج کنید."
+      title: "اطلاعات سند را استخراج کنید"
+      content: "اطلاعاتی مانند تعداد صفحه ، اندازه و وضعیت رمزگذاری از اسناد را استخراج کنید."
 
     # feature loop
     - icon: "rotate"
-      title: "پشتیبانی از فرمت های مختلف"
-      content: "طیف گسترده ای از فرمت های اسناد از جمله فایل های Microsoft Office، PDF و موارد دیگر را ویرایش کنید."
+      title: "پشتیبانی از قالب های مختلف"
+      content: "طیف گسترده ای از قالب های اسناد از جمله پرونده های Microsoft Office ، PDF و موارد دیگر را ویرایش کنید."
 
     # feature loop
     - icon: "swap"
-      title: "حفاظت از رمز عبور"
-      content: "اسناد محافظت شده با رمز عبور را به راحتی ویرایش کنید."
+      title: "محافظت از رمز عبور"
+      content: "اسناد محافظت شده با رمز عبور را با سهولت ویرایش کنید."
 
     # feature loop
     - icon: "extract"
-      title: "رمزگذاری اسناد سفارشی"
-      content: "رمزگذاری سند را در طی فرآیندهای ویرایش و ذخیره مشخص کنید."
+      title: "رمزگذاری سند سفارشی"
+      content: "رمزگذاری سند را در حین ویرایش و صرفه جویی در فرآیند مشخص کنید."
 
     # feature loop
     - icon: "orientation"
-      title: "استخراج فونت"
-      content: "فونت ها را از اسناد برای استفاده در فرآیند ویرایش استخراج کنید."
+      title: "استخراج قلم"
+      content: "قلم های اسناد را برای استفاده در فرآیند ویرایش استخراج کنید."
 
     # feature loop
     - icon: "preview"
-      title: "پیش نمایش صفحات"
-      content: "برای درک بهتر محتوا و ساختار، تصاویری از صفحات سند ایجاد کنید."
+      title: "صفحات پیش نمایش"
+      content: "برای درک بهتر محتوا و ساختار ، بازنمایی تصویر از صفحات سند را ایجاد کنید."
 
 ############################# Code samples ############################
 code_samples:
   enable: true
   title: "نمونه کد"
-  description: "برخی از موارد معمولی GroupDocs.Editor برای عملیات جاوا استفاده می کنند."
+  description: "برخی از موارد استفاده از GroupDocs.Editor معمولی برای عملیات جاوا."
   items:
     # code sample loop
-    - title: "محتوای فایل DOCX خاص را ویرایش کنید"
+    - title: "محتوای خاص پرونده docx را ویرایش کنید"
       content: |
-        ویژگی [ویرایش سند](https://docs.groupdocs.com/editor/java/edit-document/) به شما امکان می دهد فایل های DOCX را بارگیری، ویرایش و ذخیره کنید. در اینجا مثالی از نحوه دستیابی به ویرایش اسناد با استفاده از جاوا آورده شده است:
-        {{< landing/code title="نحوه ویرایش فایل های DOCX در جاوا">}}
+        ویژگی [https://docs.groupdocs.com/editor/java/edit-document/) به شما امکان بارگیری ، ویرایش و ذخیره پرونده های docx را می دهد. در اینجا مثالی از نحوه دستیابی به ویرایش اسناد با استفاده از جاوا آورده شده است:
+        {{< landing/code title="نحوه ویرایش پرونده های docx در جاوا">}}
         ```java {style=abap}   
         // Instantiate Editor object by loading the input file
         Editor editor = new Editor(inputFilePath);
@@ -212,9 +215,9 @@ code_samples:
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "فیلدهای فرم را در یک سند Word ویرایش کنید"
+    - title: "زمینه های فرم را در یک سند Word ویرایش کنید"
       content: |
-        با استفاده از GroupDocs.Editor برای جاوا، فیلدهای فرم را در یک سند Word به راحتی ویرایش کنید. در اینجا نحوه ویرایش فیلدهای فرم در یک سند Word با استفاده از جاوا آورده شده است:
+        به راحتی زمینه های فرم را در یک سند Word با استفاده از GroupDocs.Editor برای جاوا ویرایش کنید. در اینجا نحوه ویرایش فیلدهای فرم در یک سند Word با استفاده از جاوا آورده شده است:
         {{< landing/code title="نحوه ویرایش فیلدهای فرم در یک سند Word با استفاده از GroupDocs.Editor برای جاوا">}}
         ```java {style=abap}   
         Editor editorDocx = new Editor(docxInputFilePath);
@@ -226,4 +229,5 @@ code_samples:
         }
         ```
         {{< /landing/code >}}
+
 ---

@@ -1,7 +1,8 @@
 ---
+
 ############################# Static ############################
 layout: "landing"
-date: 2024-07-12T09:30:30
+date: 2025-05-22T09:23:57
 draft: false
 
 product: "Editor"
@@ -53,15 +54,24 @@ code:
   content: |
     ```csharp {style=abap}   
     // {code.comment_1}
-    this.editor = new Editor(this.inputFilePath);
-    Editor editor = new Editor("sample.docx");
-    
-    // Edit document
-    EditableDocument editableDocument = editor.Edit();
+    Editor editor = new Editor("full/path/to/sample/file.docx");
 
-    // Save edited document
-    editor.Save(editableDocument, "edited_sample.docx");
+    // {code.comment_2}
+    EditableDocument original = editor.Edit();
+
+    // {code.comment_3}
+    string originalContent = original.GetEmbeddedHtml();
+
+    // {code.comment_4}
+    string editedContent = /* document content after editing */;
+
+    // {code.comment_5}
+    EditableDocument edited = EditableDocument.FromMarkup(editedContent, null);
+
+    // {code.comment_6}
+    editor.Save(edited, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
     ```
+
 ############################# Overview ############################
 overview:
   enable: true
@@ -110,6 +120,7 @@ platforms:
     # platform loop
     - title: "NuGet"
       image: "nuget"
+
 
 ############################# File formats ############################
 formats:
@@ -199,34 +210,98 @@ code_samples:
     # code sample loop
     - title: "특정 DOCX 파일 콘텐츠 편집"
       content: |
-        [문서 편집](https://docs.groupdocs.com/editor/net/edit-document/) 기능을 사용하면 DOCX 파일을 로드, 편집, 저장할 수 있습니다. 다음은 C#을 사용하여 문서 편집을 수행하는 방법에 대한 예입니다.
+        [문서 편집](https://docs.groupdocs.com/editor/net/edit-document/) 기능을 사용하면 DOCX 파일을 로드, 편집, 저장할 수 있습니다.
         {{< landing/code title="C#에서 DOCX 파일을 편집하는 방법">}}
         ```csharp {style=abap}   
-        // Load document
-        Editor editor = new Editor("sample.docx");
+
+        // Create Editor class by loading an input document as path or stream
+        FileStream inputXlsxStream = File.OpenRead("full/path/to/sample/file.xlsx");
+        Editor editor = new Editor(inputXlsxStream);
         
-        // Edit document
-        EditableDocument editableDocument = editor.Edit();
+        // Create and adjust the edit options
+        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
+        editOptions.WorksheetIndex = 1;//select a tab (worksheet) to edit by 0-based index. For example, edit 2nd tab
         
-        // Save edited document
-        editor.Save(editableDocument, "edited_sample.docx");
+        // Open document for edit and obtain EditableDocument
+        EditableDocument original = editor.Edit(editOptions);
+        
+        // Grab content of the selected worksheet and associated resources from editable document
+        string content = original.GetContent();
+        
+        // Grab the resources (images, fonts, stylesheet) of selected worksheet
+        List<IHtmlResource> resources = original.AllResources;
+
+        // Send the content to WYSIWYG-editor, edit it there, and send edited content back to the server-side
+        // This step simulates a such operation
+        string updatedContent = content.Replace("Cell Text", "Edited Cell Text");
+        
+        // Grab edited content and resources from WYSIWYG-editor and create a new EditableDocument instance from it
+        EditableDocument edited = EditableDocument.FromMarkup(updatedContent, resources);
+        
+        // First - save as separate Spreadsheet with single worksheet
+        // Create a save options and select a desired output format - XLSM for example
+        SpreadsheetSaveOptions saveOptionsSeparate = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsm);
+        
+        // Save edited worksheet to the separate XLSM file
+        editor.Save(edited, "Edited_worksheet_only.xlsm", saveOptionsSeparate);
+        
+        // Second - insert edited worksheet into original Spreadsheet file by replacing the old worksheet onto edited
+        // Create another save options with XLSx format at this time
+        SpreadsheetSaveOptions saveOptionsReplace = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
+        saveOptionsReplace.WorksheetNumber = 2;//1-based number of worksheet to replace
+        
+        editor.Save(edited, "Edited_worksheet_replaced.xlsx", saveOptionsReplace);
+        
+        // Third - insert edited worksheet into original Spreadsheet file to be placed together with old
+        SpreadsheetSaveOptions saveOptionsTogether = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
+        saveOptionsTogether.WorksheetNumber = -1; // new worsksheet will be last one
+        saveOptionsTogether.InsertAsNewWorksheet = true;//Store original and edited worksheet together, but not replace original with edited
+        
+        editor.Save(edited, "Edited_worksheet_together.xlsx", saveOptionsTogether);
         ```
         {{< /landing/code >}}
     # code sample loop
     - title: "Word 문서에서 양식 필드 편집"
       content: |
-        .NET용 GroupDocs.Editor를 사용하여 Word 문서 내의 양식 필드를 쉽게 편집할 수 있습니다. C#을 사용하여 Word 문서의 양식 필드를 편집하는 방법은 다음과 같습니다.
+        .NET용 GroupDocs.Editor를 사용하여 Word 문서 내의 양식 필드를 쉽게 편집할 수 있습니다.
         {{< landing/code title=".NET용 GroupDocs.Editor를 사용하여 Word 문서의 양식 필드를 편집하는 방법">}}
-        ```csharp {style=abap}   
-        Editor editor = new Editor("sample.docx");
-        // Read the FormFieldCollection in the document
-        FormFieldCollection collection = fieldManager.FormFieldCollection;
-        // Update a specific text form field
-        TextFormField textField = collection.GetFormField<TextFormField>("Text1");
-        textField.LocaleId = 1029;
-        textField.Value = "new Value";
-        fieldManager.UpdateFormFiled(collection);
+        ```csharp {style=abap}
+        
+        // Prepare loading options and specify password
+        WordProcessingLoadOptions loadOptions = new WordProcessingLoadOptions();
+        loadOptions.Password = "password";
+
+        // Create Editor class by loading an input document and specifying load options
+        Editor editor = new Editor("full/path/to/sample/file.docx", loadOptions);
+
+        // Open document for edit and obtain EditableDocument
+        EditableDocument original = editor.Edit();
+
+        // Obtain document content as base64-embedded string with HTML and CSS markup inside
+        string originalDocumentContentAsBase64 = original.GetEmbeddedHtml();
+
+        // Send this markup to HTML WYSIWYG-editor and edit there
+        // For example, some simple edit
+        string editedDocumentContentAsBase64 = originalDocumentContentAsBase64.Replace("Document title", "Edited Document title");
+
+        // Create EditableDocument from edited document content
+        EditableDocument edited = EditableDocument.FromMarkup(editedDocumentContentAsBase64, null);
+
+        //Create saving options into WordProcessing-DOCX and specify password
+        WordProcessingSaveOptions docxSaveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
+        docxSaveOptions.Password = "docx-password";
+
+        //Create saving options into PDF and specify password
+        PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
+        pdfSaveOptions.Password = "pdf-password";
+
+        // Save edited content to the DOCX file
+        editor.Save(edited, "output.docx", docxSaveOptions);
+
+        // Save edited content to the PDF file
+        editor.Save(edited, "output.pdf", pdfSaveOptions);
 
         ```
         {{< /landing/code >}}
+
 ---

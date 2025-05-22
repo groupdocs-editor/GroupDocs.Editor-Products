@@ -1,7 +1,8 @@
 ---
+
 ############################# Static ############################
 layout: "landing"
-date: 2024-07-12T09:30:30
+date: 2025-05-22T09:23:57
 draft: false
 
 product: "Editor"
@@ -23,68 +24,77 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "C# .NET ドキュメント編集 API | PDF、Word、Excel、EPUB を編集"
-head_description: "PDF、Microsoft Word、Excel、プレゼンテーション、Visio、および画像形式のドキュメント ページを編集、翻訳、保存するための C# .NET ドキュメント編集 API。"
+head_title: "C＃.NETドキュメント編集API | pdf、word、excel、epubを編集します"
+head_description: "C＃.NETドキュメント編集APIは、PDF、Microsoft Word、Excel、プレゼンテーション、Visio、および画像形式からドキュメントページを編集、翻訳、および保存します。"
 
 ############################# Header ############################
-title: "ドキュメントの編集<br>.NET API経由"
-description: "PDF、Microsoft Office、HTML、画像ファイルを操作するための強力なエディター API。"
+title: "ドキュメントを編集します<br>.NET API経由"
+description: "PDF、Microsoft Office、HTML、およびImageファイルを操作する強力なエディターAPI。"
 words:
   for: "のために"
 
 actions:
-  main: "無料の NuGet ダウンロード"
+  main: "無料のnugetダウンロード"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
   alt: "ライセンス"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/net"
-  title: "始める準備はできていますか?"
-  description: "GroupDocs.Editor の機能を無料で試すか、ライセンスをリクエストしてください。"
+  title: "始める準備はできましたか？"
+  description: "GroupDocs.editor機能を無料で試すか、ライセンスをリクエストしてください。"
 
 release:
-  title: "バージョン {0} がリリースされました"
-  notes: "新機能を見る"
+  title: "バージョン{0}リリース"
+  notes: "何が新しいか見てください"
   downloads: "ダウンロード"
 
 code:
-  title: ".Net でドキュメント ファイルを編集する"
-  more: "他の例"
+  title: ".netでドキュメントファイルを編集します"
+  more: "その他の例"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
   install: "dotnet add package GroupDocs.Editor"
   content: |
     ```csharp {style=abap}   
     // {code.comment_1}
-    this.editor = new Editor(this.inputFilePath);
-    Editor editor = new Editor("sample.docx");
-    
-    // Edit document
-    EditableDocument editableDocument = editor.Edit();
+    Editor editor = new Editor("full/path/to/sample/file.docx");
 
-    // Save edited document
-    editor.Save(editableDocument, "edited_sample.docx");
+    // {code.comment_2}
+    EditableDocument original = editor.Edit();
+
+    // {code.comment_3}
+    string originalContent = original.GetEmbeddedHtml();
+
+    // {code.comment_4}
+    string editedContent = /* document content after editing */;
+
+    // {code.comment_5}
+    EditableDocument edited = EditableDocument.FromMarkup(editedContent, null);
+
+    // {code.comment_6}
+    editor.Save(edited, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
     ```
+
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor の概要"
-  description: ".NET アプリケーションでドキュメント、スライド、図を編集、翻訳、保存するための API。"
+  title: "GroupDocs.editorは一目で"
+  description: ".NETアプリケーションでドキュメント、スライド、および図を編集、翻訳、および保存するAPI。"
   features:
     # feature loop
-    - title: "C# で複数のドキュメントを簡単に編集"
-      content: "幅広い形式をサポートし、複数の PDF および Office ファイルをシームレスに編集します。 GroupDocs.Editor for .NET を使用すると、ドキュメントを迅速かつ手間なく編集できます。"
+    - title: "C＃で複数のドキュメントを簡単に編集する"
+      content: "幅広いフォーマットをサポートして、複数のPDFおよびオフィスファイルをシームレスに編集します。 .NETのGroupDocs.Editorは、ドキュメントを高速かつ手間のかからないものにします。"
 
     # feature loop
-    - title: "ドキュメントをHTML/CSSに翻訳"
-      content: "ドキュメントを WYSIWYG エディタと互換性のある HTML/CSS マークアップに変換し、Web 環境で簡単かつ効率的にドキュメントを編集できるようにします。"
+    - title: "ドキュメントをHTML/CSSに翻訳します"
+      content: "ドキュメントをWYSIWYGエディターと互換性のあるHTML/CSSマークアップに翻訳し、Web環境で簡単で効率的なドキュメント編集を可能にします。"
 
     # feature loop
-    - title: "編集したドキュメントをさまざまな形式で保存"
-      content: "編集したドキュメントを元の形式に保存したり、PDF などの他の形式にエクスポートしたりして、柔軟性と互換性を確保します。"
+    - title: "編集されたドキュメントをさまざまな形式で保存します"
+      content: "編集したドキュメントを元の形式に戻すか、PDFなどの他の形式にエクスポートして、柔軟性と互換性を確保します。"
 
 ############################# Platforms ############################
 platforms:
   enable: true
   title: "プラットフォームの独立性"
-  description: "GroupDocs.Editor for .NET は、次のオペレーティング システム、フレームワーク、およびパッケージ マネージャーをサポートします。"
+  description: ".NETのGroupDocs.Editorは、次のオペレーティングシステム、フレームワーク、およびパッケージマネージャーをサポートしています。"
   items:
     # platform loop
     - title: "Amazon"
@@ -111,25 +121,26 @@ platforms:
     - title: "NuGet"
       image: "nuget"
 
+
 ############################# File formats ############################
 formats:
   enable: true
   title: "サポートされているファイル形式"
   description: |
-    GroupDocs.Editor for .NET は、次の [ファイル形式](https://docs.groupdocs.com/editor/net/supported-document-formats/) での操作をサポートします。
+    .NETのGroupDocs.editorは、次の[ファイル形式]（https://docs.groupdocs.com/editor/net/supported-document-formats/）で操作をサポートしています。
   groups:
     # group loop
     - color: "green"
       content: |
-        ### Microsoft Office形式
+        ### Microsoft Officeフォーマット
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
     # group loop
     - color: "blue"
       content: |
-        ### 書類
-        * **書類:** PDF, 
+        ### ドキュメント
+        * **ドキュメント:** PDF, 
         * **OpenDocument:** ODT, OTT, ODS
         * **eBook:** EPUB
       # group loop
@@ -141,92 +152,156 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "GroupDocs.Editor の機能"
-  description: "PDF および Office ドキュメントをシームレスに編集、翻訳、保存します。"
+  title: "GroupDocs.Editor機能"
+  description: "PDFおよびオフィスドキュメントをシームレスに編集、翻訳、保存します。"
 
   items:
     # feature loop
     - icon: "merge"
-      title: "ファイルを編集する"
-      content: "PDF、DOCX、XLSX、PPTX など、さまざまなドキュメント形式のコンテンツを編集します。"
+      title: "ファイルを編集します"
+      content: "PDF、DOCX、XLSX、PPTXなどを含むさまざまなドキュメント形式のコンテンツを編集します。"
 
     # feature loop
     - icon: "split"
-      title: "HTML/CSSへの翻訳"
-      content: "CKEditor や TinyMCE などの WYSIWYG エディタで簡単に編集できるように、ドキュメントを HTML/CSS に変換します。"
+      title: "HTML/CSSに翻訳します"
+      content: "CKEDITORやTINYMCEなどのWYSIWYGエディターを簡単に編集するために、ドキュメントをHTML/CSSに変換します。"
 
     # feature loop
     - icon: "move"
-      title: "編集したドキュメントを保存する"
-      content: "編集した HTML/CSS を元のドキュメント形式に戻して保存するか、PDF にエクスポートします。"
+      title: "編集されたドキュメントを保存します"
+      content: "編集したHTML/CSSを元のドキュメント形式に戻すか、PDFにエクスポートします。"
 
     # feature loop
     - icon: "remove"
-      title: "文書情報の抽出"
-      content: "ドキュメントからページ数、サイズ、暗号化ステータスなどの情報を抽出します。"
+      title: "ドキュメント情報を抽出します"
+      content: "ドキュメントからページ数、サイズ、暗号化のステータスなどの情報を抽出します。"
 
     # feature loop
     - icon: "rotate"
       title: "さまざまな形式のサポート"
-      content: "Microsoft Office ファイル、PDF などを含む幅広いドキュメント形式を編集します。"
+      content: "Microsoft Officeファイル、PDFなどを含む幅広いドキュメント形式を編集します。"
 
     # feature loop
     - icon: "swap"
       title: "パスワード保護"
-      content: "パスワードで保護されたドキュメントを簡単に編集できます。"
+      content: "パスワードで保護されたドキュメントを簡単に編集します。"
 
     # feature loop
     - icon: "extract"
       title: "カスタムドキュメントエンコーディング"
-      content: "編集および保存プロセス中にドキュメントのエンコーディングを指定します。"
+      content: "編集および保存プロセス中にドキュメントエンコーディングを指定します。"
 
     # feature loop
     - icon: "orientation"
       title: "フォント抽出"
-      content: "編集プロセスで使用するためにドキュメントからフォントを抽出します。"
+      content: "編集プロセスで使用するために、ドキュメントからフォントを抽出します。"
 
     # feature loop
     - icon: "preview"
-      title: "ページのプレビュー"
-      content: "コンテンツと構造をより深く理解するためにドキュメント ページの画像表現を生成します。"
+      title: "プレビューページ"
+      content: "ドキュメントページの画像表現を生成して、コンテンツと構造をよりよく理解します。"
 
 ############################# Code samples ############################
 code_samples:
   enable: true
   title: "コードサンプル"
-  description: ".NET 操作用の典型的な GroupDocs.Editor のいくつかの使用例。"
+  description: ".NET操作の典型的なGroupDocs.editorのいくつかのユースケース。"
   items:
     # code sample loop
-    - title: "特定の DOCX ファイルの内容を編集する"
+    - title: "特定のDOCXファイルコンテンツを編集します"
       content: |
-        [ドキュメント編集](https://docs.groupdocs.com/editor/net/edit-document/) 機能を使用すると、DOCX ファイルをロード、編集、保存できます。 C# を使用してドキュメント編集を実現する方法の例を次に示します。
-        {{< landing/code title="C# で DOCX ファイルを編集する方法">}}
+        [Document Editing]（https://docs.groupdocs.com/editor/net/edit-document/）機能を使用すると、docxファイルを読み込み、編集、保存できます。
+        {{< landing/code title="c＃でdocxファイルを編集する方法">}}
         ```csharp {style=abap}   
-        // Load document
-        Editor editor = new Editor("sample.docx");
+
+        // Create Editor class by loading an input document as path or stream
+        FileStream inputXlsxStream = File.OpenRead("full/path/to/sample/file.xlsx");
+        Editor editor = new Editor(inputXlsxStream);
         
-        // Edit document
-        EditableDocument editableDocument = editor.Edit();
+        // Create and adjust the edit options
+        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
+        editOptions.WorksheetIndex = 1;//select a tab (worksheet) to edit by 0-based index. For example, edit 2nd tab
         
-        // Save edited document
-        editor.Save(editableDocument, "edited_sample.docx");
+        // Open document for edit and obtain EditableDocument
+        EditableDocument original = editor.Edit(editOptions);
+        
+        // Grab content of the selected worksheet and associated resources from editable document
+        string content = original.GetContent();
+        
+        // Grab the resources (images, fonts, stylesheet) of selected worksheet
+        List<IHtmlResource> resources = original.AllResources;
+
+        // Send the content to WYSIWYG-editor, edit it there, and send edited content back to the server-side
+        // This step simulates a such operation
+        string updatedContent = content.Replace("Cell Text", "Edited Cell Text");
+        
+        // Grab edited content and resources from WYSIWYG-editor and create a new EditableDocument instance from it
+        EditableDocument edited = EditableDocument.FromMarkup(updatedContent, resources);
+        
+        // First - save as separate Spreadsheet with single worksheet
+        // Create a save options and select a desired output format - XLSM for example
+        SpreadsheetSaveOptions saveOptionsSeparate = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsm);
+        
+        // Save edited worksheet to the separate XLSM file
+        editor.Save(edited, "Edited_worksheet_only.xlsm", saveOptionsSeparate);
+        
+        // Second - insert edited worksheet into original Spreadsheet file by replacing the old worksheet onto edited
+        // Create another save options with XLSx format at this time
+        SpreadsheetSaveOptions saveOptionsReplace = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
+        saveOptionsReplace.WorksheetNumber = 2;//1-based number of worksheet to replace
+        
+        editor.Save(edited, "Edited_worksheet_replaced.xlsx", saveOptionsReplace);
+        
+        // Third - insert edited worksheet into original Spreadsheet file to be placed together with old
+        SpreadsheetSaveOptions saveOptionsTogether = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
+        saveOptionsTogether.WorksheetNumber = -1; // new worsksheet will be last one
+        saveOptionsTogether.InsertAsNewWorksheet = true;//Store original and edited worksheet together, but not replace original with edited
+        
+        editor.Save(edited, "Edited_worksheet_together.xlsx", saveOptionsTogether);
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "Word 文書のフォームフィールドを編集する"
+    - title: "単語文書でフォームフィールドを編集します"
       content: |
-        GroupDocs.Editor for .NET を使用すると、Word ドキュメント内のフォーム フィールドを簡単に編集できます。 C# を使用して Word 文書のフォーム フィールドを編集する方法は次のとおりです。
-        {{< landing/code title="GroupDocs.Editor for .NET を使用して Word 文書のフォーム フィールドを編集する方法">}}
-        ```csharp {style=abap}   
-        Editor editor = new Editor("sample.docx");
-        // Read the FormFieldCollection in the document
-        FormFieldCollection collection = fieldManager.FormFieldCollection;
-        // Update a specific text form field
-        TextFormField textField = collection.GetFormField<TextFormField>("Text1");
-        textField.LocaleId = 1029;
-        textField.Value = "new Value";
-        fieldManager.UpdateFormFiled(collection);
+        .NETのgroupdocs.editorを使用して、単語ドキュメント内のフォームフィールドを簡単に編集します。
+        {{< landing/code title=".NETのgroupDocs.editorを使用して、単語ドキュメントでフォームフィールドを編集する方法">}}
+        ```csharp {style=abap}
+        
+        // Prepare loading options and specify password
+        WordProcessingLoadOptions loadOptions = new WordProcessingLoadOptions();
+        loadOptions.Password = "password";
+
+        // Create Editor class by loading an input document and specifying load options
+        Editor editor = new Editor("full/path/to/sample/file.docx", loadOptions);
+
+        // Open document for edit and obtain EditableDocument
+        EditableDocument original = editor.Edit();
+
+        // Obtain document content as base64-embedded string with HTML and CSS markup inside
+        string originalDocumentContentAsBase64 = original.GetEmbeddedHtml();
+
+        // Send this markup to HTML WYSIWYG-editor and edit there
+        // For example, some simple edit
+        string editedDocumentContentAsBase64 = originalDocumentContentAsBase64.Replace("Document title", "Edited Document title");
+
+        // Create EditableDocument from edited document content
+        EditableDocument edited = EditableDocument.FromMarkup(editedDocumentContentAsBase64, null);
+
+        //Create saving options into WordProcessing-DOCX and specify password
+        WordProcessingSaveOptions docxSaveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
+        docxSaveOptions.Password = "docx-password";
+
+        //Create saving options into PDF and specify password
+        PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
+        pdfSaveOptions.Password = "pdf-password";
+
+        // Save edited content to the DOCX file
+        editor.Save(edited, "output.docx", docxSaveOptions);
+
+        // Save edited content to the PDF file
+        editor.Save(edited, "output.pdf", pdfSaveOptions);
 
         ```
         {{< /landing/code >}}
+
 ---

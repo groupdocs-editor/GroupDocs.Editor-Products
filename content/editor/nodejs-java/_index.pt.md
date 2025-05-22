@@ -1,7 +1,8 @@
 ---
+
 ############################# Static ############################
 layout: "landing"
-date: 2024-07-12T09:30:30
+date: 2025-05-22T09:23:57
 draft: false
 
 product: "Editor"
@@ -61,6 +62,7 @@ code:
     // Save edited document
     await this.editor.save(afterEdit, this.outputPath, this.saveOptions);
     ```
+
 ############################# Overview ############################
 overview:
   enable: true
@@ -109,6 +111,7 @@ platforms:
     # platform loop
     - title: "Maven"
       image: "maven"
+
 
 
 ############################# File formats ############################
@@ -227,4 +230,5 @@ code_samples:
         await editor.save(afterEdit, outputDocxPath, saveOptions);
         ```
         {{< /landing/code >}}
+
 ---
