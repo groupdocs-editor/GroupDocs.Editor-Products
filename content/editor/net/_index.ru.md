@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T09:23:57
+date: 2025-05-22T14:12:07
 draft: false
 
 product: "Editor"
@@ -24,22 +24,22 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "API редактирования документов C# .NET | Редактировать PDF, Word, Excel, EPUB"
-head_description: "API редактирования документов C# .NET для редактирования, перевода и сохранения страниц документов из форматов PDF, Microsoft Word, Excel, презентаций, Visio и изображений."
+head_title: "C# .NET DOCUMTER Редактирование API | Редактировать PDF, Word, Excel, Epub"
+head_description: "C# .NET EDITITION API API для редактирования, перевода и сохранения страниц документов из PDF, Microsoft Word, Excel, презентаций, VISIO и форматов изображений."
 
 ############################# Header ############################
 title: "Редактировать документы<br>через .NET API"
-description: "Мощный API-редактор для работы с файлами PDF, Microsoft Office, HTML и изображениями."
+description: "Мощный редактор API для манипулирования PDF, Microsoft Office, HTML и изображений."
 words:
   for: "для"
 
 actions:
-  main: "Бесплатная загрузка NuGet"
+  main: "Бесплатно скачать Nuget"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
   alt: "Лицензирование"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/net"
-  title: "Готовы начать?"
-  description: "Попробуйте функции GroupDocs.Editor бесплатно или запросите лицензию."
+  title: "Готовы начать работу?"
+  description: "Попробуйте функции GroupDocs.editor бесплатно или запросите лицензию."
 
 release:
   title: "Версия {0} выпущена"
@@ -47,54 +47,54 @@ release:
   downloads: "Загрузки"
 
 code:
-  title: "Редактировать файлы документов в .Net"
+  title: "Редактировать файлы документов в .net"
   more: "Больше примеров"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
   install: "dotnet add package GroupDocs.Editor"
   content: |
     ```csharp {style=abap}   
-    // {code.comment_1}
+    // Создать класс редактора, загрузив входной документ по своему пути или потоку
     Editor editor = new Editor("full/path/to/sample/file.docx");
 
-    // {code.comment_2}
+    // Открыть документ для редактирования и получить EditableDocument
     EditableDocument original = editor.Edit();
 
-    // {code.comment_3}
+    // Получить содержимое документа в виде строки, встроенной Base64 с разметом HTML и CSS внутри
     string originalContent = original.GetEmbeddedHtml();
 
-    // {code.comment_4}
-    string editedContent = /* document content after editing */;
+    // Отправьте эту разметку в HTML Wysiwyg-Editor, отредактируйте и получите отредактированный контент
+    string editedContent = /* Содержание документа после редактирования */;
 
-    // {code.comment_5}
+    // Создать EditableDocument из отредактированного содержимого документа
     EditableDocument edited = EditableDocument.FromMarkup(editedContent, null);
 
-    // {code.comment_6}
+    // Укажите параметры сохранения и формат, и сохранить отредактированный документ в файле или потоке
     editor.Save(edited, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
     ```
 
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor: краткий обзор"
+  title: "GroupDocs.editor с первого взгляда"
   description: "API для редактирования, перевода и сохранения документов, слайдов и диаграмм в приложениях .NET."
   features:
     # feature loop
-    - title: "Легко редактируйте несколько документов на C#"
-      content: "Легко редактируйте несколько файлов PDF и Office с поддержкой широкого спектра форматов. GroupDocs.Editor для .NET позволяет быстро и без проблем редактировать документы."
+    - title: "Легко редактировать несколько документов в C#"
+      content: "Безусловно редактировать несколько файлов PDF и офисных файлов с поддержкой широкого спектра форматов. GroupDocs.editor для .NET делает документы быстро редактировать и беспроблемные."
 
     # feature loop
     - title: "Перевести документы в HTML/CSS"
-      content: "Переводите документы в разметку HTML/CSS, совместимую с редакторами WYSIWYG, что позволяет легко и эффективно редактировать документы в веб-среде."
+      content: "Перевести документы на разметку HTML/CSS, совместимая с редакторами Wysiwyg, позволяя легко и эффективно редактировать документы в веб -среде."
 
     # feature loop
-    - title: "Сохраняйте отредактированные документы в различных форматах."
-      content: "Сохраняйте отредактированные документы обратно в исходный формат или экспортируйте их в другие форматы, например PDF, обеспечивая гибкость и совместимость."
+    - title: "Сохранить отредактированные документы в различных форматах"
+      content: "Сохраните свои отредактированные документы обратно в их первоначальный формат или экспортируют их в другие форматы, такие как PDF, обеспечивая гибкость и совместимость."
 
 ############################# Platforms ############################
 platforms:
   enable: true
-  title: "Независимость от платформы"
-  description: "GroupDocs.Editor для .NET поддерживает следующие операционные системы, платформы и менеджеры пакетов."
+  title: "Независимость платформы"
+  description: "GroupDocs.editor для .NET поддерживает следующие операционные системы, фреймворки и менеджеры пакетов."
   items:
     # platform loop
     - title: "Amazon"
@@ -127,91 +127,94 @@ formats:
   enable: true
   title: "Поддерживаемые форматы файлов"
   description: |
-    GroupDocs.Editor для .NET поддерживает операции со следующими [форматами файлов](https://docs.groupdocs.com/editor/net/supported-document-formats/).
+    GroupDocs.editor для .net поддерживает операции со следующими [форматами файлов] (https://docs.groupdocs.com/editor/net/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
       content: |
-        ### Форматы Microsoft Office
-        * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
+        ### Microsoft Office Formats
+        * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
-        * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
+        * **PowerPoint:** PPT, PPTX, PPS, PPSX
     # group loop
     - color: "blue"
       content: |
-        ### Документы
-        * **Документы:** PDF, 
-        * **OpenDocument:** ODT, OTT, ODS
-        * **eBook:** EPUB
+        ### Другие форматы документов
+        * **Форматы с фиксированным лайатом:** PDF, XPS (export only)
+        * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
+		* **Разграниченные текстовые таблицы:** CSV, TSV, DSV (произвольный сепаратор)
+		* **Другие форматы таблицы:** SXC, DIF
+        * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
-        ### Другие форматы
-        * **Интернет:**  HTML, MHTML, MHT, MARKDOWN
+        ### Связанные с Интернетом форматы
+        * **Разметка:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
+		* **Форматы электронной почты:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
   enable: true
-  title: "Возможности GroupDocs.Editor"
-  description: "Легко редактируйте, переводите и сохраняйте документы PDF и Office."
+  title: "GroupDocs.editor функции"
+  description: "Бесполезно редактировать и сохранять в различных форматах офисных документов, электронных писем, электронных книг и PDF."
 
   items:
     # feature loop
     - icon: "merge"
       title: "Редактировать файлы"
-      content: "Редактируйте содержимое документов различных форматов, включая PDF, DOCX, XLSX, PPTX и другие."
+      content: "Измените содержание различных форматов документов, включая PDF, DOCX, XLSX, PPTX и многое другое."
 
     # feature loop
     - icon: "split"
-      title: "Перевести в HTML/CSS"
-      content: "Преобразуйте документы в HTML/CSS для удобного редактирования с помощью редакторов WYSIWYG, таких как CKEditor или TinyMCE."
+      title: "Перевести на HTML/CSS"
+      content: "Конвертируйте документы в HTML/CSS для удобного редактирования с помощью редакторов Wysiwyg, таких как Ckeditor или Tinymce."
 
     # feature loop
     - icon: "move"
-      title: "Сохраняйте отредактированные документы"
-      content: "Сохраните отредактированный HTML/CSS обратно в исходный формат документа или экспортируйте в PDF."
+      title: "Сохранить отредактированные документы"
+      content: "Сохраните отредактированный HTML/CSS обратно в исходный формат документа или экспорт в PDF."
 
     # feature loop
     - icon: "remove"
       title: "Извлечь информацию о документе"
-      content: "Извлекайте из документов такую ​​информацию, как количество страниц, размер и состояние шифрования."
+      content: "Извлеките информацию, такую ​​как количество страниц, размер и статус шифрования из документов."
 
     # feature loop
     - icon: "rotate"
       title: "Поддержка различных форматов"
-      content: "Редактируйте документы широкого спектра форматов, включая файлы Microsoft Office, PDF-файлы и многое другое."
+      content: "Отредактируйте широкий спектр форматов документов, включая файлы Microsoft Office, PDFS и многое другое."
 
     # feature loop
     - icon: "swap"
-      title: "Защита паролем"
-      content: "Легко редактируйте документы, защищенные паролем."
+      title: "Защита пароля"
+      content: "Загрузите и редактируйте документы, защищенные паролем, с легкостью и защита выходных документов с защитой пароля."
 
     # feature loop
     - icon: "extract"
-      title: "Пользовательское кодирование документов"
-      content: "Укажите кодировку документа во время процессов редактирования и сохранения."
+      title: "Редактировать электронную почту"
+      content: "Отредактируйте и сохраните сообщения электронной почты и буквы в MSG, EML, EMLX, Mbox и многих других форматах, включая редактирование метаданных, таких как субъект, CC, BCC, от, название, дата и так далее."
 
     # feature loop
     - icon: "orientation"
       title: "Извлечение шрифта"
-      content: "Извлекайте шрифты из документов для использования в процессе редактирования."
+      content: "Извлечь шрифты из документов WordProcessing для использования в процессе редактирования."
 
     # feature loop
     - icon: "preview"
       title: "Предварительный просмотр страниц"
-      content: "Создавайте изображения страниц документа, чтобы лучше понять содержание и структуру."
+      content: "Создать изображения страниц документов, чтобы лучше понять контент и структуру."
 
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "Примеры кода"
-  description: "Некоторые варианты использования типичного GroupDocs.Editor для операций .NET."
+  title: "Образцы кода"
+  description: "Некоторые варианты использования типичных групп GroupDocs.editor для операций .NET."
   items:
     # code sample loop
-    - title: "Редактировать определенное содержимое файла DOCX"
+    - title: "Изменить конкретный рабочий лист XLSX и сохранить его отдельно и как часть оригинального документа"
       content: |
-        Функция [Редактирование документов](https://docs.groupdocs.com/editor/net/edit-document/) позволяет загружать, редактировать и сохранять файлы DOCX.
-        {{< landing/code title="Как редактировать файлы DOCX на C#">}}
+        Документ электронной таблицы (например, XLS, XLSX, XLSM, ODS и так далее) может иметь один или несколько рабочих листов (вкладки). GroupDocs.editor позволяет редактировать контент на одном листе за раз. После отредактирования этот рабочий лист может быть сохранен в отдельном документе электронной таблицы (где будет сохранен только этот конкретный рабочий лист), или GroupDocs.editor может вставить отредактированный рабочий лист обратно в оригинальный документ, где он может заменить оригинальный рабочий лист, либо сохранен вместе с оригинальным. Вот пример того, как сохранить отредактированный рабочий лист во всех трех способах. Подробнее об этом [здесь] (https://docs.groupdocs.com/editor/net/inserting-edited-worksheet-into- существует сперэтэт/).
+        {{< landing/code title="Изменить конкретный рабочий лист XLSX">}}
         ```csharp {style=abap}   
 
         // Create Editor class by loading an input document as path or stream
@@ -261,10 +264,10 @@ code_samples:
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "Редактирование полей формы в документе Word"
+    - title: "Редактировать защищенный паролем DOCX и сохранить его в качестве защищенного паролем DOCX и PDF"
       content: |
-        Легко редактируйте поля формы в документе Word с помощью GroupDocs.Editor для .NET.
-        {{< landing/code title="Как редактировать поля формы в документе Word с помощью GroupDocs.Editor для .NET">}}
+        GroupDocs.editor позволяет работать с зашифрованными документами, защищенными паролем - он может открывать такие файлы, а также применять защиту пароля к выходным документам. В этом примере показано, как указать пароль для редактирования документа DOCX входного документа, отредактировать его контент, а затем сохранить его в вывод DOCX и PDF, а также для защиты этих файлов DOCX и PDF с различными паролями. Подробнее об этом [здесь] (https://docs.groupdocs.com/editor/net/output-format-and-password/).
+        {{< landing/code title="Редактировать защищенный паролем DOCX и сохранить его в качестве защищенного паролем DOCX и PDF">}}
         ```csharp {style=abap}
         
         // Prepare loading options and specify password

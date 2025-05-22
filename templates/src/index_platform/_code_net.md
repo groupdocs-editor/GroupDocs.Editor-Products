@@ -15,7 +15,7 @@ code:
     string originalContent = original.GetEmbeddedHtml();
 
     // <% "{code.comment_4}" %>
-    string editedContent = /* document content after editing */;
+    string editedContent = /* <% "{code.comment_inner}" %> */;
 
     // <% "{code.comment_5}" %>
     EditableDocument edited = EditableDocument.FromMarkup(editedContent, null);

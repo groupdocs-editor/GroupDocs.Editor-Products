@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T09:23:57
+date: 2025-05-22T14:12:07
 draft: false
 
 product: "Editor"
@@ -63,7 +63,7 @@ code:
     string originalContent = original.GetEmbeddedHtml();
 
     // {code.comment_4}
-    string editedContent = /* document content after editing */;
+    string editedContent = /* {code.comment_inner} */;
 
     // {code.comment_5}
     EditableDocument edited = EditableDocument.FromMarkup(editedContent, null);
@@ -133,21 +133,24 @@ formats:
     - color: "green"
       content: |
         ### قالب های مایکروسافت آفیس
-        * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
+        * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
-        * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
+        * **PowerPoint:** PPT, PPTX, PPS, PPSX
     # group loop
     - color: "blue"
       content: |
         ### اسناد
-        * **اسناد:** PDF, 
-        * **OpenDocument:** ODT, OTT, ODS
-        * **eBook:** EPUB
+        * **{formats.groups.fixed_layout}:** PDF, XPS (export only)
+        * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
+		* **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
+		* **{formats.groups.other_tables}:** SXC, DIF
+        * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
         ### قالبهای دیگر
-        * **وب:**  HTML, MHTML, MHT, MARKDOWN
+        * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
+		* **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:

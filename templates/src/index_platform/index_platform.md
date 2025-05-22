@@ -80,21 +80,24 @@ formats:
     - color: "green"
       content: |
         ### <% "{formats.groups.title_1}" %>
-        * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
+        * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
-        * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
+        * **PowerPoint:** PPT, PPTX, PPS, PPSX
     # group loop
     - color: "blue"
       content: |
         ### <% "{formats.groups.title_2}" %>
-        * **<% "{formats.groups.format_documents}" %>:** PDF, 
-        * **OpenDocument:** ODT, OTT, ODS
-        * **eBook:** EPUB
+        * **<% "{formats.groups.fixed_layout}" %>:** PDF, XPS (export only)
+        * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
+		* **<% "{formats.groups.delimited_text_table}" %>:** CSV, TSV, DSV (<% "{formats.groups.arbitrary_separator}" %>)
+		* **<% "{formats.groups.other_tables}" %>:** SXC, DIF
+        * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
         ### <% "{formats.groups.title_3}" %>
-        * **<% "{formats.groups.format_web}" %>:**  HTML, MHTML, MHT, MARKDOWN
+        * **<% "{formats.groups.format_markup}" %>:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
+		* **<% "{formats.groups.format_email}" %>:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:

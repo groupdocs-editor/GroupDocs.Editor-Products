@@ -43,12 +43,15 @@
     "description": "GroupDocs.Editor for .NET supports operations with the following [file formats](https://docs.groupdocs.com/editor/net/supported-document-formats/).",
     "groups": {
       "title_1": "Microsoft Office formats",
-      "title_2": "Documents",
-      "title_3": "Other formats",
-      "format_documents": "Documents",
+      "title_2": "Other document formats",
+      "title_3": "Web-related formats",
+      "fixed_layout": "Fixed-layout formats",
+	  "delimited_text_table": "Delimited text tables",
+	  "arbitrary_separator": "arbitrary separator",
+	  "other_tables": "Other table formats",
       "format_images": "Images",
-      "format_web": "Web",
-      "format_archives": "Archives"
+      "format_markup": "Markup",
+      "format_email": "Email formats"
     }
   },
   "features": {
@@ -84,7 +87,7 @@
     },
     "feature_8": {
       "title": "Font extraction",
-      "content": "Extract fonts from documents for use in the editing process."
+      "content": "Extract fonts from WordProcessing documents for use in the editing process."
     },
     "feature_9": {
       "title": "Preview pages",
@@ -119,5 +122,6 @@
 	"comment_4": "Send this markup to HTML WYSIWYG-editor, edit there and obtain edited content",
 	"comment_5": "Create EditableDocument from edited document content",
 	"comment_6": "Specify saving options and format, and save edited document to the file or stream",
+	"comment_inner": "document content after editing",
   }
 }

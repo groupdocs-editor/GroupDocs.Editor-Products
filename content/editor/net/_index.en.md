@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T09:23:56
+date: 2025-05-22T14:12:07
 draft: false
 
 product: "Editor"
@@ -133,21 +133,24 @@ formats:
     - color: "green"
       content: |
         ### Microsoft Office formats
-        * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
+        * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
-        * **PowerPoint:** PPT, PPTX, PPS, PPSX, ODP, OTP
+        * **PowerPoint:** PPT, PPTX, PPS, PPSX
     # group loop
     - color: "blue"
       content: |
-        ### Documents
-        * **Documents:** PDF, 
-        * **OpenDocument:** ODT, OTT, ODS
-        * **eBook:** EPUB
+        ### Other document formats
+        * **Fixed-layout formats:** PDF, XPS (export only)
+        * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
+		* **Delimited text tables:** CSV, TSV, DSV (arbitrary separator)
+		* **Other table formats:** SXC, DIF
+        * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
-        ### Other formats
-        * **Web:**  HTML, MHTML, MHT, MARKDOWN
+        ### Web-related formats
+        * **Markup:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
+		* **Email formats:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
@@ -194,7 +197,7 @@ features:
     # feature loop
     - icon: "orientation"
       title: "Font extraction"
-      content: "Extract fonts from documents for use in the editing process."
+      content: "Extract fonts from WordProcessing documents for use in the editing process."
 
     # feature loop
     - icon: "preview"
