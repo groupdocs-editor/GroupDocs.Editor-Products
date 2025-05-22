@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T15:55:12
+date: 2025-05-22T20:58:12
 draft: false
 
 product: "Editor"
@@ -75,12 +75,12 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "{overview.title}"
+  title: "GroupDocs.Editor for .NET {overview.glance}"
   description: "{overview.description}"
   features:
     # feature loop
     - title: "{overview.feature_1.title}"
-      content: "{overview.feature_1.description}"
+      content: "{overview.feature_1.description1} GroupDocs.Editor for .NET {overview.feature_1.description2}"
 
     # feature loop
     - title: "{overview.feature_2.title}"
@@ -127,7 +127,7 @@ formats:
   enable: true
   title: "{formats.title}"
   description: |
-    {formats.description}
+    GroupDocs.Editor for .NET {formats.description} [{formats.file_formats}](https://docs.groupdocs.com/editor/net/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
@@ -155,7 +155,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.title}"
+  title: "GroupDocs.Editor for .NET {features.features}"
   description: "{features.description}"
 
   items:
@@ -208,12 +208,12 @@ features:
 code_samples:
   enable: true
   title: "{code_samples.title}"
-  description: "{code_samples.description}"
+  description: "{code_samples.description} GroupDocs.Editor for .NET"
   items:
     # code sample loop
     - title: "{code_samples.sample_1.title}"
       content: |
-        {code_samples.sample_1.content_1}
+        {code_samples.sample_1.content_1} [{code_samples.sample_1.here}](https://docs.groupdocs.com/editor/net/inserting-edited-worksheet-into-existing-spreadsheet/).
         {{< landing/code title="{code_samples.sample_1.code_title}">}}
         ```csharp {style=abap}   
 
@@ -265,7 +265,7 @@ code_samples:
     # code sample loop
     - title: "{code_samples.sample_2.title}"
       content: |
-        {code_samples.sample_2.content_1}
+        {code_samples.sample_2.content_1} [{code_samples.sample_2.here}](https://docs.groupdocs.com/editor/net/output-format-and-password/).
         {{< landing/code title="{code_samples.sample_2.code_title}">}}
         ```csharp {style=abap}
         

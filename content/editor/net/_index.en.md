@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T15:55:12
+date: 2025-05-22T20:58:12
 draft: false
 
 product: "Editor"
@@ -75,7 +75,7 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor at a glance"
+  title: "GroupDocs.Editor for .NET at a glance"
   description: "API to edit, translate, and save documents, slides, and diagrams in .NET applications."
   features:
     # feature loop
@@ -155,7 +155,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "GroupDocs.Editor features"
+  title: "GroupDocs.Editor for .NET features"
   description: "Seamlessly edit and save in different formats Office documents, Emails, eBooks, and PDF."
 
   items:
@@ -208,12 +208,12 @@ features:
 code_samples:
   enable: true
   title: "Code samples"
-  description: "Some use cases of typical GroupDocs.Editor for .NET operations."
+  description: "Some use cases of typical operations using GroupDocs.Editor for .NET"
   items:
     # code sample loop
     - title: "Edit particular worksheet of XLSX and save it separately and as part of original document"
       content: |
-        The Spreadsheet document (like XLS, XLSX, XLSM, ODS and so on) may have one or more worksheets (tabs). GroupDocs.Editor allows to edit content of one worksheet at a time. After being edited, this worksheet may be saved to the separate Spreadsheet document (where only this specific worksheet will be saved), or GroupDocs.Editor can insert edited worksheet back to the original document, where it can either replace the original worksheet or be saved together, along with original one. Here's an example of how to save edited worksheet in all three ways. More on that [here](https://docs.groupdocs.com/editor/net/inserting-edited-worksheet-into-existing-spreadsheet/).
+        The Spreadsheet document (like XLS, XLSX, XLSM, ODS and so on) may have one or more worksheets (tabs). The GroupDocs.Editor allows to edit content of one worksheet at a time. After being edited, this worksheet may be saved to the separate Spreadsheet document (where only this specific worksheet will be saved), or the GroupDocs.Editor can insert edited worksheet back to the original document, where it can either replace the original worksheet or be saved together, along with original one. Below is an example of how to save edited worksheet in all three ways. More on that  [here](https://docs.groupdocs.com/editor/net/inserting-edited-worksheet-into-existing-spreadsheet/).
         {{< landing/code title="Edit particular worksheet of XLSX">}}
         ```csharp {style=abap}   
 
@@ -265,7 +265,7 @@ code_samples:
     # code sample loop
     - title: "Edit password-protected DOCX and save it as password-protected DOCX and PDF"
       content: |
-        GroupDocs.Editor allows to work with encrypted documents, protected with password — it can open such files and also apply password protection to the output documents. This example shows how to specify password for editing input DOCX document, edit its content and then save it to the output DOCX and PDF, and to protect both these DOCX and PDF files with different passwords. More on that [here](https://docs.groupdocs.com/editor/net/output-format-and-password/).
+        The GroupDocs.Editor allows to work with encrypted documents, protected with password — it can open such files and also apply password protection to the output documents. This example shows how to specify password for editing input DOCX document, edit its content and then save it to the output DOCX and PDF, and to protect both these DOCX and PDF files with different passwords. More on that [here](https://docs.groupdocs.com/editor/net/output-format-and-password/).
         {{< landing/code title="Edit password-protected DOCX and save it as password-protected DOCX and PDF">}}
         ```csharp {style=abap}
         

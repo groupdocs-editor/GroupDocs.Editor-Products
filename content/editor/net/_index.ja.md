@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T15:55:12
+date: 2025-05-22T20:58:12
 draft: false
 
 product: "Editor"
@@ -75,12 +75,12 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.editorは一目で"
+  title: "GroupDocs.Editor for .NET {overview.glance}"
   description: ".NETアプリケーションでドキュメント、スライド、および図を編集、翻訳、および保存するAPI。"
   features:
     # feature loop
     - title: "C＃で複数のドキュメントを簡単に編集する"
-      content: "幅広いフォーマットをサポートして、複数のPDFおよびオフィスファイルをシームレスに編集します。 .NETのGroupDocs.Editorは、ドキュメントを高速かつ手間のかからないものにします。"
+      content: "{overview.feature_1.description1} GroupDocs.Editor for .NET {overview.feature_1.description2}"
 
     # feature loop
     - title: "ドキュメントをHTML/CSSに翻訳します"
@@ -127,7 +127,7 @@ formats:
   enable: true
   title: "サポートされているファイル形式"
   description: |
-    .NETのGroupDocs.editorは、次の[ファイル形式]（https://docs.groupdocs.com/editor/net/supported-document-formats/）で操作をサポートしています。
+    GroupDocs.Editor for .NET .NETのGroupDocs.editorは、次の[ファイル形式]（https://docs.groupdocs.com/editor/net/supported-document-formats/）で操作をサポートしています。 [{formats.file_formats}](https://docs.groupdocs.com/editor/net/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
@@ -155,7 +155,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "GroupDocs.Editor機能"
+  title: "GroupDocs.Editor for .NET {features.features}"
   description: "PDFおよびオフィスドキュメントをシームレスに編集、翻訳、保存します。"
 
   items:
@@ -208,12 +208,12 @@ features:
 code_samples:
   enable: true
   title: "コードサンプル"
-  description: ".NET操作の典型的なGroupDocs.editorのいくつかのユースケース。"
+  description: ".NET操作の典型的なGroupDocs.editorのいくつかのユースケース。 GroupDocs.Editor for .NET"
   items:
     # code sample loop
     - title: "特定のDOCXファイルコンテンツを編集します"
       content: |
-        [Document Editing]（https://docs.groupdocs.com/editor/net/edit-document/）機能を使用すると、docxファイルを読み込み、編集、保存できます。
+        [Document Editing]（https://docs.groupdocs.com/editor/net/edit-document/）機能を使用すると、docxファイルを読み込み、編集、保存できます。 [{code_samples.sample_1.here}](https://docs.groupdocs.com/editor/net/inserting-edited-worksheet-into-existing-spreadsheet/).
         {{< landing/code title="c＃でdocxファイルを編集する方法">}}
         ```csharp {style=abap}   
 
@@ -265,7 +265,7 @@ code_samples:
     # code sample loop
     - title: "単語文書でフォームフィールドを編集します"
       content: |
-        .NETのgroupdocs.editorを使用して、単語ドキュメント内のフォームフィールドを簡単に編集します。
+        .NETのgroupdocs.editorを使用して、単語ドキュメント内のフォームフィールドを簡単に編集します。 [{code_samples.sample_2.here}](https://docs.groupdocs.com/editor/net/output-format-and-password/).
         {{< landing/code title=".NETのgroupDocs.editorを使用して、単語ドキュメントでフォームフィールドを編集する方法">}}
         ```csharp {style=abap}
         

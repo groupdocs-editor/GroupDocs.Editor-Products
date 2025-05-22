@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T15:55:12
+date: 2025-05-22T20:58:12
 draft: false
 
 product: "Editor"
@@ -66,12 +66,12 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor en un coup d'œil"
+  title: "GroupDocs.Editor for Node.js via Java {overview.glance}"
   description: "API pour éditer, traduire et enregistrer des documents, des diapositives et des diagrammes dans les applications Node.js."
   features:
     # feature loop
     - title: "Modifiez sans effort plusieurs documents dans Node.js"
-      content: "Modifiez en toute transparence plusieurs fichiers PDF et Office avec la prise en charge d'un large éventail de formats. GroupDocs.Editor pour Node.js rend l'édition de documents rapide et sans tracas."
+      content: "{overview.feature_1.description1} GroupDocs.Editor for Node.js via Java {overview.feature_1.description2}"
 
     # feature loop
     - title: "Traduire des documents en HTML/CSS"
@@ -119,7 +119,7 @@ formats:
   enable: true
   title: "Formats de fichiers pris en charge"
   description: |
-    GroupDocs.Editor pour Node.js prend en charge les opérations avec les [formats de fichiers](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/) suivants.
+    GroupDocs.Editor for Node.js via Java GroupDocs.Editor pour Node.js prend en charge les opérations avec les [formats de fichiers](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/) suivants. [{formats.file_formats}](https://docs.groupdocs.com/editor/net/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
@@ -147,7 +147,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "Fonctionnalités de GroupDocs.Editor"
+  title: "GroupDocs.Editor for Node.js via Java {features.features}"
   description: "Modifiez, traduisez et enregistrez en toute transparence des documents PDF et Office."
 
   items:

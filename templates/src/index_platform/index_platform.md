@@ -51,12 +51,12 @@ release:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "<% "{overview.title}" %>"
+  title: "GroupDocs.Editor for <% dict "products.{product}.name" %> <% "{overview.glance}" %>"
   description: "<% "{overview.description}" %>"
   features:
     # feature loop
     - title: "<% "{overview.feature_1.title}" %>"
-      content: "<% "{overview.feature_1.description}" %>"
+      content: "<% "{overview.feature_1.description1}" %> GroupDocs.Editor for <% dict "products.{product}.name" %> <% "{overview.feature_1.description2}" %>"
 
     # feature loop
     - title: "<% "{overview.feature_2.title}" %>"
@@ -74,7 +74,7 @@ formats:
   enable: true
   title: "<% "{formats.title}" %>"
   description: |
-    <% "{formats.description}" %>
+    GroupDocs.Editor for <% dict "products.{product}.name" %> <% "{formats.description}" %> [<% "{formats.file_formats}" %>](https://docs.groupdocs.com/editor/net/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
@@ -102,7 +102,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "<% "{features.title}" %>"
+  title: "GroupDocs.Editor for <% dict "products.{product}.name" %> <% "{features.features}" %>"
   description: "<% "{features.description}" %>"
 
   items:

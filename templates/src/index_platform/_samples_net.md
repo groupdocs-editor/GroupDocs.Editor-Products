@@ -1,12 +1,12 @@
 code_samples:
   enable: true
   title: "<% "{code_samples.title}" %>"
-  description: "<% "{code_samples.description}" %>"
+  description: "<% "{code_samples.description}" %> GroupDocs.Editor for <% dict "products.{product}.name" %>"
   items:
     # code sample loop
     - title: "<% "{code_samples.sample_1.title}" %>"
       content: |
-        <% "{code_samples.sample_1.content_1}" %>
+        <% "{code_samples.sample_1.content_1}" %> [<% "{code_samples.sample_1.here}" %>](https://docs.groupdocs.com/editor/net/inserting-edited-worksheet-into-existing-spreadsheet/).
         {{< landing/code title="<% "{code_samples.sample_1.code_title}" %>">}}
         ```csharp {style=abap}   
 
@@ -58,7 +58,7 @@ code_samples:
     # code sample loop
     - title: "<% "{code_samples.sample_2.title}" %>"
       content: |
-        <% "{code_samples.sample_2.content_1}" %>
+        <% "{code_samples.sample_2.content_1}" %> [<% "{code_samples.sample_2.here}" %>](https://docs.groupdocs.com/editor/net/output-format-and-password/).
         {{< landing/code title="<% "{code_samples.sample_2.code_title}" %>">}}
         ```csharp {style=abap}
         

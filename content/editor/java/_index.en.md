@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T15:55:12
+date: 2025-05-22T20:58:12
 draft: false
 
 product: "Editor"
@@ -66,12 +66,12 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor at a glance"
+  title: "GroupDocs.Editor for Java {overview.glance}"
   description: "API to edit, translate, and save documents, slides, and diagrams in Java applications."
   features:
     # feature loop
     - title: "Effortlessly edit multiple documents in Java"
-      content: "Seamlessly edit multiple PDF and Office files with support for a wide range of formats. GroupDocs.Editor for Java makes document editing fast and hassle-free."
+      content: "{overview.feature_1.description1} GroupDocs.Editor for Java {overview.feature_1.description2}"
 
     # feature loop
     - title: "Translate documents to HTML/CSS"
@@ -119,7 +119,7 @@ formats:
   enable: true
   title: "Supported file formats"
   description: |
-    GroupDocs.Editor for Java supports operations with the following [file formats](https://docs.groupdocs.com/editor/java/supported-document-formats/).
+    GroupDocs.Editor for Java GroupDocs.Editor for Java supports operations with the following [file formats](https://docs.groupdocs.com/editor/java/supported-document-formats/). [{formats.file_formats}](https://docs.groupdocs.com/editor/net/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
@@ -147,7 +147,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "GroupDocs.Editor features"
+  title: "GroupDocs.Editor for Java {features.features}"
   description: "Seamlessly edit, translate, and save PDF and Office documents."
 
   items:

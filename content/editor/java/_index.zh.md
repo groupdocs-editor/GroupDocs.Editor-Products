@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T15:55:13
+date: 2025-05-22T20:58:12
 draft: false
 
 product: "Editor"
@@ -66,12 +66,12 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor 概览"
+  title: "GroupDocs.Editor for Java {overview.glance}"
   description: "用于在 Java 应用程序中编辑、翻译和保存文档、幻灯片和图表的 API。"
   features:
     # feature loop
     - title: "用 Java 轻松编辑多个文档"
-      content: "无缝编辑多个 PDF 和 Office 文件，支持多种格式。 GroupDocs.Editor for Java 使文档编辑变得快速、轻松。"
+      content: "{overview.feature_1.description1} GroupDocs.Editor for Java {overview.feature_1.description2}"
 
     # feature loop
     - title: "将文档翻译为 HTML/CSS"
@@ -119,7 +119,7 @@ formats:
   enable: true
   title: "支持的文件格式"
   description: |
-    GroupDocs.Editor for Java 支持以下[文件格式](https://docs.groupdocs.com/editor/java/supported-document-formats/) 的操作。
+    GroupDocs.Editor for Java GroupDocs.Editor for Java 支持以下[文件格式](https://docs.groupdocs.com/editor/java/supported-document-formats/) 的操作。 [{formats.file_formats}](https://docs.groupdocs.com/editor/net/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
@@ -147,7 +147,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "GroupDocs.Editor 功能"
+  title: "GroupDocs.Editor for Java {features.features}"
   description: "无缝编辑、翻译和保存 PDF 和 Office 文档。"
 
   items:

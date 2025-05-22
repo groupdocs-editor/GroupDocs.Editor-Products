@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T15:55:12
+date: 2025-05-22T20:58:12
 draft: false
 
 product: "Editor"
@@ -66,12 +66,12 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor の概要"
+  title: "GroupDocs.Editor for Java {overview.glance}"
   description: "Java アプリケーションでドキュメント、スライド、図を編集、翻訳、保存するための API。"
   features:
     # feature loop
     - title: "Java で複数のドキュメントを簡単に編集"
-      content: "幅広い形式をサポートし、複数の PDF および Office ファイルをシームレスに編集します。 GroupDocs.Editor for Java を使用すると、ドキュメントを迅速かつ手間なく編集できます。"
+      content: "{overview.feature_1.description1} GroupDocs.Editor for Java {overview.feature_1.description2}"
 
     # feature loop
     - title: "ドキュメントをHTML/CSSに翻訳"
@@ -119,7 +119,7 @@ formats:
   enable: true
   title: "サポートされているファイル形式"
   description: |
-    GroupDocs.Editor for Java は、次の [ファイル形式](https://docs.groupdocs.com/editor/java/supported-document-formats/) での操作をサポートします。
+    GroupDocs.Editor for Java GroupDocs.Editor for Java は、次の [ファイル形式](https://docs.groupdocs.com/editor/java/supported-document-formats/) での操作をサポートします。 [{formats.file_formats}](https://docs.groupdocs.com/editor/net/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
@@ -147,7 +147,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "GroupDocs.Editor の機能"
+  title: "GroupDocs.Editor for Java {features.features}"
   description: "PDF および Office ドキュメントをシームレスに編集、翻訳、保存します。"
 
   items:

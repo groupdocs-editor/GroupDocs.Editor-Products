@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T15:55:12
+date: 2025-05-22T20:58:12
 draft: false
 
 product: "Editor"
@@ -75,12 +75,12 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor 개요"
+  title: "GroupDocs.Editor for .NET {overview.glance}"
   description: ".NET 애플리케이션에서 문서, 슬라이드, 다이어그램을 편집, 번역, 저장하는 API입니다."
   features:
     # feature loop
     - title: "C#에서 여러 문서를 손쉽게 편집"
-      content: "다양한 형식을 지원하여 여러 PDF 및 Office 파일을 원활하게 편집합니다. .NET용 GroupDocs.Editor를 사용하면 문서를 빠르고 쉽게 편집할 수 있습니다."
+      content: "{overview.feature_1.description1} GroupDocs.Editor for .NET {overview.feature_1.description2}"
 
     # feature loop
     - title: "문서를 HTML/CSS로 번역"
@@ -127,7 +127,7 @@ formats:
   enable: true
   title: "지원되는 파일 형식"
   description: |
-    .NET용 GroupDocs.Editor는 다음 [파일 형식](https://docs.groupdocs.com/editor/net/supported-document-formats/)을 사용한 작업을 지원합니다.
+    GroupDocs.Editor for .NET .NET용 GroupDocs.Editor는 다음 [파일 형식](https://docs.groupdocs.com/editor/net/supported-document-formats/)을 사용한 작업을 지원합니다. [{formats.file_formats}](https://docs.groupdocs.com/editor/net/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
@@ -155,7 +155,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "GroupDocs.Editor 기능"
+  title: "GroupDocs.Editor for .NET {features.features}"
   description: "PDF 및 Office 문서를 원활하게 편집, 번역, 저장하세요."
 
   items:
@@ -208,12 +208,12 @@ features:
 code_samples:
   enable: true
   title: "코드 샘플"
-  description: ".NET 작업을 위한 일반적인 GroupDocs.Editor의 일부 사용 사례입니다."
+  description: ".NET 작업을 위한 일반적인 GroupDocs.Editor의 일부 사용 사례입니다. GroupDocs.Editor for .NET"
   items:
     # code sample loop
     - title: "특정 DOCX 파일 콘텐츠 편집"
       content: |
-        [문서 편집](https://docs.groupdocs.com/editor/net/edit-document/) 기능을 사용하면 DOCX 파일을 로드, 편집, 저장할 수 있습니다.
+        [문서 편집](https://docs.groupdocs.com/editor/net/edit-document/) 기능을 사용하면 DOCX 파일을 로드, 편집, 저장할 수 있습니다. [{code_samples.sample_1.here}](https://docs.groupdocs.com/editor/net/inserting-edited-worksheet-into-existing-spreadsheet/).
         {{< landing/code title="C#에서 DOCX 파일을 편집하는 방법">}}
         ```csharp {style=abap}   
 
@@ -265,7 +265,7 @@ code_samples:
     # code sample loop
     - title: "Word 문서에서 양식 필드 편집"
       content: |
-        .NET용 GroupDocs.Editor를 사용하여 Word 문서 내의 양식 필드를 쉽게 편집할 수 있습니다.
+        .NET용 GroupDocs.Editor를 사용하여 Word 문서 내의 양식 필드를 쉽게 편집할 수 있습니다. [{code_samples.sample_2.here}](https://docs.groupdocs.com/editor/net/output-format-and-password/).
         {{< landing/code title=".NET용 GroupDocs.Editor를 사용하여 Word 문서의 양식 필드를 편집하는 방법">}}
         ```csharp {style=abap}
         

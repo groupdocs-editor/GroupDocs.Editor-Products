@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T15:55:13
+date: 2025-05-22T20:58:12
 draft: false
 
 product: "Editor"
@@ -75,12 +75,12 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor 概览"
+  title: "GroupDocs.Editor for .NET {overview.glance}"
   description: "用于在 .NET 应用程序中编辑、翻译和保存文档、幻灯片和图表的 API。"
   features:
     # feature loop
     - title: "在 C# 中轻松编辑多个文档"
-      content: "无缝编辑多个 PDF 和 Office 文件，支持多种格式。 GroupDocs.Editor for .NET 使文档编辑变得快速、轻松。"
+      content: "{overview.feature_1.description1} GroupDocs.Editor for .NET {overview.feature_1.description2}"
 
     # feature loop
     - title: "将文档翻译为 HTML/CSS"
@@ -127,7 +127,7 @@ formats:
   enable: true
   title: "支持的文件格式"
   description: |
-    GroupDocs.Editor for .NET 支持以下[文件格式](https://docs.groupdocs.com/editor/net/supported-document-formats/) 的操作。
+    GroupDocs.Editor for .NET GroupDocs.Editor for .NET 支持以下[文件格式](https://docs.groupdocs.com/editor/net/supported-document-formats/) 的操作。 [{formats.file_formats}](https://docs.groupdocs.com/editor/net/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
@@ -155,7 +155,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "GroupDocs.Editor 功能"
+  title: "GroupDocs.Editor for .NET {features.features}"
   description: "无缝编辑、翻译和保存 PDF 和 Office 文档。"
 
   items:
@@ -208,12 +208,12 @@ features:
 code_samples:
   enable: true
   title: "代码示例"
-  description: "用于 .NET 操作的典型 GroupDocs.Editor 的一些用例。"
+  description: "用于 .NET 操作的典型 GroupDocs.Editor 的一些用例。 GroupDocs.Editor for .NET"
   items:
     # code sample loop
     - title: "编辑特定的 DOCX 文件内容"
       content: |
-        [文档编辑](https://docs.groupdocs.com/editor/net/edit-document/) 功能允许您加载、编辑和保存 DOCX 文件。
+        [文档编辑](https://docs.groupdocs.com/editor/net/edit-document/) 功能允许您加载、编辑和保存 DOCX 文件。 [{code_samples.sample_1.here}](https://docs.groupdocs.com/editor/net/inserting-edited-worksheet-into-existing-spreadsheet/).
         {{< landing/code title="如何在 C# 中编辑 DOCX 文件">}}
         ```csharp {style=abap}   
 
@@ -265,7 +265,7 @@ code_samples:
     # code sample loop
     - title: "编辑 Word 文档中的表单字段"
       content: |
-        使用 GroupDocs.Editor for .NET 轻松编辑 Word 文档中的表单字段。
+        使用 GroupDocs.Editor for .NET 轻松编辑 Word 文档中的表单字段。 [{code_samples.sample_2.here}](https://docs.groupdocs.com/editor/net/output-format-and-password/).
         {{< landing/code title="如何使用 GroupDocs.Editor for .NET 编辑 Word 文档中的表单字段">}}
         ```csharp {style=abap}
         

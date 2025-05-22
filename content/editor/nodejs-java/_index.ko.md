@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T15:55:12
+date: 2025-05-22T20:58:12
 draft: false
 
 product: "Editor"
@@ -66,12 +66,12 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor 개요"
+  title: "GroupDocs.Editor for Node.js via Java {overview.glance}"
   description: "Node.js 애플리케이션에서 문서, 슬라이드, 다이어그램을 편집, 번역, 저장하는 API입니다."
   features:
     # feature loop
     - title: "Node.js에서 여러 문서를 손쉽게 편집하세요"
-      content: "다양한 형식을 지원하여 여러 PDF 및 Office 파일을 원활하게 편집합니다. Node.js용 GroupDocs.Editor를 사용하면 문서 편집이 빠르고 번거롭지 않습니다."
+      content: "{overview.feature_1.description1} GroupDocs.Editor for Node.js via Java {overview.feature_1.description2}"
 
     # feature loop
     - title: "문서를 HTML/CSS로 번역"
@@ -119,7 +119,7 @@ formats:
   enable: true
   title: "지원되는 파일 형식"
   description: |
-    Node.js용 GroupDocs.Editor는 다음 [파일 형식](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/)을 사용한 작업을 지원합니다.
+    GroupDocs.Editor for Node.js via Java Node.js용 GroupDocs.Editor는 다음 [파일 형식](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/)을 사용한 작업을 지원합니다. [{formats.file_formats}](https://docs.groupdocs.com/editor/net/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
@@ -147,7 +147,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "GroupDocs.Editor 기능"
+  title: "GroupDocs.Editor for Node.js via Java {features.features}"
   description: "PDF 및 Office 문서를 원활하게 편집, 번역, 저장하세요."
 
   items:

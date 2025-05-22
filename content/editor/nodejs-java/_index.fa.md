@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T15:55:12
+date: 2025-05-22T20:58:12
 draft: false
 
 product: "Editor"
@@ -66,12 +66,12 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor در یک نگاه"
+  title: "GroupDocs.Editor for Node.js via Java {overview.glance}"
   description: "API برای ویرایش، ترجمه و ذخیره اسناد، اسلایدها و نمودارها در برنامه های Node.js."
   features:
     # feature loop
     - title: "به راحتی چندین سند را در Node.js ویرایش کنید"
-      content: "چندین فایل PDF و Office را با پشتیبانی از طیف گسترده ای از فرمت ها به صورت یکپارچه ویرایش کنید. GroupDocs.Editor برای Node.js ویرایش اسناد را سریع و بدون دردسر می کند."
+      content: "{overview.feature_1.description1} GroupDocs.Editor for Node.js via Java {overview.feature_1.description2}"
 
     # feature loop
     - title: "اسناد را به HTML/CSS ترجمه کنید"
@@ -119,7 +119,7 @@ formats:
   enable: true
   title: "فرمت های فایل پشتیبانی شده"
   description: |
-    GroupDocs.Editor برای Node.js از عملیات با [قالب‌های فایل] زیر پشتیبانی می‌کند (https://docs.groupdocs.com/editor/nodejs/supported-document-formats/).
+    GroupDocs.Editor for Node.js via Java GroupDocs.Editor برای Node.js از عملیات با [قالب‌های فایل] زیر پشتیبانی می‌کند (https://docs.groupdocs.com/editor/nodejs/supported-document-formats/). [{formats.file_formats}](https://docs.groupdocs.com/editor/net/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
@@ -147,7 +147,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "ویژگی های GroupDocs.Editor"
+  title: "GroupDocs.Editor for Node.js via Java {features.features}"
   description: "اسناد PDF و Office را یکپارچه ویرایش، ترجمه و ذخیره کنید."
 
   items:

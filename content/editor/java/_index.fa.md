@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T15:55:12
+date: 2025-05-22T20:58:12
 draft: false
 
 product: "Editor"
@@ -66,12 +66,12 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor در یک نگاه"
+  title: "GroupDocs.Editor for Java {overview.glance}"
   description: "API برای ویرایش ، ترجمه و ذخیره اسناد ، اسلایدها و نمودارها در برنامه های جاوا."
   features:
     # feature loop
     - title: "با زحمت چندین اسناد را در جاوا ویرایش کنید"
-      content: "یکپارچه چندین پرونده PDF و Office را با پشتیبانی از طیف گسترده ای از قالب ها ویرایش کنید. GroupDocs.Editor برای جاوا باعث ویرایش اسناد سریع و بدون دردسر می شود."
+      content: "{overview.feature_1.description1} GroupDocs.Editor for Java {overview.feature_1.description2}"
 
     # feature loop
     - title: "اسناد را به HTML/CSS ترجمه کنید"
@@ -119,7 +119,7 @@ formats:
   enable: true
   title: "قالب های فایل پشتیبانی شده"
   description: |
-    GroupDocs.Editor برای جاوا از عملیات با [فرمت های پرونده زیر] پشتیبانی می کند (https://docs.groupdocs.com/editor/java/supported-document-formats/).
+    GroupDocs.Editor for Java GroupDocs.Editor برای جاوا از عملیات با [فرمت های پرونده زیر] پشتیبانی می کند (https://docs.groupdocs.com/editor/java/supported-document-formats/). [{formats.file_formats}](https://docs.groupdocs.com/editor/net/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
@@ -147,7 +147,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "ویژگی های GroupDocs.Editor"
+  title: "GroupDocs.Editor for Java {features.features}"
   description: "یکپارچه اسناد PDF و Office را ویرایش ، ترجمه و ذخیره کنید."
 
   items:

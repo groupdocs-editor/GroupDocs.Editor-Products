@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T15:55:12
+date: 2025-05-22T20:58:12
 draft: false
 
 product: "Editor"
@@ -66,12 +66,12 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor de un vistazo"
+  title: "GroupDocs.Editor for Node.js via Java {overview.glance}"
   description: "API para editar, traducir y guardar documentos, diapositivas y diagramas en aplicaciones Node.js."
   features:
     # feature loop
     - title: "Edite varios documentos sin esfuerzo en Node.js"
-      content: "Edite sin problemas varios archivos PDF y Office compatibles con una amplia gama de formatos. GroupDocs.Editor para Node.js hace que la edición de documentos sea rápida y sin complicaciones."
+      content: "{overview.feature_1.description1} GroupDocs.Editor for Node.js via Java {overview.feature_1.description2}"
 
     # feature loop
     - title: "Traducir documentos a HTML/CSS"
@@ -119,7 +119,7 @@ formats:
   enable: true
   title: "Formatos de archivo admitidos"
   description: |
-    GroupDocs.Editor para Node.js admite operaciones con los siguientes [formatos de archivo] (https://docs.groupdocs.com/editor/nodejs/supported-document-formats/).
+    GroupDocs.Editor for Node.js via Java GroupDocs.Editor para Node.js admite operaciones con los siguientes [formatos de archivo] (https://docs.groupdocs.com/editor/nodejs/supported-document-formats/). [{formats.file_formats}](https://docs.groupdocs.com/editor/net/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
@@ -147,7 +147,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "Funciones de GroupDocs.Editor"
+  title: "GroupDocs.Editor for Node.js via Java {features.features}"
   description: "Edite, traduzca y guarde sin problemas documentos PDF y de Office."
 
   items:

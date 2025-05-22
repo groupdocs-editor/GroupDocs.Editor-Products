@@ -23,11 +23,12 @@
     "downloads": "Downloads"
   },
   "overview": {
-    "title": "GroupDocs.Editor at a glance",
+    "glance": "at a glance",
     "description": "API to edit, translate, and save documents, slides, and diagrams in .NET applications.",
     "feature_1": {
       "title": "Effortlessly edit multiple documents in C#",
-      "description": "Seamlessly edit multiple PDF and Office files with support for a wide range of formats. GroupDocs.Editor for .NET makes document editing fast and hassle-free."
+      "description1": "Seamlessly edit multiple PDF and Office files with support for a wide range of formats.",
+	  "description2": "makes document editing fast and hassle-free."
     },
     "feature_2": {
       "title": "Translate documents to HTML/CSS",
@@ -40,7 +41,8 @@
   },
   "formats": {
     "title": "Supported file formats",
-    "description": "GroupDocs.Editor for .NET supports operations with the following [file formats](https://docs.groupdocs.com/editor/net/supported-document-formats/).",
+    "description": "supports operations with the following",
+	"file_formats": "file formats",
     "groups": {
       "title_1": "Microsoft Office formats",
       "title_2": "Other document formats",
@@ -56,7 +58,7 @@
     }
   },
   "features": {
-    "title": "GroupDocs.Editor features",
+    "features": "features",
     "description": "Seamlessly edit and save in different formats Office documents, Emails, eBooks, and PDF.",
     "feature_1": {
       "title": "Edit files",
@@ -97,10 +99,11 @@
   },
   "code_samples": {
     "title": "Code samples",
-    "description": "Some use cases of typical GroupDocs.Editor for .NET operations.",
+    "description": "Some use cases of typical operations using",
     "sample_1": {
       "title": "Edit particular worksheet of XLSX and save it separately and as part of original document",
-      "content_1": "The Spreadsheet document (like XLS, XLSX, XLSM, ODS and so on) may have one or more worksheets (tabs). GroupDocs.Editor allows to edit content of one worksheet at a time. After being edited, this worksheet may be saved to the separate Spreadsheet document (where only this specific worksheet will be saved), or GroupDocs.Editor can insert edited worksheet back to the original document, where it can either replace the original worksheet or be saved together, along with original one. Here's an example of how to save edited worksheet in all three ways. More on that [here](https://docs.groupdocs.com/editor/net/inserting-edited-worksheet-into-existing-spreadsheet/).",      
+      "content_1": "The Spreadsheet document (like XLS, XLSX, XLSM, ODS and so on) may have one or more worksheets (tabs). The GroupDocs.Editor allows to edit content of one worksheet at a time. After being edited, this worksheet may be saved to the separate Spreadsheet document (where only this specific worksheet will be saved), or the GroupDocs.Editor can insert edited worksheet back to the original document, where it can either replace the original worksheet or be saved together, along with original one. Below is an example of how to save edited worksheet in all three ways. More on that ",
+	  "here": "here",
       "code_title": "Edit particular worksheet of XLSX",
 	  "comment_1": "Create Editor class by loading an input document as path or stream",
 	  "comment_2": "Create and adjust the edit options",
@@ -109,7 +112,8 @@
     },
     "sample_2": {
       "title": "Edit password-protected DOCX and save it as password-protected DOCX and PDF",
-      "content_1": "GroupDocs.Editor allows to work with encrypted documents, protected with password — it can open such files and also apply password protection to the output documents. This example shows how to specify password for editing input DOCX document, edit its content and then save it to the output DOCX and PDF, and to protect both these DOCX and PDF files with different passwords. More on that [here](https://docs.groupdocs.com/editor/net/output-format-and-password/).",      
+      "content_1": "The GroupDocs.Editor allows to work with encrypted documents, protected with password — it can open such files and also apply password protection to the output documents. This example shows how to specify password for editing input DOCX document, edit its content and then save it to the output DOCX and PDF, and to protect both these DOCX and PDF files with different passwords. More on that",
+	  "here": "here",
       "code_title": "Edit password-protected DOCX and save it as password-protected DOCX and PDF"
     }
   },

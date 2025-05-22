@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T15:55:12
+date: 2025-05-22T20:58:12
 draft: false
 
 product: "Editor"
@@ -75,12 +75,12 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "Visão geral do GroupDocs.Editor"
+  title: "GroupDocs.Editor for .NET {overview.glance}"
   description: "API para editar, traduzir e salvar documentos, slides e diagramas em aplicativos .NET."
   features:
     # feature loop
     - title: "Edite facilmente vários documentos em C#"
-      content: "Edite facilmente vários arquivos PDF e Office com suporte para uma ampla variedade de formatos. GroupDocs.Editor for .NET torna a edição de documentos rápida e descomplicada."
+      content: "{overview.feature_1.description1} GroupDocs.Editor for .NET {overview.feature_1.description2}"
 
     # feature loop
     - title: "Traduzir documentos para HTML/CSS"
@@ -127,7 +127,7 @@ formats:
   enable: true
   title: "Formatos de arquivo suportados"
   description: |
-    GroupDocs.Editor for .NET oferece suporte a operações com os seguintes [formatos de arquivo](https://docs.groupdocs.com/editor/net/supported-document-formats/).
+    GroupDocs.Editor for .NET GroupDocs.Editor for .NET oferece suporte a operações com os seguintes [formatos de arquivo](https://docs.groupdocs.com/editor/net/supported-document-formats/). [{formats.file_formats}](https://docs.groupdocs.com/editor/net/supported-document-formats/).
   groups:
     # group loop
     - color: "green"
@@ -155,7 +155,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "Recursos do GroupDocs.Editor"
+  title: "GroupDocs.Editor for .NET {features.features}"
   description: "Edite, traduza e salve documentos PDF e Office com facilidade."
 
   items:
@@ -208,12 +208,12 @@ features:
 code_samples:
   enable: true
   title: "Amostras de código"
-  description: "Alguns casos de uso de operações típicas do GroupDocs.Editor para .NET."
+  description: "Alguns casos de uso de operações típicas do GroupDocs.Editor para .NET. GroupDocs.Editor for .NET"
   items:
     # code sample loop
     - title: "Edite o conteúdo específico do arquivo DOCX"
       content: |
-        O recurso [Edição de documentos](https://docs.groupdocs.com/editor/net/edit-document/) permite carregar, editar e salvar arquivos DOCX.
+        O recurso [Edição de documentos](https://docs.groupdocs.com/editor/net/edit-document/) permite carregar, editar e salvar arquivos DOCX. [{code_samples.sample_1.here}](https://docs.groupdocs.com/editor/net/inserting-edited-worksheet-into-existing-spreadsheet/).
         {{< landing/code title="Como editar arquivos DOCX em C#">}}
         ```csharp {style=abap}   
 
@@ -265,7 +265,7 @@ code_samples:
     # code sample loop
     - title: "Editar campos de formulário em um documento do Word"
       content: |
-        Edite facilmente campos de formulário em um documento do Word usando GroupDocs.Editor for .NET.
+        Edite facilmente campos de formulário em um documento do Word usando GroupDocs.Editor for .NET. [{code_samples.sample_2.here}](https://docs.groupdocs.com/editor/net/output-format-and-password/).
         {{< landing/code title="Como editar campos de formulário em um documento do Word usando GroupDocs.Editor for .NET">}}
         ```csharp {style=abap}
         
