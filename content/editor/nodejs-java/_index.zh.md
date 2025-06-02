@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T20:58:12
+date: 2025-06-02T20:43:18
 draft: false
 
 product: "Editor"
@@ -119,7 +119,7 @@ formats:
   enable: true
   title: "支持的文件格式"
   description: |
-    GroupDocs.Editor for Node.js via Java Node.js 的 GroupDocs.Editor 支持以下[文件格式](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/) 的操作。 [{formats.file_formats}](https://docs.groupdocs.com/editor/net/supported-document-formats/).
+    Node.js 的 GroupDocs.Editor 支持以下[文件格式](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/) 的操作。 ([{formats.full_list}](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
@@ -147,7 +147,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "GroupDocs.Editor for Node.js via Java {features.features}"
+  title: "{features.features}"
   description: "无缝编辑、翻译和保存 PDF 和 Office 文档。"
 
   items:

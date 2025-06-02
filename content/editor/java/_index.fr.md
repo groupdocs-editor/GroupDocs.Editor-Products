@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T20:58:12
+date: 2025-06-02T20:43:17
 draft: false
 
 product: "Editor"
@@ -119,7 +119,7 @@ formats:
   enable: true
   title: "Formats de fichiers pris en charge"
   description: |
-    GroupDocs.Editor for Java GroupDocs.Editor for Java prend en charge les opérations avec les [formats de fichiers] suivants (https://docs.groupdocs.com/editor/java/supported-document-formits/). [{formats.file_formats}](https://docs.groupdocs.com/editor/net/supported-document-formats/).
+    GroupDocs.Editor for Java prend en charge les opérations avec les [formats de fichiers] suivants (https://docs.groupdocs.com/editor/java/supported-document-formits/). ([{formats.full_list}](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
@@ -147,7 +147,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "GroupDocs.Editor for Java {features.features}"
+  title: "{features.features}"
   description: "Modifier, traduire et enregistrer et sauver les documents PDF et Office."
 
   items:

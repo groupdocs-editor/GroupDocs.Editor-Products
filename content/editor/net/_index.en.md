@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T20:58:12
+date: 2025-06-02T20:43:17
 draft: false
 
 product: "Editor"
@@ -53,23 +53,20 @@ code:
   install: "dotnet add package GroupDocs.Editor"
   content: |
     ```csharp {style=abap}   
-    // Create Editor class by loading an input document by its path or a stream
-    Editor editor = new Editor("full/path/to/sample/file.docx");
+    // Load document to the Editor class constructor
+    Editor editor = new Editor("input.docx");
 
     // Open document for edit and obtain EditableDocument
     EditableDocument original = editor.Edit();
 
-    // Obtain document content as base64-embedded string with HTML and CSS markup inside
+    // Obtain content as a string with HTML-markup
     string originalContent = original.GetEmbeddedHtml();
-
-    // Send this markup to HTML WYSIWYG-editor, edit there and obtain edited content
-    string editedContent = /* document content after editing */;
-
-    // Create EditableDocument from edited document content
-    EditableDocument edited = EditableDocument.FromMarkup(editedContent, null);
-
-    // Specify saving options and format, and save edited document to the file or stream
-    editor.Save(edited, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
+    
+    // Emulate content editing in external HTML-editor
+    string modifiedContent = originalContent.Replace("Old content", "New content");
+    
+    // Save edited document content to selected location and format
+    editor.Save(EditableDocument.FromMarkup(modifiedContent, null), "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
     ```
 
 ############################# Overview ############################
@@ -83,8 +80,8 @@ overview:
       content: "Seamlessly edit multiple PDF and Office files with support for a wide range of formats. GroupDocs.Editor for .NET makes document editing fast and hassle-free."
 
     # feature loop
-    - title: "Translate documents to HTML/CSS"
-      content: "Translate documents to HTML/CSS markup compatible with WYSIWYG editors, allowing easy and efficient document editing in a web environment."
+    - title: "Convert documents to HTML/CSS"
+      content: "Convert documents to pure HTML/CSS markup compatible with WYSIWYG editors, allowing easy and efficient document editing in a web environment."
 
     # feature loop
     - title: "Save edited documents in various formats"
@@ -94,7 +91,7 @@ overview:
 platforms:
   enable: true
   title: "Platform independence"
-  description: "GroupDocs.Editor for .NET supports the following operating systems, frameworks, and package managers."
+  description: "Following operating systems, frameworks, and package managers are supported"
   items:
     # platform loop
     - title: "Amazon"
@@ -127,7 +124,7 @@ formats:
   enable: true
   title: "Supported file formats"
   description: |
-    GroupDocs.Editor for .NET supports operations with the following [file formats](https://docs.groupdocs.com/editor/net/supported-document-formats/).
+    GroupDocs.Editor supports operations with the following file formats on import and export ([full list](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
@@ -155,8 +152,8 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "GroupDocs.Editor for .NET features"
-  description: "Seamlessly edit and save in different formats Office documents, Emails, eBooks, and PDF."
+  title: "Main features"
+  description: "Seamlessly load, edit and save in different formats Office documents, Emails, eBooks, and PDF."
 
   items:
     # feature loop
@@ -211,98 +208,67 @@ code_samples:
   description: "Some use cases of typical operations using GroupDocs.Editor for .NET"
   items:
     # code sample loop
-    - title: "Edit particular worksheet of XLSX and save it separately and as part of original document"
+    - title: "Replace text in DOCX and save it in various formats"
       content: |
-        The Spreadsheet document (like XLS, XLSX, XLSM, ODS and so on) may have one or more worksheets (tabs). The GroupDocs.Editor allows to edit content of one worksheet at a time. After being edited, this worksheet may be saved to the separate Spreadsheet document (where only this specific worksheet will be saved), or the GroupDocs.Editor can insert edited worksheet back to the original document, where it can either replace the original worksheet or be saved together, along with original one. Below is an example of how to save edited worksheet in all three ways. More on that  [here](https://docs.groupdocs.com/editor/net/inserting-edited-worksheet-into-existing-spreadsheet/).
-        {{< landing/code title="Edit particular worksheet of XLSX">}}
-        ```csharp {style=abap}   
-
-        // Create Editor class by loading an input document as path or stream
-        Editor editor = new Editor(File.OpenRead("full/path/to/sample/file.xlsx"));
+        This example shows loading and editing a content of the input DOCX file programmatically by replacing some text content on another. After that the modified document content is saved as DOCX, PDF and TXT (plain text). 
+        {{< landing/code title="Edit input DOCX by replacing some text and save it in DOCX, PDF, and TXT">}}
+        ```csharp {style=abap}
         
-        // Create and adjust the edit options
-        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
-        editOptions.WorksheetIndex = 1;//select a tab (worksheet) to edit by 0-based index. For example, edit 2nd tab
+        // Load input document by path and specify load options if necessary
+        Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // Open document for edit and obtain EditableDocument
-        EditableDocument original = editor.Edit(editOptions);
+        // Open document for edit and obtain `EditableDocument`
+        EditableDocument original = editor.Edit();
         
-        // Grab content of the selected worksheet and associated resources from editable document
-        string content = original.GetContent();
+        // Replace some text - this emulates the content editing
+        string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
         
-        // Grab the resources (images, fonts, stylesheet) of selected worksheet
-        List<IHtmlResource> resources = original.AllResources;
-
-        // Send the content to WYSIWYG-editor, edit it there, and send edited content back to the server-side
-        // This step simulates a such operation
-        string updatedContent = content.Replace("Cell Text", "Edited Cell Text");
+        // Create new `EditableDocument` from edited document content
+        EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
         
-        // Grab edited content and resources from WYSIWYG-editor and create a new EditableDocument instance from it
-        EditableDocument edited = EditableDocument.FromMarkup(updatedContent, resources);
+        // Save edited document content to DOCX
+        editor.Save(edited, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
         
-        // First - save as separate Spreadsheet with single worksheet
-        // Create a save options and select a desired output format - XLSM for example
-        SpreadsheetSaveOptions saveOptionsSeparate = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsm);
+        // Save edited document content to PDF
+        editor.Save(edited, "output.pdf", new PdfSaveOptions());
         
-        // Save edited worksheet to the separate XLSM file
-        editor.Save(edited, "Edited_worksheet_only.xlsm", saveOptionsSeparate);
+        // Save edited document content to TXT (plain text)
+        editor.Save(edited, "output.txt", new TextSaveOptions());
         
-        // Second - insert edited worksheet into original Spreadsheet file by replacing the old worksheet onto edited
-        // Create another save options with XLSx format at this time
-        SpreadsheetSaveOptions saveOptionsReplace = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
-        saveOptionsReplace.WorksheetNumber = 2;//1-based number of worksheet to replace
-        
-        editor.Save(edited, "Edited_worksheet_replaced.xlsx", saveOptionsReplace);
-        
-        // Third - insert edited worksheet into original Spreadsheet file to be placed together with old
-        SpreadsheetSaveOptions saveOptionsTogether = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
-        saveOptionsTogether.WorksheetNumber = -1; // new worsksheet will be last one
-        saveOptionsTogether.InsertAsNewWorksheet = true;//Store original and edited worksheet together, but not replace original with edited
-        
-        editor.Save(edited, "Edited_worksheet_together.xlsx", saveOptionsTogether);
+        // Dispose all resources
+        edited.Dispose(); original.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "Edit password-protected DOCX and save it as password-protected DOCX and PDF"
+    - title: "Edit content of particular Excel worksheet"
       content: |
-        The GroupDocs.Editor allows to work with encrypted documents, protected with password — it can open such files and also apply password protection to the output documents. This example shows how to specify password for editing input DOCX document, edit its content and then save it to the output DOCX and PDF, and to protect both these DOCX and PDF files with different passwords. More on that [here](https://docs.groupdocs.com/editor/net/output-format-and-password/).
-        {{< landing/code title="Edit password-protected DOCX and save it as password-protected DOCX and PDF">}}
+        The Spreadsheet document (like XLS, XLSX, XLSM, ODS and so on) may have one or more worksheets (tabs). GroupDocs.Editor allows to edit content of one worksheet at a time. After being edited, this worksheet may be saved to the separate Spreadsheet document (where only this specific worksheet will be saved), or the edited worksheet can be inserted back to the original document, where it can either replace the original worksheet or be saved together, along with original one. This example shows loading XLSX document, editing its 2nd worksheet and saving it as a new separate document in XLSX and CSV formats.
+        {{< landing/code title="Edit particular worksheet of XLSX and save as XLSX and CSV">}}
         ```csharp {style=abap}
         
-        // Prepare loading options and specify password
-        WordProcessingLoadOptions loadOptions = new WordProcessingLoadOptions();
-        loadOptions.Password = "password";
-
-        // Create Editor class by loading an input document and specifying load options
-        Editor editor = new Editor("full/path/to/sample/file.docx", loadOptions);
-
-        // Open document for edit and obtain EditableDocument
-        EditableDocument original = editor.Edit();
-
-        // Obtain document content as base64-embedded string with HTML and CSS markup inside
-        string originalDocumentContentAsBase64 = original.GetEmbeddedHtml();
-
-        // Send this markup to HTML WYSIWYG-editor and edit there
-        // For example, some simple edit
-        string editedDocumentContentAsBase64 = originalDocumentContentAsBase64.Replace("Document title", "Edited Document title");
-
-        // Create EditableDocument from edited document content
-        EditableDocument edited = EditableDocument.FromMarkup(editedDocumentContentAsBase64, null);
-
-        //Create saving options into WordProcessing-DOCX and specify password
-        WordProcessingSaveOptions docxSaveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
-        docxSaveOptions.Password = "docx-password";
-
-        //Create saving options into PDF and specify password
-        PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
-        pdfSaveOptions.Password = "pdf-password";
-
-        // Save edited content to the DOCX file
-        editor.Save(edited, "output.docx", docxSaveOptions);
-
-        // Save edited content to the PDF file
-        editor.Save(edited, "output.pdf", pdfSaveOptions);
-
+        // Load input XLSX by path and specify load options if necessary
+        Editor editor = new Editor("input.xlsx", new SpreadsheetLoadOptions());
+        
+        // Create and adjust the edit options - set 2nd worksheet to edit
+        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions() { WorksheetIndex = 1 } ;
+        
+        // Open this 2nd worksheet for edit and obtain `EditableDocument`
+        EditableDocument originalWorksheet = editor.Edit(editOptions);
+        
+        // Replace some text - this emulates the content editing
+        string modifiedContent = originalWorksheet.GetEmbeddedHtml().Replace("Cell Text", "Edited Cell Text");
+        
+        // Create new `EditableDocument` from edited content of worksheet
+        EditableDocument editedWorksheet = EditableDocument.FromMarkup(modifiedContent, null);
+        
+        // Save edited worksheet to new XLSX document
+        editor.Save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
+        
+        // Save edited worksheet to new CSV document with comma (,) delimiter/separator
+        editor.Save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
+        
+        // Dispose all resources
+        editedWorksheet.Dispose(); originalWorksheet.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
 

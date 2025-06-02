@@ -31,8 +31,8 @@
 	  "description2": "makes document editing fast and hassle-free."
     },
     "feature_2": {
-      "title": "Translate documents to HTML/CSS",
-      "description": "Translate documents to HTML/CSS markup compatible with WYSIWYG editors, allowing easy and efficient document editing in a web environment."
+      "title": "Convert documents to HTML/CSS",
+      "description": "Convert documents to pure HTML/CSS markup compatible with WYSIWYG editors, allowing easy and efficient document editing in a web environment."
     },
     "feature_3": {
       "title": "Save edited documents in various formats",
@@ -41,8 +41,8 @@
   },
   "formats": {
     "title": "Supported file formats",
-    "description": "supports operations with the following",
-	"file_formats": "file formats",
+    "description": "GroupDocs.Editor supports operations with the following file formats on import and export",
+	"full_list": "full list",
     "groups": {
       "title_1": "Microsoft Office formats",
       "title_2": "Other document formats",
@@ -58,8 +58,8 @@
     }
   },
   "features": {
-    "features": "features",
-    "description": "Seamlessly edit and save in different formats Office documents, Emails, eBooks, and PDF.",
+    "features": "Main features",
+    "description": "Seamlessly load, edit and save in different formats Office documents, Emails, eBooks, and PDF.",
     "feature_1": {
       "title": "Edit files",
       "content": "Edit the content of various document formats including PDF, DOCX, XLSX, PPTX, and more."
@@ -100,37 +100,45 @@
   "code_samples": {
     "title": "Code samples",
     "description": "Some use cases of typical operations using",
-    "sample_1": {
-      "title": "Edit particular worksheet of XLSX and save it separately and as part of original document",
-      "content_1": "The Spreadsheet document (like XLS, XLSX, XLSM, ODS and so on) may have one or more worksheets (tabs). The GroupDocs.Editor allows to edit content of one worksheet at a time. After being edited, this worksheet may be saved to the separate Spreadsheet document (where only this specific worksheet will be saved), or the GroupDocs.Editor can insert edited worksheet back to the original document, where it can either replace the original worksheet or be saved together, along with original one. Below is an example of how to save edited worksheet in all three ways. More on that ",
-	  "here": "here",
-      "code_title": "Edit particular worksheet of XLSX",
-	  "comment_1": "Create Editor class by loading an input document as path or stream",
-	  "comment_2": "Create and adjust the edit options",
-	  "comment_3": "select a tab (worksheet) to edit by 0-based index. For example, edit 2nd tab",
-	  "comment_4": "Open document for edit and obtain EditableDocument",
-    },
-    "sample_2": {
-      "title": "Edit password-protected DOCX and save it as password-protected DOCX and PDF",
-      "content_1": "The GroupDocs.Editor allows to work with encrypted documents, protected with password — it can open such files and also apply password protection to the output documents. This example shows how to specify password for editing input DOCX document, edit its content and then save it to the output DOCX and PDF, and to protect both these DOCX and PDF files with different passwords. More on that",
-	  "here": "here",
-      "code_title": "Edit password-protected DOCX and save it as password-protected DOCX and PDF"
-    }
+	"sample_3": {
+		"title": "Replace text in DOCX and save it in various formats",
+		"description": "This example shows loading and editing a content of the input DOCX file programmatically by replacing some text content on another. After that the modified document content is saved as DOCX, PDF and TXT (plain text).",
+		"code_title": "Edit input DOCX by replacing some text and save it in DOCX, PDF, and TXT",
+		"comment_1": "Load input document by path and specify load options if necessary",
+		"comment_2": "Open document for edit and obtain `EditableDocument`",
+		"comment_3": "Replace some text - this emulates the content editing",
+		"comment_4": "Create new `EditableDocument` from edited document content",
+		"comment_5": "Save edited document content to DOCX",
+		"comment_6": "Save edited document content to PDF",
+		"comment_7": "Save edited document content to TXT (plain text)",
+		"comment_8": "Dispose all resources",
+	},
+	"sample_4": {
+		"title": "Edit content of particular Excel worksheet",
+		"description": "The Spreadsheet document (like XLS, XLSX, XLSM, ODS and so on) may have one or more worksheets (tabs). GroupDocs.Editor allows to edit content of one worksheet at a time. After being edited, this worksheet may be saved to the separate Spreadsheet document (where only this specific worksheet will be saved), or the edited worksheet can be inserted back to the original document, where it can either replace the original worksheet or be saved together, along with original one. This example shows loading XLSX document, editing its 2nd worksheet and saving it as a new separate document in XLSX and CSV formats.",
+		"code_title": "Edit particular worksheet of XLSX and save as XLSX and CSV",
+		"comment_1": "Load input XLSX by path and specify load options if necessary",
+		"comment_2": "Create and adjust the edit options - set 2nd worksheet to edit",
+		"comment_3": "Open this 2nd worksheet for edit and obtain `EditableDocument`",
+		"comment_4": "Replace some text - this emulates the content editing",
+		"comment_5": "Create new `EditableDocument` from edited content of worksheet",
+		"comment_6": "Save edited worksheet to new XLSX document",
+		"comment_7": "Save edited worksheet to new CSV document with comma (,) delimiter/separator",
+		"comment_8": "Dispose all resources",
+	}
   },
   "platforms": {
     "title": "Platform independence",
-    "description": "GroupDocs.Editor for .NET supports the following operating systems, frameworks, and package managers."
+    "description": "Following operating systems, frameworks, and package managers are supported"
   },
   "code": {
     "title": "Edit document files in .NET",
     "more": "More examples",
     "notes": "See what’s new",
-	"comment_1": "Create Editor class by loading an input document by its path or a stream",
+	"comment_1": "Load document to the Editor class constructor",
 	"comment_2": "Open document for edit and obtain EditableDocument",
-	"comment_3": "Obtain document content as base64-embedded string with HTML and CSS markup inside",
-	"comment_4": "Send this markup to HTML WYSIWYG-editor, edit there and obtain edited content",
-	"comment_5": "Create EditableDocument from edited document content",
-	"comment_6": "Specify saving options and format, and save edited document to the file or stream",
-	"comment_inner": "document content after editing",
+	"comment_3": "Obtain content as a string with HTML-markup",
+	"comment_4": "Emulate content editing in external HTML-editor",	
+	"comment_5": "Save edited document content to selected location and format",
   }
 }

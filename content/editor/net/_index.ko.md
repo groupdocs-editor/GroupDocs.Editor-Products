@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T20:58:12
+date: 2025-06-02T20:43:17
 draft: false
 
 product: "Editor"
@@ -54,22 +54,19 @@ code:
   content: |
     ```csharp {style=abap}   
     // {code.comment_1}
-    Editor editor = new Editor("full/path/to/sample/file.docx");
+    Editor editor = new Editor("input.docx");
 
     // {code.comment_2}
     EditableDocument original = editor.Edit();
 
     // {code.comment_3}
     string originalContent = original.GetEmbeddedHtml();
-
+    
     // {code.comment_4}
-    string editedContent = /* {code.comment_inner} */;
-
+    string modifiedContent = originalContent.Replace("Old content", "New content");
+    
     // {code.comment_5}
-    EditableDocument edited = EditableDocument.FromMarkup(editedContent, null);
-
-    // {code.comment_6}
-    editor.Save(edited, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
+    editor.Save(EditableDocument.FromMarkup(modifiedContent, null), "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
     ```
 
 ############################# Overview ############################
@@ -127,7 +124,7 @@ formats:
   enable: true
   title: "지원되는 파일 형식"
   description: |
-    GroupDocs.Editor for .NET .NET용 GroupDocs.Editor는 다음 [파일 형식](https://docs.groupdocs.com/editor/net/supported-document-formats/)을 사용한 작업을 지원합니다. [{formats.file_formats}](https://docs.groupdocs.com/editor/net/supported-document-formats/).
+    .NET용 GroupDocs.Editor는 다음 [파일 형식](https://docs.groupdocs.com/editor/net/supported-document-formats/)을 사용한 작업을 지원합니다. ([{formats.full_list}](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
@@ -155,7 +152,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "GroupDocs.Editor for .NET {features.features}"
+  title: "{features.features}"
   description: "PDF 및 Office 문서를 원활하게 편집, 번역, 저장하세요."
 
   items:
@@ -211,98 +208,67 @@ code_samples:
   description: ".NET 작업을 위한 일반적인 GroupDocs.Editor의 일부 사용 사례입니다. GroupDocs.Editor for .NET"
   items:
     # code sample loop
-    - title: "특정 DOCX 파일 콘텐츠 편집"
+    - title: "{code_samples.sample_3.title}"
       content: |
-        [문서 편집](https://docs.groupdocs.com/editor/net/edit-document/) 기능을 사용하면 DOCX 파일을 로드, 편집, 저장할 수 있습니다. [{code_samples.sample_1.here}](https://docs.groupdocs.com/editor/net/inserting-edited-worksheet-into-existing-spreadsheet/).
-        {{< landing/code title="C#에서 DOCX 파일을 편집하는 방법">}}
-        ```csharp {style=abap}   
-
-        // {code_samples.sample_1.comment_1}
-        Editor editor = new Editor(File.OpenRead("full/path/to/sample/file.xlsx"));
+        {code_samples.sample_3.description} 
+        {{< landing/code title="{code_samples.sample_3.code_title}">}}
+        ```csharp {style=abap}
         
-        // {code_samples.sample_1.comment_2}
-        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
-        editOptions.WorksheetIndex = 1;//{code_samples.sample_1.comment_3}
+        // {code_samples.sample_3.comment_1}
+        Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // {code_samples.sample_1.comment_4}
-        EditableDocument original = editor.Edit(editOptions);
+        // {code_samples.sample_3.comment_2}
+        EditableDocument original = editor.Edit();
         
-        // Grab content of the selected worksheet and associated resources from editable document
-        string content = original.GetContent();
+        // {code_samples.sample_3.comment_3}
+        string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
         
-        // Grab the resources (images, fonts, stylesheet) of selected worksheet
-        List<IHtmlResource> resources = original.AllResources;
-
-        // Send the content to WYSIWYG-editor, edit it there, and send edited content back to the server-side
-        // This step simulates a such operation
-        string updatedContent = content.Replace("Cell Text", "Edited Cell Text");
+        // {code_samples.sample_3.comment_4}
+        EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
         
-        // Grab edited content and resources from WYSIWYG-editor and create a new EditableDocument instance from it
-        EditableDocument edited = EditableDocument.FromMarkup(updatedContent, resources);
+        // {code_samples.sample_3.comment_5}
+        editor.Save(edited, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
         
-        // First - save as separate Spreadsheet with single worksheet
-        // Create a save options and select a desired output format - XLSM for example
-        SpreadsheetSaveOptions saveOptionsSeparate = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsm);
+        // {code_samples.sample_3.comment_6}
+        editor.Save(edited, "output.pdf", new PdfSaveOptions());
         
-        // Save edited worksheet to the separate XLSM file
-        editor.Save(edited, "Edited_worksheet_only.xlsm", saveOptionsSeparate);
+        // {code_samples.sample_3.comment_7}
+        editor.Save(edited, "output.txt", new TextSaveOptions());
         
-        // Second - insert edited worksheet into original Spreadsheet file by replacing the old worksheet onto edited
-        // Create another save options with XLSx format at this time
-        SpreadsheetSaveOptions saveOptionsReplace = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
-        saveOptionsReplace.WorksheetNumber = 2;//1-based number of worksheet to replace
-        
-        editor.Save(edited, "Edited_worksheet_replaced.xlsx", saveOptionsReplace);
-        
-        // Third - insert edited worksheet into original Spreadsheet file to be placed together with old
-        SpreadsheetSaveOptions saveOptionsTogether = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
-        saveOptionsTogether.WorksheetNumber = -1; // new worsksheet will be last one
-        saveOptionsTogether.InsertAsNewWorksheet = true;//Store original and edited worksheet together, but not replace original with edited
-        
-        editor.Save(edited, "Edited_worksheet_together.xlsx", saveOptionsTogether);
+        // {code_samples.sample_3.comment_8}
+        edited.Dispose(); original.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "Word 문서에서 양식 필드 편집"
+    - title: "{code_samples.sample_4.title}"
       content: |
-        .NET용 GroupDocs.Editor를 사용하여 Word 문서 내의 양식 필드를 쉽게 편집할 수 있습니다. [{code_samples.sample_2.here}](https://docs.groupdocs.com/editor/net/output-format-and-password/).
-        {{< landing/code title=".NET용 GroupDocs.Editor를 사용하여 Word 문서의 양식 필드를 편집하는 방법">}}
+        {code_samples.sample_4.description}
+        {{< landing/code title="{code_samples.sample_4.code_title}">}}
         ```csharp {style=abap}
         
-        // Prepare loading options and specify password
-        WordProcessingLoadOptions loadOptions = new WordProcessingLoadOptions();
-        loadOptions.Password = "password";
-
-        // Create Editor class by loading an input document and specifying load options
-        Editor editor = new Editor("full/path/to/sample/file.docx", loadOptions);
-
-        // Open document for edit and obtain EditableDocument
-        EditableDocument original = editor.Edit();
-
-        // Obtain document content as base64-embedded string with HTML and CSS markup inside
-        string originalDocumentContentAsBase64 = original.GetEmbeddedHtml();
-
-        // Send this markup to HTML WYSIWYG-editor and edit there
-        // For example, some simple edit
-        string editedDocumentContentAsBase64 = originalDocumentContentAsBase64.Replace("Document title", "Edited Document title");
-
-        // Create EditableDocument from edited document content
-        EditableDocument edited = EditableDocument.FromMarkup(editedDocumentContentAsBase64, null);
-
-        //Create saving options into WordProcessing-DOCX and specify password
-        WordProcessingSaveOptions docxSaveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
-        docxSaveOptions.Password = "docx-password";
-
-        //Create saving options into PDF and specify password
-        PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
-        pdfSaveOptions.Password = "pdf-password";
-
-        // Save edited content to the DOCX file
-        editor.Save(edited, "output.docx", docxSaveOptions);
-
-        // Save edited content to the PDF file
-        editor.Save(edited, "output.pdf", pdfSaveOptions);
-
+        // {code_samples.sample_4.comment_1}
+        Editor editor = new Editor("input.xlsx", new SpreadsheetLoadOptions());
+        
+        // {code_samples.sample_4.comment_2}
+        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions() { WorksheetIndex = 1 } ;
+        
+        // {code_samples.sample_4.comment_3}
+        EditableDocument originalWorksheet = editor.Edit(editOptions);
+        
+        // {code_samples.sample_4.comment_4}
+        string modifiedContent = originalWorksheet.GetEmbeddedHtml().Replace("Cell Text", "Edited Cell Text");
+        
+        // {code_samples.sample_4.comment_5}
+        EditableDocument editedWorksheet = EditableDocument.FromMarkup(modifiedContent, null);
+        
+        // {code_samples.sample_4.comment_6}
+        editor.Save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
+        
+        // {code_samples.sample_4.comment_7}
+        editor.Save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
+        
+        // {code_samples.sample_4.comment_8}
+        editedWorksheet.Dispose(); originalWorksheet.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
 

@@ -74,7 +74,7 @@ formats:
   enable: true
   title: "<% "{formats.title}" %>"
   description: |
-    GroupDocs.Editor for <% dict "products.{product}.name" %> <% "{formats.description}" %> [<% "{formats.file_formats}" %>](https://docs.groupdocs.com/editor/net/supported-document-formats/).
+    <% "{formats.description}" %> ([<% "{formats.full_list}" %>](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
@@ -102,7 +102,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "GroupDocs.Editor for <% dict "products.{product}.name" %> <% "{features.features}" %>"
+  title: "<% "{features.features}" %>"
   description: "<% "{features.description}" %>"
 
   items:

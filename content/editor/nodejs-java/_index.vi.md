@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T20:58:12
+date: 2025-06-02T20:43:17
 draft: false
 
 product: "Editor"
@@ -119,7 +119,7 @@ formats:
   enable: true
   title: "{formats.title}"
   description: |
-    GroupDocs.Editor for Node.js via Java {formats.description} [{formats.file_formats}](https://docs.groupdocs.com/editor/net/supported-document-formats/).
+    {formats.description} ([{formats.full_list}](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
@@ -147,7 +147,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "GroupDocs.Editor for Node.js via Java {features.features}"
+  title: "{features.features}"
   description: "{features.description}"
 
   items:

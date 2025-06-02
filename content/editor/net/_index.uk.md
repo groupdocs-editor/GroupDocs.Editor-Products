@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T20:58:12
+date: 2025-06-02T20:43:17
 draft: false
 
 product: "Editor"
@@ -53,23 +53,20 @@ code:
   install: "dotnet add package GroupDocs.Editor"
   content: |
     ```csharp {style=abap}   
-    // Створіть клас редактора, завантажуючи вхідний документ за його шляхом або потоком
-    Editor editor = new Editor("full/path/to/sample/file.docx");
+    // Завантажити документ до конструктора класу редактора
+    Editor editor = new Editor("input.docx");
 
     // Відкрийте документ для редагування та отримання редагування
     EditableDocument original = editor.Edit();
 
-    // Отримайте вміст документа як рядок, вбудований на Base64, з розміткою HTML та CSS всередині
+    // Отримайте вміст у вигляді рядка з HTML-markup
     string originalContent = original.GetEmbeddedHtml();
-
-    // Надішліть цю розмітку HTML Wysiwyg-Editor, редагувати там та отримати відредагований вміст
-    string editedContent = /* вміст документа після редагування */;
-
-    // Створіть редагування з відредагованим вмістом документа
-    EditableDocument edited = EditableDocument.FromMarkup(editedContent, null);
-
-    // Вкажіть параметри збереження та формат, а також збережіть відредагований документ у файлі або потоці
-    editor.Save(edited, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
+    
+    // Емулювати редагування вмісту у зовнішньому HTML-редакторі
+    string modifiedContent = originalContent.Replace("Old content", "New content");
+    
+    // Зберегти відредагований вміст документа до вибраного місця та формату
+    editor.Save(EditableDocument.FromMarkup(modifiedContent, null), "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
     ```
 
 ############################# Overview ############################
@@ -83,8 +80,8 @@ overview:
       content: "Безперешкодно редагувати кілька PDF та офісних файлів із підтримкою широкого спектру форматів. GroupDocs.Editor for .NET робить редагування документів швидким та безпроблемним."
 
     # feature loop
-    - title: "Перекладіть документи на HTML/CSS"
-      content: "Перекладіть документи на розмітку HTML/CSS, сумісну з редакторами WYSIWYG, що дозволяє легко та ефективно редагувати документи у веб -середовищі."
+    - title: "Перетворити документи в HTML/CSS"
+      content: "Перетворити документи в чисту розмітку HTML/CSS, сумісну з редакторами WYSIWYG, що дозволяє легко та ефективно редагувати документи у веб -середовищі."
 
     # feature loop
     - title: "Зберегти відредаговані документи в різних форматах"
@@ -94,7 +91,7 @@ overview:
 platforms:
   enable: true
   title: "Незалежність платформи"
-  description: "GroupDocs.editor для .NET підтримує наступні операційні системи, рамки та менеджерів пакетів."
+  description: "Після операційних систем підтримуються рамки та менеджери пакетів"
   items:
     # platform loop
     - title: "Amazon"
@@ -127,7 +124,7 @@ formats:
   enable: true
   title: "Підтримувані формати файлів"
   description: |
-    GroupDocs.Editor for .NET підтримує операції з наступним [Формати файлів](https://docs.groupdocs.com/editor/net/supported-document-formats/).
+    GroupDocs.editor підтримує операції з наступними форматами файлів щодо імпорту та експорту ([Повний список](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
@@ -155,8 +152,8 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "GroupDocs.Editor for .NET особливості"
-  description: "Безперешкодно редагувати та зберігати в різних форматах офісних документів, електронних листів, електронних книгах та PDF."
+  title: "Основні особливості"
+  description: "Безперешкодно завантажувати, редагувати та зберігати в різних форматах офісних документів, електронних листів, електронних книгах та PDF."
 
   items:
     # feature loop
@@ -192,7 +189,7 @@ features:
     # feature loop
     - icon: "extract"
       title: "Редагувати електронну пошту"
-      content: "Редагувати та зберігати повідомлення та листи електронної пошти в MSG, EML, EMLX, Mbox та багатьох інших форматах, включаючи редагування метаданих, як предмет, до CC, BCC, від, назва, дата тощо."
+      content: "Відредагуйте та збережіть електронні повідомлення та листи в MSG, EML, EMLX, Mbox та багатьох інших форматах, включаючи редагування метаданих, як предмет, до CC, BCC, від, назва, дата тощо."
 
     # feature loop
     - icon: "orientation"
@@ -211,98 +208,67 @@ code_samples:
   description: "Деякі випадки використання типових операцій з використанням GroupDocs.Editor for .NET"
   items:
     # code sample loop
-    - title: "Відредагуйте особливий робочий аркуш XLSX та збережіть його окремо та як частину оригінального документа"
+    - title: "Замініть текст у DOCX та збережіть його в різних форматах"
       content: |
-        У документі електронної таблиці (наприклад, XLS, XLSX, XLSM, ODS тощо) може мати один або кілька робочих таблиць (вкладок). GroupDocs.editor дозволяє редагувати вміст одного робочого аркуша одночасно. Після редагування цей робочий аркуш може бути збережений до окремого документа з електронною таблицею (де буде збережено лише цей конкретний робочий аркуш), або GroupDocs.editor може вставити відредагований робочий аркуш назад до оригінального документа, де він може замінити оригінальний робочий аркуш, або бути збереженим разом, а також оригінальний. Нижче наведено приклад того, як зберегти відредагований робочий аркуш усіма трьома способами. Детальніше про це [ось](https://docs.groupdocs.com/editor/net/inserting-edited-worksheet-into-existing-spreadsheet/).
-        {{< landing/code title="Редагувати особливий робочий аркуш XLSX">}}
-        ```csharp {style=abap}   
-
-        // Створіть клас редактора, завантажуючи вхідний документ як шлях або потік
-        Editor editor = new Editor(File.OpenRead("full/path/to/sample/file.xlsx"));
+        Цей приклад показує завантаження та редагування вмісту файлу введення DOCX програмно, замінивши деякий вміст тексту на інший. Після цього модифікований вміст документа зберігається як DOCX, PDF та TXT (звичайний текст). 
+        {{< landing/code title="Редагувати вхідний DOCX, замінивши деякий текст і збережіть його в DOCX, PDF та TXT">}}
+        ```csharp {style=abap}
         
-        // Створіть та відрегулюйте параметри редагування
-        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
-        editOptions.WorksheetIndex = 1;//Виберіть вкладку (робочий аркуш) для редагування на 0 індекс. Наприклад, редагувати 2 -й вкладку
+        // Завантажити вхідний документ шляхом та вкажіть параметри завантаження, якщо це необхідно
+        Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // Відкрийте документ для редагування та отримання редагування
-        EditableDocument original = editor.Edit(editOptions);
+        // Відкрийте документ для редагування та отримання `editabledocument`
+        EditableDocument original = editor.Edit();
         
-        // Grab content of the selected worksheet and associated resources from editable document
-        string content = original.GetContent();
+        // Замініть трохи тексту - це імітує редагування вмісту
+        string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
         
-        // Grab the resources (images, fonts, stylesheet) of selected worksheet
-        List<IHtmlResource> resources = original.AllResources;
-
-        // Send the content to WYSIWYG-editor, edit it there, and send edited content back to the server-side
-        // This step simulates a such operation
-        string updatedContent = content.Replace("Cell Text", "Edited Cell Text");
+        // Створіть новий `editabledocument 'із відредагованого вмісту документа
+        EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
         
-        // Grab edited content and resources from WYSIWYG-editor and create a new EditableDocument instance from it
-        EditableDocument edited = EditableDocument.FromMarkup(updatedContent, resources);
+        // Зберегти відредагований вміст документа на DOCX
+        editor.Save(edited, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
         
-        // First - save as separate Spreadsheet with single worksheet
-        // Create a save options and select a desired output format - XLSM for example
-        SpreadsheetSaveOptions saveOptionsSeparate = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsm);
+        // Зберегти відредагований вміст документа на PDF
+        editor.Save(edited, "output.pdf", new PdfSaveOptions());
         
-        // Save edited worksheet to the separate XLSM file
-        editor.Save(edited, "Edited_worksheet_only.xlsm", saveOptionsSeparate);
+        // Зберегти відредагований вміст документа на TXT (звичайний текст)
+        editor.Save(edited, "output.txt", new TextSaveOptions());
         
-        // Second - insert edited worksheet into original Spreadsheet file by replacing the old worksheet onto edited
-        // Create another save options with XLSx format at this time
-        SpreadsheetSaveOptions saveOptionsReplace = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
-        saveOptionsReplace.WorksheetNumber = 2;//1-based number of worksheet to replace
-        
-        editor.Save(edited, "Edited_worksheet_replaced.xlsx", saveOptionsReplace);
-        
-        // Third - insert edited worksheet into original Spreadsheet file to be placed together with old
-        SpreadsheetSaveOptions saveOptionsTogether = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
-        saveOptionsTogether.WorksheetNumber = -1; // new worsksheet will be last one
-        saveOptionsTogether.InsertAsNewWorksheet = true;//Store original and edited worksheet together, but not replace original with edited
-        
-        editor.Save(edited, "Edited_worksheet_together.xlsx", saveOptionsTogether);
+        // Утилізувати все
+        edited.Dispose(); original.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "Редагувати захищений від пароля DOCX та збережіть його як захищений від пароля DOCX та PDF"
+    - title: "Редагувати вміст конкретного робочого аркуша Excel"
       content: |
-        GroupDocs.editor дозволяє співпрацювати з зашифрованими документами, захищеними паролем - він може відкрити такі файли, а також застосовувати захист пароля до вихідних документів. Цей приклад показує, як вказати пароль для редагування вхідного документа Docx, відредагуйте його вміст, а потім зберегти його у вихідному DOCX та PDF, а також захистити ці файли DOCX та PDF з різними паролями. Детальніше про це [ось](https://docs.groupdocs.com/editor/net/output-format-and-password/).
-        {{< landing/code title="Редагувати захищений від пароля DOCX та збережіть його як захищений від пароля DOCX та PDF">}}
+        У документі електронної таблиці (наприклад, XLS, XLSX, XLSM, ODS тощо) може мати один або кілька робочих таблиць (вкладок). GroupDocs.editor дозволяє редагувати вміст одного робочого аркуша одночасно. Після редагування цей робочий аркуш може бути збережений до окремого документа з електронною таблицею (де буде збережено лише цей конкретний робочий аркуш), або відредагований робочий аркуш може бути вставлений назад до оригінального документа, де він може замінити оригінальний робочий аркуш або бути збереженим разом, а також оригінальний. Цей приклад показує завантаження документа XLSX, редагування його другого робочого листа та збереження його як нового окремого документа у форматах XLSX та CSV.
+        {{< landing/code title="Редагувати конкретний робочий аркуш XLSX та зберегти як XLSX та CSV">}}
         ```csharp {style=abap}
         
-        // Prepare loading options and specify password
-        WordProcessingLoadOptions loadOptions = new WordProcessingLoadOptions();
-        loadOptions.Password = "password";
-
-        // Create Editor class by loading an input document and specifying load options
-        Editor editor = new Editor("full/path/to/sample/file.docx", loadOptions);
-
-        // Open document for edit and obtain EditableDocument
-        EditableDocument original = editor.Edit();
-
-        // Obtain document content as base64-embedded string with HTML and CSS markup inside
-        string originalDocumentContentAsBase64 = original.GetEmbeddedHtml();
-
-        // Send this markup to HTML WYSIWYG-editor and edit there
-        // For example, some simple edit
-        string editedDocumentContentAsBase64 = originalDocumentContentAsBase64.Replace("Document title", "Edited Document title");
-
-        // Create EditableDocument from edited document content
-        EditableDocument edited = EditableDocument.FromMarkup(editedDocumentContentAsBase64, null);
-
-        //Create saving options into WordProcessing-DOCX and specify password
-        WordProcessingSaveOptions docxSaveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
-        docxSaveOptions.Password = "docx-password";
-
-        //Create saving options into PDF and specify password
-        PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
-        pdfSaveOptions.Password = "pdf-password";
-
-        // Save edited content to the DOCX file
-        editor.Save(edited, "output.docx", docxSaveOptions);
-
-        // Save edited content to the PDF file
-        editor.Save(edited, "output.pdf", pdfSaveOptions);
-
+        // Завантажити вхід xlsx шляхом і вкажіть параметри завантаження, якщо це необхідно
+        Editor editor = new Editor("input.xlsx", new SpreadsheetLoadOptions());
+        
+        // Створіть та відрегулюйте параметри редагування - Встановіть 2 -й робочий аркуш для редагування
+        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions() { WorksheetIndex = 1 } ;
+        
+        // Відкрийте цей другий робочий аркуш для редагування та отримайте `readitabledocument`
+        EditableDocument originalWorksheet = editor.Edit(editOptions);
+        
+        // Замініть трохи тексту - це імітує редагування вмісту
+        string modifiedContent = originalWorksheet.GetEmbeddedHtml().Replace("Cell Text", "Edited Cell Text");
+        
+        // Створіть новий `editabledocument 'з відредагованого вмісту робочого аркуша
+        EditableDocument editedWorksheet = EditableDocument.FromMarkup(modifiedContent, null);
+        
+        // Зберегти відредагований робочий аркуш до нового документа XLSX
+        editor.Save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
+        
+        // Зберегти редагований робочий аркуш до нового документа CSV з Comma (,) Розмежовкою/сепаратором
+        editor.Save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
+        
+        // Утилізувати все
+        editedWorksheet.Dispose(); originalWorksheet.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
 

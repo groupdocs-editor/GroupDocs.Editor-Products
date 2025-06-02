@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-05-22T20:58:12
+date: 2025-06-02T20:43:17
 draft: false
 
 product: "Editor"
@@ -119,7 +119,7 @@ formats:
   enable: true
   title: "Unterstützte Dateiformate"
   description: |
-    GroupDocs.Editor for Node.js via Java GroupDocs.Editor für Node.js unterstützt Vorgänge mit den folgenden [Dateiformaten](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/). [{formats.file_formats}](https://docs.groupdocs.com/editor/net/supported-document-formats/).
+    GroupDocs.Editor für Node.js unterstützt Vorgänge mit den folgenden [Dateiformaten](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/). ([{formats.full_list}](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
@@ -147,7 +147,7 @@ formats:
 ############################# Features ############################
 features:
   enable: true
-  title: "GroupDocs.Editor for Node.js via Java {features.features}"
+  title: "{features.features}"
   description: "Bearbeiten, übersetzen und speichern Sie PDF- und Office-Dokumente nahtlos."
 
   items:
