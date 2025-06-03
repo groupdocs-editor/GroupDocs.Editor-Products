@@ -139,6 +139,7 @@
 	"comment_2": "Open document for edit and obtain EditableDocument",
 	"comment_3": "Obtain content as a string with HTML-markup",
 	"comment_4": "Emulate content editing in external HTML-editor",	
-	"comment_5": "Save edited document content to selected location and format",
+	"comment_5": "Create new document from edited content",
+	"comment_6": "Save edited document to file with desired format",
   }
 }

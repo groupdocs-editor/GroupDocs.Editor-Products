@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-02T20:43:17
+date: 2025-06-03T13:42:20
 draft: false
 
 product: "Editor"
@@ -57,16 +57,19 @@ code:
     Editor editor = new Editor("input.docx");
 
     // Відкрийте документ для редагування та отримання редагування
-    EditableDocument original = editor.Edit();
+    EditableDocument originalDoc = editor.Edit();
 
     // Отримайте вміст у вигляді рядка з HTML-markup
-    string originalContent = original.GetEmbeddedHtml();
+    string originalHtml = originalDoc.GetEmbeddedHtml();
     
     // Емулювати редагування вмісту у зовнішньому HTML-редакторі
-    string modifiedContent = originalContent.Replace("Old content", "New content");
+    string editedHtml = originalHtml.Replace("Old text", "New text");
     
-    // Зберегти відредагований вміст документа до вибраного місця та формату
-    editor.Save(EditableDocument.FromMarkup(modifiedContent, null), "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
+    // Створіть новий документ із відредагованого вмісту
+    EditableDocument editedDoc = EditableDocument.FromMarkup(editedHtml, null);
+    
+    // Зберегти відредагований документ для подачі з бажаним форматом
+    editor.Save(editedDoc, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
     ```
 
 ############################# Overview ############################
@@ -189,7 +192,7 @@ features:
     # feature loop
     - icon: "extract"
       title: "Редагувати електронну пошту"
-      content: "Відредагуйте та збережіть електронні повідомлення та листи в MSG, EML, EMLX, Mbox та багатьох інших форматах, включаючи редагування метаданих, як предмет, до CC, BCC, від, назва, дата тощо."
+      content: "Редагувати та зберігати повідомлення та листи електронної пошти в MSG, EML, EMLX, Mbox та багатьох інших форматах, включаючи редагування метаданих, як предмет, до CC, BCC, від, назва, дата тощо."
 
     # feature loop
     - icon: "orientation"
@@ -235,7 +238,7 @@ code_samples:
         // Зберегти відредагований вміст документа на TXT (звичайний текст)
         editor.Save(edited, "output.txt", new TextSaveOptions());
         
-        // Утилізувати все
+        // Утилізуйте всі ресурси
         edited.Dispose(); original.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
@@ -267,7 +270,7 @@ code_samples:
         // Зберегти редагований робочий аркуш до нового документа CSV з Comma (,) Розмежовкою/сепаратором
         editor.Save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
         
-        // Утилізувати все
+        // Утилізуйте всі ресурси
         editedWorksheet.Dispose(); originalWorksheet.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}

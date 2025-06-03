@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-02T20:43:17
+date: 2025-06-03T13:42:20
 draft: false
 
 product: "Editor"
@@ -57,16 +57,19 @@ code:
     Editor editor = new Editor("input.docx");
 
     // Открыть документ для редактирования и получить EditableDocument
-    EditableDocument original = editor.Edit();
+    EditableDocument originalDoc = editor.Edit();
 
     // Получить контент в качестве строки с HTML-Markup
-    string originalContent = original.GetEmbeddedHtml();
+    string originalHtml = originalDoc.GetEmbeddedHtml();
     
     // Эмулировать редактирование контента во внешнем HTML-редакторе
-    string modifiedContent = originalContent.Replace("Old content", "New content");
+    string editedHtml = originalHtml.Replace("Old text", "New text");
     
-    // Сохранить отредактированный содержимое документа в выбранное местоположение и формат
-    editor.Save(EditableDocument.FromMarkup(modifiedContent, null), "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
+    // Создать новый документ из отредактированного контента
+    EditableDocument editedDoc = EditableDocument.FromMarkup(editedHtml, null);
+    
+    // Сохранить отредактированный документ для файла с помощью желаемого формата
+    editor.Save(editedDoc, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
     ```
 
 ############################# Overview ############################
@@ -235,7 +238,7 @@ code_samples:
         // Сохранить отредактированный содержимое документа в TXT (простой текст)
         editor.Save(edited, "output.txt", new TextSaveOptions());
         
-        // Утилизировать все
+        // Утилизировать все ресурсы
         edited.Dispose(); original.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
@@ -267,7 +270,7 @@ code_samples:
         // Сохранить отредактированный рабочий лист в новый документ CSV с запятой (,) разделитель/сепаратор
         editor.Save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
         
-        // Утилизировать все
+        // Утилизировать все ресурсы
         editedWorksheet.Dispose(); originalWorksheet.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}

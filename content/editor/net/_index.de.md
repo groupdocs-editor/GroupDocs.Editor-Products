@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-02T20:43:17
+date: 2025-06-03T13:42:20
 draft: false
 
 product: "Editor"
@@ -57,16 +57,19 @@ code:
     Editor editor = new Editor("input.docx");
 
     // {code.comment_2}
-    EditableDocument original = editor.Edit();
+    EditableDocument originalDoc = editor.Edit();
 
     // {code.comment_3}
-    string originalContent = original.GetEmbeddedHtml();
+    string originalHtml = originalDoc.GetEmbeddedHtml();
     
     // {code.comment_4}
-    string modifiedContent = originalContent.Replace("Old content", "New content");
+    string editedHtml = originalHtml.Replace("Old text", "New text");
     
     // {code.comment_5}
-    editor.Save(EditableDocument.FromMarkup(modifiedContent, null), "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
+    EditableDocument editedDoc = EditableDocument.FromMarkup(editedHtml, null);
+    
+    // {code.comment_6}
+    editor.Save(editedDoc, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
     ```
 
 ############################# Overview ############################

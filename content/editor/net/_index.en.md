@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-02T20:43:17
+date: 2025-06-03T13:42:20
 draft: false
 
 product: "Editor"
@@ -57,16 +57,19 @@ code:
     Editor editor = new Editor("input.docx");
 
     // Open document for edit and obtain EditableDocument
-    EditableDocument original = editor.Edit();
+    EditableDocument originalDoc = editor.Edit();
 
     // Obtain content as a string with HTML-markup
-    string originalContent = original.GetEmbeddedHtml();
+    string originalHtml = originalDoc.GetEmbeddedHtml();
     
     // Emulate content editing in external HTML-editor
-    string modifiedContent = originalContent.Replace("Old content", "New content");
+    string editedHtml = originalHtml.Replace("Old text", "New text");
     
-    // Save edited document content to selected location and format
-    editor.Save(EditableDocument.FromMarkup(modifiedContent, null), "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
+    // Create new document from edited content
+    EditableDocument editedDoc = EditableDocument.FromMarkup(editedHtml, null);
+    
+    // Save edited document to file with desired format
+    editor.Save(editedDoc, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
     ```
 
 ############################# Overview ############################
