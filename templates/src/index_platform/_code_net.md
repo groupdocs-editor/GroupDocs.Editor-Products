@@ -6,20 +6,21 @@ code:
   content: |
     ```csharp {style=abap}   
     // <% "{code.comment_1}" %>
-    Editor editor = new Editor("input.docx");
+    var editor = new Editor("input.docx");
 
     // <% "{code.comment_2}" %>
-    EditableDocument originalDoc = editor.Edit();
+    var originalDoc = editor.Edit();
 
     // <% "{code.comment_3}" %>
-    string originalHtml = originalDoc.GetEmbeddedHtml();
+    var srcHtml = originalDoc.GetEmbeddedHtml();
     
     // <% "{code.comment_4}" %>
-    string editedHtml = originalHtml.Replace("Old text", "New text");
+    var editedHtml = srcHtml.Replace("Old text", "New text");
     
     // <% "{code.comment_5}" %>
-    EditableDocument editedDoc = EditableDocument.FromMarkup(editedHtml, null);
+    var editedDoc = EditableDocument.FromMarkup(editedHtml, null);
     
     // <% "{code.comment_6}" %>
-    editor.Save(editedDoc, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
+    var saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
+    editor.Save(editedDoc, "output.docx", saveOptions);
     ```

@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-03T13:42:20
+date: 2025-06-05T19:20:33
 draft: false
 
 product: "Editor"
@@ -54,22 +54,23 @@ code:
   content: |
     ```csharp {style=abap}   
     // {code.comment_1}
-    Editor editor = new Editor("input.docx");
+    var editor = new Editor("input.docx");
 
     // {code.comment_2}
-    EditableDocument originalDoc = editor.Edit();
+    var originalDoc = editor.Edit();
 
     // {code.comment_3}
-    string originalHtml = originalDoc.GetEmbeddedHtml();
+    var srcHtml = originalDoc.GetEmbeddedHtml();
     
     // {code.comment_4}
-    string editedHtml = originalHtml.Replace("Old text", "New text");
+    var editedHtml = srcHtml.Replace("Old text", "New text");
     
     // {code.comment_5}
-    EditableDocument editedDoc = EditableDocument.FromMarkup(editedHtml, null);
+    var editedDoc = EditableDocument.FromMarkup(editedHtml, null);
     
     // {code.comment_6}
-    editor.Save(editedDoc, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
+    var saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
+    editor.Save(editedDoc, "output.docx", saveOptions);
     ```
 
 ############################# Overview ############################
@@ -211,34 +212,31 @@ code_samples:
   description: ".NET操作の典型的なGroupDocs.editorのいくつかのユースケース。 GroupDocs.Editor for .NET"
   items:
     # code sample loop
-    - title: "{code_samples.sample_3.title}"
+    - title: "特定のDOCXファイルコンテンツを編集します"
       content: |
-        {code_samples.sample_3.description} 
-        {{< landing/code title="{code_samples.sample_3.code_title}">}}
+        {code_samples.sample_1.description} 
+        {{< landing/code title="c＃でdocxファイルを編集する方法">}}
         ```csharp {style=abap}
         
-        // {code_samples.sample_3.comment_1}
+        // {code_samples.sample_1.comment_1}
         Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // {code_samples.sample_3.comment_2}
+        // {code_samples.sample_1.comment_2}
         EditableDocument original = editor.Edit();
         
-        // {code_samples.sample_3.comment_3}
+        // {code_samples.sample_1.comment_3}
         string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
         
-        // {code_samples.sample_3.comment_4}
+        // {code_samples.sample_1.comment_4}
         EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_3.comment_5}
-        editor.Save(edited, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
+        // {code_samples.sample_1.comment_5}
+        WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
         
-        // {code_samples.sample_3.comment_6}
-        editor.Save(edited, "output.pdf", new PdfSaveOptions());
+        // {code_samples.sample_1.comment_6}
+        editor.Save(edited, "output.docx", saveOptions);        
         
-        // {code_samples.sample_3.comment_7}
-        editor.Save(edited, "output.txt", new TextSaveOptions());
-        
-        // {code_samples.sample_3.comment_8}
+        // {code_samples.sample_1.comment_7}
         edited.Dispose(); original.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
@@ -272,6 +270,32 @@ code_samples:
         
         // {code_samples.sample_4.comment_8}
         editedWorksheet.Dispose(); originalWorksheet.Dispose(); editor.Dispose();
+        ```
+        {{< /landing/code >}}
+    # code sample loop
+    - title: "単語文書でフォームフィールドを編集します"
+      content: |
+        {code_samples.sample_2.description}
+        {{< landing/code title=".NETのgroupDocs.editorを使用して、単語ドキュメントでフォームフィールドを編集する方法">}}
+        ```csharp {style=abap}
+        
+        // {code_samples.sample_2.comment_1}
+        Editor editor = new Editor("input.pdf", new PdfLoadOptions());
+        
+        // {code_samples.sample_2.comment_2}
+        EditableDocument original = editor.Edit();
+        
+        // {code_samples.sample_2.comment_3}
+        string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
+        
+        // {code_samples.sample_2.comment_4}
+        EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
+        
+        // {code_samples.sample_2.comment_5}
+        editor.Save(edited, "output.pdf", new PdfSaveOptions());
+        
+        // {code_samples.sample_2.comment_6}
+        edited.Dispose(); original.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
 

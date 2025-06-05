@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-03T13:42:20
+date: 2025-06-05T19:20:33
 draft: false
 
 product: "Editor"
@@ -53,23 +53,24 @@ code:
   install: "dotnet add package GroupDocs.Editor"
   content: |
     ```csharp {style=abap}   
-    // Завантажити документ до конструктора класу редактора
-    Editor editor = new Editor("input.docx");
+    // Пропустити вихідний документ для ініціалізації редактора
+    var editor = new Editor("input.docx");
 
-    // Відкрийте документ для редагування та отримання редагування
-    EditableDocument originalDoc = editor.Edit();
+    // Відкрити документ для редагування
+    var originalDoc = editor.Edit();
 
-    // Отримайте вміст у вигляді рядка з HTML-markup
-    string originalHtml = originalDoc.GetEmbeddedHtml();
+    // Отримайте документ як HTML
+    var srcHtml = originalDoc.GetEmbeddedHtml();
     
-    // Емулювати редагування вмісту у зовнішньому HTML-редакторі
-    string editedHtml = originalHtml.Replace("Old text", "New text");
+    // Редагувати вміст документа
+    var editedHtml = srcHtml.Replace("Old text", "New text");
     
-    // Створіть новий документ із відредагованого вмісту
-    EditableDocument editedDoc = EditableDocument.FromMarkup(editedHtml, null);
+    // Завантажити відредагований документ з HTML
+    var editedDoc = EditableDocument.FromMarkup(editedHtml, null);
     
     // Зберегти відредагований документ для подачі з бажаним форматом
-    editor.Save(editedDoc, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
+    var saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
+    editor.Save(editedDoc, "output.docx", saveOptions);
     ```
 
 ############################# Overview ############################
@@ -192,7 +193,7 @@ features:
     # feature loop
     - icon: "extract"
       title: "Редагувати електронну пошту"
-      content: "Редагувати та зберігати повідомлення та листи електронної пошти в MSG, EML, EMLX, Mbox та багатьох інших форматах, включаючи редагування метаданих, як предмет, до CC, BCC, від, назва, дата тощо."
+      content: "Відредагуйте та збережіть електронні повідомлення та листи в MSG, EML, EMLX, Mbox та багатьох інших форматах, включаючи редагування метаданих, як предмет, до CC, BCC, від, назва, дата тощо."
 
     # feature loop
     - icon: "orientation"
@@ -211,10 +212,10 @@ code_samples:
   description: "Деякі випадки використання типових операцій з використанням GroupDocs.Editor for .NET"
   items:
     # code sample loop
-    - title: "Замініть текст у DOCX та збережіть його в різних форматах"
+    - title: "Замініть текст у DOCX"
       content: |
-        Цей приклад показує завантаження та редагування вмісту файлу введення DOCX програмно, замінивши деякий вміст тексту на інший. Після цього модифікований вміст документа зберігається як DOCX, PDF та TXT (звичайний текст). 
-        {{< landing/code title="Редагувати вхідний DOCX, замінивши деякий текст і збережіть його в DOCX, PDF та TXT">}}
+        Цей приклад показує завантаження та редагування вмісту файлу введення DOCX програмно, замінивши деякий вміст тексту на інший. Після цього модифікований вміст документа зберігається назад як новий документ DOCX. 
+        {{< landing/code title="Редагувати введення DOCX, замінивши деякий текст, і збережіть його до DOCX">}}
         ```csharp {style=abap}
         
         // Завантажити вхідний документ шляхом та вкажіть параметри завантаження, якщо це необхідно
@@ -229,14 +230,11 @@ code_samples:
         // Створіть новий `editabledocument 'із відредагованого вмісту документа
         EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
         
+        // Підготуйте параметри збереження з потрібним вихідним форматом
+        WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
+        
         // Зберегти відредагований вміст документа на DOCX
-        editor.Save(edited, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
-        
-        // Зберегти відредагований вміст документа на PDF
-        editor.Save(edited, "output.pdf", new PdfSaveOptions());
-        
-        // Зберегти відредагований вміст документа на TXT (звичайний текст)
-        editor.Save(edited, "output.txt", new TextSaveOptions());
+        editor.Save(edited, "output.docx", saveOptions);        
         
         // Утилізуйте всі ресурси
         edited.Dispose(); original.Dispose(); editor.Dispose();
@@ -272,6 +270,32 @@ code_samples:
         
         // Утилізуйте всі ресурси
         editedWorksheet.Dispose(); originalWorksheet.Dispose(); editor.Dispose();
+        ```
+        {{< /landing/code >}}
+    # code sample loop
+    - title: "Замініть текст у PDF"
+      content: |
+        Цей приклад показує завантаження та редагування вмісту вхідного файлу PDF програмно, замінивши деякий вміст тексту на інший. Після цього модифікований вміст документа зберігається назад як новий документ PDF.
+        {{< landing/code title="Редагувати вхід PDF, замінивши деякий текст, і збережіть його до PDF">}}
+        ```csharp {style=abap}
+        
+        // Завантажте PDF -файл шляхом та вкажіть параметри завантаження PDF
+        Editor editor = new Editor("input.pdf", new PdfLoadOptions());
+        
+        // Відкрийте документ для редагування та отримання `editabledocument`
+        EditableDocument original = editor.Edit();
+        
+        // Замініть трохи тексту - це імітує редагування вмісту
+        string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
+        
+        // Створіть новий `editabledocument 'із відредагованого вмісту документа
+        EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
+        
+        // Зберегти відредагований вміст документа на PDF
+        editor.Save(edited, "output.pdf", new PdfSaveOptions());
+        
+        // Утилізуйте всі ресурси
+        edited.Dispose(); original.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
 

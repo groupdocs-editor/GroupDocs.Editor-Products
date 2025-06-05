@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-03T13:42:20
+date: 2025-06-05T19:20:33
 draft: false
 
 product: "Editor"
@@ -53,23 +53,24 @@ code:
   install: "dotnet add package GroupDocs.Editor"
   content: |
     ```csharp {style=abap}   
-    // Загрузить документ в конструктор класса редактора
-    Editor editor = new Editor("input.docx");
+    // Пропустите исходный документ, чтобы инициализировать редактор
+    var editor = new Editor("input.docx");
 
-    // Открыть документ для редактирования и получить EditableDocument
-    EditableDocument originalDoc = editor.Edit();
+    // Открыть документ для редактирования
+    var originalDoc = editor.Edit();
 
-    // Получить контент в качестве строки с HTML-Markup
-    string originalHtml = originalDoc.GetEmbeddedHtml();
+    // Получить документ как html
+    var srcHtml = originalDoc.GetEmbeddedHtml();
     
-    // Эмулировать редактирование контента во внешнем HTML-редакторе
-    string editedHtml = originalHtml.Replace("Old text", "New text");
+    // Редактировать содержимое документа
+    var editedHtml = srcHtml.Replace("Old text", "New text");
     
-    // Создать новый документ из отредактированного контента
-    EditableDocument editedDoc = EditableDocument.FromMarkup(editedHtml, null);
+    // Загрузка отредактированного документа из HTML
+    var editedDoc = EditableDocument.FromMarkup(editedHtml, null);
     
     // Сохранить отредактированный документ для файла с помощью желаемого формата
-    editor.Save(editedDoc, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
+    var saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
+    editor.Save(editedDoc, "output.docx", saveOptions);
     ```
 
 ############################# Overview ############################
@@ -88,7 +89,7 @@ overview:
 
     # feature loop
     - title: "Сохранить отредактированные документы в различных форматах"
-      content: "Сохраните свои отредактированные документы обратно в их первоначальный формат или экспортируют их в другие форматы, такие как PDF, обеспечивая гибкость и совместимость."
+      content: "Сохраните свои отредактированные документы обратно в их первоначальный формат или экспортируйте их в другие форматы, такие как PDF, обеспечивая гибкость и совместимость."
 
 ############################# Platforms ############################
 platforms:
@@ -211,10 +212,10 @@ code_samples:
   description: "Некоторые варианты использования типичных операций с использованием GroupDocs.Editor for .NET"
   items:
     # code sample loop
-    - title: "Замените текст в DOCX и сохраните его в различных форматах"
+    - title: "Заменить текст в Docx"
       content: |
-        В этом примере показана загрузка и редактирование содержимого файла ввода DOCX программно, заменив некоторый текстовый содержимое на другое. После этого модифицированный содержимое документа сохраняется как DOCX, PDF и TXT (простой текст). 
-        {{< landing/code title="Редактировать вход DOCX, заменив немного текста и сохраните его в DOCX, PDF и TXT">}}
+        В этом примере показана загрузка и редактирование содержимого файла ввода DOCX программно, заменив некоторый текстовый содержимое на другое. После этого модифицированный контент документа сохраняется как новый документ DOCX. 
+        {{< landing/code title="Редактировать вход DOCX, заменив немного текста и сохраните его обратно в DOCX">}}
         ```csharp {style=abap}
         
         // Загрузите входной документ по пути и укажите параметры загрузки, если это необходимо, при необходимости
@@ -229,14 +230,11 @@ code_samples:
         // Создать новый `editabledocument` из отредактированного содержимого документа
         EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
         
+        // Подготовьте параметры сохранения с желаемым выводом Formatx
+        WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
+        
         // Сохранить отредактированный контент документа в DOCX
-        editor.Save(edited, "output.docx", new WordProcessingSaveOptions(WordProcessingFormats.Docx));
-        
-        // Сохранить отредактированный контент документа в PDF
-        editor.Save(edited, "output.pdf", new PdfSaveOptions());
-        
-        // Сохранить отредактированный содержимое документа в TXT (простой текст)
-        editor.Save(edited, "output.txt", new TextSaveOptions());
+        editor.Save(edited, "output.docx", saveOptions);        
         
         // Утилизировать все ресурсы
         edited.Dispose(); original.Dispose(); editor.Dispose();
@@ -272,6 +270,32 @@ code_samples:
         
         // Утилизировать все ресурсы
         editedWorksheet.Dispose(); originalWorksheet.Dispose(); editor.Dispose();
+        ```
+        {{< /landing/code >}}
+    # code sample loop
+    - title: "Замените текст в PDF"
+      content: |
+        В этом примере показана загрузка и редактирование содержимого входного файла PDF -файла программно, заменив некоторое текстовое содержимое на другое. После этого модифицированный контент документа сохраняется как новый документ PDF.
+        {{< landing/code title="Редактировать вход PDF, заменив немного текста и сохраните его обратно в PDF">}}
+        ```csharp {style=abap}
+        
+        // Загрузите файл PDF по пути и укажите параметры загрузки PDF
+        Editor editor = new Editor("input.pdf", new PdfLoadOptions());
+        
+        // Открыть документ для редактирования и получить `editabledocument`
+        EditableDocument original = editor.Edit();
+        
+        // Замените немного текста - это эмулирует редактирование контента
+        string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
+        
+        // Создать новый `editabledocument` из отредактированного содержимого документа
+        EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
+        
+        // Сохранить отредактированный контент документа в PDF
+        editor.Save(edited, "output.pdf", new PdfSaveOptions());
+        
+        // Утилизировать все ресурсы
+        edited.Dispose(); original.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
 
