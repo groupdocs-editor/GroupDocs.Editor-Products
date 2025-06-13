@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-05T19:20:33
+date: 2025-06-06T23:23:37
 draft: false
 
 product: "Editor"
@@ -47,7 +47,7 @@ release:
   downloads: "Завантаження"
 
 code:
-  title: "Редагувати файли документів у .NET"
+  title: "Редагувати документи в .net"
   more: "Більше прикладів"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
   install: "dotnet add package GroupDocs.Editor"
@@ -70,7 +70,7 @@ code:
     
     // Зберегти відредагований документ для подачі з бажаним форматом
     var saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
-    editor.Save(editedDoc, "output.docx", saveOptions);
+   editor.Save(editedDoc, "output.docx", saveOptions);
     ```
 
 ############################# Overview ############################
@@ -193,7 +193,7 @@ features:
     # feature loop
     - icon: "extract"
       title: "Редагувати електронну пошту"
-      content: "Відредагуйте та збережіть електронні повідомлення та листи в MSG, EML, EMLX, Mbox та багатьох інших форматах, включаючи редагування метаданих, як предмет, до CC, BCC, від, назва, дата тощо."
+      content: "Редагувати та зберігати повідомлення та листи електронної пошти в MSG, EML, EMLX, Mbox та багатьох інших форматах, включаючи редагування метаданих, як предмет, до CC, BCC, від, назва, дата тощо."
 
     # feature loop
     - icon: "orientation"
@@ -214,20 +214,20 @@ code_samples:
     # code sample loop
     - title: "Замініть текст у DOCX"
       content: |
-        Цей приклад показує завантаження та редагування вмісту файлу введення DOCX програмно, замінивши деякий вміст тексту на інший. Після цього модифікований вміст документа зберігається назад як новий документ DOCX. 
-        {{< landing/code title="Редагувати введення DOCX, замінивши деякий текст, і збережіть його до DOCX">}}
+        Цей приклад показує завантаження та редагування вмісту файлу введення Docx програмно, замінюючи вміст тексту на інший. Після цього модифікований вміст документа зберігається назад як новий документ DOCX. 
+        {{< landing/code title="Редагувати введення DOCX, замінивши текст і збережіть його до DOCX">}}
         ```csharp {style=abap}
         
         // Завантажити вхідний документ шляхом та вкажіть параметри завантаження, якщо це необхідно
         Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // Відкрийте документ для редагування та отримання `editabledocument`
+        // Відкрийте документ для редагування та отримання "редакції"
         EditableDocument original = editor.Edit();
         
-        // Замініть трохи тексту - це імітує редагування вмісту
+        // Замінити текст - це імітує редагування вмісту
         string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
         
-        // Створіть новий `editabledocument 'із відредагованого вмісту документа
+        // Створіть новий екземпляр "редагувати" з відредагованого вмісту
         EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
         
         // Підготуйте параметри збереження з потрібним вихідним форматом
@@ -253,13 +253,13 @@ code_samples:
         // Створіть та відрегулюйте параметри редагування - Встановіть 2 -й робочий аркуш для редагування
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions() { WorksheetIndex = 1 } ;
         
-        // Відкрийте цей другий робочий аркуш для редагування та отримайте `readitabledocument`
+        // Відкрийте цей 2 -й робочий аркуш для редагування та отримайте "редагувати"
         EditableDocument originalWorksheet = editor.Edit(editOptions);
         
-        // Замініть трохи тексту - це імітує редагування вмісту
+        // Замінити текст - це імітує редагування вмісту
         string modifiedContent = originalWorksheet.GetEmbeddedHtml().Replace("Cell Text", "Edited Cell Text");
         
-        // Створіть новий `editabledocument 'з відредагованого вмісту робочого аркуша
+        // Створіть новий екземпляр "EditAbledocument" з відредагованого робочого аркуша
         EditableDocument editedWorksheet = EditableDocument.FromMarkup(modifiedContent, null);
         
         // Зберегти відредагований робочий аркуш до нового документа XLSX
@@ -275,20 +275,20 @@ code_samples:
     # code sample loop
     - title: "Замініть текст у PDF"
       content: |
-        Цей приклад показує завантаження та редагування вмісту вхідного файлу PDF програмно, замінивши деякий вміст тексту на інший. Після цього модифікований вміст документа зберігається назад як новий документ PDF.
-        {{< landing/code title="Редагувати вхід PDF, замінивши деякий текст, і збережіть його до PDF">}}
+        Цей приклад показує завантаження та редагування вмісту вхідного файлу PDF програмно, замінюючи вміст тексту на інший. Після цього модифікований вміст документа зберігається назад як новий документ PDF.
+        {{< landing/code title="Редагувати вхід PDF, замінивши текст і збережіть його до PDF">}}
         ```csharp {style=abap}
         
         // Завантажте PDF -файл шляхом та вкажіть параметри завантаження PDF
         Editor editor = new Editor("input.pdf", new PdfLoadOptions());
         
-        // Відкрийте документ для редагування та отримання `editabledocument`
+        // Відкрийте документ для редагування та отримання "редакції"
         EditableDocument original = editor.Edit();
         
-        // Замініть трохи тексту - це імітує редагування вмісту
+        // Замінити текст - це імітує редагування вмісту
         string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
         
-        // Створіть новий `editabledocument 'із відредагованого вмісту документа
+        // Створіть новий екземпляр "редагувати" з відредагованого вмісту
         EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
         
         // Зберегти відредагований вміст документа на PDF

@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-05T19:20:33
+date: 2025-06-06T23:23:37
 draft: false
 
 product: "Editor"
@@ -47,7 +47,7 @@ release:
   downloads: "Downloads"
 
 code:
-  title: "Edit document files in .NET"
+  title: "Edit documents in .NET"
   more: "More examples"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
   install: "dotnet add package GroupDocs.Editor"
@@ -70,7 +70,7 @@ code:
     
     // Save edited document to file with desired format
     var saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
-    editor.Save(editedDoc, "output.docx", saveOptions);
+   editor.Save(editedDoc, "output.docx", saveOptions);
     ```
 
 ############################# Overview ############################
@@ -214,20 +214,20 @@ code_samples:
     # code sample loop
     - title: "Replace text in DOCX"
       content: |
-        This example shows loading and editing a content of the input DOCX file programmatically by replacing some text content on another. After that the modified document content is saved back as a new DOCX document. 
-        {{< landing/code title="Edit input DOCX by replacing some text and save it back to DOCX">}}
+        This example shows loading and editing a content of the input DOCX file programmatically by replacing text content on another. After that the modified document content is saved back as a new DOCX document. 
+        {{< landing/code title="Edit input DOCX by replacing text and save it back to DOCX">}}
         ```csharp {style=abap}
         
         // Load input document by path and specify load options if necessary
         Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // Open document for edit and obtain `EditableDocument`
+        // Open document for edit and obtain the "EditableDocument"
         EditableDocument original = editor.Edit();
         
-        // Replace some text - this emulates the content editing
+        // Replace text - this emulates the content editing
         string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
         
-        // Create new `EditableDocument` from edited document content
+        // Create new "EditableDocument" instance from edited content
         EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
         
         // Prepare save options with desired output formatX
@@ -253,13 +253,13 @@ code_samples:
         // Create and adjust the edit options - set 2nd worksheet to edit
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions() { WorksheetIndex = 1 } ;
         
-        // Open this 2nd worksheet for edit and obtain `EditableDocument`
+        // Open this 2nd worksheet for edit and obtain the "EditableDocument"
         EditableDocument originalWorksheet = editor.Edit(editOptions);
         
-        // Replace some text - this emulates the content editing
+        // Replace text - this emulates the content editing
         string modifiedContent = originalWorksheet.GetEmbeddedHtml().Replace("Cell Text", "Edited Cell Text");
         
-        // Create new `EditableDocument` from edited content of worksheet
+        // Create new "EditableDocument" instance from edited worksheet
         EditableDocument editedWorksheet = EditableDocument.FromMarkup(modifiedContent, null);
         
         // Save edited worksheet to new XLSX document
@@ -275,20 +275,20 @@ code_samples:
     # code sample loop
     - title: "Replace text in PDF"
       content: |
-        This example shows loading and editing a content of the input PDF file programmatically by replacing some text content on another. After that the modified document content is saved back as a new PDF document.
-        {{< landing/code title="Edit input PDF by replacing some text and save it back to PDF">}}
+        This example shows loading and editing a content of the input PDF file programmatically by replacing text content on another. After that the modified document content is saved back as a new PDF document.
+        {{< landing/code title="Edit input PDF by replacing text and save it back to PDF">}}
         ```csharp {style=abap}
         
         // Load PDF file by path and specify PDF load options
         Editor editor = new Editor("input.pdf", new PdfLoadOptions());
         
-        // Open document for edit and obtain `EditableDocument`
+        // Open document for edit and obtain the "EditableDocument"
         EditableDocument original = editor.Edit();
         
-        // Replace some text - this emulates the content editing
+        // Replace text - this emulates the content editing
         string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
         
-        // Create new `EditableDocument` from edited document content
+        // Create new "EditableDocument" instance from edited content
         EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
         
         // Save edited document content to PDF

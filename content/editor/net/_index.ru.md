@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-05T19:20:33
+date: 2025-06-06T23:23:37
 draft: false
 
 product: "Editor"
@@ -47,7 +47,7 @@ release:
   downloads: "Загрузки"
 
 code:
-  title: "Редактировать файлы документов в .net"
+  title: "Редактировать документы в .net"
   more: "Больше примеров"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
   install: "dotnet add package GroupDocs.Editor"
@@ -70,7 +70,7 @@ code:
     
     // Сохранить отредактированный документ для файла с помощью желаемого формата
     var saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
-    editor.Save(editedDoc, "output.docx", saveOptions);
+   editor.Save(editedDoc, "output.docx", saveOptions);
     ```
 
 ############################# Overview ############################
@@ -214,20 +214,20 @@ code_samples:
     # code sample loop
     - title: "Заменить текст в Docx"
       content: |
-        В этом примере показана загрузка и редактирование содержимого файла ввода DOCX программно, заменив некоторый текстовый содержимое на другое. После этого модифицированный контент документа сохраняется как новый документ DOCX. 
-        {{< landing/code title="Редактировать вход DOCX, заменив немного текста и сохраните его обратно в DOCX">}}
+        В этом примере показана загрузка и редактирование содержимого файла ввода DOCX программно, заменив текстовый содержимое на другое. После этого модифицированный контент документа сохраняется как новый документ DOCX. 
+        {{< landing/code title="Редактировать вход DOCX, заменив текст и сохраните его обратно в DOCX">}}
         ```csharp {style=abap}
         
         // Загрузите входной документ по пути и укажите параметры загрузки, если это необходимо, при необходимости
         Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // Открыть документ для редактирования и получить `editabledocument`
+        // Открыть документ для редактирования и получить "EditableDocument"
         EditableDocument original = editor.Edit();
         
-        // Замените немного текста - это эмулирует редактирование контента
+        // Замените текст - это эмулирует редактирование контента
         string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
         
-        // Создать новый `editabledocument` из отредактированного содержимого документа
+        // Создать новый экземпляр "EditableDocument" из редактированного контента
         EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
         
         // Подготовьте параметры сохранения с желаемым выводом Formatx
@@ -253,13 +253,13 @@ code_samples:
         // Создать и настроить параметры редактирования - установите 2 -й лист для редактирования
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions() { WorksheetIndex = 1 } ;
         
-        // Откройте этот 2 -й рабочий лист для редактирования и получите `editabledocument`
+        // Откройте этот 2 -й рабочий лист для редактирования и получите "EditableDocument"
         EditableDocument originalWorksheet = editor.Edit(editOptions);
         
-        // Замените немного текста - это эмулирует редактирование контента
+        // Замените текст - это эмулирует редактирование контента
         string modifiedContent = originalWorksheet.GetEmbeddedHtml().Replace("Cell Text", "Edited Cell Text");
         
-        // Создайте новый `editabledocument` из редактированного контента на листе.
+        // Создать новый экземпляр "EditableDocument" из редактированного рабочего листа
         EditableDocument editedWorksheet = EditableDocument.FromMarkup(modifiedContent, null);
         
         // Сохранить отредактированный рабочий лист в новый документ XLSX
@@ -275,20 +275,20 @@ code_samples:
     # code sample loop
     - title: "Замените текст в PDF"
       content: |
-        В этом примере показана загрузка и редактирование содержимого входного файла PDF -файла программно, заменив некоторое текстовое содержимое на другое. После этого модифицированный контент документа сохраняется как новый документ PDF.
-        {{< landing/code title="Редактировать вход PDF, заменив немного текста и сохраните его обратно в PDF">}}
+        В этом примере показана загрузка и редактирование содержимого входного файла PDF -файла программно, заменив текстовое содержимое на другое. После этого модифицированный контент документа сохраняется как новый документ PDF.
+        {{< landing/code title="Редактировать вход PDF, заменив текст и сохраните его обратно в PDF">}}
         ```csharp {style=abap}
         
         // Загрузите файл PDF по пути и укажите параметры загрузки PDF
         Editor editor = new Editor("input.pdf", new PdfLoadOptions());
         
-        // Открыть документ для редактирования и получить `editabledocument`
+        // Открыть документ для редактирования и получить "EditableDocument"
         EditableDocument original = editor.Edit();
         
-        // Замените немного текста - это эмулирует редактирование контента
+        // Замените текст - это эмулирует редактирование контента
         string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
         
-        // Создать новый `editabledocument` из отредактированного содержимого документа
+        // Создать новый экземпляр "EditableDocument" из редактированного контента
         EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
         
         // Сохранить отредактированный контент документа в PDF

@@ -22,5 +22,5 @@ code:
     
     // <% "{code.comment_6}" %>
     var saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
-    editor.Save(editedDoc, "output.docx", saveOptions);
+   editor.Save(editedDoc, "output.docx", saveOptions);
     ```
