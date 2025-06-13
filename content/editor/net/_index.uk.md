@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-06T23:23:37
+date: 2025-06-13T00:37:36
 draft: false
 
 product: "Editor"
@@ -70,7 +70,7 @@ code:
     
     // Зберегти відредагований документ для подачі з бажаним форматом
     var saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
-   editor.Save(editedDoc, "output.docx", saveOptions);
+    editor.Save(editedDoc, "output.docx", saveOptions);
     ```
 
 ############################# Overview ############################
