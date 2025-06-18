@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-13T00:37:35
+date: 2025-06-18T22:49:13
 draft: false
 
 product: "Editor"
@@ -69,7 +69,7 @@ code:
     var editedDoc = EditableDocument.FromMarkup(editedHtml, null);
     
     // Save edited document to file with desired format
-    var saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
+    var saveOptions = new WordProcessingSaveOptions();
     editor.Save(editedDoc, "output.docx", saveOptions);
     ```
 

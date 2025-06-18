@@ -21,6 +21,6 @@ code:
     var editedDoc = EditableDocument.FromMarkup(editedHtml, null);
     
     // <% "{code.comment_6}" %>
-    var saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
+    var saveOptions = new WordProcessingSaveOptions();
     editor.Save(editedDoc, "output.docx", saveOptions);
     ```
