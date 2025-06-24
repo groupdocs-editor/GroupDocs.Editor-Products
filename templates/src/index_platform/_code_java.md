@@ -6,11 +6,21 @@ code:
   content: |
     ```java {style=abap}   
     // <% "{code.comment_1}" %>
-    // Instantiate Editor object by loading the input file
-    Editor editor = new Editor(inputFilePath);
-    // Open input document for edit
-    EditableDocument beforeEdit = editor.edit();
+    Editor editor = new Editor("input.docx");
 
-    // Grab document content
-    String content = beforeEdit.getContent();
+    // <% "{code.comment_2}" %>
+    EditableDocument originalDoc = editor.edit();
+
+    // <% "{code.comment_3}" %>
+    String srcHtml = originalDoc.getEmbeddedHtml();
+    
+    // <% "{code.comment_4}" %>
+    String editedHtml = srcHtml.replace("Old text", "New text");
+    
+    // <% "{code.comment_5}" %>
+    EditableDocument editedDoc = EditableDocument.fromMarkup(editedHtml, null);
+    
+    // <% "{code.comment_6}" %>
+    WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions();
+    editor.save(editedDoc, "output.docx", saveOptions);
     ```

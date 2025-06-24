@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-18T22:49:13
+date: 2025-06-24T12:25:26
 draft: false
 
 product: "Editor"
@@ -54,13 +54,23 @@ code:
   content: |
     ```java {style=abap}   
     // {code.comment_1}
-    // Instantiate Editor object by loading the input file
-    Editor editor = new Editor(inputFilePath);
-    // Open input document for edit
-    EditableDocument beforeEdit = editor.edit();
+    Editor editor = new Editor("input.docx");
 
-    // Grab document content
-    String content = beforeEdit.getContent();
+    // {code.comment_2}
+    EditableDocument originalDoc = editor.edit();
+
+    // {code.comment_3}
+    String srcHtml = originalDoc.getEmbeddedHtml();
+    
+    // {code.comment_4}
+    String editedHtml = srcHtml.replace("Old text", "New text");
+    
+    // {code.comment_5}
+    EditableDocument editedDoc = EditableDocument.fromMarkup(editedHtml, null);
+    
+    // {code.comment_6}
+    WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions();
+    editor.save(editedDoc, "output.docx", saveOptions);
     ```
 
 ############################# Overview ############################
@@ -200,36 +210,68 @@ features:
 code_samples:
   enable: true
   title: "Campioni di codice"
-  description: "Alcuni casi di utilizzo di GroupDocs.Editor tipici per le operazioni Java."
+  description: "Alcuni casi di utilizzo di GroupDocs.Editor tipici per le operazioni Java. GroupDocs.Editor for Java"
   items:
     # code sample loop
     - title: "Modifica il contenuto del file DOCX specifico"
       content: |
-        La funzione [Document Editing] (https://docs.groupdocs.com/editor/java/edit-document/) consente di caricare, modificare e salvare i file DOCX. Ecco un esempio di come ottenere l'editing dei documenti usando Java:
+        {code_samples.sample_1.description} 
         {{< landing/code title="Come modificare i file docx in java">}}
-        ```java {style=abap}   
-        // Instantiate Editor object by loading the input file
-        Editor editor = new Editor(inputFilePath);
-        // Open input document for edit — obtain an intermediate document, that can be edited
-        EditableDocument beforeEdit = editor.edit();
-
-        // Grab document content and associated resources from editable document
-        String content = beforeEdit.getContent();
+        ```java {style=abap}
+        
+        // {code_samples.sample_1.comment_1}
+        Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
+        
+        // {code_samples.sample_1.comment_2}
+        EditableDocument original = editor.edit();
+        
+        // {code_samples.sample_1.comment_3}
+        String modifiedContent = original.getEmbeddedHtml().replace("old text", "new text");
+        
+        // {code_samples.sample_1.comment_4}
+        EditableDocument edited = EditableDocument.fromMarkup(modifiedContent, null);
+        
+        // {code_samples.sample_1.comment_5}
+        WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
+        
+        // {code_samples.sample_1.comment_6}
+        editor.save(edited, "output.docx", saveOptions);
+        
+        // {code_samples.sample_1.comment_7}
+        edited.dispose(); original.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "Modifica i campi del modulo in un documento Word"
+    - title: "{code_samples.sample_4.title}"
       content: |
-        Modifica facilmente i campi del modulo all'interno di un documento Word usando GroupDocs.Editor per Java. Ecco come modificare i campi del modulo in un documento Word usando Java:
-        {{< landing/code title="Come modificare i campi del modulo in un documento Word usando GroupDocs.Editor per Java">}}
-        ```java {style=abap}   
-        Editor editorDocx = new Editor(docxInputFilePath);
-
-        // Check it
-        IDocumentInfo infoDocx = editorDocx.getDocumentInfo(null);
-        if (infoDocx instanceof WordProcessingDocumentInfo) {
-            isWordProcessing = "yes";
-        }
+        {code_samples.sample_4.description}
+        {{< landing/code title="{code_samples.sample_4.code_title}">}}
+        ```java {style=abap}
+        
+        // {code_samples.sample_4.comment_1}
+        Editor editor = new Editor("input.xlsx", new SpreadsheetLoadOptions());
+        
+        // {code_samples.sample_4.comment_2}
+        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
+        editOptions.setWorksheetIndex(1);
+        
+        // {code_samples.sample_4.comment_3}
+        EditableDocument originalWorksheet = editor.edit(editOptions);
+        
+        // {code_samples.sample_4.comment_4}
+        String modifiedContent = originalWorksheet.getEmbeddedHtml().replace("Cell Text", "Edited Cell Text");
+        
+        // {code_samples.sample_4.comment_5}
+        EditableDocument editedWorksheet = EditableDocument.fromMarkup(modifiedContent, null);
+        
+        // {code_samples.sample_4.comment_6}
+        editor.save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
+        
+        // {code_samples.sample_4.comment_7}
+        editor.save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
+        
+        // {code_samples.sample_4.comment_8}
+        editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
 

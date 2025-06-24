@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-18T22:49:13
+date: 2025-06-24T12:25:26
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "Java Document Editing API | Edit PDF, Word, Excel, EPUB"
-head_description: "Java document editing API to edit, translate, and save document pages from PDF, Microsoft Word, Excel, presentations, Visio, and image formats."
+head_title: "Java Document Editing API | Edit PDF, Word, Excel, PowerPoint"
+head_description: "Java document editing API to load, edit and save document pages from PDF, Microsoft Word, Excel, PowerPoint, eBook and email formats."
 
 ############################# Header ############################
 title: "Edit documents<br>via Java API"
-description: "Powerful editor API to manipulate PDF, Microsoft Office, HTML, and image files."
+description: "Powerful editor API to manipulate Microsoft Office, PDF, HTML, eBook and email files."
 words:
   for: "for"
 
@@ -47,35 +47,45 @@ release:
   downloads: "Downloads"
 
 code:
-  title: "Edit document files in Java"
+  title: "Edit documents in .NET"
   more: "More examples"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java"
   install: "dotnet add package GroupDocs.Editor"
   content: |
     ```java {style=abap}   
-    // {code.comment_1}
-    // Instantiate Editor object by loading the input file
-    Editor editor = new Editor(inputFilePath);
-    // Open input document for edit
-    EditableDocument beforeEdit = editor.edit();
+    // Pass source document to initialize the Editor
+    Editor editor = new Editor("input.docx");
 
-    // Grab document content
-    String content = beforeEdit.getContent();
+    // Open document for edit
+    EditableDocument originalDoc = editor.edit();
+
+    // Get document as HTML
+    String srcHtml = originalDoc.getEmbeddedHtml();
+    
+    // Edit document contents
+    String editedHtml = srcHtml.replace("Old text", "New text");
+    
+    // Load edited document from HTML
+    EditableDocument editedDoc = EditableDocument.fromMarkup(editedHtml, null);
+    
+    // Save edited document to file with desired format
+    WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions();
+    editor.save(editedDoc, "output.docx", saveOptions);
     ```
 
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor for Java {overview.glance}"
-  description: "API to edit, translate, and save documents, slides, and diagrams in Java applications."
+  title: "GroupDocs.Editor for Java at a glance"
+  description: "API to edit, convert, and save documents, spreadsheets, slides, and e-books in Java applications."
   features:
     # feature loop
     - title: "Effortlessly edit multiple documents in Java"
-      content: "{overview.feature_1.description1} GroupDocs.Editor for Java {overview.feature_1.description2}"
+      content: "Seamlessly edit multiple PDF and Office files with support for a wide range of formats. GroupDocs.Editor for Java makes document editing fast and hassle-free."
 
     # feature loop
-    - title: "Translate documents to HTML/CSS"
-      content: "Translate documents to HTML/CSS markup compatible with WYSIWYG editors, allowing easy and efficient document editing in a web environment."
+    - title: "Convert documents to HTML/CSS"
+      content: "Convert documents to pure HTML/CSS markup compatible with WYSIWYG editors, allowing easy and efficient document editing in a web environment."
 
     # feature loop
     - title: "Save edited documents in various formats"
@@ -119,7 +129,7 @@ formats:
   enable: true
   title: "Supported file formats"
   description: |
-    GroupDocs.Editor for Java supports operations with the following [file formats](https://docs.groupdocs.com/editor/java/supported-document-formats/). ([{formats.full_list}](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
+    GroupDocs.Editor supports operations with the following file formats on import and export ([full list](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
@@ -131,24 +141,24 @@ formats:
     # group loop
     - color: "blue"
       content: |
-        ### Documents
-        * **{formats.groups.fixed_layout}:** PDF, XPS ({formats.groups.export_only})
+        ### Other document formats
+        * **Fixed-layout formats:** PDF, XPS (export only)
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-        * **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
-        * **{formats.groups.other_tables}:** SXC, DIF
+        * **Delimited text tables:** CSV, TSV, DSV (arbitrary separator)
+        * **Other table formats:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
-        ### Other formats
-        * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
-        * **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
+        ### Web-related formats
+        * **Markup:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
+        * **Email formats:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.features}"
-  description: "Seamlessly edit, translate, and save PDF and Office documents."
+  title: "Main features"
+  description: "Seamlessly load, edit and save in different formats Office documents, Emails, eBooks, and PDF."
 
   items:
     # feature loop
@@ -179,17 +189,17 @@ features:
     # feature loop
     - icon: "swap"
       title: "Password protection"
-      content: "Edit password-protected documents with ease."
+      content: "Load and edit password-protected documents with ease, and protecting the output documents with password protection."
 
     # feature loop
     - icon: "extract"
-      title: "Custom document encoding"
-      content: "Specify document encoding during editing and saving processes."
+      title: "Edit email"
+      content: "Edit and save the email messages and letters in MSG, EML, EMLX, MBOX and many other formats, including editing metadata like Subject, To, CC, BCC, From, Title, Date and so on."
 
     # feature loop
     - icon: "orientation"
       title: "Font extraction"
-      content: "Extract fonts from documents for use in the editing process."
+      content: "Extract fonts from WordProcessing documents for use in the editing process."
 
     # feature loop
     - icon: "preview"
@@ -200,36 +210,68 @@ features:
 code_samples:
   enable: true
   title: "Code samples"
-  description: "Some use cases of typical GroupDocs.Editor for Java operations."
+  description: "Some use cases of typical operations using GroupDocs.Editor for Java"
   items:
     # code sample loop
-    - title: "Edit specific DOCX file content"
+    - title: "Replace text in DOCX"
       content: |
-        The [Document Editing](https://docs.groupdocs.com/editor/java/edit-document/) feature allows you to load, edit, and save DOCX files. Here's an example of how to achieve document editing using Java: 
-        {{< landing/code title="How to edit DOCX files in Java">}}
-        ```java {style=abap}   
-        // Instantiate Editor object by loading the input file
-        Editor editor = new Editor(inputFilePath);
-        // Open input document for edit — obtain an intermediate document, that can be edited
-        EditableDocument beforeEdit = editor.edit();
-
-        // Grab document content and associated resources from editable document
-        String content = beforeEdit.getContent();
+        This example shows loading and editing a content of the input DOCX file programmatically by replacing text content on another. After that the modified document content is saved back as a new DOCX document. 
+        {{< landing/code title="Edit input DOCX by replacing text and save it back to DOCX">}}
+        ```java {style=abap}
+        
+        // Load input document by path and specify load options if necessary
+        Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
+        
+        // Open document for edit and obtain the "EditableDocument"
+        EditableDocument original = editor.edit();
+        
+        // Replace text - this emulates the content editing
+        String modifiedContent = original.getEmbeddedHtml().replace("old text", "new text");
+        
+        // Create new "EditableDocument" instance from edited content
+        EditableDocument edited = EditableDocument.fromMarkup(modifiedContent, null);
+        
+        // Prepare save options with desired output formatX
+        WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
+        
+        // Save edited document content to DOCX
+        editor.save(edited, "output.docx", saveOptions);
+        
+        // Dispose all resources
+        edited.dispose(); original.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "Edit form fields in a Word document"
+    - title: "Edit content of particular Excel worksheet"
       content: |
-        Easily edit form fields within a Word document using GroupDocs.Editor for Java. Here's how to edit form fields in a Word document using Java: 
-        {{< landing/code title="How to edit form fields in a Word document using GroupDocs.Editor for Java">}}
-        ```java {style=abap}   
-        Editor editorDocx = new Editor(docxInputFilePath);
-
-        // Check it
-        IDocumentInfo infoDocx = editorDocx.getDocumentInfo(null);
-        if (infoDocx instanceof WordProcessingDocumentInfo) {
-            isWordProcessing = "yes";
-        }
+        The Spreadsheet document (like XLS, XLSX, XLSM, ODS and so on) may have one or more worksheets (tabs). GroupDocs.Editor allows to edit content of one worksheet at a time. After being edited, this worksheet may be saved to the separate Spreadsheet document (where only this specific worksheet will be saved), or the edited worksheet can be inserted back to the original document, where it can either replace the original worksheet or be saved together, along with original one. This example shows loading XLSX document, editing its 2nd worksheet and saving it as a new separate document in XLSX and CSV formats.
+        {{< landing/code title="Edit particular worksheet of XLSX and save as XLSX and CSV">}}
+        ```java {style=abap}
+        
+        // Load input XLSX by path and specify load options if necessary
+        Editor editor = new Editor("input.xlsx", new SpreadsheetLoadOptions());
+        
+        // Create and adjust the edit options - set 2nd worksheet to edit
+        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
+        editOptions.setWorksheetIndex(1);
+        
+        // Open this 2nd worksheet for edit and obtain the "EditableDocument"
+        EditableDocument originalWorksheet = editor.edit(editOptions);
+        
+        // Replace text - this emulates the content editing
+        String modifiedContent = originalWorksheet.getEmbeddedHtml().replace("Cell Text", "Edited Cell Text");
+        
+        // Create new "EditableDocument" instance from edited worksheet
+        EditableDocument editedWorksheet = EditableDocument.fromMarkup(modifiedContent, null);
+        
+        // Save edited worksheet to new XLSX document
+        editor.save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
+        
+        // Save edited worksheet to new CSV document with comma (,) delimiter/separator
+        editor.save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
+        
+        // Dispose all resources
+        editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
 

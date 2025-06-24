@@ -26,7 +26,7 @@ code_samples:
         WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
         
         // <% "{code_samples.sample_1.comment_6}" %>
-        editor.Save(edited, "output.docx", saveOptions);        
+        editor.Save(edited, "output.docx", saveOptions);
         
         // <% "{code_samples.sample_1.comment_7}" %>
         edited.Dispose(); original.Dispose(); editor.Dispose();

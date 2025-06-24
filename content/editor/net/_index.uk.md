@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-18T22:49:13
+date: 2025-06-24T12:25:26
 draft: false
 
 product: "Editor"
@@ -234,7 +234,7 @@ code_samples:
         WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
         
         // Зберегти відредагований вміст документа на DOCX
-        editor.Save(edited, "output.docx", saveOptions);        
+        editor.Save(edited, "output.docx", saveOptions);
         
         // Утилізуйте всі ресурси
         edited.Dispose(); original.Dispose(); editor.Dispose();

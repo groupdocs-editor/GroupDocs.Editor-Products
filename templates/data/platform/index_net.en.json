@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "C# .NET Document Editing API | Edit PDF, Word, Excel, EPUB",
-    "description": "C# .NET document editing API to edit, translate, and save document pages from PDF, Microsoft Word, Excel, presentations, Visio, and image formats."
+    "title": "C# .NET Document Editing API | Edit PDF, Word, Excel, PowerPoint",
+    "description": "C# .NET document editing API to edit, translate, and save document pages from PDF, Microsoft Word, Excel, PowerPoint, eBook and email formats"
   },
   "header": {
     "title_1": "Edit documents",
     "title_2": "via .NET API",
-    "description": "Powerful editor API to manipulate PDF, Microsoft Office, HTML, and image files.",
+    "description": "Powerful editor API to manipulate Microsoft Office, PDF, HTML, eBook and email files.",
     "words": {
       "for": "for"
     }
@@ -24,7 +24,7 @@
   },
   "overview": {
     "glance": "at a glance",
-    "description": "API to edit, translate, and save documents, slides, and diagrams in .NET applications.",
+    "description": "API to edit, convert, and save documents, spreadsheets, slides, and e-books in .NET applications.",
     "feature_1": {
       "title": "Effortlessly edit multiple documents in C#",
       "description1": "Seamlessly edit multiple PDF and Office files with support for a wide range of formats.",
@@ -52,7 +52,6 @@
 	  "delimited_text_table": "Delimited text tables",
 	  "arbitrary_separator": "arbitrary separator",
 	  "other_tables": "Other table formats",
-      "format_images": "Images",
       "format_markup": "Markup",
       "format_email": "Email formats"
     }

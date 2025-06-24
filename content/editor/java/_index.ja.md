@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-18T22:49:13
+date: 2025-06-24T12:25:26
 draft: false
 
 product: "Editor"
@@ -54,13 +54,23 @@ code:
   content: |
     ```java {style=abap}   
     // {code.comment_1}
-    // Instantiate Editor object by loading the input file
-    Editor editor = new Editor(inputFilePath);
-    // Open input document for edit
-    EditableDocument beforeEdit = editor.edit();
+    Editor editor = new Editor("input.docx");
 
-    // Grab document content
-    String content = beforeEdit.getContent();
+    // {code.comment_2}
+    EditableDocument originalDoc = editor.edit();
+
+    // {code.comment_3}
+    String srcHtml = originalDoc.getEmbeddedHtml();
+    
+    // {code.comment_4}
+    String editedHtml = srcHtml.replace("Old text", "New text");
+    
+    // {code.comment_5}
+    EditableDocument editedDoc = EditableDocument.fromMarkup(editedHtml, null);
+    
+    // {code.comment_6}
+    WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions();
+    editor.save(editedDoc, "output.docx", saveOptions);
     ```
 
 ############################# Overview ############################
@@ -200,36 +210,68 @@ features:
 code_samples:
   enable: true
   title: "コードサンプル"
-  description: "Java 操作用の典型的な GroupDocs.Editor の使用例。"
+  description: "Java 操作用の典型的な GroupDocs.Editor の使用例。 GroupDocs.Editor for Java"
   items:
     # code sample loop
     - title: "特定の DOCX ファイルの内容を編集する"
       content: |
-        [ドキュメント編集](https://docs.groupdocs.com/editor/java/edit-document/) 機能を使用すると、DOCX ファイルをロード、編集、保存できます。 Java を使用してドキュメント編集を実現する方法の例を次に示します。
+        {code_samples.sample_1.description} 
         {{< landing/code title="Java で DOCX ファイルを編集する方法">}}
-        ```java {style=abap}   
-        // Instantiate Editor object by loading the input file
-        Editor editor = new Editor(inputFilePath);
-        // Open input document for edit — obtain an intermediate document, that can be edited
-        EditableDocument beforeEdit = editor.edit();
-
-        // Grab document content and associated resources from editable document
-        String content = beforeEdit.getContent();
+        ```java {style=abap}
+        
+        // {code_samples.sample_1.comment_1}
+        Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
+        
+        // {code_samples.sample_1.comment_2}
+        EditableDocument original = editor.edit();
+        
+        // {code_samples.sample_1.comment_3}
+        String modifiedContent = original.getEmbeddedHtml().replace("old text", "new text");
+        
+        // {code_samples.sample_1.comment_4}
+        EditableDocument edited = EditableDocument.fromMarkup(modifiedContent, null);
+        
+        // {code_samples.sample_1.comment_5}
+        WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
+        
+        // {code_samples.sample_1.comment_6}
+        editor.save(edited, "output.docx", saveOptions);
+        
+        // {code_samples.sample_1.comment_7}
+        edited.dispose(); original.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "Word 文書のフォームフィールドを編集する"
+    - title: "{code_samples.sample_4.title}"
       content: |
-        GroupDocs.Editor for Java を使用すると、Word 文書内のフォーム フィールドを簡単に編集できます。 Java を使用して Word 文書のフォーム フィールドを編集する方法は次のとおりです。
-        {{< landing/code title="GroupDocs.Editor for Java を使用して Word 文書のフォーム フィールドを編集する方法">}}
-        ```java {style=abap}   
-        Editor editorDocx = new Editor(docxInputFilePath);
-
-        // Check it
-        IDocumentInfo infoDocx = editorDocx.getDocumentInfo(null);
-        if (infoDocx instanceof WordProcessingDocumentInfo) {
-            isWordProcessing = "yes";
-        }
+        {code_samples.sample_4.description}
+        {{< landing/code title="{code_samples.sample_4.code_title}">}}
+        ```java {style=abap}
+        
+        // {code_samples.sample_4.comment_1}
+        Editor editor = new Editor("input.xlsx", new SpreadsheetLoadOptions());
+        
+        // {code_samples.sample_4.comment_2}
+        SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
+        editOptions.setWorksheetIndex(1);
+        
+        // {code_samples.sample_4.comment_3}
+        EditableDocument originalWorksheet = editor.edit(editOptions);
+        
+        // {code_samples.sample_4.comment_4}
+        String modifiedContent = originalWorksheet.getEmbeddedHtml().replace("Cell Text", "Edited Cell Text");
+        
+        // {code_samples.sample_4.comment_5}
+        EditableDocument editedWorksheet = EditableDocument.fromMarkup(modifiedContent, null);
+        
+        // {code_samples.sample_4.comment_6}
+        editor.save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
+        
+        // {code_samples.sample_4.comment_7}
+        editor.save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
+        
+        // {code_samples.sample_4.comment_8}
+        editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
 

@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-18T22:49:13
+date: 2025-06-24T12:25:26
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "C# .NET Document Editing API | Edit PDF, Word, Excel, EPUB"
-head_description: "C# .NET document editing API to edit, translate, and save document pages from PDF, Microsoft Word, Excel, presentations, Visio, and image formats."
+head_title: "C# .NET Document Editing API | Edit PDF, Word, Excel, PowerPoint"
+head_description: "C# .NET document editing API to edit, translate, and save document pages from PDF, Microsoft Word, Excel, PowerPoint, eBook and email formats"
 
 ############################# Header ############################
 title: "Edit documents<br>via .NET API"
-description: "Powerful editor API to manipulate PDF, Microsoft Office, HTML, and image files."
+description: "Powerful editor API to manipulate Microsoft Office, PDF, HTML, eBook and email files."
 words:
   for: "for"
 
@@ -77,7 +77,7 @@ code:
 overview:
   enable: true
   title: "GroupDocs.Editor for .NET at a glance"
-  description: "API to edit, translate, and save documents, slides, and diagrams in .NET applications."
+  description: "API to edit, convert, and save documents, spreadsheets, slides, and e-books in .NET applications."
   features:
     # feature loop
     - title: "Effortlessly edit multiple documents in C#"
@@ -234,7 +234,7 @@ code_samples:
         WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
         
         // Save edited document content to DOCX
-        editor.Save(edited, "output.docx", saveOptions);        
+        editor.Save(edited, "output.docx", saveOptions);
         
         // Dispose all resources
         edited.Dispose(); original.Dispose(); editor.Dispose();

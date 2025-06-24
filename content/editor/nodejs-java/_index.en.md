@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-18T22:49:13
+date: 2025-06-24T12:25:26
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "Node.js Document Editing API | Edit PDF, Word, Excel, EPUB"
-head_description: "Node.js document editing API to edit, translate, and save document pages from PDF, Microsoft Word, Excel, presentations, Visio, and image formats."
+head_title: "Node.js Document Editing API | Edit PDF, Word, Excel, PowerPoint"
+head_description: "Node.js document editing API to load, edit and save document pages from PDF, Microsoft Word, Excel, PowerPoint, eBook and email formats."
 
 ############################# Header ############################
 title: "Edit documents<br>via Node.js API"
-description: "Powerful editor API to manipulate PDF, Microsoft Office, HTML, and image files."
+description: "Powerful editor API to manipulate Microsoft Office, PDF, HTML, eBook and email files."
 words:
   for: "for"
 
@@ -47,13 +47,13 @@ release:
   downloads: "Downloads"
 
 code:
-  title: "Edit document files in Node.js via Java"
+  title: "Edit documents in .NET"
   more: "More examples"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Node.js-via-Java"
   install: "dotnet add package GroupDocs.Editor"
   content: |
     ```javascript {style=abap}   
-    // {code.comment_1}
+    // Pass source document to initialize the Editor
     this.editor = new Editor(this.inputFilePath);
         
     // Edit document
@@ -66,16 +66,16 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor for Node.js via Java {overview.glance}"
-  description: "API to edit, translate, and save documents, slides, and diagrams in Node.js applications."
+  title: "GroupDocs.Editor for Node.js via Java at a glance"
+  description: "API to edit, convert, and save documents, spreadsheets, slides, and e-books in Node.js applications."
   features:
     # feature loop
     - title: "Effortlessly edit multiple documents in Node.js"
-      content: "{overview.feature_1.description1} GroupDocs.Editor for Node.js via Java {overview.feature_1.description2}"
+      content: "Seamlessly edit multiple PDF and Office files with support for a wide range of formats. GroupDocs.Editor for Node.js via Java makes document editing fast and hassle-free."
 
     # feature loop
-    - title: "Translate documents to HTML/CSS"
-      content: "Translate documents to HTML/CSS markup compatible with WYSIWYG editors, allowing easy and efficient document editing in a web environment."
+    - title: "Convert documents to HTML/CSS"
+      content: "Convert documents to pure HTML/CSS markup compatible with WYSIWYG editors, allowing easy and efficient document editing in a web environment."
 
     # feature loop
     - title: "Save edited documents in various formats"
@@ -119,7 +119,7 @@ formats:
   enable: true
   title: "Supported file formats"
   description: |
-    GroupDocs.Editor for Node.js supports operations with the following [file formats](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/). ([{formats.full_list}](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
+    GroupDocs.Editor supports operations with the following file formats on import and export ([full list](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
@@ -131,24 +131,24 @@ formats:
     # group loop
     - color: "blue"
       content: |
-        ### Documents
-        * **{formats.groups.fixed_layout}:** PDF, XPS ({formats.groups.export_only})
+        ### Other document formats
+        * **Fixed-layout formats:** PDF, XPS (export only)
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-        * **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
-        * **{formats.groups.other_tables}:** SXC, DIF
+        * **Delimited text tables:** CSV, TSV, DSV (arbitrary separator)
+        * **Other table formats:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
-        ### Other formats
-        * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
-        * **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
+        ### Web-related formats
+        * **Markup:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
+        * **Email formats:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.features}"
-  description: "Seamlessly edit, translate, and save PDF and Office documents."
+  title: "Main features"
+  description: "Seamlessly load, edit and save in different formats Office documents, Emails, eBooks, and PDF."
 
   items:
     # feature loop
@@ -179,17 +179,17 @@ features:
     # feature loop
     - icon: "swap"
       title: "Password protection"
-      content: "Edit password-protected documents with ease."
+      content: "Load and edit password-protected documents with ease, and protecting the output documents with password protection."
 
     # feature loop
     - icon: "extract"
-      title: "Custom document encoding"
-      content: "Specify document encoding during editing and saving processes."
+      title: "Edit email"
+      content: "Edit and save the email messages and letters in MSG, EML, EMLX, MBOX and many other formats, including editing metadata like Subject, To, CC, BCC, From, Title, Date and so on."
 
     # feature loop
     - icon: "orientation"
       title: "Font extraction"
-      content: "Extract fonts from documents for use in the editing process."
+      content: "Extract fonts from WordProcessing documents for use in the editing process."
 
     # feature loop
     - icon: "preview"
@@ -200,13 +200,13 @@ features:
 code_samples:
   enable: true
   title: "Code samples"
-  description: "Some use cases of typical GroupDocs.Editor for Node.js operations."
+  description: "Some use cases of typical operations using"
   items:
     # code sample loop
-    - title: "Edit specific DOCX file content"
+    - title: "Replace text in DOCX"
       content: |
-        The [Document Editing](https://docs.groupdocs.com/editor/nodejs/edit-document/) feature allows you to load, edit, and save DOCX files. Here's an example of how to achieve document editing using Node.js: 
-        {{< landing/code title="How to edit DOCX files in Node.js">}}
+        {code_samples.sample_1.content_1} {code_samples.sample_1.content_2}
+        {{< landing/code title="Edit input DOCX by replacing text and save it back to DOCX">}}
         ```javascript {style=abap}   
         // Load document
         this.editor = new Editor(this.inputFilePath);
@@ -219,10 +219,10 @@ code_samples:
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "Edit form fields in a Word document"
+    - title: "Replace text in PDF"
       content: |
-        Easily edit form fields within a Word document using GroupDocs.Editor for Node.js. Here's how to edit form fields in a Word document using Node.js: 
-        {{< landing/code title="How to edit form fields in a Word document using GroupDocs.Editor for Node.js">}}
+        {code_samples.sample_2.content_1} {code_samples.sample_2.content_2}
+        {{< landing/code title="Edit input PDF by replacing text and save it back to PDF">}}
         ```javascript {style=abap}   
         const editOptions = new MarkdownEditOptions();
         editOptions.setImageLoadCallback(new MdImageLoader(imagesFolder));

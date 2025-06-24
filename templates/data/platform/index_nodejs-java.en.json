@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "Node.js Document Editing API | Edit PDF, Word, Excel, EPUB",
-    "description": "Node.js document editing API to edit, translate, and save document pages from PDF, Microsoft Word, Excel, presentations, Visio, and image formats."
+    "title": "Node.js Document Editing API | Edit PDF, Word, Excel, PowerPoint",
+    "description": "Node.js document editing API to load, edit and save document pages from PDF, Microsoft Word, Excel, PowerPoint, eBook and email formats."
   },
   "header": {
     "title_1": "Edit documents",
     "title_2": "via Node.js API",
-    "description": "Powerful editor API to manipulate PDF, Microsoft Office, HTML, and image files.",
+    "description": "Powerful editor API to manipulate Microsoft Office, PDF, HTML, eBook and email files.",
     "words": {
       "for": "for"
     }
@@ -23,15 +23,16 @@
     "downloads": "Downloads"
   },
   "overview": {
-    "title": "GroupDocs.Editor at a glance",
-    "description": "API to edit, translate, and save documents, slides, and diagrams in Node.js applications.",
+	"glance": "at a glance",
+    "description": "API to edit, convert, and save documents, spreadsheets, slides, and e-books in Node.js applications.",
     "feature_1": {
       "title": "Effortlessly edit multiple documents in Node.js",
-      "description": "Seamlessly edit multiple PDF and Office files with support for a wide range of formats. GroupDocs.Editor for Node.js makes document editing fast and hassle-free."
+      "description1": "Seamlessly edit multiple PDF and Office files with support for a wide range of formats.",
+	  "description2": "makes document editing fast and hassle-free."
     },
     "feature_2": {
-      "title": "Translate documents to HTML/CSS",
-      "description": "Translate documents to HTML/CSS markup compatible with WYSIWYG editors, allowing easy and efficient document editing in a web environment."
+      "title": "Convert documents to HTML/CSS",
+      "description": "Convert documents to pure HTML/CSS markup compatible with WYSIWYG editors, allowing easy and efficient document editing in a web environment."
     },
     "feature_3": {
       "title": "Save edited documents in various formats",
@@ -40,20 +41,24 @@
   },
   "formats": {
     "title": "Supported file formats",
-    "description": "GroupDocs.Editor for Node.js supports operations with the following [file formats](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/).",
+    "description": "GroupDocs.Editor supports operations with the following file formats on import and export",
+	"full_list": "full list",
     "groups": {
       "title_1": "Microsoft Office formats",
-      "title_2": "Documents",
-      "title_3": "Other formats",
-      "format_documents": "Documents",
-      "format_images": "Images",
-      "format_web": "Web",
-      "format_archives": "Archives"
+      "title_2": "Other document formats",
+      "title_3": "Web-related formats",
+      "fixed_layout": "Fixed-layout formats",
+	  "export_only": "export only",
+	  "delimited_text_table": "Delimited text tables",
+	  "arbitrary_separator": "arbitrary separator",
+	  "other_tables": "Other table formats",
+      "format_markup": "Markup",
+      "format_email": "Email formats"
     }
   },
   "features": {
-    "title": "GroupDocs.Editor features",
-    "description": "Seamlessly edit, translate, and save PDF and Office documents.",
+    "features": "Main features",
+    "description": "Seamlessly load, edit and save in different formats Office documents, Emails, eBooks, and PDF.",
     "feature_1": {
       "title": "Edit files",
       "content": "Edit the content of various document formats including PDF, DOCX, XLSX, PPTX, and more."
@@ -76,15 +81,15 @@
     },
     "feature_6": {
       "title": "Password protection",
-      "content": "Edit password-protected documents with ease."
+      "content": "Load and edit password-protected documents with ease, and protecting the output documents with password protection."
     },
     "feature_7": {
-      "title": "Custom document encoding",
-      "content": "Specify document encoding during editing and saving processes."
+      "title": "Edit email",
+      "content": "Edit and save the email messages and letters in MSG, EML, EMLX, MBOX and many other formats, including editing metadata like Subject, To, CC, BCC, From, Title, Date and so on."
     },
     "feature_8": {
       "title": "Font extraction",
-      "content": "Extract fonts from documents for use in the editing process."
+      "content": "Extract fonts from WordProcessing documents for use in the editing process."
     },
     "feature_9": {
       "title": "Preview pages",
@@ -93,27 +98,58 @@
   },
   "code_samples": {
     "title": "Code samples",
-    "description": "Some use cases of typical GroupDocs.Editor for Node.js operations.",
-    "sample_1": {
-      "title": "Edit specific DOCX file content",
-      "content_1": "The [Document Editing](https://docs.groupdocs.com/editor/nodejs/edit-document/) feature allows you to load, edit, and save DOCX files.",
-      "content_2": "Here's an example of how to achieve document editing using Node.js: ",
-      "code_title": "How to edit DOCX files in Node.js"
-    },
-    "sample_2": {
-      "title": "Edit form fields in a Word document",
-      "content_1": "Easily edit form fields within a Word document using GroupDocs.Editor for Node.js.",
-      "content_2": "Here's how to edit form fields in a Word document using Node.js: ",
-      "code_title": "How to edit form fields in a Word document using GroupDocs.Editor for Node.js"
-    }
+    "description": "Some use cases of typical operations using",
+	"sample_1": {
+		"title": "Replace text in DOCX",
+		"description": "This example shows loading and editing a content of the input DOCX file programmatically by replacing text content on another. After that the modified document content is saved back as a new DOCX document.",
+		"code_title": "Edit input DOCX by replacing text and save it back to DOCX",
+		"comment_1": "Load input document by path and specify load options if necessary",
+		"comment_2": "Open document for edit and obtain the \"EditableDocument\"",
+		"comment_3": "Replace text - this emulates the content editing",
+		"comment_4": "Create new \"EditableDocument\" instance from edited content",
+		"comment_5": "Prepare save options with desired output formatX",
+		"comment_6": "Save edited document content to DOCX",
+		"comment_7": "Dispose all resources",
+	},
+	"sample_4": {
+		"title": "Edit content of particular Excel worksheet",
+		"description": "The Spreadsheet document (like XLS, XLSX, XLSM, ODS and so on) may have one or more worksheets (tabs). GroupDocs.Editor allows to edit content of one worksheet at a time. After being edited, this worksheet may be saved to the separate Spreadsheet document (where only this specific worksheet will be saved), or the edited worksheet can be inserted back to the original document, where it can either replace the original worksheet or be saved together, along with original one. This example shows loading XLSX document, editing its 2nd worksheet and saving it as a new separate document in XLSX and CSV formats.",
+		"code_title": "Edit particular worksheet of XLSX and save as XLSX and CSV",
+		"comment_1": "Load input XLSX by path and specify load options if necessary",
+		"comment_2": "Create and adjust the edit options - set 2nd worksheet to edit",
+		"comment_3": "Open this 2nd worksheet for edit and obtain the \"EditableDocument\"",
+		"comment_4": "Replace text - this emulates the content editing",
+		"comment_5": "Create new \"EditableDocument\" instance from edited worksheet",
+		"comment_6": "Save edited worksheet to new XLSX document",
+		"comment_7": "Save edited worksheet to new CSV document with comma (,) delimiter/separator",
+		"comment_8": "Dispose all resources",
+	}
+	,
+	"sample_2": {
+		"title": "Replace text in PDF",
+		"description": "This example shows loading and editing a content of the input PDF file programmatically by replacing text content on another. After that the modified document content is saved back as a new PDF document.",
+		"code_title": "Edit input PDF by replacing text and save it back to PDF",
+		"comment_1": "Load PDF file by path and specify PDF load options",
+		"comment_2": "Open document for edit and obtain the \"EditableDocument\"",
+		"comment_3": "Replace text - this emulates the content editing",
+		"comment_4": "Create new \"EditableDocument\" instance from edited content",
+		"comment_5": "Save edited document content to PDF",
+		"comment_6": "Dispose all resources",
+	}
   },
   "platforms": {
     "title": "Platform independence",
     "description": "GroupDocs.Editor for Node.js supports the following operating systems, frameworks, and package managers."
   },
   "code": {
-    "title": "Edit document files in Node.js via Java",
+    "title": "Edit documents in .NET",
     "more": "More examples",
-    "notes": "See what’s new"
+    "notes": "See what’s new",
+	"comment_1": "Pass source document to initialize the Editor",
+	"comment_2": "Open document for edit",
+	"comment_3": "Get document as HTML",
+	"comment_4": "Edit document contents",
+	"comment_5": "Load edited document from HTML",
+	"comment_6": "Save edited document to file with desired format",
   }
 }
