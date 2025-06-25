@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-24T12:25:26
+date: 2025-06-25T10:52:25
 draft: false
 
 product: "Editor"
@@ -119,7 +119,7 @@ formats:
   enable: true
   title: "支持的文件格式"
   description: |
-    Node.js 的 GroupDocs.Editor 支持以下[文件格式](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/) 的操作。 ([{formats.full_list}](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
+    Node.js 的 GroupDocs.Editor 支持以下[文件格式](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/) 的操作。 ([{formats.full_list}](https://docs.groupdocs.com/editor/nodejs-java/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"

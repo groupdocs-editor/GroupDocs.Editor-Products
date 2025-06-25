@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-24T12:25:26
+date: 2025-06-25T10:52:24
 draft: false
 
 product: "Editor"
@@ -119,7 +119,7 @@ formats:
   enable: true
   title: "지원되는 파일 형식"
   description: |
-    Node.js용 GroupDocs.Editor는 다음 [파일 형식](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/)을 사용한 작업을 지원합니다. ([{formats.full_list}](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
+    Node.js용 GroupDocs.Editor는 다음 [파일 형식](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/)을 사용한 작업을 지원합니다. ([{formats.full_list}](https://docs.groupdocs.com/editor/nodejs-java/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"

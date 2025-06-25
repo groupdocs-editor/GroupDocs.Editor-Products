@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-24T12:25:26
+date: 2025-06-25T10:52:25
 draft: false
 
 product: "Editor"
@@ -50,7 +50,22 @@ code:
   title: "Редактировать файлы документов в Java"
   more: "Больше примеров"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java"
-  install: "dotnet add package GroupDocs.Editor"
+  install: |
+    <dependencies>
+      <dependency>
+        <groupId>com.groupdocs</groupId>
+        <artifactId>groupdocs-editor</artifactId>
+        <version>{0}</version>
+      </dependency>
+    </dependencies>
+
+    <repositories>
+      <repository>
+        <id>repository.groupdocs.com</id>
+        <name>GroupDocs Repository</name>
+        <url>https://repository.groupdocs.com/repo/</url>
+      </repository>
+    </repositories>
   content: |
     ```java {style=abap}   
     // {code.comment_1}
@@ -129,7 +144,7 @@ formats:
   enable: true
   title: "Поддерживаемые форматы файлов"
   description: |
-    GroupDocs.Editor для Java поддерживает операции со следующими [форматами файлов](https://docs.groupdocs.com/editor/java/supported-document-formats/). ([{formats.full_list}](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
+    GroupDocs.Editor для Java поддерживает операции со следующими [форматами файлов](https://docs.groupdocs.com/editor/java/supported-document-formats/). ([{formats.full_list}](https://docs.groupdocs.com/editor/java/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"

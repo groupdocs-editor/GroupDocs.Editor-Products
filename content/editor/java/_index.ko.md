@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-24T12:25:26
+date: 2025-06-25T10:52:24
 draft: false
 
 product: "Editor"
@@ -50,7 +50,22 @@ code:
   title: "Java에서 문서 파일 편집"
   more: "더 많은 예시"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java"
-  install: "dotnet add package GroupDocs.Editor"
+  install: |
+    <dependencies>
+      <dependency>
+        <groupId>com.groupdocs</groupId>
+        <artifactId>groupdocs-editor</artifactId>
+        <version>{0}</version>
+      </dependency>
+    </dependencies>
+
+    <repositories>
+      <repository>
+        <id>repository.groupdocs.com</id>
+        <name>GroupDocs Repository</name>
+        <url>https://repository.groupdocs.com/repo/</url>
+      </repository>
+    </repositories>
   content: |
     ```java {style=abap}   
     // {code.comment_1}
@@ -129,7 +144,7 @@ formats:
   enable: true
   title: "지원되는 파일 형식"
   description: |
-    Java용 GroupDocs.Editor는 다음 [파일 형식](https://docs.groupdocs.com/editor/java/supported-document-formats/)을 사용한 작업을 지원합니다. ([{formats.full_list}](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
+    Java용 GroupDocs.Editor는 다음 [파일 형식](https://docs.groupdocs.com/editor/java/supported-document-formats/)을 사용한 작업을 지원합니다. ([{formats.full_list}](https://docs.groupdocs.com/editor/java/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"

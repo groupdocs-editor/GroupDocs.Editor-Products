@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-24T12:25:26
+date: 2025-06-25T10:52:25
 draft: false
 
 product: "Editor"
@@ -50,7 +50,22 @@ code:
   title: "在 Java 中编辑文档文件"
   more: "更多示例"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java"
-  install: "dotnet add package GroupDocs.Editor"
+  install: |
+    <dependencies>
+      <dependency>
+        <groupId>com.groupdocs</groupId>
+        <artifactId>groupdocs-editor</artifactId>
+        <version>{0}</version>
+      </dependency>
+    </dependencies>
+
+    <repositories>
+      <repository>
+        <id>repository.groupdocs.com</id>
+        <name>GroupDocs Repository</name>
+        <url>https://repository.groupdocs.com/repo/</url>
+      </repository>
+    </repositories>
   content: |
     ```java {style=abap}   
     // {code.comment_1}
@@ -129,7 +144,7 @@ formats:
   enable: true
   title: "支持的文件格式"
   description: |
-    GroupDocs.Editor for Java 支持以下[文件格式](https://docs.groupdocs.com/editor/java/supported-document-formats/) 的操作。 ([{formats.full_list}](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
+    GroupDocs.Editor for Java 支持以下[文件格式](https://docs.groupdocs.com/editor/java/supported-document-formats/) 的操作。 ([{formats.full_list}](https://docs.groupdocs.com/editor/java/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"

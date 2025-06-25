@@ -74,7 +74,7 @@ formats:
   enable: true
   title: "<% "{formats.title}" %>"
   description: |
-    <% "{formats.description}" %> ([<% "{formats.full_list}" %>](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
+    <% "{formats.description}" %> ([<% "{formats.full_list}" %>](https://docs.groupdocs.com/editor/<% dict "products.{product}.code" %>/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
