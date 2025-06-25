@@ -124,18 +124,6 @@
 		"comment_7": "Save edited worksheet to new CSV document with comma (,) delimiter/separator",
 		"comment_8": "Dispose all resources",
 	}
-	,
-	"sample_2": {
-		"title": "Replace text in PDF",
-		"description": "This example shows loading and editing a content of the input PDF file programmatically by replacing text content on another. After that the modified document content is saved back as a new PDF document.",
-		"code_title": "Edit input PDF by replacing text and save it back to PDF",
-		"comment_1": "Load PDF file by path and specify PDF load options",
-		"comment_2": "Open document for edit and obtain the \"EditableDocument\"",
-		"comment_3": "Replace text - this emulates the content editing",
-		"comment_4": "Create new \"EditableDocument\" instance from edited content",
-		"comment_5": "Save edited document content to PDF",
-		"comment_6": "Dispose all resources",
-	}
   },
   "platforms": {
     "title": "Platform independence",

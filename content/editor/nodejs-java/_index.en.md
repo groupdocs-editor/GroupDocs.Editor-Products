@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-25T10:52:24
+date: 2025-06-25T12:15:48
 draft: false
 
 product: "Editor"
@@ -50,17 +50,27 @@ code:
   title: "Edit documents in .NET"
   more: "More examples"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Node.js-via-Java"
-  install: "dotnet add package GroupDocs.Editor"
+  install: "npm i @groupdocs/groupdocs.editor"
   content: |
     ```javascript {style=abap}   
     // Pass source document to initialize the Editor
-    this.editor = new Editor(this.inputFilePath);
-        
-    // Edit document
-    const beforeEdit = await this.editor.edit();
+    const editor = new Editor("input.docx");
 
-    // Save edited document
-    await this.editor.save(afterEdit, this.outputPath, this.saveOptions);
+    // Open document for edit
+    const originalDoc = editor.edit();
+
+    // Get document as HTML
+    const srcHtml = originalDoc.getEmbeddedHtml();
+    
+    // Edit document contents
+    const editedHtml = srcHtml.replace("Old text", "New text");
+    
+    // Load edited document from HTML
+    const editedDoc = EditableDocument.fromMarkup(editedHtml, null);
+    
+    // Save edited document to file with desired format
+    const saveOptions = new WordProcessingSaveOptions();
+    await editor.save(editedDoc, "output.docx", saveOptions);
     ```
 
 ############################# Overview ############################
@@ -200,37 +210,72 @@ features:
 code_samples:
   enable: true
   title: "Code samples"
-  description: "Some use cases of typical operations using"
+  description: "Some use cases of typical operations using GroupDocs.Editor for Node.js via Java"
   items:
     # code sample loop
     - title: "Replace text in DOCX"
       content: |
-        {code_samples.sample_1.content_1} {code_samples.sample_1.content_2}
+        This example shows loading and editing a content of the input DOCX file programmatically by replacing text content on another. After that the modified document content is saved back as a new DOCX document. 
         {{< landing/code title="Edit input DOCX by replacing text and save it back to DOCX">}}
-        ```javascript {style=abap}   
-        // Load document
-        this.editor = new Editor(this.inputFilePath);
+        ```javascript {style=abap}
         
-        // Edit document
-        const beforeEdit = await this.editor.edit();
-
-        // Save edited document
-        await this.editor.save(afterEdit, this.outputPath, this.saveOptions);
+        // Load input document by path and specify load options if necessary
+        const loadOptions = new WordProcessingLoadOptions();
+        const editor = new Editor("input.docx", loadOptions);
+        
+        // Open document for edit and obtain the "EditableDocument"
+        const original = editor.edit();
+        
+        // Replace text - this emulates the content editing
+        const modifiedContent = original.getEmbeddedHtml().replace("old text", "new text");
+        
+        // Create new "EditableDocument" instance from edited content
+        const edited = EditableDocument.fromMarkup(modifiedContent, null);
+        
+        // Prepare save options with desired output formatX
+        const saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
+        
+        // Save edited document content to DOCX
+        await editor.save(edited, "output.docx", saveOptions);
+        
+        // Dispose all resources
+        edited.dispose(); original.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "Replace text in PDF"
+    - title: "Edit content of particular Excel worksheet"
       content: |
-        {code_samples.sample_2.content_1} {code_samples.sample_2.content_2}
-        {{< landing/code title="Edit input PDF by replacing text and save it back to PDF">}}
-        ```javascript {style=abap}   
-        const editOptions = new MarkdownEditOptions();
-        editOptions.setImageLoadCallback(new MdImageLoader(imagesFolder));
-
-        const editor = new Editor(inputMdPath);
-        const beforeEdit = await editor.edit(editOptions);
-
-        await editor.save(afterEdit, outputDocxPath, saveOptions);
+        The Spreadsheet document (like XLS, XLSX, XLSM, ODS and so on) may have one or more worksheets (tabs). GroupDocs.Editor allows to edit content of one worksheet at a time. After being edited, this worksheet may be saved to the separate Spreadsheet document (where only this specific worksheet will be saved), or the edited worksheet can be inserted back to the original document, where it can either replace the original worksheet or be saved together, along with original one. This example shows loading XLSX document, editing its 2nd worksheet and saving it as a new separate document in XLSX and CSV formats.
+        {{< landing/code title="Edit particular worksheet of XLSX and save as XLSX and CSV">}}
+        ```javascript {style=abap}
+        
+        // Load input XLSX by path and specify load options if necessary
+        const loadOptions = new SpreadsheetLoadOptions();
+        const editor = new Editor("input.xlsx", loadOptions);
+        
+        // Create and adjust the edit options - set 2nd worksheet to edit
+        const editOptions = new SpreadsheetEditOptions();
+        editOptions.setWorksheetIndex(1);
+        
+        // Open this 2nd worksheet for edit and obtain the "EditableDocument"
+        const originalWorksheet = editor.edit(editOptions);
+        
+        // Replace text - this emulates the content editing
+        const modifiedContent = originalWorksheet.getEmbeddedHtml().replace("Cell Text", "Edited Cell Text");
+        
+        // Create new "EditableDocument" instance from edited worksheet
+        const editedWorksheet = EditableDocument.fromMarkup(modifiedContent, null);
+        
+        // Save edited worksheet to new XLSX document
+        const saveSpreadsheetOptions = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
+        await editor.save(editedWorksheet, "output.xlsx", saveSpreadsheetOptions);
+        
+        // Save edited worksheet to new CSV document with comma (,) delimiter/separator
+        const saveTextOptions = new DelimitedTextSaveOptions(",");
+        await editor.save(editedWorksheet, "output.xlsx", saveTextOptions);
+        
+        // Dispose all resources
+        editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
 

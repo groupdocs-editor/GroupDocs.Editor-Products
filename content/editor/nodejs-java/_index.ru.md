@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-25T10:52:25
+date: 2025-06-25T12:15:48
 draft: false
 
 product: "Editor"
@@ -50,17 +50,27 @@ code:
   title: "Редактируйте файлы документов в Node.js через Java"
   more: "Больше примеров"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Node.js-via-Java"
-  install: "dotnet add package GroupDocs.Editor"
+  install: "npm i @groupdocs/groupdocs.editor"
   content: |
     ```javascript {style=abap}   
     // {code.comment_1}
-    this.editor = new Editor(this.inputFilePath);
-        
-    // Edit document
-    const beforeEdit = await this.editor.edit();
+    const editor = new Editor("input.docx");
 
-    // Save edited document
-    await this.editor.save(afterEdit, this.outputPath, this.saveOptions);
+    // {code.comment_2}
+    const originalDoc = editor.edit();
+
+    // {code.comment_3}
+    const srcHtml = originalDoc.getEmbeddedHtml();
+    
+    // {code.comment_4}
+    const editedHtml = srcHtml.replace("Old text", "New text");
+    
+    // {code.comment_5}
+    const editedDoc = EditableDocument.fromMarkup(editedHtml, null);
+    
+    // {code.comment_6}
+    const saveOptions = new WordProcessingSaveOptions();
+    await editor.save(editedDoc, "output.docx", saveOptions);
     ```
 
 ############################# Overview ############################
@@ -200,37 +210,72 @@ features:
 code_samples:
   enable: true
   title: "Примеры кода"
-  description: "Некоторые варианты использования типичных операций GroupDocs.Editor для Node.js."
+  description: "Некоторые варианты использования типичных операций GroupDocs.Editor для Node.js. GroupDocs.Editor for Node.js via Java"
   items:
     # code sample loop
     - title: "Редактировать определенное содержимое файла DOCX"
       content: |
-        Функция [Редактирование документов](https://docs.groupdocs.com/editor/nodejs/edit-document/) позволяет загружать, редактировать и сохранять файлы DOCX. Вот пример того, как редактировать документ с помощью Node.js:
+        {code_samples.sample_1.description} 
         {{< landing/code title="Как редактировать файлы DOCX в Node.js">}}
-        ```javascript {style=abap}   
-        // Load document
-        this.editor = new Editor(this.inputFilePath);
+        ```javascript {style=abap}
         
-        // Edit document
-        const beforeEdit = await this.editor.edit();
-
-        // Save edited document
-        await this.editor.save(afterEdit, this.outputPath, this.saveOptions);
+        // {code_samples.sample_1.comment_1}
+        const loadOptions = new WordProcessingLoadOptions();
+        const editor = new Editor("input.docx", loadOptions);
+        
+        // {code_samples.sample_1.comment_2}
+        const original = editor.edit();
+        
+        // {code_samples.sample_1.comment_3}
+        const modifiedContent = original.getEmbeddedHtml().replace("old text", "new text");
+        
+        // {code_samples.sample_1.comment_4}
+        const edited = EditableDocument.fromMarkup(modifiedContent, null);
+        
+        // {code_samples.sample_1.comment_5}
+        const saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
+        
+        // {code_samples.sample_1.comment_6}
+        await editor.save(edited, "output.docx", saveOptions);
+        
+        // {code_samples.sample_1.comment_7}
+        edited.dispose(); original.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "Редактирование полей формы в документе Word"
+    - title: "{code_samples.sample_4.title}"
       content: |
-        Легко редактируйте поля формы в документе Word с помощью GroupDocs.Editor для Node.js. Вот как редактировать поля формы в документе Word с помощью Node.js:
-        {{< landing/code title="Как редактировать поля формы в документе Word с помощью GroupDocs.Editor для Node.js">}}
-        ```javascript {style=abap}   
-        const editOptions = new MarkdownEditOptions();
-        editOptions.setImageLoadCallback(new MdImageLoader(imagesFolder));
-
-        const editor = new Editor(inputMdPath);
-        const beforeEdit = await editor.edit(editOptions);
-
-        await editor.save(afterEdit, outputDocxPath, saveOptions);
+        {code_samples.sample_4.description}
+        {{< landing/code title="{code_samples.sample_4.code_title}">}}
+        ```javascript {style=abap}
+        
+        // {code_samples.sample_4.comment_1}
+        const loadOptions = new SpreadsheetLoadOptions();
+        const editor = new Editor("input.xlsx", loadOptions);
+        
+        // {code_samples.sample_4.comment_2}
+        const editOptions = new SpreadsheetEditOptions();
+        editOptions.setWorksheetIndex(1);
+        
+        // {code_samples.sample_4.comment_3}
+        const originalWorksheet = editor.edit(editOptions);
+        
+        // {code_samples.sample_4.comment_4}
+        const modifiedContent = originalWorksheet.getEmbeddedHtml().replace("Cell Text", "Edited Cell Text");
+        
+        // {code_samples.sample_4.comment_5}
+        const editedWorksheet = EditableDocument.fromMarkup(modifiedContent, null);
+        
+        // {code_samples.sample_4.comment_6}
+        const saveSpreadsheetOptions = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
+        await editor.save(editedWorksheet, "output.xlsx", saveSpreadsheetOptions);
+        
+        // {code_samples.sample_4.comment_7}
+        const saveTextOptions = new DelimitedTextSaveOptions(",");
+        await editor.save(editedWorksheet, "output.xlsx", saveTextOptions);
+        
+        // {code_samples.sample_4.comment_8}
+        editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
 

@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-25T10:52:25
+date: 2025-06-25T12:15:48
 draft: false
 
 product: "Editor"
@@ -50,17 +50,27 @@ code:
   title: "通过 Java 在 Node.js 中编辑文档文件"
   more: "更多示例"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Node.js-via-Java"
-  install: "dotnet add package GroupDocs.Editor"
+  install: "npm i @groupdocs/groupdocs.editor"
   content: |
     ```javascript {style=abap}   
     // {code.comment_1}
-    this.editor = new Editor(this.inputFilePath);
-        
-    // Edit document
-    const beforeEdit = await this.editor.edit();
+    const editor = new Editor("input.docx");
 
-    // Save edited document
-    await this.editor.save(afterEdit, this.outputPath, this.saveOptions);
+    // {code.comment_2}
+    const originalDoc = editor.edit();
+
+    // {code.comment_3}
+    const srcHtml = originalDoc.getEmbeddedHtml();
+    
+    // {code.comment_4}
+    const editedHtml = srcHtml.replace("Old text", "New text");
+    
+    // {code.comment_5}
+    const editedDoc = EditableDocument.fromMarkup(editedHtml, null);
+    
+    // {code.comment_6}
+    const saveOptions = new WordProcessingSaveOptions();
+    await editor.save(editedDoc, "output.docx", saveOptions);
     ```
 
 ############################# Overview ############################
@@ -200,37 +210,72 @@ features:
 code_samples:
   enable: true
   title: "代码示例"
-  description: "Node.js 操作的典型 GroupDocs.Editor 的一些用例。"
+  description: "Node.js 操作的典型 GroupDocs.Editor 的一些用例。 GroupDocs.Editor for Node.js via Java"
   items:
     # code sample loop
     - title: "编辑特定的 DOCX 文件内容"
       content: |
-        [文档编辑](https://docs.groupdocs.com/editor/nodejs/edit-document/) 功能允许您加载、编辑和保存 DOCX 文件。 下面是如何使用 Node.js 实现文档编辑的示例：
+        {code_samples.sample_1.description} 
         {{< landing/code title="如何在 Node.js 中编辑 DOCX 文件">}}
-        ```javascript {style=abap}   
-        // Load document
-        this.editor = new Editor(this.inputFilePath);
+        ```javascript {style=abap}
         
-        // Edit document
-        const beforeEdit = await this.editor.edit();
-
-        // Save edited document
-        await this.editor.save(afterEdit, this.outputPath, this.saveOptions);
+        // {code_samples.sample_1.comment_1}
+        const loadOptions = new WordProcessingLoadOptions();
+        const editor = new Editor("input.docx", loadOptions);
+        
+        // {code_samples.sample_1.comment_2}
+        const original = editor.edit();
+        
+        // {code_samples.sample_1.comment_3}
+        const modifiedContent = original.getEmbeddedHtml().replace("old text", "new text");
+        
+        // {code_samples.sample_1.comment_4}
+        const edited = EditableDocument.fromMarkup(modifiedContent, null);
+        
+        // {code_samples.sample_1.comment_5}
+        const saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
+        
+        // {code_samples.sample_1.comment_6}
+        await editor.save(edited, "output.docx", saveOptions);
+        
+        // {code_samples.sample_1.comment_7}
+        edited.dispose(); original.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "编辑 Word 文档中的表单字段"
+    - title: "{code_samples.sample_4.title}"
       content: |
-        使用 GroupDocs.Editor for Node.js 轻松编辑 Word 文档中的表单字段。 以下是使用 Node.js 编辑 Word 文档中的表单字段的方法：
-        {{< landing/code title="如何使用 Node.js 的 GroupDocs.Editor 编辑 Word 文档中的表单字段">}}
-        ```javascript {style=abap}   
-        const editOptions = new MarkdownEditOptions();
-        editOptions.setImageLoadCallback(new MdImageLoader(imagesFolder));
-
-        const editor = new Editor(inputMdPath);
-        const beforeEdit = await editor.edit(editOptions);
-
-        await editor.save(afterEdit, outputDocxPath, saveOptions);
+        {code_samples.sample_4.description}
+        {{< landing/code title="{code_samples.sample_4.code_title}">}}
+        ```javascript {style=abap}
+        
+        // {code_samples.sample_4.comment_1}
+        const loadOptions = new SpreadsheetLoadOptions();
+        const editor = new Editor("input.xlsx", loadOptions);
+        
+        // {code_samples.sample_4.comment_2}
+        const editOptions = new SpreadsheetEditOptions();
+        editOptions.setWorksheetIndex(1);
+        
+        // {code_samples.sample_4.comment_3}
+        const originalWorksheet = editor.edit(editOptions);
+        
+        // {code_samples.sample_4.comment_4}
+        const modifiedContent = originalWorksheet.getEmbeddedHtml().replace("Cell Text", "Edited Cell Text");
+        
+        // {code_samples.sample_4.comment_5}
+        const editedWorksheet = EditableDocument.fromMarkup(modifiedContent, null);
+        
+        // {code_samples.sample_4.comment_6}
+        const saveSpreadsheetOptions = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
+        await editor.save(editedWorksheet, "output.xlsx", saveSpreadsheetOptions);
+        
+        // {code_samples.sample_4.comment_7}
+        const saveTextOptions = new DelimitedTextSaveOptions(",");
+        await editor.save(editedWorksheet, "output.xlsx", saveTextOptions);
+        
+        // {code_samples.sample_4.comment_8}
+        editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
 
