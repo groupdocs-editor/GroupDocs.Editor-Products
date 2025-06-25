@@ -2,7 +2,22 @@ code:
   title: "<% "{code.title}" %>"
   more: "<% "{code.more}" %>"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java"
-  install: "dotnet add package GroupDocs.Editor"
+  install: |
+    <dependencies>
+      <dependency>
+        <groupId>com.groupdocs</groupId>
+        <artifactId>groupdocs-editor</artifactId>
+        <version>{0}</version>
+      </dependency>
+    </dependencies>
+
+    <repositories>
+      <repository>
+        <id>repository.groupdocs.com</id>
+        <name>GroupDocs Repository</name>
+        <url>https://repository.groupdocs.com/repo/</url>
+      </repository>
+    </repositories>
   content: |
     ```java {style=abap}   
     // <% "{code.comment_1}" %>
