@@ -34,6 +34,7 @@ words:
   for: "のために"
 
 actions:
+  editor_demo: true
   main: "無料のnugetダウンロード"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
   alt: "ライセンス"
