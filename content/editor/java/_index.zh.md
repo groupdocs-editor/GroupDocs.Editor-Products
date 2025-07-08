@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-25T12:15:48
+date: 2025-07-08T14:01:54
 draft: false
 
 product: "Editor"
@@ -24,31 +24,31 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "Java 文档编辑 API |编辑 PDF、Word、Excel、EPUB"
-head_description: "Java 文档编辑 API，用于编辑、翻译和保存 PDF、Microsoft Word、Excel、演示文稿、Visio 和图像格式的文档页面。"
+head_title: "{head.title}"
+head_description: "{head.description}"
 
 ############################# Header ############################
-title: "编辑文档<br>通过Java API"
-description: "强大的编辑器 API，可操作 PDF、Microsoft Office、HTML 和图像文件。"
+title: "{header.title_1}<br>{header.title_2}"
+description: "{header.description}"
 words:
-  for: "为了"
+  for: "{header.words.for}"
 
 actions:
-  main: "免费 Maven 下载"
+  main: "{actions.main}"
   main_link: "https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-editor/"
-  alt: "许可"
+  alt: "{actions.alt}"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/java"
-  title: "准备好开始了吗？"
-  description: "免费试用 GroupDocs.Editor 功能或申请许可证。"
+  title: "{actions.title}"
+  description: "{actions.description}"
 
 release:
-  title: "版本 {0} 已发布"
-  notes: "看看有什么新鲜事"
-  downloads: "下载"
+  title: "{release.title}"
+  notes: "{release.notes}"
+  downloads: "{release.downloads}"
 
 code:
-  title: "在 Java 中编辑文档文件"
-  more: "更多示例"
+  title: "{code.title}"
+  more: "{code.more}"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java"
   install: |
     <dependencies>
@@ -92,25 +92,25 @@ code:
 overview:
   enable: true
   title: "GroupDocs.Editor for Java {overview.glance}"
-  description: "用于在 Java 应用程序中编辑、翻译和保存文档、幻灯片和图表的 API。"
+  description: "{overview.description}"
   features:
     # feature loop
-    - title: "用 Java 轻松编辑多个文档"
+    - title: "{overview.feature_1.title}"
       content: "{overview.feature_1.description1} GroupDocs.Editor for Java {overview.feature_1.description2}"
 
     # feature loop
-    - title: "将文档翻译为 HTML/CSS"
-      content: "将文档转换为与所见即所得编辑器兼容的 HTML/CSS 标记，从而可以在 Web 环境中轻松高效地编辑文档。"
+    - title: "{overview.feature_2.title}"
+      content: "{overview.feature_2.description}"
 
     # feature loop
-    - title: "以各种格式保存编辑过的文档"
-      content: "将编辑后的文档保存回原始格式或导出为其他格式（例如 PDF），确保灵活性和兼容性。"
+    - title: "{overview.feature_3.title}"
+      content: "{overview.feature_3.description}"
 
 ############################# Platforms ############################
 platforms:
   enable: true
-  title: "平台独立性"
-  description: "GroupDocs.Editor for Java 支持以下操作系统、框架和包管理器。"
+  title: "{platforms.title}"
+  description: "{platforms.description}"
   items:
     # platform loop
     - title: "Amazon"
@@ -142,21 +142,21 @@ platforms:
 ############################# File formats ############################
 formats:
   enable: true
-  title: "支持的文件格式"
+  title: "{formats.title}"
   description: |
-    GroupDocs.Editor for Java 支持以下[文件格式](https://docs.groupdocs.com/editor/java/supported-document-formats/) 的操作。 ([{formats.full_list}](https://docs.groupdocs.com/editor/java/supported-document-formats/)).
+    {formats.description} ([{formats.full_list}](https://docs.groupdocs.com/editor/java/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
       content: |
-        ### 微软Office格式
+        ### {formats.groups.title_1}
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX
     # group loop
     - color: "blue"
       content: |
-        ### 文件
+        ### {formats.groups.title_2}
         * **{formats.groups.fixed_layout}:** PDF, XPS ({formats.groups.export_only})
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
         * **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
@@ -165,7 +165,7 @@ formats:
       # group loop
     - color: "red"
       content: |
-        ### 其他格式
+        ### {formats.groups.title_3}
         * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
         * **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
@@ -173,65 +173,65 @@ formats:
 features:
   enable: true
   title: "{features.features}"
-  description: "无缝编辑、翻译和保存 PDF 和 Office 文档。"
+  description: "{features.description}"
 
   items:
     # feature loop
     - icon: "merge"
-      title: "编辑文件"
-      content: "编辑各种文档格式的内容，包括 PDF、DOCX、XLSX、PPTX 等。"
+      title: "{features.feature_1.title}"
+      content: "{features.feature_1.content}"
 
     # feature loop
     - icon: "split"
-      title: "转换为 HTML/CSS"
-      content: "将文档转换为 HTML/CSS，以便使用 CKEditor 或 TinyMCE 等所见即所得编辑器轻松编辑。"
+      title: "{features.feature_2.title}"
+      content: "{features.feature_2.content}"
 
     # feature loop
     - icon: "move"
-      title: "保存编辑过的文档"
-      content: "将编辑后的 ​​HTML/CSS 保存回原始文档格式或导出为 PDF。"
+      title: "{features.feature_3.title}"
+      content: "{features.feature_3.content}"
 
     # feature loop
     - icon: "remove"
-      title: "提取文档信息"
-      content: "从文档中提取页数、大小和加密状态等信息。"
+      title: "{features.feature_4.title}"
+      content: "{features.feature_4.content}"
 
     # feature loop
     - icon: "rotate"
-      title: "支持多种格式"
-      content: "编辑多种文档格式，包括 Microsoft Office 文件、PDF 等。"
+      title: "{features.feature_5.title}"
+      content: "{features.feature_5.content}"
 
     # feature loop
     - icon: "swap"
-      title: "密码保护"
-      content: "轻松编辑受密码保护的文档。"
+      title: "{features.feature_6.title}"
+      content: "{features.feature_6.content}"
 
     # feature loop
     - icon: "extract"
-      title: "自定义文档编码"
-      content: "在编辑和保存过程中指定文档编码。"
+      title: "{features.feature_7.title}"
+      content: "{features.feature_7.content}"
 
     # feature loop
     - icon: "orientation"
-      title: "字体提取"
-      content: "从文档中提取字体以在编辑过程中使用。"
+      title: "{features.feature_8.title}"
+      content: "{features.feature_8.content}"
 
     # feature loop
     - icon: "preview"
-      title: "预览页面"
-      content: "生成文档页面的图像表示以更好地理解内容和结构。"
+      title: "{features.feature_9.title}"
+      content: "{features.feature_9.content}"
 
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "代码示例"
-  description: "Java 操作的典型 GroupDocs.Editor 的一些用例。 GroupDocs.Editor for Java"
+  title: "{code_samples.title}"
+  description: "{code_samples.description} GroupDocs.Editor for Java"
   items:
     # code sample loop
-    - title: "编辑特定的 DOCX 文件内容"
+    - title: "{code_samples.sample_1.title}"
       content: |
         {code_samples.sample_1.description} 
-        {{< landing/code title="如何用 Java 编辑 DOCX 文件">}}
+        {{< landing/code title="{code_samples.sample_1.code_title}">}}
         ```java {style=abap}
         
         // {code_samples.sample_1.comment_1}
@@ -283,7 +283,7 @@ code_samples:
         editor.save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
         
         // {code_samples.sample_4.comment_7}
-        editor.save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
+        editor.save(editedWorksheet, "output.csv", new DelimitedTextSaveOptions(","));
         
         // {code_samples.sample_4.comment_8}
         editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();

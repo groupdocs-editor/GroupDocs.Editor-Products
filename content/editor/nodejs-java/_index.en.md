@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-25T12:15:48
+date: 2025-07-08T14:01:53
 draft: false
 
 product: "Editor"
@@ -272,7 +272,7 @@ code_samples:
         
         // Save edited worksheet to new CSV document with comma (,) delimiter/separator
         const saveTextOptions = new DelimitedTextSaveOptions(",");
-        await editor.save(editedWorksheet, "output.xlsx", saveTextOptions);
+        await editor.save(editedWorksheet, "output.csv", saveTextOptions);
         
         // Dispose all resources
         editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();

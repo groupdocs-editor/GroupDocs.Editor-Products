@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-25T12:15:48
+date: 2025-07-08T14:01:53
 draft: false
 
 product: "Editor"
@@ -24,51 +24,51 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "Node.js Dokumentbearbeitungs-API | Bearbeiten Sie PDF, Word, Excel, EPUB"
-head_description: "Node.js Dokumentbearbeitungs-API zum Bearbeiten, Übersetzen und Speichern von Dokumentseiten aus PDF-, Microsoft Word-, Excel-, Präsentations-, Visio- und Bildformaten."
+head_title: "Node.js dokument bearbeiten api | Bearbeiten Sie PDF, Wort, Excel, PowerPoint"
+head_description: "Node.js Dokument -Bearbeitungs -API zum Laden, Bearbeiten und Speichern von Dokumentseiten von PDF-, Microsoft Word-, Excel-, PowerPoint-, E -Book- und E -Mail -Formaten."
 
 ############################# Header ############################
-title: "Dokumente bearbeiten<br>über die Node.js-API"
-description: "Leistungsstarke Editor-API zum Bearbeiten von PDF-, Microsoft Office-, HTML- und Bilddateien."
+title: "Dokumente bearbeiten<br>über node.js api"
+description: "Leistungsstarke Editor -API zur Manipulation von Microsoft Office, PDF-, HTML-, E -Book- und E -Mail -Dateien."
 words:
   for: "für"
 
 actions:
-  main: "Kostenloser npm-Download"
+  main: "Kostenloser NPM -Download"
   main_link: "https://releases.groupdocs.com/editor/nodejs-java/"
   alt: "Lizenzierung"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/nodejs-java"
-  title: "Bereit anzufangen?"
-  description: "Testen Sie die Funktionen von GroupDocs.Editor kostenlos oder fordern Sie eine Lizenz an."
+  title: "Bereit, loszulegen?"
+  description: "Versuchen Sie es mit GroupDocs.Editor kostenlos oder fordern Sie eine Lizenz an."
 
 release:
   title: "Version {0} veröffentlicht"
-  notes: "Schau was neu ist"
+  notes: "Sehen Sie, was neu ist"
   downloads: "Downloads"
 
 code:
-  title: "Bearbeiten Sie Dokumentdateien in Node.js über Java"
-  more: "Mehr Beispiele"
+  title: "Dokumente in .NET bearbeiten"
+  more: "Weitere Beispiele"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Node.js-via-Java"
   install: "npm i @groupdocs/groupdocs.editor"
   content: |
     ```javascript {style=abap}   
-    // {code.comment_1}
+    // Übergeben Sie das Quelldokument, um den Editor zu initialisieren
     const editor = new Editor("input.docx");
 
-    // {code.comment_2}
+    // Öffnen Sie das Dokument für die Bearbeitung
     const originalDoc = editor.edit();
 
-    // {code.comment_3}
+    // Holen Sie sich ein Dokument als HTML
     const srcHtml = originalDoc.getEmbeddedHtml();
     
-    // {code.comment_4}
+    // Dokumentinhalte bearbeiten
     const editedHtml = srcHtml.replace("Old text", "New text");
     
-    // {code.comment_5}
+    // Laden Sie bearbeitetes Dokument von HTML
     const editedDoc = EditableDocument.fromMarkup(editedHtml, null);
     
-    // {code.comment_6}
+    // Speichern Sie das bearbeitete Dokument, um sie mit dem gewünschten Format zu versehen
     const saveOptions = new WordProcessingSaveOptions();
     await editor.save(editedDoc, "output.docx", saveOptions);
     ```
@@ -76,26 +76,26 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor for Node.js via Java {overview.glance}"
-  description: "API zum Bearbeiten, Übersetzen und Speichern von Dokumenten, Folien und Diagrammen in Node.js-Anwendungen."
+  title: "GroupDocs.Editor for Node.js via Java Auf einen Blick"
+  description: "API zum Bearbeiten, Konvertieren und Speichern von Dokumenten, Tabellenkalkulationen, Folien und E-Books in Node.js-Anwendungen."
   features:
     # feature loop
-    - title: "Bearbeiten Sie mühelos mehrere Dokumente in Node.js"
-      content: "{overview.feature_1.description1} GroupDocs.Editor for Node.js via Java {overview.feature_1.description2}"
+    - title: "Bearbeiten Sie mühelos mehrere Dokumente in node.js"
+      content: "Bearbeiten Sie nahtlos mehrere PDF- und Office -Dateien mit Unterstützung für eine Vielzahl von Formaten. GroupDocs.Editor for Node.js via Java macht die Dokumentbearbeitung schnell und problemlos."
 
     # feature loop
-    - title: "Übersetzen Sie Dokumente in HTML/CSS"
-      content: "Übersetzen Sie Dokumente in HTML/CSS-Markup, das mit WYSIWYG-Editoren kompatibel ist, und ermöglichen Sie so eine einfache und effiziente Dokumentbearbeitung in einer Webumgebung."
+    - title: "Konvertieren Sie Dokumente in HTML/CSS"
+      content: "Konvertieren Sie Dokumente in reine HTML/CSS -Markup -Kompatibel, die mit WYSIWYG -Editoren kompatibel sind und eine einfache und effiziente Dokumentbearbeitung in einer Webumgebung ermöglichen."
 
     # feature loop
     - title: "Speichern Sie bearbeitete Dokumente in verschiedenen Formaten"
-      content: "Speichern Sie Ihre bearbeiteten Dokumente wieder in ihrem Originalformat oder exportieren Sie sie in andere Formate wie PDF, um Flexibilität und Kompatibilität zu gewährleisten."
+      content: "Speichern Sie Ihre bearbeiteten Dokumente in ihrem ursprünglichen Format oder exportieren Sie sie in andere Formate wie PDF, um Flexibilität und Kompatibilität zu gewährleisten."
 
 ############################# Platforms ############################
 platforms:
   enable: true
   title: "Plattformunabhängigkeit"
-  description: "GroupDocs.Editor für Node.js unterstützt die folgenden Betriebssysteme, Frameworks und Paketmanager."
+  description: "GroupDocs.Editor für node.js unterstützt die folgenden Betriebssysteme, Frameworks und Paketmanager."
   items:
     # platform loop
     - title: "Amazon"
@@ -129,36 +129,36 @@ formats:
   enable: true
   title: "Unterstützte Dateiformate"
   description: |
-    GroupDocs.Editor für Node.js unterstützt Vorgänge mit den folgenden [Dateiformaten](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/). ([{formats.full_list}](https://docs.groupdocs.com/editor/nodejs-java/supported-document-formats/)).
+    GroupDocs.Editor unterstützt den Vorgang mit den folgenden Dateiformaten für Import und Export ([Vollständige Liste](https://docs.groupdocs.com/editor/nodejs-java/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
       content: |
-        ### Microsoft Office-Formate
+        ### Microsoft -Büroformate
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX
     # group loop
     - color: "blue"
       content: |
-        ### Unterlagen
-        * **{formats.groups.fixed_layout}:** PDF, XPS ({formats.groups.export_only})
+        ### Andere Dokumentformate
+        * **Fixed-Layout-Formate:** PDF, XPS (nur exportieren)
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-        * **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
-        * **{formats.groups.other_tables}:** SXC, DIF
+        * **Abgrenzte Texttabellen:** CSV, TSV, DSV (willkürlicher Trennzeichen)
+        * **Andere Tischformate:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
-        ### Andere Formate
-        * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
-        * **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
+        ### Web-bezogene Formate
+        * **Markup:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
+        * **E -Mail -Formate:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.features}"
-  description: "Bearbeiten, übersetzen und speichern Sie PDF- und Office-Dokumente nahtlos."
+  title: "Hauptmerkmale"
+  description: "Laden und speichern Sie in verschiedenen Formaten Office -Dokumente, E -Mails, eBooks und PDF nahtlos, bearbeiten und speichern Sie sie."
 
   items:
     # feature loop
@@ -168,13 +168,13 @@ features:
 
     # feature loop
     - icon: "split"
-      title: "In HTML/CSS übersetzen"
-      content: "Konvertieren Sie Dokumente in HTML/CSS zur einfachen Bearbeitung mit WYSIWYG-Editoren wie CKEditor oder TinyMCE."
+      title: "Übersetzen Sie zu HTML/CSS"
+      content: "Konvertieren Sie Dokumente in HTML/CSS, um mit WYSIWYG -Redakteuren wie Ckeditor oder Tinymce einfach zu bearbeiten."
 
     # feature loop
     - icon: "move"
-      title: "Bearbeitete Dokumente speichern"
-      content: "Speichern Sie das bearbeitete HTML/CSS wieder im ursprünglichen Dokumentformat oder exportieren Sie es als PDF."
+      title: "Speichern bearbeiteten Dokumente"
+      content: "Speichern Sie das bearbeitete HTML/CSS zurück im Originaldokumentformat oder im PDF."
 
     # feature loop
     - icon: "remove"
@@ -184,22 +184,22 @@ features:
     # feature loop
     - icon: "rotate"
       title: "Unterstützung für verschiedene Formate"
-      content: "Bearbeiten Sie eine Vielzahl von Dokumentformaten, darunter Microsoft Office-Dateien, PDFs und mehr."
+      content: "Bearbeiten Sie eine breite Palette von Dokumentformaten, einschließlich Microsoft Office -Dateien, PDFs und mehr."
 
     # feature loop
     - icon: "swap"
       title: "Passwortschutz"
-      content: "Bearbeiten Sie passwortgeschützte Dokumente ganz einfach."
+      content: "Laden und bearbeiten Sie mit Kennwort geschützten Dokumenten problemlos und schützen Sie die Ausgabedokumente mit Kennwortschutz."
 
     # feature loop
     - icon: "extract"
-      title: "Benutzerdefinierte Dokumentkodierung"
-      content: "Geben Sie die Dokumentkodierung während der Bearbeitungs- und Speicherprozesse an."
+      title: "E -Mail bearbeiten"
+      content: "Bearbeiten und speichern Sie die E -Mail -Nachrichten und -briefe in MSG, EML, EMLX, MBOX und vielen anderen Formaten, einschließlich Bearbeitungsmetadaten wie Betreff, CC, BCC, von Titel, Datum usw."
 
     # feature loop
     - icon: "orientation"
-      title: "Schriftartenextraktion"
-      content: "Extrahieren Sie Schriftarten aus Dokumenten zur Verwendung im Bearbeitungsprozess."
+      title: "Schriftart Extraktion"
+      content: "Extrahieren Sie Schriftarten aus Wortverarbeitungsdokumenten zur Verwendung im Bearbeitungsprozess."
 
     # feature loop
     - icon: "preview"
@@ -209,72 +209,72 @@ features:
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "Codebeispiele"
-  description: "Einige Anwendungsfälle typischer GroupDocs.Editor für Node.js-Vorgänge. GroupDocs.Editor for Node.js via Java"
+  title: "Code -Beispiele"
+  description: "Einige Anwendungsfälle von typischen Operationen verwenden GroupDocs.Editor for Node.js via Java"
   items:
     # code sample loop
-    - title: "Bearbeiten Sie bestimmte DOCX-Dateiinhalte"
+    - title: "Text in DOCX ersetzen"
       content: |
-        {code_samples.sample_1.description} 
-        {{< landing/code title="So bearbeiten Sie DOCX-Dateien in Node.js">}}
+        In diesem Beispiel wird das Laden und Bearbeiten eines Inhalts der Eingabedocx -Datei programmatisch angezeigt, indem Textinhalte auf einem anderen ersetzt werden. Danach wird der geänderte Dokumentinhalt als neues DOCX -Dokument wieder gespeichert. 
+        {{< landing/code title="Bearbeiten Sie Eingabe docx, indem Sie den Text ersetzen, und speichern Sie ihn in DOCX zurück">}}
         ```javascript {style=abap}
         
-        // {code_samples.sample_1.comment_1}
+        // Laden Sie das Eingabedokument nach Pfad und geben Sie bei Bedarf Lastoptionen an
         const loadOptions = new WordProcessingLoadOptions();
         const editor = new Editor("input.docx", loadOptions);
         
-        // {code_samples.sample_1.comment_2}
+        // Öffnen Sie das Dokument für Bearbeiten und erhalten Sie das "EditableDObocument".
         const original = editor.edit();
         
-        // {code_samples.sample_1.comment_3}
+        // Text ersetzen - Dies emuliert die Inhaltsbearbeitung
         const modifiedContent = original.getEmbeddedHtml().replace("old text", "new text");
         
-        // {code_samples.sample_1.comment_4}
+        // Erstellen
         const edited = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_1.comment_5}
+        // Bereiten Sie Speicheroptionen mit dem gewünschten Ausgangsformatx vor
         const saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
         
-        // {code_samples.sample_1.comment_6}
+        // Speichern Sie bearbeitete Dokumentinhalte in DOCX
         await editor.save(edited, "output.docx", saveOptions);
         
-        // {code_samples.sample_1.comment_7}
+        // Alle Ressourcen entsorgen
         edited.dispose(); original.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "{code_samples.sample_4.title}"
+    - title: "Bearbeiten Sie den Inhalt eines bestimmten Excel -Arbeitsblatts"
       content: |
-        {code_samples.sample_4.description}
-        {{< landing/code title="{code_samples.sample_4.code_title}">}}
+        Das Tabellenkalkulationsdokument (wie XLS, XLSX, XLSM, ODS usw.) kann ein oder mehrere Arbeitsblätter (Registerkarten) enthalten. GroupDocs.Editor ermöglicht es, Inhalte eines Arbeitsblatts gleichzeitig zu bearbeiten. Nach dem Bearbeiten kann dieses Arbeitsblatt in dem separaten Tabellenkalkulationsdokument gespeichert werden (wobei nur dieses spezielle Arbeitsblatt gespeichert wird) oder das bearbeitete Arbeitsblatt kann in das Originaldokument zurückgefügt werden, wo es entweder das ursprüngliche Arbeitsblatt ersetzen oder zusammen mit dem Original zusammen gespeichert werden kann. In diesem Beispiel wird das Laden von XLSX -Dokument, das Bearbeiten seines zweiten Arbeitsblatts und das Speichern als neues separates Dokument in XLSX- und CSV -Formaten angezeigt.
+        {{< landing/code title="Bearbeiten Sie ein bestimmtes Arbeitsblatt von XLSX und speichern Sie als XLSX und CSV">}}
         ```javascript {style=abap}
         
-        // {code_samples.sample_4.comment_1}
+        // Laden Sie die Eingabe xlsx nach Pfad und geben Sie bei Bedarf Lastoptionen an
         const loadOptions = new SpreadsheetLoadOptions();
         const editor = new Editor("input.xlsx", loadOptions);
         
-        // {code_samples.sample_4.comment_2}
+        // Erstellen und passen Sie die Bearbeitungsoptionen an - Stellen Sie das zweite Arbeitsblatt auf das Bearbeiten ein
         const editOptions = new SpreadsheetEditOptions();
         editOptions.setWorksheetIndex(1);
         
-        // {code_samples.sample_4.comment_3}
+        // Öffnen Sie dieses zweite Arbeitsblatt für Bearbeiten und erhalten Sie das "EditableDableDocument"
         const originalWorksheet = editor.edit(editOptions);
         
-        // {code_samples.sample_4.comment_4}
+        // Text ersetzen - Dies emuliert die Inhaltsbearbeitung
         const modifiedContent = originalWorksheet.getEmbeddedHtml().replace("Cell Text", "Edited Cell Text");
         
-        // {code_samples.sample_4.comment_5}
+        // Erstellen
         const editedWorksheet = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_4.comment_6}
+        // Speichern Sie das bearbeitete Arbeitsblatt in einem neuen XLSX -Dokument
         const saveSpreadsheetOptions = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
         await editor.save(editedWorksheet, "output.xlsx", saveSpreadsheetOptions);
         
-        // {code_samples.sample_4.comment_7}
+        // Speichern Sie bearbeiteten Arbeitsblatt in einem neuen CSV -Dokument mit Comma (,) Trennzeichen/Trennzeichen
         const saveTextOptions = new DelimitedTextSaveOptions(",");
-        await editor.save(editedWorksheet, "output.xlsx", saveTextOptions);
+        await editor.save(editedWorksheet, "output.csv", saveTextOptions);
         
-        // {code_samples.sample_4.comment_8}
+        // Alle Ressourcen entsorgen
         editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}

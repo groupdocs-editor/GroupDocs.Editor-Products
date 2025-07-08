@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "API di modifica del documento Java | Modifica PDF, Word, Excel, Epub",
-    "description": "API di modifica dei documenti Java per modificare, tradurre e salvare le pagine di documenti da formati PDF, Microsoft Word, Excel, Presentations, Visio e Immagine."
+    "title": "API di modifica del documento Java | Modifica PDF, Word, Excel, PowerPoint",
+    "description": "API di modifica dei documenti Java per caricare, modificare e salvare le pagine di documenti da PDF, Microsoft Word, Excel, PowerPoint, Ebook e Formati e -mail."
   },
   "header": {
     "title_1": "Modifica documenti",
     "title_2": "Via API Java",
-    "description": "Potente editor API per manipolare i file PDF, Microsoft Office, HTML e Image.",
+    "description": "Potente editor API per manipolare i file di Microsoft Office, PDF, HTML, eBook e e -mail.",
     "words": {
       "for": "per"
     }
@@ -23,15 +23,16 @@
     "downloads": "Download"
   },
   "overview": {
-    "title": "GroupDocs.Editor a colpo d'occhio",
-    "description": "API per modificare, tradurre e salvare documenti, diapositive e diagrammi nelle applicazioni Java.",
+    "glance": "a colpo d'occhio",
+    "description": "API per modificare, convertire e salvare documenti, fogli di calcolo, diapositive ed e-book nelle applicazioni Java.",
     "feature_1": {
       "title": "Modifica senza sforzo più documenti in Java",
-      "description": "Modifica perfettamente più file PDF e Office con supporto per una vasta gamma di formati. GroupDocs.Editor per Java rende il editing di documenti in fretta e senza problemi."
+      "description1": "Modifica perfettamente più file PDF e Office con supporto per una vasta gamma di formati.",
+      "description2": "Rende la modifica dei documenti in fretta e senza problemi."
     },
     "feature_2": {
-      "title": "Traduci i documenti in HTML/CSS",
-      "description": "Traduci i documenti in markup HTML/CSS compatibile con gli editori WYSIWYG, consentendo una modifica di documenti facile ed efficiente in un ambiente Web."
+      "title": "Converti i documenti in HTML/CSS",
+      "description": "Converti i documenti in puro markup HTML/CSS compatibile con gli editori di Wysiwyg, consentendo una modifica di documenti facile ed efficiente in un ambiente Web."
     },
     "feature_3": {
       "title": "Salva documenti modificati in vari formati",
@@ -40,23 +41,27 @@
   },
   "formats": {
     "title": "Formati di file supportati",
-    "description": "GroupDocs.Editor per Java supporta le operazioni con i seguenti [formati di file] (https://docs.groupdocs.com/editor/java/supported-document-formats/).",
+    "description": "GroupDocs.Editor supporta le operazioni con i seguenti formati di file su importazione ed esportazione",
+    "full_list": "Elenco completo",
     "groups": {
       "title_1": "Formati di Microsoft Office",
-      "title_2": "Documenti",
-      "title_3": "Altri formati",
-      "format_documents": "Documenti",
-      "format_images": "Immagini",
-      "format_web": "Web",
-      "format_archives": "Archivi"
+      "title_2": "Altri formati di documenti",
+      "title_3": "Formati relativi al web",
+      "fixed_layout": "Formati a livello fisso",
+      "export_only": "solo esportazione",
+      "delimited_text_table": "Tabelle di testo delimitate",
+      "arbitrary_separator": "separatore arbitrario",
+      "other_tables": "Altri formati della tabella",
+      "format_markup": "Markup",
+      "format_email": "Formati e -mail"
     }
   },
   "features": {
-    "title": "Funzionalità di GroupDocs.Editor",
-    "description": "Modifica perfettamente, traduci e salva i documenti PDF e Office.",
+    "features": "Caratteristiche principali",
+    "description": "Carica, modifica e salva senza soluzione di continuità in diversi formati documenti dell'ufficio, e -mail, ebook e PDF.",
     "feature_1": {
       "title": "Modifica file",
-      "content": "Modifica il contenuto di vari formati di documenti tra cui PDF, DOCX, XLSX, PPTX e altro ancora."
+      "content": "Modifica il contenuto di vari formati di documenti tra cui PDF, DOCX, XLSX, PPTX e altro."
     },
     "feature_2": {
       "title": "Tradurre in html/css",
@@ -76,15 +81,15 @@
     },
     "feature_6": {
       "title": "Protezione password",
-      "content": "Modifica facilmente documenti protetti da password."
+      "content": "Carica e modifica i documenti protetti da password con facilità e proteggendo i documenti di output con protezione da password."
     },
     "feature_7": {
-      "title": "Codifica dei documenti personalizzati",
-      "content": "Specificare la codifica dei documenti durante i processi di modifica e salvataggio."
+      "title": "Modifica e -mail",
+      "content": "Modifica e salva i messaggi di posta elettronica e le lettere in MSG, EML, EMLX, MBOX e molti altri formati, tra cui la modifica dei metadati come soggetto, a, CC, BCC, da, titolo, data e così via."
     },
     "feature_8": {
       "title": "Estrazione di carattere",
-      "content": "Estrai caratteri dai documenti da utilizzare nel processo di modifica."
+      "content": "Estrai caratteri da documenti di elaborazione delle parole da utilizzare nel processo di modifica."
     },
     "feature_9": {
       "title": "Pagine di anteprima",
@@ -93,18 +98,31 @@
   },
   "code_samples": {
     "title": "Campioni di codice",
-    "description": "Alcuni casi di utilizzo di GroupDocs.Editor tipici per le operazioni Java.",
+    "description": "Alcuni casi d'uso di operazioni tipiche utilizzando",
     "sample_1": {
-      "title": "Modifica il contenuto del file DOCX specifico",
-      "content_1": "La funzione [Document Editing] (https://docs.groupdocs.com/editor/java/edit-document/) consente di caricare, modificare e salvare i file DOCX.",
-      "content_2": "Ecco un esempio di come ottenere l'editing dei documenti usando Java:",
-      "code_title": "Come modificare i file docx in java"
+      "title": "Sostituisci il testo in DOCX",
+      "description": "Questo esempio mostra il caricamento e la modifica di un contenuto del file DOCX di input a livello di programmazione sostituendo il contenuto di testo su un altro. Successivamente il contenuto del documento modificato viene salvato come nuovo documento DOCX.",
+      "code_title": "Modifica Input Docx sostituendo il testo e salvalo su DOCX",
+      "comment_1": "Carica il documento di ingresso per via e specifica le opzioni di caricamento, se necessario",
+      "comment_2": "Apri il documento per Modifica e ottieni il \"Documentazione Editad\"",
+      "comment_3": "Sostituisci il testo: questo emula la modifica del contenuto",
+      "comment_4": "Crea una nuova istanza \"EditaBocument\" dal contenuto modificato",
+      "comment_5": "Prepara le opzioni di salvataggio con formatx di output desiderato",
+      "comment_6": "Salva il contenuto del documento modificato su DOCX",
+      "comment_7": "Disporre tutte le risorse"
     },
-    "sample_2": {
-      "title": "Modifica i campi del modulo in un documento Word",
-      "content_1": "Modifica facilmente i campi del modulo all'interno di un documento Word usando GroupDocs.Editor per Java.",
-      "content_2": "Ecco come modificare i campi del modulo in un documento Word usando Java:",
-      "code_title": "Come modificare i campi del modulo in un documento Word usando GroupDocs.Editor per Java"
+    "sample_4": {
+      "title": "Modifica il contenuto di particolare foglio di lavoro Excel",
+      "description": "Il documento di foglio di calcolo (come XLS, XLSX, XLSM, ODS e così via) può avere uno o più fogli di lavoro (tabs). GroupDocs.Editor consente di modificare il contenuto di un foglio di lavoro alla volta. Dopo essere stato modificato, questo foglio di lavoro può essere salvato nel documento separato del foglio di calcolo (in cui verrà salvato solo questo foglio di lavoro specifico) o il foglio di lavoro modificato può essere inserito di nuovo al documento originale, dove può sostituire il foglio di lavoro originale o essere salvato insieme, insieme a quello originale. Questo esempio mostra il caricamento del documento XLSX, modificando il suo secondo foglio di lavoro e salvandolo come nuovo documento separato nei formati XLSX e CSV.",
+      "code_title": "Modifica un particolare foglio di lavoro di XLSX e salva come XLSX e CSV",
+      "comment_1": "Caricare ingresso xlsx per via e specificare le opzioni di caricamento, se necessario",
+      "comment_2": "Crea e regola le opzioni di modifica: imposta il 2 ° foglio di lavoro su modifica",
+      "comment_3": "Apri questo 2 ° foglio di lavoro per modificare e ottenere il \"Documentazione editabile\"",
+      "comment_4": "Sostituisci il testo: questo emula la modifica del contenuto",
+      "comment_5": "Crea una nuova istanza \"EditaBocument\" dal foglio di lavoro modificato",
+      "comment_6": "Salva foglio di lavoro modificato al nuovo documento XLSX",
+      "comment_7": "Salva foglio di lavoro modificato al nuovo documento CSV con delimitatore/separatore di virgola (,)",
+      "comment_8": "Disporre tutte le risorse"
     }
   },
   "platforms": {
@@ -112,8 +130,14 @@
     "description": "GroupDocs.Editor per Java supporta i seguenti sistemi operativi, framework e pacchetti."
   },
   "code": {
-    "title": "Modifica i file di documenti in Java",
+    "title": "Modifica documenti in .NET",
     "more": "Altri esempi",
-    "notes": "Guarda cosa c'è di nuovo"
+    "notes": "Guarda cosa c'è di nuovo",
+    "comment_1": "Passa il documento di origine per inizializzare l'editor",
+    "comment_2": "Apri documento per modifica",
+    "comment_3": "Ottieni documento come HTML",
+    "comment_4": "Modifica i contenuti del documento",
+    "comment_5": "Carica documento modificato da HTML",
+    "comment_6": "Salva documento modificato su file con il formato desiderato"
   }
 }

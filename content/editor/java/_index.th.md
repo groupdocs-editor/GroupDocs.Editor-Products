@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-25T12:15:48
+date: 2025-07-08T14:01:54
 draft: false
 
 product: "Editor"
@@ -24,31 +24,31 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "{head.title}"
-head_description: "{head.description}"
+head_title: "Java Document Editing API | แก้ไข PDF, Word, Excel, PowerPoint"
+head_description: "Java Document Editing API เพื่อโหลดแก้ไขและบันทึกหน้าเอกสารจาก PDF, Microsoft Word, Excel, PowerPoint, ebook และรูปแบบอีเมล"
 
 ############################# Header ############################
-title: "{header.title_1}<br>{header.title_2}"
-description: "{header.description}"
+title: "แก้ไขเอกสาร<br>ผ่าน Java API"
+description: "Editor API ที่ทรงพลังในการจัดการ Microsoft Office, PDF, HTML, ebook และอีเมล"
 words:
-  for: "{header.words.for}"
+  for: "สำหรับ"
 
 actions:
-  main: "{actions.main}"
+  main: "ดาวน์โหลด maven ฟรี"
   main_link: "https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-editor/"
-  alt: "{actions.alt}"
+  alt: "การออกใบอนุญาต"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/java"
-  title: "{actions.title}"
-  description: "{actions.description}"
+  title: "พร้อมที่จะเริ่มต้น?"
+  description: "ลองใช้คุณสมบัติ GroupDocs.Editor ฟรีหรือขอใบอนุญาต"
 
 release:
-  title: "{release.title}"
-  notes: "{release.notes}"
-  downloads: "{release.downloads}"
+  title: "เวอร์ชัน {0} เปิดตัว"
+  notes: "ดูว่ามีอะไรใหม่"
+  downloads: "การดาวน์โหลด"
 
 code:
-  title: "{code.title}"
-  more: "{code.more}"
+  title: "แก้ไขเอกสารใน. NET"
+  more: "ตัวอย่างเพิ่มเติม"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java"
   install: |
     <dependencies>
@@ -68,22 +68,22 @@ code:
     </repositories>
   content: |
     ```java {style=abap}   
-    // {code.comment_1}
+    // เอกสารแหล่งที่มาเพื่อเริ่มต้นโปรแกรมแก้ไข
     Editor editor = new Editor("input.docx");
 
-    // {code.comment_2}
+    // เปิดเอกสารสำหรับแก้ไข
     EditableDocument originalDoc = editor.edit();
 
-    // {code.comment_3}
+    // รับเอกสารเป็น html
     String srcHtml = originalDoc.getEmbeddedHtml();
     
-    // {code.comment_4}
+    // แก้ไขเนื้อหาเอกสาร
     String editedHtml = srcHtml.replace("Old text", "New text");
     
-    // {code.comment_5}
+    // โหลดเอกสารที่แก้ไขจาก HTML
     EditableDocument editedDoc = EditableDocument.fromMarkup(editedHtml, null);
     
-    // {code.comment_6}
+    // บันทึกเอกสารที่แก้ไขเป็นไฟล์ด้วยรูปแบบที่ต้องการ
     WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions();
     editor.save(editedDoc, "output.docx", saveOptions);
     ```
@@ -91,26 +91,26 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor for Java {overview.glance}"
-  description: "{overview.description}"
+  title: "GroupDocs.Editor for Java อย่างเหลือบ"
+  description: "API เพื่อแก้ไขแปลงและบันทึกเอกสารสเปรดชีตสไลด์และหนังสืออิเล็กทรอนิกส์ในแอปพลิเคชัน Java"
   features:
     # feature loop
-    - title: "{overview.feature_1.title}"
-      content: "{overview.feature_1.description1} GroupDocs.Editor for Java {overview.feature_1.description2}"
+    - title: "แก้ไขเอกสารหลายฉบับใน Java ได้อย่างง่ายดาย"
+      content: "แก้ไขไฟล์ PDF และสำนักงานหลายไฟล์ได้อย่างราบรื่นด้วยการสนับสนุนสำหรับรูปแบบที่หลากหลาย GroupDocs.Editor for Java ทำให้การแก้ไขเอกสารอย่างรวดเร็วและไม่ยุ่งยาก"
 
     # feature loop
-    - title: "{overview.feature_2.title}"
-      content: "{overview.feature_2.description}"
+    - title: "แปลงเอกสารเป็น HTML/CSS"
+      content: "แปลงเอกสารเป็นมาร์กอัพ HTML/CSS บริสุทธิ์ที่เข้ากันได้กับตัวแก้ไข WYSIWYG ช่วยให้สามารถแก้ไขเอกสารได้ง่ายและมีประสิทธิภาพในสภาพแวดล้อมเว็บ"
 
     # feature loop
-    - title: "{overview.feature_3.title}"
-      content: "{overview.feature_3.description}"
+    - title: "บันทึกเอกสารที่แก้ไขในรูปแบบต่างๆ"
+      content: "บันทึกเอกสารที่แก้ไขของคุณกลับไปเป็นรูปแบบดั้งเดิมหรือส่งออกไปยังรูปแบบอื่น ๆ เช่น PDF เพื่อให้มั่นใจถึงความยืดหยุ่นและความเข้ากันได้"
 
 ############################# Platforms ############################
 platforms:
   enable: true
-  title: "{platforms.title}"
-  description: "{platforms.description}"
+  title: "ความเป็นอิสระของแพลตฟอร์ม"
+  description: "GroupDocs.editor สำหรับ Java สนับสนุนระบบปฏิบัติการเฟรมเวิร์กและผู้จัดการแพ็คเกจต่อไปนี้"
   items:
     # platform loop
     - title: "Amazon"
@@ -142,150 +142,150 @@ platforms:
 ############################# File formats ############################
 formats:
   enable: true
-  title: "{formats.title}"
+  title: "รูปแบบไฟล์ที่รองรับ"
   description: |
-    {formats.description} ([{formats.full_list}](https://docs.groupdocs.com/editor/java/supported-document-formats/)).
+    GroupDocs.Editor รองรับการดำเนินการด้วยรูปแบบไฟล์ต่อไปนี้เกี่ยวกับการนำเข้าและส่งออก ([รายการทั้งหมด](https://docs.groupdocs.com/editor/java/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
       content: |
-        ### {formats.groups.title_1}
+        ### รูปแบบ Microsoft Office
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX
     # group loop
     - color: "blue"
       content: |
-        ### {formats.groups.title_2}
-        * **{formats.groups.fixed_layout}:** PDF, XPS ({formats.groups.export_only})
+        ### รูปแบบเอกสารอื่น ๆ
+        * **รูปแบบ layout คงที่:** PDF, XPS (ส่งออกเท่านั้น)
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-        * **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
-        * **{formats.groups.other_tables}:** SXC, DIF
+        * **ตารางข้อความคั่น:** CSV, TSV, DSV (ตัวแยกตามอำเภอใจ)
+        * **รูปแบบตารางอื่น ๆ:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
-        ### {formats.groups.title_3}
-        * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
-        * **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
+        ### รูปแบบที่เกี่ยวข้องกับเว็บ
+        * **มาร์กอัป:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
+        * **รูปแบบอีเมล:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.features}"
-  description: "{features.description}"
+  title: "คุณสมบัติหลัก"
+  description: "โหลดอย่างราบรื่นแก้ไขและบันทึกในรูปแบบที่แตกต่างกันเอกสารสำนักงานอีเมล ebooks และ PDF"
 
   items:
     # feature loop
     - icon: "merge"
-      title: "{features.feature_1.title}"
-      content: "{features.feature_1.content}"
+      title: "แก้ไขไฟล์"
+      content: "แก้ไขเนื้อหาของรูปแบบเอกสารต่าง ๆ รวมถึง PDF, DOCX, XLSX, PPTX และอื่น ๆ"
 
     # feature loop
     - icon: "split"
-      title: "{features.feature_2.title}"
-      content: "{features.feature_2.content}"
+      title: "แปลเป็น html/css"
+      content: "แปลงเอกสารเป็น HTML/CSS เพื่อให้ง่ายต่อการแก้ไขด้วยบรรณาธิการ WYSIWYG เช่น CKEditor หรือ Tinymce"
 
     # feature loop
     - icon: "move"
-      title: "{features.feature_3.title}"
-      content: "{features.feature_3.content}"
+      title: "บันทึกเอกสารที่แก้ไข"
+      content: "บันทึก HTML/CSS ที่แก้ไขกลับไปยังรูปแบบเอกสารต้นฉบับหรือส่งออกไปยัง PDF"
 
     # feature loop
     - icon: "remove"
-      title: "{features.feature_4.title}"
-      content: "{features.feature_4.content}"
+      title: "แยกข้อมูลเอกสาร"
+      content: "แยกข้อมูลเช่นจำนวนหน้าขนาดและสถานะการเข้ารหัสจากเอกสาร"
 
     # feature loop
     - icon: "rotate"
-      title: "{features.feature_5.title}"
-      content: "{features.feature_5.content}"
+      title: "สนับสนุนรูปแบบต่างๆ"
+      content: "แก้ไขรูปแบบเอกสารที่หลากหลายรวมถึงไฟล์ Microsoft Office, PDF และอื่น ๆ"
 
     # feature loop
     - icon: "swap"
-      title: "{features.feature_6.title}"
-      content: "{features.feature_6.content}"
+      title: "การป้องกันรหัสผ่าน"
+      content: "โหลดและแก้ไขเอกสารที่ป้องกันด้วยรหัสผ่านได้อย่างง่ายดายและปกป้องเอกสารเอาต์พุตด้วยการป้องกันรหัสผ่าน"
 
     # feature loop
     - icon: "extract"
-      title: "{features.feature_7.title}"
-      content: "{features.feature_7.content}"
+      title: "แก้ไขอีเมล"
+      content: "แก้ไขและบันทึกข้อความอีเมลและตัวอักษรในผงชูรส, EML, EMLX, Mbox และรูปแบบอื่น ๆ อีกมากมายรวมถึงการแก้ไขข้อมูลเมตาเช่นหัวเรื่อง, TO, CC, BCC, จาก, ชื่อ, วันที่และอื่น ๆ"
 
     # feature loop
     - icon: "orientation"
-      title: "{features.feature_8.title}"
-      content: "{features.feature_8.content}"
+      title: "การสกัดแบบอักษร"
+      content: "แยกฟอนต์จากเอกสารการประมวลผลคำเพื่อใช้ในกระบวนการแก้ไข"
 
     # feature loop
     - icon: "preview"
-      title: "{features.feature_9.title}"
-      content: "{features.feature_9.content}"
+      title: "หน้าตัวอย่าง"
+      content: "สร้างการแสดงภาพของหน้าเอกสารเพื่อทำความเข้าใจเนื้อหาและโครงสร้างที่ดีขึ้น"
 
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "{code_samples.title}"
-  description: "{code_samples.description} GroupDocs.Editor for Java"
+  title: "ตัวอย่างรหัส"
+  description: "บางกรณีการใช้งานของการดำเนินการทั่วไปโดยใช้ GroupDocs.Editor for Java"
   items:
     # code sample loop
-    - title: "{code_samples.sample_1.title}"
+    - title: "แทนที่ข้อความใน docx"
       content: |
-        {code_samples.sample_1.description} 
-        {{< landing/code title="{code_samples.sample_1.code_title}">}}
+        ตัวอย่างนี้แสดงการโหลดและแก้ไขเนื้อหาของไฟล์ DOCX อินพุตโดยทางโปรแกรมโดยการแทนที่เนื้อหาข้อความบนอื่น หลังจากนั้นเนื้อหาเอกสารที่แก้ไขจะถูกบันทึกกลับมาเป็นเอกสาร DOCX ใหม่ 
+        {{< landing/code title="แก้ไขอินพุต docx โดยแทนที่ข้อความและบันทึกกลับไปที่ docx">}}
         ```java {style=abap}
         
-        // {code_samples.sample_1.comment_1}
+        // โหลดเอกสารอินพุตตามเส้นทางและระบุตัวเลือกโหลดหากจำเป็น
         Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // {code_samples.sample_1.comment_2}
+        // เปิดเอกสารสำหรับแก้ไขและรับ "EditableDocument"
         EditableDocument original = editor.edit();
         
-        // {code_samples.sample_1.comment_3}
+        // แทนที่ข้อความ - สิ่งนี้เลียนแบบการแก้ไขเนื้อหา
         String modifiedContent = original.getEmbeddedHtml().replace("old text", "new text");
         
-        // {code_samples.sample_1.comment_4}
+        // สร้างอินสแตนซ์ "EditableDocument" ใหม่จากเนื้อหาที่แก้ไข
         EditableDocument edited = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_1.comment_5}
+        // เตรียมตัวเลือกบันทึกด้วย output formatx ที่ต้องการ
         WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
         
-        // {code_samples.sample_1.comment_6}
+        // บันทึกเนื้อหาเอกสารที่แก้ไขไปยัง DOCX
         editor.save(edited, "output.docx", saveOptions);
         
-        // {code_samples.sample_1.comment_7}
+        // กำจัดทรัพยากรทั้งหมด
         edited.dispose(); original.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "{code_samples.sample_4.title}"
+    - title: "แก้ไขเนื้อหาของแผ่นงาน Excel โดยเฉพาะ"
       content: |
-        {code_samples.sample_4.description}
-        {{< landing/code title="{code_samples.sample_4.code_title}">}}
+        เอกสารสเปรดชีต (เช่น XLS, XLSX, XLSM, ODS และอื่น ๆ ) อาจมีเวิร์กชีท (แท็บ) อย่างน้อยหนึ่งแผ่น GroupDocs.editor อนุญาตให้แก้ไขเนื้อหาของแผ่นงานหนึ่งครั้งในแต่ละครั้ง หลังจากได้รับการแก้ไขแผ่นงานนี้อาจถูกบันทึกลงในเอกสารสเปรดชีตแยกต่างหาก (ซึ่งจะมีการบันทึกแผ่นงานเฉพาะนี้เท่านั้น) หรือแผ่นงานแก้ไขสามารถแทรกกลับไปยังเอกสารต้นฉบับได้ซึ่งสามารถแทนที่แผ่นงานดั้งเดิมหรือบันทึกไว้ด้วยกัน ตัวอย่างนี้แสดงการโหลดเอกสาร XLSX แก้ไขแผ่นงานที่ 2 และบันทึกเป็นเอกสารใหม่แยกต่างหากในรูปแบบ XLSX และ CSV
+        {{< landing/code title="แก้ไขแผ่นงานเฉพาะของ XLSX และบันทึกเป็น XLSX และ CSV">}}
         ```java {style=abap}
         
-        // {code_samples.sample_4.comment_1}
+        // โหลดอินพุต XLSX ตามเส้นทางและระบุตัวเลือกโหลดหากจำเป็น
         Editor editor = new Editor("input.xlsx", new SpreadsheetLoadOptions());
         
-        // {code_samples.sample_4.comment_2}
+        // สร้างและปรับตัวเลือกแก้ไข - ตั้งค่าแผ่นงานที่ 2 เป็นแก้ไข
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
         editOptions.setWorksheetIndex(1);
         
-        // {code_samples.sample_4.comment_3}
+        // เปิดแผ่นงานที่ 2 นี้เพื่อแก้ไขและรับ "EditableDocument"
         EditableDocument originalWorksheet = editor.edit(editOptions);
         
-        // {code_samples.sample_4.comment_4}
+        // แทนที่ข้อความ - สิ่งนี้เลียนแบบการแก้ไขเนื้อหา
         String modifiedContent = originalWorksheet.getEmbeddedHtml().replace("Cell Text", "Edited Cell Text");
         
-        // {code_samples.sample_4.comment_5}
+        // สร้างอินสแตนซ์ "EditableDocument" ใหม่จากแผ่นงานที่แก้ไขแล้ว
         EditableDocument editedWorksheet = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_4.comment_6}
+        // บันทึกแผ่นงานแก้ไขไปยังเอกสาร XLSX ใหม่
         editor.save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
         
-        // {code_samples.sample_4.comment_7}
-        editor.save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
+        // บันทึกแผ่นงานที่แก้ไขไปยังเอกสาร CSV ใหม่ด้วยเครื่องหมายจุลภาค (,) ตัวคั่น/ตัวคั่น
+        editor.save(editedWorksheet, "output.csv", new DelimitedTextSaveOptions(","));
         
-        // {code_samples.sample_4.comment_8}
+        // กำจัดทรัพยากรทั้งหมด
         editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}

@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-25T12:15:48
+date: 2025-07-08T14:01:54
 draft: false
 
 product: "Editor"
@@ -24,22 +24,22 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "API редактирования документов Node.js | Редактировать PDF, Word, Excel, EPUB"
-head_description: "API редактирования документов Node.js для редактирования, перевода и сохранения страниц документов из форматов PDF, Microsoft Word, Excel, презентаций, Visio и изображений."
+head_title: "Node.js документ редактирование API | Редактировать PDF, Word, Excel, PowerPoint"
+head_description: "Node.js документация редактирует API для загрузки, редактирования и сохранения страниц документов от PDF, Microsoft Word, Excel, PowerPoint, электронных книг и форматов электронной почты."
 
 ############################# Header ############################
-title: "Редактировать документы<br>через API Node.js"
-description: "Мощный API-редактор для работы с файлами PDF, Microsoft Office, HTML и изображениями."
+title: "Редактировать документы<br>через node.js api"
+description: "Мощный редактор API для манипулирования Microsoft Office, PDF, HTML, электронных книг и электронной почты."
 words:
   for: "для"
 
 actions:
-  main: "Бесплатная загрузка npm"
+  main: "Бесплатная загрузка NPM"
   main_link: "https://releases.groupdocs.com/editor/nodejs-java/"
   alt: "Лицензирование"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/nodejs-java"
-  title: "Готовы начать?"
-  description: "Попробуйте функции GroupDocs.Editor бесплатно или запросите лицензию."
+  title: "Готовы начать работу?"
+  description: "Попробуйте функции GroupDocs.editor бесплатно или запросите лицензию."
 
 release:
   title: "Версия {0} выпущена"
@@ -47,28 +47,28 @@ release:
   downloads: "Загрузки"
 
 code:
-  title: "Редактируйте файлы документов в Node.js через Java"
+  title: "Редактировать документы в .net"
   more: "Больше примеров"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Node.js-via-Java"
   install: "npm i @groupdocs/groupdocs.editor"
   content: |
     ```javascript {style=abap}   
-    // {code.comment_1}
+    // Пропустите исходный документ, чтобы инициализировать редактор
     const editor = new Editor("input.docx");
 
-    // {code.comment_2}
+    // Открыть документ для редактирования
     const originalDoc = editor.edit();
 
-    // {code.comment_3}
+    // Получить документ как html
     const srcHtml = originalDoc.getEmbeddedHtml();
     
-    // {code.comment_4}
+    // Редактировать содержимое документа
     const editedHtml = srcHtml.replace("Old text", "New text");
     
-    // {code.comment_5}
+    // Загрузка отредактированного документа из HTML
     const editedDoc = EditableDocument.fromMarkup(editedHtml, null);
     
-    // {code.comment_6}
+    // Сохранить отредактированный документ для файла с помощью желаемого формата
     const saveOptions = new WordProcessingSaveOptions();
     await editor.save(editedDoc, "output.docx", saveOptions);
     ```
@@ -76,26 +76,26 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor for Node.js via Java {overview.glance}"
-  description: "API для редактирования, перевода и сохранения документов, слайдов и диаграмм в приложениях Node.js."
+  title: "GroupDocs.Editor for Node.js via Java с первого взгляда"
+  description: "API для редактирования, преобразования и сохранения документов, электронных таблиц, слайдов и электронных книг в приложениях node.js."
   features:
     # feature loop
-    - title: "Легко редактируйте несколько документов в Node.js"
-      content: "{overview.feature_1.description1} GroupDocs.Editor for Node.js via Java {overview.feature_1.description2}"
+    - title: "Легко редактировать несколько документов в node.js"
+      content: "Безусловно редактировать несколько файлов PDF и офисных файлов с поддержкой широкого спектра форматов. GroupDocs.Editor for Node.js via Java делает документы быстро и без проблем."
 
     # feature loop
-    - title: "Перевести документы в HTML/CSS"
-      content: "Переводите документы в разметку HTML/CSS, совместимую с редакторами WYSIWYG, что позволяет легко и эффективно редактировать документы в веб-среде."
+    - title: "Конвертировать документы в HTML/CSS"
+      content: "Конвертировать документы в чистую наценку HTML/CSS, совместимая с редакторами Wysiwyg, что позволяет легко и эффективно редактировать документы в веб -среде."
 
     # feature loop
-    - title: "Сохраняйте отредактированные документы в различных форматах."
-      content: "Сохраняйте отредактированные документы обратно в исходный формат или экспортируйте их в другие форматы, например PDF, обеспечивая гибкость и совместимость."
+    - title: "Сохранить отредактированные документы в различных форматах"
+      content: "Сохраните свои отредактированные документы обратно в их первоначальный формат или экспортируйте их в другие форматы, такие как PDF, обеспечивая гибкость и совместимость."
 
 ############################# Platforms ############################
 platforms:
   enable: true
-  title: "Независимость от платформы"
-  description: "GroupDocs.Editor для Node.js поддерживает следующие операционные системы, платформы и менеджеры пакетов."
+  title: "Независимость платформы"
+  description: "GroupDocs.editor для node.js поддерживает следующие операционные системы, фреймворки и менеджеры пакетов."
   items:
     # platform loop
     - title: "Amazon"
@@ -129,152 +129,152 @@ formats:
   enable: true
   title: "Поддерживаемые форматы файлов"
   description: |
-    GroupDocs.Editor для Node.js поддерживает операции со следующими [форматами файлов](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/). ([{formats.full_list}](https://docs.groupdocs.com/editor/nodejs-java/supported-document-formats/)).
+    GroupDocs.editor поддерживает операции со следующими форматами файлов при импорте и экспорте ([Полный список](https://docs.groupdocs.com/editor/nodejs-java/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
       content: |
-        ### Форматы Microsoft Office
+        ### Microsoft Office Formats
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX
     # group loop
     - color: "blue"
       content: |
-        ### Документы
-        * **{formats.groups.fixed_layout}:** PDF, XPS ({formats.groups.export_only})
+        ### Другие форматы документов
+        * **Форматы с фиксированным лайатом:** PDF, XPS (только экспорт)
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-        * **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
-        * **{formats.groups.other_tables}:** SXC, DIF
+        * **Разграниченные текстовые таблицы:** CSV, TSV, DSV (произвольный сепаратор)
+        * **Другие форматы таблицы:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
-        ### Другие форматы
-        * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
-        * **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
+        ### Связанные с Интернетом форматы
+        * **Разметка:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
+        * **Форматы электронной почты:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.features}"
-  description: "Легко редактируйте, переводите и сохраняйте документы PDF и Office."
+  title: "Основные особенности"
+  description: "Бесполезно загружать, редактировать и сохранять в различных форматах офисных документов, электронных писем, электронных книг и PDF."
 
   items:
     # feature loop
     - icon: "merge"
       title: "Редактировать файлы"
-      content: "Редактируйте содержимое документов различных форматов, включая PDF, DOCX, XLSX, PPTX и другие."
+      content: "Измените содержание различных форматов документов, включая PDF, DOCX, XLSX, PPTX и многое другое."
 
     # feature loop
     - icon: "split"
-      title: "Перевести в HTML/CSS"
-      content: "Преобразуйте документы в HTML/CSS для удобного редактирования с помощью редакторов WYSIWYG, таких как CKEditor или TinyMCE."
+      title: "Перевести на HTML/CSS"
+      content: "Конвертируйте документы в HTML/CSS для удобного редактирования с помощью редакторов Wysiwyg, таких как Ckeditor или Tinymce."
 
     # feature loop
     - icon: "move"
-      title: "Сохраняйте отредактированные документы"
-      content: "Сохраните отредактированный HTML/CSS обратно в исходный формат документа или экспортируйте в PDF."
+      title: "Сохранить отредактированные документы"
+      content: "Сохраните отредактированный HTML/CSS обратно в исходный формат документа или экспорт в PDF."
 
     # feature loop
     - icon: "remove"
       title: "Извлечь информацию о документе"
-      content: "Извлекайте из документов такую ​​информацию, как количество страниц, размер и состояние шифрования."
+      content: "Извлеките информацию, такую ​​как количество страниц, размер и статус шифрования из документов."
 
     # feature loop
     - icon: "rotate"
       title: "Поддержка различных форматов"
-      content: "Редактируйте документы широкого спектра форматов, включая файлы Microsoft Office, PDF-файлы и многое другое."
+      content: "Отредактируйте широкий спектр форматов документов, включая файлы Microsoft Office, PDFS и многое другое."
 
     # feature loop
     - icon: "swap"
-      title: "Защита паролем"
-      content: "Легко редактируйте документы, защищенные паролем."
+      title: "Защита пароля"
+      content: "Загрузите и редактируйте документы, защищенные паролем, с легкостью и защита выходных документов с защитой пароля."
 
     # feature loop
     - icon: "extract"
-      title: "Пользовательское кодирование документов"
-      content: "Укажите кодировку документа во время процессов редактирования и сохранения."
+      title: "Редактировать электронную почту"
+      content: "Отредактируйте и сохраните сообщения электронной почты и буквы в MSG, EML, EMLX, Mbox и многих других форматах, включая редактирование метаданных, таких как субъект, CC, BCC, от, название, дата и так далее."
 
     # feature loop
     - icon: "orientation"
       title: "Извлечение шрифта"
-      content: "Извлекайте шрифты из документов для использования в процессе редактирования."
+      content: "Извлечь шрифты из документов WordProcessing для использования в процессе редактирования."
 
     # feature loop
     - icon: "preview"
       title: "Предварительный просмотр страниц"
-      content: "Создавайте изображения страниц документа, чтобы лучше понять содержание и структуру."
+      content: "Создать изображения страниц документов, чтобы лучше понять контент и структуру."
 
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "Примеры кода"
-  description: "Некоторые варианты использования типичных операций GroupDocs.Editor для Node.js. GroupDocs.Editor for Node.js via Java"
+  title: "Образцы кода"
+  description: "Некоторые варианты использования типичных операций с использованием GroupDocs.Editor for Node.js via Java"
   items:
     # code sample loop
-    - title: "Редактировать определенное содержимое файла DOCX"
+    - title: "Заменить текст в Docx"
       content: |
-        {code_samples.sample_1.description} 
-        {{< landing/code title="Как редактировать файлы DOCX в Node.js">}}
+        В этом примере показана загрузка и редактирование содержимого файла ввода DOCX программно, заменив текстовый содержимое на другое. После этого модифицированный контент документа сохраняется как новый документ DOCX. 
+        {{< landing/code title="Редактировать вход DOCX, заменив текст и сохраните его обратно в DOCX">}}
         ```javascript {style=abap}
         
-        // {code_samples.sample_1.comment_1}
+        // Загрузите входной документ по пути и укажите параметры загрузки, если это необходимо, при необходимости
         const loadOptions = new WordProcessingLoadOptions();
         const editor = new Editor("input.docx", loadOptions);
         
-        // {code_samples.sample_1.comment_2}
+        // Открыть документ для редактирования и получить "EditableDocument"
         const original = editor.edit();
         
-        // {code_samples.sample_1.comment_3}
+        // Замените текст - это эмулирует редактирование контента
         const modifiedContent = original.getEmbeddedHtml().replace("old text", "new text");
         
-        // {code_samples.sample_1.comment_4}
+        // Создать новый экземпляр "EditableDocument" из редактированного контента
         const edited = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_1.comment_5}
+        // Подготовьте параметры сохранения с желаемым выводом Formatx
         const saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
         
-        // {code_samples.sample_1.comment_6}
+        // Сохранить отредактированный контент документа в DOCX
         await editor.save(edited, "output.docx", saveOptions);
         
-        // {code_samples.sample_1.comment_7}
+        // Утилизировать все ресурсы
         edited.dispose(); original.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "{code_samples.sample_4.title}"
+    - title: "Редактировать содержание конкретного рабочего листа Excel"
       content: |
-        {code_samples.sample_4.description}
-        {{< landing/code title="{code_samples.sample_4.code_title}">}}
+        Документ электронной таблицы (например, XLS, XLSX, XLSM, ODS и так далее) может иметь один или несколько рабочих листов (вкладки). GroupDocs.editor позволяет редактировать контент на одном листе за раз. После редактирования этот рабочий лист может быть сохранен в отдельном документе электронной таблицы (где будет сохранен только этот конкретный рабочий лист), или отредактированный рабочий лист может быть вставлен обратно в исходный документ, где он может либо заменить оригинальный рабочий лист, либо сохранен вместе, а также оригинальный. В этом примере показана загрузка документа XLSX, редактируя его 2 -й рабочий лист и сохранение его в виде нового отдельного документа в форматах XLSX и CSV.
+        {{< landing/code title="Изменить конкретный рабочий лист XLSX и сохранить как XLSX и CSV">}}
         ```javascript {style=abap}
         
-        // {code_samples.sample_4.comment_1}
+        // Загрузить вход XLSX по пути и указать параметры загрузки, если это необходимо
         const loadOptions = new SpreadsheetLoadOptions();
         const editor = new Editor("input.xlsx", loadOptions);
         
-        // {code_samples.sample_4.comment_2}
+        // Создать и настроить параметры редактирования - установите 2 -й лист для редактирования
         const editOptions = new SpreadsheetEditOptions();
         editOptions.setWorksheetIndex(1);
         
-        // {code_samples.sample_4.comment_3}
+        // Откройте этот 2 -й рабочий лист для редактирования и получите "EditableDocument"
         const originalWorksheet = editor.edit(editOptions);
         
-        // {code_samples.sample_4.comment_4}
+        // Замените текст - это эмулирует редактирование контента
         const modifiedContent = originalWorksheet.getEmbeddedHtml().replace("Cell Text", "Edited Cell Text");
         
-        // {code_samples.sample_4.comment_5}
+        // Создать новый экземпляр "EditableDocument" из редактированного рабочего листа
         const editedWorksheet = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_4.comment_6}
+        // Сохранить отредактированный рабочий лист в новый документ XLSX
         const saveSpreadsheetOptions = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
         await editor.save(editedWorksheet, "output.xlsx", saveSpreadsheetOptions);
         
-        // {code_samples.sample_4.comment_7}
+        // Сохранить отредактированный рабочий лист в новый документ CSV с запятой (,) разделитель/сепаратор
         const saveTextOptions = new DelimitedTextSaveOptions(",");
-        await editor.save(editedWorksheet, "output.xlsx", saveTextOptions);
+        await editor.save(editedWorksheet, "output.csv", saveTextOptions);
         
-        // {code_samples.sample_4.comment_8}
+        // Утилизировать все ресурсы
         editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}

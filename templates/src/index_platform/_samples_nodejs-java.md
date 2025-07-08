@@ -63,7 +63,7 @@ code_samples:
         
         // <% "{code_samples.sample_4.comment_7}" %>
         const saveTextOptions = new DelimitedTextSaveOptions(",");
-        await editor.save(editedWorksheet, "output.xlsx", saveTextOptions);
+        await editor.save(editedWorksheet, "output.csv", saveTextOptions);
         
         // <% "{code_samples.sample_4.comment_8}" %>
         editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();

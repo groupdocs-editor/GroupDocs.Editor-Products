@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-25T12:15:48
+date: 2025-07-08T14:01:54
 draft: false
 
 product: "Editor"
@@ -24,51 +24,51 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "{head.title}"
-head_description: "{head.description}"
+head_title: "Node.js API chỉnh sửa tài liệu | Chỉnh sửa PDF, Word, Excel, PowerPoint"
+head_description: "Node.js Tài liệu chỉnh sửa API để tải, chỉnh sửa và lưu các trang tài liệu từ PDF, Microsoft Word, Excel, PowerPoint, Ebook và các định dạng email."
 
 ############################# Header ############################
-title: "{header.title_1}<br>{header.title_2}"
-description: "{header.description}"
+title: "Chỉnh sửa tài liệu<br>thông qua API Node.js"
+description: "API Trình chỉnh sửa mạnh mẽ để thao tác với các tệp Microsoft Office, PDF, HTML, ebook và email."
 words:
-  for: "{header.words.for}"
+  for: "vì"
 
 actions:
-  main: "{actions.main}"
+  main: "Tải xuống NPM miễn phí"
   main_link: "https://releases.groupdocs.com/editor/nodejs-java/"
-  alt: "{actions.alt}"
+  alt: "Cấp phép"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/nodejs-java"
-  title: "{actions.title}"
-  description: "{actions.description}"
+  title: "Sẵn sàng để bắt đầu?"
+  description: "Hãy thử các tính năng GroupDocs.editor miễn phí hoặc yêu cầu giấy phép."
 
 release:
-  title: "{release.title}"
-  notes: "{release.notes}"
-  downloads: "{release.downloads}"
+  title: "Phiên bản {0} được phát hành"
+  notes: "Xem những gì mới"
+  downloads: "Tải xuống"
 
 code:
-  title: "{code.title}"
-  more: "{code.more}"
+  title: "Chỉnh sửa tài liệu trong .NET"
+  more: "Nhiều ví dụ hơn"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Node.js-via-Java"
   install: "npm i @groupdocs/groupdocs.editor"
   content: |
     ```javascript {style=abap}   
-    // {code.comment_1}
+    // Truyền tài liệu nguồn để khởi tạo trình chỉnh sửa
     const editor = new Editor("input.docx");
 
-    // {code.comment_2}
+    // Mở tài liệu để chỉnh sửa
     const originalDoc = editor.edit();
 
-    // {code.comment_3}
+    // Nhận tài liệu là HTML
     const srcHtml = originalDoc.getEmbeddedHtml();
     
-    // {code.comment_4}
+    // Chỉnh sửa nội dung tài liệu
     const editedHtml = srcHtml.replace("Old text", "New text");
     
-    // {code.comment_5}
+    // Tải tài liệu chỉnh sửa từ HTML
     const editedDoc = EditableDocument.fromMarkup(editedHtml, null);
     
-    // {code.comment_6}
+    // Lưu tài liệu đã chỉnh sửa vào tệp có định dạng mong muốn
     const saveOptions = new WordProcessingSaveOptions();
     await editor.save(editedDoc, "output.docx", saveOptions);
     ```
@@ -76,26 +76,26 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor for Node.js via Java {overview.glance}"
-  description: "{overview.description}"
+  title: "GroupDocs.Editor for Node.js via Java trong nháy mắt"
+  description: "API để chỉnh sửa, chuyển đổi và lưu tài liệu, bảng tính, slide và sách điện tử trong các ứng dụng Node.js."
   features:
     # feature loop
-    - title: "{overview.feature_1.title}"
-      content: "{overview.feature_1.description1} GroupDocs.Editor for Node.js via Java {overview.feature_1.description2}"
+    - title: "Chỉnh sửa nhiều tài liệu trong Node.js một cách dễ dàng"
+      content: "Chỉnh sửa một cách liền mạch nhiều tệp PDF và Office với sự hỗ trợ cho một loạt các định dạng. GroupDocs.Editor for Node.js via Java Làm cho việc chỉnh sửa tài liệu nhanh chóng và không rắc rối."
 
     # feature loop
-    - title: "{overview.feature_2.title}"
-      content: "{overview.feature_2.description}"
+    - title: "Chuyển đổi tài liệu thành HTML/CSS"
+      content: "Chuyển đổi các tài liệu thành Tương thích đánh dấu HTML/CSS Pure HTML/CSS với các biên tập viên WYSIWYG, cho phép chỉnh sửa tài liệu dễ dàng và hiệu quả trong môi trường web."
 
     # feature loop
-    - title: "{overview.feature_3.title}"
-      content: "{overview.feature_3.description}"
+    - title: "Lưu các tài liệu được chỉnh sửa ở các định dạng khác nhau"
+      content: "Lưu các tài liệu đã chỉnh sửa của bạn trở lại định dạng ban đầu của chúng hoặc xuất chúng sang các định dạng khác như PDF, đảm bảo tính linh hoạt và khả năng tương thích."
 
 ############################# Platforms ############################
 platforms:
   enable: true
-  title: "{platforms.title}"
-  description: "{platforms.description}"
+  title: "Nền tảng độc lập"
+  description: "GroupDocs.Editor cho Node.js hỗ trợ các hệ điều hành, khung công tác và người quản lý gói sau đây."
   items:
     # platform loop
     - title: "Amazon"
@@ -127,154 +127,154 @@ platforms:
 ############################# File formats ############################
 formats:
   enable: true
-  title: "{formats.title}"
+  title: "Các định dạng tệp được hỗ trợ"
   description: |
-    {formats.description} ([{formats.full_list}](https://docs.groupdocs.com/editor/nodejs-java/supported-document-formats/)).
+    GroupDocs.Editor hỗ trợ các hoạt động với các định dạng tệp sau khi nhập và xuất ([danh sách đầy đủ](https://docs.groupdocs.com/editor/nodejs-java/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
       content: |
-        ### {formats.groups.title_1}
+        ### Định dạng Microsoft Office
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX
     # group loop
     - color: "blue"
       content: |
-        ### {formats.groups.title_2}
-        * **{formats.groups.fixed_layout}:** PDF, XPS ({formats.groups.export_only})
+        ### Các định dạng tài liệu khác
+        * **Định dạng sai cố định:** PDF, XPS (chỉ xuất khẩu)
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-        * **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
-        * **{formats.groups.other_tables}:** SXC, DIF
+        * **Bảng văn bản phân định:** CSV, TSV, DSV (phân tách tùy ý)
+        * **Các định dạng bảng khác:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
-        ### {formats.groups.title_3}
-        * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
-        * **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
+        ### Các định dạng liên quan đến web
+        * **Đánh dấu:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
+        * **Định dạng email:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.features}"
-  description: "{features.description}"
+  title: "Các tính năng chính"
+  description: "Tải một cách liền mạch, chỉnh sửa và lưu trong các định dạng khác nhau các tài liệu văn phòng, email, sách điện tử và pdf."
 
   items:
     # feature loop
     - icon: "merge"
-      title: "{features.feature_1.title}"
-      content: "{features.feature_1.content}"
+      title: "Chỉnh sửa tệp"
+      content: "Chỉnh sửa nội dung của các định dạng tài liệu khác nhau bao gồm PDF, DOCX, XLSX, PPTX, v.v."
 
     # feature loop
     - icon: "split"
-      title: "{features.feature_2.title}"
-      content: "{features.feature_2.content}"
+      title: "Dịch sang HTML/CSS"
+      content: "Chuyển đổi tài liệu thành HTML/CSS để dễ dàng chỉnh sửa với các biên tập viên WYSIWYG như CKeditor hoặc TinyMce."
 
     # feature loop
     - icon: "move"
-      title: "{features.feature_3.title}"
-      content: "{features.feature_3.content}"
+      title: "Lưu tài liệu đã chỉnh sửa"
+      content: "Lưu HTML/CSS đã chỉnh sửa trở lại định dạng tài liệu gốc hoặc xuất sang PDF."
 
     # feature loop
     - icon: "remove"
-      title: "{features.feature_4.title}"
-      content: "{features.feature_4.content}"
+      title: "Trích xuất thông tin tài liệu"
+      content: "Trích xuất thông tin như số lượng trang, kích thước và trạng thái mã hóa từ các tài liệu."
 
     # feature loop
     - icon: "rotate"
-      title: "{features.feature_5.title}"
-      content: "{features.feature_5.content}"
+      title: "Hỗ trợ cho các định dạng khác nhau"
+      content: "Chỉnh sửa một loạt các định dạng tài liệu bao gồm các tệp Microsoft Office, PDF và nhiều hơn nữa."
 
     # feature loop
     - icon: "swap"
-      title: "{features.feature_6.title}"
-      content: "{features.feature_6.content}"
+      title: "Bảo vệ mật khẩu"
+      content: "Tải và chỉnh sửa các tài liệu được bảo vệ bằng mật khẩu một cách dễ dàng và bảo vệ các tài liệu đầu ra với bảo vệ mật khẩu."
 
     # feature loop
     - icon: "extract"
-      title: "{features.feature_7.title}"
-      content: "{features.feature_7.content}"
+      title: "Chỉnh sửa email"
+      content: "Chỉnh sửa và lưu các tin nhắn và thư email trong MSG, EML, EMLX, Mbox và nhiều định dạng khác, bao gồm chỉnh sửa siêu dữ liệu như chủ đề, TO, CC, BCC, từ, Tiêu đề, Ngày, v.v."
 
     # feature loop
     - icon: "orientation"
-      title: "{features.feature_8.title}"
-      content: "{features.feature_8.content}"
+      title: "Khai thác phông chữ"
+      content: "Trích xuất phông chữ từ các tài liệu xử lý từ để sử dụng trong quá trình chỉnh sửa."
 
     # feature loop
     - icon: "preview"
-      title: "{features.feature_9.title}"
-      content: "{features.feature_9.content}"
+      title: "Các trang xem trước"
+      content: "Tạo biểu diễn hình ảnh của các trang tài liệu để hiểu rõ hơn về nội dung và cấu trúc."
 
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "{code_samples.title}"
-  description: "{code_samples.description} GroupDocs.Editor for Node.js via Java"
+  title: "Mẫu mã"
+  description: "Một số trường hợp sử dụng các hoạt động điển hình sử dụng GroupDocs.Editor for Node.js via Java"
   items:
     # code sample loop
-    - title: "{code_samples.sample_1.title}"
+    - title: "Thay thế văn bản trong docx"
       content: |
-        {code_samples.sample_1.description} 
-        {{< landing/code title="{code_samples.sample_1.code_title}">}}
+        Ví dụ này hiển thị tải và chỉnh sửa nội dung của tệp docx đầu vào được lập trình bằng cách thay thế nội dung văn bản trên một tệp khác. Sau đó, nội dung tài liệu được sửa đổi được lưu lại dưới dạng tài liệu DOCX mới. 
+        {{< landing/code title="Chỉnh sửa tài liệu đầu vào bằng cách thay thế văn bản và lưu lại cho docx">}}
         ```javascript {style=abap}
         
-        // {code_samples.sample_1.comment_1}
+        // Tải tài liệu đầu vào theo đường dẫn và chỉ định tùy chọn tải nếu cần thiết
         const loadOptions = new WordProcessingLoadOptions();
         const editor = new Editor("input.docx", loadOptions);
         
-        // {code_samples.sample_1.comment_2}
+        // Mở tài liệu để chỉnh sửa và có được "Editabledocument"
         const original = editor.edit();
         
-        // {code_samples.sample_1.comment_3}
+        // Thay thế văn bản - Điều này mô phỏng chỉnh sửa nội dung
         const modifiedContent = original.getEmbeddedHtml().replace("old text", "new text");
         
-        // {code_samples.sample_1.comment_4}
+        // Tạo phiên bản "EDITECKEDSOCUMENT" từ nội dung đã chỉnh sửa
         const edited = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_1.comment_5}
+        // Chuẩn bị các tùy chọn lưu với định dạng đầu ra mong muốn
         const saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
         
-        // {code_samples.sample_1.comment_6}
+        // Lưu nội dung tài liệu đã chỉnh sửa vào docx
         await editor.save(edited, "output.docx", saveOptions);
         
-        // {code_samples.sample_1.comment_7}
+        // Vứt bỏ tất cả các tài nguyên
         edited.dispose(); original.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "{code_samples.sample_4.title}"
+    - title: "Chỉnh sửa nội dung của bảng tính Excel cụ thể"
       content: |
-        {code_samples.sample_4.description}
-        {{< landing/code title="{code_samples.sample_4.code_title}">}}
+        Tài liệu bảng tính (như XLS, XLSX, XLSM, ODS, v.v.) có thể có một hoặc nhiều bảng tính (tab). GroupDocs.Editor cho phép chỉnh sửa nội dung của một bảng tính tại một thời điểm. Sau khi được chỉnh sửa, bảng tính này có thể được lưu vào tài liệu bảng tính riêng biệt (trong đó chỉ có bảng tính cụ thể này) hoặc bảng tính được chỉnh sửa có thể được đưa trở lại tài liệu gốc, nơi nó có thể thay thế bảng tính gốc hoặc được lưu cùng nhau, cùng với một bản gốc. Ví dụ này hiển thị tải tài liệu XLSX, chỉnh sửa bảng tính thứ 2 của nó và lưu nó dưới dạng tài liệu riêng biệt mới ở định dạng XLSX và CSV.
+        {{< landing/code title="Chỉnh sửa bảng tính cụ thể của XLSX và lưu dưới dạng XLSX và CSV">}}
         ```javascript {style=abap}
         
-        // {code_samples.sample_4.comment_1}
+        // Tải đầu vào XLSX theo đường dẫn và chỉ định các tùy chọn tải nếu cần thiết
         const loadOptions = new SpreadsheetLoadOptions();
         const editor = new Editor("input.xlsx", loadOptions);
         
-        // {code_samples.sample_4.comment_2}
+        // Tạo và điều chỉnh các tùy chọn chỉnh sửa - Đặt bảng tính thứ 2 thành Chỉnh sửa
         const editOptions = new SpreadsheetEditOptions();
         editOptions.setWorksheetIndex(1);
         
-        // {code_samples.sample_4.comment_3}
+        // Mở bảng tính thứ 2 này để chỉnh sửa và có được "Editabledocument"
         const originalWorksheet = editor.edit(editOptions);
         
-        // {code_samples.sample_4.comment_4}
+        // Thay thế văn bản - Điều này mô phỏng chỉnh sửa nội dung
         const modifiedContent = originalWorksheet.getEmbeddedHtml().replace("Cell Text", "Edited Cell Text");
         
-        // {code_samples.sample_4.comment_5}
+        // Tạo phiên bản mới
         const editedWorksheet = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_4.comment_6}
+        // Lưu bảng tính đã chỉnh sửa vào tài liệu XLSX mới
         const saveSpreadsheetOptions = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
         await editor.save(editedWorksheet, "output.xlsx", saveSpreadsheetOptions);
         
-        // {code_samples.sample_4.comment_7}
+        // Lưu bảng tính đã chỉnh sửa vào tài liệu CSV mới với dấu phẩy (,) DELIMITER/DECETER
         const saveTextOptions = new DelimitedTextSaveOptions(",");
-        await editor.save(editedWorksheet, "output.xlsx", saveTextOptions);
+        await editor.save(editedWorksheet, "output.csv", saveTextOptions);
         
-        // {code_samples.sample_4.comment_8}
+        // Vứt bỏ tất cả các tài nguyên
         editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}

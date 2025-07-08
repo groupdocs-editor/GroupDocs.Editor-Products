@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-25T12:15:48
+date: 2025-07-08T14:01:53
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "ویرایش اسناد جاوا API | ویرایش PDF ، Word ، Excel ، Epub"
-head_description: "ویرایش اسناد جاوا API برای ویرایش ، ترجمه و ذخیره صفحات سند از PDF ، Microsoft Word ، Excel ، ارائه ، Visio و Image."
+head_title: "ویرایش اسناد جاوا API | ویرایش PDF ، Word ، Excel ، PowerPoint"
+head_description: "ویرایش اسناد جاوا API برای بارگیری ، ویرایش و ذخیره صفحات سند از PDF ، Microsoft Word ، Excel ، PowerPoint ، Ebook و ایمیل."
 
 ############################# Header ############################
 title: "اسناد را ویرایش کنید<br>از طریق جاوا API"
-description: "ویرایشگر قدرتمند API برای دستکاری PDF ، Microsoft Office ، HTML و پرونده های تصویری."
+description: "ویرایشگر قدرتمند API برای دستکاری Microsoft Office ، PDF ، HTML ، کتاب الکترونیکی و ایمیل."
 words:
   for: "برای"
 
@@ -47,7 +47,7 @@ release:
   downloads: "بارگیری"
 
 code:
-  title: "پرونده های اسناد را در جاوا ویرایش کنید"
+  title: "اسناد را در .NET ویرایش کنید"
   more: "نمونه های بیشتر"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java"
   install: |
@@ -68,22 +68,22 @@ code:
     </repositories>
   content: |
     ```java {style=abap}   
-    // {code.comment_1}
+    // برای شروع ویرایشگر ، سند منبع را عبور دهید
     Editor editor = new Editor("input.docx");
 
-    // {code.comment_2}
+    // سند باز برای ویرایش
     EditableDocument originalDoc = editor.edit();
 
-    // {code.comment_3}
+    // به عنوان HTML سند دریافت کنید
     String srcHtml = originalDoc.getEmbeddedHtml();
     
-    // {code.comment_4}
+    // مطالب سند را ویرایش کنید
     String editedHtml = srcHtml.replace("Old text", "New text");
     
-    // {code.comment_5}
+    // بارگیری سند ویرایش شده از HTML
     EditableDocument editedDoc = EditableDocument.fromMarkup(editedHtml, null);
     
-    // {code.comment_6}
+    // سند ویرایش شده را ذخیره کنید تا با فرمت مورد نظر پرونده را ثبت کنید
     WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions();
     editor.save(editedDoc, "output.docx", saveOptions);
     ```
@@ -91,16 +91,16 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor for Java {overview.glance}"
-  description: "API برای ویرایش ، ترجمه و ذخیره اسناد ، اسلایدها و نمودارها در برنامه های جاوا."
+  title: "GroupDocs.Editor for Java با یک نگاه"
+  description: "API برای ویرایش ، تبدیل و ذخیره اسناد ، صفحه گسترده ، اسلایدها و کتابهای الکترونیکی در برنامه های جاوا."
   features:
     # feature loop
     - title: "با زحمت چندین اسناد را در جاوا ویرایش کنید"
-      content: "{overview.feature_1.description1} GroupDocs.Editor for Java {overview.feature_1.description2}"
+      content: "یکپارچه چندین پرونده PDF و Office را با پشتیبانی از طیف گسترده ای از قالب ها ویرایش کنید. GroupDocs.Editor for Java ویرایش اسناد را سریع و بدون دردسر می کند."
 
     # feature loop
-    - title: "اسناد را به HTML/CSS ترجمه کنید"
-      content: "ترجمه اسناد به نشانه گذاری HTML/CSS سازگار با ویرایشگرهای WysiWyg ، امکان ویرایش اسناد آسان و کارآمد در یک محیط وب را فراهم می کند."
+    - title: "تبدیل اسناد به HTML/CSS"
+      content: "تبدیل اسناد به نشانگر خالص HTML/CSS سازگار با ویرایشگرهای WysiWyg ، امکان ویرایش اسناد آسان و کارآمد در یک محیط وب را فراهم می کند."
 
     # feature loop
     - title: "ذخیره اسناد ویرایش شده در قالب های مختلف"
@@ -144,7 +144,7 @@ formats:
   enable: true
   title: "قالب های فایل پشتیبانی شده"
   description: |
-    GroupDocs.Editor برای جاوا از عملیات با [فرمت های پرونده زیر] پشتیبانی می کند (https://docs.groupdocs.com/editor/java/supported-document-formats/). ([{formats.full_list}](https://docs.groupdocs.com/editor/java/supported-document-formats/)).
+    GroupDocs.Editor از عملیات با قالب های پرونده زیر در واردات و صادرات پشتیبانی می کند ([لیست کامل](https://docs.groupdocs.com/editor/java/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
@@ -156,24 +156,24 @@ formats:
     # group loop
     - color: "blue"
       content: |
-        ### اسناد
-        * **{formats.groups.fixed_layout}:** PDF, XPS ({formats.groups.export_only})
+        ### سایر قالب های سند
+        * **قالبهای لایه ثابت:** PDF, XPS (فقط صادرات)
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-        * **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
-        * **{formats.groups.other_tables}:** SXC, DIF
+        * **جداول متن محدود:** CSV, TSV, DSV (جدا کننده دلخواه)
+        * **سایر قالب های جدول:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
-        ### قالبهای دیگر
-        * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
-        * **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
+        ### قالب های مرتبط با وب
+        * **نشان:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
+        * **قالب های ایمیل:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.features}"
-  description: "یکپارچه اسناد PDF و Office را ویرایش ، ترجمه و ذخیره کنید."
+  title: "ویژگی های اصلی"
+  description: "یکپارچه ، ویرایش و ذخیره در فرمت های مختلف اسناد اداری ، ایمیل ، کتابهای الکترونیکی و PDF."
 
   items:
     # feature loop
@@ -204,17 +204,17 @@ features:
     # feature loop
     - icon: "swap"
       title: "محافظت از رمز عبور"
-      content: "اسناد محافظت شده با رمز عبور را با سهولت ویرایش کنید."
+      content: "اسناد محافظت شده با رمز عبور را با سهولت بارگیری و ویرایش کنید و از اسناد خروجی با محافظت از رمز عبور محافظت کنید."
 
     # feature loop
     - icon: "extract"
-      title: "رمزگذاری سند سفارشی"
-      content: "رمزگذاری سند را در حین ویرایش و صرفه جویی در فرآیند مشخص کنید."
+      title: "ویرایش ایمیل"
+      content: "پیام ها و نامه های ایمیل را در MSG ، EML ، EMLX ، Mbox و بسیاری از قالب های دیگر از جمله ویرایش ابرداده مانند موضوع ، به ، CC ، BCC ، از ، عنوان ، تاریخ و غیره ویرایش و ذخیره کنید."
 
     # feature loop
     - icon: "orientation"
       title: "استخراج قلم"
-      content: "قلم های اسناد را برای استفاده در فرآیند ویرایش استخراج کنید."
+      content: "فونت ها را از اسناد پردازش برای استفاده در فرآیند ویرایش استخراج کنید."
 
     # feature loop
     - icon: "preview"
@@ -225,67 +225,67 @@ features:
 code_samples:
   enable: true
   title: "نمونه کد"
-  description: "برخی از موارد استفاده از GroupDocs.Editor معمولی برای عملیات جاوا. GroupDocs.Editor for Java"
+  description: "برخی از موارد استفاده از عملیات معمولی با استفاده از GroupDocs.Editor for Java"
   items:
     # code sample loop
-    - title: "محتوای خاص پرونده docx را ویرایش کنید"
+    - title: "متن را در docx جایگزین کنید"
       content: |
-        {code_samples.sample_1.description} 
-        {{< landing/code title="نحوه ویرایش پرونده های docx در جاوا">}}
+        این مثال بارگذاری و ویرایش محتوای پرونده ورودی docx را به صورت برنامه ای با جایگزینی محتوای متن بر روی دیگری نشان می دهد. پس از آن ، محتوای سند اصلاح شده به عنوان یک سند جدید Docx ذخیره می شود. 
+        {{< landing/code title="با جایگزینی متن و ذخیره آن در Docx ، input docx را ویرایش کنید">}}
         ```java {style=abap}
         
-        // {code_samples.sample_1.comment_1}
+        // سند ورودی را بر اساس مسیر بارگیری کنید و در صورت لزوم گزینه های بار را مشخص کنید
         Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // {code_samples.sample_1.comment_2}
+        // سند باز برای ویرایش و به دست آوردن "ویرایش"
         EditableDocument original = editor.edit();
         
-        // {code_samples.sample_1.comment_3}
+        // متن را جایگزین کنید - این ویرایش محتوا را تقلید می کند
         String modifiedContent = original.getEmbeddedHtml().replace("old text", "new text");
         
-        // {code_samples.sample_1.comment_4}
+        // نمونه جدید "EditableDocument" را از محتوای ویرایش شده ایجاد کنید
         EditableDocument edited = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_1.comment_5}
+        // گزینه های ذخیره را با فرمت خروجی مورد نظر آماده کنید
         WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
         
-        // {code_samples.sample_1.comment_6}
+        // محتوای سند ویرایش شده را در Docx ذخیره کنید
         editor.save(edited, "output.docx", saveOptions);
         
-        // {code_samples.sample_1.comment_7}
+        // تمام منابع را دور بیندازید
         edited.dispose(); original.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "{code_samples.sample_4.title}"
+    - title: "ویرایش محتوای برگه خاص اکسل"
       content: |
-        {code_samples.sample_4.description}
-        {{< landing/code title="{code_samples.sample_4.code_title}">}}
+        سند صفحه گسترده (مانند XLS ، XLSX ، XLSM ، ODS و غیره) ممکن است یک یا چند کاربرگ (زبانه) داشته باشد. GroupDocs.Editor اجازه می دهد تا محتوای یک صفحه کار را همزمان ویرایش کنید. پس از ویرایش ، این صفحه ممکن است در سند صفحه گسترده جداگانه ذخیره شود (جایی که فقط این کاربرگ خاص ذخیره می شود) ، یا برگه ویرایش شده را می توان به سند اصلی وارد کرد ، جایی که می تواند برگه اصلی را جایگزین کند یا به همراه اصلی اصلی ذخیره شود. این مثال در حال بارگیری سند XLSX ، ویرایش صفحه کار 2 آن و ذخیره آن به عنوان یک سند جداگانه جدید در قالب های XLSX و CSV است.
+        {{< landing/code title="برگه خاص XLSX را ویرایش کرده و به عنوان XLSX و CSV ذخیره کنید">}}
         ```java {style=abap}
         
-        // {code_samples.sample_4.comment_1}
+        // ورودی XLSX را بر اساس مسیر بارگیری کنید و در صورت لزوم گزینه های بار را مشخص کنید
         Editor editor = new Editor("input.xlsx", new SpreadsheetLoadOptions());
         
-        // {code_samples.sample_4.comment_2}
+        // گزینه های ویرایش را ایجاد و تنظیم کنید - صفحه کار 2 را برای ویرایش تنظیم کنید
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
         editOptions.setWorksheetIndex(1);
         
-        // {code_samples.sample_4.comment_3}
+        // این صفحه کار 2 را برای ویرایش باز کنید و "ویرایش" را بدست آورید
         EditableDocument originalWorksheet = editor.edit(editOptions);
         
-        // {code_samples.sample_4.comment_4}
+        // متن را جایگزین کنید - این ویرایش محتوا را تقلید می کند
         String modifiedContent = originalWorksheet.getEmbeddedHtml().replace("Cell Text", "Edited Cell Text");
         
-        // {code_samples.sample_4.comment_5}
+        // نمونه جدید "EditableDocument" را از برگه ویرایش شده ایجاد کنید
         EditableDocument editedWorksheet = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_4.comment_6}
+        // برگه ویرایش شده را در سند جدید XLSX ذخیره کنید
         editor.save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
         
-        // {code_samples.sample_4.comment_7}
-        editor.save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
+        // برگه ویرایش شده را به سند جدید CSV با کاما (،) تعیین کننده/جداکننده ذخیره کنید
+        editor.save(editedWorksheet, "output.csv", new DelimitedTextSaveOptions(","));
         
-        // {code_samples.sample_4.comment_8}
+        // تمام منابع را دور بیندازید
         editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}

@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-25T12:15:48
+date: 2025-07-08T14:01:54
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "API de edição de documentos Java | Editar PDF, Word, Excel, EPUB"
-head_description: "API de edição de documentos Java para editar, traduzir e salvar páginas de documentos em PDF, Microsoft Word, Excel, apresentações, Visio e formatos de imagem."
+head_title: "API de edição de documentos Java | Editar pdf, palavra, excel, powerpoint"
+head_description: "API de edição de documentos Java para carregar, editar e salvar páginas de documentos de formatos de PDF, Microsoft Word, Excel, PowerPoint, Ebook e Email."
 
 ############################# Header ############################
-title: "Editar documentos<br>através da API Java"
-description: "API de editor poderosa para manipular arquivos PDF, Microsoft Office, HTML e imagens."
+title: "Editar documentos<br>via Java API"
+description: "API do editor poderoso para manipular arquivos do Microsoft Office, PDF, HTML, Ebook e Email."
 words:
   for: "para"
 
@@ -43,11 +43,11 @@ actions:
 
 release:
   title: "Versão {0} lançada"
-  notes: "Veja o que é novo"
-  downloads: "Transferências"
+  notes: "Veja o que há de novo"
+  downloads: "Downloads"
 
 code:
-  title: "Edite arquivos de documentos em Java"
+  title: "Editar documentos no .NET"
   more: "Mais exemplos"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java"
   install: |
@@ -68,22 +68,22 @@ code:
     </repositories>
   content: |
     ```java {style=abap}   
-    // {code.comment_1}
+    // Passe o documento de origem para inicializar o editor
     Editor editor = new Editor("input.docx");
 
-    // {code.comment_2}
+    // Documento aberto para editar
     EditableDocument originalDoc = editor.edit();
 
-    // {code.comment_3}
+    // Obtenha documento como HTML
     String srcHtml = originalDoc.getEmbeddedHtml();
     
-    // {code.comment_4}
+    // Editar conteúdo do documento
     String editedHtml = srcHtml.replace("Old text", "New text");
     
-    // {code.comment_5}
+    // Carregar documento editado da HTML
     EditableDocument editedDoc = EditableDocument.fromMarkup(editedHtml, null);
     
-    // {code.comment_6}
+    // Salvar documento editado para arquivar com o formato desejado
     WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions();
     editor.save(editedDoc, "output.docx", saveOptions);
     ```
@@ -91,26 +91,26 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor for Java {overview.glance}"
-  description: "API para editar, traduzir e salvar documentos, slides e diagramas em aplicativos Java."
+  title: "GroupDocs.Editor for Java de relance"
+  description: "API para editar, converter e salvar documentos, planilhas, slides e e-books em aplicativos Java."
   features:
     # feature loop
-    - title: "Edite facilmente vários documentos em Java"
-      content: "{overview.feature_1.description1} GroupDocs.Editor for Java {overview.feature_1.description2}"
+    - title: "Editar sem esforço vários documentos em java"
+      content: "Edite perfeitamente vários arquivos de PDF e escritório com suporte para uma ampla gama de formatos. GroupDocs.Editor for Java Faz de edição de documentos rápida e sem complicações."
 
     # feature loop
-    - title: "Traduzir documentos para HTML/CSS"
-      content: "Traduza documentos para marcação HTML/CSS compatível com editores WYSIWYG, permitindo edição fácil e eficiente de documentos em um ambiente web."
+    - title: "Converter documentos em html/css"
+      content: "Converta documentos em marcação pura de HTML/CSS compatível com editores WYSIWYG, permitindo uma edição de documentos fácil e eficiente em um ambiente da Web."
 
     # feature loop
-    - title: "Salve documentos editados em vários formatos"
-      content: "Salve seus documentos editados de volta ao formato original ou exporte-os para outros formatos, como PDF, garantindo flexibilidade e compatibilidade."
+    - title: "Salvar documentos editados em vários formatos"
+      content: "Salve seus documentos editados de volta ao formato original ou exportá -los para outros formatos, como o PDF, garantindo flexibilidade e compatibilidade."
 
 ############################# Platforms ############################
 platforms:
   enable: true
-  title: "Independência de plataforma"
-  description: "GroupDocs.Editor for Java oferece suporte aos seguintes sistemas operacionais, estruturas e gerenciadores de pacotes."
+  title: "Independência da plataforma"
+  description: "GroupDocs.editor de Java suporta os seguintes sistemas operacionais, estruturas e gerentes de pacotes."
   items:
     # platform loop
     - title: "Amazon"
@@ -144,7 +144,7 @@ formats:
   enable: true
   title: "Formatos de arquivo suportados"
   description: |
-    GroupDocs.Editor for Java oferece suporte a operações com os seguintes [formatos de arquivo](https://docs.groupdocs.com/editor/java/supported-document-formats/). ([{formats.full_list}](https://docs.groupdocs.com/editor/java/supported-document-formats/)).
+    GroupDocs.editor suporta operações com os seguintes formatos de arquivo na importação e exportação ([Lista completa](https://docs.groupdocs.com/editor/java/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
@@ -156,24 +156,24 @@ formats:
     # group loop
     - color: "blue"
       content: |
-        ### Documentos
-        * **{formats.groups.fixed_layout}:** PDF, XPS ({formats.groups.export_only})
+        ### Outros formatos de documentos
+        * **Formatos de layout fixo:** PDF, XPS (exportar apenas)
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-        * **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
-        * **{formats.groups.other_tables}:** SXC, DIF
+        * **Tabelas de texto delimitadas:** CSV, TSV, DSV (separador arbitrário)
+        * **Outros formatos de tabela:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
-        ### Outros formatos
-        * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
-        * **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
+        ### Formatos relacionados à Web
+        * **Marcação:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
+        * **Formatos de email:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.features}"
-  description: "Edite, traduza e salve documentos PDF e Office com facilidade."
+  title: "Principais características"
+  description: "Carregue, edite e salve perfeitamente em diferentes documentos, e -mails, e -books e PDF."
 
   items:
     # feature loop
@@ -183,109 +183,109 @@ features:
 
     # feature loop
     - icon: "split"
-      title: "Traduzir para HTML/CSS"
-      content: "Converta documentos em HTML/CSS para edição fácil com editores WYSIWYG como CKEditor ou TinyMCE."
+      title: "Traduza para HTML/CSS"
+      content: "Converta documentos em HTML/CSS para facilitar a edição com editores wysiwyg como CKeditor ou Tinymce."
 
     # feature loop
     - icon: "move"
       title: "Salvar documentos editados"
-      content: "Salve o HTML/CSS editado de volta no formato do documento original ou exporte para PDF."
+      content: "Salve o HTML/CSS editado de volta ao formato original do documento ou exporte para PDF."
 
     # feature loop
     - icon: "remove"
-      title: "Extraia informações do documento"
-      content: "Extraia informações como contagem de páginas, tamanho e status de criptografia de documentos."
+      title: "Extrair informações do documento"
+      content: "Extraia informações como contagem de páginas, tamanho e status de criptografia dos documentos."
 
     # feature loop
     - icon: "rotate"
       title: "Suporte para vários formatos"
-      content: "Edite uma ampla variedade de formatos de documentos, incluindo arquivos do Microsoft Office, PDFs e muito mais."
+      content: "Edite uma ampla gama de formatos de documentos, incluindo arquivos do Microsoft Office, PDFs e muito mais."
 
     # feature loop
     - icon: "swap"
       title: "Proteção de senha"
-      content: "Edite documentos protegidos por senha com facilidade."
+      content: "Carregue e edite documentos protegidos por senha com facilidade e protegendo os documentos de saída com proteção de senha."
 
     # feature loop
     - icon: "extract"
-      title: "Codificação de documento personalizada"
-      content: "Especifique a codificação do documento durante os processos de edição e salvamento."
+      title: "Edite email"
+      content: "Edite e salve as mensagens e cartas de email em MSG, EML, EMLX, MBOX e muitos outros formatos, incluindo os metadados da edição de sujeitos, para, CC, BCC, de, título, data e assim por diante."
 
     # feature loop
     - icon: "orientation"
-      title: "Extração de fonte"
-      content: "Extraia fontes de documentos para uso no processo de edição."
+      title: "Extração de fontes"
+      content: "Extraia fontes dos documentos do Wordprocessing para uso no processo de edição."
 
     # feature loop
     - icon: "preview"
-      title: "Visualizar páginas"
-      content: "Gere representações de imagens de páginas de documentos para compreender melhor o conteúdo e a estrutura."
+      title: "Páginas de visualização"
+      content: "Gere representações de imagens das páginas de documentos para entender melhor o conteúdo e a estrutura."
 
 ############################# Code samples ############################
 code_samples:
   enable: true
   title: "Amostras de código"
-  description: "Alguns casos de uso de GroupDocs.Editor típicos para operações Java. GroupDocs.Editor for Java"
+  description: "Alguns casos de uso de operações típicas usando GroupDocs.Editor for Java"
   items:
     # code sample loop
-    - title: "Edite o conteúdo específico do arquivo DOCX"
+    - title: "Substitua o texto em docx"
       content: |
-        {code_samples.sample_1.description} 
-        {{< landing/code title="Como editar arquivos DOCX em Java">}}
+        Este exemplo mostra o carregamento e a edição de um conteúdo do arquivo DOCX de entrada programaticamente, substituindo o conteúdo de texto em outro. Depois disso, o conteúdo do documento modificado é salvo de volta como um novo documento DOCX. 
+        {{< landing/code title="Edite Docx de entrada, substituindo o texto e salve -o de volta ao DOCX">}}
         ```java {style=abap}
         
-        // {code_samples.sample_1.comment_1}
+        // Carregue o documento de entrada por caminho e especifique as opções de carga, se necessário
         Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // {code_samples.sample_1.comment_2}
+        // Documento abrir para editar e obter o "EditableDabledocument"
         EditableDocument original = editor.edit();
         
-        // {code_samples.sample_1.comment_3}
+        // Substitua o texto - isso emula a edição de conteúdo
         String modifiedContent = original.getEmbeddedHtml().replace("old text", "new text");
         
-        // {code_samples.sample_1.comment_4}
+        // Crie uma nova instância "editabledabledocument" a partir de conteúdo editado
         EditableDocument edited = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_1.comment_5}
+        // Prepare opções de salvamento com formatx de saída desejado
         WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
         
-        // {code_samples.sample_1.comment_6}
+        // Salvar conteúdo de documento editado para docx
         editor.save(edited, "output.docx", saveOptions);
         
-        // {code_samples.sample_1.comment_7}
+        // Descarte todos os recursos
         edited.dispose(); original.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "{code_samples.sample_4.title}"
+    - title: "Editar conteúdo de uma planilha do Excel em particular"
       content: |
-        {code_samples.sample_4.description}
-        {{< landing/code title="{code_samples.sample_4.code_title}">}}
+        O documento da planilha (como XLS, XLSX, XLSM, ODS e assim por diante) pode ter uma ou mais planilhas (guias). GroupDocs.editor permite editar o conteúdo de uma planilha por vez. Após ser editado, esta planilha pode ser salva no documento de planilha separado (onde somente esta planilha específica será salva), ou a planilha editada pode ser inserida de volta ao documento original, onde pode substituir a planilha original ou ser salvo em conjunto, junto com o original. Este exemplo mostra o documento de carregamento XLSX, editando sua 2ª planilha e salvando -a como um novo documento separado nos formatos XLSX e CSV.
+        {{< landing/code title="Editar planilha específica do XLSX e salve como XLSX e CSV">}}
         ```java {style=abap}
         
-        // {code_samples.sample_4.comment_1}
+        // Carregue a entrada XLSX por caminho e especifique as opções de carga, se necessário
         Editor editor = new Editor("input.xlsx", new SpreadsheetLoadOptions());
         
-        // {code_samples.sample_4.comment_2}
+        // Crie e ajuste as opções de edição - Defina a 2ª planilha para editar
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
         editOptions.setWorksheetIndex(1);
         
-        // {code_samples.sample_4.comment_3}
+        // Abra esta 2ª planilha para editar e obter o "EditableDabledocument"
         EditableDocument originalWorksheet = editor.edit(editOptions);
         
-        // {code_samples.sample_4.comment_4}
+        // Substitua o texto - isso emula a edição de conteúdo
         String modifiedContent = originalWorksheet.getEmbeddedHtml().replace("Cell Text", "Edited Cell Text");
         
-        // {code_samples.sample_4.comment_5}
+        // Crie uma nova instância "EditableDabledocument" a partir da planilha editada
         EditableDocument editedWorksheet = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_4.comment_6}
+        // Salvar planilha editada para o novo documento XLSX
         editor.save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
         
-        // {code_samples.sample_4.comment_7}
-        editor.save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
+        // Salvar planilha editada para o novo documento CSV com vírgula (,) delimiter/separador
+        editor.save(editedWorksheet, "output.csv", new DelimitedTextSaveOptions(","));
         
-        // {code_samples.sample_4.comment_8}
+        // Descarte todos os recursos
         editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}

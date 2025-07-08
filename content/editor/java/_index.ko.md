@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-25T12:15:48
+date: 2025-07-08T14:01:54
 draft: false
 
 product: "Editor"
@@ -24,31 +24,31 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "Java 문서 편집 API | PDF, Word, Excel, EPUB 편집"
-head_description: "PDF, Microsoft Word, Excel, 프레젠테이션, Visio 및 이미지 형식의 문서 페이지를 편집, 번역 및 저장하는 Java 문서 편집 API입니다."
+head_title: "Java 문서 편집 API | PDF, Word, Excel, PowerPoint 편집"
+head_description: "PDF, Microsoft Word, Excel, PowerPoint, eBook 및 이메일 형식에서 문서 페이지를로드, 편집 및 저장하려면 Java 문서 편집 API."
 
 ############################# Header ############################
-title: "문서 편집<br>자바 API를 통해"
-description: "PDF, Microsoft Office, HTML 및 이미지 파일을 조작할 수 있는 강력한 편집기 API입니다."
+title: "문서 편집<br>Java API를 통해"
+description: "Microsoft Office, PDF, HTML, 전자 책 및 이메일 파일을 조작하는 강력한 편집자 API."
 words:
   for: "~을 위한"
 
 actions:
-  main: "무료 메이븐 다운로드"
+  main: "무료 Maven 다운로드"
   main_link: "https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-editor/"
-  alt: "라이선스"
+  alt: "라이센스"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/java"
-  title: "시작할 준비가 되셨나요?"
-  description: "GroupDocs.Editor 기능을 무료로 사용해 보거나 라이센스를 요청하세요."
+  title: "시작할 준비가 되셨습니까?"
+  description: "무료로 GroupDocs.Editor 기능을 시도하거나 라이센스를 요청하십시오."
 
 release:
-  title: "버전 {0} 출시됨"
-  notes: "새로운 소식 보기"
+  title: "버전 {0} 릴리스"
+  notes: "새로운 것이 무엇인지 확인하십시오"
   downloads: "다운로드"
 
 code:
-  title: "Java에서 문서 파일 편집"
-  more: "더 많은 예시"
+  title: ".NET에서 문서를 편집합니다"
+  more: "더 많은 예"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java"
   install: |
     <dependencies>
@@ -68,22 +68,22 @@ code:
     </repositories>
   content: |
     ```java {style=abap}   
-    // {code.comment_1}
+    // 소스 문서를 통과하여 편집기를 초기화합니다
     Editor editor = new Editor("input.docx");
 
-    // {code.comment_2}
+    // 편집 용 문서를 엽니 다
     EditableDocument originalDoc = editor.edit();
 
-    // {code.comment_3}
+    // HTML로 문서를 받으십시오
     String srcHtml = originalDoc.getEmbeddedHtml();
     
-    // {code.comment_4}
+    // 문서 내용 편집
     String editedHtml = srcHtml.replace("Old text", "New text");
     
-    // {code.comment_5}
+    // HTML에서 편집 된 문서로드
     EditableDocument editedDoc = EditableDocument.fromMarkup(editedHtml, null);
     
-    // {code.comment_6}
+    // 편집 된 문서를 원하는 형식으로 파일로 저장하십시오
     WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions();
     editor.save(editedDoc, "output.docx", saveOptions);
     ```
@@ -91,26 +91,26 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor for Java {overview.glance}"
-  description: "Java 애플리케이션에서 문서, 슬라이드, 다이어그램을 편집, 번역, 저장하는 API입니다."
+  title: "GroupDocs.Editor for Java 한눈에"
+  description: "Java 응용 프로그램의 문서, 스프레드 시트, 슬라이드 및 전자 책을 편집, 변환 및 저장하는 API."
   features:
     # feature loop
-    - title: "Java로 여러 문서를 손쉽게 편집"
-      content: "{overview.feature_1.description1} GroupDocs.Editor for Java {overview.feature_1.description2}"
+    - title: "Java에서 여러 문서를 쉽게 편집합니다"
+      content: "광범위한 형식을 지원하여 여러 PDF 및 사무실 파일을 원활하게 편집하십시오. GroupDocs.Editor for Java 문서 편집을 빠르고 번거 로움없이 만듭니다."
 
     # feature loop
-    - title: "문서를 HTML/CSS로 번역"
-      content: "문서를 WYSIWYG 편집기와 호환되는 HTML/CSS 마크업으로 번역하여 웹 환경에서 쉽고 효율적으로 문서를 편집할 수 있습니다."
+    - title: "문서를 HTML/CSS로 변환하십시오"
+      content: "Wysiwyg 편집기와 호환되는 순수한 HTML/CSS 마크 업으로 문서를 변환하여 웹 환경에서 쉽고 효율적인 문서 편집이 가능합니다."
 
     # feature loop
-    - title: "편집된 문서를 다양한 형식으로 저장"
-      content: "편집한 문서를 원래 형식으로 다시 저장하거나 PDF와 같은 다른 형식으로 내보내 유연성과 호환성을 보장합니다."
+    - title: "편집 된 문서를 다양한 형식으로 저장하십시오"
+      content: "편집 된 문서를 원래 형식으로 다시 저장하거나 PDF와 같은 다른 형식으로 내보내어 유연성과 호환성을 보장합니다."
 
 ############################# Platforms ############################
 platforms:
   enable: true
   title: "플랫폼 독립성"
-  description: "Java용 GroupDocs.Editor는 다음 운영 체제, 프레임워크 및 패키지 관리자를 지원합니다."
+  description: "GroupDocs.editor for Java는 다음 운영 체제, 프레임 워크 및 패키지 관리자를 지원합니다."
   items:
     # platform loop
     - title: "Amazon"
@@ -144,7 +144,7 @@ formats:
   enable: true
   title: "지원되는 파일 형식"
   description: |
-    Java용 GroupDocs.Editor는 다음 [파일 형식](https://docs.groupdocs.com/editor/java/supported-document-formats/)을 사용한 작업을 지원합니다. ([{formats.full_list}](https://docs.groupdocs.com/editor/java/supported-document-formats/)).
+    GroupDocs.Editor는 가져 오기 및 내보내기시 다음 파일 형식으로 작업을 지원합니다. ([전체 목록](https://docs.groupdocs.com/editor/java/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
@@ -156,136 +156,136 @@ formats:
     # group loop
     - color: "blue"
       content: |
-        ### 서류
-        * **{formats.groups.fixed_layout}:** PDF, XPS ({formats.groups.export_only})
+        ### 다른 문서 형식
+        * **고정 층 형식:** PDF, XPS (수출 전용)
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-        * **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
-        * **{formats.groups.other_tables}:** SXC, DIF
+        * **구분 된 텍스트 테이블:** CSV, TSV, DSV (임의의 분리기)
+        * **다른 테이블 형식:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
-        ### 기타 형식
-        * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
-        * **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
+        ### 웹 관련 형식
+        * **마크 업:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
+        * **이메일 형식:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.features}"
-  description: "PDF 및 Office 문서를 원활하게 편집, 번역, 저장하세요."
+  title: "주요 기능"
+  description: "다른 형식의 사무실 문서, 이메일, eBook 및 PDF를 원활하게로드, 편집 및 저장합니다."
 
   items:
     # feature loop
     - icon: "merge"
       title: "파일 편집"
-      content: "PDF, DOCX, XLSX, PPTX 등을 포함한 다양한 문서 형식의 내용을 편집합니다."
+      content: "PDF, DOCX, XLSX, PPTX 등을 포함한 다양한 문서 형식의 내용을 편집하십시오."
 
     # feature loop
     - icon: "split"
-      title: "HTML/CSS로 번역"
-      content: "CKEditor 또는 TinyMCE와 같은 WYSIWYG 편집기를 사용하여 쉽게 편집할 수 있도록 문서를 HTML/CSS로 변환하세요."
+      title: "HTML/CSS로 번역하십시오"
+      content: "CKEDITOR 또는 TINYMCE와 같은 WYSIWYG 편집기로 쉽게 편집 할 수 있도록 문서를 HTML/CSS로 변환하십시오."
 
     # feature loop
     - icon: "move"
-      title: "편집된 문서 저장"
-      content: "편집된 HTML/CSS를 원래 문서 형식으로 다시 저장하거나 PDF로 내보냅니다."
+      title: "편집 된 문서를 저장하십시오"
+      content: "편집 된 HTML/CSS를 원본 문서 형식으로 다시 저장하거나 PDF로 내보내십시오."
 
     # feature loop
     - icon: "remove"
-      title: "문서 정보 추출"
-      content: "문서에서 페이지 수, 크기, 암호화 상태 등의 정보를 추출합니다."
+      title: "문서 정보를 추출하십시오"
+      content: "문서에서 페이지 수, 크기 및 암호화 상태와 같은 정보를 추출합니다."
 
     # feature loop
     - icon: "rotate"
-      title: "다양한 형식 지원"
-      content: "Microsoft Office 파일, PDF 등을 포함한 다양한 문서 형식을 편집합니다."
+      title: "다양한 형식에 대한 지원"
+      content: "Microsoft Office 파일, PDF 등을 포함한 다양한 문서 형식을 편집하십시오."
 
     # feature loop
     - icon: "swap"
-      title: "비밀번호 보안"
-      content: "비밀번호로 보호된 문서를 쉽게 편집하세요."
+      title: "비밀번호 보호"
+      content: "비밀번호로 보호 된 문서를 쉽게로드 및 편집하고 암호 보호로 출력 문서를 보호합니다."
 
     # feature loop
     - icon: "extract"
-      title: "사용자 정의 문서 인코딩"
-      content: "편집 및 저장 프로세스 중에 문서 인코딩을 지정합니다."
+      title: "이메일 편집"
+      content: "MSG, EML, EMLX, Mbox 및 주제와 같은 메타 데이터 편집, CC, BCC, From, Title, Date 등을 포함하여 전자 메일 메시지 및 문자를 편집하고 저장하십시오."
 
     # feature loop
     - icon: "orientation"
       title: "글꼴 추출"
-      content: "편집 프로세스에 사용할 문서에서 글꼴을 추출합니다."
+      content: "편집 프로세스에 사용하기 위해 워드 프로세싱 문서에서 글꼴을 추출합니다."
 
     # feature loop
     - icon: "preview"
-      title: "미리보기 페이지"
-      content: "콘텐츠와 구조를 더 잘 이해할 수 있도록 문서 페이지의 이미지 표현을 생성합니다."
+      title: "페이지 미리보기"
+      content: "내용과 구조를 더 잘 이해하기 위해 문서 페이지의 이미지 표현을 생성합니다."
 
 ############################# Code samples ############################
 code_samples:
   enable: true
   title: "코드 샘플"
-  description: "Java 작업을 위한 일반적인 GroupDocs.Editor의 일부 사용 사례입니다. GroupDocs.Editor for Java"
+  description: "사용하는 일반적인 운영의 일부 사용 사례 GroupDocs.Editor for Java"
   items:
     # code sample loop
-    - title: "특정 DOCX 파일 콘텐츠 편집"
+    - title: "DOCX에서 텍스트를 바꾸십시오"
       content: |
-        {code_samples.sample_1.description} 
-        {{< landing/code title="Java에서 DOCX 파일을 편집하는 방법">}}
+        이 예제는 텍스트 내용을 다른 텍스트 내용을 교체하여 프로그래밍 방식으로 입력 DOCX 파일의 내용을로드 및 편집하는 것을 보여줍니다. 그 후 수정 된 문서 컨텐츠는 새로운 DOCX 문서로 저장됩니다. 
+        {{< landing/code title="텍스트를 교체하여 입력 DOCX 편집하고 다시 DOCX로 저장하십시오.">}}
         ```java {style=abap}
         
-        // {code_samples.sample_1.comment_1}
+        // 경로별로 입력 문서를로드하고 필요한 경우로드 옵션을 지정합니다.
         Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // {code_samples.sample_1.comment_2}
+        // 편집 문서를 열고 "editabledocument"를 얻습니다.
         EditableDocument original = editor.edit();
         
-        // {code_samples.sample_1.comment_3}
+        // 텍스트 교체 - 컨텐츠 편집을 에뮬레이션합니다
         String modifiedContent = original.getEmbeddedHtml().replace("old text", "new text");
         
-        // {code_samples.sample_1.comment_4}
+        // 편집 된 컨텐츠에서 새 "editabledocument"인스턴스를 만듭니다
         EditableDocument edited = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_1.comment_5}
+        // 원하는 출력 형식으로 저장 옵션을 준비하십시오
         WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
         
-        // {code_samples.sample_1.comment_6}
+        // 편집 된 문서 컨텐츠를 DOCX에 저장하십시오
         editor.save(edited, "output.docx", saveOptions);
         
-        // {code_samples.sample_1.comment_7}
+        // 모든 자원을 처분하십시오
         edited.dispose(); original.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "{code_samples.sample_4.title}"
+    - title: "특정 Excel 워크 시트의 내용을 편집합니다"
       content: |
-        {code_samples.sample_4.description}
-        {{< landing/code title="{code_samples.sample_4.code_title}">}}
+        스프레드 시트 문서 (XLS, XLSX, XLSM, ODS 등)에는 하나 이상의 워크 시트 (탭)가있을 수 있습니다. GroupDocs.editor를 사용하면 한 번에 하나의 워크 시트의 컨텐츠를 편집 할 수 있습니다. 편집 된 후,이 워크 시트는 별도의 스프레드 시트 문서 (이 특정 워크 시트 만 저장 될 예정) 또는 편집 된 워크 시트를 원본 문서에 다시 삽입 할 수 있으며, 여기서 원본 워크 시트를 대체하거나 원본과 함께 저장할 수 있습니다. 이 예는 XLSX 문서로드, 두 번째 워크 시트를 편집하고 XLSX 및 CSV 형식의 새로운 별도 문서로 저장하는 것을 보여줍니다.
+        {{< landing/code title="XLSX의 특정 워크 시트 편집 및 XLSX 및 CSV로 저장">}}
         ```java {style=abap}
         
-        // {code_samples.sample_4.comment_1}
+        // 경로별로 입력 XLSX를로드하고 필요한 경우로드 옵션을 지정하십시오.
         Editor editor = new Editor("input.xlsx", new SpreadsheetLoadOptions());
         
-        // {code_samples.sample_4.comment_2}
+        // 편집 옵션 작성 및 조정 - 편집 할 두 번째 워크 시트 설정
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
         editOptions.setWorksheetIndex(1);
         
-        // {code_samples.sample_4.comment_3}
+        // 편집을 위해이 두 번째 워크 시트를 열고 "editabledocument"를 얻으십시오.
         EditableDocument originalWorksheet = editor.edit(editOptions);
         
-        // {code_samples.sample_4.comment_4}
+        // 텍스트 교체 - 컨텐츠 편집을 에뮬레이션합니다
         String modifiedContent = originalWorksheet.getEmbeddedHtml().replace("Cell Text", "Edited Cell Text");
         
-        // {code_samples.sample_4.comment_5}
+        // 편집 된 워크 시트에서 새로운 "편집자 서문"인스턴스를 만듭니다
         EditableDocument editedWorksheet = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_4.comment_6}
+        // 편집 된 워크 시트를 새로운 XLSX 문서에 저장하십시오
         editor.save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
         
-        // {code_samples.sample_4.comment_7}
-        editor.save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
+        // Comma (,) 구분 기/분리기를 사용하여 편집 된 워크 시트를 새 CSV 문서에 저장
+        editor.save(editedWorksheet, "output.csv", new DelimitedTextSaveOptions(","));
         
-        // {code_samples.sample_4.comment_8}
+        // 모든 자원을 처분하십시오
         editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}

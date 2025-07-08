@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-25T12:15:48
+date: 2025-07-08T14:01:54
 draft: false
 
 product: "Editor"
@@ -24,31 +24,31 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "Java ドキュメント編集 API | PDF、Word、Excel、EPUB を編集"
-head_description: "PDF、Microsoft Word、Excel、プレゼンテーション、Visio、および画像形式のドキュメント ページを編集、翻訳、保存するための Java ドキュメント編集 API。"
+head_title: "Javaドキュメント編集API | PDF、Word、Excel、PowerPointを編集します"
+head_description: "JavaドキュメントAPIを編集して、PDF、Microsoft Word、Excel、PowerPoint、電子ブック、電子メール形式のドキュメントページをロード、編集、保存します。"
 
 ############################# Header ############################
-title: "ドキュメントの編集<br>Java API経由"
-description: "PDF、Microsoft Office、HTML、画像ファイルを操作するための強力なエディター API。"
+title: "ドキュメントを編集します<br>Java API経由"
+description: "Microsoft Office、PDF、HTML、電子書籍、電子メールファイルを操作する強力な編集者API。"
 words:
   for: "のために"
 
 actions:
-  main: "Maven の無料ダウンロード"
+  main: "無料のMavenダウンロード"
   main_link: "https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-editor/"
   alt: "ライセンス"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/java"
-  title: "始める準備はできていますか?"
-  description: "GroupDocs.Editor の機能を無料で試すか、ライセンスをリクエストしてください。"
+  title: "始める準備はできましたか？"
+  description: "GroupDocs.editor機能を無料で試すか、ライセンスをリクエストしてください。"
 
 release:
-  title: "バージョン {0} がリリースされました"
-  notes: "新機能を見る"
+  title: "バージョン{0}リリース"
+  notes: "何が新しいか見てください"
   downloads: "ダウンロード"
 
 code:
-  title: "Javaでドキュメントファイルを編集する"
-  more: "他の例"
+  title: ".NETでドキュメントを編集します"
+  more: "その他の例"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java"
   install: |
     <dependencies>
@@ -68,22 +68,22 @@ code:
     </repositories>
   content: |
     ```java {style=abap}   
-    // {code.comment_1}
+    // ソースドキュメントをパスして、エディターを初期化します
     Editor editor = new Editor("input.docx");
 
-    // {code.comment_2}
+    // 編集用のドキュメントを開く
     EditableDocument originalDoc = editor.edit();
 
-    // {code.comment_3}
+    // HTMLとしてドキュメントを取得します
     String srcHtml = originalDoc.getEmbeddedHtml();
     
-    // {code.comment_4}
+    // ドキュメントの内容を編集します
     String editedHtml = srcHtml.replace("Old text", "New text");
     
-    // {code.comment_5}
+    // HTMLから編集されたドキュメントをロードします
     EditableDocument editedDoc = EditableDocument.fromMarkup(editedHtml, null);
     
-    // {code.comment_6}
+    // 編集されたドキュメントを希望の形式でファイルに保存します
     WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions();
     editor.save(editedDoc, "output.docx", saveOptions);
     ```
@@ -91,26 +91,26 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor for Java {overview.glance}"
-  description: "Java アプリケーションでドキュメント、スライド、図を編集、翻訳、保存するための API。"
+  title: "GroupDocs.Editor for Java 一目で"
+  description: "Javaアプリケーションでドキュメント、スプレッドシート、スライド、電子書籍を編集、変換、保存するAPI。"
   features:
     # feature loop
-    - title: "Java で複数のドキュメントを簡単に編集"
-      content: "{overview.feature_1.description1} GroupDocs.Editor for Java {overview.feature_1.description2}"
+    - title: "Javaで複数のドキュメントを簡単に編集します"
+      content: "幅広いフォーマットをサポートして、複数のPDFおよびオフィスファイルをシームレスに編集します。 GroupDocs.Editor for Java ドキュメントの編集を速く、手間をかけないようにします。"
 
     # feature loop
-    - title: "ドキュメントをHTML/CSSに翻訳"
-      content: "ドキュメントを WYSIWYG エディタと互換性のある HTML/CSS マークアップに変換し、Web 環境で簡単かつ効率的にドキュメントを編集できるようにします。"
+    - title: "ドキュメントをHTML/CSSに変換します"
+      content: "ドキュメントをWYSIWYGエディターと互換性のある純粋なHTML/CSSマークアップに変換し、Web環境で簡単で効率的なドキュメント編集を可能にします。"
 
     # feature loop
-    - title: "編集したドキュメントをさまざまな形式で保存"
-      content: "編集したドキュメントを元の形式に保存したり、PDF などの他の形式にエクスポートしたりして、柔軟性と互換性を確保します。"
+    - title: "編集されたドキュメントをさまざまな形式で保存します"
+      content: "編集したドキュメントを元の形式に戻すか、PDFなどの他の形式にエクスポートして、柔軟性と互換性を確保します。"
 
 ############################# Platforms ############################
 platforms:
   enable: true
   title: "プラットフォームの独立性"
-  description: "GroupDocs.Editor for Java は、次のオペレーティング システム、フレームワーク、およびパッケージ マネージャーをサポートします。"
+  description: "JavaのGroupDocs.Editorは、次のオペレーティングシステム、フレームワーク、およびパッケージマネージャーをサポートしています。"
   items:
     # platform loop
     - title: "Amazon"
@@ -144,148 +144,148 @@ formats:
   enable: true
   title: "サポートされているファイル形式"
   description: |
-    GroupDocs.Editor for Java は、次の [ファイル形式](https://docs.groupdocs.com/editor/java/supported-document-formats/) での操作をサポートします。 ([{formats.full_list}](https://docs.groupdocs.com/editor/java/supported-document-formats/)).
+    GroupDocs.editorは、インポートとエクスポートに関する次のファイル形式で運用をサポートしています ([フルリスト](https://docs.groupdocs.com/editor/java/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
       content: |
-        ### Microsoft Office形式
+        ### Microsoft Officeフォーマット
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX
     # group loop
     - color: "blue"
       content: |
-        ### 書類
-        * **{formats.groups.fixed_layout}:** PDF, XPS ({formats.groups.export_only})
+        ### その他のドキュメント形式
+        * **固定レイアウト形式:** PDF, XPS (エクスポートのみ)
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-        * **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
-        * **{formats.groups.other_tables}:** SXC, DIF
+        * **区切られたテキストテーブル:** CSV, TSV, DSV (任意のセパレーター)
+        * **その他のテーブル形式:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
-        ### その他の形式
-        * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
-        * **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
+        ### Web関連形式
+        * **マークアップ:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
+        * **電子メール形式:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.features}"
-  description: "PDF および Office ドキュメントをシームレスに編集、翻訳、保存します。"
+  title: "主な機能"
+  description: "さまざまな形式でシームレスにロード、編集、保存します。オフィスドキュメント、電子メール、電子書籍、およびPDF。"
 
   items:
     # feature loop
     - icon: "merge"
-      title: "ファイルを編集する"
-      content: "PDF、DOCX、XLSX、PPTX など、さまざまなドキュメント形式のコンテンツを編集します。"
+      title: "ファイルを編集します"
+      content: "PDF、DOCX、XLSX、PPTXなどを含むさまざまなドキュメント形式のコンテンツを編集します。"
 
     # feature loop
     - icon: "split"
-      title: "HTML/CSSへの翻訳"
-      content: "CKEditor や TinyMCE などの WYSIWYG エディタで簡単に編集できるように、ドキュメントを HTML/CSS に変換します。"
+      title: "HTML/CSSに翻訳します"
+      content: "CkeditorやTinymceなどのWysiWygエディターを簡単に編集するために、ドキュメントをHTML/CSSに変換します。"
 
     # feature loop
     - icon: "move"
-      title: "編集したドキュメントを保存する"
-      content: "編集した HTML/CSS を元のドキュメント形式に戻して保存するか、PDF にエクスポートします。"
+      title: "編集されたドキュメントを保存します"
+      content: "編集したHTML/CSSを元のドキュメント形式に戻すか、PDFにエクスポートします。"
 
     # feature loop
     - icon: "remove"
-      title: "文書情報の抽出"
-      content: "ドキュメントからページ数、サイズ、暗号化ステータスなどの情報を抽出します。"
+      title: "ドキュメント情報を抽出します"
+      content: "ドキュメントからページ数、サイズ、暗号化のステータスなどの情報を抽出します。"
 
     # feature loop
     - icon: "rotate"
       title: "さまざまな形式のサポート"
-      content: "Microsoft Office ファイル、PDF などを含む幅広いドキュメント形式を編集します。"
+      content: "Microsoft Officeファイル、PDFなどを含む幅広いドキュメント形式を編集します。"
 
     # feature loop
     - icon: "swap"
       title: "パスワード保護"
-      content: "パスワードで保護されたドキュメントを簡単に編集できます。"
+      content: "パスワードで保護されたドキュメントを簡単にロードおよび編集し、パスワード保護を備えた出力ドキュメントを保護します。"
 
     # feature loop
     - icon: "extract"
-      title: "カスタムドキュメントエンコーディング"
-      content: "編集および保存プロセス中にドキュメントのエンコーディングを指定します。"
+      title: "メールを編集します"
+      content: "MSG、EML、EMLX、MBOX、およびメタデータなどのメタデータ、CC、BCC、from、タイトル、日付などの編集など、電子メールメッセージとレターを編集および保存します。"
 
     # feature loop
     - icon: "orientation"
       title: "フォント抽出"
-      content: "編集プロセスで使用するためにドキュメントからフォントを抽出します。"
+      content: "編集プロセスで使用するために、WordProcessingドキュメントからフォントを抽出します。"
 
     # feature loop
     - icon: "preview"
-      title: "ページのプレビュー"
-      content: "コンテンツと構造をより深く理解するためにドキュメント ページの画像表現を生成します。"
+      title: "プレビューページ"
+      content: "ドキュメントページの画像表現を生成して、コンテンツと構造をよりよく理解します。"
 
 ############################# Code samples ############################
 code_samples:
   enable: true
   title: "コードサンプル"
-  description: "Java 操作用の典型的な GroupDocs.Editor の使用例。 GroupDocs.Editor for Java"
+  description: "使用した典型的な操作のいくつかのユースケース GroupDocs.Editor for Java"
   items:
     # code sample loop
-    - title: "特定の DOCX ファイルの内容を編集する"
+    - title: "docxのテキストを置き換えます"
       content: |
-        {code_samples.sample_1.description} 
-        {{< landing/code title="Java で DOCX ファイルを編集する方法">}}
+        この例は、別のテキストコンテンツを別のテキストコンテンツを置き換えて、入力docxファイルのコンテンツをプログラムで編集して編集することを示しています。その後、変更されたドキュメントコンテンツは新しいDocxドキュメントとして保存されます。 
+        {{< landing/code title="テキストを置き換えて入力docxを編集し、docxに戻します">}}
         ```java {style=abap}
         
-        // {code_samples.sample_1.comment_1}
+        // パスごとに入力ドキュメントをロードし、必要に応じてロードオプションを指定します
         Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // {code_samples.sample_1.comment_2}
+        // 編集用のドキュメントを開き、「EditableDocument」を取得します
         EditableDocument original = editor.edit();
         
-        // {code_samples.sample_1.comment_3}
+        // テキストの交換 - これにより、コンテンツの編集がエミュレートされます
         String modifiedContent = original.getEmbeddedHtml().replace("old text", "new text");
         
-        // {code_samples.sample_1.comment_4}
+        // 編集されたコンテンツから新しい「EditableDocument」インスタンスを作成します
         EditableDocument edited = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_1.comment_5}
+        // 目的の出力formatxを使用して保存オプションを準備します
         WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
         
-        // {code_samples.sample_1.comment_6}
+        // 編集されたドキュメントコンテンツをDOCXに保存します
         editor.save(edited, "output.docx", saveOptions);
         
-        // {code_samples.sample_1.comment_7}
+        // すべてのリソースを処分します
         edited.dispose(); original.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "{code_samples.sample_4.title}"
+    - title: "特定のExcelワークシートのコンテンツを編集します"
       content: |
-        {code_samples.sample_4.description}
-        {{< landing/code title="{code_samples.sample_4.code_title}">}}
+        スプレッドシートドキュメント（XLS、XLSX、XLSM、ODSなど）には、1つ以上のワークシート（タブ）がある場合があります。 GroupDocs.editorでは、1つのワークシートのコンテンツを一度に編集できます。編集後、このワークシートは個別のスプレッドシートドキュメント（この特定のワークシートのみが保存される場合）に保存されるか、編集されたワークシートを元のドキュメントに挿入することができます。元のワークシートを置き換えるか、元のワークシートと一緒に保存できます。この例は、XLSXドキュメントの読み込みを示しており、2番目のワークシートを編集し、XLSXおよびCSV形式の新しい個別のドキュメントとして保存しています。
+        {{< landing/code title="XLSXの特定のワークシートを編集し、XLSXおよびCSVとして保存します">}}
         ```java {style=abap}
         
-        // {code_samples.sample_4.comment_1}
+        // パスごとにXLSXをロードし、必要に応じてロードオプションを指定します
         Editor editor = new Editor("input.xlsx", new SpreadsheetLoadOptions());
         
-        // {code_samples.sample_4.comment_2}
+        // 編集オプションを作成して調整します-2番目のワークシートを編集するように設定します
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
         editOptions.setWorksheetIndex(1);
         
-        // {code_samples.sample_4.comment_3}
+        // 編集するためにこの2番目のワークシートを開き、「EditableDocument」を取得します
         EditableDocument originalWorksheet = editor.edit(editOptions);
         
-        // {code_samples.sample_4.comment_4}
+        // テキストの交換 - これにより、コンテンツの編集がエミュレートされます
         String modifiedContent = originalWorksheet.getEmbeddedHtml().replace("Cell Text", "Edited Cell Text");
         
-        // {code_samples.sample_4.comment_5}
+        // 編集されたワークシートから新しい「EditableDocument」インスタンスを作成します
         EditableDocument editedWorksheet = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_4.comment_6}
+        // 編集されたワークシートを新しいXLSXドキュメントに保存します
         editor.save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
         
-        // {code_samples.sample_4.comment_7}
-        editor.save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
+        // 編集されたワークシートをコンマ（、）デリミッター/セパレーターを使用して新しいCSVドキュメントに保存します
+        editor.save(editedWorksheet, "output.csv", new DelimitedTextSaveOptions(","));
         
-        // {code_samples.sample_4.comment_8}
+        // すべてのリソースを処分します
         editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}

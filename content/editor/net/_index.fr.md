@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-25T12:15:48
+date: 2025-07-08T14:01:53
 draft: false
 
 product: "Editor"
@@ -24,31 +24,31 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "C # .NET Document Édition API | Modifier PDF, Word, Excel, Epub"
-head_description: "C # .NET Document Édition API Pour modifier, traduire et enregistrer des pages de documents à partir de formats PDF, Microsoft Word, Excel, Présentations, Visio et Image."
+head_title: "{head.title}"
+head_description: "{head.description}"
 
 ############################# Header ############################
-title: "Modifier les documents<br>via .net API"
-description: "API de l'éditeur puissant pour manipuler les fichiers PDF, Microsoft Office, HTML et image."
+title: "{header.title_1}<br>{header.title_2}"
+description: "{header.description}"
 words:
-  for: "pour"
+  for: "{header.words.for}"
 
 actions:
-  main: "Téléchargement GRATUIT NUGET"
+  main: "{actions.main}"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
-  alt: "Licence"
+  alt: "{actions.alt}"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/net"
-  title: "Prêt à commencer?"
-  description: "Essayez les fonctionnalités GroupDocs.Editor gratuitement ou demandez une licence."
+  title: "{actions.title}"
+  description: "{actions.description}"
 
 release:
-  title: "Version {0} publié"
-  notes: "Voyez ce qui est nouveau"
-  downloads: "Téléchargements"
+  title: "{release.title}"
+  notes: "{release.notes}"
+  downloads: "{release.downloads}"
 
 code:
-  title: "Modifier les fichiers de document dans .NET"
-  more: "Plus d'exemples"
+  title: "{code.title}"
+  more: "{code.more}"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
   install: "dotnet add package GroupDocs.Editor"
   content: |
@@ -77,25 +77,25 @@ code:
 overview:
   enable: true
   title: "GroupDocs.Editor for .NET {overview.glance}"
-  description: "API pour modifier, traduire et enregistrer des documents, des diapositives et des diagrammes dans les applications .NET."
+  description: "{overview.description}"
   features:
     # feature loop
-    - title: "Modifier sans effort plusieurs documents en C #"
+    - title: "{overview.feature_1.title}"
       content: "{overview.feature_1.description1} GroupDocs.Editor for .NET {overview.feature_1.description2}"
 
     # feature loop
-    - title: "Traduire des documents en HTML / CSS"
-      content: "Traduire les documents en balisage HTML / CSS compatible avec les éditeurs WYSIWYG, permettant une modification de documents facile et efficace dans un environnement Web."
+    - title: "{overview.feature_2.title}"
+      content: "{overview.feature_2.description}"
 
     # feature loop
-    - title: "Enregistrer les documents édités dans divers formats"
-      content: "Enregistrez vos documents modifiés à leur format d'origine ou exportez-les vers d'autres formats tels que PDF, garantissant la flexibilité et la compatibilité."
+    - title: "{overview.feature_3.title}"
+      content: "{overview.feature_3.description}"
 
 ############################# Platforms ############################
 platforms:
   enable: true
-  title: "Indépendance de la plate-forme"
-  description: "GroupDocs.Editor for .NET prend en charge les systèmes d'exploitation, les cadres et les gestionnaires de package suivants."
+  title: "{platforms.title}"
+  description: "{platforms.description}"
   items:
     # platform loop
     - title: "Amazon"
@@ -126,21 +126,21 @@ platforms:
 ############################# File formats ############################
 formats:
   enable: true
-  title: "Formats de fichiers pris en charge"
+  title: "{formats.title}"
   description: |
-    GroupDocs.Editor for .NET prend en charge les opérations avec les [formats de fichiers] suivants (https://docs.groupdocs.com/editor/net/supported-document-formats/). ([{formats.full_list}](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
+    {formats.description} ([{formats.full_list}](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
       content: |
-        ### Formats Microsoft Office
+        ### {formats.groups.title_1}
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX
     # group loop
     - color: "blue"
       content: |
-        ### Documents
+        ### {formats.groups.title_2}
         * **{formats.groups.fixed_layout}:** PDF, XPS ({formats.groups.export_only})
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
         * **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
@@ -149,7 +149,7 @@ formats:
       # group loop
     - color: "red"
       content: |
-        ### Autres formats
+        ### {formats.groups.title_3}
         * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
         * **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
@@ -157,65 +157,65 @@ formats:
 features:
   enable: true
   title: "{features.features}"
-  description: "Modifier, traduire et enregistrer et sauver les documents PDF et Office."
+  description: "{features.description}"
 
   items:
     # feature loop
     - icon: "merge"
-      title: "Modifier les fichiers"
-      content: "Modifiez le contenu de divers formats de documents, notamment PDF, DOCX, XLSX, PPTX, etc."
+      title: "{features.feature_1.title}"
+      content: "{features.feature_1.content}"
 
     # feature loop
     - icon: "split"
-      title: "Traduire par HTML / CSS"
-      content: "Convertissez des documents en HTML / CSS pour une modification facile avec des éditeurs WYSIWYG comme Ckeditor ou TinyMCE."
+      title: "{features.feature_2.title}"
+      content: "{features.feature_2.content}"
 
     # feature loop
     - icon: "move"
-      title: "Enregistrer les documents édités"
-      content: "Enregistrez le HTML / CSS modifié dans le format de document d'origine ou l'exportation vers PDF."
+      title: "{features.feature_3.title}"
+      content: "{features.feature_3.content}"
 
     # feature loop
     - icon: "remove"
-      title: "Extraire les informations sur les documents"
-      content: "Extraire des informations telles que le nombre de pages, la taille et l'état de chiffrement à partir des documents."
+      title: "{features.feature_4.title}"
+      content: "{features.feature_4.content}"
 
     # feature loop
     - icon: "rotate"
-      title: "Prise en charge de divers formats"
-      content: "Modifiez un large éventail de formats de documents, y compris les fichiers Microsoft Office, les PDF, etc."
+      title: "{features.feature_5.title}"
+      content: "{features.feature_5.content}"
 
     # feature loop
     - icon: "swap"
-      title: "Protection contre les mots de passe"
-      content: "Modifiez facilement les documents protégés par mot de passe."
+      title: "{features.feature_6.title}"
+      content: "{features.feature_6.content}"
 
     # feature loop
     - icon: "extract"
-      title: "Encodage de documents personnalisés"
-      content: "Spécifiez le codage du document lors des processus d'édition et de sauvegarde."
+      title: "{features.feature_7.title}"
+      content: "{features.feature_7.content}"
 
     # feature loop
     - icon: "orientation"
-      title: "Extraction de police"
-      content: "Extraire les polices de documents à utiliser dans le processus d'édition."
+      title: "{features.feature_8.title}"
+      content: "{features.feature_8.content}"
 
     # feature loop
     - icon: "preview"
-      title: "Aperçu des pages"
-      content: "Générez des représentations d'image des pages de documents pour mieux comprendre le contenu et la structure."
+      title: "{features.feature_9.title}"
+      content: "{features.feature_9.content}"
 
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "Échantillons de code"
-  description: "Certains cas d'utilisation de GroupDocs.Editor typique pour les opérations .NET. GroupDocs.Editor for .NET"
+  title: "{code_samples.title}"
+  description: "{code_samples.description} GroupDocs.Editor for .NET"
   items:
     # code sample loop
-    - title: "Modifier le contenu de fichier DOCX spécifique"
+    - title: "{code_samples.sample_1.title}"
       content: |
         {code_samples.sample_1.description} 
-        {{< landing/code title="Comment modifier les fichiers docx en C #">}}
+        {{< landing/code title="{code_samples.sample_1.code_title}">}}
         ```csharp {style=abap}
         
         // {code_samples.sample_1.comment_1}
@@ -266,17 +266,17 @@ code_samples:
         editor.Save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
         
         // {code_samples.sample_4.comment_7}
-        editor.Save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
+        editor.Save(editedWorksheet, "output.csv", new DelimitedTextSaveOptions(","));
         
         // {code_samples.sample_4.comment_8}
         editedWorksheet.Dispose(); originalWorksheet.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "Modifier les champs de formulaire dans un document Word"
+    - title: "{code_samples.sample_2.title}"
       content: |
         {code_samples.sample_2.description}
-        {{< landing/code title="Comment modifier les champs de formulaire dans un document Word à l'aide de GroupDocs.Editor pour .NET">}}
+        {{< landing/code title="{code_samples.sample_2.code_title}">}}
         ```csharp {style=abap}
         
         // {code_samples.sample_2.comment_1}

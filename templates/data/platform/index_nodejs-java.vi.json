@@ -1,0 +1,143 @@
+{
+  "head": {
+    "title": "Node.js API chỉnh sửa tài liệu | Chỉnh sửa PDF, Word, Excel, PowerPoint",
+    "description": "Node.js Tài liệu chỉnh sửa API để tải, chỉnh sửa và lưu các trang tài liệu từ PDF, Microsoft Word, Excel, PowerPoint, Ebook và các định dạng email."
+  },
+  "header": {
+    "title_1": "Chỉnh sửa tài liệu",
+    "title_2": "thông qua API Node.js",
+    "description": "API Trình chỉnh sửa mạnh mẽ để thao tác với các tệp Microsoft Office, PDF, HTML, ebook và email.",
+    "words": {
+      "for": "vì"
+    }
+  },
+  "actions": {
+    "main": "Tải xuống NPM miễn phí",
+    "alt": "Cấp phép",
+    "title": "Sẵn sàng để bắt đầu?",
+    "description": "Hãy thử các tính năng GroupDocs.editor miễn phí hoặc yêu cầu giấy phép."
+  },
+  "release": {
+    "title": "Phiên bản {0} được phát hành",
+    "notes": "Xem những gì mới",
+    "downloads": "Tải xuống"
+  },
+  "overview": {
+    "glance": "trong nháy mắt",
+    "description": "API để chỉnh sửa, chuyển đổi và lưu tài liệu, bảng tính, slide và sách điện tử trong các ứng dụng Node.js.",
+    "feature_1": {
+      "title": "Chỉnh sửa nhiều tài liệu trong Node.js một cách dễ dàng",
+      "description1": "Chỉnh sửa một cách liền mạch nhiều tệp PDF và Office với sự hỗ trợ cho một loạt các định dạng.",
+      "description2": "Làm cho việc chỉnh sửa tài liệu nhanh chóng và không rắc rối."
+    },
+    "feature_2": {
+      "title": "Chuyển đổi tài liệu thành HTML/CSS",
+      "description": "Chuyển đổi các tài liệu thành Tương thích đánh dấu HTML/CSS Pure HTML/CSS với các biên tập viên WYSIWYG, cho phép chỉnh sửa tài liệu dễ dàng và hiệu quả trong môi trường web."
+    },
+    "feature_3": {
+      "title": "Lưu các tài liệu được chỉnh sửa ở các định dạng khác nhau",
+      "description": "Lưu các tài liệu đã chỉnh sửa của bạn trở lại định dạng ban đầu của chúng hoặc xuất chúng sang các định dạng khác như PDF, đảm bảo tính linh hoạt và khả năng tương thích."
+    }
+  },
+  "formats": {
+    "title": "Các định dạng tệp được hỗ trợ",
+    "description": "GroupDocs.Editor hỗ trợ các hoạt động với các định dạng tệp sau khi nhập và xuất",
+    "full_list": "danh sách đầy đủ",
+    "groups": {
+      "title_1": "Định dạng Microsoft Office",
+      "title_2": "Các định dạng tài liệu khác",
+      "title_3": "Các định dạng liên quan đến web",
+      "fixed_layout": "Định dạng sai cố định",
+      "export_only": "chỉ xuất khẩu",
+      "delimited_text_table": "Bảng văn bản phân định",
+      "arbitrary_separator": "phân tách tùy ý",
+      "other_tables": "Các định dạng bảng khác",
+      "format_markup": "Đánh dấu",
+      "format_email": "Định dạng email"
+    }
+  },
+  "features": {
+    "features": "Các tính năng chính",
+    "description": "Tải một cách liền mạch, chỉnh sửa và lưu trong các định dạng khác nhau các tài liệu văn phòng, email, sách điện tử và pdf.",
+    "feature_1": {
+      "title": "Chỉnh sửa tệp",
+      "content": "Chỉnh sửa nội dung của các định dạng tài liệu khác nhau bao gồm PDF, DOCX, XLSX, PPTX, v.v."
+    },
+    "feature_2": {
+      "title": "Dịch sang HTML/CSS",
+      "content": "Chuyển đổi tài liệu thành HTML/CSS để dễ dàng chỉnh sửa với các biên tập viên WYSIWYG như CKeditor hoặc TinyMce."
+    },
+    "feature_3": {
+      "title": "Lưu tài liệu đã chỉnh sửa",
+      "content": "Lưu HTML/CSS đã chỉnh sửa trở lại định dạng tài liệu gốc hoặc xuất sang PDF."
+    },
+    "feature_4": {
+      "title": "Trích xuất thông tin tài liệu",
+      "content": "Trích xuất thông tin như số lượng trang, kích thước và trạng thái mã hóa từ các tài liệu."
+    },
+    "feature_5": {
+      "title": "Hỗ trợ cho các định dạng khác nhau",
+      "content": "Chỉnh sửa một loạt các định dạng tài liệu bao gồm các tệp Microsoft Office, PDF và nhiều hơn nữa."
+    },
+    "feature_6": {
+      "title": "Bảo vệ mật khẩu",
+      "content": "Tải và chỉnh sửa các tài liệu được bảo vệ bằng mật khẩu một cách dễ dàng và bảo vệ các tài liệu đầu ra với bảo vệ mật khẩu."
+    },
+    "feature_7": {
+      "title": "Chỉnh sửa email",
+      "content": "Chỉnh sửa và lưu các tin nhắn và thư email trong MSG, EML, EMLX, Mbox và nhiều định dạng khác, bao gồm chỉnh sửa siêu dữ liệu như chủ đề, TO, CC, BCC, từ, Tiêu đề, Ngày, v.v."
+    },
+    "feature_8": {
+      "title": "Khai thác phông chữ",
+      "content": "Trích xuất phông chữ từ các tài liệu xử lý từ để sử dụng trong quá trình chỉnh sửa."
+    },
+    "feature_9": {
+      "title": "Các trang xem trước",
+      "content": "Tạo biểu diễn hình ảnh của các trang tài liệu để hiểu rõ hơn về nội dung và cấu trúc."
+    }
+  },
+  "code_samples": {
+    "title": "Mẫu mã",
+    "description": "Một số trường hợp sử dụng các hoạt động điển hình sử dụng",
+    "sample_1": {
+      "title": "Thay thế văn bản trong docx",
+      "description": "Ví dụ này hiển thị tải và chỉnh sửa nội dung của tệp docx đầu vào được lập trình bằng cách thay thế nội dung văn bản trên một tệp khác. Sau đó, nội dung tài liệu được sửa đổi được lưu lại dưới dạng tài liệu DOCX mới.",
+      "code_title": "Chỉnh sửa tài liệu đầu vào bằng cách thay thế văn bản và lưu lại cho docx",
+      "comment_1": "Tải tài liệu đầu vào theo đường dẫn và chỉ định tùy chọn tải nếu cần thiết",
+      "comment_2": "Mở tài liệu để chỉnh sửa và có được \"Editabledocument\"",
+      "comment_3": "Thay thế văn bản - Điều này mô phỏng chỉnh sửa nội dung",
+      "comment_4": "Tạo phiên bản \"EDITECKEDSOCUMENT\" từ nội dung đã chỉnh sửa",
+      "comment_5": "Chuẩn bị các tùy chọn lưu với định dạng đầu ra mong muốn",
+      "comment_6": "Lưu nội dung tài liệu đã chỉnh sửa vào docx",
+      "comment_7": "Vứt bỏ tất cả các tài nguyên"
+    },
+    "sample_4": {
+      "title": "Chỉnh sửa nội dung của bảng tính Excel cụ thể",
+      "description": "Tài liệu bảng tính (như XLS, XLSX, XLSM, ODS, v.v.) có thể có một hoặc nhiều bảng tính (tab). GroupDocs.Editor cho phép chỉnh sửa nội dung của một bảng tính tại một thời điểm. Sau khi được chỉnh sửa, bảng tính này có thể được lưu vào tài liệu bảng tính riêng biệt (trong đó chỉ có bảng tính cụ thể này) hoặc bảng tính được chỉnh sửa có thể được đưa trở lại tài liệu gốc, nơi nó có thể thay thế bảng tính gốc hoặc được lưu cùng nhau, cùng với một bản gốc. Ví dụ này hiển thị tải tài liệu XLSX, chỉnh sửa bảng tính thứ 2 của nó và lưu nó dưới dạng tài liệu riêng biệt mới ở định dạng XLSX và CSV.",
+      "code_title": "Chỉnh sửa bảng tính cụ thể của XLSX và lưu dưới dạng XLSX và CSV",
+      "comment_1": "Tải đầu vào XLSX theo đường dẫn và chỉ định các tùy chọn tải nếu cần thiết",
+      "comment_2": "Tạo và điều chỉnh các tùy chọn chỉnh sửa - Đặt bảng tính thứ 2 thành Chỉnh sửa",
+      "comment_3": "Mở bảng tính thứ 2 này để chỉnh sửa và có được \"Editabledocument\"",
+      "comment_4": "Thay thế văn bản - Điều này mô phỏng chỉnh sửa nội dung",
+      "comment_5": "Tạo phiên bản mới",
+      "comment_6": "Lưu bảng tính đã chỉnh sửa vào tài liệu XLSX mới",
+      "comment_7": "Lưu bảng tính đã chỉnh sửa vào tài liệu CSV mới với dấu phẩy (,) DELIMITER/DECETER",
+      "comment_8": "Vứt bỏ tất cả các tài nguyên"
+    }
+  },
+  "platforms": {
+    "title": "Nền tảng độc lập",
+    "description": "GroupDocs.Editor cho Node.js hỗ trợ các hệ điều hành, khung công tác và người quản lý gói sau đây."
+  },
+  "code": {
+    "title": "Chỉnh sửa tài liệu trong .NET",
+    "more": "Nhiều ví dụ hơn",
+    "notes": "Xem những gì mới",
+    "comment_1": "Truyền tài liệu nguồn để khởi tạo trình chỉnh sửa",
+    "comment_2": "Mở tài liệu để chỉnh sửa",
+    "comment_3": "Nhận tài liệu là HTML",
+    "comment_4": "Chỉnh sửa nội dung tài liệu",
+    "comment_5": "Tải tài liệu chỉnh sửa từ HTML",
+    "comment_6": "Lưu tài liệu đã chỉnh sửa vào tệp có định dạng mong muốn"
+  }
+}

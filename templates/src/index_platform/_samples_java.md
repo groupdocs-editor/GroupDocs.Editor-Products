@@ -59,7 +59,7 @@ code_samples:
         editor.save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
         
         // <% "{code_samples.sample_4.comment_7}" %>
-        editor.save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
+        editor.save(editedWorksheet, "output.csv", new DelimitedTextSaveOptions(","));
         
         // <% "{code_samples.sample_4.comment_8}" %>
         editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();

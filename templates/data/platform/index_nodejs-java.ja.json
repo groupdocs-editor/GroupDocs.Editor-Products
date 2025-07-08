@@ -1,119 +1,143 @@
 {
   "head": {
-    "title": "Node.js ドキュメント編集 API | PDF、Word、Excel、EPUB を編集",
-    "description": "PDF、Microsoft Word、Excel、プレゼンテーション、Visio、および画像形式のドキュメント ページを編集、翻訳、保存するための Node.js ドキュメント編集 API。"
+    "title": "node.jsドキュメント編集API | PDF、Word、Excel、PowerPointを編集します",
+    "description": "node.jsドキュメント編集APIは、PDF、Microsoft Word、Excel、PowerPoint、電子ブック、電子メール形式のドキュメントページをロード、編集、保存します。"
   },
   "header": {
-    "title_1": "ドキュメントの編集",
-    "title_2": "Node.js API経由",
-    "description": "PDF、Microsoft Office、HTML、画像ファイルを操作するための強力なエディター API。",
+    "title_1": "ドキュメントを編集します",
+    "title_2": "node.js API経由",
+    "description": "Microsoft Office、PDF、HTML、電子書籍、電子メールファイルを操作する強力な編集者API。",
     "words": {
       "for": "のために"
     }
   },
   "actions": {
-    "main": "無料のnpmダウンロード",
+    "main": "無料のNPMダウンロード",
     "alt": "ライセンス",
-    "title": "始める準備はできていますか?",
-    "description": "GroupDocs.Editor の機能を無料で試すか、ライセンスをリクエストしてください。"
+    "title": "始める準備はできましたか？",
+    "description": "GroupDocs.editor機能を無料で試すか、ライセンスをリクエストしてください。"
   },
   "release": {
-    "title": "バージョン {0} がリリースされました",
-    "notes": "新機能を見る",
+    "title": "バージョン{0}リリース",
+    "notes": "何が新しいか見てください",
     "downloads": "ダウンロード"
   },
   "overview": {
-    "title": "GroupDocs.Editor の概要",
-    "description": "Node.js アプリケーションでドキュメント、スライド、図を編集、翻訳、保存するための API。",
+    "glance": "一目で",
+    "description": "node.jsアプリケーションでドキュメント、スプレッドシート、スライド、電子書籍を編集、変換、保存するAPI。",
     "feature_1": {
-      "title": "Node.js で複数のドキュメントを簡単に編集",
-      "description": "幅広い形式をサポートし、複数の PDF および Office ファイルをシームレスに編集します。 GroupDocs.Editor for Node.js を使用すると、ドキュメントを迅速かつ手間なく編集できます。"
+      "title": "node.jsで複数のドキュメントを簡単に編集します",
+      "description1": "幅広いフォーマットをサポートして、複数のPDFおよびオフィスファイルをシームレスに編集します。",
+      "description2": "ドキュメントの編集を速く、手間をかけないようにします。"
     },
     "feature_2": {
-      "title": "ドキュメントをHTML/CSSに翻訳",
-      "description": "ドキュメントを WYSIWYG エディタと互換性のある HTML/CSS マークアップに変換し、Web 環境で簡単かつ効率的にドキュメントを編集できるようにします。"
+      "title": "ドキュメントをHTML/CSSに変換します",
+      "description": "ドキュメントをWYSIWYGエディターと互換性のある純粋なHTML/CSSマークアップに変換し、Web環境で簡単で効率的なドキュメント編集を可能にします。"
     },
     "feature_3": {
-      "title": "編集したドキュメントをさまざまな形式で保存",
-      "description": "編集したドキュメントを元の形式に保存したり、PDF などの他の形式にエクスポートしたりして、柔軟性と互換性を確保します。"
+      "title": "編集されたドキュメントをさまざまな形式で保存します",
+      "description": "編集したドキュメントを元の形式に戻すか、PDFなどの他の形式にエクスポートして、柔軟性と互換性を確保します。"
     }
   },
   "formats": {
     "title": "サポートされているファイル形式",
-    "description": "GroupDocs.Editor for Node.js は、次の [ファイル形式](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/) での操作をサポートします。",
+    "description": "GroupDocs.editorは、インポートとエクスポートに関する次のファイル形式で操作をサポートしています",
+    "full_list": "フルリスト",
     "groups": {
-      "title_1": "Microsoft Office形式",
-      "title_2": "書類",
-      "title_3": "その他の形式",
-      "format_documents": "書類",
-      "format_images": "画像",
-      "format_web": "ウェブ",
-      "format_archives": "アーカイブ"
+      "title_1": "Microsoft Officeフォーマット",
+      "title_2": "その他のドキュメント形式",
+      "title_3": "Web関連形式",
+      "fixed_layout": "固定レイアウト形式",
+      "export_only": "エクスポートのみ",
+      "delimited_text_table": "区切られたテキストテーブル",
+      "arbitrary_separator": "任意のセパレーター",
+      "other_tables": "その他のテーブル形式",
+      "format_markup": "マークアップ",
+      "format_email": "電子メール形式"
     }
   },
   "features": {
-    "title": "GroupDocs.Editor の機能",
-    "description": "PDF および Office ドキュメントをシームレスに編集、翻訳、保存します。",
+    "features": "主な機能",
+    "description": "さまざまな形式でシームレスにロード、編集、保存します。オフィスドキュメント、電子メール、電子書籍、およびPDF。",
     "feature_1": {
-      "title": "ファイルを編集する",
-      "content": "PDF、DOCX、XLSX、PPTX など、さまざまなドキュメント形式のコンテンツを編集します。"
+      "title": "ファイルを編集します",
+      "content": "PDF、DOCX、XLSX、PPTXなどを含むさまざまなドキュメント形式のコンテンツを編集します。"
     },
     "feature_2": {
-      "title": "HTML/CSSへの翻訳",
-      "content": "CKEditor や TinyMCE などの WYSIWYG エディタで簡単に編集できるように、ドキュメントを HTML/CSS に変換します。"
+      "title": "HTML/CSSに翻訳します",
+      "content": "CKEDITORやTINYMCEなどのWYSIWYGエディターを簡単に編集するために、ドキュメントをHTML/CSSに変換します。"
     },
     "feature_3": {
-      "title": "編集したドキュメントを保存する",
-      "content": "編集した HTML/CSS を元のドキュメント形式に戻して保存するか、PDF にエクスポートします。"
+      "title": "編集されたドキュメントを保存します",
+      "content": "編集したHTML/CSSを元のドキュメント形式に戻すか、PDFにエクスポートします。"
     },
     "feature_4": {
-      "title": "文書情報の抽出",
-      "content": "ドキュメントからページ数、サイズ、暗号化ステータスなどの情報を抽出します。"
+      "title": "ドキュメント情報を抽出します",
+      "content": "ドキュメントからページ数、サイズ、暗号化のステータスなどの情報を抽出します。"
     },
     "feature_5": {
       "title": "さまざまな形式のサポート",
-      "content": "Microsoft Office ファイル、PDF などを含む幅広いドキュメント形式を編集します。"
+      "content": "Microsoft Officeファイル、PDFなどを含む幅広いドキュメント形式を編集します。"
     },
     "feature_6": {
       "title": "パスワード保護",
-      "content": "パスワードで保護されたドキュメントを簡単に編集できます。"
+      "content": "パスワードで保護されたドキュメントを簡単にロードおよび編集し、パスワード保護を備えた出力ドキュメントを保護します。"
     },
     "feature_7": {
-      "title": "カスタムドキュメントエンコーディング",
-      "content": "編集および保存プロセス中にドキュメントのエンコーディングを指定します。"
+      "title": "メールを編集します",
+      "content": "MSG、EML、EMLX、MBOX、およびメタデータなどのメタデータ、CC、BCC、from、タイトル、日付などの編集など、電子メールメッセージとレターを編集および保存します。"
     },
     "feature_8": {
       "title": "フォント抽出",
-      "content": "編集プロセスで使用するためにドキュメントからフォントを抽出します。"
+      "content": "編集プロセスで使用するために、WordProcessingドキュメントからフォントを抽出します。"
     },
     "feature_9": {
-      "title": "ページのプレビュー",
-      "content": "コンテンツと構造をより深く理解するためにドキュメント ページの画像表現を生成します。"
+      "title": "プレビューページ",
+      "content": "ドキュメントページの画像表現を生成して、コンテンツと構造をよりよく理解します。"
     }
   },
   "code_samples": {
     "title": "コードサンプル",
-    "description": "Node.js 操作の典型的な GroupDocs.Editor の使用例。",
+    "description": "使用した典型的な操作のいくつかのユースケース",
     "sample_1": {
-      "title": "特定の DOCX ファイルの内容を編集する",
-      "content_1": "[ドキュメント編集](https://docs.groupdocs.com/editor/nodejs/edit-document/) 機能を使用すると、DOCX ファイルをロード、編集、保存できます。",
-      "content_2": "Node.js を使用してドキュメント編集を実現する方法の例を次に示します。",
-      "code_title": "Node.js で DOCX ファイルを編集する方法"
+      "title": "docxのテキストを置き換えます",
+      "description": "この例は、別のテキストコンテンツを別のテキストコンテンツを置き換えて、入力docxファイルのコンテンツをプログラムで編集して編集することを示しています。その後、変更されたドキュメントコンテンツは新しいDocxドキュメントとして保存されます。",
+      "code_title": "テキストを置き換えて入力docxを編集し、docxに戻します",
+      "comment_1": "パスごとに入力ドキュメントをロードし、必要に応じてロードオプションを指定します",
+      "comment_2": "編集用のドキュメントを開き、「editabledocument」を取得します",
+      "comment_3": "テキストの交換 - これにより、コンテンツの編集がエミュレートされます",
+      "comment_4": "編集されたコンテンツから新しい「EditableDocument」インスタンスを作成します",
+      "comment_5": "目的の出力formatxを使用して保存オプションを準備します",
+      "comment_6": "編集されたドキュメントコンテンツをDOCXに保存します",
+      "comment_7": "すべてのリソースを処分します"
     },
-    "sample_2": {
-      "title": "Word 文書のフォームフィールドを編集する",
-      "content_1": "GroupDocs.Editor for Node.js を使用して、Word ドキュメント内のフォーム フィールドを簡単に編集します。",
-      "content_2": "Node.js を使用して Word 文書のフォーム フィールドを編集する方法は次のとおりです。",
-      "code_title": "GroupDocs.Editor for Node.js を使用して Word 文書のフォーム フィールドを編集する方法"
+    "sample_4": {
+      "title": "特定のExcelワークシートのコンテンツを編集します",
+      "description": "スプレッドシートドキュメント（XLS、XLSX、XLSM、ODSなど）には、1つ以上のワークシート（タブ）がある場合があります。 GroupDocs.editorでは、1つのワークシートのコンテンツを一度に編集できます。編集後、このワークシートは個別のスプレッドシートドキュメント（この特定のワークシートのみが保存される場合）に保存されるか、編集されたワークシートを元のドキュメントに挿入することができます。元のワークシートを置き換えるか、元のワークシートと一緒に保存できます。この例は、XLSXドキュメントの読み込みを示しており、2番目のワークシートを編集し、XLSXおよびCSV形式の新しい個別のドキュメントとして保存しています。",
+      "code_title": "XLSXの特定のワークシートを編集し、XLSXおよびCSVとして保存します",
+      "comment_1": "パスごとにXLSXをロードし、必要に応じてロードオプションを指定します",
+      "comment_2": "編集オプションを作成して調整します-2番目のワークシートを編集するように設定します",
+      "comment_3": "編集するためにこの2番目のワークシートを開き、「EditableDocument」を取得します",
+      "comment_4": "テキストの交換 - これにより、コンテンツの編集がエミュレートされます",
+      "comment_5": "編集されたワークシートから新しい「EditableDocument」インスタンスを作成します",
+      "comment_6": "編集されたワークシートを新しいXLSXドキュメントに保存します",
+      "comment_7": "編集されたワークシートをコンマ（、）デリミッター/セパレーターを使用して新しいCSVドキュメントに保存します",
+      "comment_8": "すべてのリソースを処分します"
     }
   },
   "platforms": {
     "title": "プラットフォームの独立性",
-    "description": "GroupDocs.Editor for Node.js は、次のオペレーティング システム、フレームワーク、およびパッケージ マネージャーをサポートします。"
+    "description": "node.jsのGroupDocs.editorは、次のオペレーティングシステム、フレームワーク、およびパッケージマネージャーをサポートします。"
   },
   "code": {
-    "title": "Java 経由で Node.js でドキュメント ファイルを編集する",
-    "more": "他の例",
-    "notes": "新機能を見る"
+    "title": ".NETでドキュメントを編集します",
+    "more": "その他の例",
+    "notes": "何が新しいか見てください",
+    "comment_1": "ソースドキュメントをパスして、エディターを初期化します",
+    "comment_2": "編集用のドキュメントを開く",
+    "comment_3": "HTMLとしてドキュメントを取得します",
+    "comment_4": "ドキュメントの内容を編集します",
+    "comment_5": "HTMLから編集されたドキュメントをロードします",
+    "comment_6": "編集されたドキュメントを希望の形式でファイルに保存します"
   }
 }

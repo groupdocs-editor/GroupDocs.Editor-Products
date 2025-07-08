@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-25T12:15:48
+date: 2025-07-08T14:01:53
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "API d'édition de document Java | Modifier PDF, Word, Excel, Epub"
-head_description: "API d'édition de document Java pour modifier, traduire et enregistrer des pages de documents à partir de formats PDF, Microsoft Word, Excel, Présentations, Visio et Image."
+head_title: "API d'édition de document Java | Modifier PDF, Word, Excel, PowerPoint"
+head_description: "API d'édition de document Java pour charger, modifier et enregistrer les pages de documents à partir de formats PDF, Microsoft Word, Excel, PowerPoint, Ebook et Email."
 
 ############################# Header ############################
 title: "Modifier les documents<br>via l'API Java"
-description: "API de l'éditeur puissant pour manipuler les fichiers PDF, Microsoft Office, HTML et image."
+description: "API de l'éditeur puissant pour manipuler Microsoft Office, PDF, HTML, Ebook et fichiers e-mail."
 words:
   for: "pour"
 
@@ -43,11 +43,11 @@ actions:
 
 release:
   title: "Version {0} publié"
-  notes: "Voyez ce qui est nouveau"
+  notes: "Voir ce qui est nouveau"
   downloads: "Téléchargements"
 
 code:
-  title: "Modifier les fichiers de documents dans Java"
+  title: "Modifier les documents dans .NET"
   more: "Plus d'exemples"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java"
   install: |
@@ -68,22 +68,22 @@ code:
     </repositories>
   content: |
     ```java {style=abap}   
-    // {code.comment_1}
+    // Passer le document source pour initialiser l'éditeur
     Editor editor = new Editor("input.docx");
 
-    // {code.comment_2}
+    // Open Document for Edit
     EditableDocument originalDoc = editor.edit();
 
-    // {code.comment_3}
+    // Obtenez un document en tant que HTML
     String srcHtml = originalDoc.getEmbeddedHtml();
     
-    // {code.comment_4}
+    // Modifier le contenu du document
     String editedHtml = srcHtml.replace("Old text", "New text");
     
-    // {code.comment_5}
+    // Chargement document édité depuis HTML
     EditableDocument editedDoc = EditableDocument.fromMarkup(editedHtml, null);
     
-    // {code.comment_6}
+    // Enregistrer le document modifié pour déposer avec le format souhaité
     WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions();
     editor.save(editedDoc, "output.docx", saveOptions);
     ```
@@ -91,16 +91,16 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor for Java {overview.glance}"
-  description: "API pour modifier, traduire et enregistrer des documents, des diapositives et des diagrammes dans les applications Java."
+  title: "GroupDocs.Editor for Java en un coup d'œil"
+  description: "API pour modifier, convertir et enregistrer des documents, des feuilles de calcul, des diapositives et des livres électroniques dans les applications Java."
   features:
     # feature loop
     - title: "Modifier sans effort plusieurs documents en Java"
-      content: "{overview.feature_1.description1} GroupDocs.Editor for Java {overview.feature_1.description2}"
+      content: "Modifiez de manière transparente plusieurs fichiers PDF et Office avec la prise en charge d'un large éventail de formats. GroupDocs.Editor for Java rend l'édition de documents rapidement et sans tracas."
 
     # feature loop
-    - title: "Traduire des documents en HTML / CSS"
-      content: "Traduire les documents en balisage HTML / CSS compatible avec les éditeurs WYSIWYG, permettant une modification de documents facile et efficace dans un environnement Web."
+    - title: "Convertir des documents en HTML / CSS"
+      content: "Convertissez des documents en balisage HTML / CSS pur compatible avec les éditeurs WYSIWYG, permettant une modification de documents facile et efficace dans un environnement Web."
 
     # feature loop
     - title: "Enregistrer les documents édités dans divers formats"
@@ -144,7 +144,7 @@ formats:
   enable: true
   title: "Formats de fichiers pris en charge"
   description: |
-    GroupDocs.Editor for Java prend en charge les opérations avec les [formats de fichiers] suivants (https://docs.groupdocs.com/editor/java/supported-document-formits/). ([{formats.full_list}](https://docs.groupdocs.com/editor/java/supported-document-formats/)).
+    GroupDocs.Editor prend en charge les opérations avec les formats de fichiers suivants sur l'importation et l'exportation ([liste complète](https://docs.groupdocs.com/editor/java/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
@@ -156,24 +156,24 @@ formats:
     # group loop
     - color: "blue"
       content: |
-        ### Documents
-        * **{formats.groups.fixed_layout}:** PDF, XPS ({formats.groups.export_only})
+        ### Autres formats de documents
+        * **Formats de couche fixe:** PDF, XPS (Exporter uniquement)
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-        * **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
-        * **{formats.groups.other_tables}:** SXC, DIF
+        * **Tables de texte délimitées:** CSV, TSV, DSV (séparateur arbitraire)
+        * **Autres formats de table:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
-        ### Autres formats
-        * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
-        * **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
+        ### Formats Web
+        * **Balisage:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
+        * **Formats de messagerie:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.features}"
-  description: "Modifier, traduire et enregistrer et sauver les documents PDF et Office."
+  title: "Caractéristiques principales"
+  description: "Chargement, modifier et enregistrer de manière transparente dans différents formats de documents de bureau, e-mail, ebooks et pdf."
 
   items:
     # feature loop
@@ -204,17 +204,17 @@ features:
     # feature loop
     - icon: "swap"
       title: "Protection contre les mots de passe"
-      content: "Modifiez facilement les documents protégés par mot de passe."
+      content: "Chargez et modifiez facilement les documents protégés par mot de passe et protégeant les documents de sortie avec protection par mot de passe."
 
     # feature loop
     - icon: "extract"
-      title: "Encodage de documents personnalisés"
-      content: "Spécifiez le codage du document lors des processus d'édition et de sauvegarde."
+      title: "Modifier l'e-mail"
+      content: "Modifiez et enregistrez les e-mails et les lettres dans MSG, EML, EMLX, MBOX et de nombreux autres formats, y compris l'édition de métadonnées comme Subject, TO, CC, BCC, de, Titre, Date, etc."
 
     # feature loop
     - icon: "orientation"
       title: "Extraction de police"
-      content: "Extraire les polices des documents à utiliser dans le processus d'édition."
+      content: "Extraire les polices des documents de traitement de mots à utiliser dans le processus d'édition."
 
     # feature loop
     - icon: "preview"
@@ -225,67 +225,67 @@ features:
 code_samples:
   enable: true
   title: "Échantillons de code"
-  description: "Certains cas d'utilisation de GroupDocDocs. Editor pour les opérations Java. GroupDocs.Editor for Java"
+  description: "Certains cas d'utilisation d'opérations typiques en utilisant GroupDocs.Editor for Java"
   items:
     # code sample loop
-    - title: "Modifier le contenu de fichier DOCX spécifique"
+    - title: "Remplacer le texte dans docx"
       content: |
-        {code_samples.sample_1.description} 
-        {{< landing/code title="Comment modifier les fichiers docx en java">}}
+        Cet exemple montre le chargement et l'édition d'un contenu du fichier d'entrée docx par programme en remplaçant le contenu texte sur un autre. Après cela, le contenu du document modifié est enregistré en tant que nouveau document DOCX. 
+        {{< landing/code title="Modifiez l'entrée docx en remplaçant le texte et enregistrez-le sur docx">}}
         ```java {style=abap}
         
-        // {code_samples.sample_1.comment_1}
+        // Chargez le document d'entrée par chemin et spécifiez les options de chargement si nécessaire
         Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // {code_samples.sample_1.comment_2}
+        // Ouvrez le document pour modifier et obtenir le "EDIDABILEDOCUMENT"
         EditableDocument original = editor.edit();
         
-        // {code_samples.sample_1.comment_3}
+        // Remplacer le texte - Cela émule l'édition de contenu
         String modifiedContent = original.getEmbeddedHtml().replace("old text", "new text");
         
-        // {code_samples.sample_1.comment_4}
+        // Créer une nouvelle instance "EditableDocument" à partir du contenu édité
         EditableDocument edited = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_1.comment_5}
+        // Préparez les options de sauvegarde avec le format de sortie souhaité
         WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
         
-        // {code_samples.sample_1.comment_6}
+        // Enregistrer le contenu du document modifié sur DOCX
         editor.save(edited, "output.docx", saveOptions);
         
-        // {code_samples.sample_1.comment_7}
+        // Disposer de toutes les ressources
         edited.dispose(); original.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "{code_samples.sample_4.title}"
+    - title: "Modifier le contenu de la feuille de travail Excel particulière"
       content: |
-        {code_samples.sample_4.description}
-        {{< landing/code title="{code_samples.sample_4.code_title}">}}
+        Le document de feuille de calcul (comme XLS, XLSX, XLSM, ODS et ainsi de suite) peut avoir une ou plusieurs feuilles de calcul (onglets). GroupDocs.Editor permet de modifier le contenu d'une feuille de calcul à la fois. Après avoir été modifiée, cette feuille de calcul peut être enregistrée dans le document de feuille de calcul distinct (où seule cette feuille de travail spécifique sera enregistrée), ou la feuille de calcul éditée peut être insérée dans le document d'origine, où il peut soit remplacer la feuille de travail d'origine ou être enregistrée ensemble, ainsi que l'original. Cet exemple montre le chargement du document XLSX, modifiant sa 2e feuille de calcul et l'enregistrant en tant que nouveau document séparé dans les formats XLSX et CSV.
+        {{< landing/code title="Modifiez la feuille de travail particulière de XLSX et enregistrez sous le nom de XLSX et CSV">}}
         ```java {style=abap}
         
-        // {code_samples.sample_4.comment_1}
+        // Chargez l'entrée xlsx par chemin et spécifiez les options de chargement si nécessaire
         Editor editor = new Editor("input.xlsx", new SpreadsheetLoadOptions());
         
-        // {code_samples.sample_4.comment_2}
+        // Créer et ajuster les options d'édition - Définissez la 2ème feuille de calcul pour modifier
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
         editOptions.setWorksheetIndex(1);
         
-        // {code_samples.sample_4.comment_3}
+        // Ouvrez cette 2ème feuille de calcul pour Modifier et obtenir le "EDIDABETOCUMENT"
         EditableDocument originalWorksheet = editor.edit(editOptions);
         
-        // {code_samples.sample_4.comment_4}
+        // Remplacer le texte - Cela émule l'édition de contenu
         String modifiedContent = originalWorksheet.getEmbeddedHtml().replace("Cell Text", "Edited Cell Text");
         
-        // {code_samples.sample_4.comment_5}
+        // Créer une nouvelle instance "EDIDABEDOCUMENT" à partir de la feuille de calcul éditée
         EditableDocument editedWorksheet = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_4.comment_6}
+        // Enregistrer la feuille de travail édité dans un nouveau document XLSX
         editor.save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
         
-        // {code_samples.sample_4.comment_7}
-        editor.save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
+        // Enregistrer la feuille de calcul modifiée au nouveau document CSV avec une virgule (,) délimiteur / séparateur
+        editor.save(editedWorksheet, "output.csv", new DelimitedTextSaveOptions(","));
         
-        // {code_samples.sample_4.comment_8}
+        // Disposer de toutes les ressources
         editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}

@@ -58,7 +58,7 @@ code_samples:
         editor.Save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
         
         // <% "{code_samples.sample_4.comment_7}" %>
-        editor.Save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
+        editor.Save(editedWorksheet, "output.csv", new DelimitedTextSaveOptions(","));
         
         // <% "{code_samples.sample_4.comment_8}" %>
         editedWorksheet.Dispose(); originalWorksheet.Dispose(); editor.Dispose();

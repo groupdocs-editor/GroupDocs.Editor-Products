@@ -1,119 +1,143 @@
 {
   "head": {
-    "title": "API d'édition de documents Node.js | Modifier PDF, Word, Excel, EPUB",
-    "description": "API d'édition de documents Node.js pour éditer, traduire et enregistrer des pages de documents aux formats PDF, Microsoft Word, Excel, présentations, Visio et image."
+    "title": "API d'édition de document Node.js | Modifier PDF, Word, Excel, PowerPoint",
+    "description": "API d'édition de document Node.js pour charger, modifier et enregistrer les pages de documents à partir de formats PDF, Microsoft Word, Excel, PowerPoint, Ebook et Email."
   },
   "header": {
-    "title_1": "Modifier des documents",
+    "title_1": "Modifier les documents",
     "title_2": "via l'API Node.js",
-    "description": "API d'édition puissante pour manipuler les fichiers PDF, Microsoft Office, HTML et image.",
+    "description": "API de l'éditeur puissant pour manipuler Microsoft Office, PDF, HTML, Ebook et fichiers e-mail.",
     "words": {
       "for": "pour"
     }
   },
   "actions": {
-    "main": "Téléchargement gratuit de NPM",
+    "main": "Téléchargement GRATUIT NPM",
     "alt": "Licence",
     "title": "Prêt à commencer?",
-    "description": "Essayez gratuitement les fonctionnalités de GroupDocs.Editor ou demandez une licence."
+    "description": "Essayez les fonctionnalités GroupDocs.Editor gratuitement ou demandez une licence."
   },
   "release": {
-    "title": "Version {0} publiée",
-    "notes": "Regardez ce qu'il y a de nouveau",
+    "title": "Version {0} publié",
+    "notes": "Voir ce qui est nouveau",
     "downloads": "Téléchargements"
   },
   "overview": {
-    "title": "GroupDocs.Editor en un coup d'œil",
-    "description": "API pour éditer, traduire et enregistrer des documents, des diapositives et des diagrammes dans les applications Node.js.",
+    "glance": "en un coup d'œil",
+    "description": "API pour modifier, convertir et enregistrer des documents, des feuilles de calcul, des diapositives et des livres électroniques dans les applications Node.js.",
     "feature_1": {
-      "title": "Modifiez sans effort plusieurs documents dans Node.js",
-      "description": "Modifiez en toute transparence plusieurs fichiers PDF et Office avec la prise en charge d'un large éventail de formats. GroupDocs.Editor pour Node.js rend l'édition de documents rapide et sans tracas."
+      "title": "Modifier sans effort plusieurs documents dans Node.js",
+      "description1": "Modifiez de manière transparente plusieurs fichiers PDF et Office avec la prise en charge d'un large éventail de formats.",
+      "description2": "rend l'édition de documents rapidement et sans tracas."
     },
     "feature_2": {
-      "title": "Traduire des documents en HTML/CSS",
-      "description": "Traduisez des documents en balisage HTML/CSS compatible avec les éditeurs WYSIWYG, permettant une édition de documents simple et efficace dans un environnement Web."
+      "title": "Convertir des documents en HTML / CSS",
+      "description": "Convertissez des documents en balisage HTML / CSS pur compatible avec les éditeurs WYSIWYG, permettant une modification de documents facile et efficace dans un environnement Web."
     },
     "feature_3": {
-      "title": "Enregistrez les documents modifiés dans différents formats",
-      "description": "Enregistrez vos documents modifiés dans leur format d'origine ou exportez-les vers d'autres formats tels que PDF, garantissant ainsi flexibilité et compatibilité."
+      "title": "Enregistrer les documents édités dans divers formats",
+      "description": "Enregistrez vos documents modifiés à leur format d'origine ou exportez-les vers d'autres formats tels que PDF, garantissant la flexibilité et la compatibilité."
     }
   },
   "formats": {
     "title": "Formats de fichiers pris en charge",
-    "description": "GroupDocs.Editor pour Node.js prend en charge les opérations avec les [formats de fichiers](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/) suivants.",
+    "description": "GroupDocs.Editor prend en charge les opérations avec les formats de fichiers suivants sur l'importation et l'exportation",
+    "full_list": "liste complète",
     "groups": {
       "title_1": "Formats Microsoft Office",
-      "title_2": "Documents",
-      "title_3": "Autres formats",
-      "format_documents": "Documents",
-      "format_images": "Images",
-      "format_web": "la toile",
-      "format_archives": "Les archives"
+      "title_2": "Autres formats de documents",
+      "title_3": "Formats Web",
+      "fixed_layout": "Formats de couche fixe",
+      "export_only": "Exporter uniquement",
+      "delimited_text_table": "Tables de texte délimitées",
+      "arbitrary_separator": "séparateur arbitraire",
+      "other_tables": "Autres formats de table",
+      "format_markup": "Balisage",
+      "format_email": "Formats de messagerie"
     }
   },
   "features": {
-    "title": "Fonctionnalités de GroupDocs.Editor",
-    "description": "Modifiez, traduisez et enregistrez en toute transparence des documents PDF et Office.",
+    "features": "Caractéristiques principales",
+    "description": "Chargement, modifier et enregistrer de manière transparente dans différents formats de documents de bureau, e-mail, ebooks et pdf.",
     "feature_1": {
-      "title": "Modifier des fichiers",
+      "title": "Modifier les fichiers",
       "content": "Modifiez le contenu de divers formats de documents, notamment PDF, DOCX, XLSX, PPTX, etc."
     },
     "feature_2": {
-      "title": "Traduire en HTML/CSS",
-      "content": "Convertissez des documents en HTML/CSS pour une édition facile avec des éditeurs WYSIWYG comme CKEditor ou TinyMCE."
+      "title": "Traduire par HTML / CSS",
+      "content": "Convertissez des documents en HTML / CSS pour une modification facile avec des éditeurs WYSIWYG comme Ckeditor ou TinyMCE."
     },
     "feature_3": {
-      "title": "Enregistrer les documents modifiés",
-      "content": "Enregistrez le HTML/CSS modifié au format de document d'origine ou exportez-le au format PDF."
+      "title": "Enregistrer les documents édités",
+      "content": "Enregistrez le HTML / CSS modifié dans le format de document d'origine ou l'exportation vers PDF."
     },
     "feature_4": {
-      "title": "Extraire les informations du document",
-      "content": "Extrayez des informations telles que le nombre de pages, la taille et l'état de cryptage des documents."
+      "title": "Extraire les informations sur les documents",
+      "content": "Extraire des informations telles que le nombre de pages, la taille et l'état de chiffrement à partir des documents."
     },
     "feature_5": {
-      "title": "Prise en charge de différents formats",
-      "content": "Modifiez un large éventail de formats de documents, notamment des fichiers Microsoft Office, des PDF, etc."
+      "title": "Prise en charge de divers formats",
+      "content": "Modifiez un large éventail de formats de documents, y compris les fichiers Microsoft Office, les PDF, etc."
     },
     "feature_6": {
-      "title": "Mot de passe de protection",
-      "content": "Modifiez facilement des documents protégés par mot de passe."
+      "title": "Protection contre les mots de passe",
+      "content": "Chargez et modifiez facilement les documents protégés par mot de passe et protégeant les documents de sortie avec protection par mot de passe."
     },
     "feature_7": {
-      "title": "Encodage de documents personnalisé",
-      "content": "Spécifiez l’encodage du document lors des processus d’édition et d’enregistrement."
+      "title": "Modifier l'e-mail",
+      "content": "Modifiez et enregistrez les e-mails et les lettres dans MSG, EML, EMLX, MBOX et de nombreux autres formats, y compris l'édition de métadonnées comme Subject, TO, CC, BCC, de, Titre, Date, etc."
     },
     "feature_8": {
-      "title": "Extraction de polices",
-      "content": "Extrayez les polices des documents pour les utiliser dans le processus d'édition."
+      "title": "Extraction de police",
+      "content": "Extraire les polices des documents de traitement de mots à utiliser dans le processus d'édition."
     },
     "feature_9": {
-      "title": "Pages d'aperçu",
-      "content": "Générez des représentations d’images des pages du document pour mieux comprendre le contenu et la structure."
+      "title": "Aperçu des pages",
+      "content": "Générez des représentations d'image des pages de documents pour mieux comprendre le contenu et la structure."
     }
   },
   "code_samples": {
-    "title": "Exemples de codes",
-    "description": "Quelques cas d'utilisation d'opérations GroupDocs.Editor typiques pour Node.js.",
+    "title": "Échantillons de code",
+    "description": "Certains cas d'utilisation d'opérations typiques en utilisant",
     "sample_1": {
-      "title": "Modifier le contenu d'un fichier DOCX spécifique",
-      "content_1": "La fonctionnalité [Édition de documents](https://docs.groupdocs.com/editor/nodejs/edit-document/) vous permet de charger, de modifier et d'enregistrer des fichiers DOCX.",
-      "content_2": "Voici un exemple de la façon de réaliser l'édition de documents à l'aide de Node.js :",
-      "code_title": "Comment modifier des fichiers DOCX dans Node.js"
+      "title": "Remplacer le texte dans docx",
+      "description": "Cet exemple montre le chargement et l'édition d'un contenu du fichier d'entrée docx par programme en remplaçant le contenu texte sur un autre. Après cela, le contenu du document modifié est enregistré en tant que nouveau document DOCX.",
+      "code_title": "Modifiez l'entrée docx en remplaçant le texte et enregistrez-le sur docx",
+      "comment_1": "Chargez le document d'entrée par chemin et spécifiez les options de chargement si nécessaire",
+      "comment_2": "Ouvrez le document pour modifier et obtenir le \"EDIDABILEDOCUMENT\"",
+      "comment_3": "Remplacer le texte - Cela émule l'édition de contenu",
+      "comment_4": "Créer une nouvelle instance \"EditableDocument\" à partir du contenu édité",
+      "comment_5": "Préparez les options de sauvegarde avec le format de sortie souhaité",
+      "comment_6": "Enregistrer le contenu du document modifié sur DOCX",
+      "comment_7": "Disposer de toutes les ressources"
     },
-    "sample_2": {
-      "title": "Modifier les champs de formulaire dans un document Word",
-      "content_1": "Modifiez facilement les champs de formulaire dans un document Word à l'aide de GroupDocs.Editor pour Node.js.",
-      "content_2": "Voici comment modifier les champs de formulaire dans un document Word à l'aide de Node.js :",
-      "code_title": "Comment modifier les champs de formulaire dans un document Word à l'aide de GroupDocs.Editor pour Node.js"
+    "sample_4": {
+      "title": "Modifier le contenu de la feuille de travail Excel particulière",
+      "description": "Le document de feuille de calcul (comme XLS, XLSX, XLSM, ODS et ainsi de suite) peut avoir une ou plusieurs feuilles de calcul (onglets). GroupDocs.Editor permet de modifier le contenu d'une feuille de calcul à la fois. Après avoir été modifiée, cette feuille de calcul peut être enregistrée dans le document de feuille de calcul distinct (où seule cette feuille de travail spécifique sera enregistrée), ou la feuille de calcul éditée peut être insérée dans le document d'origine, où il peut soit remplacer la feuille de travail d'origine ou être enregistrée ensemble, ainsi que l'original. Cet exemple montre le chargement du document XLSX, modifiant sa 2e feuille de calcul et l'enregistrant en tant que nouveau document séparé dans les formats XLSX et CSV.",
+      "code_title": "Modifiez la feuille de travail particulière de XLSX et enregistrez sous le nom de XLSX et CSV",
+      "comment_1": "Chargez l'entrée xlsx par chemin et spécifiez les options de chargement si nécessaire",
+      "comment_2": "Créer et ajuster les options d'édition - Définissez la 2ème feuille de calcul pour modifier",
+      "comment_3": "Ouvrez cette 2ème feuille de calcul pour Modifier et obtenir le \"EDIDABETOCUMENT\"",
+      "comment_4": "Remplacer le texte - Cela émule l'édition de contenu",
+      "comment_5": "Créer une nouvelle instance \"EDIDABEDOCUMENT\" à partir de la feuille de calcul éditée",
+      "comment_6": "Enregistrer la feuille de travail édité dans un nouveau document XLSX",
+      "comment_7": "Enregistrer la feuille de calcul modifiée au nouveau document CSV avec une virgule (,) délimiteur / séparateur",
+      "comment_8": "Disposer de toutes les ressources"
     }
   },
   "platforms": {
-    "title": "Indépendance de la plateforme",
-    "description": "GroupDocs.Editor pour Node.js prend en charge les systèmes d'exploitation, frameworks et gestionnaires de packages suivants."
+    "title": "Indépendance de la plate-forme",
+    "description": "GroupDocs.Editor for Node.js prend en charge les systèmes d'exploitation, les cadres et les gestionnaires de package suivants."
   },
   "code": {
-    "title": "Modifier des fichiers de documents dans Node.js via Java",
+    "title": "Modifier les documents dans .NET",
     "more": "Plus d'exemples",
-    "notes": "Regardez ce qu'il y a de nouveau"
+    "notes": "Voir ce qui est nouveau",
+    "comment_1": "Passer le document source pour initialiser l'éditeur",
+    "comment_2": "Open Document for Edit",
+    "comment_3": "Obtenez un document en tant que HTML",
+    "comment_4": "Modifier le contenu du document",
+    "comment_5": "Chargement document édité depuis HTML",
+    "comment_6": "Enregistrer le document modifié pour déposer avec le format souhaité"
   }
 }

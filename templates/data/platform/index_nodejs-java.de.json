@@ -1,70 +1,75 @@
 {
   "head": {
-    "title": "Node.js Dokumentbearbeitungs-API | Bearbeiten Sie PDF, Word, Excel, EPUB",
-    "description": "Node.js Dokumentbearbeitungs-API zum Bearbeiten, Übersetzen und Speichern von Dokumentseiten aus PDF-, Microsoft Word-, Excel-, Präsentations-, Visio- und Bildformaten."
+    "title": "Node.js dokument bearbeiten api | Bearbeiten Sie PDF, Wort, Excel, PowerPoint",
+    "description": "Node.js Dokument -Bearbeitungs -API zum Laden, Bearbeiten und Speichern von Dokumentseiten von PDF-, Microsoft Word-, Excel-, PowerPoint-, E -Book- und E -Mail -Formaten."
   },
   "header": {
     "title_1": "Dokumente bearbeiten",
-    "title_2": "über die Node.js-API",
-    "description": "Leistungsstarke Editor-API zum Bearbeiten von PDF-, Microsoft Office-, HTML- und Bilddateien.",
+    "title_2": "über node.js api",
+    "description": "Leistungsstarke Editor -API zur Manipulation von Microsoft Office, PDF-, HTML-, E -Book- und E -Mail -Dateien.",
     "words": {
       "for": "für"
     }
   },
   "actions": {
-    "main": "Kostenloser npm-Download",
+    "main": "Kostenloser NPM -Download",
     "alt": "Lizenzierung",
-    "title": "Bereit anzufangen?",
-    "description": "Testen Sie die Funktionen von GroupDocs.Editor kostenlos oder fordern Sie eine Lizenz an."
+    "title": "Bereit, loszulegen?",
+    "description": "Versuchen Sie es mit GroupDocs.Editor kostenlos oder fordern Sie eine Lizenz an."
   },
   "release": {
     "title": "Version {0} veröffentlicht",
-    "notes": "Schau was neu ist",
+    "notes": "Sehen Sie, was neu ist",
     "downloads": "Downloads"
   },
   "overview": {
-    "title": "GroupDocs.Editor auf einen Blick",
-    "description": "API zum Bearbeiten, Übersetzen und Speichern von Dokumenten, Folien und Diagrammen in Node.js-Anwendungen.",
+    "glance": "Auf einen Blick",
+    "description": "API zum Bearbeiten, Konvertieren und Speichern von Dokumenten, Tabellenkalkulationen, Folien und E-Books in Node.js-Anwendungen.",
     "feature_1": {
-      "title": "Bearbeiten Sie mühelos mehrere Dokumente in Node.js",
-      "description": "Bearbeiten Sie nahtlos mehrere PDF- und Office-Dateien mit Unterstützung für eine Vielzahl von Formaten. GroupDocs.Editor für Node.js ermöglicht eine schnelle und problemlose Bearbeitung von Dokumenten."
+      "title": "Bearbeiten Sie mühelos mehrere Dokumente in node.js",
+      "description1": "Bearbeiten Sie nahtlos mehrere PDF- und Office -Dateien mit Unterstützung für eine Vielzahl von Formaten.",
+      "description2": "macht die Dokumentbearbeitung schnell und problemlos."
     },
     "feature_2": {
-      "title": "Übersetzen Sie Dokumente in HTML/CSS",
-      "description": "Übersetzen Sie Dokumente in HTML/CSS-Markup, das mit WYSIWYG-Editoren kompatibel ist, und ermöglichen Sie so eine einfache und effiziente Dokumentbearbeitung in einer Webumgebung."
+      "title": "Konvertieren Sie Dokumente in HTML/CSS",
+      "description": "Konvertieren Sie Dokumente in reine HTML/CSS -Markup -Kompatibel, die mit WYSIWYG -Editoren kompatibel sind und eine einfache und effiziente Dokumentbearbeitung in einer Webumgebung ermöglichen."
     },
     "feature_3": {
       "title": "Speichern Sie bearbeitete Dokumente in verschiedenen Formaten",
-      "description": "Speichern Sie Ihre bearbeiteten Dokumente wieder in ihrem Originalformat oder exportieren Sie sie in andere Formate wie PDF, um Flexibilität und Kompatibilität zu gewährleisten."
+      "description": "Speichern Sie Ihre bearbeiteten Dokumente in ihrem ursprünglichen Format oder exportieren Sie sie in andere Formate wie PDF, um Flexibilität und Kompatibilität zu gewährleisten."
     }
   },
   "formats": {
     "title": "Unterstützte Dateiformate",
-    "description": "GroupDocs.Editor für Node.js unterstützt Vorgänge mit den folgenden [Dateiformaten](https://docs.groupdocs.com/editor/nodejs/supported-document-formats/).",
+    "description": "GroupDocs.Editor unterstützt den Vorgang mit den folgenden Dateiformaten für Import und Export",
+    "full_list": "Vollständige Liste",
     "groups": {
-      "title_1": "Microsoft Office-Formate",
-      "title_2": "Unterlagen",
-      "title_3": "Andere Formate",
-      "format_documents": "Unterlagen",
-      "format_images": "Bilder",
-      "format_web": "Netz",
-      "format_archives": "Archiv"
+      "title_1": "Microsoft -Büroformate",
+      "title_2": "Andere Dokumentformate",
+      "title_3": "Web-bezogene Formate",
+      "fixed_layout": "Fixed-Layout-Formate",
+      "export_only": "nur exportieren",
+      "delimited_text_table": "Abgrenzte Texttabellen",
+      "arbitrary_separator": "willkürlicher Trennzeichen",
+      "other_tables": "Andere Tischformate",
+      "format_markup": "Markup",
+      "format_email": "E -Mail -Formate"
     }
   },
   "features": {
-    "title": "GroupDocs.Editor-Funktionen",
-    "description": "Bearbeiten, übersetzen und speichern Sie PDF- und Office-Dokumente nahtlos.",
+    "features": "Hauptmerkmale",
+    "description": "Laden und speichern Sie in verschiedenen Formaten Office -Dokumente, E -Mails, eBooks und PDF nahtlos, bearbeiten und speichern Sie sie.",
     "feature_1": {
       "title": "Dateien bearbeiten",
       "content": "Bearbeiten Sie den Inhalt verschiedener Dokumentformate, einschließlich PDF, DOCX, XLSX, PPTX und mehr."
     },
     "feature_2": {
-      "title": "In HTML/CSS übersetzen",
-      "content": "Konvertieren Sie Dokumente in HTML/CSS zur einfachen Bearbeitung mit WYSIWYG-Editoren wie CKEditor oder TinyMCE."
+      "title": "Übersetzen Sie zu HTML/CSS",
+      "content": "Konvertieren Sie Dokumente in HTML/CSS, um mit WYSIWYG -Redakteuren wie Ckeditor oder Tinymce einfach zu bearbeiten."
     },
     "feature_3": {
-      "title": "Bearbeitete Dokumente speichern",
-      "content": "Speichern Sie das bearbeitete HTML/CSS wieder im ursprünglichen Dokumentformat oder exportieren Sie es als PDF."
+      "title": "Speichern bearbeiteten Dokumente",
+      "content": "Speichern Sie das bearbeitete HTML/CSS zurück im Originaldokumentformat oder im PDF."
     },
     "feature_4": {
       "title": "Dokumentinformationen extrahieren",
@@ -72,19 +77,19 @@
     },
     "feature_5": {
       "title": "Unterstützung für verschiedene Formate",
-      "content": "Bearbeiten Sie eine Vielzahl von Dokumentformaten, darunter Microsoft Office-Dateien, PDFs und mehr."
+      "content": "Bearbeiten Sie eine breite Palette von Dokumentformaten, einschließlich Microsoft Office -Dateien, PDFs und mehr."
     },
     "feature_6": {
       "title": "Passwortschutz",
-      "content": "Bearbeiten Sie passwortgeschützte Dokumente ganz einfach."
+      "content": "Laden und bearbeiten Sie mit Kennwort geschützten Dokumenten problemlos und schützen Sie die Ausgabedokumente mit Kennwortschutz."
     },
     "feature_7": {
-      "title": "Benutzerdefinierte Dokumentkodierung",
-      "content": "Geben Sie die Dokumentkodierung während der Bearbeitungs- und Speicherprozesse an."
+      "title": "E -Mail bearbeiten",
+      "content": "Bearbeiten und speichern Sie die E -Mail -Nachrichten und -briefe in MSG, EML, EMLX, MBOX und vielen anderen Formaten, einschließlich Bearbeitungsmetadaten wie Betreff, CC, BCC, von Titel, Datum usw."
     },
     "feature_8": {
-      "title": "Schriftartenextraktion",
-      "content": "Extrahieren Sie Schriftarten aus Dokumenten zur Verwendung im Bearbeitungsprozess."
+      "title": "Schriftart Extraktion",
+      "content": "Extrahieren Sie Schriftarten aus Wortverarbeitungsdokumenten zur Verwendung im Bearbeitungsprozess."
     },
     "feature_9": {
       "title": "Vorschauseiten",
@@ -92,28 +97,47 @@
     }
   },
   "code_samples": {
-    "title": "Codebeispiele",
-    "description": "Einige Anwendungsfälle typischer GroupDocs.Editor für Node.js-Vorgänge.",
+    "title": "Code -Beispiele",
+    "description": "Einige Anwendungsfälle von typischen Operationen verwenden",
     "sample_1": {
-      "title": "Bearbeiten Sie bestimmte DOCX-Dateiinhalte",
-      "content_1": "Mit der Funktion [Dokumentbearbeitung](https://docs.groupdocs.com/editor/nodejs/edit-document/) können Sie DOCX-Dateien laden, bearbeiten und speichern.",
-      "content_2": "Hier ist ein Beispiel für die Dokumentbearbeitung mit Node.js:",
-      "code_title": "So bearbeiten Sie DOCX-Dateien in Node.js"
+      "title": "Text in DOCX ersetzen",
+      "description": "In diesem Beispiel wird das Laden und Bearbeiten eines Inhalts der Eingabedocx -Datei programmatisch angezeigt, indem Textinhalte auf einem anderen ersetzt werden. Danach wird der geänderte Dokumentinhalt als neues DOCX -Dokument wieder gespeichert.",
+      "code_title": "Bearbeiten Sie Eingabe docx, indem Sie den Text ersetzen, und speichern Sie ihn in DOCX zurück",
+      "comment_1": "Laden Sie das Eingabedokument nach Pfad und geben Sie bei Bedarf Lastoptionen an",
+      "comment_2": "Öffnen Sie das Dokument für Bearbeiten und erhalten Sie das \"EditableDObocument\".",
+      "comment_3": "Text ersetzen - Dies emuliert die Inhaltsbearbeitung",
+      "comment_4": "Erstellen",
+      "comment_5": "Bereiten Sie Speicheroptionen mit dem gewünschten Ausgangsformatx vor",
+      "comment_6": "Speichern Sie bearbeitete Dokumentinhalte in DOCX",
+      "comment_7": "Alle Ressourcen entsorgen"
     },
-    "sample_2": {
-      "title": "Bearbeiten Sie Formularfelder in einem Word-Dokument",
-      "content_1": "Bearbeiten Sie Formularfelder in einem Word-Dokument ganz einfach mit GroupDocs.Editor für Node.js.",
-      "content_2": "So bearbeiten Sie Formularfelder in einem Word-Dokument mit Node.js:",
-      "code_title": "So bearbeiten Sie Formularfelder in einem Word-Dokument mit GroupDocs.Editor für Node.js"
+    "sample_4": {
+      "title": "Bearbeiten Sie den Inhalt eines bestimmten Excel -Arbeitsblatts",
+      "description": "Das Tabellenkalkulationsdokument (wie XLS, XLSX, XLSM, ODS usw.) kann ein oder mehrere Arbeitsblätter (Registerkarten) enthalten. GroupDocs.Editor ermöglicht es, Inhalte eines Arbeitsblatts gleichzeitig zu bearbeiten. Nach dem Bearbeiten kann dieses Arbeitsblatt in dem separaten Tabellenkalkulationsdokument gespeichert werden (wobei nur dieses spezielle Arbeitsblatt gespeichert wird) oder das bearbeitete Arbeitsblatt kann in das Originaldokument zurückgefügt werden, wo es entweder das ursprüngliche Arbeitsblatt ersetzen oder zusammen mit dem Original zusammen gespeichert werden kann. In diesem Beispiel wird das Laden von XLSX -Dokument, das Bearbeiten seines zweiten Arbeitsblatts und das Speichern als neues separates Dokument in XLSX- und CSV -Formaten angezeigt.",
+      "code_title": "Bearbeiten Sie ein bestimmtes Arbeitsblatt von XLSX und speichern Sie als XLSX und CSV",
+      "comment_1": "Laden Sie die Eingabe xlsx nach Pfad und geben Sie bei Bedarf Lastoptionen an",
+      "comment_2": "Erstellen und passen Sie die Bearbeitungsoptionen an - Stellen Sie das zweite Arbeitsblatt auf das Bearbeiten ein",
+      "comment_3": "Öffnen Sie dieses zweite Arbeitsblatt für Bearbeiten und erhalten Sie das \"EditableDableDocument\"",
+      "comment_4": "Text ersetzen - Dies emuliert die Inhaltsbearbeitung",
+      "comment_5": "Erstellen",
+      "comment_6": "Speichern Sie das bearbeitete Arbeitsblatt in einem neuen XLSX -Dokument",
+      "comment_7": "Speichern Sie bearbeiteten Arbeitsblatt in einem neuen CSV -Dokument mit Comma (,) Trennzeichen/Trennzeichen",
+      "comment_8": "Alle Ressourcen entsorgen"
     }
   },
   "platforms": {
     "title": "Plattformunabhängigkeit",
-    "description": "GroupDocs.Editor für Node.js unterstützt die folgenden Betriebssysteme, Frameworks und Paketmanager."
+    "description": "GroupDocs.Editor für node.js unterstützt die folgenden Betriebssysteme, Frameworks und Paketmanager."
   },
   "code": {
-    "title": "Bearbeiten Sie Dokumentdateien in Node.js über Java",
-    "more": "Mehr Beispiele",
-    "notes": "Schau was neu ist"
+    "title": "Dokumente in .NET bearbeiten",
+    "more": "Weitere Beispiele",
+    "notes": "Sehen Sie, was neu ist",
+    "comment_1": "Übergeben Sie das Quelldokument, um den Editor zu initialisieren",
+    "comment_2": "Öffnen Sie das Dokument für die Bearbeitung",
+    "comment_3": "Holen Sie sich ein Dokument als HTML",
+    "comment_4": "Dokumentinhalte bearbeiten",
+    "comment_5": "Laden Sie bearbeitetes Dokument von HTML",
+    "comment_6": "Speichern Sie das bearbeitete Dokument, um sie mit dem gewünschten Format zu versehen"
   }
 }

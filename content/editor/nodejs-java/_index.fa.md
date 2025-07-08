@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-25T12:15:48
+date: 2025-07-08T14:01:53
 draft: false
 
 product: "Editor"
@@ -24,51 +24,51 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "Node.js Document Editing API | ویرایش PDF، Word، Excel، EPUB"
-head_description: "Node.js API ویرایش اسناد برای ویرایش، ترجمه و ذخیره صفحات سند از PDF، Microsoft Word، Excel، ارائه ها، Visio و فرمت های تصویر."
+head_title: "Node.js Document ویرایش API | ویرایش PDF ، Word ، Excel ، PowerPoint"
+head_description: "Node.js ویرایش API برای بارگیری ، ویرایش و ذخیره صفحات سند از PDF ، Microsoft Word ، Excel ، PowerPoint ، کتاب الکترونیکی و ایمیل."
 
 ############################# Header ############################
-title: "اسناد را ویرایش کنید<br>از طریق Node.js API"
-description: "API ویرایشگر قدرتمند برای دستکاری PDF، Microsoft Office، HTML و فایل های تصویری."
+title: "اسناد را ویرایش کنید<br>از طریق node.js api"
+description: "ویرایشگر قدرتمند API برای دستکاری Microsoft Office ، PDF ، HTML ، کتاب الکترونیکی و ایمیل."
 words:
   for: "برای"
 
 actions:
-  main: "دانلود رایگان npm"
+  main: "بارگیری رایگان NPM"
   main_link: "https://releases.groupdocs.com/editor/nodejs-java/"
-  alt: "صدور مجوز"
+  alt: "مجوز"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/nodejs-java"
-  title: "برای شروع آماده اید؟"
-  description: "ویژگی های GroupDocs.Editor را به صورت رایگان امتحان کنید یا درخواست مجوز کنید."
+  title: "آماده شروع کار هستید؟"
+  description: "ویژگی های GroupDocs.Editor را به صورت رایگان امتحان کنید یا مجوز درخواست کنید."
 
 release:
   title: "نسخه {0} منتشر شد"
-  notes: "ببینید چه چیزی جدید است"
-  downloads: "دانلودها"
+  notes: "ببینید چه چیز جدیدی است"
+  downloads: "بارگیری"
 
 code:
-  title: "فایل های سند را در Node.js از طریق جاوا ویرایش کنید"
+  title: "اسناد را در .NET ویرایش کنید"
   more: "نمونه های بیشتر"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Node.js-via-Java"
   install: "npm i @groupdocs/groupdocs.editor"
   content: |
     ```javascript {style=abap}   
-    // {code.comment_1}
+    // برای شروع ویرایشگر ، سند منبع را عبور دهید
     const editor = new Editor("input.docx");
 
-    // {code.comment_2}
+    // سند باز برای ویرایش
     const originalDoc = editor.edit();
 
-    // {code.comment_3}
+    // به عنوان HTML سند دریافت کنید
     const srcHtml = originalDoc.getEmbeddedHtml();
     
-    // {code.comment_4}
+    // مطالب سند را ویرایش کنید
     const editedHtml = srcHtml.replace("Old text", "New text");
     
-    // {code.comment_5}
+    // بارگیری سند ویرایش شده از HTML
     const editedDoc = EditableDocument.fromMarkup(editedHtml, null);
     
-    // {code.comment_6}
+    // سند ویرایش شده را ذخیره کنید تا با فرمت مورد نظر پرونده را ثبت کنید
     const saveOptions = new WordProcessingSaveOptions();
     await editor.save(editedDoc, "output.docx", saveOptions);
     ```
@@ -76,26 +76,26 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor for Node.js via Java {overview.glance}"
-  description: "API برای ویرایش، ترجمه و ذخیره اسناد، اسلایدها و نمودارها در برنامه های Node.js."
+  title: "GroupDocs.Editor for Node.js via Java با یک نگاه"
+  description: "API برای ویرایش ، تبدیل و ذخیره اسناد ، صفحه گسترده ، اسلایدها و کتابهای الکترونیکی در برنامه های Node.js."
   features:
     # feature loop
-    - title: "به راحتی چندین سند را در Node.js ویرایش کنید"
-      content: "{overview.feature_1.description1} GroupDocs.Editor for Node.js via Java {overview.feature_1.description2}"
+    - title: "با زحمت چندین اسناد را در Node.js ویرایش کنید"
+      content: "یکپارچه چندین پرونده PDF و Office را با پشتیبانی از طیف گسترده ای از قالب ها ویرایش کنید. GroupDocs.Editor for Node.js via Java ویرایش اسناد را سریع و بدون دردسر می کند."
 
     # feature loop
-    - title: "اسناد را به HTML/CSS ترجمه کنید"
-      content: "ترجمه اسناد به نشانه گذاری HTML/CSS سازگار با ویرایشگرهای WYSIWYG، امکان ویرایش آسان و کارآمد اسناد را در یک محیط وب."
+    - title: "تبدیل اسناد به HTML/CSS"
+      content: "تبدیل اسناد به نشانگر خالص HTML/CSS سازگار با ویرایشگرهای WysiWyg ، امکان ویرایش اسناد آسان و کارآمد در یک محیط وب را فراهم می کند."
 
     # feature loop
-    - title: "اسناد ویرایش شده را در قالب های مختلف ذخیره کنید"
-      content: "اسناد ویرایش شده خود را به فرمت اصلی خود ذخیره کنید یا آنها را به فرمت های دیگر مانند PDF صادر کنید و از انعطاف پذیری و سازگاری اطمینان حاصل کنید."
+    - title: "ذخیره اسناد ویرایش شده در قالب های مختلف"
+      content: "اسناد ویرایش شده خود را به قالب اصلی خود ذخیره کنید یا آنها را به قالب های دیگری مانند PDF صادر کنید و از انعطاف پذیری و سازگاری اطمینان حاصل کنید."
 
 ############################# Platforms ############################
 platforms:
   enable: true
-  title: "استقلال سکو"
-  description: "GroupDocs.Editor برای Node.js از سیستم عامل ها، فریمورک ها و مدیریت بسته های زیر پشتیبانی می کند."
+  title: "استقلال"
+  description: "GroupDocs.Editor for node.js از سیستم عامل های زیر ، چارچوب ها و مدیران بسته پشتیبانی می کند."
   items:
     # platform loop
     - title: "Amazon"
@@ -127,154 +127,154 @@ platforms:
 ############################# File formats ############################
 formats:
   enable: true
-  title: "فرمت های فایل پشتیبانی شده"
+  title: "قالب های فایل پشتیبانی شده"
   description: |
-    GroupDocs.Editor برای Node.js از عملیات با [قالب‌های فایل] زیر پشتیبانی می‌کند (https://docs.groupdocs.com/editor/nodejs/supported-document-formats/). ([{formats.full_list}](https://docs.groupdocs.com/editor/nodejs-java/supported-document-formats/)).
+    GroupDocs.Editor از عملیات با قالب های پرونده زیر در واردات و صادرات پشتیبانی می کند ([لیست کامل](https://docs.groupdocs.com/editor/nodejs-java/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
       content: |
-        ### فرمت های مایکروسافت آفیس
+        ### قالب های مایکروسافت آفیس
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX
     # group loop
     - color: "blue"
       content: |
-        ### اسناد
-        * **{formats.groups.fixed_layout}:** PDF, XPS ({formats.groups.export_only})
+        ### سایر قالب های سند
+        * **قالبهای لایه ثابت:** PDF, XPS (فقط صادرات)
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-        * **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
-        * **{formats.groups.other_tables}:** SXC, DIF
+        * **جداول متن محدود:** CSV, TSV, DSV (جدا کننده دلخواه)
+        * **سایر قالب های جدول:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
-        ### فرمت های دیگر
-        * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
-        * **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
+        ### قالب های مرتبط با وب
+        * **نشان:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
+        * **قالب های ایمیل:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.features}"
-  description: "اسناد PDF و Office را یکپارچه ویرایش، ترجمه و ذخیره کنید."
+  title: "ویژگی های اصلی"
+  description: "یکپارچه ، ویرایش و ذخیره در فرمت های مختلف اسناد اداری ، ایمیل ، کتابهای الکترونیکی و PDF."
 
   items:
     # feature loop
     - icon: "merge"
-      title: "ویرایش فایل ها"
-      content: "محتوای فرمت های اسناد مختلف از جمله PDF، DOCX، XLSX، PPTX و غیره را ویرایش کنید."
+      title: "پرونده ها را ویرایش کنید"
+      content: "محتوای قالب های مختلف اسناد از جمله PDF ، DOCX ، XLSX ، PPTX و موارد دیگر را ویرایش کنید."
 
     # feature loop
     - icon: "split"
-      title: "به HTML/CSS ترجمه کنید"
-      content: "برای ویرایش آسان با ویرایشگرهای WYSIWYG مانند CKEditor یا TinyMCE، اسناد را به HTML/CSS تبدیل کنید."
+      title: "ترجمه به HTML/CSS"
+      content: "تبدیل اسناد به HTML/CSS برای ویرایش آسان با ویرایشگرهای WysiWyg مانند CKEditor یا Tinymce."
 
     # feature loop
     - icon: "move"
-      title: "اسناد ویرایش شده را ذخیره کنید"
-      content: "HTML/CSS ویرایش شده را به فرمت سند اصلی ذخیره کنید یا به PDF صادر کنید."
+      title: "ذخیره اسناد ویرایش شده"
+      content: "HTML/CSS ویرایش شده را به قالب سند اصلی یا صادرات به PDF ذخیره کنید."
 
     # feature loop
     - icon: "remove"
-      title: "استخراج اطلاعات سند"
-      content: "اطلاعاتی مانند تعداد صفحات، اندازه و وضعیت رمزگذاری را از اسناد استخراج کنید."
+      title: "اطلاعات سند را استخراج کنید"
+      content: "اطلاعاتی مانند تعداد صفحه ، اندازه و وضعیت رمزگذاری از اسناد را استخراج کنید."
 
     # feature loop
     - icon: "rotate"
-      title: "پشتیبانی از فرمت های مختلف"
-      content: "طیف گسترده ای از فرمت های اسناد از جمله فایل های Microsoft Office، PDF و موارد دیگر را ویرایش کنید."
+      title: "پشتیبانی از قالب های مختلف"
+      content: "طیف گسترده ای از قالب های اسناد از جمله پرونده های Microsoft Office ، PDF و موارد دیگر را ویرایش کنید."
 
     # feature loop
     - icon: "swap"
-      title: "حفاظت از رمز عبور"
-      content: "اسناد محافظت شده با رمز عبور را به راحتی ویرایش کنید."
+      title: "محافظت از رمز عبور"
+      content: "اسناد محافظت شده با رمز عبور را با سهولت بارگیری و ویرایش کنید و از اسناد خروجی با محافظت از رمز عبور محافظت کنید."
 
     # feature loop
     - icon: "extract"
-      title: "رمزگذاری اسناد سفارشی"
-      content: "رمزگذاری سند را در طول فرآیندهای ویرایش و ذخیره مشخص کنید."
+      title: "ویرایش ایمیل"
+      content: "پیام ها و نامه های ایمیل را در MSG ، EML ، EMLX ، Mbox و بسیاری از قالب های دیگر از جمله ویرایش ابرداده مانند موضوع ، به ، CC ، BCC ، از ، عنوان ، تاریخ و غیره ویرایش و ذخیره کنید."
 
     # feature loop
     - icon: "orientation"
-      title: "استخراج فونت"
-      content: "فونت ها را از اسناد برای استفاده در فرآیند ویرایش استخراج کنید."
+      title: "استخراج قلم"
+      content: "فونت ها را از اسناد پردازش برای استفاده در فرآیند ویرایش استخراج کنید."
 
     # feature loop
     - icon: "preview"
-      title: "پیش نمایش صفحات"
-      content: "برای درک بهتر محتوا و ساختار، تصاویری از صفحات سند ایجاد کنید."
+      title: "صفحات پیش نمایش"
+      content: "برای درک بهتر محتوا و ساختار ، بازنمایی تصویر از صفحات سند را ایجاد کنید."
 
 ############################# Code samples ############################
 code_samples:
   enable: true
   title: "نمونه کد"
-  description: "برخی از موارد معمولی GroupDocs.Editor برای عملیات Node.js استفاده می کنند. GroupDocs.Editor for Node.js via Java"
+  description: "برخی از موارد استفاده از عملیات معمولی با استفاده از GroupDocs.Editor for Node.js via Java"
   items:
     # code sample loop
-    - title: "محتوای فایل DOCX خاص را ویرایش کنید"
+    - title: "متن را در docx جایگزین کنید"
       content: |
-        {code_samples.sample_1.description} 
-        {{< landing/code title="نحوه ویرایش فایل های DOCX در Node.js">}}
+        این مثال بارگذاری و ویرایش محتوای پرونده ورودی docx را به صورت برنامه ای با جایگزینی محتوای متن بر روی دیگری نشان می دهد. پس از آن محتوای سند اصلاح شده به عنوان یک سند جدید Docx ذخیره می شود. 
+        {{< landing/code title="با جایگزینی متن و ذخیره آن در Docx ، input docx را ویرایش کنید">}}
         ```javascript {style=abap}
         
-        // {code_samples.sample_1.comment_1}
+        // در صورت لزوم ، سند ورودی را با مسیر بارگیری کنید و در صورت لزوم گزینه های بار را مشخص کنید
         const loadOptions = new WordProcessingLoadOptions();
         const editor = new Editor("input.docx", loadOptions);
         
-        // {code_samples.sample_1.comment_2}
+        // سند باز برای ویرایش و به دست آوردن "ویرایش"
         const original = editor.edit();
         
-        // {code_samples.sample_1.comment_3}
+        // متن را جایگزین کنید - این ویرایش محتوا را تقلید می کند
         const modifiedContent = original.getEmbeddedHtml().replace("old text", "new text");
         
-        // {code_samples.sample_1.comment_4}
+        // نمونه جدید "EditableDocument" را از محتوای ویرایش شده ایجاد کنید
         const edited = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_1.comment_5}
+        // گزینه های ذخیره را با فرمت خروجی مورد نظر آماده کنید
         const saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
         
-        // {code_samples.sample_1.comment_6}
+        // محتوای سند ویرایش شده را در Docx ذخیره کنید
         await editor.save(edited, "output.docx", saveOptions);
         
-        // {code_samples.sample_1.comment_7}
+        // تمام منابع را دور بیندازید
         edited.dispose(); original.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "{code_samples.sample_4.title}"
+    - title: "ویرایش محتوای برگه خاص اکسل"
       content: |
-        {code_samples.sample_4.description}
-        {{< landing/code title="{code_samples.sample_4.code_title}">}}
+        سند صفحه گسترده (مانند XLS ، XLSX ، XLSM ، ODS و غیره) ممکن است یک یا چند کاربرگ (زبانه) داشته باشد. GroupDocs.Editor اجازه می دهد تا محتوای یک صفحه کار را همزمان ویرایش کنید. پس از ویرایش ، این صفحه ممکن است در سند صفحه گسترده جداگانه ذخیره شود (جایی که فقط این کاربرگ خاص ذخیره می شود) ، یا برگه ویرایش شده را می توان به سند اصلی وارد کرد ، جایی که می تواند برگه اصلی را جایگزین کند یا به همراه اصلی اصلی ذخیره شود. این مثال در حال بارگیری سند XLSX ، ویرایش صفحه کار 2 آن و ذخیره آن به عنوان یک سند جداگانه جدید در قالب های XLSX و CSV است.
+        {{< landing/code title="برگه خاص XLSX را ویرایش کرده و به عنوان XLSX و CSV ذخیره کنید">}}
         ```javascript {style=abap}
         
-        // {code_samples.sample_4.comment_1}
+        // ورودی XLSX را بر اساس مسیر بارگیری کنید و در صورت لزوم گزینه های بار را مشخص کنید
         const loadOptions = new SpreadsheetLoadOptions();
         const editor = new Editor("input.xlsx", loadOptions);
         
-        // {code_samples.sample_4.comment_2}
+        // گزینه های ویرایش را ایجاد و تنظیم کنید - صفحه کار 2 را برای ویرایش تنظیم کنید
         const editOptions = new SpreadsheetEditOptions();
         editOptions.setWorksheetIndex(1);
         
-        // {code_samples.sample_4.comment_3}
+        // این صفحه کار 2 را برای ویرایش باز کنید و "ویرایش" را بدست آورید
         const originalWorksheet = editor.edit(editOptions);
         
-        // {code_samples.sample_4.comment_4}
+        // متن را جایگزین کنید - این ویرایش محتوا را تقلید می کند
         const modifiedContent = originalWorksheet.getEmbeddedHtml().replace("Cell Text", "Edited Cell Text");
         
-        // {code_samples.sample_4.comment_5}
+        // نمونه جدید "EditableDocument" را از برگه ویرایش شده ایجاد کنید
         const editedWorksheet = EditableDocument.fromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_4.comment_6}
+        // برگه ویرایش شده را در سند جدید XLSX ذخیره کنید
         const saveSpreadsheetOptions = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx);
         await editor.save(editedWorksheet, "output.xlsx", saveSpreadsheetOptions);
         
-        // {code_samples.sample_4.comment_7}
+        // برگه ویرایش شده را به سند جدید CSV با کاما (،) تعیین کننده/جداکننده ذخیره کنید
         const saveTextOptions = new DelimitedTextSaveOptions(",");
-        await editor.save(editedWorksheet, "output.xlsx", saveTextOptions);
+        await editor.save(editedWorksheet, "output.csv", saveTextOptions);
         
-        // {code_samples.sample_4.comment_8}
+        // تمام منابع را دور بیندازید
         editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}

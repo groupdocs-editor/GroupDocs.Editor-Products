@@ -1,0 +1,143 @@
+{
+  "head": {
+    "title": "Java Document Editing API | Edit PDF, Word, Excel, PowerPoint",
+    "description": "Java Document Editing API untuk memuat, mengedit, dan menyimpan halaman dokumen dari PDF, Microsoft Word, Excel, PowerPoint, eBook, dan format email."
+  },
+  "header": {
+    "title_1": "Edit dokumen",
+    "title_2": "Via Java API",
+    "description": "API editor yang kuat untuk memanipulasi Microsoft Office, PDF, HTML, eBook dan file email.",
+    "words": {
+      "for": "untuk"
+    }
+  },
+  "actions": {
+    "main": "Unduh Maven Gratis",
+    "alt": "Lisensi",
+    "title": "Siap Memulai?",
+    "description": "Coba Fitur GroupDocs.Editor secara gratis atau minta lisensi."
+  },
+  "release": {
+    "title": "Versi {0} dirilis",
+    "notes": "Lihat apa yang baru",
+    "downloads": "Unduhan"
+  },
+  "overview": {
+    "glance": "sekilas",
+    "description": "API untuk mengedit, mengonversi, dan menyimpan dokumen, spreadsheet, slide, dan e-book dalam aplikasi Java.",
+    "feature_1": {
+      "title": "Edit dengan mudah beberapa dokumen di java",
+      "description1": "Mengedit beberapa file PDF dan kantor dengan mulus dengan berbagai format.",
+      "description2": "Membuat pengeditan dokumen cepat dan bebas repot."
+    },
+    "feature_2": {
+      "title": "Konversi dokumen ke HTML/CSS",
+      "description": "Konversi dokumen ke markup HTML/CSS murni yang kompatibel dengan editor WYSIWYG, memungkinkan pengeditan dokumen yang mudah dan efisien di lingkungan web."
+    },
+    "feature_3": {
+      "title": "Simpan dokumen yang diedit dalam berbagai format",
+      "description": "Simpan dokumen yang diedit kembali ke format aslinya atau ekspornya ke format lain seperti PDF, memastikan fleksibilitas dan kompatibilitas."
+    }
+  },
+  "formats": {
+    "title": "Format file yang didukung",
+    "description": "GroupDocs.editor mendukung operasi dengan format file berikut tentang impor dan ekspor",
+    "full_list": "Daftar Lengkap",
+    "groups": {
+      "title_1": "Format Microsoft Office",
+      "title_2": "Format dokumen lainnya",
+      "title_3": "Format terkait web",
+      "fixed_layout": "Format Lapisan Tetap",
+      "export_only": "hanya ekspor",
+      "delimited_text_table": "Tabel teks yang dibatasi",
+      "arbitrary_separator": "pemisah sewenang -wenang",
+      "other_tables": "Format tabel lainnya",
+      "format_markup": "Markup",
+      "format_email": "Format email"
+    }
+  },
+  "features": {
+    "features": "Fitur utama",
+    "description": "Memuat, mengedit dan menyimpan berbagai format dokumen, email, ebooks, dan PDF format yang berbeda.",
+    "feature_1": {
+      "title": "Edit file",
+      "content": "Edit konten berbagai format dokumen termasuk PDF, DOCX, XLSX, PPTX, dan banyak lagi."
+    },
+    "feature_2": {
+      "title": "Terjemahkan ke HTML/CSS",
+      "content": "Konversi dokumen ke html/css untuk mengedit mudah dengan editor wysiwyg seperti ckeditor atau tinymce."
+    },
+    "feature_3": {
+      "title": "Simpan dokumen yang diedit",
+      "content": "Simpan HTML/CSS yang diedit kembali ke format dokumen asli atau ekspor ke PDF."
+    },
+    "feature_4": {
+      "title": "Ekstrak informasi dokumen",
+      "content": "Ekstrak informasi seperti jumlah halaman, ukuran, dan status enkripsi dari dokumen."
+    },
+    "feature_5": {
+      "title": "Dukungan untuk berbagai format",
+      "content": "Edit berbagai format dokumen termasuk file Microsoft Office, PDF, dan banyak lagi."
+    },
+    "feature_6": {
+      "title": "Perlindungan kata sandi",
+      "content": "Muat dan edit dokumen yang dilindungi kata sandi dengan mudah, dan melindungi dokumen output dengan perlindungan kata sandi."
+    },
+    "feature_7": {
+      "title": "Edit email",
+      "content": "Edit dan simpan pesan dan surat email dalam MSG, EML, EMLX, MBox dan banyak format lainnya, termasuk mengedit metadata seperti subjek, ke, CC, BCC, dari, judul, tanggal dan sebagainya."
+    },
+    "feature_8": {
+      "title": "Ekstraksi font",
+      "content": "Ekstrak font dari dokumen WordProcessing untuk digunakan dalam proses pengeditan."
+    },
+    "feature_9": {
+      "title": "Halaman pratinjau",
+      "content": "Hasilkan representasi gambar dari halaman dokumen untuk lebih memahami konten dan struktur."
+    }
+  },
+  "code_samples": {
+    "title": "Sampel kode",
+    "description": "Beberapa menggunakan kasus operasi khas menggunakan",
+    "sample_1": {
+      "title": "Ganti teks di docx",
+      "description": "Contoh ini menunjukkan memuat dan mengedit konten file input DOCX secara terprogram dengan mengganti konten teks di yang lain. Setelah itu konten dokumen yang dimodifikasi disimpan kembali sebagai dokumen DOCX baru.",
+      "code_title": "Edit input docx dengan mengganti teks dan simpan kembali ke docx",
+      "comment_1": "Muat dokumen input berdasarkan jalur dan tentukan opsi beban jika perlu",
+      "comment_2": "Buka dokumen untuk diedit dan dapatkan \"EditableDocument\"",
+      "comment_3": "Ganti Teks - Ini meniru pengeditan konten",
+      "comment_4": "Buat instance \"EditableDocument\" baru dari konten yang diedit",
+      "comment_5": "Siapkan opsi simpan dengan format output yang diinginkan",
+      "comment_6": "Simpan Konten Dokumen yang Diedit ke Docx",
+      "comment_7": "Buang semua sumber daya"
+    },
+    "sample_4": {
+      "title": "Edit konten lembar kerja Excel tertentu",
+      "description": "Dokumen spreadsheet (seperti XLS, XLSX, XLSM, ODS dan sebagainya) mungkin memiliki satu atau lebih lembar kerja (tab). GroupDocs.editor memungkinkan untuk mengedit konten satu lembar kerja sekaligus. Setelah diedit, lembar kerja ini dapat disimpan ke dokumen spreadsheet terpisah (di mana hanya lembar kerja khusus ini yang akan disimpan), atau lembar kerja yang diedit dapat dimasukkan kembali ke dokumen asli, di mana ia dapat menggantikan lembar kerja asli atau disimpan bersama, bersama dengan yang asli. Contoh ini menunjukkan memuat dokumen XLSX, mengedit lembar kerja ke -2 dan menyimpannya sebagai dokumen terpisah baru dalam format XLSX dan CSV.",
+      "code_title": "Edit lembar kerja khusus XLSX dan simpan sebagai XLSX dan CSV",
+      "comment_1": "Muat input xlsx dengan path dan tentukan opsi beban jika perlu",
+      "comment_2": "Buat dan sesuaikan opsi edit - atur lembar kerja ke -2 untuk diedit",
+      "comment_3": "Buka lembar kerja ke -2 ini untuk diedit dan dapatkan \"EditableDocument\"",
+      "comment_4": "Ganti Teks - Ini meniru pengeditan konten",
+      "comment_5": "Buat instance \"EditableDocument\" baru dari lembar kerja yang diedit",
+      "comment_6": "Simpan Lembar Kerja yang Diedit ke Dokumen XLSX Baru",
+      "comment_7": "Simpan Lembar Kerja yang Diedit ke Dokumen CSV Baru dengan Pembatas/Pemisah Koma (,)",
+      "comment_8": "Buang semua sumber daya"
+    }
+  },
+  "platforms": {
+    "title": "Kemandirian platform",
+    "description": "GroupDocs.editor untuk Java mendukung sistem operasi, kerangka kerja, dan manajer paket berikut."
+  },
+  "code": {
+    "title": "Edit dokumen di .net",
+    "more": "Lebih banyak contoh",
+    "notes": "Lihat apa yang baru",
+    "comment_1": "Dokumen sumber lulus untuk menginisialisasi editor",
+    "comment_2": "Buka dokumen untuk edit",
+    "comment_3": "Dapatkan dokumen sebagai HTML",
+    "comment_4": "Edit Isi Dokumen",
+    "comment_5": "Memuat dokumen yang diedit dari html",
+    "comment_6": "Simpan dokumen yang diedit untuk diajukan dengan format yang diinginkan"
+  }
+}

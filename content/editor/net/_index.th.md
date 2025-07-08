@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-25T12:15:48
+date: 2025-07-08T14:01:54
 draft: false
 
 product: "Editor"
@@ -266,7 +266,7 @@ code_samples:
         editor.Save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
         
         // {code_samples.sample_4.comment_7}
-        editor.Save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
+        editor.Save(editedWorksheet, "output.csv", new DelimitedTextSaveOptions(","));
         
         // {code_samples.sample_4.comment_8}
         editedWorksheet.Dispose(); originalWorksheet.Dispose(); editor.Dispose();

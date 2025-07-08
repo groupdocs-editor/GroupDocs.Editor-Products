@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-25T12:15:48
+date: 2025-07-08T14:01:53
 draft: false
 
 product: "Editor"
@@ -283,7 +283,7 @@ code_samples:
         editor.save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
         
         // Save edited worksheet to new CSV document with comma (,) delimiter/separator
-        editor.save(editedWorksheet, "output.xlsx", new DelimitedTextSaveOptions(","));
+        editor.save(editedWorksheet, "output.csv", new DelimitedTextSaveOptions(","));
         
         // Dispose all resources
         editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();
