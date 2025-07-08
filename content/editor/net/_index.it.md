@@ -34,6 +34,7 @@ words:
   for: "per"
 
 actions:
+  editor_demo: true
   main: "Download gratuito di Nuget"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
   alt: "Licenze"

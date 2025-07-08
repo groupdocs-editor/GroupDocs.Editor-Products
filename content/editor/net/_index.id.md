@@ -34,6 +34,7 @@ words:
   for: "{header.words.for}"
 
 actions:
+  editor_demo: true
   main: "{actions.main}"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
   alt: "{actions.alt}"

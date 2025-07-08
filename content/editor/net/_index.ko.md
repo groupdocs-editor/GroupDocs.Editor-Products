@@ -34,6 +34,7 @@ words:
   for: "~을 위한"
 
 actions:
+  editor_demo: true
   main: "무료 NuGet 다운로드"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
   alt: "라이선스"
