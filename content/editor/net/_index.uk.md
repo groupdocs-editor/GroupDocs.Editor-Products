@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-07-24T02:05:35
+date: 2025-07-24T11:21:56
 draft: false
 
 product: "Editor"
@@ -53,7 +53,7 @@ code:
   install: "dotnet add package GroupDocs.Editor"
   content: |
     ```csharp {style=abap}   
-    // Пропустити вихідний документ для ініціалізації редактора
+    // Вказати вхідний документ для ініціалізації редактора
     var editor = new Editor("input.docx");
 
     // Відкрити документ для редагування
@@ -68,7 +68,7 @@ code:
     // Завантажити відредагований документ з HTML
     var editedDoc = EditableDocument.FromMarkup(editedHtml, null);
     
-    // Зберегти відредагований документ для подачі з бажаним форматом
+    // Зберегти відредагований документ для у бажаному форматі
     var saveOptions = new WordProcessingSaveOptions();
     editor.Save(editedDoc, "output.docx", saveOptions);
     ```
@@ -221,13 +221,13 @@ code_samples:
         // Завантажити вхідний документ шляхом та вкажіть параметри завантаження, якщо це необхідно
         Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // Відкрийте документ для редагування та отримання "редакції"
+        // Відкрийте документ для редагування та отримання "EditableDocument"
         EditableDocument original = editor.Edit();
         
         // Замінити текст - це імітує редагування вмісту
         string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
         
-        // Створіть новий екземпляр "редагувати" з відредагованого вмісту
+        // Створіть новий екземпляр "EditableDocument" з відредагованого вмісту
         EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
         
         // Підготуйте параметри збереження з потрібним вихідним форматом
@@ -236,7 +236,7 @@ code_samples:
         // Зберегти відредагований вміст документа на DOCX
         editor.Save(edited, "output.docx", saveOptions);
         
-        // Утилізуйте всі ресурси
+        // Очистка всіх ресурсів
         edited.Dispose(); original.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
@@ -250,16 +250,16 @@ code_samples:
         // Завантажити вхід xlsx шляхом і вкажіть параметри завантаження, якщо це необхідно
         Editor editor = new Editor("input.xlsx", new SpreadsheetLoadOptions());
         
-        // Створіть та відрегулюйте параметри редагування - Встановіть 2 -й робочий аркуш для редагування
+        // Створіть та відрегулюйте параметри редагування - Встановіть 2-й робочий аркуш для редагування
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions() { WorksheetIndex = 1 } ;
         
-        // Відкрийте цей 2 -й робочий аркуш для редагування та отримайте "редагувати"
+        // Відкрийте цей 2-й робочий аркуш для редагування та отримайте "EditableDocument"
         EditableDocument originalWorksheet = editor.Edit(editOptions);
         
         // Замінити текст - це імітує редагування вмісту
         string modifiedContent = originalWorksheet.GetEmbeddedHtml().Replace("Cell Text", "Edited Cell Text");
         
-        // Створіть новий екземпляр "EditAbledocument" з відредагованого робочого аркуша
+        // Створіть новий екземпляр "EditableDocument" з відредагованого робочого аркуша
         EditableDocument editedWorksheet = EditableDocument.FromMarkup(modifiedContent, null);
         
         // Зберегти відредагований робочий аркуш до нового документа XLSX
@@ -268,7 +268,7 @@ code_samples:
         // Зберегти редагований робочий аркуш до нового документа CSV з Comma (,) Розмежовкою/сепаратором
         editor.Save(editedWorksheet, "output.csv", new DelimitedTextSaveOptions(","));
         
-        // Утилізуйте всі ресурси
+        // Очистка всіх ресурсів
         editedWorksheet.Dispose(); originalWorksheet.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
@@ -282,13 +282,13 @@ code_samples:
         // Завантажте PDF -файл шляхом та вкажіть параметри завантаження PDF
         Editor editor = new Editor("input.pdf", new PdfLoadOptions());
         
-        // Відкрийте документ для редагування та отримання "редакції"
+        // Відкрийте документ для редагування та отримання "EditableDocument"
         EditableDocument original = editor.Edit();
         
         // Замінити текст - це імітує редагування вмісту
         string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
         
-        // Створіть новий екземпляр "редагувати" з відредагованого вмісту
+        // Створіть новий екземпляр "EditableDocument" з відредагованого вмісту
         EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
         
         // Зберегти відредагований вміст документа на PDF

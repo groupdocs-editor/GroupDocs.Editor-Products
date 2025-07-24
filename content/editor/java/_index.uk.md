@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-07-24T02:05:35
+date: 2025-07-24T11:21:56
 draft: false
 
 product: "Editor"
@@ -68,7 +68,7 @@ code:
     </repositories>
   content: |
     ```java {style=abap}   
-    // Пропустити вихідний документ для ініціалізації редактора
+    // Подати вихідний документ для ініціалізації редактора
     Editor editor = new Editor("input.docx");
 
     // Відкрити документ для редагування
@@ -83,7 +83,7 @@ code:
     // Завантажити відредагований документ з HTML
     EditableDocument editedDoc = EditableDocument.fromMarkup(editedHtml, null);
     
-    // Зберегти відредагований документ для подачі з бажаним форматом
+    // Зберегти відредагований документ для у бажаному форматі
     WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions();
     editor.save(editedDoc, "output.docx", saveOptions);
     ```
@@ -100,7 +100,7 @@ overview:
 
     # feature loop
     - title: "Перетворити документи в HTML/CSS"
-      content: "Перетворити документи в чисту розмітку HTML/CSS, сумісну з редакторами WYSIWYG, що дозволяє легко та ефективно редагувати документи у веб -середовищі."
+      content: "Перетворити документи в чисту розмітку HTML/CSS, сумісну з редакторами WYSIWYG, що дозволяє легко та ефективно редагувати документи у веб-середовищі."
 
     # feature loop
     - title: "Зберегти відредаговані документи в різних форматах"
@@ -157,15 +157,15 @@ formats:
     - color: "blue"
       content: |
         ### Інші формати документів
-        * **Форми з фіксованим шарами:** PDF, XPS (лише експорт)
+        * **Формати з фіксованою розміткою:** PDF, XPS (лише експорт)
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-        * **Розмежовані текстові таблиці:** CSV, TSV, DSV (довільний сепаратор)
+        * **Текстові таблиці із сепаратором:** CSV, TSV, DSV (довільний сепаратор)
         * **Інші формати таблиці:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
-        ### Формати, пов'язані з веб-сайтом
+        ### Формати, пов'язані з вебом
         * **Розмітка:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
         * **Формати електронної пошти:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
@@ -237,13 +237,13 @@ code_samples:
         // Завантажити вхідний документ шляхом та вкажіть параметри завантаження, якщо це необхідно
         Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // Відкрийте документ для редагування та отримання "редакції"
+        // Відкрийте документ для редагування та отримання "EditableDocument"
         EditableDocument original = editor.edit();
         
         // Замінити текст - це імітує редагування вмісту
         String modifiedContent = original.getEmbeddedHtml().replace("old text", "new text");
         
-        // Створіть новий екземпляр "редагувати" з відредагованого вмісту
+        // Створіть новий екземпляр "EditableDocument" з відредагованого вмісту
         EditableDocument edited = EditableDocument.fromMarkup(modifiedContent, null);
         
         // Підготуйте параметри збереження з потрібним вихідним форматом
@@ -252,7 +252,7 @@ code_samples:
         // Зберегти відредагований вміст документа на DOCX
         editor.save(edited, "output.docx", saveOptions);
         
-        // Утилізуйте всі ресурси
+        // Очистити всі ресурси
         edited.dispose(); original.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
@@ -263,20 +263,20 @@ code_samples:
         {{< landing/code title="Редагувати конкретний робочий аркуш XLSX та зберегти як XLSX та CSV">}}
         ```java {style=abap}
         
-        // Завантажити вхід xlsx шляхом і вкажіть параметри завантаження, якщо це необхідно
+        // Завантаження вхідного xlsx по його шляху із параметрами завантаження, якщо це необхідно
         Editor editor = new Editor("input.xlsx", new SpreadsheetLoadOptions());
         
-        // Створіть та відрегулюйте параметри редагування - Встановіть 2 -й робочий аркуш для редагування
+        // Створіть та відрегулюйте параметри редагування - Встановіть 2-й робочий аркуш для редагування
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
         editOptions.setWorksheetIndex(1);
         
-        // Відкрийте цей 2 -й робочий аркуш для редагування та отримайте "редагувати"
+        // Відкрийте цей 2-й робочий аркуш для редагування та отримайте "EditableDocument"
         EditableDocument originalWorksheet = editor.edit(editOptions);
         
         // Замінити текст - це імітує редагування вмісту
         String modifiedContent = originalWorksheet.getEmbeddedHtml().replace("Cell Text", "Edited Cell Text");
         
-        // Створіть новий екземпляр "EditAbledocument" з відредагованого робочого аркуша
+        // Створіть новий екземпляр "EditableDocument" з відредагованого робочого аркуша
         EditableDocument editedWorksheet = EditableDocument.fromMarkup(modifiedContent, null);
         
         // Зберегти відредагований робочий аркуш до нового документа XLSX
@@ -285,7 +285,7 @@ code_samples:
         // Зберегти редагований робочий аркуш до нового документа CSV з Comma (,) Розмежовкою/сепаратором
         editor.save(editedWorksheet, "output.csv", new DelimitedTextSaveOptions(","));
         
-        // Утилізуйте всі ресурси
+        // Очистити всі ресурси
         editedWorksheet.dispose(); originalWorksheet.dispose(); editor.dispose();
         ```
         {{< /landing/code >}}
