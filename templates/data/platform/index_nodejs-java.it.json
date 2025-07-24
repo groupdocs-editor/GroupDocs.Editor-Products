@@ -24,7 +24,7 @@
   },
   "overview": {
     "glance": "a colpo d'occhio",
-    "description": "API per modificare, convertire e salvare documenti, fogli di calcolo, diapositive ed e-book nelle applicazioni Node.js.",
+    "description": "API per modificare, convertire e salvare documenti, fogli di calcolo, diapositive e e-book nelle applicazioni Node.js.",
     "feature_1": {
       "title": "Modifica senza sforzo più documenti in node.js",
       "description1": "Modifica perfettamente più file PDF e Office con supporto per una vasta gamma di formati.",
@@ -113,9 +113,9 @@
     },
     "sample_4": {
       "title": "Modifica il contenuto di particolare foglio di lavoro Excel",
-      "description": "Il documento di foglio di calcolo (come XLS, XLSX, XLSM, ODS e così via) può avere uno o più fogli di lavoro (tabs). GroupDocs.Editor consente di modificare il contenuto di un foglio di lavoro alla volta. Dopo essere stato modificato, questo foglio di lavoro può essere salvato nel documento separato del foglio di calcolo (in cui verrà salvato solo questo foglio di lavoro specifico) o il foglio di lavoro modificato può essere inserito di nuovo al documento originale, dove può sostituire il foglio di lavoro originale o essere salvato insieme, insieme a quello originale. Questo esempio mostra il caricamento del documento XLSX, modificando il suo secondo foglio di lavoro e salvandolo come nuovo documento separato nei formati XLSX e CSV.",
+      "description": "Il documento di foglio di calcolo (come XLS, XLSX, XLSM, ODS e così via) può avere uno o più fogli di lavoro (tabs). GroupDocs.Editor consente di modificare il contenuto di un foglio di lavoro alla volta. Dopo essere stato modificato, questo foglio di lavoro può essere salvato nel documento separato del foglio di calcolo (in cui verrà salvato solo questo foglio di lavoro specifico), oppure il foglio di lavoro modificato può essere inserito di nuovo al documento originale, dove può sostituire il foglio di lavoro originale o essere salvato insieme, insieme a quello originale. Questo esempio mostra il caricamento del documento XLSX, modificando il suo secondo foglio di lavoro e salvandolo come nuovo documento separato nei formati XLSX e CSV.",
       "code_title": "Modifica un particolare foglio di lavoro di XLSX e salva come XLSX e CSV",
-      "comment_1": "Caricare ingresso xlsx per via e specificare le opzioni di caricamento, se necessario",
+      "comment_1": "INGRESSO DI CARICARE XLSX per via e specificare le opzioni di caricamento, se necessario",
       "comment_2": "Crea e regola le opzioni di modifica: imposta il 2 ° foglio di lavoro su modifica",
       "comment_3": "Apri questo 2 ° foglio di lavoro per modificare e ottenere il \"Documentazione editabile\"",
       "comment_4": "Sostituisci il testo: questo emula la modifica del contenuto",

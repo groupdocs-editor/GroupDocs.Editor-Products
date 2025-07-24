@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-07-08T14:01:54
+date: 2025-07-24T02:05:35
 draft: false
 
 product: "Editor"
@@ -34,7 +34,6 @@ words:
   for: "для"
 
 actions:
-  editor_demo: true
   main: "Бесплатно скачать Nuget"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
   alt: "Лицензирование"

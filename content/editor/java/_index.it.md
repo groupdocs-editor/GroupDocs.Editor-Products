@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-07-08T14:01:54
+date: 2025-07-24T02:05:35
 draft: false
 
 product: "Editor"
@@ -173,7 +173,7 @@ formats:
 features:
   enable: true
   title: "Caratteristiche principali"
-  description: "Carica, modifica e salva senza soluzione di continuità in diversi formati documenti dell'ufficio, e -mail, ebook e PDF."
+  description: "Carica, modifica e salva senza soluzione di continuità in diversi formati di documenti, e -mail, ebook e PDF."
 
   items:
     # feature loop
@@ -259,11 +259,11 @@ code_samples:
     # code sample loop
     - title: "Modifica il contenuto di particolare foglio di lavoro Excel"
       content: |
-        Il documento di foglio di calcolo (come XLS, XLSX, XLSM, ODS e così via) può avere uno o più fogli di lavoro (tabs). GroupDocs.Editor consente di modificare il contenuto di un foglio di lavoro alla volta. Dopo essere stato modificato, questo foglio di lavoro può essere salvato nel documento separato del foglio di calcolo (in cui verrà salvato solo questo foglio di lavoro specifico) o il foglio di lavoro modificato può essere inserito di nuovo al documento originale, dove può sostituire il foglio di lavoro originale o essere salvato insieme, insieme a quello originale. Questo esempio mostra il caricamento del documento XLSX, modificando il suo secondo foglio di lavoro e salvandolo come nuovo documento separato nei formati XLSX e CSV.
+        Il documento di foglio di calcolo (come XLS, XLSX, XLSM, ODS e così via) può avere uno o più fogli di lavoro (tabs). GroupDocs.Editor consente di modificare il contenuto di un foglio di lavoro alla volta. Dopo essere stato modificato, questo foglio di lavoro può essere salvato nel documento separato del foglio di calcolo (in cui verrà salvato solo questo foglio di lavoro specifico), oppure il foglio di lavoro modificato può essere inserito di nuovo al documento originale, dove può sostituire il foglio di lavoro originale o essere salvato insieme, insieme a quello originale. Questo esempio mostra il caricamento del documento XLSX, modificando il suo secondo foglio di lavoro e salvandolo come nuovo documento separato nei formati XLSX e CSV.
         {{< landing/code title="Modifica un particolare foglio di lavoro di XLSX e salva come XLSX e CSV">}}
         ```java {style=abap}
         
-        // Caricare ingresso xlsx per via e specificare le opzioni di caricamento, se necessario
+        // INGRESSO DI CARICARE XLSX per via e specificare le opzioni di caricamento, se necessario
         Editor editor = new Editor("input.xlsx", new SpreadsheetLoadOptions());
         
         // Crea e regola le opzioni di modifica: imposta il 2 ° foglio di lavoro su modifica

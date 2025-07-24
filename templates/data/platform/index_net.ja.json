@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "C＃.NETドキュメント編集API | pdf、word、excel、epubを編集します",
-    "description": "C＃.NETドキュメント編集APIは、PDF、Microsoft Word、Excel、プレゼンテーション、Visio、および画像形式からドキュメントページを編集、翻訳、および保存します。"
+    "title": "C＃.NETドキュメント編集API | PDF、Word、Excel、PowerPointを編集します",
+    "description": "C＃.NETドキュメント編集APIへの編集PDF、Microsoft Word、Excel、PowerPoint、電子ブック、電子メール形式のドキュメントページを編集、翻訳、保存"
   },
   "header": {
     "title_1": "ドキュメントを編集します",
     "title_2": ".NET API経由",
-    "description": "PDF、Microsoft Office、HTML、およびImageファイルを操作する強力なエディターAPI。",
+    "description": "Microsoft Office、PDF、HTML、電子書籍、電子メールファイルを操作する強力な編集者API。",
     "words": {
       "for": "のために"
     }
@@ -23,15 +23,16 @@
     "downloads": "ダウンロード"
   },
   "overview": {
-    "title": "GroupDocs.editorは一目で",
-    "description": ".NETアプリケーションでドキュメント、スライド、および図を編集、翻訳、および保存するAPI。",
+    "glance": "一目で",
+    "description": ".NETアプリケーションでドキュメント、スプレッドシート、スライド、電子書籍を編集、変換、保存するAPI。",
     "feature_1": {
       "title": "C＃で複数のドキュメントを簡単に編集する",
-      "description": "幅広いフォーマットをサポートして、複数のPDFおよびオフィスファイルをシームレスに編集します。 .NETのGroupDocs.Editorは、ドキュメントを高速かつ手間のかからないものにします。"
+      "description1": "幅広いフォーマットをサポートして、複数のPDFおよびオフィスファイルをシームレスに編集します。",
+      "description2": "ドキュメントの編集を速く、手間をかけないようにします。"
     },
     "feature_2": {
-      "title": "ドキュメントをHTML/CSSに翻訳します",
-      "description": "ドキュメントをWYSIWYGエディターと互換性のあるHTML/CSSマークアップに翻訳し、Web環境で簡単で効率的なドキュメント編集を可能にします。"
+      "title": "ドキュメントをHTML/CSSに変換します",
+      "description": "ドキュメントをWYSIWYGエディターと互換性のある純粋なHTML/CSSマークアップに変換し、Web環境で簡単で効率的なドキュメント編集を可能にします。"
     },
     "feature_3": {
       "title": "編集されたドキュメントをさまざまな形式で保存します",
@@ -40,20 +41,24 @@
   },
   "formats": {
     "title": "サポートされているファイル形式",
-    "description": ".NETのGroupDocs.editorは、次の[ファイル形式]（https://docs.groupdocs.com/editor/net/supported-document-formats/）で操作をサポートしています。",
+    "description": "GroupDocs.editorは、インポートとエクスポートに関する次のファイル形式で操作をサポートしています",
+    "full_list": "フルリスト",
     "groups": {
       "title_1": "Microsoft Officeフォーマット",
-      "title_2": "ドキュメント",
-      "title_3": "その他の形式",
-      "format_documents": "ドキュメント",
-      "format_images": "画像",
-      "format_web": "ウェブ",
-      "format_archives": "アーカイブ"
+      "title_2": "その他のドキュメント形式",
+      "title_3": "Web関連形式",
+      "fixed_layout": "固定レイアウト形式",
+      "export_only": "エクスポートのみ",
+      "delimited_text_table": "区切られたテキストテーブル",
+      "arbitrary_separator": "任意のセパレーター",
+      "other_tables": "その他のテーブル形式",
+      "format_markup": "マークアップ",
+      "format_email": "電子メール形式"
     }
   },
   "features": {
-    "title": "GroupDocs.Editor機能",
-    "description": "PDFおよびオフィスドキュメントをシームレスに編集、翻訳、保存します。",
+    "features": "主な機能",
+    "description": "さまざまな形式でシームレスにロード、編集、保存します。オフィスドキュメント、電子メール、電子書籍、およびPDF。",
     "feature_1": {
       "title": "ファイルを編集します",
       "content": "PDF、DOCX、XLSX、PPTXなどを含むさまざまなドキュメント形式のコンテンツを編集します。"
@@ -76,15 +81,15 @@
     },
     "feature_6": {
       "title": "パスワード保護",
-      "content": "パスワードで保護されたドキュメントを簡単に編集します。"
+      "content": "パスワードで保護されたドキュメントを簡単にロードおよび編集し、パスワード保護を備えた出力ドキュメントを保護します。"
     },
     "feature_7": {
-      "title": "カスタムドキュメントエンコーディング",
-      "content": "編集および保存プロセス中にドキュメントエンコーディングを指定します。"
+      "title": "メールを編集します",
+      "content": "MSG、EML、EMLX、MBOX、およびメタデータなどのメタデータ、CC、BCC、from、タイトル、日付などの編集など、電子メールメッセージとレターを編集および保存します。"
     },
     "feature_8": {
       "title": "フォント抽出",
-      "content": "編集プロセスで使用するために、ドキュメントからフォントを抽出します。"
+      "content": "編集プロセスで使用するために、WordProcessingドキュメントからフォントを抽出します。"
     },
     "feature_9": {
       "title": "プレビューページ",
@@ -93,27 +98,57 @@
   },
   "code_samples": {
     "title": "コードサンプル",
-    "description": ".NET操作の典型的なGroupDocs.editorのいくつかのユースケース。",
+    "description": "使用した典型的な操作のいくつかのユースケース",
     "sample_1": {
-      "title": "特定のDOCXファイルコンテンツを編集します",
-      "content_1": "[Document Editing]（https://docs.groupdocs.com/editor/net/edit-document/）機能を使用すると、docxファイルを読み込み、編集、保存できます。",
-      "content_2": "C＃を使用してドキュメント編集を実現する方法の例を次に示します。",
-      "code_title": "c＃でdocxファイルを編集する方法"
+      "title": "docxのテキストを置き換えます",
+      "description": "この例は、別のテキストコンテンツを別のテキストコンテンツを置き換えて、入力docxファイルのコンテンツをプログラムで編集して編集することを示しています。その後、変更されたドキュメントコンテンツは新しいDocxドキュメントとして保存されます。",
+      "code_title": "テキストを置き換えて入力docxを編集し、docxに戻します",
+      "comment_1": "パスごとに入力ドキュメントをロードし、必要に応じてロードオプションを指定します",
+      "comment_2": "編集用のドキュメントを開き、「EditableDocument」を取得します",
+      "comment_3": "テキストの交換 - これにより、コンテンツの編集がエミュレートされます",
+      "comment_4": "編集されたコンテンツから新しい「EditableDocument」インスタンスを作成します",
+      "comment_5": "目的の出力formatxを使用して保存オプションを準備します",
+      "comment_6": "編集されたドキュメントコンテンツをDOCXに保存します",
+      "comment_7": "すべてのリソースを処分します"
+    },
+    "sample_4": {
+      "title": "特定のExcelワークシートのコンテンツを編集します",
+      "description": "スプレッドシートドキュメント（XLS、XLSX、XLSM、ODSなど）には、1つ以上のワークシート（タブ）がある場合があります。 GroupDocs.editorでは、1つのワークシートのコンテンツを一度に編集できます。編集後、このワークシートは、個別のスプレッドシートドキュメント（この特定のワークシートのみが保存される場合）に保存するか、編集したワークシートを元のドキュメントに挿入することができます。元のワークシートを置き換えるか、元のワークシートと一緒に保存できます。この例は、XLSXドキュメントの読み込みを示しており、2番目のワークシートを編集し、XLSXおよびCSV形式の新しい個別のドキュメントとして保存しています。",
+      "code_title": "XLSXの特定のワークシートを編集し、XLSXおよびCSVとして保存します",
+      "comment_1": "パスごとにXLSXをロードし、必要に応じてロードオプションを指定します",
+      "comment_2": "編集オプションを作成して調整します-2番目のワークシートを編集するように設定します",
+      "comment_3": "編集するためにこの2番目のワークシートを開き、「EditableDocument」を取得します",
+      "comment_4": "テキストの交換 - これにより、コンテンツの編集がエミュレートされます",
+      "comment_5": "編集されたワークシートから新しい「EditableDocument」インスタンスを作成します",
+      "comment_6": "編集されたワークシートを新しいXLSXドキュメントに保存します",
+      "comment_7": "編集されたワークシートをコンマ（、）デリミッター/セパレーターを使用して新しいCSVドキュメントに保存します",
+      "comment_8": "すべてのリソースを処分します"
     },
     "sample_2": {
-      "title": "単語文書でフォームフィールドを編集します",
-      "content_1": ".NETのgroupdocs.editorを使用して、単語ドキュメント内のフォームフィールドを簡単に編集します。",
-      "content_2": "C＃を使用して、単語ドキュメントでフォームフィールドを編集する方法は次のとおりです。",
-      "code_title": ".NETのgroupDocs.editorを使用して、単語ドキュメントでフォームフィールドを編集する方法"
+      "title": "PDFのテキストを交換します",
+      "description": "この例は、別のテキストコンテンツを置き換えて、入力PDFファイルのコンテンツをプログラムで編集して編集することを示しています。その後、変更されたドキュメントコンテンツが新しいPDFドキュメントとして保存されます。",
+      "code_title": "テキストを置き換えて入力PDFを編集し、PDFに戻します",
+      "comment_1": "パスでPDFファイルをロードし、PDFロードオプションを指定します",
+      "comment_2": "編集用のドキュメントを開き、「EditableDocument」を取得します",
+      "comment_3": "テキストの交換 - これにより、コンテンツの編集がエミュレートされます",
+      "comment_4": "編集されたコンテンツから新しい「EditableDocument」インスタンスを作成します",
+      "comment_5": "編集されたドキュメントコンテンツをPDFに保存します",
+      "comment_6": "すべてのリソースを処分します"
     }
   },
   "platforms": {
     "title": "プラットフォームの独立性",
-    "description": ".NETのGroupDocs.Editorは、次のオペレーティングシステム、フレームワーク、およびパッケージマネージャーをサポートしています。"
+    "description": "次のオペレーティングシステム、フレームワーク、パッケージマネージャーがサポートされています"
   },
   "code": {
-    "title": ".netでドキュメントファイルを編集します",
+    "title": ".NETでドキュメントを編集します",
     "more": "その他の例",
-    "notes": "何が新しいか見てください"
+    "notes": "何が新しいか見てください",
+    "comment_1": "ソースドキュメントをパスして、エディターを初期化します",
+    "comment_2": "編集用のドキュメントを開く",
+    "comment_3": "HTMLとしてドキュメントを取得します",
+    "comment_4": "ドキュメントの内容を編集します",
+    "comment_5": "HTMLから編集されたドキュメントをロードします",
+    "comment_6": "編集されたドキュメントを希望の形式でファイルに保存します"
   }
 }

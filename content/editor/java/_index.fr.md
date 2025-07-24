@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-07-08T14:01:53
+date: 2025-07-24T02:05:35
 draft: false
 
 product: "Editor"
@@ -43,7 +43,7 @@ actions:
 
 release:
   title: "Version {0} publié"
-  notes: "Voir ce qui est nouveau"
+  notes: "Voyez ce qui est nouveau"
   downloads: "Téléchargements"
 
 code:
@@ -189,7 +189,7 @@ features:
     # feature loop
     - icon: "move"
       title: "Enregistrer les documents édités"
-      content: "Enregistrez le HTML / CSS modifié dans le format de document d'origine ou l'exportation vers PDF."
+      content: "Enregistrez le HTML / CSS modifié au format de document d'origine ou à l'exportation vers PDF."
 
     # feature loop
     - icon: "remove"
@@ -259,7 +259,7 @@ code_samples:
     # code sample loop
     - title: "Modifier le contenu de la feuille de travail Excel particulière"
       content: |
-        Le document de feuille de calcul (comme XLS, XLSX, XLSM, ODS et ainsi de suite) peut avoir une ou plusieurs feuilles de calcul (onglets). GroupDocs.Editor permet de modifier le contenu d'une feuille de calcul à la fois. Après avoir été modifiée, cette feuille de calcul peut être enregistrée dans le document de feuille de calcul distinct (où seule cette feuille de travail spécifique sera enregistrée), ou la feuille de calcul éditée peut être insérée dans le document d'origine, où il peut soit remplacer la feuille de travail d'origine ou être enregistrée ensemble, ainsi que l'original. Cet exemple montre le chargement du document XLSX, modifiant sa 2e feuille de calcul et l'enregistrant en tant que nouveau document séparé dans les formats XLSX et CSV.
+        Le document de feuille de calcul (comme XLS, XLSX, XLSM, ODS et ainsi de suite) peut avoir une ou plusieurs feuilles de calcul (onglets). GroupDocs.Editor permet de modifier le contenu d'une feuille de calcul à la fois. Après avoir été modifiée, cette feuille de calcul peut être enregistrée dans le document de feuille de calcul distinct (où seule cette feuille de travail spécifique sera enregistrée), ou la feuille de calcul éditée peut être insérée dans le document d'origine, où il peut soit remplacer la feuille de travail originale ou être enregistré ensemble, ainsi que l'original. Cet exemple montre le chargement du document XLSX, modifiant sa 2e feuille de calcul et l'enregistrant en tant que nouveau document séparé dans les formats XLSX et CSV.
         {{< landing/code title="Modifiez la feuille de travail particulière de XLSX et enregistrez sous le nom de XLSX et CSV">}}
         ```java {style=abap}
         

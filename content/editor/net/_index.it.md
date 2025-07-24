@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-07-08T14:01:53
+date: 2025-07-24T02:05:35
 draft: false
 
 product: "Editor"
@@ -24,17 +24,16 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "C# .NET API di modifica del documento | Modifica PDF, Word, Excel, Epub"
-head_description: "C# .NET DOCUMENTO MODIFICA API per modificare, tradurre e salvare le pagine di documenti da formati PDF, Microsoft Word, Excel, Presentations, Visio e Immagine."
+head_title: "C# .NET API di modifica del documento | Modifica PDF, Word, Excel, PowerPoint"
+head_description: "C# .NET DOCUMENTO MEDIMENTO API per modificare, tradurre e salvare le pagine dei documenti da PDF, Microsoft Word, Excel, PowerPoint, Ebook ed e -mail"
 
 ############################# Header ############################
 title: "Modifica documenti<br>Via API .NET"
-description: "Potente editor API per manipolare i file PDF, Microsoft Office, HTML e Image."
+description: "Potente editor API per manipolare i file di Microsoft Office, PDF, HTML, eBook e e -mail."
 words:
   for: "per"
 
 actions:
-  editor_demo: true
   main: "Download gratuito di Nuget"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
   alt: "Licenze"
@@ -48,28 +47,28 @@ release:
   downloads: "Download"
 
 code:
-  title: "Modifica file di documenti in .NET"
+  title: "Modifica documenti in .NET"
   more: "Altri esempi"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
   install: "dotnet add package GroupDocs.Editor"
   content: |
     ```csharp {style=abap}   
-    // {code.comment_1}
+    // Passa il documento di origine per inizializzare l'editor
     var editor = new Editor("input.docx");
 
-    // {code.comment_2}
+    // Apri documento per modifica
     var originalDoc = editor.Edit();
 
-    // {code.comment_3}
+    // Ottieni documento come HTML
     var srcHtml = originalDoc.GetEmbeddedHtml();
     
-    // {code.comment_4}
+    // Modifica i contenuti del documento
     var editedHtml = srcHtml.Replace("Old text", "New text");
     
-    // {code.comment_5}
+    // Carica documento modificato da HTML
     var editedDoc = EditableDocument.FromMarkup(editedHtml, null);
     
-    // {code.comment_6}
+    // Salva documento modificato su file con il formato desiderato
     var saveOptions = new WordProcessingSaveOptions();
     editor.Save(editedDoc, "output.docx", saveOptions);
     ```
@@ -77,16 +76,16 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor for .NET {overview.glance}"
-  description: "API per modificare, tradurre e salvare documenti, diapositive e diagrammi in applicazioni .NET."
+  title: "GroupDocs.Editor for .NET a colpo d'occhio"
+  description: "API per modificare, convertire e salvare documenti, fogli di calcolo, diapositive ed e-book in applicazioni .NET."
   features:
     # feature loop
     - title: "Modifica senza sforzo più documenti in C#"
-      content: "{overview.feature_1.description1} GroupDocs.Editor for .NET {overview.feature_1.description2}"
+      content: "Modifica perfettamente più file PDF e Office con supporto per una vasta gamma di formati. GroupDocs.Editor for .NET Rende la modifica dei documenti in fretta e senza problemi."
 
     # feature loop
-    - title: "Traduci i documenti in HTML/CSS"
-      content: "Traduci i documenti in markup HTML/CSS compatibile con gli editori WYSIWYG, consentendo una modifica di documenti facile ed efficiente in un ambiente Web."
+    - title: "Converti i documenti in HTML/CSS"
+      content: "Converti i documenti in puro markup HTML/CSS compatibile con gli editori di Wysiwyg, consentendo una modifica di documenti facile ed efficiente in un ambiente Web."
 
     # feature loop
     - title: "Salva documenti modificati in vari formati"
@@ -96,7 +95,7 @@ overview:
 platforms:
   enable: true
   title: "Indipendenza della piattaforma"
-  description: "GroupDocs.Editor per .NET supporta i seguenti sistemi operativi, framework e gestori di pacchetti."
+  description: "I seguenti sistemi operativi, framework e responsabili dei pacchetti sono supportati"
   items:
     # platform loop
     - title: "Amazon"
@@ -129,7 +128,7 @@ formats:
   enable: true
   title: "Formati di file supportati"
   description: |
-    GroupDocs.Editor per .NET supporta le operazioni con i seguenti [formati di file] (https://docs.groupdocs.com/editor/net/supported-document-formats/). ([{formats.full_list}](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
+    GroupDocs.Editor supporta le operazioni con i seguenti formati di file su importazione ed esportazione ([Elenco completo](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
@@ -141,24 +140,24 @@ formats:
     # group loop
     - color: "blue"
       content: |
-        ### Documenti
-        * **{formats.groups.fixed_layout}:** PDF, XPS ({formats.groups.export_only})
+        ### Altri formati di documenti
+        * **Formati a livello fisso:** PDF, XPS (solo esportazione)
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-        * **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
-        * **{formats.groups.other_tables}:** SXC, DIF
+        * **Tabelle di testo delimitate:** CSV, TSV, DSV (separatore arbitrario)
+        * **Altri formati della tabella:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
-        ### Altri formati
-        * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
-        * **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
+        ### Formati relativi al web
+        * **Markup:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
+        * **Formati e -mail:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.features}"
-  description: "Modifica perfettamente, traduci e salva i documenti PDF e Office."
+  title: "Caratteristiche principali"
+  description: "Carica, modifica e salva senza soluzione di continuità in diversi formati di documenti, e -mail, ebook e PDF."
 
   items:
     # feature loop
@@ -189,17 +188,17 @@ features:
     # feature loop
     - icon: "swap"
       title: "Protezione password"
-      content: "Modifica i documenti protetti da password con facilità."
+      content: "Carica e modifica i documenti protetti da password con facilità e proteggendo i documenti di output con protezione da password."
 
     # feature loop
     - icon: "extract"
-      title: "Codifica dei documenti personalizzati"
-      content: "Specificare la codifica dei documenti durante i processi di modifica e salvataggio."
+      title: "Modifica e -mail"
+      content: "Modifica e salva i messaggi di posta elettronica e le lettere in MSG, EML, EMLX, MBOX e molti altri formati, tra cui la modifica dei metadati come soggetto, a, CC, BCC, da, titolo, data e così via."
 
     # feature loop
     - icon: "orientation"
       title: "Estrazione di carattere"
-      content: "Estrai caratteri dai documenti da utilizzare nel processo di modifica."
+      content: "Estrai caratteri da documenti di elaborazione delle parole da utilizzare nel processo di modifica."
 
     # feature loop
     - icon: "preview"
@@ -210,92 +209,92 @@ features:
 code_samples:
   enable: true
   title: "Campioni di codice"
-  description: "Alcuni casi di utilizzo di GroupDocs.Editor tipici per le operazioni .NET. GroupDocs.Editor for .NET"
+  description: "Alcuni casi d'uso di operazioni tipiche utilizzando GroupDocs.Editor for .NET"
   items:
     # code sample loop
-    - title: "Modifica il contenuto specifico del file DOCX"
+    - title: "Sostituisci il testo in DOCX"
       content: |
-        {code_samples.sample_1.description} 
-        {{< landing/code title="Come modificare i file DOCX in C#">}}
+        Questo esempio mostra il caricamento e la modifica di un contenuto del file DOCX di input a livello di programmazione sostituendo il contenuto di testo su un altro. Successivamente il contenuto del documento modificato viene salvato come nuovo documento DOCX. 
+        {{< landing/code title="Modifica Input Docx sostituendo il testo e salvalo su DOCX">}}
         ```csharp {style=abap}
         
-        // {code_samples.sample_1.comment_1}
+        // Carica il documento di ingresso per via e specifica le opzioni di caricamento, se necessario
         Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // {code_samples.sample_1.comment_2}
+        // Apri il documento per Modifica e ottieni il "Documentazione Editad"
         EditableDocument original = editor.Edit();
         
-        // {code_samples.sample_1.comment_3}
+        // Sostituisci il testo: questo emula la modifica del contenuto
         string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
         
-        // {code_samples.sample_1.comment_4}
+        // Crea una nuova istanza "EditaBocument" dal contenuto modificato
         EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_1.comment_5}
+        // Prepara le opzioni di salvataggio con formatx di output desiderato
         WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
         
-        // {code_samples.sample_1.comment_6}
+        // Salva il contenuto del documento modificato su DOCX
         editor.Save(edited, "output.docx", saveOptions);
         
-        // {code_samples.sample_1.comment_7}
+        // Disporre tutte le risorse
         edited.Dispose(); original.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "{code_samples.sample_4.title}"
+    - title: "Modifica il contenuto di particolare foglio di lavoro Excel"
       content: |
-        {code_samples.sample_4.description}
-        {{< landing/code title="{code_samples.sample_4.code_title}">}}
+        Il documento di foglio di calcolo (come XLS, XLSX, XLSM, ODS e così via) può avere uno o più fogli di lavoro (tabs). GroupDocs.Editor consente di modificare il contenuto di un foglio di lavoro alla volta. Dopo essere stato modificato, questo foglio di lavoro può essere salvato nel documento separato del foglio di calcolo (in cui verrà salvato solo questo foglio di lavoro specifico), oppure il foglio di lavoro modificato può essere inserito di nuovo al documento originale, dove può sostituire il foglio di lavoro originale o essere salvato insieme, insieme a quello originale. Questo esempio mostra il caricamento del documento XLSX, modificando il suo secondo foglio di lavoro e salvandolo come nuovo documento separato nei formati XLSX e CSV.
+        {{< landing/code title="Modifica un particolare foglio di lavoro di XLSX e salva come XLSX e CSV">}}
         ```csharp {style=abap}
         
-        // {code_samples.sample_4.comment_1}
+        // INGRESSO DI CARICARE XLSX per via e specificare le opzioni di caricamento, se necessario
         Editor editor = new Editor("input.xlsx", new SpreadsheetLoadOptions());
         
-        // {code_samples.sample_4.comment_2}
+        // Crea e regola le opzioni di modifica: imposta il 2 ° foglio di lavoro su modifica
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions() { WorksheetIndex = 1 } ;
         
-        // {code_samples.sample_4.comment_3}
+        // Apri questo 2 ° foglio di lavoro per modificare e ottenere il "Documentazione editabile"
         EditableDocument originalWorksheet = editor.Edit(editOptions);
         
-        // {code_samples.sample_4.comment_4}
+        // Sostituisci il testo: questo emula la modifica del contenuto
         string modifiedContent = originalWorksheet.GetEmbeddedHtml().Replace("Cell Text", "Edited Cell Text");
         
-        // {code_samples.sample_4.comment_5}
+        // Crea una nuova istanza "EditaBocument" dal foglio di lavoro modificato
         EditableDocument editedWorksheet = EditableDocument.FromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_4.comment_6}
+        // Salva foglio di lavoro modificato al nuovo documento XLSX
         editor.Save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
         
-        // {code_samples.sample_4.comment_7}
+        // Salva foglio di lavoro modificato al nuovo documento CSV con delimitatore/separatore di virgola (,)
         editor.Save(editedWorksheet, "output.csv", new DelimitedTextSaveOptions(","));
         
-        // {code_samples.sample_4.comment_8}
+        // Disporre tutte le risorse
         editedWorksheet.Dispose(); originalWorksheet.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "Modifica i campi del modulo in un documento Word"
+    - title: "Sostituisci il testo in PDF"
       content: |
-        {code_samples.sample_2.description}
-        {{< landing/code title="Come modificare i campi del modulo in un documento Word usando GroupDocs.Editor per .NET">}}
+        Questo esempio mostra il caricamento e la modifica di un contenuto del file PDF di input programmaticamente sostituendo il contenuto di testo su un altro. Successivamente il contenuto del documento modificato viene salvato come nuovo documento PDF.
+        {{< landing/code title="Modifica PDF di input sostituendo il testo e salvalo su PDF">}}
         ```csharp {style=abap}
         
-        // {code_samples.sample_2.comment_1}
+        // Carica il file PDF per via e specifica le opzioni di caricamento PDF
         Editor editor = new Editor("input.pdf", new PdfLoadOptions());
         
-        // {code_samples.sample_2.comment_2}
+        // Apri il documento per Modifica e ottieni il "Documentazione Editad"
         EditableDocument original = editor.Edit();
         
-        // {code_samples.sample_2.comment_3}
+        // Sostituisci il testo: questo emula la modifica del contenuto
         string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
         
-        // {code_samples.sample_2.comment_4}
+        // Crea una nuova istanza "EditaBocument" dal contenuto modificato
         EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_2.comment_5}
+        // Salva contenuto del documento modificato in PDF
         editor.Save(edited, "output.pdf", new PdfSaveOptions());
         
-        // {code_samples.sample_2.comment_6}
+        // Disporre tutte le risorse
         edited.Dispose(); original.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}

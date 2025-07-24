@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-07-08T14:01:53
+date: 2025-07-24T02:05:35
 draft: false
 
 product: "Editor"
@@ -24,52 +24,51 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "{head.title}"
-head_description: "{head.description}"
+head_title: "C# .NET Editing Dokumen API | Edit PDF, Word, Excel, PowerPoint"
+head_description: "C# .NET Mengedit API Dokumen Untuk Mengedit, Menerjemahkan, dan Simpan Halaman Dokumen dari PDF, Microsoft Word, Excel, PowerPoint, Ebook dan Format Email"
 
 ############################# Header ############################
-title: "{header.title_1}<br>{header.title_2}"
-description: "{header.description}"
+title: "Edit dokumen<br>via .net API"
+description: "API editor yang kuat untuk memanipulasi Microsoft Office, PDF, HTML, eBook dan file email."
 words:
-  for: "{header.words.for}"
+  for: "untuk"
 
 actions:
-  editor_demo: true
-  main: "{actions.main}"
+  main: "Unduh nuget gratis"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
-  alt: "{actions.alt}"
+  alt: "Lisensi"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/net"
-  title: "{actions.title}"
-  description: "{actions.description}"
+  title: "Siap Memulai?"
+  description: "Coba Fitur GroupDocs.Editor secara gratis atau minta lisensi."
 
 release:
-  title: "{release.title}"
-  notes: "{release.notes}"
-  downloads: "{release.downloads}"
+  title: "Versi {0} dirilis"
+  notes: "Lihat apa yang baru"
+  downloads: "Unduhan"
 
 code:
-  title: "{code.title}"
-  more: "{code.more}"
+  title: "Edit dokumen di .net"
+  more: "Lebih banyak contoh"
   more_link: "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET"
   install: "dotnet add package GroupDocs.Editor"
   content: |
     ```csharp {style=abap}   
-    // {code.comment_1}
+    // Dokumen sumber lulus untuk menginisialisasi editor
     var editor = new Editor("input.docx");
 
-    // {code.comment_2}
+    // Buka dokumen untuk edit
     var originalDoc = editor.Edit();
 
-    // {code.comment_3}
+    // Dapatkan dokumen sebagai HTML
     var srcHtml = originalDoc.GetEmbeddedHtml();
     
-    // {code.comment_4}
+    // Edit Isi Dokumen
     var editedHtml = srcHtml.Replace("Old text", "New text");
     
-    // {code.comment_5}
+    // Memuat dokumen yang diedit dari html
     var editedDoc = EditableDocument.FromMarkup(editedHtml, null);
     
-    // {code.comment_6}
+    // Simpan dokumen yang diedit untuk diajukan dengan format yang diinginkan
     var saveOptions = new WordProcessingSaveOptions();
     editor.Save(editedDoc, "output.docx", saveOptions);
     ```
@@ -77,26 +76,26 @@ code:
 ############################# Overview ############################
 overview:
   enable: true
-  title: "GroupDocs.Editor for .NET {overview.glance}"
-  description: "{overview.description}"
+  title: "GroupDocs.Editor for .NET sekilas"
+  description: "API untuk mengedit, mengonversi, dan menyimpan dokumen, spreadsheet, slide, dan e-book dalam aplikasi .net."
   features:
     # feature loop
-    - title: "{overview.feature_1.title}"
-      content: "{overview.feature_1.description1} GroupDocs.Editor for .NET {overview.feature_1.description2}"
+    - title: "Edit dengan mudah mengedit beberapa dokumen di C#"
+      content: "Mengedit beberapa file PDF dan kantor dengan mulus dengan berbagai format. GroupDocs.Editor for .NET Membuat pengeditan dokumen cepat dan bebas repot."
 
     # feature loop
-    - title: "{overview.feature_2.title}"
-      content: "{overview.feature_2.description}"
+    - title: "Konversi dokumen ke HTML/CSS"
+      content: "Konversi dokumen ke markup HTML/CSS murni yang kompatibel dengan editor WYSIWYG, memungkinkan pengeditan dokumen yang mudah dan efisien di lingkungan web."
 
     # feature loop
-    - title: "{overview.feature_3.title}"
-      content: "{overview.feature_3.description}"
+    - title: "Simpan dokumen yang diedit dalam berbagai format"
+      content: "Simpan dokumen yang diedit kembali ke format aslinya atau ekspornya ke format lain seperti PDF, memastikan fleksibilitas dan kompatibilitas."
 
 ############################# Platforms ############################
 platforms:
   enable: true
-  title: "{platforms.title}"
-  description: "{platforms.description}"
+  title: "Kemandirian platform"
+  description: "Mengikuti sistem operasi, kerangka kerja, dan manajer paket didukung"
   items:
     # platform loop
     - title: "Amazon"
@@ -127,175 +126,175 @@ platforms:
 ############################# File formats ############################
 formats:
   enable: true
-  title: "{formats.title}"
+  title: "Format file yang didukung"
   description: |
-    {formats.description} ([{formats.full_list}](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
+    GroupDocs.editor mendukung operasi dengan format file berikut tentang impor dan ekspor ([Daftar Lengkap](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
       content: |
-        ### {formats.groups.title_1}
+        ### Format Microsoft Office
         * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF
         * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLTX, XLT, XLAM
         * **PowerPoint:** PPT, PPTX, PPS, PPSX
     # group loop
     - color: "blue"
       content: |
-        ### {formats.groups.title_2}
-        * **{formats.groups.fixed_layout}:** PDF, XPS ({formats.groups.export_only})
+        ### Format dokumen lainnya
+        * **Format Lapisan Tetap:** PDF, XPS (hanya ekspor)
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
-        * **{formats.groups.delimited_text_table}:** CSV, TSV, DSV ({formats.groups.arbitrary_separator})
-        * **{formats.groups.other_tables}:** SXC, DIF
+        * **Tabel teks yang dibatasi:** CSV, TSV, DSV (pemisah sewenang -wenang)
+        * **Format tabel lainnya:** SXC, DIF
         * **eBook:** ePub, AZW3, Mobi, TXT
       # group loop
     - color: "red"
       content: |
-        ### {formats.groups.title_3}
-        * **{formats.groups.format_markup}:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
-        * **{formats.groups.format_email}:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
+        ### Format terkait web
+        * **Markup:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
+        * **Format email:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
 ############################# Features ############################
 features:
   enable: true
-  title: "{features.features}"
-  description: "{features.description}"
+  title: "Fitur utama"
+  description: "Memuat, mengedit dan menyimpan berbagai format dokumen, email, ebooks, dan PDF format yang berbeda."
 
   items:
     # feature loop
     - icon: "merge"
-      title: "{features.feature_1.title}"
-      content: "{features.feature_1.content}"
+      title: "Edit file"
+      content: "Edit konten berbagai format dokumen termasuk PDF, DOCX, XLSX, PPTX, dan banyak lagi."
 
     # feature loop
     - icon: "split"
-      title: "{features.feature_2.title}"
-      content: "{features.feature_2.content}"
+      title: "Terjemahkan ke HTML/CSS"
+      content: "Konversi dokumen ke html/css untuk mengedit mudah dengan editor wysiwyg seperti ckeditor atau tinymce."
 
     # feature loop
     - icon: "move"
-      title: "{features.feature_3.title}"
-      content: "{features.feature_3.content}"
+      title: "Simpan dokumen yang diedit"
+      content: "Simpan HTML/CSS yang diedit kembali ke format dokumen asli atau ekspor ke PDF."
 
     # feature loop
     - icon: "remove"
-      title: "{features.feature_4.title}"
-      content: "{features.feature_4.content}"
+      title: "Ekstrak informasi dokumen"
+      content: "Ekstrak informasi seperti jumlah halaman, ukuran, dan status enkripsi dari dokumen."
 
     # feature loop
     - icon: "rotate"
-      title: "{features.feature_5.title}"
-      content: "{features.feature_5.content}"
+      title: "Dukungan untuk berbagai format"
+      content: "Edit berbagai format dokumen termasuk file Microsoft Office, PDF, dan banyak lagi."
 
     # feature loop
     - icon: "swap"
-      title: "{features.feature_6.title}"
-      content: "{features.feature_6.content}"
+      title: "Perlindungan kata sandi"
+      content: "Muat dan edit dokumen yang dilindungi kata sandi dengan mudah, dan melindungi dokumen output dengan perlindungan kata sandi."
 
     # feature loop
     - icon: "extract"
-      title: "{features.feature_7.title}"
-      content: "{features.feature_7.content}"
+      title: "Edit email"
+      content: "Edit dan simpan pesan dan surat email dalam MSG, EML, EMLX, MBox dan banyak format lainnya, termasuk mengedit metadata seperti subjek, ke, CC, BCC, dari, judul, tanggal dan sebagainya."
 
     # feature loop
     - icon: "orientation"
-      title: "{features.feature_8.title}"
-      content: "{features.feature_8.content}"
+      title: "Ekstraksi font"
+      content: "Ekstrak font dari dokumen WordProcessing untuk digunakan dalam proses pengeditan."
 
     # feature loop
     - icon: "preview"
-      title: "{features.feature_9.title}"
-      content: "{features.feature_9.content}"
+      title: "Halaman pratinjau"
+      content: "Hasilkan representasi gambar dari halaman dokumen untuk lebih memahami konten dan struktur."
 
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "{code_samples.title}"
-  description: "{code_samples.description} GroupDocs.Editor for .NET"
+  title: "Sampel kode"
+  description: "Beberapa menggunakan kasus operasi khas menggunakan GroupDocs.Editor for .NET"
   items:
     # code sample loop
-    - title: "{code_samples.sample_1.title}"
+    - title: "Ganti teks di Docx"
       content: |
-        {code_samples.sample_1.description} 
-        {{< landing/code title="{code_samples.sample_1.code_title}">}}
+        Contoh ini menunjukkan memuat dan mengedit konten file input DOCX secara terprogram dengan mengganti konten teks di yang lain. Setelah itu konten dokumen yang dimodifikasi disimpan kembali sebagai dokumen DOCX baru. 
+        {{< landing/code title="Edit input docx dengan mengganti teks dan simpan kembali ke docx">}}
         ```csharp {style=abap}
         
-        // {code_samples.sample_1.comment_1}
+        // Muat dokumen input berdasarkan jalur dan tentukan opsi beban jika perlu
         Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // {code_samples.sample_1.comment_2}
+        // Buka dokumen untuk diedit dan dapatkan "EditableDocument"
         EditableDocument original = editor.Edit();
         
-        // {code_samples.sample_1.comment_3}
+        // Ganti Teks - Ini meniru pengeditan konten
         string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
         
-        // {code_samples.sample_1.comment_4}
+        // Buat instance "EditableDocument" baru dari konten yang diedit
         EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_1.comment_5}
+        // Siapkan opsi simpan dengan format output yang diinginkan
         WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docx);
         
-        // {code_samples.sample_1.comment_6}
+        // Simpan Konten Dokumen yang Diedit ke Docx
         editor.Save(edited, "output.docx", saveOptions);
         
-        // {code_samples.sample_1.comment_7}
+        // Buang semua sumber daya
         edited.Dispose(); original.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "{code_samples.sample_4.title}"
+    - title: "Edit konten lembar kerja Excel tertentu"
       content: |
-        {code_samples.sample_4.description}
-        {{< landing/code title="{code_samples.sample_4.code_title}">}}
+        Dokumen spreadsheet (seperti XLS, XLSX, XLSM, ODS dan sebagainya) mungkin memiliki satu atau lebih lembar kerja (tab). GroupDocs.editor memungkinkan untuk mengedit konten satu lembar kerja sekaligus. Setelah diedit, lembar kerja ini dapat disimpan ke dokumen spreadsheet terpisah (di mana hanya lembar kerja khusus ini yang akan disimpan), atau lembar kerja yang diedit dapat dimasukkan kembali ke dokumen asli, di mana ia dapat menggantikan lembar kerja asli atau disimpan bersama, bersama dengan yang asli. Contoh ini menunjukkan memuat dokumen XLSX, mengedit lembar kerja ke -2 dan menyimpannya sebagai dokumen terpisah baru dalam format XLSX dan CSV.
+        {{< landing/code title="Edit lembar kerja khusus XLSX dan simpan sebagai XLSX dan CSV">}}
         ```csharp {style=abap}
         
-        // {code_samples.sample_4.comment_1}
+        // Muat input xlsx dengan path dan tentukan opsi beban jika perlu
         Editor editor = new Editor("input.xlsx", new SpreadsheetLoadOptions());
         
-        // {code_samples.sample_4.comment_2}
+        // Buat dan sesuaikan opsi edit - atur lembar kerja ke -2 untuk diedit
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions() { WorksheetIndex = 1 } ;
         
-        // {code_samples.sample_4.comment_3}
+        // Buka lembar kerja ke -2 ini untuk diedit dan dapatkan "EditableDocument"
         EditableDocument originalWorksheet = editor.Edit(editOptions);
         
-        // {code_samples.sample_4.comment_4}
+        // Ganti Teks - Ini meniru pengeditan konten
         string modifiedContent = originalWorksheet.GetEmbeddedHtml().Replace("Cell Text", "Edited Cell Text");
         
-        // {code_samples.sample_4.comment_5}
+        // Buat instance "EditableDocument" baru dari lembar kerja yang diedit
         EditableDocument editedWorksheet = EditableDocument.FromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_4.comment_6}
+        // Simpan lembar kerja yang diedit ke dokumen XLSX baru
         editor.Save(editedWorksheet, "output.xlsx", new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsx));
         
-        // {code_samples.sample_4.comment_7}
+        // Simpan Lembar Kerja yang Diedit ke Dokumen CSV Baru dengan Pembatas/Pemisah Koma (,)
         editor.Save(editedWorksheet, "output.csv", new DelimitedTextSaveOptions(","));
         
-        // {code_samples.sample_4.comment_8}
+        // Buang semua sumber daya
         editedWorksheet.Dispose(); originalWorksheet.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
     # code sample loop
-    - title: "{code_samples.sample_2.title}"
+    - title: "Ganti teks dalam pdf"
       content: |
-        {code_samples.sample_2.description}
-        {{< landing/code title="{code_samples.sample_2.code_title}">}}
+        Contoh ini menunjukkan memuat dan mengedit konten file input PDF secara terprogram dengan mengganti konten teks di yang lain. Setelah itu konten dokumen yang dimodifikasi disimpan kembali sebagai dokumen PDF baru.
+        {{< landing/code title="Edit input PDF dengan mengganti teks dan simpan kembali ke PDF">}}
         ```csharp {style=abap}
         
-        // {code_samples.sample_2.comment_1}
+        // Muat File PDF demi Path dan tentukan Opsi Muat PDF
         Editor editor = new Editor("input.pdf", new PdfLoadOptions());
         
-        // {code_samples.sample_2.comment_2}
+        // Buka dokumen untuk diedit dan dapatkan "EditableDocument"
         EditableDocument original = editor.Edit();
         
-        // {code_samples.sample_2.comment_3}
+        // Ganti Teks - Ini meniru pengeditan konten
         string modifiedContent = original.GetEmbeddedHtml().Replace("old text", "new text");
         
-        // {code_samples.sample_2.comment_4}
+        // Buat instance "EditableDocument" baru dari konten yang diedit
         EditableDocument edited = EditableDocument.FromMarkup(modifiedContent, null);
         
-        // {code_samples.sample_2.comment_5}
+        // Simpan konten dokumen yang diedit ke PDF
         editor.Save(edited, "output.pdf", new PdfSaveOptions());
         
-        // {code_samples.sample_2.comment_6}
+        // Buang semua sumber daya
         edited.Dispose(); original.Dispose(); editor.Dispose();
         ```
         {{< /landing/code >}}
