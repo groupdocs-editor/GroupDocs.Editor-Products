@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-07-24T11:21:55
+date: 2025-07-24T22:20:45
 draft: false
 
 product: "Editor"
@@ -68,7 +68,7 @@ code:
     </repositories>
   content: |
     ```java {style=abap}   
-    // Пропустите исходный документ, чтобы инициализировать редактор
+    // Указать исходный документ, чтобы инициализировать редактор
     Editor editor = new Editor("input.docx");
 
     // Открыть документ для редактирования
@@ -80,10 +80,10 @@ code:
     // Редактировать содержимое документа
     String editedHtml = srcHtml.replace("Old text", "New text");
     
-    // Загрузка отредактированного документа из HTML
+    // Загрузить отредактированный документ из HTML
     EditableDocument editedDoc = EditableDocument.fromMarkup(editedHtml, null);
     
-    // Сохранить отредактированный документ для файла с помощью желаемого формата
+    // Сохранить отредактированный документ в файла желаемого формата
     WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions();
     editor.save(editedDoc, "output.docx", saveOptions);
     ```
@@ -110,7 +110,7 @@ overview:
 platforms:
   enable: true
   title: "Независимость платформы"
-  description: "GroupDocs.editor для Java поддерживает следующие операционные системы, фреймворки и менеджеры пакетов."
+  description: "GroupDocs.Editor для Java поддерживает следующие операционные системы, фреймворки и менеджеры пакетов."
   items:
     # platform loop
     - title: "Amazon"

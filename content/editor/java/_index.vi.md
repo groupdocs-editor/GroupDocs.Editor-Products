@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-07-24T11:21:56
+date: 2025-07-24T22:20:45
 draft: false
 
 product: "Editor"

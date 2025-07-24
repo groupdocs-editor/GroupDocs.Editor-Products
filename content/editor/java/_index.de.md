@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-08-24T11:21:55
+date: 2025-07-24T22:20:45
 draft: false
 
 product: "Editor"
@@ -237,7 +237,7 @@ code_samples:
         // Laden Sie das Eingabedokument nach Pfad und geben Sie bei Bedarf Lastoptionen an
         Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // Öffnen Sie das Dokument für Bearbeiten und erhalten Sie das "EditableDObocument".
+        // Öffnen Sie das Dokument für Bearbeiten und erhalten Sie das "EditableDocument".
         EditableDocument original = editor.edit();
         
         // Text ersetzen - Dies emuliert die Inhaltsbearbeitung
@@ -270,7 +270,7 @@ code_samples:
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions();
         editOptions.setWorksheetIndex(1);
         
-        // Öffnen Sie dieses zweite Arbeitsblatt für Bearbeiten und erhalten Sie das "EditableDableDocument"
+        // Öffnen Sie dieses zweite Arbeitsblatt für Bearbeiten und erhalten Sie das "EditableDocument"
         EditableDocument originalWorksheet = editor.edit(editOptions);
         
         // Text ersetzen - Dies emuliert die Inhaltsbearbeitung

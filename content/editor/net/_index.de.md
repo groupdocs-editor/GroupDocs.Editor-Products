@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-06-24T11:21:55
+date: 2025-07-24T22:20:45
 draft: false
 
 product: "Editor"
@@ -221,7 +221,7 @@ code_samples:
         // Laden Sie das Eingabedokument nach Pfad und geben Sie bei Bedarf Lastoptionen an
         Editor editor = new Editor("input.docx", new WordProcessingLoadOptions());
         
-        // Öffnen Sie das Dokument für Bearbeiten und erhalten Sie das "EditableDObocument".
+        // Öffnen Sie das Dokument für Bearbeiten und erhalten Sie das "EditableDocument".
         EditableDocument original = editor.Edit();
         
         // Text ersetzen - Dies emuliert die Inhaltsbearbeitung
@@ -253,7 +253,7 @@ code_samples:
         // Erstellen und passen Sie die Bearbeitungsoptionen an - Stellen Sie das zweite Arbeitsblatt auf das Bearbeiten ein
         SpreadsheetEditOptions editOptions = new SpreadsheetEditOptions() { WorksheetIndex = 1 } ;
         
-        // Öffnen Sie dieses zweite Arbeitsblatt für Bearbeiten und erhalten Sie das "EditableDableDocument"
+        // Öffnen Sie dieses zweite Arbeitsblatt für Bearbeiten und erhalten Sie das "EditableDocument"
         EditableDocument originalWorksheet = editor.Edit(editOptions);
         
         // Text ersetzen - Dies emuliert die Inhaltsbearbeitung
@@ -282,7 +282,7 @@ code_samples:
         // Laden Sie die PDF -Datei nach Pfad und geben Sie PDF -Lastoptionen an
         Editor editor = new Editor("input.pdf", new PdfLoadOptions());
         
-        // Öffnen Sie das Dokument für Bearbeiten und erhalten Sie das "EditableDObocument".
+        // Öffnen Sie das Dokument für Bearbeiten und erhalten Sie das "EditableDocument".
         EditableDocument original = editor.Edit();
         
         // Text ersetzen - Dies emuliert die Inhaltsbearbeitung

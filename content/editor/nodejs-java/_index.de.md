@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-07-24T11:21:55
+date: 2025-07-24T22:20:45
 draft: false
 
 product: "Editor"
@@ -223,7 +223,7 @@ code_samples:
         const loadOptions = new WordProcessingLoadOptions();
         const editor = new Editor("input.docx", loadOptions);
         
-        // Öffnen Sie das Dokument für Bearbeiten und erhalten Sie das "EditableDObocument".
+        // Öffnen Sie das Dokument für Bearbeiten und erhalten Sie das "EditableDocument".
         const original = editor.edit();
         
         // Text ersetzen - Dies emuliert die Inhaltsbearbeitung
@@ -257,7 +257,7 @@ code_samples:
         const editOptions = new SpreadsheetEditOptions();
         editOptions.setWorksheetIndex(1);
         
-        // Öffnen Sie dieses zweite Arbeitsblatt für Bearbeiten und erhalten Sie das "EditableDableDocument"
+        // Öffnen Sie dieses zweite Arbeitsblatt für Bearbeiten und erhalten Sie das "EditableDocument"
         const originalWorksheet = editor.edit(editOptions);
         
         // Text ersetzen - Dies emuliert die Inhaltsbearbeitung
