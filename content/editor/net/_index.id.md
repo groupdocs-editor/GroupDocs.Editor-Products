@@ -34,6 +34,7 @@ words:
   for: "untuk"
 
 actions:
+  editor_demo: true
   main: "Unduh nuget gratis"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
   alt: "Lisensi"

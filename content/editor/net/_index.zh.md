@@ -34,6 +34,7 @@ words:
   for: "为了"
 
 actions:
+  editor_demo: true
   main: "免费下载"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
   alt: "许可"

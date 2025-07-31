@@ -34,6 +34,7 @@ words:
   for: "สำหรับ"
 
 actions:
+  editor_demo: true
   main: "ดาวน์โหลด Nuget ฟรี"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
   alt: "การออกใบอนุญาต"

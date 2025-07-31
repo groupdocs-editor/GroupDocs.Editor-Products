@@ -34,6 +34,7 @@ words:
   for: "vì"
 
 actions:
+  editor_demo: true
   main: "Tải xuống nuget miễn phí"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
   alt: "Cấp phép"

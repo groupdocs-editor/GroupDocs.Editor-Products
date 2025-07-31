@@ -34,6 +34,7 @@ words:
   for: "برای"
 
 actions:
+  editor_demo: true
   main: "بارگیری رایگان Nuget"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
   alt: "مجوز"
