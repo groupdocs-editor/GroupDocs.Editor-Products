@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-07-24T22:20:45
+date: 2025-08-01T11:17:43
 draft: false
 
 product: "Editor"
@@ -34,6 +34,7 @@ words:
   for: "~을 위한"
 
 actions:
+  editor_demo: true
   main: "무료 NPM 다운로드"
   main_link: "https://releases.groupdocs.com/editor/nodejs-java/"
   alt: "라이센스"

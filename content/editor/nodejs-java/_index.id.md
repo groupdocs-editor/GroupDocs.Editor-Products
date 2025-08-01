@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-07-24T22:20:45
+date: 2025-08-01T11:17:43
 draft: false
 
 product: "Editor"
@@ -34,6 +34,7 @@ words:
   for: "untuk"
 
 actions:
+  editor_demo: true
   main: "Unduh NPM GRATIS"
   main_link: "https://releases.groupdocs.com/editor/nodejs-java/"
   alt: "Lisensi"

@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-07-24T22:20:44
+date: 2025-08-01T11:17:43
 draft: false
 
 product: "Editor"
@@ -34,6 +34,7 @@ words:
   for: "for"
 
 actions:
+  editor_demo: true
   main: "Free Maven Download"
   main_link: "https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-editor/"
   alt: "Licensing"

@@ -34,6 +34,7 @@ words:
   for: "<% "{header.words.for}" %>"
 
 actions:
+  editor_demo: true
   main: "<% "{actions.main}" %>"
   main_link: "<% dict "products.{product}.main_link" %>"
   alt: "<% "{actions.alt}" %>"

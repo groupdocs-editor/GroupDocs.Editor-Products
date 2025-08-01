@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-07-24T22:20:45
+date: 2025-08-01T11:17:44
 draft: false
 
 product: "Editor"
@@ -24,23 +24,23 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "C# .NET API редагування документа | Редагувати PDF, Word, Excel, Epub"
+head_title: "C# .NET API для редагування документа | Редагувати PDF, Word, Excel, Epub"
 head_description: "C# .NET API редагування документів для редагування, перекладу та збереження сторінок документів із PDF, Microsoft Word, Excel, презентації, Visio та форматів зображень."
 
 ############################# Header ############################
 title: "Редагувати документи<br>через .NET API"
-description: "Потужний редактор API для маніпулювання PDF, Microsoft Office, HTML та файлів зображень."
+description: "Потужний редактор API для маніпулювання PDF, Microsoft Office, HTML та електронними листами."
 words:
   for: "для"
 
 actions:
   editor_demo: true
-  main: "Безкоштовне завантаження Nuget"
+  main: "Безкоштовне завантаження через NuGet"
   main_link: "https://www.nuget.org/packages/GroupDocs.editor"
   alt: "Ліцензування"
   alt_link: "https://purchase.groupdocs.com/pricing/editor/net"
   title: "Готові розпочати?"
-  description: "Спробуйте функції groupdocs.editor безкоштовно або подайте запит на ліцензію."
+  description: "Спробуйте функції GroupDocs.Editor безкоштовно або подайте запит на ліцензію."
 
 release:
   title: "Версія {0} випущена"
@@ -78,7 +78,7 @@ code:
 overview:
   enable: true
   title: "GroupDocs.Editor for .NET з першого погляду"
-  description: "API для редагування, перекладу та збереження документів, слайдів та діаграм у .NET додатків."
+  description: "API для редагування, перекладу та збереження документів, слайдів та електронних таблиць у .NET додатках."
   features:
     # feature loop
     - title: "Без особливих зусиль редагувати кілька документів у C#"
@@ -86,11 +86,11 @@ overview:
 
     # feature loop
     - title: "Перетворити документи в HTML/CSS"
-      content: "Перетворити документи в чисту розмітку HTML/CSS, сумісну з редакторами WYSIWYG, що дозволяє легко та ефективно редагувати документи у веб -середовищі."
+      content: "Перетворити документи в чисту HTML/CSS-розмітку, сумісну з редакторами WYSIWYG, що дозволяє легко та ефективно редагувати документи у веб-середовищі."
 
     # feature loop
     - title: "Зберегти відредаговані документи в різних форматах"
-      content: "Збережіть свої відредаговані документи до їх первісного формату або експортуйте їх на інші формати, такі як PDF, забезпечуючи гнучкість та сумісність."
+      content: "Збережіть свої відредаговані документи у їх оригінальному форматі або ж експортуйте їх в інші формати, такі як PDF, забезпечуючи гнучкість та сумісність."
 
 ############################# Platforms ############################
 platforms:
@@ -129,7 +129,7 @@ formats:
   enable: true
   title: "Підтримувані формати файлів"
   description: |
-    GroupDocs.editor підтримує операції з наступними форматами файлів щодо імпорту та експорту ([Повний список](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
+    GroupDocs.Editor підтримує операції з наступними форматами файлів щодо імпорту та експорту ([Повний список](https://docs.groupdocs.com/editor/net/supported-document-formats/)).
   groups:
     # group loop
     - color: "green"
@@ -142,7 +142,7 @@ formats:
     - color: "blue"
       content: |
         ### Інші формати документів
-        * **Форми з фіксованим шарами:** PDF, XPS (лише експорт)
+        * **Формати з фіксованою компоновкою:** PDF, XPS (лише експорт)
         * **OpenDocument:** ODT, OTT, ODS, FODS, ODP, OTP, FODP
         * **Розмежовані текстові таблиці:** CSV, TSV, DSV (довільний сепаратор)
         * **Інші формати таблиці:** SXC, DIF
@@ -150,7 +150,7 @@ formats:
       # group loop
     - color: "red"
       content: |
-        ### Формати, пов'язані з веб-сайтом
+        ### Формати, пов'язані з вебом
         * **Розмітка:**  HTML, MHTML, Markdown (MD), XML, CHM, JSON
         * **Формати електронної пошти:**  EML, EMLX, MSG, MBOX, TNEF, MHT, PST, OFT, OST, VCF, ICS
 
