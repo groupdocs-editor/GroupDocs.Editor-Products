@@ -1,11 +1,11 @@
 {
   "head": {
-    "title": "Document Editing Solution | On Premise APIs & Free App",
-    "description": "Edit MS Office, OpenDocument, PDF images & other File Formats using On Premise Solution or use the Online Document Editor App."
+    "title": "Document Editor SDK | On Premise APIs & Free App",
+    "description": "Edit MS Office, OpenDocument, PDF images & other File Formats using Document Editor SDK or use the Online Document Editor App."
   },
   "header": {
     "title": "Edit and manage documents with ease",
-    "description_1": "Document editor to manipulate Microsoft Office, OpenOffice, PDF, HTML, and other document file formats.",
+    "description_1": "Document Editor SDK to manipulate Microsoft Office, OpenOffice, PDF, HTML, and other document file formats.",
     "description_2": "Create new documents from scratch.",
     "description_3": "Easily manage form fields within documents."
   },

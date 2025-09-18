@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-08-01T11:17:43
+date: 2025-09-18T13:04:44
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "C# .NET 문서 편집 API | PDF, Word, Excel, PowerPoint 편집"
-head_description: "c# .net 문서 편집 API 편집, 변환 및 PDF, Microsoft Word, Excel, PowerPoint, eBook 및 이메일 형식에서 문서 페이지를 편집, 번역 및 저장"
+head_title: "C# .NET 문서 편집기 API | PDF, Word, Excel, PowerPoint 편집"
+head_description: "C# .NET 문서 편집기 API, PDF, Microsoft Word, Excel, PowerPoint, eBook 및 이메일 형식에서 문서 페이지를 편집, 번역 및 저장합니다."
 
 ############################# Header ############################
 title: "문서 편집<br>.NET API를 통해"
-description: "Microsoft Office, PDF, HTML, 전자 책 및 이메일 파일을 조작하는 강력한 편집자 API."
+description: "Microsoft Office, PDF, HTML, 전자 책 및 이메일 파일을 조작하기위한 강력한 .NET 문서 편집기 API."
 words:
   for: "~을 위한"
 

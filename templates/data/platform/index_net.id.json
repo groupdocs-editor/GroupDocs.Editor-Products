@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "C# .NET Editing Dokumen API | Edit PDF, Word, Excel, PowerPoint",
-    "description": "C# .NET Mengedit API Dokumen Untuk Mengedit, Menerjemahkan, dan Simpan Halaman Dokumen dari PDF, Microsoft Word, Excel, PowerPoint, Ebook dan Format Email"
+    "title": "C# .NET Editor Dokumen API | Edit PDF, Word, Excel, PowerPoint",
+    "description": "C# .NET Editor Dokumen API Untuk Mengedit, Menerjemahkan, dan Simpan Halaman Dokumen dari PDF, Microsoft Word, Excel, PowerPoint, Ebook dan Format Email"
   },
   "header": {
     "title_1": "Edit dokumen",
     "title_2": "via .net API",
-    "description": "API editor yang kuat untuk memanipulasi Microsoft Office, PDF, HTML, eBook dan file email.",
+    "description": "Editor dokumen .NET editor API untuk memanipulasi Microsoft Office, PDF, HTML, eBook dan file email.",
     "words": {
       "for": "untuk"
     }

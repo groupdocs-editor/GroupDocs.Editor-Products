@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "Node.js Document Editing API | Edit PDF, Word, Excel, PowerPoint",
-    "description": "Node.js document editing API to load, edit and save document pages from PDF, Microsoft Word, Excel, PowerPoint, eBook and email formats."
+    "title": "Node.js Document Editor API | Edit PDF, Word, Excel, PowerPoint",
+    "description": "Node.js document editor API to load, edit and save document pages from PDF, Microsoft Word, Excel, PowerPoint, eBook and email formats."
   },
   "header": {
     "title_1": "Edit documents",
     "title_2": "via Node.js API",
-    "description": "Powerful editor API to manipulate Microsoft Office, PDF, HTML, eBook and email files.",
+    "description": "Powerful Node.js Document Editor API to manipulate Microsoft Office, PDF, HTML, eBook and email files.",
     "words": {
       "for": "for"
     }

@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-08-01T11:17:43
+date: 2025-09-18T13:04:44
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "C# .NET DOCUDE ویرایش API | ویرایش PDF ، Word ، Excel ، PowerPoint"
-head_description: "C# .NET Document ویرایش API برای ویرایش ، ترجمه و ذخیره صفحات سند از PDF ، Microsoft Word ، Excel ، PowerPoint ، Ebook و Formats"
+head_title: "C# .NET Document Editor API | ویرایش PDF ، Word ، Excel ، PowerPoint"
+head_description: "C# .NET Document Editor API برای ویرایش ، ترجمه و ذخیره صفحات سند از PDF ، Microsoft Word ، Excel ، PowerPoint ، کتاب الکترونیکی و ایمیل"
 
 ############################# Header ############################
 title: "اسناد را ویرایش کنید<br>از طریق .NET API"
-description: "ویرایشگر قدرتمند API برای دستکاری Microsoft Office ، PDF ، HTML ، کتاب الکترونیکی و ایمیل."
+description: "ویرایشگر اسناد قدرتمند .NET API برای دستکاری Microsoft Office ، PDF ، HTML ، کتاب الکترونیکی و ایمیل."
 words:
   for: "برای"
 

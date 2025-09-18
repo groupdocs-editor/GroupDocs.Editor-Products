@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "Java -Dokument -Bearbeitung API | Bearbeiten Sie PDF, Wort, Excel, PowerPoint",
-    "description": "Java -Dokument -Bearbeitungs -API zum Laden, Bearbeiten und Speichern von Dokumentseiten von PDF-, Microsoft Word-, Excel-, PowerPoint-, E -Book- und E -Mail -Formaten."
+    "title": "Java -Dokument -Editor API | Bearbeiten Sie PDF, Wort, Excel, PowerPoint",
+    "description": "Java -Dokumenteditor -API zum Laden, Bearbeiten und Speichern von Dokumentseiten von PDF-, Microsoft Word-, Excel-, PowerPoint-, E -Book- und E -Mail -Formaten."
   },
   "header": {
     "title_1": "Dokumente bearbeiten",
     "title_2": "über Java API",
-    "description": "Leistungsstarke Editor -API zur Manipulation von Microsoft Office, PDF-, HTML-, E -Book- und E -Mail -Dateien.",
+    "description": "Leistungsstarke Java -Dokument -Editor -API zur Manipulation von Microsoft Office, PDF, HTML, E -Book und E -Mail -Dateien.",
     "words": {
       "for": "für"
     }

@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "Node.js dokument bearbeiten api | Bearbeiten Sie PDF, Wort, Excel, PowerPoint",
-    "description": "Node.js Dokument -Bearbeitungs -API zum Laden, Bearbeiten und Speichern von Dokumentseiten von PDF-, Microsoft Word-, Excel-, PowerPoint-, E -Book- und E -Mail -Formaten."
+    "title": "Node.js document editor api | Bearbeiten Sie PDF, Wort, Excel, PowerPoint",
+    "description": "Node.js Dokumenteditor -API zum Laden, Bearbeiten und Speichern von Dokumentseiten von PDF-, Microsoft Word-, Excel-, PowerPoint-, E -Book- und E -Mail -Formaten."
   },
   "header": {
     "title_1": "Dokumente bearbeiten",
     "title_2": "über node.js api",
-    "description": "Leistungsstarke Editor -API zur Manipulation von Microsoft Office, PDF-, HTML-, E -Book- und E -Mail -Dateien.",
+    "description": "Leistungsstarke Node.js -Dokumenteditor -API zur Manipulation von Microsoft Office, PDF, HTML, E -Book und E -Mail -Dateien.",
     "words": {
       "for": "für"
     }

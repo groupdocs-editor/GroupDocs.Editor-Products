@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-08-01T11:17:44
+date: 2025-09-18T13:04:44
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "API chỉnh sửa tài liệu Java | Chỉnh sửa PDF, Word, Excel, PowerPoint"
-head_description: "API chỉnh sửa tài liệu Java để tải, chỉnh sửa và lưu các trang tài liệu từ PDF, Microsoft Word, Excel, PowerPoint, Ebook và các định dạng email."
+head_title: "API biên tập tài liệu Java | Chỉnh sửa PDF, Word, Excel, PowerPoint"
+head_description: "API Trình chỉnh sửa tài liệu Java để tải, chỉnh sửa và lưu các trang tài liệu từ PDF, Microsoft Word, Excel, PowerPoint, Ebook và các định dạng email."
 
 ############################# Header ############################
 title: "Chỉnh sửa tài liệu<br>thông qua API Java"
-description: "API Trình chỉnh sửa mạnh mẽ để thao tác với các tệp Microsoft Office, PDF, HTML, ebook và email."
+description: "API Trình chỉnh sửa tài liệu Java mạnh mẽ để thao tác với các tệp Microsoft Office, PDF, HTML, ebook và email."
 words:
   for: "vì"
 

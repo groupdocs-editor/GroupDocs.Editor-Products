@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-08-01T11:17:44
+date: 2025-09-18T13:04:44
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "C# .NET Document Editing API | แก้ไข PDF, Word, Excel, PowerPoint"
-head_description: "C# .NET Document Editing API เพื่อแก้ไขแปลและบันทึกหน้าเอกสารจาก PDF, Microsoft Word, Excel, PowerPoint, ebook และรูปแบบอีเมล"
+head_title: "C# .NET Document Editor API | แก้ไข PDF, Word, Excel, PowerPoint"
+head_description: "C# .NET Document Editor API เพื่อแก้ไขแปลและบันทึกหน้าเอกสารจาก PDF, Microsoft Word, Excel, PowerPoint, ebook และรูปแบบอีเมล"
 
 ############################# Header ############################
 title: "แก้ไขเอกสาร<br>ผ่าน. NET API"
-description: "Editor API ที่ทรงพลังในการจัดการ Microsoft Office, PDF, HTML, ebook และอีเมล"
+description: "ENTEN DOCION EDITOR API ที่ทรงพลังเพื่อจัดการกับ Microsoft Office, PDF, HTML, EBOOK และไฟล์อีเมล"
 words:
   for: "สำหรับ"
 

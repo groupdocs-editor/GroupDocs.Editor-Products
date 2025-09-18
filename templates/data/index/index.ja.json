@@ -1,11 +1,11 @@
 {
   "head": {
-    "title": "ドキュメント編集ソリューション |オンプレミス API と無料アプリ",
-    "description": "オンプレミス ソリューションを使用するか、オンライン ドキュメント エディター アプリを使用して、MS Office、OpenDocument、PDF 画像、その他のファイル形式を編集します。"
+    "title": "ドキュメントエディターSDK |前提apis＆freeアプリ",
+    "description": "Document Editor SDKを使用して、MS Office、OpenDocument、PDF画像、その他のファイル形式を編集するか、オンラインドキュメントエディターアプリを使用します。"
   },
   "header": {
     "title": "ドキュメントの編集と管理が簡単に",
-    "description_1": "Microsoft Office、OpenOffice、PDF、HTML、およびその他のドキュメント ファイル形式を操作するドキュメント エディター。",
+    "description_1": "ドキュメントエディターSDKは、Microsoft Office、OpenOffice、PDF、HTML、およびその他のドキュメントファイル形式を操作します。",
     "description_2": "新しいドキュメントを最初から作成します。",
     "description_3": "ドキュメント内のフォームフィールドを簡単に管理します。"
   },

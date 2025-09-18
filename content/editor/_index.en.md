@@ -1,20 +1,22 @@
 ---
+
+
 ############################# Static ############################
 layout: "family"
-date: 2024-07-12T09:30:06
+date: 2025-09-18T13:04:35
 draft: false
 
 product: "Editor"
 product_tag: "editor"
 
 ############################# Head ############################
-head_title: "Document Editing Solution | On Premise APIs & Free App"
-head_description: "Edit MS Office, OpenDocument, PDF images & other File Formats using On Premise Solution or use the Online Document Editor App."
+head_title: "Document Editor SDK | On Premise APIs & Free App"
+head_description: "Edit MS Office, OpenDocument, PDF images & other File Formats using Document Editor SDK or use the Online Document Editor App."
 
 ############################# Header ############################
 title: "Edit and manage documents with ease"
 description: |
-  Document editor to manipulate Microsoft Office, OpenOffice, PDF, HTML, and other document file formats.
+  Document Editor SDK to manipulate Microsoft Office, OpenOffice, PDF, HTML, and other document file formats.
 
   Create new documents from scratch.
 

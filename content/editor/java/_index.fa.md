@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-08-01T11:17:43
+date: 2025-09-18T13:04:44
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "ویرایش اسناد جاوا API | ویرایش PDF ، Word ، Excel ، PowerPoint"
-head_description: "ویرایش اسناد جاوا API برای بارگیری ، ویرایش و ذخیره صفحات سند از PDF ، Microsoft Word ، Excel ، PowerPoint ، Ebook و ایمیل."
+head_title: "ویرایشگر اسناد جاوا API | ویرایش PDF ، Word ، Excel ، PowerPoint"
+head_description: "ویرایشگر Document Java API برای بارگیری ، ویرایش و ذخیره صفحات سند از PDF ، Microsoft Word ، Excel ، PowerPoint ، Ebook و ایمیل."
 
 ############################# Header ############################
 title: "اسناد را ویرایش کنید<br>از طریق جاوا API"
-description: "ویرایشگر قدرتمند API برای دستکاری Microsoft Office ، PDF ، HTML ، کتاب الکترونیکی و ایمیل."
+description: "ویرایشگر قدرتمند اسناد جاوا API برای دستکاری در Microsoft Office ، PDF ، HTML ، کتاب الکترونیکی و ایمیل."
 words:
   for: "برای"
 

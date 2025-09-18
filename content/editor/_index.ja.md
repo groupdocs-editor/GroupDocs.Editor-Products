@@ -1,20 +1,22 @@
 ---
+
+
 ############################# Static ############################
 layout: "family"
-date: 2024-07-12T09:30:06
+date: 2025-09-18T13:04:35
 draft: false
 
 product: "Editor"
 product_tag: "editor"
 
 ############################# Head ############################
-head_title: "ドキュメント編集ソリューション |オンプレミス API と無料アプリ"
-head_description: "オンプレミス ソリューションを使用するか、オンライン ドキュメント エディター アプリを使用して、MS Office、OpenDocument、PDF 画像、その他のファイル形式を編集します。"
+head_title: "ドキュメントエディターSDK |前提apis＆freeアプリ"
+head_description: "Document Editor SDKを使用して、MS Office、OpenDocument、PDF画像、その他のファイル形式を編集するか、オンラインドキュメントエディターアプリを使用します。"
 
 ############################# Header ############################
 title: "ドキュメントの編集と管理が簡単に"
 description: |
-  Microsoft Office、OpenOffice、PDF、HTML、およびその他のドキュメント ファイル形式を操作するドキュメント エディター。
+  ドキュメントエディターSDKは、Microsoft Office、OpenOffice、PDF、HTML、およびその他のドキュメントファイル形式を操作します。
 
   新しいドキュメントを最初から作成します。
 

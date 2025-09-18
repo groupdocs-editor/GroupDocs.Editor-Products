@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "API d'édition de document Node.js | Modifier PDF, Word, Excel, PowerPoint",
-    "description": "API d'édition de document Node.js pour charger, modifier et enregistrer les pages de documents à partir de formats PDF, Microsoft Word, Excel, PowerPoint, Ebook et Email."
+    "title": "Node.js Document Editor API | Modifier PDF, Word, Excel, PowerPoint",
+    "description": "API de l'éditeur de documents Node.js pour charger, modifier et enregistrer les pages de documents à partir de formats PDF, Microsoft Word, Excel, PowerPoint, Ebook et Email."
   },
   "header": {
     "title_1": "Modifier les documents",
     "title_2": "via l'API Node.js",
-    "description": "API de l'éditeur puissant pour manipuler Microsoft Office, PDF, HTML, Ebook et fichiers e-mail.",
+    "description": "API de l'éditeur de documents Node.js puissant pour manipuler les fichiers Microsoft Office, PDF, HTML, ebook et e-mail.",
     "words": {
       "for": "pour"
     }

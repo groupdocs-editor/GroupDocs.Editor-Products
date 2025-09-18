@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "Java Document Editing API | แก้ไข PDF, Word, Excel, PowerPoint",
-    "description": "Java Document Editing API เพื่อโหลดแก้ไขและบันทึกหน้าเอกสารจาก PDF, Microsoft Word, Excel, PowerPoint, ebook และรูปแบบอีเมล"
+    "title": "Java Document Editor API | แก้ไข PDF, Word, Excel, PowerPoint",
+    "description": "Java Document Editor API เพื่อโหลดแก้ไขและบันทึกหน้าเอกสารจาก PDF, Microsoft Word, Excel, PowerPoint, ebook และรูปแบบอีเมล"
   },
   "header": {
     "title_1": "แก้ไขเอกสาร",
     "title_2": "ผ่าน Java API",
-    "description": "Editor API ที่ทรงพลังในการจัดการ Microsoft Office, PDF, HTML, ebook และอีเมล",
+    "description": "Java Document Editor API ที่ทรงพลังในการจัดการ Microsoft Office, PDF, HTML, ebook และไฟล์อีเมล",
     "words": {
       "for": "สำหรับ"
     }

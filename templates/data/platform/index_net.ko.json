@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "C# .NET 문서 편집 API | PDF, Word, Excel, PowerPoint 편집",
-    "description": "c# .net 문서 편집 API 편집, 변환 및 PDF, Microsoft Word, Excel, PowerPoint, eBook 및 이메일 형식에서 문서 페이지를 편집, 번역 및 저장"
+    "title": "C# .NET 문서 편집기 API | PDF, Word, Excel, PowerPoint 편집",
+    "description": "C# .NET 문서 편집기 API, PDF, Microsoft Word, Excel, PowerPoint, eBook 및 이메일 형식에서 문서 페이지를 편집, 번역 및 저장합니다."
   },
   "header": {
     "title_1": "문서 편집",
     "title_2": ".NET API를 통해",
-    "description": "Microsoft Office, PDF, HTML, 전자 책 및 이메일 파일을 조작하는 강력한 편집자 API.",
+    "description": "Microsoft Office, PDF, HTML, 전자 책 및 이메일 파일을 조작하기위한 강력한 .NET 문서 편집기 API.",
     "words": {
       "for": "~을 위한"
     }

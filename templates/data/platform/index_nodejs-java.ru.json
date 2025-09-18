@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "Node.js документ редактирование API | Редактировать PDF, Word, Excel, PowerPoint",
-    "description": "Node.js документация редактирует API для загрузки, редактирования и сохранения страниц документов от PDF, Microsoft Word, Excel, PowerPoint, электронных книг и форматов электронной почты."
+    "title": "Node.js Document Editor API | Редактировать PDF, Word, Excel, PowerPoint",
+    "description": "Node.js Document Editor API для загрузки, редактирования и сохранения страниц документов от PDF, Microsoft Word, Excel, PowerPoint, электронных книг и форматов электронной почты."
   },
   "header": {
     "title_1": "Редактировать документы",
     "title_2": "через node.js api",
-    "description": "Мощный редактор API для манипулирования Microsoft Office, PDF, HTML, электронных книг и электронной почты.",
+    "description": "Мощный node.js Document Editor API для манипулирования Microsoft Office, PDF, HTML, электронных книг и электронной почты.",
     "words": {
       "for": "для"
     }

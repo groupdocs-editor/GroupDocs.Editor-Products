@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "C# .NET DOCUMTER Редактирование API | Редактировать PDF, Word, Excel, Epub",
-    "description": "C# .NET EDITITION API API для редактирования, перевода и сохранения страниц документов из PDF, Microsoft Word, Excel, презентаций, VISIO и форматов изображений."
+    "title": "C# .NET Редактор документов API | Редактировать PDF, Word, Excel, PowerPoint",
+    "description": "C# .NET EDITOR API API для редактирования, перевода и сохранения страниц документов из PDF, Microsoft Word, Excel, PowerPoint, электронных книг и форматов электронной почты"
   },
   "header": {
     "title_1": "Редактировать документы",
     "title_2": "через .NET API",
-    "description": "Мощный редактор API для манипулирования PDF, Microsoft Office, HTML и изображений.",
+    "description": "Мощный API Editor .NET API для манипулирования Microsoft Office, PDF, HTML, электронной книги и файлами электронной почты.",
     "words": {
       "for": "для"
     }

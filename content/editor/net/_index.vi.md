@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-08-01T11:17:44
+date: 2025-09-18T13:04:44
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "C# .NET API chỉnh sửa tài liệu | Chỉnh sửa PDF, Word, Excel, PowerPoint"
-head_description: "C# .NET Tài liệu chỉnh sửa API để chỉnh sửa, dịch và lưu các trang tài liệu từ PDF, Microsoft Word, Excel, PowerPoint, Ebook và email định dạng"
+head_title: "C# .NET Tài liệu Trình chỉnh sửa tài liệu API | Chỉnh sửa PDF, Word, Excel, PowerPoint"
+head_description: "C# .Net API trình chỉnh sửa tài liệu để chỉnh sửa, dịch và lưu các trang tài liệu từ PDF, Microsoft Word, Excel, PowerPoint, Ebook và các định dạng email"
 
 ############################# Header ############################
 title: "Chỉnh sửa tài liệu<br>thông qua API .NET"
-description: "API Trình chỉnh sửa mạnh mẽ để thao tác với các tệp Microsoft Office, PDF, HTML, ebook và email."
+description: "API Trình chỉnh sửa tài liệu .NET mạnh mẽ để thao tác với các tệp Microsoft Office, PDF, HTML, ebook và email."
 words:
   for: "vì"
 

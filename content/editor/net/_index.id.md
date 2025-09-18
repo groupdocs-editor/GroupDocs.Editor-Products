@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-08-01T11:17:43
+date: 2025-09-18T13:04:44
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "C# .NET Editing Dokumen API | Edit PDF, Word, Excel, PowerPoint"
-head_description: "C# .NET Mengedit API Dokumen Untuk Mengedit, Menerjemahkan, dan Simpan Halaman Dokumen dari PDF, Microsoft Word, Excel, PowerPoint, Ebook dan Format Email"
+head_title: "C# .NET Editor Dokumen API | Edit PDF, Word, Excel, PowerPoint"
+head_description: "C# .NET Editor Dokumen API Untuk Mengedit, Menerjemahkan, dan Simpan Halaman Dokumen dari PDF, Microsoft Word, Excel, PowerPoint, Ebook dan Format Email"
 
 ############################# Header ############################
 title: "Edit dokumen<br>via .net API"
-description: "API editor yang kuat untuk memanipulasi Microsoft Office, PDF, HTML, eBook dan file email."
+description: "Editor dokumen .NET editor API untuk memanipulasi Microsoft Office, PDF, HTML, eBook dan file email."
 words:
   for: "untuk"
 

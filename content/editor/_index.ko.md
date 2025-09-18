@@ -1,20 +1,22 @@
 ---
+
+
 ############################# Static ############################
 layout: "family"
-date: 2024-07-12T09:30:06
+date: 2025-09-18T13:04:35
 draft: false
 
 product: "Editor"
 product_tag: "editor"
 
 ############################# Head ############################
-head_title: "문서 편집 솔루션 | 온프레미스 API 및 무료 앱"
-head_description: "온프레미스 솔루션을 사용하여 MS Office, OpenDocument, PDF 이미지 및 기타 파일 형식을 편집하거나 온라인 문서 편집기 앱을 사용하세요."
+head_title: "문서 편집기 SDK | 전제 API 및 무료 앱"
+head_description: "문서 편집기 SDK를 사용하여 MS Office, OpenDocument, PDF 이미지 및 기타 파일 형식을 편집하거나 온라인 문서 편집기 앱을 사용하십시오."
 
 ############################# Header ############################
 title: "쉽게 문서를 편집하고 관리하세요"
 description: |
-  Microsoft Office, OpenOffice, PDF, HTML 및 기타 문서 파일 형식을 조작하는 문서 편집기입니다.
+  문서 편집기 SDK, Microsoft Office, OpenOffice, PDF, HTML 및 기타 문서 파일 형식을 조작합니다.
 
   처음부터 새 문서를 만듭니다.
 

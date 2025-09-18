@@ -1,20 +1,22 @@
 ---
+
+
 ############################# Static ############################
 layout: "family"
-date: 2024-07-12T09:30:06
+date: 2025-09-18T13:04:35
 draft: false
 
 product: "Editor"
 product_tag: "editor"
 
 ############################# Head ############################
-head_title: "Solution d'édition de documents | API sur site et application gratuite"
-head_description: "Modifiez MS Office, OpenDocument, des images PDF et d'autres formats de fichiers à l'aide de la solution sur site ou utilisez l'application Online Document Editor."
+head_title: "SDK de l'éditeur de documents | Sur prémisse API et application gratuite"
+head_description: "Edit MS Office, OpenDocument, PDF Images et autres formats de fichiers à l'aide de Document Editor SDK ou utilisez l'application en ligne Document Editor."
 
 ############################# Header ############################
 title: "Modifiez et gérez facilement des documents"
 description: |
-  Éditeur de documents pour manipuler Microsoft Office, OpenOffice, PDF, HTML et d'autres formats de fichiers de documents.
+  SDK de l'éditeur de documents pour manipuler Microsoft Office, OpenOffice, PDF, HTML et d'autres formats de fichiers de documents.
 
   Créez de nouveaux documents à partir de zéro.
 

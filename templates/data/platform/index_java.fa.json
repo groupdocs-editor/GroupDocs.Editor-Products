@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "ویرایش اسناد جاوا API | ویرایش PDF ، Word ، Excel ، PowerPoint",
-    "description": "ویرایش اسناد جاوا API برای بارگیری ، ویرایش و ذخیره صفحات سند از PDF ، Microsoft Word ، Excel ، PowerPoint ، Ebook و ایمیل."
+    "title": "ویرایشگر اسناد جاوا API | ویرایش PDF ، Word ، Excel ، PowerPoint",
+    "description": "ویرایشگر Document Java API برای بارگیری ، ویرایش و ذخیره صفحات سند از PDF ، Microsoft Word ، Excel ، PowerPoint ، Ebook و ایمیل."
   },
   "header": {
     "title_1": "اسناد را ویرایش کنید",
     "title_2": "از طریق جاوا API",
-    "description": "ویرایشگر قدرتمند API برای دستکاری Microsoft Office ، PDF ، HTML ، کتاب الکترونیکی و ایمیل.",
+    "description": "ویرایشگر قدرتمند اسناد جاوا API برای دستکاری در Microsoft Office ، PDF ، HTML ، کتاب الکترونیکی و ایمیل.",
     "words": {
       "for": "برای"
     }

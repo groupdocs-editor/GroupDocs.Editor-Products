@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "Java文档编辑API |编辑PDF，Word，Excel，PowerPoint",
-    "description": "Java文档编辑API以加载，编辑和保存PDF，Microsoft Word，Excel，PowerPoint，Ebook和电子邮件格式的文档页面。"
+    "title": "Java文档编辑器API |编辑PDF，Word，Excel，PowerPoint",
+    "description": "Java文档编辑器API将从PDF，Microsoft Word，Excel，PowerPoint，电子书和电子邮件格式加载，编辑和保存文档页面。"
   },
   "header": {
     "title_1": "编辑文档",
     "title_2": "通过Java API",
-    "description": "功能强大的编辑器API操纵Microsoft Office，PDF，HTML，电子书和电子邮件文件。",
+    "description": "功能强大的Java文档编辑器API操纵Microsoft Office，PDF，HTML，电子书和电子邮件文件。",
     "words": {
       "for": "为了"
     }

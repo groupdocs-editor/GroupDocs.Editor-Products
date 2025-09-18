@@ -1,11 +1,11 @@
 {
   "head": {
-    "title": "Solución de edición de documentos | API locales y aplicación gratuita",
-    "description": "Edite MS Office, OpenDocument, imágenes PDF y otros formatos de archivo utilizando la solución local o utilice la aplicación Online Document Editor."
+    "title": "Editor de documentos SDK | En las API de premisas y la aplicación gratuita",
+    "description": "Editar MS Office, OpenDocument, PDF Images y otros formatos de archivo utilizando el SDK del editor de documentos o use la aplicación de editor de documentos en línea."
   },
   "header": {
     "title": "Edite y administre documentos con facilidad",
-    "description_1": "Editor de documentos para manipular Microsoft Office, OpenOffice, PDF, HTML y otros formatos de archivos de documentos.",
+    "description_1": "SDK del editor de documentos para manipular Microsoft Office, OpenOffice, PDF, HTML y otros formatos de archivo de documentos.",
     "description_2": "Crea nuevos documentos desde cero.",
     "description_3": "Administre fácilmente los campos de formulario dentro de los documentos."
   },

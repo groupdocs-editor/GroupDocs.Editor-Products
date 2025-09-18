@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "API de edição de documentos Java | Editar pdf, palavra, excel, powerpoint",
-    "description": "API de edição de documentos Java para carregar, editar e salvar páginas de documentos de formatos de PDF, Microsoft Word, Excel, PowerPoint, Ebook e Email."
+    "title": "API do editor de documentos Java | Editar pdf, palavra, excel, powerpoint",
+    "description": "API do editor de documentos Java para carregar, editar e salvar páginas de documentos de formatos de PDF, Microsoft Word, Excel, PowerPoint, Ebook e Email."
   },
   "header": {
     "title_1": "Editar documentos",
     "title_2": "via Java API",
-    "description": "API do editor poderoso para manipular arquivos do Microsoft Office, PDF, HTML, Ebook e Email.",
+    "description": "API poderosa do editor de documentos Java para manipular arquivos do Microsoft Office, PDF, HTML, Ebook e de email.",
     "words": {
       "for": "para"
     }

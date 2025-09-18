@@ -1,20 +1,22 @@
 ---
+
+
 ############################# Static ############################
 layout: "family"
-date: 2024-07-12T09:30:06
+date: 2025-09-18T13:04:35
 draft: false
 
 product: "Editor"
 product_tag: "editor"
 
 ############################# Head ############################
-head_title: "文档编辑解决方案|本地 API 和免费应用程序"
-head_description: "使用本地解决方案编辑 MS Office、OpenDocument、PDF 图像和其他文件格式或使用在线文档编辑器应用程序。"
+head_title: "文档编辑SDK |在前提API和免费应用程序上"
+head_description: "编辑MS Office，Opentocument，PDF图像和其他文件格式使用文档编辑器SDK或使用在线文档编辑器应用程序。"
 
 ############################# Header ############################
 title: "轻松编辑和管理文档"
 description: |
-  文档编辑器可操作 Microsoft Office、OpenOffice、PDF、HTML 和其他文档文件格式。
+  文档编辑器SDK操纵Microsoft Office，OpenOffice，PDF，HTML和其他文档文件格式。
 
   从头开始创建新文档。
 

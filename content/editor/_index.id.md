@@ -1,134 +1,136 @@
 ---
+
+
 ############################# Static ############################
 layout: "family"
-date: 2024-07-12T09:30:06
+date: 2025-09-18T13:04:35
 draft: false
 
 product: "Editor"
 product_tag: "editor"
 
 ############################# Head ############################
-head_title: "{head.title}"
-head_description: "{head.description}"
+head_title: "Editor Dokumen SDK | Di premis API & aplikasi gratis"
+head_description: "Edit MS Office, OpenDocument, gambar PDF & format file lainnya menggunakan editor dokumen SDK atau gunakan aplikasi editor dokumen online."
 
 ############################# Header ############################
-title: "{header.title}"
+title: "Edit dan kelola dokumen dengan mudah"
 description: |
-  {header.description_1}
+  Editor dokumen SDK untuk memanipulasi Microsoft Office, OpenOffice, PDF, HTML, dan format file dokumen lainnya.
 
-  {header.description_2}
+  Buat dokumen baru dari awal.
 
-  {header.description_3}
+  Mudah mengelola bidang formulir dalam dokumen.
   
 ############################# Platforms ############################
 supported_platforms:
   enable: true  
-  head_title: "{supported_platforms.head_title}"
-  title: "{supported_platforms.title}"
-  description: "{supported_platforms.description}"
-  details_link_title: "{supported_platforms.details_link_title}"
+  head_title: "Pilih platform Anda"
+  title: "Kemandirian platform"
+  description: "GroupDocs.Editor Library mendukung sistem operasi dan kerangka kerja berikut:"
+  details_link_title: "Pelajari lebih lanjut"
   items:
     # supported_platforms loop
     - title: ".NET"
-      description: "{supported_platforms.net.description}"
+      description: "Groupdocs.editor untuk .net"
       color: "blue"
       tag: "net"
       link: "/editor/net/"
       features_link: "https://docs.groupdocs.com/editor/net/system-requirements/"
       features:
         # features loop
-        - content: "{supported_platforms.net.feature_1.line_1}  <br>  {supported_platforms.net.feature_1.line_2}  <br>  {supported_platforms.net.feature_1.line_3} <br>  {supported_platforms.net.feature_1.line_4}"
+        - content: ".NET Framework 4.6.2 atau lebih tinggi  <br>  .NET Core 2.0 atau lebih tinggi  <br>  .Net 6.0 atau lebih tinggi <br>  Mono Framework 2.6.7 atau lebih tinggi"
           rows: "4"
         # features loop
-        - content: "{supported_platforms.net.feature_2.line_1}"
+        - content: "Windows, Linux, Mac OS"
           rows: "1"
         # features loop
         - content: "Microsoft Visual Studio  <br>  Xamarin (Android, iOS, Mac)  <br>  MonoDevelop"
           rows: "3"
          # features loop
-        - content: "{supported_platforms.net.feature_4.line_1}"
+        - content: "60+ format file"
           rows: "1"
     
     # supported_platforms loop
     - title: "Java"
-      description: "{supported_platforms.java.description}"
+      description: "Groupdocs.editor untuk Java"
       color: "red"
       tag: "java"
       link: "/editor/java/"
       features_link: "https://docs.groupdocs.com/editor/java/system-requirements/"
       features:
         # features loop
-        - content: "{supported_platforms.java.feature_1.line_1}"
+        - content: "J2se 8.0 atau lebih tinggi"
           rows: "4"
         # features loop
-        - content:  "{supported_platforms.java.feature_2.line_1}"
+        - content:  "Windows, Linux, Mac OS"
           rows: "1"
         # features loop
         - content:  "IntelliJ IDEA  <br>  Eclipse  <br>  NetBeans"
           rows: "3"
          # features loop
-        - content:  "{supported_platforms.java.feature_4.line_1}"
+        - content:  "50+ format file"
           rows: "1"
     
     # supported_platforms loop
     - title: "Node.js"
-      description: "{supported_platforms.nodejs-java.description}"
+      description: "Groupdocs.editor untuk node.js"
       color: "green"
       tag: "nodejs-java"
       link: "/editor/nodejs-java/"
       features_link: "https://docs.groupdocs.com/editor/nodejs-java/system-requirements/"
       features:
         # features loop
-        - content: "{supported_platforms.nodejs-java.feature_1.line_1}"
+        - content: "Node.js 16+ dan j2se 8.0 (1.8)+"
           rows: "4"
         # features loop
         - content: Windows, Linux, Mac OS
           rows: "1"
         # features loop
-        - content:  "Atom <br> Visual Studio Code <br> {supported_platforms.nodejs-java.feature_3.line_1}"
+        - content:  "Atom <br> Visual Studio Code <br> Editor teks lainnya"
           rows: "3"
          # features loop
-        - content:  "{supported_platforms.nodejs-java.feature_4.line_1}"
+        - content:  "50+ format file"
           rows: "1"
  
 ############################# Features ############################
 
 features:
   enable: true
-  title: "{features.title}"
-  description: "{features.description}"
+  title: "Groupdocs.editor sekilas"
+  description: "API untuk mengedit, menerjemahkan, dan menyimpan berbagai format dokumen dengan mulus."
 
   items:
     # feature loop
     - icon: "merge"
-      title: "{features.feature_1.title}"
-      content: "{features.feature_1.content}"
+      title: "Edit beberapa format file"
+      content: "Mengedit beberapa PDF, kantor, dan banyak format yang didukung lainnya."
 
     # feature loop
     - icon: "split"
-      title: "{features.feature_2.title}"
-      content: "{features.feature_2.content}"
+      title: "Terjemahkan ke HTML/CSS"
+      content: "Menerjemahkan dokumen ke html/css markup yang kompatibel dengan editor wysiwyg."
 
     # feature loop
     - icon: "structure"
-      title: "{features.feature_3.title}"
-      content: "{features.feature_3.content}"
+      title: "Simpan dokumen yang diedit"
+      content: "Simpan HTML/CSS yang Diedit untuk Sumber Format Dokumen atau Ekspor ke PDF."
     
     # feature loop
     - icon: "preview"
-      title: "{features.feature_4.title}"
-      content: "{features.feature_4.content}"
+      title: "Ekstraksi Informasi Dokumen"
+      content: "Ekstrak informasi seperti jumlah halaman, ukuran, dan status enkripsi."
 
 ############################# Code samples ############################
 code_samples:
   enable: true
-  title: "{code_samples.title}"
-  description: "{code_samples.description}"
+  title: "Kode Praktis Showcase"
+  description: "Beberapa kasus penggunaan dari operasi groupDocs.Editor khas."
   items:
     # code sample loop
-    - title: "{code_samples.sample_1.title}"
+    - title: "Mengedit dokumen"
       content: |
-        {code_samples.sample_1.content} 
+        GroupDocs.editor memungkinkan Anda untuk mengedit berbagai format dokumen dan menyimpan perubahan. Anda dapat mengedit seluruh dokumen atau bagian tertentu dari dokumen Anda. 
       samples:
         - language: "C#"
           color: "blue"
@@ -173,36 +175,36 @@ code_samples:
 ############################# Formats ############################
 formats:
   enable: true
-  title:  "{formats.title}"
-  description: "{formats.description}" 
+  title:  "60+ format file didukung"
+  description: "GroupDocs.editor mendukung operasi dengan berbagai [format dokumen] (https://docs.groupdocs.com/editor/net/supported-document-formats/)." 
 
 ############################# Metrics ############################
 
 metrics:
   enable: true
-  title: "{metrics.title}"
-  description: "{metrics.description}"
+  title: "Metrik mendalam dan wawasan statistik"
+  description: "Selami rincian rinci angka -angka utama kami, memberikan metrik yang komprehensif dan wawasan statistik tentang pencapaian, dampak, dan pertumbuhan kami."
 
   items:
     # metrics loop
     - number: "60+"
-      title: "{metrics.metric_1.title}"
-      content: "{metrics.metric_1.content}"
+      title: "Format yang didukung"
+      content: "Setiap perpustakaan mendukung pengeditan lebih dari 60 format file dan dokumen yang paling populer."
 
     # metrics loop
     - number: "274k"
-      title: "{metrics.metric_2.title}"
-      content: "{metrics.metric_2.content}"
+      title: "Unduhan Nuget"
+      content: "GroupDocs.editor untuk .NET memiliki lebih dari 274k unduhan dari Nuget Package Manager."
 
     # metrics loop
     - number: "5.5k"
-      title: "{metrics.metric_3.title}"
-      content: "{metrics.metric_3.content}"
+      title: "Unduhan Maven"
+      content: "GroupDocs.Editor untuk Java memiliki lebih dari 5,5k unduhan dari repositori Maven kami."
     
     # metrics loop
     - number: "140+"
-      title: "{metrics.metric_4.title}"
-      content: "{metrics.metric_4.content}"
+      title: "Pelanggan yang bahagia"
+      content: "Perpustakaan kami digunakan oleh pengembang individu kecil maupun oleh perusahaan terkemuka di seluruh dunia."
 
 
 ############################# Customers ############################
@@ -210,8 +212,8 @@ metrics:
 
 customers:
   enable: true
-  title: "{customers.title}"
-  description: "{customers.description}"
+  title: "Pelanggan kami yang bahagia"
+  description: "Perpustakaan Groupdocs dipekerjakan oleh merek -merek terkenal dan terkemuka di seluruh dunia."
 
   items:
     # customers loop
@@ -249,8 +251,8 @@ customers:
 
 actions:
   enable: true
-  title: "{actions.title}"
-  description: "{actions.description}"
+  title: "Siap Memulai?"
+  description: "Coba Fitur GroupDocs.Editor secara gratis di platform Anda."
   items:
     #  loop
     - title: ".NET"
@@ -269,72 +271,72 @@ actions:
 
 faq:
   enable: true
-  title:  "{faq.title}"
-  description:  "{faq.description}"
+  title:  "Pertanyaan yang sering diajukan"
+  description:  "Jawaban untuk pertanyaan yang paling umum diajukan."
   items:
     #  loop
-    - question: "{faq.faq_1.question}"
+    - question: "Apakah Perpustakaan GroupDocs.Editor memerlukan perangkat lunak pihak ketiga lainnya untuk memanipulasi dokumen?"
       answer: |
-        {faq.faq_1.answer}
+        GroupDocs.editor tidak memerlukan perangkat lunak eksternal untuk diinstal seperti Adobe Acrobat, Microsoft Office, atau lainnya.
      #  loop
-    - question:  "{faq.faq_2.question}"
+    - question:  "Dapatkah saya mencoba Perpustakaan GroupDocs.Editor sebelum membelinya?"
       answer: |
-        {faq.faq_2.answer}
+        Ya, Anda dapat mencoba GroupDocs.Editor tanpa membeli lisensi. Setelah diinstal tanpa lisensi, perpustakaan berfungsi dalam mode percobaan. Dalam mode ini, lencana uji coba ditambahkan ke dokumen yang dihasilkan, dan dipangkas ke 3 halaman pertama. Jika Anda ingin menguji GroupDocs.Editor tanpa batasan versi percobaan, Anda juga dapat meminta lisensi sementara 30 hari. Untuk detail lebih lanjut, lihat [Dapatkan lisensi sementara] (https://purchase.groupdocs.com/temporer-license/).
     #  loop 
-    - question:  "{faq.faq_3.question}"
+    - question:  "Lisensi apa yang Anda miliki?"
       answer: |
-        {faq.faq_3.answer}                      
+        Kami menawarkan beberapa jenis lisensi agar sesuai dengan kebutuhan pengembang atau perusahaan tertentu. Jenis lisensi tergantung pada jumlah pengembang, jumlah lokasi situs pengembang, dan apakah Anda perlu mengirimkan SDK/API kami ke pelanggan akhir Anda. Atau, Anda dapat memilih lisensi meteran berdasarkan penggunaan produk bulanan. Pelajari lebih lanjut di [tipe lisensi] (https://purchase.groupdocs.com/policies/license-types/).                      
      
 ############################# Cloud ############################
 
 cloud_links:
   enable: true
-  title: "{cloud_links.title}"
-  description: "{cloud_links.description}"
+  title: "GroupDocs.Editor API Kode Rendah"
+  description: "Akselerasi pengeditan dokumen dalam semua jenis aplikasi dengan API REST berbasis cloud kami."
 
   items:
     #  loop
     - icon: "groupdocs_editor-for-curl"
-      title: "{cloud_links.link_1.title}"
+      title: "Groupdocs.editor cloud untuk curl"
       link: "https://products.groupdocs.cloud/editor/curl"
-      content: "{cloud_links.link_1.content}"
+      content: "Perintah Curl Sederhana untuk Editor Dokumen Restful Cloud API untuk mengedit dan menerjemahkan dokumen."
 
     #  loop
     - icon: "groupdocs_editor-for-net"
-      title: "{cloud_links.link_2.title}"
+      title: "Groupdocs.editor cloud untuk .net"
       link: "https://products.groupdocs.cloud/editor/net"
-      content: "{cloud_links.link_2.content}"
+      content: "Cloud SDK untuk Microsoft .NET untuk mengimplementasikan fitur pengeditan dokumen cepat di aplikasi berbasis .NET."
 
     #  loop
     - icon: "groupdocs_editor-for-java"
-      title: "{cloud_links.link_3.title}"
+      title: "Groupdocs.editor cloud untuk java"
       link: "https://products.groupdocs.cloud/editor/java"
-      content: "{cloud_links.link_3.content}"
+      content: "Edit dan terjemahkan dokumen dalam aplikasi Java Anda menggunakan API cloud kami."
     
 ############################# Apps ############################
 
 app_links:
   enable: true
-  title: "{app_links.title}"
-  description: "{app_links.description}"
+  title: "GroupDocs.Editor Aplikasi Nocode"
+  description: "Aplikasi online yang memungkinkan Anda untuk mengedit 170+ format file populer di browser."
 
   items:
     #  loop
     - icon: "groupdocs_editor-app"
       title: "GroupDocs.editor Total"
       link: "https://products.groupdocs.app/editor/total"
-      content: "{app_links.link_1.content}"
+      content: "Coba aplikasi online gratis kami untuk mengedit lebih dari 30 jenis file tanpa meninggalkan browser web favorit Anda."
 
     #  loop
     - icon: "groupdocs_words-app"
       title:  "GroupDocs.editor DOCX"
       link: "https://products.groupdocs.app/editor/docx"
-      content: "{app_links.link_2.content}"
+      content: "Edit file docx online dengan mulus."
 
     #  loop
     - icon: "groupdocs_pdf-app"
       title:  "GroupDocs.editor PDF"
       link: "https://products.groupdocs.app/editor/pdf"
-      content: "{app_links.link_3.content}"
+      content: "Edit file PDF langsung dari browser web."
     
 ---

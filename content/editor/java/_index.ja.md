@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-08-01T11:17:43
+date: 2025-09-18T13:04:44
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "Javaドキュメント編集API | PDF、Word、Excel、PowerPointを編集します"
-head_description: "JavaドキュメントAPIを編集して、PDF、Microsoft Word、Excel、PowerPoint、電子ブック、電子メール形式のドキュメントページをロード、編集、保存します。"
+head_title: "Java Document Editor API | PDF、Word、Excel、PowerPointを編集します"
+head_description: "Java Document Editor APIは、PDF、Microsoft Word、Excel、PowerPoint、電子ブック、電子メール形式のドキュメントページをロード、編集、保存します。"
 
 ############################# Header ############################
 title: "ドキュメントを編集します<br>Java API経由"
-description: "Microsoft Office、PDF、HTML、電子書籍、電子メールファイルを操作する強力な編集者API。"
+description: "Microsoft Office、PDF、HTML、電子書籍、電子メールファイルを操作するための強力なJava Document Editor API。"
 words:
   for: "のために"
 

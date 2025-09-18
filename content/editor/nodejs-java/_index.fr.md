@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-08-01T11:17:43
+date: 2025-09-18T13:04:44
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "API d'édition de document Node.js | Modifier PDF, Word, Excel, PowerPoint"
-head_description: "API d'édition de document Node.js pour charger, modifier et enregistrer les pages de documents à partir de formats PDF, Microsoft Word, Excel, PowerPoint, Ebook et Email."
+head_title: "Node.js Document Editor API | Modifier PDF, Word, Excel, PowerPoint"
+head_description: "API de l'éditeur de documents Node.js pour charger, modifier et enregistrer les pages de documents à partir de formats PDF, Microsoft Word, Excel, PowerPoint, Ebook et Email."
 
 ############################# Header ############################
 title: "Modifier les documents<br>via l'API Node.js"
-description: "API de l'éditeur puissant pour manipuler Microsoft Office, PDF, HTML, Ebook et fichiers e-mail."
+description: "API de l'éditeur de documents Node.js puissant pour manipuler les fichiers Microsoft Office, PDF, HTML, ebook et e-mail."
 words:
   for: "pour"
 

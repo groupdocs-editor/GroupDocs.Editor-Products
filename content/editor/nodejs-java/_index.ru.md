@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-08-01T11:17:44
+date: 2025-09-18T13:04:44
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "Node.js документ редактирование API | Редактировать PDF, Word, Excel, PowerPoint"
-head_description: "Node.js документация редактирует API для загрузки, редактирования и сохранения страниц документов от PDF, Microsoft Word, Excel, PowerPoint, электронных книг и форматов электронной почты."
+head_title: "Node.js Document Editor API | Редактировать PDF, Word, Excel, PowerPoint"
+head_description: "Node.js Document Editor API для загрузки, редактирования и сохранения страниц документов от PDF, Microsoft Word, Excel, PowerPoint, электронных книг и форматов электронной почты."
 
 ############################# Header ############################
 title: "Редактировать документы<br>через node.js api"
-description: "Мощный редактор API для манипулирования Microsoft Office, PDF, HTML, электронных книг и электронной почты."
+description: "Мощный node.js Document Editor API для манипулирования Microsoft Office, PDF, HTML, электронных книг и электронной почты."
 words:
   for: "для"
 

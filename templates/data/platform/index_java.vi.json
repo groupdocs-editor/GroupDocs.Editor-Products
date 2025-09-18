@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "API chỉnh sửa tài liệu Java | Chỉnh sửa PDF, Word, Excel, PowerPoint",
-    "description": "API chỉnh sửa tài liệu Java để tải, chỉnh sửa và lưu các trang tài liệu từ PDF, Microsoft Word, Excel, PowerPoint, Ebook và các định dạng email."
+    "title": "API biên tập tài liệu Java | Chỉnh sửa PDF, Word, Excel, PowerPoint",
+    "description": "API Trình chỉnh sửa tài liệu Java để tải, chỉnh sửa và lưu các trang tài liệu từ PDF, Microsoft Word, Excel, PowerPoint, Ebook và các định dạng email."
   },
   "header": {
     "title_1": "Chỉnh sửa tài liệu",
     "title_2": "thông qua API Java",
-    "description": "API Trình chỉnh sửa mạnh mẽ để thao tác với các tệp Microsoft Office, PDF, HTML, ebook và email.",
+    "description": "API Trình chỉnh sửa tài liệu Java mạnh mẽ để thao tác với các tệp Microsoft Office, PDF, HTML, ebook và email.",
     "words": {
       "for": "vì"
     }

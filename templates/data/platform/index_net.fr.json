@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "C # .NET Document Édition API | Modifier PDF, Word, Excel, PowerPoint",
-    "description": "C # .NET Document Édition API Pour modifier, traduire et enregistrer les pages de documents de PDF, Microsoft Word, Excel, PowerPoint, Ebook et Email Formats"
+     "title": "C # .NET Document Editor API | Modifier PDF, Word, Excel, PowerPoint",
+    "description": "C # .NET Document Editor API API pour modifier, traduire et enregistrer les pages de documents de PDF, Microsoft Word, Excel, PowerPoint, Ebook et Email Formats"
   },
   "header": {
     "title_1": "Modifier les documents",
     "title_2": "via .net API",
-    "description": "API de l'éditeur puissant pour manipuler Microsoft Office, PDF, HTML, Ebook et fichiers e-mail.",
+    "description": "API de l'éditeur de documents .NET puissant pour manipuler Microsoft Office, PDF, HTML, Ebook et Fichiers e-mail.",
     "words": {
       "for": "pour"
     }

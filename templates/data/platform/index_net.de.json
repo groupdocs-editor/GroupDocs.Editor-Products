@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "C# .NET -Dokumentbearbeitungs -API | Bearbeiten Sie PDF, Wort, Excel, PowerPoint",
-    "description": "C# .NET -Dokument -Bearbeitungs -API zum Bearbeiten, Übersetzen und Speichern von Dokumentseiten von PDF, Microsoft Word, Excel, PowerPoint, Ebook und E -Mail -Formaten"
+    "title": "C# .NET Document Editor API | Bearbeiten Sie PDF, Wort, Excel, PowerPoint",
+    "description": "C# .NET -Dokumenteneditor -API zum Bearbeiten, Übersetzen und Speichern von Dokumentseiten von PDF, Microsoft Word, Excel, PowerPoint, E -Book und E -Mail -Formaten"
   },
   "header": {
     "title_1": "Dokumente bearbeiten",
     "title_2": "via .net api",
-    "description": "Leistungsstarke Editor -API zur Manipulation von Microsoft Office, PDF-, HTML-, E -Book- und E -Mail -Dateien.",
+    "description": "Leistungsstarke .NET -Dokumenten -Editor -API zur Manipulation von Microsoft Office, PDF, HTML, Ebook und E -Mail -Dateien.",
     "words": {
       "for": "für"
     }

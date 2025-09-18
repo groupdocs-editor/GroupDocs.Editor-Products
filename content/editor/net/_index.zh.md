@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-08-01T11:17:44
+date: 2025-09-18T13:04:44
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "C＃.NET文档编辑API |编辑PDF，Word，Excel，PowerPoint"
-head_description: "C＃.NET文档编辑API以编辑，翻译和保存PDF，Microsoft Word，Excel，PowerPoint，Ebook，Ebook和电子邮件格式的文档页面"
+head_title: "C＃.NET文档编辑器API |编辑PDF，Word，Excel，PowerPoint"
+head_description: "C＃.NET文档编辑器API将从PDF，Microsoft Word，Excel，PowerPoint，Ebook，Ebook和电子邮件格式中编辑，翻译和保存文档页面"
 
 ############################# Header ############################
 title: "编辑文档<br>通过.NET API"
-description: "功能强大的编辑器API操纵Microsoft Office，PDF，HTML，电子书和电子邮件文件。"
+description: "功能强大的.NET文档编辑器API操纵Microsoft Office，PDF，HTML，电子书和电子邮件文件。"
 words:
   for: "为了"
 

@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "Java 문서 편집 API | PDF, Word, Excel, PowerPoint 편집",
-    "description": "PDF, Microsoft Word, Excel, PowerPoint, eBook 및 이메일 형식에서 문서 페이지를로드, 편집 및 저장하려면 Java 문서 편집 API."
+    "title": "Java 문서 편집기 API | PDF, Word, Excel, PowerPoint 편집",
+    "description": "Java 문서 편집기 API는 PDF, Microsoft Word, Excel, PowerPoint, eBook 및 이메일 형식에서 문서 페이지를로드, 편집 및 저장합니다."
   },
   "header": {
     "title_1": "문서 편집",
     "title_2": "Java API를 통해",
-    "description": "Microsoft Office, PDF, HTML, 전자 책 및 이메일 파일을 조작하는 강력한 편집자 API.",
+    "description": "Microsoft Office, PDF, HTML, 전자 책 및 이메일 파일을 조작하기위한 강력한 Java 문서 편집기 API.",
     "words": {
       "for": "~을 위한"
     }

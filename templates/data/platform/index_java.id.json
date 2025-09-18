@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "Java Document Editing API | Edit PDF, Word, Excel, PowerPoint",
-    "description": "Java Document Editing API untuk memuat, mengedit, dan menyimpan halaman dokumen dari PDF, Microsoft Word, Excel, PowerPoint, eBook, dan format email."
+    "title": "Java Document Editor API | Edit PDF, Word, Excel, PowerPoint",
+    "description": "Java Document Editor API untuk memuat, mengedit, dan menyimpan halaman dokumen dari PDF, Microsoft Word, Excel, PowerPoint, eBook, dan format email."
   },
   "header": {
     "title_1": "Edit dokumen",
     "title_2": "Via Java API",
-    "description": "API editor yang kuat untuk memanipulasi Microsoft Office, PDF, HTML, eBook dan file email.",
+    "description": "API Editor Dokumen Java yang kuat untuk memanipulasi file Microsoft Office, PDF, HTML, eBook dan email.",
     "words": {
       "for": "untuk"
     }

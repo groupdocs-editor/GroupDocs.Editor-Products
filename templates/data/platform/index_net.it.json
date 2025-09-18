@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "C# .NET API di modifica del documento | Modifica PDF, Word, Excel, PowerPoint",
-    "description": "C# .NET DOCUMENTO MEDIMENTO API per modificare, tradurre e salvare le pagine dei documenti da PDF, Microsoft Word, Excel, PowerPoint, Ebook ed e -mail"
+     "title": "C# .NET Document Editor API | Modifica PDF, Word, Excel, PowerPoint",
+    "description": "C# .NET Document Editor API per modificare, tradurre e salvare le pagine dei documenti da PDF, Microsoft Word, Excel, PowerPoint, Ebook ed e -mail"
   },
   "header": {
     "title_1": "Modifica documenti",
     "title_2": "Via API .NET",
-    "description": "Potente editor API per manipolare i file di Microsoft Office, PDF, HTML, eBook e e -mail.",
+    "description": "Potente API Editor per documenti .NET per manipolare i file di Microsoft Office, PDF, HTML, eBook e e -mail.",
     "words": {
       "for": "per"
     }

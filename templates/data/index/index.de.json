@@ -1,11 +1,11 @@
 {
   "head": {
-    "title": "Dokumentenbearbeitungslösung | On-Premise-APIs und kostenlose App",
-    "description": "Bearbeiten Sie MS Office, OpenDocument, PDF-Bilder und andere Dateiformate mit der On-Premise-Lösung oder verwenden Sie die Online Document Editor-App."
+    "title": "Dokument Editor SDK | Auf Prämisse APIs und kostenlose App",
+    "description": "Bearbeiten Sie MS Office, Opendocument, PDF -Bilder und andere Dateiformate mithilfe des Dokumenteditors SDK oder verwenden Sie die Online -App für Online -Dokumenteditors."
   },
   "header": {
     "title": "Bearbeiten und verwalten Sie Dokumente ganz einfach",
-    "description_1": "Dokumenteneditor zum Bearbeiten von Microsoft Office, OpenOffice, PDF, HTML und anderen Dokumentdateiformaten.",
+    "description_1": "Dokumenteditor SDK, um Microsoft Office, OpenOffice, PDF, HTML und andere Dokumentdateiformate zu manipulieren.",
     "description_2": "Erstellen Sie neue Dokumente von Grund auf.",
     "description_3": "Formularfelder in Dokumenten einfach verwalten."
   },

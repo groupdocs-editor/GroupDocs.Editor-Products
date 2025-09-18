@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "API d'édition de document Java | Modifier PDF, Word, Excel, PowerPoint",
-    "description": "API d'édition de document Java pour charger, modifier et enregistrer les pages de documents à partir de formats PDF, Microsoft Word, Excel, PowerPoint, Ebook et Email."
+    "title": "API de l'éditeur de documents Java | Modifier PDF, Word, Excel, PowerPoint",
+    "description": "API de l'éditeur de documents Java pour charger, modifier et enregistrer les pages de documents à partir de formats PDF, Microsoft Word, Excel, PowerPoint, Ebook et e-mail."
   },
   "header": {
     "title_1": "Modifier les documents",
     "title_2": "via l'API Java",
-    "description": "API de l'éditeur puissant pour manipuler Microsoft Office, PDF, HTML, Ebook et fichiers e-mail.",
+    "description": "API de l'éditeur de documents Java puissant pour manipuler Microsoft Office, PDF, HTML, Ebook et Fichiers e-mail.",
     "words": {
       "for": "pour"
     }

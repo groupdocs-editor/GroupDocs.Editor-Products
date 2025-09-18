@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-08-01T11:17:44
+date: 2025-09-18T13:04:44
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "API редагування документів Java | Редагувати PDF, Word, Excel, PowerPoint"
-head_description: "API редагування документів Java для завантаження, редагування та збереження сторінок документів із PDF, Microsoft Word, Excel, PowerPoint, електронної книги та форматів електронної пошти."
+head_title: "Редактор документів Java API | Редагувати PDF, Word, Excel, PowerPoint"
+head_description: "API редактора документів Java для завантаження, редагування та збереження сторінок документів із PDF, Microsoft Word, Excel, PowerPoint, E -книги та форматів електронної пошти."
 
 ############################# Header ############################
 title: "Редагувати документи<br>через Java API"
-description: "Потужний API редактора для маніпулювання Microsoft Office, PDF, HTML, електронних книг та електронних листів."
+description: "Потужний API редактора документів Java для маніпулювання Microsoft Office, PDF, HTML, електронних книг та файлів електронної пошти."
 words:
   for: "для"
 

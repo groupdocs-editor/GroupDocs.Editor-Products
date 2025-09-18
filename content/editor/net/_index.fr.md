@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-08-01T11:17:43
+date: 2025-09-18T13:04:44
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "C # .NET Document Édition API | Modifier PDF, Word, Excel, PowerPoint"
-head_description: "C # .NET Document Édition API Pour modifier, traduire et enregistrer les pages de documents de PDF, Microsoft Word, Excel, PowerPoint, Ebook et Email Formats"
+head_title: "C # .NET Document Editor API | Modifier PDF, Word, Excel, PowerPoint"
+head_description: "C # .NET Document Editor API API pour modifier, traduire et enregistrer les pages de documents de PDF, Microsoft Word, Excel, PowerPoint, Ebook et Email Formats"
 
 ############################# Header ############################
 title: "Modifier les documents<br>via .net API"
-description: "API de l'éditeur puissant pour manipuler Microsoft Office, PDF, HTML, Ebook et fichiers e-mail."
+description: "API de l'éditeur de documents .NET puissant pour manipuler Microsoft Office, PDF, HTML, Ebook et Fichiers e-mail."
 words:
   for: "pour"
 

@@ -1,12 +1,12 @@
 {
   "head": {
-    "title": "Редактирование документов Java API | Редактировать PDF, Word, Excel, PowerPoint",
-    "description": "Редактирование документов Java для загрузки, редактирования и сохранения страниц документов от PDF, Microsoft Word, Excel, PowerPoint, электронных книг и форматов электронной почты."
+    "title": "Java Document Editor API | Редактировать PDF, Word, Excel, PowerPoint",
+    "description": "Java Document Editor API для загрузки, редактирования и сохранения страниц документов от PDF, Microsoft Word, Excel, PowerPoint, электронных книг и форматов электронной почты."
   },
   "header": {
     "title_1": "Редактировать документы",
     "title_2": "через Java API",
-    "description": "Мощный редактор API для манипулирования Microsoft Office, PDF, HTML, электронных книг и электронной почты.",
+    "description": "Мощный редактор документов Java API для манипулирования Microsoft Office, PDF, HTML, электронной книги и файлами электронной почты.",
     "words": {
       "for": "для"
     }

@@ -1,11 +1,11 @@
 {
   "head": {
-    "title": "문서 편집 솔루션 | 온프레미스 API 및 무료 앱",
-    "description": "온프레미스 솔루션을 사용하여 MS Office, OpenDocument, PDF 이미지 및 기타 파일 형식을 편집하거나 온라인 문서 편집기 앱을 사용하세요."
+    "title": "문서 편집기 SDK | 전제 API 및 무료 앱",
+    "description": "문서 편집기 SDK를 사용하여 MS Office, OpenDocument, PDF 이미지 및 기타 파일 형식을 편집하거나 온라인 문서 편집기 앱을 사용하십시오."
   },
   "header": {
     "title": "쉽게 문서를 편집하고 관리하세요",
-    "description_1": "Microsoft Office, OpenOffice, PDF, HTML 및 기타 문서 파일 형식을 조작하는 문서 편집기입니다.",
+    "description_1": "문서 편집기 SDK, Microsoft Office, OpenOffice, PDF, HTML 및 기타 문서 파일 형식을 조작합니다.",
     "description_2": "처음부터 새 문서를 만듭니다.",
     "description_3": "문서 내의 양식 필드를 쉽게 관리할 수 있습니다."
   },

@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-08-01T11:17:43
+date: 2025-09-18T13:04:44
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "Java Document Editing API | Edit PDF, Word, Excel, PowerPoint"
-head_description: "Java document editing API to load, edit and save document pages from PDF, Microsoft Word, Excel, PowerPoint, eBook and email formats."
+head_title: "Java Document Editor API | Edit PDF, Word, Excel, PowerPoint"
+head_description: "Java document editor API to load, edit and save document pages from PDF, Microsoft Word, Excel, PowerPoint, eBook and email formats."
 
 ############################# Header ############################
 title: "Edit documents<br>via Java API"
-description: "Powerful editor API to manipulate Microsoft Office, PDF, HTML, eBook and email files."
+description: "Powerful Java Document Editor API to manipulate Microsoft Office, PDF, HTML, eBook and email files."
 words:
   for: "for"
 

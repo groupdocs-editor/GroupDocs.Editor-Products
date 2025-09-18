@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-08-01T11:17:44
+date: 2025-09-18T13:04:44
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "C# .NET DOCUMTER Редактирование API | Редактировать PDF, Word, Excel, Epub"
-head_description: "C# .NET EDITITION API API для редактирования, перевода и сохранения страниц документов из PDF, Microsoft Word, Excel, презентаций, VISIO и форматов изображений."
+head_title: "C# .NET Редактор документов API | Редактировать PDF, Word, Excel, PowerPoint"
+head_description: "C# .NET EDITOR API API для редактирования, перевода и сохранения страниц документов из PDF, Microsoft Word, Excel, PowerPoint, электронных книг и форматов электронной почты"
 
 ############################# Header ############################
 title: "Редактировать документы<br>через .NET API"
-description: "Мощный редактор API для манипулирования PDF, Microsoft Office, HTML и изображений."
+description: "Мощный API Editor .NET API для манипулирования Microsoft Office, PDF, HTML, электронной книги и файлами электронной почты."
 words:
   for: "для"
 

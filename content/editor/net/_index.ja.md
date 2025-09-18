@@ -2,7 +2,7 @@
 
 ############################# Static ############################
 layout: "landing"
-date: 2025-08-01T11:17:43
+date: 2025-09-18T13:04:44
 draft: false
 
 product: "Editor"
@@ -24,12 +24,12 @@ supported_platforms:
       tag: "nodejs-java"
 
 ############################# Head ############################
-head_title: "C＃.NETドキュメント編集API | PDF、Word、Excel、PowerPointを編集します"
-head_description: "C＃.NETドキュメント編集APIへの編集PDF、Microsoft Word、Excel、PowerPoint、電子ブック、電子メール形式のドキュメントページを編集、翻訳、保存"
+head_title: "C＃.NETドキュメントエディターAPI | PDF、Word、Excel、PowerPointを編集します"
+head_description: "C＃.NETドキュメントエディターAPIは、PDF、Microsoft Word、Excel、PowerPoint、電子ブック、電子メールフォーマットからドキュメントページを編集、翻訳、および保存します。"
 
 ############################# Header ############################
 title: "ドキュメントを編集します<br>.NET API経由"
-description: "Microsoft Office、PDF、HTML、電子書籍、電子メールファイルを操作する強力な編集者API。"
+description: "強力な.NETドキュメントエディターAPI Microsoft Office、PDF、HTML、電子ブック、電子メールファイルを操作します。"
 words:
   for: "のために"
 
